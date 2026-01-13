@@ -1,0 +1,20 @@
+[
+    {
+        "Portal": "PNCP",
+        "Orgao_Codigo": "Ministério da Saúde",
+        "Num_Licitacao": "10/2025",
+        "Fornecedor": "EMPRESA A",
+        "Itens_Ganhos": 2,
+        "Total_Ganho_R$": 1500.0,
+        "Data_Homologacao": "20260112"
+    },
+    {
+        "Portal": "PNCP",
+        "Orgao_Codigo": "Ministério da Saúde",
+        "Num_Licitacao": "10/2025",
+        "Fornecedor": "EMPRESA B",
+        "Itens_Ganhos": 1,
+        "Total_Ganho_R$": 2000.0,
+        "Data_Homologacao": "20260112"
+    }
+]
