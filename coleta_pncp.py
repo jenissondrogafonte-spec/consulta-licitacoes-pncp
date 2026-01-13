@@ -91,4 +91,61 @@ for i, compra in enumerate(lista_processamento):
                 # Pega apenas HOMOLOGADOS (Vencedores reais)
                 if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
                     item['_num_licitacao'] = num_licitacao
-                    item['_or
+                    item['_orgao_codigo'] = f"{orgao_cnpj} - {nome_orgao}"
+                    # Data: tenta pegar do resultado, se não tiver, pega da licitação
+                    data_res = item.get('dataResultado') or compra.get('dataPublicacaoPncp')
+                    item['_data_homologacao'] = data_res[:10] if data_res else DATA_BUSCA
+                    todos_itens_ganhos.append(item)
+        
+        if i % 10 == 0: print(f"Processando {i}...") # Log de progresso
+        time.sleep(0.2)
+
+    except Exception as e:
+        pass # Segue o baile
+
+# ==============================================================================
+# 3. AGRUPAR E SALVAR
+# ==============================================================================
+print(f"--- Processando {len(todos_itens_ganhos)} itens ganhos ---")
+dados_finais = []
+
+if todos_itens_ganhos:
+    df = pd.DataFrame(todos_itens_ganhos)
+    
+    # Agrupa por Fornecedor + Licitação + Órgão
+    agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_num_licitacao', '_orgao_codigo', '_data_homologacao']).agg({
+        'numeroItem': 'count',
+        'valorTotalHomologado': 'sum'
+    }).reset_index()
+
+    for _, row in agrupado.iterrows():
+        dados_finais.append({
+            "Data_Homologacao": row['_data_homologacao'],
+            "Orgao_Codigo": row['_orgao_codigo'],
+            "Num_Licitacao": row['_num_licitacao'],
+            "Fornecedor": row['nomeRazaoSocialFornecedor'],
+            "CNPJ_Fornecedor": row['niFornecedor'],
+            "Itens_Ganhos": int(row['numeroItem']),
+            "Total_Ganho_R$": float(row['valorTotalHomologado'])
+        })
+
+# Carrega histórico anterior
+if os.path.exists(ARQUIVO_SAIDA):
+    try:
+        with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
+            historico = json.load(f)
+    except: historico = []
+else:
+    historico = []
+
+historico.extend(dados_finais)
+
+# Remove duplicatas exatas
+historico_unico = list({json.dumps(i, sort_keys=True) for i in historico})
+historico_limpo = [json.loads(i) for i in historico_unico]
+
+# Salva
+with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
+    json.dump(historico_limpo, f, ensure_ascii=False, indent=4)
+
+print("--- SUCESSO! ---")
