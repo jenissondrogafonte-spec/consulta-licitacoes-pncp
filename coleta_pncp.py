@@ -6,13 +6,12 @@ import time
 import os
 import sys
 
-# --- CONFIGURAÇÃO ---
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json'
 }
 
-# Parâmetros de Data (Máquina do Tempo)
+# Parâmetros de Data
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
@@ -50,8 +49,9 @@ while data_atual <= data_limite:
                 cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
                 ano = compra.get('anoCompra')
                 seq = compra.get('sequencialCompra')
-                uasg_raw = compra.get('unidadeOrgao', {}).get('codigoUnidade', '')
-                nome_org_raw = compra.get('orgaoEntidade', {}).get('razaoSocial', '')
+                # UASG vem como 'codigoUnidade'
+                uasg_limpa = str(compra.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
+                nome_org = compra.get('orgaoEntidade', {}).get('razaoSocial', '')
 
                 if cnpj and ano and seq:
                     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
@@ -62,11 +62,10 @@ while data_atual <= data_limite:
                         for item in itens:
                             if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
                                 item['_data'] = DATA_STR
-                                item['_uasg'] = uasg_raw if uasg_raw else cnpj
-                                item['_orgao_nome'] = nome_org_raw
-                                # Formato ComprasNet: UASG + Sequencial (com zeros à esquerda) + Ano
-                                seq_formatado = str(seq).zfill(5)
-                                item['_lic_comprasnet'] = f"{item['_uasg']}{seq_formatado}{ano}"
+                                item['_uasg'] = uasg_limpa
+                                item['_orgao_nome'] = nome_org
+                                # Lógica ComprasNet: UASG + Sequencial + Ano (sem barras)
+                                item['_lic_comprasnet'] = f"{uasg_limpa}{seq}{ano}"
                                 todos_itens.append(item)
                     time.sleep(0.1)
     except Exception as e:
@@ -77,7 +76,6 @@ if not todos_itens:
     print("Nenhum dado novo encontrado.")
     sys.exit(0)
 
-# Processamento e Agrupamento
 df = pd.DataFrame(todos_itens)
 agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_lic_comprasnet', '_orgao_nome', '_uasg', '_data']).agg({
     'numeroItem': 'count', 'valorTotalHomologado': 'sum'
@@ -106,4 +104,4 @@ historico_final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(historico_final, f, indent=4, ensure_ascii=False)
 
-print(f"💾 Sucesso! {len(historico_final)} registros totais no banco.")
+print(f"💾 Sucesso! Banco de dados atualizado.")
