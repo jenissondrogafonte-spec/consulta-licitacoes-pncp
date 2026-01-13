@@ -3,73 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Visual</title>
+    <title>Monitor PNCP Completo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light p-5">
+<body class="bg-light p-4">
+    <div class="container bg-white p-4 rounded shadow">
+        <h2 class="text-primary mb-4">🔍 Monitor de Licitações</h2>
+        
+        <div class="alert alert-info">
+            <strong>Dica de Pesquisa:</strong> Você pode digitar o nome da empresa, o número da UASG (ex: 123456), o número da licitação (ex: 90001/2024) ou do processo.
+        </div>
 
-    <div class="container bg-white p-4 rounded shadow border border-danger">
-        <h2 class="text-primary">🔍 Painel de Licitações (Versão Final)</h2>
-        <p>Se você está lendo isso, o HTML funcionou.</p>
-
-        <hr>
-
-        <div class="mb-3">
-            <label class="fw-bold">Pesquise aqui:</label>
-            <input type="text" id="campoBusca" class="form-control" placeholder="Digite o nome da empresa...">
+        <div class="mb-4">
+            <input type="text" id="campoBusca" class="form-control form-control-lg" placeholder="Digite aqui para filtrar...">
         </div>
 
         <div class="table-responsive">
-            <table class="table table-bordered table-striped">
+            <table class="table table-striped table-bordered table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Data</th>
-                        <th>Órgão</th>
+                        <th>Órgão (UASG)</th>
+                        <th>Licitação / Processo</th>
                         <th>Fornecedor</th>
                         <th>Total (R$)</th>
                     </tr>
                 </thead>
-                <tbody id="tabelaDados">
-                    </tbody>
+                <tbody id="tabelaDados"></tbody>
             </table>
+            <p id="statusMsg" class="text-center text-muted mt-2">Carregando...</p>
         </div>
-        
-        <div id="status" class="alert alert-warning">
-            ⏳ Tentando ler o arquivo dados.json...
-        </div>
-
     </div>
 
     <script>
         fetch('dados.json')
-            .then(res => {
-                if (!res.ok) throw new Error("Arquivo não encontrado (404)");
-                return res.json();
-            })
+            .then(r => r.json())
             .then(data => {
+                document.getElementById('statusMsg').style.display = 'none';
                 const tbody = document.getElementById('tabelaDados');
-                const status = document.getElementById('status');
                 
-                // Limpa e avisa sucesso
-                status.className = 'alert alert-success';
-                status.innerHTML = `✅ Sucesso! Encontrei ${data.length} registros de ontem.`;
+                function render(lista) {
+                    tbody.innerHTML = '';
+                    if(lista.length === 0) {
+                         tbody.innerHTML = '<tr><td colspan="5" class="text-center">Nenhum resultado.</td></tr>';
+                         return;
+                    }
 
-                // Preenche tabela
-                data.forEach(item => {
-                    tbody.innerHTML += `
-                        <tr>
-                            <td>${item.Data_Homologacao}</td>
-                            <td>${item.Orgao_Codigo}</td>
-                            <td>${item.Fornecedor}</td>
-                            <td>R$ ${item['Total_Ganho_R$']}</td>
-                        </tr>
-                    `;
+                    lista.forEach(i => {
+                        // Trata caso o campo processo não exista (dados antigos)
+                        const processo = i.Num_Processo ? `<br><small class="text-muted">Proc: ${i.Num_Processo}</small>` : '';
+                        
+                        tbody.innerHTML += `<tr>
+                            <td>${i.Data_Homologacao}</td>
+                            <td>${i.Orgao_Codigo}</td>
+                            <td>
+                                <strong>${i.Num_Licitacao}</strong>
+                                ${processo}
+                            </td>
+                            <td>${i.Fornecedor}</td>
+                            <td class="text-success fw-bold">R$ ${i['Total_Ganho_R$'].toFixed(2)}</td>
+                        </tr>`;
+                    });
+                }
+                
+                // Mostra os dados (mais recentes primeiro)
+                render(data.reverse());
+
+                // BUSCA TURBINADA
+                document.getElementById('campoBusca').addEventListener('keyup', (e) => {
+                    const t = e.target.value.toLowerCase();
+                    
+                    render(data.filter(i => {
+                        // Verifica se o texto digitado existe em algum desses campos
+                        const fornecedor = i.Fornecedor ? i.Fornecedor.toLowerCase() : '';
+                        const orgao = i.Orgao_Codigo ? i.Orgao_Codigo.toLowerCase() : '';
+                        const licitacao = i.Num_Licitacao ? i.Num_Licitacao.toLowerCase() : '';
+                        const processo = i.Num_Processo ? i.Num_Processo.toLowerCase() : '';
+
+                        return fornecedor.includes(t) || 
+                               orgao.includes(t) || 
+                               licitacao.includes(t) || 
+                               processo.includes(t);
+                    }));
                 });
             })
-            .catch(err => {
-                document.getElementById('status').className = 'alert alert-danger';
-                document.getElementById('status').innerHTML = `❌ Erro: ${err.message}. <br>O Robô (Actions) rodou e ficou verde?`;
-            });
+            .catch(e => document.getElementById('statusMsg').innerText = "Aguardando atualização do robô...");
     </script>
 </body>
 </html>
