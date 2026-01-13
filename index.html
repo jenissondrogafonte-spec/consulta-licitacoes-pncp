@@ -3,149 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitor PNCP - Pesquisa Avançada</title>
+    <title>Monitor de Licitações</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .filtro-box { background-color: #e9ecef; border-radius: 8px; padding: 15px; }
-        .table-hover tbody tr:hover { background-color: #f1f1f1; }
-    </style>
 </head>
 <body class="bg-light p-4">
     <div class="container bg-white p-4 rounded shadow">
+        <h2 class="text-primary mb-4">📊 Monitor de Licitações - PNCP</h2>
         
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="text-primary mb-0">🔍 Monitor de Licitações</h2>
-            <span class="badge bg-success" id="contadorRegistros">Carregando...</span>
-        </div>
-
-        <div class="filtro-box mb-4">
-            <h5 class="mb-3 text-secondary">Filtros de Pesquisa</h5>
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <label class="form-label fw-bold">Fornecedor / CNPJ</label>
-                    <input type="text" id="buscaFornecedor" class="form-control" placeholder="Ex: Drogafonte...">
-                </div>
-                
-                <div class="col-md-3">
-                    <label class="form-label fw-bold">Órgão / UASG</label>
-                    <input type="text" id="buscaOrgao" class="form-control" placeholder="Ex: 153055...">
-                </div>
-
-                <div class="col-md-3">
-                    <label class="form-label fw-bold">Nº Licitação</label>
-                    <input type="text" id="buscaLicitacao" class="form-control" placeholder="Ex: 90001/2024">
-                </div>
-
-                <div class="col-md-3">
-                    <label class="form-label fw-bold">Nº Processo</label>
-                    <input type="text" id="buscaProcesso" class="form-control" placeholder="Ex: 23000...">
-                </div>
+        <div class="row g-2 mb-4">
+            <div class="col-md-6">
+                <input type="text" id="buscaFornecedor" class="form-control" placeholder="🔍 Buscar por Fornecedor...">
             </div>
-            
-            <div class="text-end mt-3">
-                <button class="btn btn-outline-secondary btn-sm" onclick="limparFiltros()">🧹 Limpar Filtros</button>
+            <div class="col-md-6">
+                <input type="text" id="buscaOrgao" class="form-control" placeholder="🔍 Buscar por Órgão...">
             </div>
         </div>
 
         <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover">
+            <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Data</th>
-                        <th>Órgão (UASG)</th>
-                        <th>Licitação / Processo</th>
+                        <th>Órgão</th>
+                        <th>Licitação</th>
                         <th>Fornecedor</th>
+                        <th>Itens</th>
                         <th>Total (R$)</th>
                     </tr>
                 </thead>
                 <tbody id="tabelaDados"></tbody>
             </table>
-            <p id="statusMsg" class="text-center text-muted mt-2">Carregando dados...</p>
+            <div id="msgStatus" class="text-center p-5 text-muted">Carregando dados...</div>
         </div>
     </div>
 
     <script>
-        let dadosGlobais = []; // Guarda os dados na memória
+        // Força o navegador a buscar o arquivo novo
+        const url = 'dados.json?v=' + Date.now();
 
-        fetch('dados.json')
+        fetch(url)
             .then(r => r.json())
             .then(data => {
-                dadosGlobais = data.reverse(); // Salva e inverte (mais novos primeiro)
-                document.getElementById('statusMsg').style.display = 'none';
-                render(dadosGlobais);
-                atualizarContador(dadosGlobais.length);
-
-                // Adiciona o "Ouvido" em cada campo de digitação
-                ['buscaFornecedor', 'buscaOrgao', 'buscaLicitacao', 'buscaProcesso'].forEach(id => {
-                    document.getElementById(id).addEventListener('keyup', filtrarDados);
-                });
-            })
-            .catch(e => document.getElementById('statusMsg').innerHTML = `<span class="text-danger">Erro: ${e.message}</span>`);
-
-        // Função que desenha a tabela
-        function render(lista) {
-            const tbody = document.getElementById('tabelaDados');
-            tbody.innerHTML = '';
-            
-            if(lista.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" class="text-center text-muted p-4">Nenhum resultado encontrado para esses filtros.</td></tr>';
-                return;
-            }
-
-            // Mostra no máximo 500 itens para não travar o navegador se tiver muita coisa
-            lista.slice(0, 500).forEach(i => {
-                const processo = i.Num_Processo ? `<div class="text-muted small">Proc: ${i.Num_Processo}</div>` : '';
+                const status = document.getElementById('msgStatus');
+                if (!data || data.length === 0) {
+                    status.innerText = "O arquivo dados.json está vazio.";
+                    return;
+                }
+                status.style.display = 'none';
                 
-                tbody.innerHTML += `<tr>
-                    <td>${i.Data_Homologacao}</td>
-                    <td><small>${i.Orgao_Codigo}</small></td>
-                    <td>
-                        <strong>${i.Num_Licitacao}</strong>
-                        ${processo}
-                    </td>
-                    <td>
-                        ${i.Fornecedor}
-                        <div class="small text-secondary">${i.CNPJ_Fornecedor || ''}</div>
-                    </td>
-                    <td class="text-success fw-bold text-nowrap">R$ ${i['Total_Ganho_R$'].toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                </tr>`;
-            });
-            atualizarContador(lista.length);
-        }
+                // Armazena os dados globalmente
+                window.meusDados = data.reverse(); 
+                renderizar(window.meusDados);
 
-        // A Mágica da Filtragem Individual
-        function filtrarDados() {
-            // 1. Pega o valor de cada campo e converte para minúsculo
-            const fFornecedor = document.getElementById('buscaFornecedor').value.toLowerCase();
-            const fOrgao = document.getElementById('buscaOrgao').value.toLowerCase();
-            const fLicitacao = document.getElementById('buscaLicitacao').value.toLowerCase();
-            const fProcesso = document.getElementById('buscaProcesso').value.toLowerCase();
-
-            // 2. Filtra os dados globais
-            const filtrados = dadosGlobais.filter(item => {
-                // Verifica cada campo (se estiver vazio, ignora aquele filtro)
-                const matchForn = !fFornecedor || (item.Fornecedor && item.Fornecedor.toLowerCase().includes(fFornecedor)) || (item.CNPJ_Fornecedor && item.CNPJ_Fornecedor.includes(fFornecedor));
-                const matchOrgao = !fOrgao || (item.Orgao_Codigo && item.Orgao_Codigo.toLowerCase().includes(fOrgao));
-                const matchLic = !fLicitacao || (item.Num_Licitacao && item.Num_Licitacao.toLowerCase().includes(fLicitacao));
-                const matchProc = !fProcesso || (item.Num_Processo && item.Num_Processo.toLowerCase().includes(fProcesso));
-
-                // SÓ PASSA SE ATENDER A TODAS AS CONDIÇÕES (Lógica E)
-                return matchForn && matchOrgao && matchLic && matchProc;
+                // Configura a busca
+                document.getElementById('buscaFornecedor').addEventListener('keyup', filtrar);
+                document.getElementById('buscaOrgao').addEventListener('keyup', filtrar);
+            })
+            .catch(e => {
+                document.getElementById('msgStatus').innerHTML = "❌ Erro ao carregar o arquivo dados.json.";
             });
 
-            render(filtrados);
+        function renderizar(lista) {
+            const tbody = document.getElementById('tabelaDados');
+            tbody.innerHTML = lista.map(item => `
+                <tr>
+                    <td>${formatarData(item.Data_Homologacao)}</td>
+                    <td>${item.Orgao_Codigo || '-'}</td>
+                    <td>${item.Num_Licitacao || '-'}</td>
+                    <td><strong>${item.Fornecedor || '-'}</strong></td>
+                    <td>${item.Itens_Ganhos || '0'}</td>
+                    <td class="text-success fw-bold">R$ ${Number(item['Total_Ganho_R$']).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                </tr>
+            `).join('');
         }
 
-        function limparFiltros() {
-            document.getElementById('buscaFornecedor').value = '';
-            document.getElementById('buscaOrgao').value = '';
-            document.getElementById('buscaLicitacao').value = '';
-            document.getElementById('buscaProcesso').value = '';
-            render(dadosGlobais);
+        function filtrar() {
+            const forn = document.getElementById('buscaFornecedor').value.toLowerCase();
+            const org = document.getElementById('buscaOrgao').value.toLowerCase();
+
+            const filtrados = window.meusDados.filter(item => {
+                const matchForn = (item.Fornecedor || '').toLowerCase().includes(forn);
+                const matchOrg = (item.Orgao_Codigo || '').toLowerCase().includes(org);
+                return matchForn && matchOrg;
+            });
+            renderizar(filtrados);
         }
 
-        function atualizarContador(qtd) {
-            document.getElementById('contadorRegistros').innerText = `${qtd} registros`;
+        function formatarData(dataStr) {
+            if (!dataStr || dataStr.length !== 8) return dataStr;
+            return dataStr.substring(6, 8) + '/' + dataStr.substring(4, 6) + '/' + dataStr.substring(0, 4);
         }
     </script>
 </body>
