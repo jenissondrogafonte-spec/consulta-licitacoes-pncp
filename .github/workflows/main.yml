@@ -1,0 +1,30 @@
+name: Atualizar Licitações
+
+on:
+  workflow_dispatch: # Botão manual
+  schedule:
+    - cron: '0 8 * * *' # Todo dia às 08:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Instalar Dependências
+        run: pip install -r requirements.txt
+      - name: Rodar Coleta
+        run: python coleta_pncp.py
+      - name: Salvar Dados
+        run: |
+          git config --global user.name 'Robo Licitacao'
+          git config --global user.email 'robo@github.com'
+          git add dados.json
+          git commit -m "Atualizacao Diaria" || echo "Sem mudancas"
+          git push
