@@ -3,114 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitor de Licitações - PNCP</title>
+    <title>Consulta Licitações</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .valor-alto { color: #198754; font-weight: bold; } /* Verde para dinheiro */
-        .loading { text-align: center; margin-top: 20px; font-style: italic; color: #666; }
-    </style>
 </head>
-<body class="bg-light">
+<body class="bg-light p-4">
 
-    <div class="container mt-5">
-        <div class="card shadow">
-            <div class="card-header bg-primary text-white">
-                <h3 class="mb-0">📊 Resultados de Licitações (PNCP)</h3>
-                <small>Dados coletados automaticamente do Governo Federal</small>
-            </div>
-            <div class="card-body">
-                
-                <input type="text" id="campoBusca" class="form-control mb-4 p-3" placeholder="🔎 Digite o nome do Fornecedor, Órgão ou CNPJ...">
+    <div class="container bg-white p-4 rounded shadow">
+        <h2 class="text-primary mb-4">🔍 Monitor de Licitações - PNCP</h2>
+        <p class="text-muted">Consulte os resultados coletados automaticamente.</p>
 
-                <div class="table-responsive">
-                    <table class="table table-hover table-striped table-bordered">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>Data</th>
-                                <th>Órgão Público</th>
-                                <th>Licitação</th>
-                                <th>Fornecedor Vencedor</th>
-                                <th>Itens</th>
-                                <th>Total Ganho (R$)</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tabelaDados">
-                            </tbody>
-                    </table>
-                    <p id="avisoCarregando" class="loading">Carregando dados, aguarde...</p>
-                </div>
-            </div>
-            <div class="card-footer text-muted text-center">
-                Atualizado automaticamente via GitHub Actions
-            </div>
+        <div class="mb-4">
+            <label class="form-label fw-bold">Pesquisar:</label>
+            <input type="text" id="campoBusca" class="form-control form-control-lg" placeholder="Digite o nome do fornecedor ou órgão...">
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Data</th>
+                        <th>Órgão</th>
+                        <th>Licitação</th>
+                        <th>Fornecedor</th>
+                        <th>Itens</th>
+                        <th>Total (R$)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaDados">
+                    </tbody>
+            </table>
+            <p id="statusMsg" class="text-center text-muted fst-italic mt-3">Carregando dados...</p>
         </div>
     </div>
 
     <script>
-        // URL do arquivo JSON (Local)
-        const urlDados = 'dados.json'; 
-
-        fetch(urlDados)
+        // Tenta carregar o arquivo dados.json
+        fetch('dados.json')
             .then(response => {
-                if (!response.ok) throw new Error("Arquivo de dados não encontrado");
+                if (!response.ok) {
+                    throw new Error("Arquivo 'dados.json' não encontrado.");
+                }
                 return response.json();
             })
             .then(data => {
-                // Esconde aviso de carregando
-                document.getElementById('avisoCarregando').style.display = 'none';
+                // Se deu certo, esconde a mensagem de carregando
+                document.getElementById('statusMsg').style.display = 'none';
                 
                 const tbody = document.getElementById('tabelaDados');
                 const input = document.getElementById('campoBusca');
 
-                // Função que desenha a tabela
-                function desenharTabela(lista) {
+                // Função para criar as linhas da tabela
+                function renderizar(lista) {
                     tbody.innerHTML = '';
-                    
-                    if (lista.length === 0) {
-                        tbody.innerHTML = '<tr><td colspan="6" class="text-center">Nenhum resultado encontrado.</td></tr>';
+                    if(lista.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="6" class="text-center text-danger">Nada encontrado.</td></tr>';
                         return;
                     }
 
-                    lista.forEach(linha => {
-                        // Formata moeda
-                        const valorFormatado = linha['Total_Ganho_R$'].toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-                        
-                        // Cria a linha HTML
-                        const htmlLinha = `
-                            <tr>
-                                <td>${linha.Data_Homologacao}</td>
-                                <td><small>${linha.Orgao_Codigo}</small></td>
-                                <td>${linha.Num_Licitacao}</td>
-                                <td>
-                                    <strong>${linha.Fornecedor}</strong><br>
-                                    <small class="text-muted">${linha.CNPJ_Fornecedor || ''}</small>
-                                </td>
-                                <td class="text-center">${linha.Itens_Ganhos}</td>
-                                <td class="valor-alto">${valorFormatado}</td>
-                            </tr>
-                        `;
-                        tbody.innerHTML += htmlLinha;
+                    lista.forEach(item => {
+                        const tr = `<tr>
+                            <td>${item.Data_Homologacao}</td>
+                            <td><small>${item.Orgao_Codigo}</small></td>
+                            <td>${item.Num_Licitacao}</td>
+                            <td class="fw-bold">${item.Fornecedor}</td>
+                            <td class="text-center">${item.Itens_Ganhos}</td>
+                            <td class="text-success fw-bold">R$ ${item['Total_Ganho_R$'].toFixed(2)}</td>
+                        </tr>`;
+                        tbody.innerHTML += tr;
                     });
                 }
 
-                // Desenha inicial (Inverte para mostrar os mais novos primeiro)
-                desenharTabela(data.reverse());
+                // Carrega inicial (Invertido para o mais novo primeiro)
+                renderizar(data.reverse());
 
-                // Lógica da Pesquisa
+                // Configura a busca
                 input.addEventListener('keyup', (e) => {
                     const termo = e.target.value.toLowerCase();
-                    const filtrados = data.filter(item => 
-                        (item.Fornecedor && item.Fornecedor.toLowerCase().includes(termo)) || 
-                        (item.CNPJ_Fornecedor && item.CNPJ_Fornecedor.includes(termo)) ||
-                        (item.Orgao_Codigo && item.Orgao_Codigo.toLowerCase().includes(termo))
+                    const filtrados = data.filter(d => 
+                        (d.Fornecedor && d.Fornecedor.toLowerCase().includes(termo)) || 
+                        (d.Orgao_Codigo && d.Orgao_Codigo.toLowerCase().includes(termo))
                     );
-                    desenharTabela(filtrados);
+                    renderizar(filtrados);
                 });
             })
-            .catch(erro => {
-                document.getElementById('avisoCarregando').innerHTML = `<span class="text-danger">Erro ao carregar dados: ${erro.message}. <br>O robô já rodou hoje?</span>`;
+            .catch(err => {
+                document.getElementById('statusMsg').innerHTML = `<span class="text-danger fw-bold">Erro: ${err.message} <br> O robô ainda não gerou o arquivo dados.json!</span>`;
             });
     </script>
-
 </body>
 </html>
