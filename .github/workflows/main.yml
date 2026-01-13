@@ -1,15 +1,24 @@
 name: Atualizar Licitações
 
 on:
-  workflow_dispatch: # Botão manual
   schedule:
-    - cron: '0 8 * * *' # Todo dia às 08:00 UTC
+    - cron: '0 8 * * *' # Roda automático todo dia
+  workflow_dispatch:
+    inputs:
+      data_inicial:
+        description: 'Data Inicial (Ex: 20250101)'
+        required: false
+        default: ''
+      data_final:
+        description: 'Data Final (Ex: 20250131)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  coletar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,14 +26,19 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Instalar Dependências
-        run: pip install -r requirements.txt
-      - name: Rodar Coleta
+      - name: Instalar
+        run: pip install requests pandas
+      
+      - name: Rodar Robô
+        env:
+          DATA_INICIAL: ${{ github.event.inputs.data_inicial }}
+          DATA_FINAL: ${{ github.event.inputs.data_final }}
         run: python coleta_pncp.py
-      - name: Salvar Dados
+
+      - name: Salvar
         run: |
-          git config --global user.name 'Robo Licitacao'
-          git config --global user.email 'robo@github.com'
+          git config --global user.name 'Robo'
+          git config --global user.email 'robo@email.com'
           git add dados.json
-          git commit -m "Atualizacao Diaria" || echo "Sem mudancas"
+          git commit -m "Carga de dados" || echo "Nada novo"
           git push
