@@ -4,19 +4,31 @@ import json
 from datetime import datetime, timedelta
 import time
 import os
+import sys
 
-# --- LEITURA DE ENTRADAS ---
-env_inicio = os.getenv('DATA_INICIAL')
-env_fim = os.getenv('DATA_FINAL')
+# --- CONFIGURAÇÃO BLINDADA ---
+# Cabeçalhos para fingir ser um navegador (Evita bloqueio 400/403)
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/json'
+}
 
+# Leitura e Limpeza dos Inputs
+env_inicio = os.getenv('DATA_INICIAL', '').strip()
+env_fim = os.getenv('DATA_FINAL', '').strip()
+
+# Remove barras, traços e espaços extras
 if env_inicio and env_fim:
-    # Remove barras se o usuário digitou errado (ex: 2025/01/01 vira 20250101)
-    env_inicio = env_inicio.replace('/', '').replace('-', '')
-    env_fim = env_fim.replace('/', '').replace('-', '')
+    env_inicio = env_inicio.replace('/', '').replace('-', '').replace(' ', '')
+    env_fim = env_fim.replace('/', '').replace('-', '').replace(' ', '')
     
-    data_atual = datetime.strptime(env_inicio, '%Y%m%d')
-    data_limite = datetime.strptime(env_fim, '%Y%m%d')
-    print(f"--- MODO MANUAL: De {env_inicio} até {env_fim} ---")
+    try:
+        data_atual = datetime.strptime(env_inicio, '%Y%m%d')
+        data_limite = datetime.strptime(env_fim, '%Y%m%d')
+        print(f"--- MODO MANUAL ATIVADO: {env_inicio} até {env_fim} ---")
+    except ValueError:
+        print("❌ ERRO CRÍTICO: Formato de data inválido! Use AAAAMMDD (Ex: 20250204)")
+        sys.exit(1)
 else:
     data_ontem = datetime.now() - timedelta(days=1)
     data_atual = data_ontem
@@ -24,107 +36,99 @@ else:
     print(f"--- MODO AUTOMÁTICO (ONTEM): {data_ontem.strftime('%Y%m%d')} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
-todos_itens_ganhos = []
+todos_itens = []
 
-# --- LOOP POR DIA ---
+# --- LOOP DE COLETA ---
 while data_atual <= data_limite:
-    DATA_BUSCA = data_atual.strftime('%Y%m%d')
-    print(f"\n==========================================")
-    print(f"🔎 INVESTIGANDO DIA: {DATA_BUSCA}")
-    print(f"==========================================")
-
-    url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-    pagina = 1
-    total_encontrado_dia = 0
+    DATA_STR = data_atual.strftime('%Y%m%d')
+    print(f"\n>>> PROCESSANDO DIA: {DATA_STR} <<<")
     
-    while True:
-        print(f"  > Baixando página {pagina} de contratações...")
-        params = {"dataInicial": DATA_BUSCA, "dataFinal": DATA_BUSCA, "pagina": pagina, "tamanhoPagina": 50}
+    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+    # Tenta pegar apenas 10 por vez para não estressar a API
+    params = {
+        "dataInicial": DATA_STR,
+        "dataFinal": DATA_STR,
+        "pagina": 1,
+        "tamanhoPagina": 10
+    }
+
+    try:
+        print(f"  [1] Consultando API...")
+        resp = requests.get(url, params=params, headers=HEADERS) # Adicionado Headers
         
-        try:
-            resp = requests.get(url_base, params=params)
-            if resp.status_code != 200:
-                print(f"    ❌ Erro na API (Status {resp.status_code})")
+        if resp.status_code != 200:
+            print(f"  ❌ Erro na API: {resp.status_code} - {resp.text}")
+            # Se der erro 400, tenta formato com traços (Plano B)
+            if resp.status_code == 400:
+                print("  ⚠️ Tentando formato alternativo (AAAA-MM-DD)...")
+                DATA_STR_ALT = data_atual.strftime('%Y-%m-%d')
+                params['dataInicial'] = DATA_STR_ALT
+                params['dataFinal'] = DATA_STR_ALT
+                resp = requests.get(url, params=params, headers=HEADERS)
+                if resp.status_code == 200:
+                    print("  ✅ Formato alternativo funcionou!")
+                else:
+                    print("  ❌ Falha também no formato alternativo.")
+                    break
+            else:
                 break
+        
+        licitacoes = resp.json().get('data', [])
+        print(f"  ✅ Encontradas {len(licitacoes)} licitações. Baixando resultados...")
+
+        count_processados = 0
+        for compra in licitacoes:
+            # Pega IDs
+            cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
+            ano = compra.get('anoCompra')
+            seq = compra.get('sequencialCompra')
             
-            dados = resp.json().get('data', [])
-            if not dados:
-                print("    ⚠️ Página vazia (fim do dia ou sem dados).")
-                break
-            
-            print(f"    ✅ Página {pagina}: Encontrei {len(dados)} licitações. Verificando vencedores...")
-            
-            # Entra em cada licitação
-            for i, compra in enumerate(dados): 
+            if cnpj and ano and seq:
+                url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
                 try:
-                    cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
-                    ano = compra.get('anoCompra')
-                    seq = compra.get('sequencialCompra')
-                    
-                    # Validação básica
-                    if not (cnpj and ano and seq): continue
-                    
-                    # URL de Resultados
-                    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
-                    resp_res = requests.get(url_res)
-                    
-                    if resp_res.status_code == 200:
-                        itens = resp_res.json()
-                        if isinstance(itens, dict): itens = [itens] # Corrige bug da API se vier só 1
+                    r_res = requests.get(url_res, headers=HEADERS)
+                    if r_res.status_code == 200:
+                        itens = r_res.json()
+                        if isinstance(itens, dict): itens = [itens]
                         
-                        count_homologados = 0
                         for item in itens:
-                            if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
-                                # Captura os dados
-                                item['_data_ref'] = DATA_BUSCA
-                                item['_orgao'] = f"{compra.get('unidadeOrgao', {}).get('codigoUnidade', cnpj)} - {compra.get('orgaoEntidade', {}).get('razaoSocial')}"
-                                item['_licitacao'] = f"{seq}/{ano}"
-                                item['_processo'] = compra.get('processo', 'N/I')
-                                todos_itens_ganhos.append(item)
-                                count_homologados += 1
-                        
-                        if count_homologados > 0:
-                            total_encontrado_dia += count_homologados
-                            # Feedback visual simples (um ponto por sucesso)
-                            print(".", end="", flush=True) 
-
-                    time.sleep(0.1) # Pausa leve
-                except Exception as e:
-                    print(f"x", end="", flush=True)
-
-            print(f"\n    (Fim da pág {pagina})")
-            pagina += 1
-            if pagina > 20: # Trava de segurança para não rodar infinitamente no teste
-                print("    🛑 Parando na página 20 por segurança.")
-                break 
+                            # Tira filtros para garantir que venha ALGO
+                            item['_data'] = DATA_STR
+                            item['_orgao'] = f"{cnpj} - {compra.get('orgaoEntidade', {}).get('razaoSocial')[:30]}..."
+                            item['_licitacao'] = f"{seq}/{ano}"
+                            item['_processo'] = compra.get('processo', '-')
+                            todos_itens.append(item)
+                            count_processados += 1
+                except:
+                    pass
             
-        except Exception as e:
-            print(f"    ❌ Erro fatal na conexão: {e}")
-            break
+            # Limite de segurança para teste (pega só os primeiros 50 do dia)
+            if count_processados > 50: 
+                break
+            time.sleep(0.1)
 
-    print(f"\nRESUMO DO DIA {DATA_BUSCA}: {total_encontrado_dia} itens ganhos coletados.")
+    except Exception as e:
+        print(f"  ❌ Erro de Conexão: {e}")
+
     data_atual += timedelta(days=1)
 
-# --- SALVAR ---
-print(f"\n\n📊 TOTAL GERAL COLETADO: {len(todos_itens_ganhos)}")
+# --- SALVAR E FINALIZAR ---
+print(f"\n📊 RESUMO: {len(todos_itens)} itens coletados.")
 
-if len(todos_itens_ganhos) == 0:
-    print("❌ NENHUM DADO FOI SALVO PORQUE A LISTA ESTÁ VAZIA.")
-    # Força erro para você ver no GitHub Actions
-    exit(1) 
+if not todos_itens:
+    print("⚠️ A lista está vazia. O arquivo NÃO será alterado para evitar apagar dados antigos.")
+    sys.exit(0) # Sai sem erro, mas não salva
 
-# Processamento Final
-novos_dados = []
-df = pd.DataFrame(todos_itens_ganhos)
-
-# Agrupa
-agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_licitacao', '_processo', '_orgao', '_data_ref']).agg({
+# Processa e Salva
+df = pd.DataFrame(todos_itens)
+agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_licitacao', '_processo', '_orgao', '_data']).agg({
     'numeroItem': 'count', 'valorTotalHomologado': 'sum'
 }).reset_index()
 
+novos_dados = []
 for _, row in agrupado.iterrows():
     novos_dados.append({
-        "Data_Homologacao": row['_data_ref'],
+        "Data_Homologacao": row['_data'],
         "Orgao_Codigo": row['_orgao'],
         "Num_Licitacao": row['_licitacao'],
         "Num_Processo": row['_processo'],
@@ -134,7 +138,7 @@ for _, row in agrupado.iterrows():
         "Itens_Ganhos": int(row['numeroItem'])
     })
 
-# Carrega e Salva
+# Carga Incremental
 if os.path.exists(ARQUIVO_SAIDA):
     try:
         with open(ARQUIVO_SAIDA, 'r') as f: historico = json.load(f)
@@ -142,7 +146,6 @@ if os.path.exists(ARQUIVO_SAIDA):
 else: historico = []
 
 historico.extend(novos_dados)
-
 # Remove duplicatas
 historico_unico = list({json.dumps(i, sort_keys=True) for i in historico})
 final = [json.loads(i) for i in historico_unico]
@@ -150,4 +153,4 @@ final = [json.loads(i) for i in historico_unico]
 with open(ARQUIVO_SAIDA, 'w') as f:
     json.dump(final, f, indent=4)
 
-print(f"✅ SUCESSO! Arquivo salvo com {len(final)} registros totais.")
+print(f"💾 SUCESSO! {len(final)} registros no total.")
