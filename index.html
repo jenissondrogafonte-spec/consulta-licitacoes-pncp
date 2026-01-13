@@ -3,111 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Licitações PNCP</title>
+    <title>Monitor de Licitações PNCP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f4f7f6; }
-        .table-container { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .filter-label { font-weight: bold; font-size: 0.9rem; color: #495057; }
-        .font-table { font-size: 0.85rem; }
+        body { background-color: #f8f9fa; font-family: sans-serif; }
+        .container-main { background: white; border-radius: 8px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .filter-title { font-size: 0.85rem; font-weight: bold; color: #6c757d; text-transform: uppercase; }
+        .table-custom { font-size: 0.85rem; }
     </style>
 </head>
 <body class="p-4">
-    <div class="container-fluid table-container">
-        <h2 class="text-primary mb-4 border-bottom pb-2">🔍 Monitor de Pregões PNCP</h2>
+    <div class="container-fluid container-main">
+        <h3 class="text-primary mb-4">🔍 Painel de Pregões (Padrão ComprasNet)</h3>
         
-        <div class="row g-3 mb-4">
+        <div class="row g-3 mb-4 border-bottom pb-4">
             <div class="col-md-3">
-                <label class="filter-label">Fornecedor / CNPJ</label>
-                <input type="text" id="fForn" class="form-control" placeholder="Buscar empresa...">
+                <label class="filter-title">Fornecedor / CNPJ</label>
+                <input type="text" id="filtroEmpresa" class="form-control" placeholder="Ex: Nome da Empresa">
             </div>
             <div class="col-md-3">
-                <label class="filter-label">Nome do Órgão</label>
-                <input type="text" id="fOrg" class="form-control" placeholder="Ex: Ministério da Saúde">
+                <label class="filter-title">Nome do Órgão</label>
+                <input type="text" id="filtroOrgao" class="form-control" placeholder="Ex: Secretaria de Saúde">
             </div>
             <div class="col-md-3">
-                <label class="filter-label">Cód. UASG</label>
-                <input type="text" id="fUasg" class="form-control" placeholder="Ex: 90140">
+                <label class="filter-title">Cód. UASG</label>
+                <input type="text" id="filtroUasg" class="form-control" placeholder="Digite a UASG">
             </div>
             <div class="col-md-3">
-                <label class="filter-label">Nº Licitação (ComprasNet)</label>
-                <input type="text" id="fLic" class="form-control" placeholder="Ex: 901402025">
+                <label class="filter-title">Licitação (UASG+Nº+Ano)</label>
+                <input type="text" id="filtroLic" class="form-control" placeholder="Ex: 926150901402025">
             </div>
         </div>
 
         <div class="table-responsive">
-            <table class="table table-hover table-bordered table-sm align-middle">
+            <table class="table table-hover table-bordered table-custom">
                 <thead class="table-dark">
                     <tr>
                         <th>Data</th>
-                        <th>UASG</th>
+                        <th>Cód. UASG</th>
                         <th>Órgão Entidade</th>
-                        <th>Licitação (Padrão ComprasNet)</th>
-                        <th>Fornecedor Vencedor</th>
-                        <th>Itens</th>
+                        <th>Licitação (ComprasNet)</th>
+                        <th>Fornecedor</th>
+                        <th class="text-center">Itens</th>
                         <th>Valor Total</th>
                     </tr>
                 </thead>
-                <tbody id="tabelaDados" class="font-table">
-                    </tbody>
+                <tbody id="listaDados">
+                </tbody>
             </table>
-            <div id="loading" class="text-center p-5 text-muted">Carregando dados do servidor...</div>
+            <div id="loader" class="text-center p-4 text-muted">Buscando informações...</div>
         </div>
     </div>
 
     <script>
-        // Anti-cache na URL do JSON
-        const urlJSON = 'dados.json?v=' + new Date().getTime();
+        const endpoint = 'dados.json?v=' + Date.now();
 
-        fetch(urlJSON)
-            .then(r => r.json())
+        fetch(endpoint)
+            .then(res => res.json())
             .then(data => {
-                document.getElementById('loading').style.display = 'none';
-                window.baseDados = data.reverse(); 
-                render(window.baseDados);
+                document.getElementById('loader').style.display = 'none';
+                window.dadosOriginais = data.reverse(); 
+                atualizarTabela(window.dadosOriginais);
 
-                // Ativar filtros
-                ['fForn', 'fOrg', 'fUasg', 'fLic'].forEach(id => {
+                // Ativando os 4 filtros
+                ['filtroEmpresa', 'filtroOrgao', 'filtroUasg', 'filtroLic'].forEach(id => {
                     document.getElementById(id).addEventListener('input', filtrar);
                 });
             })
-            .catch(err => {
-                document.getElementById('loading').innerHTML = "❌ Erro ao carregar dados ou arquivo inexistente.";
+            .catch(() => {
+                document.getElementById('loader').innerHTML = "⚠️ O arquivo de dados ainda não foi gerado pelo robô.";
             });
 
-        function render(lista) {
-            const body = document.getElementById('tabelaDados');
-            body.innerHTML = lista.map(item => `
+        function atualizarTabela(lista) {
+            const tbody = document.getElementById('listaDados');
+            tbody.innerHTML = lista.map(item => `
                 <tr>
-                    <td>${formatData(item.Data)}</td>
-                    <td class="text-secondary fw-bold">${item.UASG || ''}</td>
+                    <td>${formatarData(item.Data)}</td>
+                    <td class="fw-bold">${item.UASG || ''}</td>
                     <td>${item.Orgao || ''}</td>
                     <td class="text-primary fw-bold">${item.Licitacao || ''}</td>
                     <td><b>${item.Fornecedor || ''}</b><br><small class="text-muted">${item.CNPJ || ''}</small></td>
                     <td class="text-center">${item.Itens || '0'}</td>
-                    <td class="text-success fw-bold text-nowrap">R$ ${Number(item.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                    <td class="text-success fw-bold">R$ ${Number(item.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
                 </tr>
             `).join('');
         }
 
         function filtrar() {
-            const vForn = document.getElementById('fForn').value.toLowerCase();
-            const vOrg = document.getElementById('fOrg').value.toLowerCase();
-            const vUasg = document.getElementById('fUasg').value.toLowerCase();
-            const vLic = document.getElementById('fLic').value.toLowerCase();
+            const fEmp = document.getElementById('filtroEmpresa').value.toLowerCase();
+            const fOrg = document.getElementById('filtroOrgao').value.toLowerCase();
+            const fUasg = document.getElementById('filtroUasg').value.toLowerCase();
+            const fLic = document.getElementById('filtroLic').value.toLowerCase();
 
-            const filtrados = window.baseDados.filter(i => {
-                return ( (i.Fornecedor || '').toLowerCase().includes(vForn) || (i.CNPJ || '').includes(vForn) ) &&
-                       ( (i.Orgao || '').toLowerCase().includes(vOrg) ) &&
-                       ( (i.UASG || '').includes(vUasg) ) &&
-                       ( (i.Licitacao || '').includes(vLic) );
+            const filtrados = window.dadosOriginais.filter(i => {
+                return ( (i.Fornecedor || '').toLowerCase().includes(fEmp) || (i.CNPJ || '').includes(fEmp) ) &&
+                       ( (i.Orgao || '').toLowerCase().includes(fOrg) ) &&
+                       ( (i.UASG || '').includes(fUasg) ) &&
+                       ( (i.Licitacao || '').includes(fLic) );
             });
-            render(filtrados);
+            atualizarTabela(filtrados);
         }
 
-        function formatData(s) {
-            if (!s || s.length !== 8) return s;
-            return s.slice(6,8) + '/' + s.slice(4,6) + '/' + s.slice(0,4);
+        function formatarData(d) {
+            if (!d || d.length !== 8) return d;
+            return d.slice(6,8) + '/' + d.slice(4,6) + '/' + d.slice(0,4);
         }
     </script>
 </body>
