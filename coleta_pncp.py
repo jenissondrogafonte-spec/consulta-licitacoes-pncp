@@ -2,121 +2,116 @@ import requests
 import pandas as pd
 import json
 from datetime import datetime, timedelta
-import os
 import time
+import os
 
 # --- CONFIGURAÇÕES ---
-# Pega dados de ONTEM (para garantir que o dia fechou)
+# Busca dados de ONTEM (D-1) para garantir dia fechado
 DATA_BUSCA = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
 ARQUIVO_SAIDA = 'dados.json'
 
-print(f"--- Iniciando Busca no PNCP para: {DATA_BUSCA} ---")
+print(f"--- INICIANDO ROBÔ PNCP: {DATA_BUSCA} ---")
 
-# 1. Função para buscar LICITAÇÕES recentes (Endpoint de Contratações)
-def buscar_contratacoes(data):
-    # Endpoint oficial de consulta pública do PNCP
-    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-    params = {
-        "dataInicial": data,
-        "dataFinal": data,
-        "pagina": 1,
-        "tamanhoPagina": 20  # Limitado a 20 para teste inicial não demorar
-    }
+# Lista para acumular todos os itens ganhos do dia
+todos_itens_ganhos = []
+
+# 1. BUSCAR CONTRATAÇÕES (LICITAÇÕES) DO DIA
+url_contratacoes = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+params = {
+    "dataInicial": DATA_BUSCA,
+    "dataFinal": DATA_BUSCA,
+    "pagina": 1,
+    "tamanhoPagina": 50  # Pega as 50 primeiras licitações do dia (para não estourar tempo do GitHub grátis)
+}
+
+try:
+    print(f"Consultando licitações em: {url_contratacoes}")
+    resp_contratacoes = requests.get(url_contratacoes, params=params)
+    resp_contratacoes.raise_for_status()
+    lista_contratacoes = resp_contratacoes.json().get('data', [])
+    print(f"> Encontradas {len(lista_contratacoes)} licitações para verificar.")
+except Exception as e:
+    print(f"Erro fatal na busca inicial: {e}")
+    lista_contratacoes = []
+
+# 2. ENTRAR EM CADA LICITAÇÃO E PEGAR RESULTADOS
+for i, compra in enumerate(lista_contratacoes):
     try:
-        response = requests.get(url, params=params)
-        response.raise_for_status()
-        return response.json().get('data', [])
+        # Dados básicos da compra para vincular ao resultado
+        orgao_cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
+        ano_compra = compra.get('anoCompra')
+        seq_compra = compra.get('sequencialCompra')
+        num_licitacao = f"{seq_compra}/{ano_compra}"
+        
+        if not (orgao_cnpj and ano_compra and seq_compra):
+            continue
+
+        # Monta URL específica de RESULTADOS (Baseado no padrão da API PNCP)
+        # Endpoint: /orgaos/{cnpj}/compras/{ano}/{sequencial}/itens/resultados
+        url_resultados = f"https://pncp.gov.br/api/pncp/v1/orgaos/{orgao_cnpj}/compras/{ano_compra}/{seq_compra}/itens/resultados"
+        
+        # Consulta
+        print(f"  [{i+1}/{len(lista_contratacoes)}] Verificando resultados: {num_licitacao}...")
+        resp_res = requests.get(url_resultados)
+        
+        if resp_res.status_code == 200:
+            itens = resp_res.json()
+            # Adiciona dados da licitação em cada item para facilitar o agrupamento
+            for item in itens:
+                # Só queremos quem GANHOU (Homologado)
+                if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
+                    item['_num_licitacao'] = num_licitacao
+                    item['_orgao_codigo'] = orgao_cnpj
+                    todos_itens_ganhos.append(item)
+        
+        time.sleep(0.5) # Pausa respeitosa para não bloquear
+
     except Exception as e:
-        print(f"Erro ao buscar contratações: {e}")
-        return []
+        print(f"  Erro ao processar compra {i}: {e}")
 
-# 2. Função para buscar RESULTADOS (Itens ganhos) de uma licitação
-def buscar_itens_resultado(url_compra_detalhe):
-    # A URL vem no formato ".../compras/sequencial/1/2024"
-    # Precisamos montar a URL de resultados: ".../itens/resultados"
-    url_resultados = f"{url_compra_detalhe}/itens/resultados"
-    
-    todos_itens = []
-    pagina = 1
-    
-    while True:
-        try:
-            resp = requests.get(url_resultados, params={"pagina": pagina, "tamanhoPagina": 50})
-            if resp.status_code != 200: break
-            
-            dados = resp.json()
-            if not dados: break # Lista vazia
-            
-            todos_itens.extend(dados)
-            
-            # Verifica se tem próxima página (simplificado)
-            if len(dados) < 50: break
-            pagina += 1
-            time.sleep(0.5) # Pausa para não bloquear a API
-            
-        except:
-            break
-            
-    return todos_itens
+# 3. PROCESSAMENTO E SOMA (O GRANDE SEGREDO)
+print(f"--- Processando {len(todos_itens_ganhos)} itens ganhos encontrados ---")
 
-# --- EXECUÇÃO PRINCIPAL ---
-contratacoes = buscar_contratacoes(DATA_BUSCA)
-print(f"Encontradas {len(contratacoes)} contratações. Processando resultados...")
-
-lista_para_processar = []
-
-for compra in contratacoes:
-    # URL detalhe para pegar ID e Órgão
-    # Nota: A API retorna uma URL relativa ou absoluta, vamos tentar extrair dados
-    orgao_nome = compra.get('orgaoNome')
-    orgao_id = compra.get('orgaoEntidade', {}).get('cnpj') # Usando CNPJ como código do órgão
-    num_licitacao = f"{compra.get('numeroCompraB')}/{compra.get('anoCompra')}"
-    data_homologacao = compra.get('dataPublicacaoPncp') # Aproximação para lista geral
-    
-    # URL para buscar itens (construída a partir dos dados da compra)
-    # A API PNCP é complexa nas URLs. Vamos usar a estrutura padrão:
-    # https://pncp.gov.br/api/pncp/v1/orgaos/{orgaoId}/compras/{ano}/{sequencial}/itens/resultados
-    # Para simplificar neste primeiro passo, vamos tentar apenas compras com URL válida no retorno
-    
-    # Como a API pública é chata com URLs, vamos pular a busca profunda neste teste inicial
-    # e criar uma estrutura que FUNCIONE com os dados que já temos, 
-    # simulando o agrupamento para você ver o resultado no site.
-    
-    # (Num projeto real, aqui entra o loop detalhado de itens explicado no manual)
-    pass 
-
-# --- SIMULAÇÃO DO AGRUPAMENTO (Para garantir que seu site funcione HOJE) ---
-# Como a API de resultados requer muitos passos, vou gerar dados baseados
-# no que baixamos + uma simulação de itens para testar sua tabela.
 dados_finais = []
 
-# Exemplo real de lógica de soma:
-dados_simulados = [
-    {"fornecedor": "EMPRESA A", "cnpj": "00.000.000/0001-01", "item": 1, "valor": 1000.00, "licitacao": "10/2025", "orgao": "Ministério da Saúde"},
-    {"fornecedor": "EMPRESA A", "cnpj": "00.000.000/0001-01", "item": 2, "valor": 500.00, "licitacao": "10/2025", "orgao": "Ministério da Saúde"},
-    {"fornecedor": "EMPRESA B", "cnpj": "11.111.111/0001-02", "item": 3, "valor": 2000.00, "licitacao": "10/2025", "orgao": "Ministério da Saúde"}
-]
-df = pd.DataFrame(dados_simulados)
+if todos_itens_ganhos:
+    df = pd.DataFrame(todos_itens_ganhos)
+    
+    # Agrupamento Mágico: Junta tudo que é do mesmo Fornecedor na mesma Licitação
+    # Campos chaves: CNPJ do Fornecedor, Nome do Fornecedor, Licitação e Órgão
+    agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_num_licitacao', '_orgao_codigo']).agg({
+        'numeroItem': 'count',           # Conta quantos itens levou
+        'valorTotalHomologado': 'sum',   # SOMA o dinheiro ganho
+        'dataResultado': 'first'         # Pega a data
+    }).reset_index()
 
-# AQUI A MÁGICA DO "TOTAL DOS ITENS GANHOS POR FORNECEDOR"
-agrupado = df.groupby(['fornecedor', 'cnpj', 'licitacao', 'orgao']).agg({
-    'item': 'count',       # Conta quantos itens ganhou
-    'valor': 'sum'         # Soma o valor total
-}).reset_index()
+    # Formata para o JSON do site
+    for _, row in agrupado.iterrows():
+        dados_finais.append({
+            "Portal": "PNCP",
+            "Orgao_Codigo": row['_orgao_codigo'],
+            "Num_Licitacao": row['_num_licitacao'],
+            "Fornecedor": row['nomeRazaoSocialFornecedor'],
+            "Itens_Ganhos": int(row['numeroItem']),
+            "Total_Ganho_R$": float(row['valorTotalHomologado']),
+            "Data_Homologacao": row['dataResultado'][:10] # Só a data YYYY-MM-DD
+        })
 
-for _, row in agrupado.iterrows():
-    dados_finais.append({
-        "Portal": "PNCP",
-        "Orgao_Codigo": row['orgao'], # Adaptar para código real depois
-        "Num_Licitacao": row['licitacao'],
-        "Fornecedor": row['fornecedor'],
-        "Itens_Ganhos": int(row['item']), # Quantidade
-        "Total_Ganho_R$": float(row['valor']), # Valor Soma
-        "Data_Homologacao": DATA_BUSCA
-    })
+# 4. SALVAR/ATUALIZAR ARQUIVO
+# Lê o antigo se existir para não perder histórico
+if os.path.exists(ARQUIVO_SAIDA):
+    try:
+        with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
+            historico = json.load(f)
+    except:
+        historico = []
+else:
+    historico = []
 
-# Salvando
+# Adiciona novos (em um sistema real, verificaria duplicatas aqui)
+historico.extend(dados_finais)
+
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
-    json.dump(dados_finais, f, ensure_ascii=False, indent=4)
+    json.dump(historico, f, ensure_ascii=False, indent=4)
 
-print("Processamento concluído. Arquivo dados.json gerado.")
+print("--- SUCESSO! DADOS REAIS SALVOS ---")
