@@ -5,34 +5,28 @@ from datetime import datetime, timedelta
 import time
 import os
 
-# --- LEITURA DAS DATAS (MÁQUINA DO TEMPO) ---
-# Se o GitHub mandar datas manuais, usa elas. Se não, usa "Ontem".
+# --- CONFIGURAÇÃO DE DATAS (MANTENDO A MÁQUINA DO TEMPO) ---
 env_inicio = os.getenv('DATA_INICIAL')
 env_fim = os.getenv('DATA_FINAL')
 
 if env_inicio and env_fim:
-    # Modo Manual: O usuário escolheu as datas
     data_atual = datetime.strptime(env_inicio, '%Y%m%d')
     data_limite = datetime.strptime(env_fim, '%Y%m%d')
-    print(f"--- MODO MANUAL ATIVADO: De {env_inicio} até {env_fim} ---")
+    print(f"--- MODO MANUAL: De {env_inicio} até {env_fim} ---")
 else:
-    # Modo Automático: Pega apenas Ontem
     data_ontem = datetime.now() - timedelta(days=1)
     data_atual = data_ontem
     data_limite = data_ontem
-    print(f"--- MODO AUTOMÁTICO: Buscando apenas {data_ontem.strftime('%Y%m%d')} ---")
+    print(f"--- MODO AUTOMÁTICO: Buscando {data_ontem.strftime('%Y%m%d')} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens_ganhos = []
 
-# Loop para percorrer CADA DIA do período escolhido
+# --- LOOP PRINCIPAL ---
 while data_atual <= data_limite:
     DATA_BUSCA = data_atual.strftime('%Y%m%d')
     print(f"\n>>> PROCESSANDO DATA: {DATA_BUSCA} <<<")
 
-    # ==============================================================================
-    # 1. BUSCAR LICITAÇÕES (PAGINAÇÃO)
-    # ==============================================================================
     url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
     pagina = 1
     
@@ -44,15 +38,18 @@ while data_atual <= data_limite:
             dados = resp.json().get('data', [])
             if not dados: break
             
-            # 2. ENTRAR NOS RESULTADOS
-            # Processa apenas as primeiras 100 licitações por página para economizar tempo
-            # Se quiser TUDO, remova o [:100]
+            # Processa licitações
             for compra in dados[:100]: 
                 try:
                     cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
                     ano = compra.get('anoCompra')
                     seq = compra.get('sequencialCompra')
                     nome_orgao = compra.get('orgaoEntidade', {}).get('razaoSocial')
+                    uasg = compra.get('unidadeOrgao', {}).get('codigoUnidade', '') # Tenta pegar UASG específica
+                    if not uasg: uasg = cnpj # Se não tiver UASG, usa o CNPJ
+                    
+                    # PEGAR O NÚMERO DO PROCESSO
+                    num_processo = compra.get('processo', 'N/I') 
                     
                     if not (cnpj and ano and seq): continue
                     
@@ -66,46 +63,44 @@ while data_atual <= data_limite:
                         for item in itens:
                             if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
                                 item['_data_ref'] = DATA_BUSCA
-                                item['_orgao'] = f"{cnpj} - {nome_orgao}"
+                                item['_orgao'] = f"{uasg} - {nome_orgao}"
                                 item['_licitacao'] = f"{seq}/{ano}"
+                                item['_processo'] = num_processo # Guarda o processo
                                 todos_itens_ganhos.append(item)
-                    time.sleep(0.1) # Pequena pausa
+                    time.sleep(0.1)
                 except: pass
             
             print(f"  - Pág {pagina} ok...")
             pagina += 1
-            # Limite de segurança: se tiver mais de 50 páginas num dia, para (evita travar)
             if pagina > 50: break 
             
         except: break
 
-    # Avança para o próximo dia
     data_atual += timedelta(days=1)
 
-# ==============================================================================
-# 3. SALVAR TUDO
-# ==============================================================================
-print(f"\n--- Salvando {len(todos_itens_ganhos)} novos registros ---")
+# --- SALVAR ---
+print(f"\n--- Salvando {len(todos_itens_ganhos)} registros ---")
 
 novos_dados = []
 if todos_itens_ganhos:
     df = pd.DataFrame(todos_itens_ganhos)
-    # Agrupa
-    agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_licitacao', '_orgao', '_data_ref']).agg({
+    
+    # Agrupa incluindo o PROCESSO na chave
+    agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_licitacao', '_processo', '_orgao', '_data_ref']).agg({
         'numeroItem': 'count', 'valorTotalHomologado': 'sum'
     }).reset_index()
 
     for _, row in agrupado.iterrows():
         novos_dados.append({
-            "Data_Homologacao": row['_data_ref'], # Formato YYYYMMDD
+            "Data_Homologacao": row['_data_ref'],
             "Orgao_Codigo": row['_orgao'],
             "Num_Licitacao": row['_licitacao'],
+            "Num_Processo": row['_processo'], # Campo Novo
             "Fornecedor": row['nomeRazaoSocialFornecedor'],
             "Total_Ganho_R$": float(row['valorTotalHomologado']),
             "Itens_Ganhos": int(row['numeroItem'])
         })
 
-# Mescla com histórico
 if os.path.exists(ARQUIVO_SAIDA):
     try:
         with open(ARQUIVO_SAIDA, 'r') as f: historico = json.load(f)
