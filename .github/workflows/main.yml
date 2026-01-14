@@ -37,11 +37,10 @@ jobs:
           DATA_FINAL: ${{ github.event.inputs.data_final }}
         run: python coleta_pncp.py
 
-      - name: Salvar Dados (Anti-Conflito)
+      - name: Commit e Push dos Dados
         run: |
-          git config --global user.name 'Robo'
-          git config --global user.email 'robo@email.com'
-          git pull origin main --rebase
-          git add dados.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Carga $(date +'%Y-%m-%d')"
-          git push origin main
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dados.json status.json  # <--- ADICIONE O status.json AQUI
+          git commit -m "Atualizando base de dados e status" || exit 0
+          git push
