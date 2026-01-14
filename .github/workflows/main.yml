@@ -35,10 +35,12 @@ jobs:
           DATA_FINAL: ${{ github.event.inputs.data_final }}
         run: python coleta_pncp.py
 
-      - name: Salvar
+    - name: Salvar Dados
         run: |
           git config --global user.name 'Robo'
           git config --global user.email 'robo@email.com'
+          git pull origin main --rebase  # Isso resolve o conflito "fetch first"
           git add dados.json
-          git commit -m "Carga de dados" || echo "Nada novo"
-          git push
+          # Só faz o commit se houver mudanças reais no arquivo
+          git diff --quiet && git diff --staged --quiet || git commit -m "Carga de dados $(date +'%Y-%m-%d')"
+          git push origin main
