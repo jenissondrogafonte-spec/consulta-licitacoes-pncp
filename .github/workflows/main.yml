@@ -2,6 +2,7 @@ name: Atualizar Licitações
 
 on:
   schedule:
+    # Roda todo dia às 05:00 da manhã (Brasília/Recife)
     - cron: '0 8 * * *'
   workflow_dispatch:
     inputs:
@@ -21,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Necessário para o rebase funcionar
+          fetch-depth: 0 # Necessário para o histórico do git
 
       - name: Configurar Python
         uses: actions/setup-python@v4
@@ -39,19 +40,18 @@ jobs:
 
       - name: Commit e Push dos Dados
         run: |
-          # 1. Configura quem está fazendo o commit
+          # 1. Identidade do Robô
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # 2. Adiciona TODOS os arquivos gerados (dados.json e status.json)
+          # 2. Adiciona os arquivos gerados (dados.json e status.json)
           git add .
           
-          # 3. Faz o commit (Salva localmente). O "|| exit 0" evita erro se não houver mudanças.
+          # 3. Salva localmente (commit)
           git commit -m "Atualizando base de dados e status" || exit 0
           
-          # 4. Agora que está salvo, puxa as novidades do remoto com Rebase
-          # Isso resolve o erro "Cannot pull with rebase: You have unstaged changes"
+          # 4. Puxa atualizações do site evitando conflitos
           git pull --rebase
           
-          # 5. Envia tudo para o GitHub
+          # 5. Envia para o GitHub
           git push
