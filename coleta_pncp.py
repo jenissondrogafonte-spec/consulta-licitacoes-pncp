@@ -15,18 +15,22 @@ HEADERS = {
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Usa Outubro/2025 para garantir (período com muitas homologações)
+# Configuração de datas 
 if env_inicio and env_fim:
     d_ini, d_fim = env_inicio, env_fim
 else:
+    # Se não informar datas, pega Outubro/2025 para teste
     d_ini = "20251001"
     d_fim = "20251005"
 
-print(f"--- ROBÔ FILTRADO (SÓ HOMOLOGADAS): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ TURBO (BUSCA TOTAL): {d_ini} até {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
-MAX_PAGINAS = 5 
+
+# MUDANÇA 1: Aumentamos para 100 páginas (5.000 licitações/dia)
+# Isso garante que ele leia TUDO, mas pare antes se acabar os dados.
+MAX_PAGINAS = 100 
 
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
@@ -38,13 +42,13 @@ while data_atual <= data_final:
     pagina = 1
     
     while pagina <= MAX_PAGINAS:
-        # 1. Busca APENAS Licitações HOMOLOGADAS (Id 4)
+        # 1. Busca Licitações HOMOLOGADAS (Status 4)
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR,
             "dataFinal": DATA_STR,
             "codigoModalidadeContratacao": "6", # Pregão
-            "situacaoCompraId": "4",            # <--- O PULO DO GATO: Filtra só o que já acabou
+            "situacaoCompraId": "4",            # Só homologadas
             "pagina": pagina,
             "tamanhoPagina": 50
         }
@@ -54,9 +58,12 @@ while data_atual <= data_final:
             if resp.status_code != 200: break
             
             licitacoes = resp.json().get('data', [])
-            if not licitacoes: break # Se não tem homologadas nessa página, acabou
             
-            print(f"[P{pagina} - {len(licitacoes)} itens]", end=" ", flush=True)
+            # MUDANÇA 2: Se a lista vier vazia, para o loop deste dia imediatamente
+            if not licitacoes: 
+                break
+            
+            print(f"[P{pagina}]", end=" ", flush=True)
 
             for lic in licitacoes:
                 cnpj_orgao = lic.get('orgaoEntidade', {}).get('cnpj')
@@ -66,52 +73,36 @@ while data_atual <= data_final:
                 nome_orgao = lic.get('orgaoEntidade', {}).get('razaoSocial', '')
                 id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                # 2. Busca Lista de Itens
-                url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
+                # 2. MODO TURBO: Busca TODOS os resultados da compra de uma vez só
+                url_res_global = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/resultados"
                 
                 try:
-                    r_it = requests.get(url_itens, headers=HEADERS, timeout=15)
-                    if r_it.status_code == 200:
-                        lista_itens = r_it.json()
-                        
-                        for it in lista_itens:
-                            # Se a licitação é homologada (Filtro 4), o item DEVE ter resultado
-                            if it.get('temResultado') is True:
-                                num_item = it.get('numeroItem')
-                                
-                                # 3. Busca o Vencedor
-                                url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens/{num_item}/resultados"
-                                
-                                try:
-                                    r_win = requests.get(url_res, headers=HEADERS, timeout=10)
-                                    if r_win.status_code == 200:
-                                        resultados = r_win.json()
-                                        if isinstance(resultados, dict): resultados = [resultados]
+                    r_glob = requests.get(url_res_global, headers=HEADERS, timeout=15)
+                    if r_glob.status_code == 200:
+                        resultados = r_glob.json()
+                        if isinstance(resultados, dict): resultados = [resultados]
 
-                                        for res in resultados:
-                                            cnpj_forn = res.get('niFornecedor')
-                                            nome_forn = res.get('nomeRazaoSocialFornecedor')
-                                            
-                                            # Tratamento permissivo
-                                            if not nome_forn and cnpj_forn:
-                                                nome_forn = f"CNPJ {cnpj_forn}"
-                                            
-                                            valor = res.get('valorTotalHomologado')
-                                            if valor is None: valor = 0
-                                            
-                                            if cnpj_forn:
-                                                todos_itens.append({
-                                                    "Data": DATA_STR,
-                                                    "UASG": uasg,
-                                                    "Orgao": nome_orgao,
-                                                    "Licitacao": id_licitacao,
-                                                    "Fornecedor": nome_forn,
-                                                    "CNPJ": cnpj_forn,
-                                                    "Total": float(valor),
-                                                    "Itens": 1
-                                                })
-                                except: pass
-                                time.sleep(0.05)
+                        for res in resultados:
+                            cnpj_forn = res.get('niFornecedor')
+                            nome_forn = res.get('nomeRazaoSocialFornecedor')
+                            
+                            if not nome_forn and cnpj_forn:
+                                nome_forn = f"CNPJ {cnpj_forn}"
+                            
+                            valor = res.get('valorTotalHomologado')
+                            if valor is None: valor = 0
+                            
+                            if cnpj_forn:
+                                todos_itens.append({
+                                    "Data": DATA_STR,
+                                    "UASG": uasg,
+                                    "Orgao": nome_orgao,
+                                    "Licitacao": id_licitacao,
+                                    "Fornecedor": nome_forn,
+                                    "CNPJ": cnpj_forn,
+                                    "Total": float(valor),
+                                    "Itens": 1
+                                })
                 except: pass
             
             pagina += 1
@@ -141,4 +132,4 @@ final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final, f, indent=4, ensure_ascii=False)
 
-print(f"\n✅ SUCESSO! {len(final)} registros salvos.")
+print(f"\n✅ SUCESSO! Banco de dados atualizado com {len(final)} registros.")
