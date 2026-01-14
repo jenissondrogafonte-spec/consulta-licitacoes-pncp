@@ -4,96 +4,86 @@ import json
 from datetime import datetime, timedelta
 import os
 import sys
-import time
 
 # --- CONFIGURAÇÃO ---
 HEADERS = {
     'Accept': 'application/json',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
 }
 
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Se não houver data, busca os últimos 2 dias
 if env_inicio and env_fim:
-    data_atual = datetime.strptime(env_inicio, '%Y%m%d')
-    data_limite = datetime.strptime(env_fim, '%Y%m%d')
+    d_ini, d_fim = env_inicio, env_fim
 else:
-    data_atual = datetime.now() - timedelta(days=2)
-    data_limite = datetime.now()
+    d_ini = (datetime.now() - timedelta(days=3)).strftime('%Y%m%d')
+    d_fim = datetime.now().strftime('%Y%m%d')
 
-print(f"--- COLETA OTIMIZADA: {data_atual.strftime('%d/%m/%Y')} a {data_limite.strftime('%d/%m/%Y')} ---")
+print(f"--- BUSCA INTEGRADA PNCP + COMPRAS.GOV: {d_ini} a {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# Loop dia a dia para evitar sobrecarga e Timeout
-while data_atual <= data_limite:
-    DATA_STR = data_atual.strftime('%Y%m%d')
-    # Para o endpoint de itens, o formato é AAAA-MM-DD
-    DATA_BUSCA = data_atual.strftime('%Y-%m-%d')
-    
-    print(f"Busca: {DATA_STR}...", end=" ", flush=True)
-    
-    # Endpoint de Itens (Mais leve e direto ao ponto do resultado)
-    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/itens"
-    
-    params = {
-        "pagina": 1,
-        "tamanhoPagina": 100,
-        "dataAtualizacaoInicial": DATA_BUSCA,
-        "dataAtualizacaoFinal": DATA_BUSCA,
-        "codigoModalidadeContratacao": "6" # Pregão
-    }
+# Passo 1: Pegar a lista de licitações no PNCP (Endpoint estável)
+URL_LISTA = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+params = {
+    "dataInicial": d_ini,
+    "dataFinal": d_fim,
+    "codigoModalidadeContratacao": "6",
+    "pagina": 1,
+    "tamanhoPagina": 50
+}
 
-    try:
-        # Aumentamos o timeout para 60 segundos
-        resp = requests.get(url, params=params, headers=HEADERS, timeout=60)
-        
-        if resp.status_code == 200:
-            itens = resp.json().get('data', [])
-            encontrados = 0
-            for it in itens:
-                fornecedor = it.get('nomeRazaoSocialFornecedor')
-                if fornecedor:
-                    uasg = str(it.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
-                    seq = str(it.get('sequencialCompra', '00000')).zfill(5)
-                    ano = it.get('anoCompra')
-                    
-                    todos_itens.append({
-                        "Data": DATA_STR,
-                        "UASG": uasg,
-                        "Orgao": it.get('orgaoEntidade', {}).get('razaoSocial', ''),
-                        "Licitacao": f"{uasg}{seq}{ano}",
-                        "Fornecedor": fornecedor,
-                        "CNPJ": it.get('niFornecedor', ''),
-                        "Total": float(it.get('valorTotalItem', 0)),
-                        "Itens": 1
-                    })
-                    encontrados += 1
-            print(f"OK ({encontrados} itens)")
-        else:
-            print(f"Erro {resp.status_code}")
+try:
+    resp = requests.get(URL_LISTA, params=params, headers=HEADERS, timeout=30)
+    if resp.status_code == 200:
+        licitacoes = resp.json().get('data', [])
+        print(f"✅ {len(licitacoes)} licitações encontradas no PNCP.")
+
+        for lic in licitacoes:
+            cnpj = lic.get('orgaoEntidade', {}).get('cnpj')
+            ano = lic.get('anoCompra')
+            seq = lic.get('sequencialCompra')
+            uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
+
+            # Passo 2: Buscar o resultado no endpoint de ITENS do PNCP (Mais estável que o de resultados)
+            # URL: /pncp/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/itens
+            url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens"
             
-    except Exception as e:
-        print(f"Falha (Timeout ou Conexão)")
+            try:
+                r_itens = requests.get(url_itens, headers=HEADERS, timeout=15)
+                if r_itens.status_code == 200:
+                    itens = r_itens.json()
+                    for it in itens:
+                        # Verificamos se o item tem um fornecedor vencedor informado
+                        # No Compras.gov/PNCP, o resultado aparece aqui:
+                        fornecedor = it.get('nomeRazaoSocialFornecedor')
+                        if fornecedor:
+                            todos_itens.append({
+                                "Data": d_ini,
+                                "UASG": uasg,
+                                "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial', ''),
+                                "Licitacao": f"{uasg}{str(seq).zfill(5)}{ano}",
+                                "Fornecedor": fornecedor,
+                                "CNPJ": it.get('niFornecedor', ''),
+                                "Total": float(it.get('valorTotalItem', 0)),
+                                "Itens": 1
+                            })
+            except: continue
+    else:
+        print(f"❌ Erro ao listar licitações: {resp.status_code}")
 
-    data_atual += timedelta(days=1)
-    time.sleep(1) # Pausa de 1 segundo entre dias para não ser bloqueado
+except Exception as e:
+    print(f"❌ Erro: {e}")
 
 # --- SALVAMENTO ---
 if not todos_itens:
-    print("\n⚠️ Nenhum dado capturado. Tente um intervalo menor (máx 7 dias).")
+    print("⚠️ Nenhuma homologação encontrada (Normal para datas muito recentes).")
     sys.exit(0)
 
-# Agrupamento para somar itens do mesmo fornecedor na mesma licitação
 df = pd.DataFrame(todos_itens)
-agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
-    'Itens': 'sum', 
-    'Total': 'sum'
-}).reset_index()
-
+agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
 novos_dados = agrupado.to_dict(orient='records')
 
 if os.path.exists(ARQUIVO_SAIDA):
@@ -103,10 +93,9 @@ if os.path.exists(ARQUIVO_SAIDA):
 else: historico = []
 
 historico.extend(novos_dados)
-# Remove duplicados
 final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final, f, indent=4, ensure_ascii=False)
 
-print(f"\n💾 Sucesso! Banco de dados atualizado. Total de registros: {len(final)}")
+print(f"💾 Banco de dados atualizado com {len(final)} registros.")
