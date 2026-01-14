@@ -1,10 +1,8 @@
 import requests
-import pandas as pd
 import json
 from datetime import datetime, timedelta
 import os
 import sys
-import time
 
 # --- CONFIGURAÇÃO ---
 HEADERS = {
@@ -18,18 +16,18 @@ env_fim = os.getenv('DATA_FINAL', '').strip()
 if env_inicio and env_fim:
     d_ini, d_fim = env_inicio, env_fim
 else:
-    # AUTOMÁTICO: Pega os últimos 3 dias
+    # MODO AUTOMÁTICO: Pega os últimos 3 dias
     hoje = datetime.now()
     inicio = hoje - timedelta(days=3)
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-print(f"--- ROBÔ HÍBRIDO (STATUS + ABERTURA): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ INFALÍVEL (COM BUSCA PROFUNDA DE DATAS): {d_ini} até {d_fim} ---")
 
 ARQ_VENCEDORES = 'dados.json'
 ARQ_STATUS = 'status.json'
 
-lista_vencedores = []
+dict_vencedores = {} 
 lista_status = []
 MAX_PAGINAS = 100 
 
@@ -47,7 +45,6 @@ while data_atual <= data_final:
         params = {
             "dataInicial": DATA_STR,
             "dataFinal": DATA_STR,
-            "codigoModalidadeContratacao": "6", # Pregão
             "pagina": pagina,
             "tamanhoPagina": 50
         }
@@ -62,35 +59,54 @@ while data_atual <= data_final:
             print(f"[P{pagina}]", end=" ", flush=True)
 
             for lic in licitacoes:
-                # --- DADOS ---
+                # --- DADOS BÁSICOS ---
                 cnpj_orgao = lic.get('orgaoEntidade', {}).get('cnpj')
                 ano = lic.get('anoCompra')
                 seq = lic.get('sequencialCompra')
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
                 nome_orgao = lic.get('orgaoEntidade', {}).get('razaoSocial', '')
-                id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}" # Formato UASG+SEQ+ANO
-                numero_edital = f"{str(seq).zfill(5)}/{ano}"     # Formato Visual (00001/2025)
+                id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}" 
+                numero_edital = f"{str(seq).zfill(5)}/{ano}"     
                 objeto = lic.get('objetoCompra', 'Objeto não informado')
-                
                 situacao_nome = lic.get('situacaoCompraNome', 'Desconhecido')
                 situacao_id = str(lic.get('situacaoCompraId'))
-                
-                # Captura a DATA DE ABERTURA (Novo)
-                data_abertura = lic.get('dataAberturaLicitacao', '') # Vem como 2025-10-14T09:00:00
+                modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida')
 
-                # --- 1. SALVA STATUS ---
+                # --- LÓGICA DE DATA INTELIGENTE ---
+                # Tenta pegar no resumo (rápido)
+                # OBS: dataEncerramentoProposta é o "Fim do Recebimento"
+                dt_abertura = lic.get('dataAberturaLicitacao') 
+                dt_encerramento = lic.get('dataEncerramentoProposta')
+
+                # Se estiver vazio, faz a BUSCA PROFUNDA (Lento, mas garantido)
+                if not dt_abertura and not dt_encerramento:
+                    try:
+                        url_full = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}"
+                        r_full = requests.get(url_full, headers=HEADERS, timeout=5)
+                        if r_full.status_code == 200:
+                            detalhe = r_full.json()
+                            dt_abertura = detalhe.get('dataAberturaLicitacao')
+                            dt_encerramento = detalhe.get('dataEncerramentoProposta')
+                    except: pass
+                
+                # Prioriza a Data de Encerramento (Fim do Recebimento), se não tiver, usa Abertura
+                data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
+                if not data_final_exibicao: data_final_exibicao = "" # Garante string vazia se tudo falhar
+
+                # 1. SALVA STATUS
                 lista_status.append({
-                    "DataPublicacao": DATA_STR,   # Data que foi pro site
-                    "DataAbertura": data_abertura, # Data da sessão (Importante!)
+                    "DataPublicacao": DATA_STR,
+                    "DataAbertura": data_final_exibicao, # Aqui vai a data correta agora
                     "UASG": uasg,
                     "Orgao": nome_orgao,
-                    "Licitacao": id_licitacao,     # ID para busca interna
-                    "Numero": numero_edital,       # ID para leitura humana
+                    "Licitacao": id_licitacao,
+                    "Numero": numero_edital,
+                    "Modalidade": modalidade_nome,
                     "Objeto": objeto,
                     "Status": situacao_nome
                 })
 
-                # --- 2. SALVA VENCEDORES (Só se Homologada/Adjudicada) ---
+                # 2. SALVA VENCEDORES (Se homologada)
                 if situacao_id in ['4', '6']:
                     url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
                     try:
@@ -100,6 +116,9 @@ while data_atual <= data_final:
                             for it in itens:
                                 if it.get('temResultado') is True:
                                     num_item = it.get('numeroItem')
+                                    desc_item = it.get('descricao', 'Item sem descrição')
+                                    qtd_item = it.get('quantidade', 1)
+                                    
                                     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens/{num_item}/resultados"
                                     try:
                                         r_win = requests.get(url_res, headers=HEADERS, timeout=5)
@@ -111,19 +130,34 @@ while data_atual <= data_final:
                                                 cnpj_forn = res.get('niFornecedor')
                                                 nome_forn = res.get('nomeRazaoSocialFornecedor')
                                                 if not nome_forn and cnpj_forn: nome_forn = f"CNPJ {cnpj_forn}"
+                                                
                                                 valor = res.get('valorTotalHomologado')
                                                 if valor is None: valor = 0
-                                                
+                                                valor = float(valor)
+
                                                 if cnpj_forn:
-                                                    lista_vencedores.append({
-                                                        "Data": DATA_STR,
-                                                        "UASG": uasg,
-                                                        "Orgao": nome_orgao,
-                                                        "Licitacao": id_licitacao,
-                                                        "Fornecedor": nome_forn,
-                                                        "CNPJ": cnpj_forn,
-                                                        "Total": float(valor),
-                                                        "Itens": 1
+                                                    chave = f"{id_licitacao}-{cnpj_forn}"
+                                                    
+                                                    if chave not in dict_vencedores:
+                                                        dict_vencedores[chave] = {
+                                                            "Data": DATA_STR,
+                                                            "UASG": uasg,
+                                                            "Orgao": nome_orgao,
+                                                            "Licitacao": id_licitacao,
+                                                            "Fornecedor": nome_forn,
+                                                            "CNPJ": cnpj_forn,
+                                                            "Total": 0.0,
+                                                            "Itens": 0,
+                                                            "DetalhesItens": []
+                                                        }
+                                                    
+                                                    dict_vencedores[chave]["Total"] += valor
+                                                    dict_vencedores[chave]["Itens"] += 1
+                                                    dict_vencedores[chave]["DetalhesItens"].append({
+                                                        "Item": num_item,
+                                                        "Descricao": desc_item,
+                                                        "Qtd": qtd_item,
+                                                        "Valor": valor
                                                     })
                                     except: pass
                     except: pass
@@ -139,17 +173,28 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
         with open(nome_arquivo, 'r', encoding='utf-8') as f:
             try: historico = json.load(f)
             except: historico = []
+    
     historico.extend(dados_novos)
-    final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
+    
+    if nome_arquivo == ARQ_STATUS:
+         unicos = {f"{i['Licitacao']}-{i['Status']}": i for i in historico}
+         final = list(unicos.values())
+    else:
+        final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
+
     with open(nome_arquivo, 'w', encoding='utf-8') as f:
         json.dump(final, f, indent=4, ensure_ascii=False)
     print(f"💾 {nome_arquivo} atualizado! Total: {len(final)} registros.")
 
 print("\n--- RESUMO ---")
+lista_vencedores = list(dict_vencedores.values())
+
 if lista_vencedores:
-    df = pd.DataFrame(lista_vencedores)
-    grp = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
-    salvar_arquivo_json(ARQ_VENCEDORES, grp.to_dict(orient='records'))
+    salvar_arquivo_json(ARQ_VENCEDORES, lista_vencedores)
+else:
+    print("⚠️ Nenhum vencedor novo capturado.")
+
 if lista_status:
-    df_st = pd.DataFrame(lista_status).drop_duplicates(subset=['Licitacao', 'Status'])
-    salvar_arquivo_json(ARQ_STATUS, df_st.to_dict(orient='records'))
+    salvar_arquivo_json(ARQ_STATUS, lista_status)
+else:
+    print("⚠️ Nenhum status novo capturado.")
