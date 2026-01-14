@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status dos Editais - PNCP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gov-blue: #004494; --gov-yellow: #FFD100; }
+        body { background-color: #f4f7fa; font-family: 'Open Sans', sans-serif; }
+        
+        /* Header */
+        .gov-header { background: var(--gov-blue); color: white; padding: 15px 0; border-bottom: 4px solid var(--gov-yellow); margin-bottom: 25px; }
+        .btn-voltar { color: white; border: 1px solid rgba(255,255,255,0.5); }
+        .btn-voltar:hover { background: rgba(255,255,255,0.1); color: white; }
+
+        /* Badges de Status */
+        .badge-status { font-size: 0.85rem; padding: 6px 10px; border-radius: 6px; font-weight: 600; }
+        .st-homologada { background-color: #198754; color: white; } /* Verde */
+        .st-aberta { background-color: #0d6efd; color: white; } /* Azul */
+        .st-disputa { background-color: #ffc107; color: #333; } /* Amarelo */
+        .st-suspensa { background-color: #dc3545; color: white; } /* Vermelho */
+        .st-fracassada { background-color: #6c757d; color: white; } /* Cinza */
+
+        /* Card e Tabela */
+        .main-card { border: none; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .table-custom thead { background: #343a40; color: white; }
+        .table-custom td { vertical-align: middle; font-size: 0.9rem; }
+        .objeto-texto { max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+        .objeto-texto:hover { white-space: normal; overflow: visible; } /* Mostra tudo ao passar o mouse */
+    </style>
+</head>
+<body>
+
+<header class="gov-header">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <h4 class="mb-0 fw-bold"><i class="fas fa-file-contract"></i> Monitor de Editais</h4>
+            <small class="opacity-75">Acompanhamento em tempo real de situações do PNCP</small>
+        </div>
+        <a href="index.html" class="btn btn-voltar btn-sm"><i class="fas fa-arrow-left"></i> Ver Vencedores</a>
+    </div>
+</header>
+
+<div class="container pb-5">
+    <div class="card main-card p-4">
+        
+        <div class="row g-3 mb-4 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label fw-bold small text-secondary">ÓRGÃO PÚBLICO</label>
+                <input type="text" id="inOrg" class="form-control" placeholder="Ex: Prefeitura...">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-bold small text-secondary">PALAVRA-CHAVE NO OBJETO</label>
+                <input type="text" id="inObj" class="form-control" placeholder="Ex: Pneu, Medicamento, Obra...">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-bold small text-secondary">SITUAÇÃO</label>
+                <select id="inStatus" class="form-select">
+                    <option value="">Todas as Situações</option>
+                    <option value="Aguardando">Aguardando Propostas</option>
+                    <option value="Disputa">Em Disputa</option>
+                    <option value="Homologad">Homologada (Vencedor Definido)</option>
+                    <option value="Suspens">Suspensa/Revogada</option>
+                    <option value="Fracassa">Fracassada/Deserta</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button onclick="buscar()" class="btn btn-primary w-100 fw-bold"><i class="fas fa-filter"></i> FILTRAR</button>
+            </div>
+        </div>
+
+        <hr class="text-muted opacity-25">
+
+        <p class="text-end text-muted small mb-2">
+            Mostrando <b id="contador">0</b> registros
+        </p>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-custom border">
+                <thead>
+                    <tr>
+                        <th width="10%">DATA</th>
+                        <th width="20%">ÓRGÃO</th>
+                        <th width="15%">LICITAÇÃO</th>
+                        <th width="40%">OBJETO (Resumo)</th>
+                        <th width="15%" class="text-center">STATUS</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela"></tbody>
+            </table>
+        </div>
+        
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-2 text-muted">Carregando base de editais...</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    let dadosStatus = [];
+
+    // Carrega o JSON gerado pelo Python
+    fetch('status.json?v=' + Date.now())
+        .then(res => res.json())
+        .then(data => {
+            dadosStatus = data;
+            document.getElementById('loading').style.display = 'none';
+            buscar();
+        })
+        .catch(err => {
+            document.getElementById('loading').innerHTML = 
+                '<div class="alert alert-warning">O arquivo status.json ainda não foi gerado pelo robô. Rode o Actions novamente.</div>';
+        });
+
+    function buscar() {
+        const fOrg = document.getElementById('inOrg').value.toLowerCase();
+        const fObj = document.getElementById('inObj').value.toLowerCase();
+        const fSts = document.getElementById('inStatus').value.toLowerCase();
+
+        // Filtra os dados
+        const filtrados = dadosStatus.filter(i => {
+            const matchOrg = (i.Orgao || '').toLowerCase().includes(fOrg);
+            const matchObj = (i.Objeto || '').toLowerCase().includes(fObj);
+            const matchSts = (i.Status || '').toLowerCase().includes(fSts);
+            return matchOrg && matchObj && matchSts;
+        });
+
+        const tbody = document.getElementById('corpoTabela');
+        document.getElementById('contador').innerText = filtrados.length;
+
+        if(filtrados.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" class="text-center py-5 text-muted"><h5>Nenhum edital encontrado</h5><p>Tente mudar os filtros.</p></td></tr>';
+            return;
+        }
+
+        // Monta a tabela (Limitando a 100 resultados para não travar se tiver muitos)
+        tbody.innerHTML = filtrados.slice(0, 100).map(i => {
+            return `
+                <tr>
+                    <td>${formatarData(i.Data)}</td>
+                    <td class="small fw-bold text-secondary">${i.Orgao}</td>
+                    <td>
+                        <span class="badge bg-light text-dark border">${i.UASG}</span><br>
+                        <small class="text-primary fw-bold">${i.Licitacao.slice(6,11)}/${i.Licitacao.slice(11)}</small>
+                    </td>
+                    <td><span class="objeto-texto" title="${i.Objeto}">${i.Objeto}</span></td>
+                    <td class="text-center">${renderBadge(i.Status)}</td>
+                </tr>
+            `;
+        }).join('');
+    }
+
+    function renderBadge(status) {
+        let cls = 'bg-secondary';
+        let st = (status || '').toLowerCase();
+        
+        if(st.includes('homolog')) cls = 'st-homologada';
+        else if(st.includes('aguardando') || st.includes('recebimento')) cls = 'st-aberta';
+        else if(st.includes('disputa')) cls = 'st-disputa';
+        else if(st.includes('susp') || st.includes('revog')) cls = 'st-suspensa';
+        else if(st.includes('fracassa') || st.includes('deserta')) cls = 'st-fracassada';
+
+        return `<span class="badge-status ${cls}">${status}</span>`;
+    }
+
+    function formatarData(d) {
+        if (!d || d.length !== 8) return d;
+        return d.slice(6,8) + '/' + d.slice(4,6) + '/' + d.slice(0,4);
+    }
+</script>
+
+</body>
+</html>
