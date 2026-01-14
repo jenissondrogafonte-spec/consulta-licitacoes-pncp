@@ -1,33 +1,153 @@
 [
     {
-        "CNPJ": "10158356000101",
-        "Data": "20250107",
-        "Fornecedor": "PNEUSTORECOMBR",
-        "Itens": 2,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 31704.0,
-        "UASG": "06005"
+        "CNPJ": "10680757000127",
+        "Data": "20250127",
+        "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
+        "Itens": 1,
+        "Licitacao": "620000062025",
+        "Orgao": "MUNICIPIO DE PITANGUI",
+        "Total": 143950.0,
+        "UASG": "620"
     },
     {
-        "CNPJ": "55623647000161",
-        "Data": "20250107",
-        "Fornecedor": "GAMA PNEUS LTDA",
+        "CNPJ": "46687136000112",
+        "Data": "20250113",
+        "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
         "Itens": 4,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 16394.79,
-        "UASG": "06005"
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 29723.760000000002,
+        "UASG": "196"
     },
     {
-        "CNPJ": "55695599000117",
-        "Data": "20250107",
-        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "CNPJ": "45806440000179",
+        "Data": "20250113",
+        "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 802.0,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "37279287000140",
+        "Data": "20250115",
+        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
+        "Itens": 1,
+        "Licitacao": "06002000012025",
+        "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "Total": 1154999.24,
+        "UASG": "06002"
+    },
+    {
+        "CNPJ": "45999330000170",
+        "Data": "20250127",
+        "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
         "Itens": 3,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 47070.0,
-        "UASG": "06005"
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 358740.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "32532318000100",
+        "Data": "20250127",
+        "Fornecedor": "P&G ALIMENTOS LTDA",
+        "Itens": 4,
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 336321.25,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "06178714000170",
+        "Data": "20250121",
+        "Fornecedor": "Life Remocenter Transporte LTDA",
+        "Itens": 10,
+        "Licitacao": "548000022025",
+        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO CENTRO NORDESTE",
+        "Total": 6415979.1899999995,
+        "UASG": "548"
+    },
+    {
+        "CNPJ": "01645409000390",
+        "Data": "20250117",
+        "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
+        "Itens": 4,
+        "Licitacao": "404340002192025",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "Total": 1001298.1199999999,
+        "UASG": "404340"
+    },
+    {
+        "CNPJ": "22223426000147",
+        "Data": "20250124",
+        "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
+        "Itens": 1,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 6228.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "32163902000135",
+        "Data": "20250107",
+        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
+        "Itens": 2,
+        "Licitacao": "13003000032025",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "Total": 239200.0,
+        "UASG": "13003"
+    },
+    {
+        "CNPJ": "05754099000130",
+        "Data": "20250124",
+        "Fornecedor": "MRX TECNOLOGIA LTDA",
+        "Itens": 1,
+        "Licitacao": "020000112025",
+        "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "Total": 530000.0,
+        "UASG": "020"
+    },
+    {
+        "CNPJ": "11399773000109",
+        "Data": "20250123",
+        "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
+        "Itens": 1,
+        "Licitacao": "620000032025",
+        "Orgao": "MUNICIPIO DE PITANGUI",
+        "Total": 24528.0,
+        "UASG": "620"
+    },
+    {
+        "CNPJ": "15081696000103",
+        "Data": "20250127",
+        "Fornecedor": "BSM ATACADISTA",
+        "Itens": 2,
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 392745.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "12011917000332",
+        "Data": "20250124",
+        "Fornecedor": "ALEA COMERCIAL LTDA",
+        "Itens": 2,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 16219.2,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "51011416000146",
+        "Data": "20250117",
+        "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
+        "Itens": 10,
+        "Licitacao": "343000012025",
+        "Orgao": "MUNICIPIO DE SAO GONCALO DO PARA",
+        "Total": 120908.0,
+        "UASG": "343"
     },
     {
         "CNPJ": "34840358000144",
@@ -40,14 +160,114 @@
         "UASG": "06005"
     },
     {
-        "CNPJ": "21935659000100",
-        "Data": "20250108",
-        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "CNPJ": "15080472000179",
+        "Data": "20250107",
+        "Fornecedor": "AEG PLAYGROUNDS LTDA",
+        "Itens": 5,
+        "Licitacao": "13003000032025",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "Total": 397840.0,
+        "UASG": "13003"
+    },
+    {
+        "CNPJ": "55623647000161",
+        "Data": "20250107",
+        "Fornecedor": "GAMA PNEUS LTDA",
+        "Itens": 4,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 16394.79,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "19032430000113",
+        "Data": "20250124",
+        "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
+        "Itens": 3,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 23499.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "36705522000136",
+        "Data": "20250121",
+        "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
+        "Itens": 3,
+        "Licitacao": "1000012025",
+        "Orgao": "MUNICIPIO DE RONDONOPOLIS",
+        "Total": 174600.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "09505958000109",
+        "Data": "20250131",
+        "Fornecedor": "SCHWAB COMÉRCIO DE PNEUS LTDA",
         "Itens": 1,
-        "Licitacao": "301001532024",
+        "Licitacao": "1000262025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 41680.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "44472217000170",
+        "Data": "20250131",
+        "Fornecedor": "JN PNEUS LTDA",
+        "Itens": 1,
+        "Licitacao": "1000262025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 41877.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "08504258000137",
+        "Data": "20250127",
+        "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
+        "Itens": 1,
+        "Licitacao": "301000042025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 13695180.0,
+        "Total": 22880.0,
         "UASG": "301"
+    },
+    {
+        "CNPJ": "46418740000143",
+        "Data": "20250113",
+        "Fornecedor": "PALADIR LTDA",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 3504.0,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "49042895000116",
+        "Data": "20250124",
+        "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
+        "Itens": 2,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 10675.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "06176619000138",
+        "Data": "20250113",
+        "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
+        "Itens": 2,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 9219.0,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "55695599000117",
+        "Data": "20250107",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "Itens": 3,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 47070.0,
+        "UASG": "06005"
     },
     {
         "CNPJ": "17294606000180",
@@ -60,23 +280,53 @@
         "UASG": "13003"
     },
     {
-        "CNPJ": "15080472000179",
-        "Data": "20250107",
-        "Fornecedor": "AEG PLAYGROUNDS LTDA",
-        "Itens": 5,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 397840.0,
-        "UASG": "13003"
+        "CNPJ": "21935659000100",
+        "Data": "20250108",
+        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "Itens": 1,
+        "Licitacao": "301001532024",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 13695180.0,
+        "UASG": "301"
     },
     {
-        "CNPJ": "32163902000135",
+        "CNPJ": "10158356000101",
         "Data": "20250107",
-        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
+        "Fornecedor": "PNEUSTORECOMBR",
         "Itens": 2,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 239200.0,
-        "UASG": "13003"
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 31704.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "97530228000125",
+        "Data": "20250113",
+        "Fornecedor": "R. DE O. SANTIL EPI",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 13544.5,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "13851726000180",
+        "Data": "20250113",
+        "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 128.66,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "56969923000100",
+        "Data": "20250115",
+        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
+        "Itens": 2,
+        "Licitacao": "06002000012025",
+        "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "Total": 1916990.846,
+        "UASG": "06002"
     }
 ]
