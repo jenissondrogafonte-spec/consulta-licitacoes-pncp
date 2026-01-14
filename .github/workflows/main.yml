@@ -2,17 +2,15 @@ name: Atualizar Licitações
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Roda automático todo dia
+    - cron: '0 8 * * *'
   workflow_dispatch:
     inputs:
       data_inicial:
-        description: 'Data Inicial (Ex: 20250101)'
+        description: 'Data Inicial (AAAAMMDD)'
         required: false
-        default: ''
       data_final:
-        description: 'Data Final (Ex: 20250131)'
+        description: 'Data Final (AAAAMMDD)'
         required: false
-        default: ''
 
 permissions:
   contents: write
@@ -22,25 +20,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Necessário para o rebase funcionar
+
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Instalar
+
+      - name: Instalar Dependencias
         run: pip install requests pandas
-      
-      - name: Rodar Robô
+
+      - name: Rodar Robo
         env:
           DATA_INICIAL: ${{ github.event.inputs.data_inicial }}
           DATA_FINAL: ${{ github.event.inputs.data_final }}
         run: python coleta_pncp.py
 
-    - name: Salvar Dados
+      - name: Salvar Dados (Anti-Conflito)
         run: |
           git config --global user.name 'Robo'
           git config --global user.email 'robo@email.com'
-          git pull origin main --rebase  # Isso resolve o conflito "fetch first"
+          git pull origin main --rebase
           git add dados.json
-          # Só faz o commit se houver mudanças reais no arquivo
-          git diff --quiet && git diff --staged --quiet || git commit -m "Carga de dados $(date +'%Y-%m-%d')"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Carga $(date +'%Y-%m-%d')"
           git push origin main
