@@ -27,39 +27,36 @@ todos_itens = []
 
 # --- FLUXO DE COLETA ---
 while data_atual <= data_limite:
+    # Formato exigido por este endpoint: AAAAMMDD
     DATA_STR = data_atual.strftime('%Y%m%d')
-    # O PNCP exige hifen na data para este endpoint: AAAA-MM-DD
-    DATA_BUSCA = data_atual.strftime('%Y-%m-%d')
     
-    print(f"\n>>> PESQUISANDO ITENS HOMOLOGADOS EM: {DATA_STR} <<<")
+    print(f"\n>>> PESQUISANDO RESULTADOS EM: {DATA_STR} <<<")
     
-    # URL Estável de Consulta de Itens
-    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/itens"
+    # URL DEFINITIVA: Consulta de itens por data de resultado
+    # Esta é a URL que alimenta a pesquisa pública do PNCP
+    url = "https://pncp.gov.br/api/consulta/v1/itens/resultado"
     
     params = {
         "pagina": 1,
         "tamanhoPagina": 100,
-        "dataAtualizacaoInicial": DATA_BUSCA,
-        "dataAtualizacaoFinal": DATA_BUSCA,
+        "dataResultadoInicial": DATA_STR,
+        "dataResultadoFinal": DATA_STR,
         "codigoModalidadeContratacao": "6" # Pregão
     }
 
     try:
+        # Note que não usamos hífens na data aqui, pois esta API prefere o número puro
         resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
         
         if resp.status_code == 200:
             dados = resp.json().get('data', [])
-            print(f"  ✅ Encontrados {len(dados)} registros atualizados.")
+            print(f"  ✅ Sucesso! Encontrados {len(dados)} itens nesta data.")
 
             for item in dados:
-                # Verificamos se o item tem um vencedor (homologado)
-                # No endpoint de itens, o campo geralmente é 'nomeRazaoSocialFornecedor'
                 fornecedor = item.get('nomeRazaoSocialFornecedor')
-                valor = item.get('valorTotalItem', 0)
+                valor = item.get('valorTotalHomologado', 0)
                 
-                # Só salvamos se tiver fornecedor e o item estiver em situação de conclusão
-                situacao = item.get('situacaoCompraItemResultadoNome', '')
-                
+                # Só pegamos se tiver valor e fornecedor
                 if fornecedor and valor > 0:
                     uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
                     ano = item.get('anoCompra')
@@ -76,20 +73,42 @@ while data_atual <= data_limite:
                         "Itens": 1
                     })
         else:
-            print(f"  ❌ Erro API: {resp.status_code} - Verifique se a URL mudou.")
+            print(f"  ❌ Erro API: {resp.status_code}. Tentando formato com hífens...")
+            # Tentativa de correção automática para o formato AAAA-MM-DD
+            params["dataResultadoInicial"] = data_atual.strftime('%Y-%m-%d')
+            params["dataResultadoFinal"] = data_atual.strftime('%Y-%m-%d')
+            resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
             
+            if resp.status_code == 200:
+                print("  ✅ Formato com hífens funcionou!")
+                # ... repete a lógica de processamento ...
+                dados = resp.json().get('data', [])
+                for item in dados:
+                    fornecedor = item.get('nomeRazaoSocialFornecedor')
+                    if fornecedor:
+                        uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
+                        todos_itens.append({
+                            "Data": DATA_STR, "UASG": uasg, 
+                            "Orgao": item.get('orgaoEntidade', {}).get('razaoSocial', ''),
+                            "Licitacao": f"{uasg}{str(item.get('sequencialCompra')).zfill(5)}{item.get('anoCompra')}",
+                            "Fornecedor": fornecedor, "CNPJ": item.get('niFornecedor', ''),
+                            "Total": float(item.get('valorTotalHomologado', 0)), "Itens": 1
+                        })
+            else:
+                print(f"  ❌ Falha total no dia {DATA_STR} (Status {resp.status_code})")
+
     except Exception as e:
-        print(f"  ❌ Falha de conexão: {e}")
+        print(f"  ❌ Erro de conexão: {e}")
 
     data_atual += timedelta(days=1)
-    time.sleep(1)
+    time.sleep(0.5)
 
 # --- PROCESSAMENTO FINAL ---
 if not todos_itens:
-    print("\n⚠️ A API não retornou itens homologados para este período.")
+    print("\n⚠️ Nenhuma informação capturada. Verifique se as datas são dias úteis.")
     sys.exit(0)
 
-# Agrupamento
+# Agrupamento (Somar valores da mesma licitação para o mesmo fornecedor)
 df = pd.DataFrame(todos_itens)
 agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
     'Itens': 'sum',
@@ -98,7 +117,7 @@ agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data
 
 novos_dados = agrupado.to_dict(orient='records')
 
-# Salvar e manter histórico
+# Salvar Histórico
 if os.path.exists(ARQUIVO_SAIDA):
     with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
         try: historico = json.load(f)
@@ -106,10 +125,9 @@ if os.path.exists(ARQUIVO_SAIDA):
 else: historico = []
 
 historico.extend(novos_dados)
-# Remove duplicatas
 final_list = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final_list, f, indent=4, ensure_ascii=False)
 
-print(f"💾 Sucesso! {len(final_list)} registros totais no sistema.")
+print(f"💾 Concluído! Banco de dados agora tem {len(final_list)} registros.")
