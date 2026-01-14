@@ -6,23 +6,20 @@ import time
 import os
 import sys
 
-# --- CONFIGURAÇÃO ---
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json'
 }
 
-# Parâmetros de Data (GitHub Actions)
+# Parâmetros de Data
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if env_inicio and env_fim:
-    env_inicio = env_inicio.replace('/', '').replace('-', '').replace(' ', '')
-    env_fim = env_fim.replace('/', '').replace('-', '').replace(' ', '')
     data_atual = datetime.strptime(env_inicio, '%Y%m%d')
     data_limite = datetime.strptime(env_fim, '%Y%m%d')
+    print(f"--- MODO MANUAL: Buscando HOMOLOGAÇÕES de {env_inicio} até {env_fim} ---")
 else:
-    # Padrão: Ontem
     data_ontem = datetime.now() - timedelta(days=1)
     data_atual = data_ontem
     data_limite = data_ontem
@@ -32,75 +29,68 @@ todos_itens = []
 
 while data_atual <= data_limite:
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n>>> PESQUISANDO PREGÕES EM: {DATA_STR} <<<")
+    print(f"\n>>> PESQUISANDO RESULTADOS HOMOLOGADOS EM: {DATA_STR} <<<")
     
-    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+    # MUDANÇA CHAVE: Agora buscamos direto no endpoint de resultados por data
+    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/resultados"
+    
     params = {
         "dataInicial": DATA_STR,
         "dataFinal": DATA_STR,
-        "codigoModalidadeContratacao": "6", # PREGÃO
+        "codigoModalidadeContratacao": "6", # Pregão
         "pagina": 1,
         "tamanhoPagina": 50
     }
 
     try:
-        resp = requests.get(url, params=params, headers=HEADERS)
+        resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
         if resp.status_code == 200:
-            licitacoes = resp.json().get('data', [])
-            print(f"  Encontradas {len(licitacoes)} licitações.")
+            resultados = resp.json().get('data', [])
+            print(f"  ✅ Encontrados {len(resultados)} itens homologados neste dia.")
 
-            for compra in licitacoes:
-                cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
-                ano = compra.get('anoCompra')
-                seq = compra.get('sequencialCompra')
-                uasg_raw = str(compra.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
-                nome_org = compra.get('orgaoEntidade', {}).get('razaoSocial', '')
-
-                if cnpj and ano and seq:
-                    # Busca Resultados (Vencedores)
-                    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
-                    r_res = requests.get(url_res, headers=HEADERS)
-                    if r_res.status_code == 200:
-                        itens = r_res.json()
-                        if isinstance(itens, dict): itens = [itens]
-                        for item in itens:
-                            if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
-                                item['_data'] = DATA_STR
-                                item['_uasg'] = uasg_raw if uasg_raw else cnpj
-                                item['_orgao_nome'] = nome_org
-                                # Padrão ComprasNet: UASG + Sequencial + Ano
-                                item['_lic_comprasnet'] = f"{item['_uasg']}{seq}{ano}"
-                                todos_itens.append(item)
-                    time.sleep(0.1)
+            for item in resultados:
+                # Captura os dados diretamente do resultado
+                fornecedor = item.get('nomeRazaoSocialFornecedor')
+                valor = item.get('valorTotalHomologado', 0)
+                
+                if fornecedor and valor > 0:
+                    # Informações do Órgão e Licitação
+                    uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
+                    ano = item.get('anoCompra')
+                    seq = item.get('sequencialCompra')
+                    
+                    todos_itens.append({
+                        "Data": DATA_STR,
+                        "UASG": uasg,
+                        "Orgao": item.get('orgaoEntidade', {}).get('razaoSocial', 'Órgão não identificado'),
+                        "Licitacao": f"{uasg}{str(seq).zfill(5)}{ano}",
+                        "Fornecedor": fornecedor,
+                        "CNPJ": item.get('niFornecedor', ''),
+                        "Total": float(valor),
+                        "Itens": 1 # Neste endpoint, cada linha é um item
+                    })
+        else:
+            print(f"  ❌ Erro API: {resp.status_code}")
     except Exception as e:
-        print(f"Erro no dia {DATA_STR}: {e}")
-    
+        print(f"  ❌ Falha: {e}")
+
     data_atual += timedelta(days=1)
+    time.sleep(0.5) # Evitar bloqueio
 
 if not todos_itens:
-    print("\n⚠️ Nenhum dado homologado encontrado.")
+    print("\n⚠️ Nenhum dado encontrado. Tente uma data mais recente (ex: ontem).")
     sys.exit(0)
 
-# Processamento e Agrupamento
+# Agrupar para somar valores caso o mesmo fornecedor tenha ganho vários itens na mesma licitação
 df = pd.DataFrame(todos_itens)
-agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_lic_comprasnet', '_orgao_nome', '_uasg', '_data']).agg({
-    'numeroItem': 'count', 'valorTotalHomologado': 'sum'
+agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
+    'Itens': 'sum',
+    'Total': 'sum'
 }).reset_index()
 
-novos_dados = []
-for _, row in agrupado.iterrows():
-    novos_dados.append({
-        "Data": row['_data'],
-        "UASG": row['_uasg'],
-        "Orgao": row['_orgao_nome'],
-        "Licitacao": row['_lic_comprasnet'],
-        "Fornecedor": row['nomeRazaoSocialFornecedor'],
-        "CNPJ": row['niFornecedor'],
-        "Total": float(row['valorTotalHomologado']),
-        "Itens": int(row['numeroItem'])
-    })
+novos_dados = agrupado.to_dict(orient='records')
 
-# Carrega histórico e mescla
+# Salvar (Mantendo o histórico)
 if os.path.exists(ARQUIVO_SAIDA):
     with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
         try: historico = json.load(f)
@@ -108,10 +98,10 @@ if os.path.exists(ARQUIVO_SAIDA):
 else: historico = []
 
 historico.extend(novos_dados)
-# Remove Duplicatas
+# Remover duplicatas baseadas em todos os campos
 final_list = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final_list, f, indent=4, ensure_ascii=False)
 
-print(f"💾 Sucesso! {len(final_list)} registros totais.")
+print(f"💾 Sucesso! {len(final_list)} registros no total.")
