@@ -3,133 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta PNCP - ComprasNet</title>
+    <title>Painel de Inteligência - Compras Públicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f0f2f5; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-        .main-card { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); }
-        .filter-label { font-size: 0.75rem; font-weight: 700; color: #6c757d; text-transform: uppercase; margin-bottom: 8px; display: block; }
-        .btn-search { background-color: #0056b3; border: none; font-weight: 600; padding: 10px 25px; }
-        .btn-search:hover { background-color: #004494; }
-        .empty-state { text-align: center; padding: 80px 20px; color: #adb5bd; border: 2px dashed #e9ecef; border-radius: 12px; margin-top: 20px; }
-        .table-res { font-size: 0.85rem; }
+        :root { --gov-blue: #004494; --gov-light: #f8f9fa; --gov-accent: #2369B3; }
+        body { background-color: #f4f7fa; font-family: 'Open Sans', sans-serif; color: #333; }
+        
+        /* Cabeçalho Estilo Governo */
+        .gov-header { background: var(--gov-blue); color: white; padding: 20px 0; border-bottom: 4px solid #FFD100; margin-bottom: 30px; }
+        .main-container { background: white; border-radius: 8px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        
+        /* Cartões de Indicadores */
+        .stat-card { border: none; border-radius: 10px; padding: 20px; color: white; transition: 0.3s; }
+        .bg-money { background: linear-gradient(45deg, #28a745, #20c997); }
+        .bg-items { background: linear-gradient(45deg, #17a2b8, #007bff); }
+        .bg-orgs { background: linear-gradient(45deg, #6610f2, #6f42c1); }
+        .stat-value { font-size: 1.8rem; font-weight: 700; margin: 0; }
+        .stat-label { font-size: 0.8rem; text-transform: uppercase; opacity: 0.9; font-weight: 600; }
+
+        /* Filtros */
+        .filter-section { background: var(--gov-light); padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid var(--gov-blue); }
+        .form-label { font-size: 0.75rem; font-weight: 700; color: #555; }
+        .btn-search { background: var(--gov-blue); color: white; border: none; font-weight: 600; }
+        .btn-search:hover { background: var(--gov-accent); color: white; }
+
+        /* Tabela */
+        .table-custom { font-size: 0.85rem; border-radius: 8px; overflow: hidden; }
+        .table-custom thead { background: #343a40; color: white; }
+        .empty-state { text-align: center; padding: 60px; color: #adb5bd; border: 2px dashed #dee2e6; border-radius: 8px; }
     </style>
 </head>
-<body class="p-4">
-    <div class="container-fluid main-card">
-        <h4 class="text-dark mb-4 fw-bold">🔍 Consulta de Pregões (Padrão ComprasNet)</h4>
+<body>
+
+<header class="gov-header text-center">
+    <div class="container">
+        <h2 class="mb-0">🏛️ Painel de Monitoramento PNCP</h2>
+        <p class="small mb-0 opacity-75">Baseado na Lei 14.133/21 - Dados Extraídos do ComprasNet</p>
+    </div>
+</header>
+
+<div class="container-fluid px-4 pb-5">
+    <div class="main-container">
         
-        <div class="row g-3 mb-4 align-items-end">
-            <div class="col-md-3">
-                <label class="filter-label">Fornecedor ou CNPJ</label>
-                <input type="text" id="inForn" class="form-control" placeholder="Ex: Nome da Empresa">
+        <div class="row g-3 mb-4" id="rowIndicadores" style="display: none;">
+            <div class="col-md-4">
+                <div class="stat-card bg-money">
+                    <p class="stat-label">Valor Total Homologado</p>
+                    <p class="stat-value" id="valTotal">R$ 0,00</p>
+                </div>
             </div>
-            <div class="col-md-3">
-                <label class="filter-label">Nome do Órgão</label>
-                <input type="text" id="inOrg" class="form-control" placeholder="Ex: Fundo Municipal">
+            <div class="col-md-4">
+                <div class="stat-card bg-items">
+                    <p class="stat-label">Total de Itens Ganhos</p>
+                    <p class="stat-value" id="valItens">0</p>
+                </div>
             </div>
-            <div class="col-md-2">
-                <label class="filter-label">Cód. UASG</label>
-                <input type="text" id="inUasg" class="form-control" placeholder="Ex: 926150">
-            </div>
-            <div class="col-md-2">
-                <label class="filter-label">Licitação (UASG+Nº+Ano)</label>
-                <input type="text" id="inLic" class="form-control" placeholder="Ex: 926150901402025">
-            </div>
-            <div class="col-md-2 d-flex gap-2">
-                <button onclick="buscar()" class="btn btn-search text-white w-100">Pesquisar</button>
-                <button onclick="limpar()" class="btn btn-outline-secondary">Limpar</button>
+            <div class="col-md-4">
+                <div class="stat-card bg-orgs">
+                    <p class="stat-label">Empresas Encontradas</p>
+                    <p class="stat-value" id="valEmpresas">0</p>
+                </div>
             </div>
         </div>
 
-        <div id="wrapperResultados" style="display: none;">
+        <div class="filter-section">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-3">
+                    <label class="form-label">FORNECEDOR / CNPJ</label>
+                    <input type="text" id="inForn" class="form-control" placeholder="Digite nome ou CNPJ...">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">ÓRGÃO PÚBLICO</label>
+                    <input type="text" id="inOrg" class="form-control" placeholder="Ex: Prefeitura de...">
+                </div>
+                <div class="col-md-2">
+                    <label class="form-label">UASG</label>
+                    <input type="text" id="inUasg" class="form-control" placeholder="Ex: 926150">
+                </div>
+                <div class="col-md-2">
+                    <label class="form-label">LICITAÇÃO (UASG+SEQ+ANO)</label>
+                    <input type="text" id="inLic" class="form-control" placeholder="Identificação da Compra">
+                </div>
+                <div class="col-md-2 d-flex gap-2">
+                    <button onclick="buscar()" class="btn btn-search w-100 py-2">PESQUISAR</button>
+                    <button onclick="limpar()" class="btn btn-outline-secondary py-2">LIMPAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultadoContainer" style="display: none;">
             <div class="table-responsive">
-                <table class="table table-hover border table-res">
-                    <thead class="table-light">
+                <table class="table table-hover table-custom border">
+                    <thead>
                         <tr>
-                            <th>Data</th>
+                            <th>DATA</th>
                             <th>UASG</th>
-                            <th>Órgão</th>
-                            <th>Licitação (ComprasNet)</th>
-                            <th>Fornecedor</th>
-                            <th class="text-center">Itens</th>
-                            <th>Total (R$)</th>
+                            <th>ÓRGÃO / ENTIDADE</th>
+                            <th>IDENTIFICAÇÃO DA COMPRA</th>
+                            <th>FORNECEDOR</th>
+                            <th class="text-center">ITENS</th>
+                            <th class="text-end">VALOR TOTAL (R$)</th>
                         </tr>
                     </thead>
                     <tbody id="corpoTabela"></tbody>
                 </table>
             </div>
-            <div id="contador" class="mt-2 small text-muted"></div>
         </div>
 
-        <div id="avisoInicial" class="empty-state">
-            <h5>Nenhum filtro aplicado</h5>
-            <p>Utilize os campos acima para pesquisar pregões específicos.</p>
+        <div id="estadoVazio" class="empty-state">
+            <img src="https://cdn-icons-png.flaticon.com/512/1076/1076334.png" width="80" class="mb-3 opacity-25">
+            <h5>Nenhum dado filtrado</h5>
+            <p>Preencha os campos acima para gerar os indicadores e a listagem de processos.</p>
         </div>
+
     </div>
+</div>
 
-    <script>
-        let db = [];
-        // Carrega dados e evita cache
-        fetch('dados.json?v=' + Date.now())
-            .then(res => res.json())
-            .then(data => { db = data; })
-            .catch(() => console.error("Base de dados não encontrada."));
+<script>
+    let dadosBanco = [];
+    
+    // Carrega dados evitando cache
+    fetch('dados.json?v=' + Date.now())
+        .then(res => res.json())
+        .then(data => { dadosBanco = data; })
+        .catch(err => console.error("Erro ao carregar banco:", err));
 
-        function buscar() {
-            const fF = document.getElementById('inForn').value.toLowerCase().trim();
-            const fO = document.getElementById('inOrg').value.toLowerCase().trim();
-            const fU = document.getElementById('inUasg').value.trim();
-            const fL = document.getElementById('inLic').value.trim();
+    function buscar() {
+        const fF = document.getElementById('inForn').value.toLowerCase().trim();
+        const fO = document.getElementById('inOrg').value.toLowerCase().trim();
+        const fU = document.getElementById('inUasg').value.trim();
+        const fL = document.getElementById('inLic').value.trim();
 
-            if(!fF && !fO && !fU && !fL) {
-                alert("Preencha ao menos um campo!");
-                return;
-            }
-
-            const r = db.filter(i => {
-                return ( (i.Fornecedor || '').toLowerCase().includes(fF) || (i.CNPJ || '').includes(fF) ) &&
-                       ( (i.Orgao || '').toLowerCase().includes(fO) ) &&
-                       ( (i.UASG || '').includes(fU) ) &&
-                       ( (i.Licitacao || '').includes(fL) );
-            });
-
-            const wrap = document.getElementById('wrapperResultados');
-            const aviso = document.getElementById('avisoInicial');
-            const tbody = document.getElementById('corpoTabela');
-            
-            aviso.style.display = 'none';
-            wrap.style.display = 'block';
-
-            if(r.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="7" class="text-center p-5">Nenhum dado encontrado para essa busca.</td></tr>';
-                document.getElementById('contador').innerText = "";
-            } else {
-                tbody.innerHTML = r.reverse().map(i => `
-                    <tr>
-                        <td>${formatarData(i.Data)}</td>
-                        <td class="fw-bold text-muted">${i.UASG || ''}</td>
-                        <td>${i.Orgao || ''}</td>
-                        <td class="text-primary fw-bold">${i.Licitacao || ''}</td>
-                        <td><b>${i.Fornecedor || ''}</b><br><small class="text-muted">${i.CNPJ || ''}</small></td>
-                        <td class="text-center">${i.Itens || '0'}</td>
-                        <td class="text-success fw-bold">R$ ${Number(i.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                    </tr>
-                `).join('');
-                document.getElementById('contador').innerText = `Mostrando ${r.length} registro(s).`;
-            }
+        if(!fF && !fO && !fU && !fL) {
+            alert("Por favor, informe ao menos um critério de pesquisa.");
+            return;
         }
 
-        function limpar() {
-            document.querySelectorAll('input').forEach(i => i.value = '');
-            document.getElementById('wrapperResultados').style.display = 'none';
-            document.getElementById('avisoInicial').style.display = 'block';
+        const resultados = dadosBanco.filter(i => {
+            return ( (i.Fornecedor || '').toLowerCase().includes(fF) || (i.CNPJ || '').includes(fF) ) &&
+                   ( (i.Orgao || '').toLowerCase().includes(fO) ) &&
+                   ( (i.UASG || '').includes(fU) ) &&
+                   ( (i.Licitacao || '').includes(fL) );
+        });
+
+        atualizarInterface(resultados);
+    }
+
+    function atualizarInterface(lista) {
+        const rowInd = document.getElementById('rowIndicadores');
+        const resCont = document.getElementById('resultadoContainer');
+        const vazio = document.getElementById('estadoVazio');
+        const tbody = document.getElementById('corpoTabela');
+
+        if (lista.length === 0) {
+            alert("Nenhum registro encontrado para estes filtros.");
+            return;
         }
 
-        function formatarData(d) {
-            if (!d || d.length !== 8) return d;
-            return d.slice(6,8) + '/' + d.slice(4,6) + '/' + d.slice(0,4);
-        }
-    </script>
+        vazio.style.display = 'none';
+        rowInd.style.display = 'flex';
+        resCont.style.display = 'block';
+
+        // Cálculos dos Indicadores
+        let totalDinheiro = 0;
+        let totalItens = 0;
+        let empresasUnicas = new Set();
+
+        tbody.innerHTML = lista.reverse().map(i => {
+            totalDinheiro += i.Total;
+            totalItens += i.Itens;
+            empresasUnicas.add(i.CNPJ);
+
+            return `
+                <tr>
+                    <td>${formatarData(i.Data)}</td>
+                    <td class="text-secondary fw-bold">${i.UASG || ''}</td>
+                    <td>${i.Orgao || ''}</td>
+                    <td class="text-primary fw-bold">${i.Licitacao || ''}</td>
+                    <td><b>${i.Fornecedor || ''}</b><br><small class="text-muted">${i.CNPJ || ''}</small></td>
+                    <td class="text-center">${i.Itens || '0'}</td>
+                    <td class="text-end fw-bold text-success">R$ ${Number(i.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                </tr>
+            `;
+        }).join('');
+
+        // Atualiza os cartões
+        document.getElementById('valTotal').innerText = totalDinheiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.getElementById('valItens').innerText = totalItens;
+        document.getElementById('valEmpresas').innerText = empresasUnicas.size;
+    }
+
+    function limpar() {
+        location.reload(); // Forma mais rápida de resetar o estado
+    }
+
+    function formatarData(d) {
+        if (!d || d.length !== 8) return d;
+        return d.slice(6,8) + '/' + d.slice(4,6) + '/' + d.slice(0,4);
+    }
+</script>
+
 </body>
 </html>
