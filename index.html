@@ -3,135 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Pregões PNCP</title>
+    <title>Consulta PNCP - ComprasNet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .search-container { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        .filter-title { font-size: 0.8rem; font-weight: bold; color: #495057; text-transform: uppercase; margin-bottom: 5px; }
-        .table-custom { font-size: 0.85rem; }
-        .empty-state { padding: 60px; text-align: center; color: #6c757d; border: 2px dashed #dee2e6; border-radius: 10px; margin-top: 20px; }
-        .btn-search { background-color: #0d6efd; color: white; transition: 0.3s; }
-        .btn-search:hover { background-color: #0b5ed7; }
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        .main-card { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); }
+        .filter-label { font-size: 0.75rem; font-weight: 700; color: #6c757d; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .btn-search { background-color: #0056b3; border: none; font-weight: 600; padding: 10px 25px; }
+        .btn-search:hover { background-color: #004494; }
+        .empty-state { text-align: center; padding: 80px 20px; color: #adb5bd; border: 2px dashed #e9ecef; border-radius: 12px; margin-top: 20px; }
+        .table-res { font-size: 0.85rem; }
     </style>
 </head>
 <body class="p-4">
-    <div class="container-fluid search-container">
-        <h3 class="text-primary mb-4 border-bottom pb-2">🔍 Consulta de Pregões (ComprasNet)</h3>
+    <div class="container-fluid main-card">
+        <h4 class="text-dark mb-4 fw-bold">🔍 Consulta de Pregões (Padrão ComprasNet)</h4>
         
-        <div class="row g-3 mb-4">
+        <div class="row g-3 mb-4 align-items-end">
             <div class="col-md-3">
-                <label class="filter-title">Fornecedor / CNPJ</label>
-                <input type="text" id="fForn" class="form-control" placeholder="Ex: Nome da Empresa">
+                <label class="filter-label">Fornecedor ou CNPJ</label>
+                <input type="text" id="inForn" class="form-control" placeholder="Ex: Nome da Empresa">
             </div>
             <div class="col-md-3">
-                <label class="filter-title">Nome do Órgão</label>
-                <input type="text" id="fOrg" class="form-control" placeholder="Ex: Secretaria de Saúde">
+                <label class="filter-label">Nome do Órgão</label>
+                <input type="text" id="inOrg" class="form-control" placeholder="Ex: Fundo Municipal">
             </div>
             <div class="col-md-2">
-                <label class="filter-title">Cód. UASG</label>
-                <input type="text" id="fUasg" class="form-control" placeholder="Ex: 926150">
+                <label class="filter-label">Cód. UASG</label>
+                <input type="text" id="inUasg" class="form-control" placeholder="Ex: 926150">
             </div>
             <div class="col-md-2">
-                <label class="filter-title">Licitação (UASG+Nº+Ano)</label>
-                <input type="text" id="fLic" class="form-control" placeholder="Ex: 926150901402025">
+                <label class="filter-label">Licitação (UASG+Nº+Ano)</label>
+                <input type="text" id="inLic" class="form-control" placeholder="Ex: 926150901402025">
             </div>
-            <div class="col-md-2 d-flex align-items-end gap-2">
-                <button onclick="realizarBusca()" class="btn btn-search w-100 fw-bold">Pesquisar</button>
-                <button onclick="limparTudo()" class="btn btn-outline-secondary w-100">Limpar</button>
+            <div class="col-md-2 d-flex gap-2">
+                <button onclick="buscar()" class="btn btn-search text-white w-100">Pesquisar</button>
+                <button onclick="limpar()" class="btn btn-outline-secondary">Limpar</button>
             </div>
         </div>
 
-        <div class="table-responsive" id="areaResultados" style="display: none;">
-            <table class="table table-hover table-bordered table-custom">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Data</th>
-                        <th>Cód. UASG</th>
-                        <th>Órgão Entidade</th>
-                        <th>Licitação (ComprasNet)</th>
-                        <th>Fornecedor</th>
-                        <th class="text-center">Itens</th>
-                        <th>Valor Total</th>
-                    </tr>
-                </thead>
-                <tbody id="listaDados"></tbody>
-            </table>
-            <div id="resultadoInfo" class="text-muted small"></div>
+        <div id="wrapperResultados" style="display: none;">
+            <div class="table-responsive">
+                <table class="table table-hover border table-res">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Data</th>
+                            <th>UASG</th>
+                            <th>Órgão</th>
+                            <th>Licitação (ComprasNet)</th>
+                            <th>Fornecedor</th>
+                            <th class="text-center">Itens</th>
+                            <th>Total (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela"></tbody>
+                </table>
+            </div>
+            <div id="contador" class="mt-2 small text-muted"></div>
         </div>
 
-        <div id="estadoVazio" class="empty-state">
-            <p class="mb-0">Preencha um ou mais filtros acima e clique em <b>Pesquisar</b> para visualizar os dados.</p>
+        <div id="avisoInicial" class="empty-state">
+            <h5>Nenhum filtro aplicado</h5>
+            <p>Utilize os campos acima para pesquisar pregões específicos.</p>
         </div>
     </div>
 
     <script>
-        window.baseDados = [];
-        const endpoint = 'dados.json?v=' + Date.now();
-
-        // Carrega os dados silenciosamente ao abrir a página
-        fetch(endpoint)
+        let db = [];
+        // Carrega dados e evita cache
+        fetch('dados.json?v=' + Date.now())
             .then(res => res.json())
-            .then(data => {
-                window.baseDados = data; 
-                console.log("Dados carregados e prontos para consulta.");
-            })
-            .catch(() => console.error("Erro ao carregar banco de dados."));
+            .then(data => { db = data; })
+            .catch(() => console.error("Base de dados não encontrada."));
 
-        function realizarBusca() {
-            const vForn = document.getElementById('fForn').value.toLowerCase().trim();
-            const vOrg = document.getElementById('fOrg').value.toLowerCase().trim();
-            const vUasg = document.getElementById('fUasg').value.trim();
-            const vLic = document.getElementById('fLic').value.trim();
+        function buscar() {
+            const fF = document.getElementById('inForn').value.toLowerCase().trim();
+            const fO = document.getElementById('inOrg').value.toLowerCase().trim();
+            const fU = document.getElementById('inUasg').value.trim();
+            const fL = document.getElementById('inLic').value.trim();
 
-            // Se todos os campos estiverem vazios, não busca nada por segurança
-            if (!vForn && !vOrg && !vUasg && !vLic) {
-                alert("Por favor, preencha pelo menos um campo para pesquisar.");
+            if(!fF && !fO && !fU && !fL) {
+                alert("Preencha ao menos um campo!");
                 return;
             }
 
-            const filtrados = window.baseDados.filter(i => {
-                return ( (i.Fornecedor || '').toLowerCase().includes(vForn) || (i.CNPJ || '').includes(vForn) ) &&
-                       ( (i.Orgao || '').toLowerCase().includes(vOrg) ) &&
-                       ( (i.UASG || '').includes(vUasg) ) &&
-                       ( (i.Licitacao || '').includes(vLic) );
+            const r = db.filter(i => {
+                return ( (i.Fornecedor || '').toLowerCase().includes(fF) || (i.CNPJ || '').includes(fF) ) &&
+                       ( (i.Orgao || '').toLowerCase().includes(fO) ) &&
+                       ( (i.UASG || '').includes(fU) ) &&
+                       ( (i.Licitacao || '').includes(fL) );
             });
 
-            exibirResultados(filtrados);
-        }
-
-        function exibirResultados(lista) {
-            const area = document.getElementById('areaResultados');
-            const vazio = document.getElementById('estadoVazio');
-            const tbody = document.getElementById('listaDados');
-            const info = document.getElementById('resultadoInfo');
-
-            vazio.style.display = 'none';
-            area.style.display = 'block';
+            const wrap = document.getElementById('wrapperResultados');
+            const aviso = document.getElementById('avisoInicial');
+            const tbody = document.getElementById('corpoTabela');
             
-            if (lista.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="7" class="text-center p-4">Nenhum registro encontrado para esta pesquisa.</td></tr>';
-                info.innerText = "";
+            aviso.style.display = 'none';
+            wrap.style.display = 'block';
+
+            if(r.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="text-center p-5">Nenhum dado encontrado para essa busca.</td></tr>';
+                document.getElementById('contador').innerText = "";
             } else {
-                tbody.innerHTML = lista.map(item => `
+                tbody.innerHTML = r.reverse().map(i => `
                     <tr>
-                        <td>${formatarData(item.Data)}</td>
-                        <td class="fw-bold text-secondary">${item.UASG || ''}</td>
-                        <td>${item.Orgao || ''}</td>
-                        <td class="text-primary fw-bold">${item.Licitacao || ''}</td>
-                        <td><b>${item.Fornecedor || ''}</b><br><small class="text-muted">${item.CNPJ || ''}</small></td>
-                        <td class="text-center">${item.Itens || '0'}</td>
-                        <td class="text-success fw-bold">R$ ${Number(item.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                        <td>${formatarData(i.Data)}</td>
+                        <td class="fw-bold text-muted">${i.UASG || ''}</td>
+                        <td>${i.Orgao || ''}</td>
+                        <td class="text-primary fw-bold">${i.Licitacao || ''}</td>
+                        <td><b>${i.Fornecedor || ''}</b><br><small class="text-muted">${i.CNPJ || ''}</small></td>
+                        <td class="text-center">${i.Itens || '0'}</td>
+                        <td class="text-success fw-bold">R$ ${Number(i.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
                     </tr>
                 `).join('');
-                info.innerText = `Encontrado(s) ${lista.length} registro(s).`;
+                document.getElementById('contador').innerText = `Mostrando ${r.length} registro(s).`;
             }
         }
 
-        function limparTudo() {
-            document.querySelectorAll('input').forEach(input => input.value = '');
-            document.getElementById('areaResultados').style.display = 'none';
-            document.getElementById('estadoVazio').style.display = 'block';
+        function limpar() {
+            document.querySelectorAll('input').forEach(i => i.value = '');
+            document.getElementById('wrapperResultados').style.display = 'none';
+            document.getElementById('avisoInicial').style.display = 'block';
         }
 
         function formatarData(d) {
