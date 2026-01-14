@@ -6,74 +6,82 @@ import os
 import sys
 
 # --- CONFIGURAÇÃO ---
-# URL REAL DE PRODUÇÃO (Baseada no Gateway do Governo)
-URL_API = "https://dadosabertos.compras.gov.br/modulo-contratacoes/v1/consultarResultadoItensContratacoes_PNCP_14133"
-
 HEADERS = {
     'Accept': 'application/json',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
 }
 
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Formato AAAAMMDD para a API de Dados Abertos
 if env_inicio and env_fim:
-    d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
-    d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
+    d_ini, d_fim = env_inicio, env_fim
 else:
-    d_ini = (datetime.now() - timedelta(days=5)).strftime('%Y-%m-%d')
-    d_fim = datetime.now().strftime('%Y-%m-%d')
+    d_ini = (datetime.now() - timedelta(days=3)).strftime('%Y%m%d')
+    d_fim = datetime.now().strftime('%Y%m%d')
 
-print(f"--- ACESSANDO DADOS ABERTOS GOV: {d_ini} até {d_fim} ---")
+print(f"--- BUSCA INTEGRADA PNCP + COMPRAS.GOV: {d_ini} a {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# Parâmetros exatos conforme o Swagger
+# Passo 1: Pegar a lista de licitações no PNCP (Endpoint estável)
+URL_LISTA = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
 params = {
-    "dataPublicacaoPncpInicial": d_ini,
-    "dataPublicacaoPncpFinal": d_fim,
-    "pagina": 1
+    "dataInicial": d_ini,
+    "dataFinal": d_fim,
+    "codigoModalidadeContratacao": "6",
+    "pagina": 1,
+    "tamanhoPagina": 50
 }
 
 try:
-    # Testamos a URL com /v1/ que é o padrão de Gateway
-    resp = requests.get(URL_API, params=params, headers=HEADERS, timeout=30)
-    
+    resp = requests.get(URL_LISTA, params=params, headers=HEADERS, timeout=30)
     if resp.status_code == 200:
-        # Se entrar aqui, o 404 foi resolvido!
-        resultado = resp.json().get('resultado', [])
-        print(f"✅ Sucesso! {len(resultado)} itens encontrados.")
-        
-        for item in resultado:
-            if item.get('codigoModalidade') == 6: # Pregão
-                uasg = str(item.get('codigoUasg', '')).zfill(6)
-                seq = str(item.get('numeroCompra', '')).zfill(5)
-                ano = item.get('anoCompra')
-                
-                todos_itens.append({
-                    "Data": item.get('dataPublicacaoPncp', '')[:10].replace('-', ''),
-                    "UASG": uasg,
-                    "Orgao": item.get('nomeOrgao', 'Órgão Federal'),
-                    "Licitacao": f"{uasg}{seq}{ano}",
-                    "Fornecedor": item.get('nomeRazaoSocialFornecedor', 'N/I'),
-                    "CNPJ": item.get('niFornecedor', ''),
-                    "Total": float(item.get('valorTotalHomologado', 0)),
-                    "Itens": 1
-                })
+        licitacoes = resp.json().get('data', [])
+        print(f"✅ {len(licitacoes)} licitações encontradas no PNCP.")
+
+        for lic in licitacoes:
+            cnpj = lic.get('orgaoEntidade', {}).get('cnpj')
+            ano = lic.get('anoCompra')
+            seq = lic.get('sequencialCompra')
+            uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
+
+            # Passo 2: Buscar o resultado no endpoint de ITENS do PNCP (Mais estável que o de resultados)
+            # URL: /pncp/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/itens
+            url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens"
+            
+            try:
+                r_itens = requests.get(url_itens, headers=HEADERS, timeout=15)
+                if r_itens.status_code == 200:
+                    itens = r_itens.json()
+                    for it in itens:
+                        # Verificamos se o item tem um fornecedor vencedor informado
+                        # No Compras.gov/PNCP, o resultado aparece aqui:
+                        fornecedor = it.get('nomeRazaoSocialFornecedor')
+                        if fornecedor:
+                            todos_itens.append({
+                                "Data": d_ini,
+                                "UASG": uasg,
+                                "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial', ''),
+                                "Licitacao": f"{uasg}{str(seq).zfill(5)}{ano}",
+                                "Fornecedor": fornecedor,
+                                "CNPJ": it.get('niFornecedor', ''),
+                                "Total": float(it.get('valorTotalItem', 0)),
+                                "Itens": 1
+                            })
+            except: continue
     else:
-        print(f"❌ Erro {resp.status_code}. A API respondeu: {resp.text[:100]}")
+        print(f"❌ Erro ao listar licitações: {resp.status_code}")
 
 except Exception as e:
-    print(f"❌ Falha de Conexão: {e}")
+    print(f"❌ Erro: {e}")
 
 # --- SALVAMENTO ---
 if not todos_itens:
-    print("⚠️ Nenhum dado capturado.")
+    print("⚠️ Nenhuma homologação encontrada (Normal para datas muito recentes).")
     sys.exit(0)
 
-# Agrupar e salvar (mantendo seu padrão)
 df = pd.DataFrame(todos_itens)
 agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
 novos_dados = agrupado.to_dict(orient='records')
