@@ -20,6 +20,7 @@ if env_inicio and env_fim:
     d_ini = env_inicio
     d_fim = env_fim
 else:
+    # Padrão: Ontem (Dia 13/01/2026)
     ontem = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
     d_ini, d_fim = ontem, ontem
 
@@ -28,7 +29,7 @@ print(f"--- BUSCA DE RESULTADOS PNCP: {d_ini} a {d_fim} ---")
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# URL DE RESULTADOS DE ITENS (Esta é a URL que não dá 404)
+# URL DE RESULTADOS DE ITENS (Endpoint oficial para homologações)
 URL_API = "https://pncp.gov.br/api/consulta/v1/itens/resultado"
 
 params = {
@@ -40,16 +41,13 @@ params = {
 }
 
 try:
-    # Chamada para a API de resultados
     resp = requests.get(URL_API, params=params, headers=HEADERS, timeout=60)
     
     if resp.status_code == 200:
-        # A API retorna os dados dentro da chave 'data'
         dados = resp.json().get('data', [])
         print(f"✅ Sucesso! {len(dados)} itens homologados encontrados.")
 
         for item in dados:
-            # Pegamos apenas itens que têm um fornecedor vencedor
             fornecedor = item.get('nomeRazaoSocialFornecedor')
             valor = item.get('valorTotalHomologado', 0)
             
@@ -70,18 +68,37 @@ try:
                 })
     else:
         print(f"❌ Erro na API: {resp.status_code}")
-        print(f"Mensagem: {resp.text[:100]}")
-
 except Exception as e:
     print(f"❌ Falha de conexão: {e}")
 
 # --- PROCESSAMENTO E SALVAMENTO ---
 if not todos_itens:
-    print("\n⚠️ Nenhum item encontrado. Dica: Tente dias úteis recentes (ex: ontem).")
+    print("\n⚠️ Nenhum item encontrado para estas datas.")
     sys.exit(0)
 
 df = pd.DataFrame(todos_itens)
-# Agrupar itens da mesma licitação para o mesmo fornecedor
 agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
     'Itens': 'sum', 
     'Total': 'sum'
+}).reset_index()
+
+novos_dados = agrupado.to_dict(orient='records')
+
+if os.path.exists(ARQUIVO_SAIDA):
+    with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
+        try:
+            historico = json.load(f)
+        except:
+            historico = []
+else:
+    historico = []
+
+historico.extend(novos_dados)
+
+# Remover duplicatas
+final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
+
+with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
+    json.dump(final, f, indent=4, ensure_ascii=False)
+
+print(f"💾 Banco de dados atualizado! Total: {len(final)} registros.")
