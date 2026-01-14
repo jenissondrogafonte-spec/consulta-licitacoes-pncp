@@ -1,163 +1,33 @@
 [
     {
-        "CNPJ": "04798469000764",
-        "Data": "20250228",
-        "Fornecedor": "GNC AUTOMOTORES LTDA.",
+        "CNPJ": "46388826000170",
+        "Data": "20250324",
+        "Fornecedor": "OCIAN COMERCIAL FARMACEUTICA UNIPESSOAL LTDA",
         "Itens": 1,
-        "Licitacao": "760000222025",
-        "Orgao": "MUNICIPIO DE BOM SUCESSO",
-        "Total": 266200.0,
-        "UASG": "760"
+        "Licitacao": "08011001702025",
+        "Orgao": "MUNICIPIO DE OSORIO",
+        "Total": 6000.0,
+        "UASG": "08011"
     },
     {
-        "CNPJ": "00592198000140",
+        "CNPJ": "23099036000170",
+        "Data": "20250416",
+        "Fornecedor": "Inforocha Ltda",
+        "Itens": 7,
+        "Licitacao": "589000332025",
+        "Orgao": "MUNICIPIO DE LUISBURGO",
+        "Total": 43518.5,
+        "UASG": "589"
+    },
+    {
+        "CNPJ": "41823463000130",
         "Data": "20250307",
-        "Fornecedor": "CELINA MOREIRA FREITAS ME",
+        "Fornecedor": "COMERCIAL SILVESTRE LTDA",
         "Itens": 1,
         "Licitacao": "128000012025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 5028.0,
+        "Total": 8200.0,
         "UASG": "128"
-    },
-    {
-        "CNPJ": "12011917000332",
-        "Data": "20250124",
-        "Fornecedor": "ALEA COMERCIAL LTDA",
-        "Itens": 2,
-        "Licitacao": "698000022025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 16219.2,
-        "UASG": "698"
-    },
-    {
-        "CNPJ": "00304166000100",
-        "Data": "20250207",
-        "Fornecedor": "Laboratório Bona Ltda",
-        "Itens": 10,
-        "Licitacao": "439000092025",
-        "Orgao": "MUNICIPIO DE LARANJAL",
-        "Total": 12792.5,
-        "UASG": "439"
-    },
-    {
-        "CNPJ": "44838265000139",
-        "Data": "20250220",
-        "Fornecedor": "CREATIVE COMERCIO VAREJISTA LTDA",
-        "Itens": 1,
-        "Licitacao": "760000182025",
-        "Orgao": "MUNICIPIO DE BOM SUCESSO",
-        "Total": 49045.0,
-        "UASG": "760"
-    },
-    {
-        "CNPJ": "05754099000130",
-        "Data": "20250124",
-        "Fornecedor": "MRX TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "020000112025",
-        "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "Total": 530000.0,
-        "UASG": "020"
-    },
-    {
-        "CNPJ": "48793172000196",
-        "Data": "20250219",
-        "Fornecedor": "GAMA SOLUCOES EM INFRAESTRUTURA LTDA",
-        "Itens": 5,
-        "Licitacao": "1127000062025",
-        "Orgao": "MUNICIPIO DE JACUI",
-        "Total": 690400.0,
-        "UASG": "1127"
-    },
-    {
-        "CNPJ": "10680757000127",
-        "Data": "20250127",
-        "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
-        "Itens": 1,
-        "Licitacao": "620000062025",
-        "Orgao": "MUNICIPIO DE PITANGUI",
-        "Total": 143950.0,
-        "UASG": "620"
-    },
-    {
-        "CNPJ": "28157903000108",
-        "Data": "20250206",
-        "Fornecedor": "MEGADEC DISTRIBUIDORA LTDA",
-        "Itens": 2,
-        "Licitacao": "10000272025",
-        "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 187225.0,
-        "UASG": "10"
-    },
-    {
-        "CNPJ": "19032430000113",
-        "Data": "20250124",
-        "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
-        "Itens": 3,
-        "Licitacao": "698000022025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 23499.0,
-        "UASG": "698"
-    },
-    {
-        "CNPJ": "59522599000176",
-        "Data": "20250225",
-        "Fornecedor": "RICARDO JULIANO FRANK ROSA",
-        "Itens": 1,
-        "Licitacao": "1202000122025",
-        "Orgao": "MUNICIPIO DE PIQUETE",
-        "Total": 5397.28,
-        "UASG": "1202"
-    },
-    {
-        "CNPJ": "34840358000144",
-        "Data": "20250107",
-        "Fornecedor": "ZEUS COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 1748.0,
-        "UASG": "06005"
-    },
-    {
-        "CNPJ": "34240500000112",
-        "Data": "20250212",
-        "Fornecedor": "HM Informatica LTDA",
-        "Itens": 2,
-        "Licitacao": "1073000042025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 307.95000000000005,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "13851726000180",
-        "Data": "20250113",
-        "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 128.66,
-        "UASG": "196"
-    },
-    {
-        "CNPJ": "39906139000134",
-        "Data": "20250211",
-        "Fornecedor": "Gustavo de Paula Silva",
-        "Itens": 1,
-        "Licitacao": "1729000072025",
-        "Orgao": "MUNICIPIO DE SABINOPOLIS",
-        "Total": 8800.0,
-        "UASG": "1729"
-    },
-    {
-        "CNPJ": "73472227000103",
-        "Data": "20250218",
-        "Fornecedor": "D FORMA INSTALACOES E DIVISORIAS LTDA",
-        "Itens": 1,
-        "Licitacao": "000000042000322025",
-        "Orgao": "MUNICIPIO DE SALVADOR",
-        "Total": 1995.24,
-        "UASG": "000000042"
     },
     {
         "CNPJ": "97530228000125",
@@ -170,194 +40,54 @@
         "UASG": "196"
     },
     {
-        "CNPJ": "51749573000153",
-        "Data": "20250331",
-        "Fornecedor": "BOGOTEX INDUSTRIA E COMERCIO DE CONFECCOES LTDA",
-        "Itens": 8,
-        "Licitacao": "987000282025",
-        "Orgao": "MUNICIPIO DE PEDRALVA",
-        "Total": 136920.0,
-        "UASG": "987"
-    },
-    {
-        "CNPJ": "53892574000188",
-        "Data": "20250321",
-        "Fornecedor": "MKC SOLUCOES LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
-        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 19550.0,
-        "UASG": "850"
-    },
-    {
-        "CNPJ": "06176619000138",
-        "Data": "20250113",
-        "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
-        "Itens": 2,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 9219.0,
-        "UASG": "196"
-    },
-    {
-        "CNPJ": "24675507000103",
-        "Data": "20250325",
-        "Fornecedor": "MICROFORT INFORMATICA LTDA",
-        "Itens": 1,
-        "Licitacao": "1441000132025",
-        "Orgao": "MUNICIPIO DE VICENCIA",
-        "Total": 36720.0,
-        "UASG": "1441"
-    },
-    {
-        "CNPJ": "51560442000123",
-        "Data": "20250307",
-        "Fornecedor": "DUFILTER DISTRIBUIDORA DE FILTROS E LUBRIFICANTES LTDA",
-        "Itens": 2,
-        "Licitacao": "07001001122025",
-        "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 44437.5,
-        "UASG": "07001"
-    },
-    {
-        "CNPJ": "36705522000136",
-        "Data": "20250121",
-        "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
-        "Itens": 3,
-        "Licitacao": "1000012025",
-        "Orgao": "MUNICIPIO DE RONDONOPOLIS",
-        "Total": 174600.0,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "24708774000130",
-        "Data": "20250212",
-        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
-        "Itens": 1,
-        "Licitacao": "1073000042025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 555.1,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "29987662000189",
-        "Data": "20250317",
-        "Fornecedor": "SOCIÉTÉ COMÉRCIO DE VEÍCULOS LTDA.",
-        "Itens": 1,
-        "Licitacao": "703000132025",
-        "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
-        "Total": 269990.0,
-        "UASG": "703"
-    },
-    {
-        "CNPJ": "10658008000101",
-        "Data": "20250221",
-        "Fornecedor": " CARVALHO E NUNES INFORMATICA LTDA",
-        "Itens": 1,
-        "Licitacao": "781000012025",
-        "Orgao": "MUNICIPIO DE VIRGINIA",
-        "Total": 76000.0,
-        "UASG": "781"
-    },
-    {
-        "CNPJ": "02989244000174",
-        "Data": "20250221",
-        "Fornecedor": "Portal Soluções Ltda",
-        "Itens": 4,
-        "Licitacao": "1963000392025",
-        "Orgao": "MUNICIPIO DE PONTE NOVA",
-        "Total": 36400.0,
-        "UASG": "1963"
-    },
-    {
-        "CNPJ": "11912710000104",
-        "Data": "20250321",
-        "Fornecedor": "TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
-        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 3970.0,
-        "UASG": "850"
-    },
-    {
-        "CNPJ": "30977140000185",
-        "Data": "20250321",
-        "Fornecedor": "NINE DIGITAL BANK CERTIFICAÇÃO DIGITAL E SOLUÇÕES EMPRESARIA",
-        "Itens": 2,
-        "Licitacao": "591000202025",
-        "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 202.0,
-        "UASG": "591"
-    },
-    {
-        "CNPJ": "32532318000100",
-        "Data": "20250127",
-        "Fornecedor": "P&G ALIMENTOS LTDA",
-        "Itens": 4,
-        "Licitacao": "301000042025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 336321.25,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "47188112000181",
-        "Data": "20250321",
-        "Fornecedor": "EDS COMERCIO E SOLUCOES LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
-        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 289344.0,
-        "UASG": "850"
-    },
-    {
-        "CNPJ": "42921840000137",
-        "Data": "20250219",
-        "Fornecedor": "LEANDRO ALBERTO KERBER LTDA",
-        "Itens": 1,
-        "Licitacao": "1000352025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 3836.0,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "40388708000186",
-        "Data": "20250310",
-        "Fornecedor": "40.388.708 DENIS PEREIRA FERREIRA",
-        "Itens": 1,
-        "Licitacao": "439000202025",
+        "CNPJ": "00304166000100",
+        "Data": "20250207",
+        "Fornecedor": "Laboratório Bona Ltda",
+        "Itens": 10,
+        "Licitacao": "439000092025",
         "Orgao": "MUNICIPIO DE LARANJAL",
-        "Total": 26250.0,
+        "Total": 12792.5,
         "UASG": "439"
     },
     {
-        "CNPJ": "37279287000140",
-        "Data": "20250115",
-        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
-        "Itens": 1,
-        "Licitacao": "06002000012025",
-        "Orgao": "MUNICIPIO DE RIO NEGRO",
-        "Total": 1154999.24,
-        "UASG": "06002"
-    },
-    {
-        "CNPJ": "46418740000143",
-        "Data": "20250113",
-        "Fornecedor": "PALADIR LTDA",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 3504.0,
-        "UASG": "196"
-    },
-    {
-        "CNPJ": "05234812000115",
-        "Data": "20250321",
-        "Fornecedor": "SANDRA RIBEIRO DOS SANTOS",
+        "CNPJ": "52967925000100",
+        "Data": "20250407",
+        "Fornecedor": "ABC FARMACEUTICO LTDA",
         "Itens": 2,
-        "Licitacao": "850000042025",
-        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 69669.23000000001,
-        "UASG": "850"
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 12240.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "25531224000150",
+        "Data": "20250331",
+        "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
+        "Itens": 2,
+        "Licitacao": "07002000632025",
+        "Orgao": "MUNICIPIO DE GRAMADO",
+        "Total": 2797135.92,
+        "UASG": "07002"
+    },
+    {
+        "CNPJ": "10742506000120",
+        "Data": "20250401",
+        "Fornecedor": "PAULO QUINELLI NETO",
+        "Itens": 1,
+        "Licitacao": "835000182025",
+        "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
+        "Total": 453110.0,
+        "UASG": "835"
+    },
+    {
+        "CNPJ": "02059560000147",
+        "Data": "20250428",
+        "Fornecedor": "DENTAL SAO CRISTOVAO LTDA - EPP",
+        "Itens": 2,
+        "Licitacao": "10001032025",
+        "Orgao": "MUNICIPIO DE CLAUDIO",
+        "Total": 1357.5,
+        "UASG": "10"
     },
     {
         "CNPJ": "05042495681",
@@ -370,26 +100,6 @@
         "UASG": "269"
     },
     {
-        "CNPJ": "51355132000177",
-        "Data": "20250220",
-        "Fornecedor": "Maria Aparecida Rodrigues Medeiros",
-        "Itens": 2,
-        "Licitacao": "760000182025",
-        "Orgao": "MUNICIPIO DE BOM SUCESSO",
-        "Total": 119200.0,
-        "UASG": "760"
-    },
-    {
-        "CNPJ": "33618020000180",
-        "Data": "20250227",
-        "Fornecedor": "HM SONORIZACAO E ILUMINACAO LTDA",
-        "Itens": 2,
-        "Licitacao": "698000172025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 163700.0,
-        "UASG": "698"
-    },
-    {
         "CNPJ": "15080472000179",
         "Data": "20250107",
         "Fornecedor": "AEG PLAYGROUNDS LTDA",
@@ -400,544 +110,24 @@
         "UASG": "13003"
     },
     {
-        "CNPJ": "39914097000183",
+        "CNPJ": "14778535000100",
         "Data": "20250219",
-        "Fornecedor": "ACTEC ACESSO CONTROLE E TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "350000082025",
-        "Orgao": "MUNICIPIO DE LARANJAL",
-        "Total": 22200.0,
-        "UASG": "350"
-    },
-    {
-        "CNPJ": "12973944000124",
-        "Data": "20250307",
-        "Fornecedor": "CS COM. ATACADISTA DE PEÇAS AUTOMOTIVAS LTDA - ME",
-        "Itens": 1,
-        "Licitacao": "07001001122025",
-        "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 28500.0,
-        "UASG": "07001"
-    },
-    {
-        "CNPJ": "32593430000150",
-        "Data": "20250226",
-        "Fornecedor": "M CARREGA COMÉRCIO DE PRODUTOS HOSPITALARES",
-        "Itens": 1,
-        "Licitacao": "2003000432025",
-        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 6850.0,
-        "UASG": "2003"
-    },
-    {
-        "CNPJ": "31761939000100",
-        "Data": "20250206",
-        "Fornecedor": "AG SG COMERCIO E TRANSPORTES LTDA",
-        "Itens": 3,
-        "Licitacao": "10000272025",
-        "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 137598.5,
-        "UASG": "10"
-    },
-    {
-        "CNPJ": "46116412000192",
-        "Data": "20250219",
-        "Fornecedor": "FLECHA PHARMA DISTRIBUIDORA LTDA",
-        "Itens": 4,
-        "Licitacao": "488000102025",
-        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
-        "Total": 475247.16,
-        "UASG": "488"
-    },
-    {
-        "CNPJ": "52307066000122",
-        "Data": "20250218",
-        "Fornecedor": "LAGUNA ESPORTE LTDA",
-        "Itens": 1,
-        "Licitacao": "62600000392025",
-        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
-        "Total": 3468.05,
-        "UASG": "62600"
-    },
-    {
-        "CNPJ": "22316926000123",
-        "Data": "20250218",
-        "Fornecedor": "JACOB CONSTRUCOES LTDA",
-        "Itens": 2,
-        "Licitacao": "000000042000322025",
-        "Orgao": "MUNICIPIO DE SALVADOR",
-        "Total": 79019.93,
-        "UASG": "000000042"
-    },
-    {
-        "CNPJ": "27577159000120",
-        "Data": "20250220",
-        "Fornecedor": "27.577.159 RELTON UILIAN ARDENGUE",
-        "Itens": 1,
-        "Licitacao": "710000602025",
-        "Orgao": "MUNICIPIO DE MONTE SANTO DE MINAS",
-        "Total": 33600.0,
-        "UASG": "710"
-    },
-    {
-        "CNPJ": "55623647000161",
-        "Data": "20250107",
-        "Fornecedor": "GAMA PNEUS LTDA",
-        "Itens": 4,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 16394.79,
-        "UASG": "06005"
-    },
-    {
-        "CNPJ": "46388826000170",
-        "Data": "20250324",
-        "Fornecedor": "OCIAN COMERCIAL FARMACEUTICA UNIPESSOAL LTDA",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
-        "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 6000.0,
-        "UASG": "08011"
-    },
-    {
-        "CNPJ": "14030253000112",
-        "Data": "20250224",
-        "Fornecedor": "GILMAR HENRIQUE MARANGONI 02027572856",
-        "Itens": 10,
-        "Licitacao": "269000112025",
-        "Orgao": "MUNICIPIO DE GUARANESIA",
-        "Total": 3299.0,
-        "UASG": "269"
-    },
-    {
-        "CNPJ": "55695599000117",
-        "Data": "20250107",
-        "Fornecedor": "MAGBA E-COMMERCE LTDA",
-        "Itens": 3,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 47070.0,
-        "UASG": "06005"
-    },
-    {
-        "CNPJ": "45999330000170",
-        "Data": "20250127",
-        "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
-        "Itens": 3,
-        "Licitacao": "301000042025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 358740.0,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "18487144000180",
-        "Data": "20250213",
-        "Fornecedor": "I.G.I. INDUSTRIA DE GASES ITAJAI LTDA",
-        "Itens": 3,
-        "Licitacao": "1576000022025",
-        "Orgao": "MUNICIPIO DE ITAPEMA",
-        "Total": 706915.0,
-        "UASG": "1576"
-    },
-    {
-        "CNPJ": "44403694000183",
-        "Data": "20250214",
-        "Fornecedor": "KIMAQUINAS E EQUIPAMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "2110000062025",
-        "Orgao": "MINAS NOVAS CAMARA MUNICIPAL",
-        "Total": 360000.0,
-        "UASG": "2110"
-    },
-    {
-        "CNPJ": "54213979000105",
-        "Data": "20250310",
-        "Fornecedor": "54.213.979 MARCOS FRANCIS VILELA",
-        "Itens": 8,
-        "Licitacao": "439000202025",
-        "Orgao": "MUNICIPIO DE LARANJAL",
-        "Total": 77119.0,
-        "UASG": "439"
-    },
-    {
-        "CNPJ": "27951336000196",
-        "Data": "20250212",
-        "Fornecedor": "JMF COMERCIAL EIRELI",
-        "Itens": 2,
-        "Licitacao": "1073000042025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 998.0,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "49815982000169",
-        "Data": "20250219",
-        "Fornecedor": "RG2 INDUSTRIA E COMERCIO DE MOVEIS LTDA",
-        "Itens": 2,
-        "Licitacao": "1000352025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 12622.5,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "46687136000112",
-        "Data": "20250113",
-        "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
-        "Itens": 4,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 29723.760000000002,
-        "UASG": "196"
-    },
-    {
-        "CNPJ": "50630988000140",
-        "Data": "20250320",
-        "Fornecedor": "AGRO ZAIDAN COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "1029000142025",
-        "Orgao": "SAAE DE BOA ESPERANCA",
-        "Total": 6500.0,
-        "UASG": "1029"
-    },
-    {
-        "CNPJ": "27075106000100",
-        "Data": "20250219",
-        "Fornecedor": "NOVIDÁ INDÚSTRIA E COMÉRCIO DE MÓVEIS LTDA",
+        "Fornecedor": "ROBERTI & ELEGEDA LTDA",
         "Itens": 1,
         "Licitacao": "1000352025",
         "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 800.0,
+        "Total": 2633.4,
         "UASG": "1"
     },
     {
-        "CNPJ": "03735304000195",
-        "Data": "20250313",
-        "Fornecedor": "GAP Service Ltda",
-        "Itens": 10,
-        "Licitacao": "633000162025",
-        "Orgao": "MUNICIPIO DE SAO GONCALO DO RIO ABAIXO",
-        "Total": 129996.0,
-        "UASG": "633"
-    },
-    {
-        "CNPJ": "55813062000104",
-        "Data": "20250307",
-        "Fornecedor": "JLM REPRESENTACOES LTDA",
-        "Itens": 3,
-        "Licitacao": "07001001122025",
-        "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 29471.0,
-        "UASG": "07001"
-    },
-    {
-        "CNPJ": "00331788003053",
-        "Data": "20250307",
-        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - POÇOS",
+        "CNPJ": "05018604000189",
+        "Data": "20250417",
+        "Fornecedor": "DROGALESTE PERFUMARIA & COSMETICOS LTDA",
         "Itens": 1,
-        "Licitacao": "2139000022025",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "Total": 24346.56,
-        "UASG": "2139"
-    },
-    {
-        "CNPJ": "42333053000174",
-        "Data": "20250307",
-        "Fornecedor": "DAZK COMERCIAL AUTOMOTIVA LTDA",
-        "Itens": 2,
-        "Licitacao": "07001001122025",
-        "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 46230.0,
-        "UASG": "07001"
-    },
-    {
-        "CNPJ": "09145361000109",
-        "Data": "20250312",
-        "Fornecedor": "ANDRADE E GUARNIERI PANIFICAÇÃO LTDA",
-        "Itens": 2,
-        "Licitacao": "301000112025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 82890.0,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "15734600000150",
-        "Data": "20250227",
-        "Fornecedor": "J DE O SOUZA EVENTOS ME",
-        "Itens": 5,
-        "Licitacao": "698000172025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 1105330.0,
-        "UASG": "698"
-    },
-    {
-        "CNPJ": "76183128000108",
-        "Data": "20250226",
-        "Fornecedor": "ORTOPEDIA PARANA LTDA ME",
-        "Itens": 6,
-        "Licitacao": "01001000072025",
-        "Orgao": "PARANAVAI CONSORCIO INTERMUNICIPAL DE SAUDE",
-        "Total": 216240.0,
-        "UASG": "01001"
-    },
-    {
-        "CNPJ": "39535062000133",
-        "Data": "20250225",
-        "Fornecedor": "BENÍCIO PNEUS LTDA.",
-        "Itens": 7,
-        "Licitacao": "1202000122025",
-        "Orgao": "MUNICIPIO DE PIQUETE",
-        "Total": 96632.0,
-        "UASG": "1202"
-    },
-    {
-        "CNPJ": "18136904000104",
-        "Data": "20250219",
-        "Fornecedor": "GUILHERME XAVIER PIVA EIRELI EPP",
-        "Itens": 1,
-        "Licitacao": "1000352025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 445.5,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "03246708000115",
-        "Data": "20250227",
-        "Fornecedor": "LUIZ ANTONIO PEIXOTO FRANCA EPP",
-        "Itens": 1,
-        "Licitacao": "698000172025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 202450.0,
-        "UASG": "698"
-    },
-    {
-        "CNPJ": "17332901000183",
-        "Data": "20250313",
-        "Fornecedor": "VIC PAN LTDA",
-        "Itens": 1,
-        "Licitacao": "1000422025",
-        "Orgao": "MUNICIPIO DE ESTEIO",
-        "Total": 40180.0,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "35231746000190",
-        "Data": "20250227",
-        "Fornecedor": "GADITA COMÉRCIO DE PRODUTOS PERMANENTES E DE CONSUMO LTDA",
-        "Itens": 2,
-        "Licitacao": "348000022025",
-        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
-        "Total": 23640.0,
-        "UASG": "348"
-    },
-    {
-        "CNPJ": "47915446000100",
-        "Data": "20250220",
-        "Fornecedor": "L E C DISTRIBUIDORA DE PRODUTOS NUTRICIONAIS LTDA",
-        "Itens": 4,
-        "Licitacao": "760000182025",
-        "Orgao": "MUNICIPIO DE BOM SUCESSO",
-        "Total": 92060.0,
-        "UASG": "760"
-    },
-    {
-        "CNPJ": "20649395000165",
-        "Data": "20250307",
-        "Fornecedor": "J.MARANGONI COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO EIRELI - EPP",
-        "Itens": 1,
-        "Licitacao": "07001001122025",
-        "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 140000.0,
-        "UASG": "07001"
-    },
-    {
-        "CNPJ": "55149591000236",
-        "Data": "20250321",
-        "Fornecedor": "ALLSET TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
-        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 7380.0,
-        "UASG": "850"
-    },
-    {
-        "CNPJ": "18707422000167",
-        "Data": "20250317",
-        "Fornecedor": "MARKA VEICULOS E PEÇAS S/A",
-        "Itens": 1,
-        "Licitacao": "703000132025",
-        "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
-        "Total": 134900.0,
-        "UASG": "703"
-    },
-    {
-        "CNPJ": "46724452000117",
-        "Data": "20250312",
-        "Fornecedor": "RANGO SOLUCOES LTDA",
-        "Itens": 4,
-        "Licitacao": "301000112025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 809810.0,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "47695345000170",
-        "Data": "20250212",
-        "Fornecedor": "PREPAVE COMERCIO DE MOVEIS E EQUIPAMENTOS LTDA",
-        "Itens": 2,
-        "Licitacao": "1073000042025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 1056.0,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "47646580000152",
-        "Data": "20250307",
-        "Fornecedor": "FRANCIELE ELETRO LTDA",
-        "Itens": 1,
-        "Licitacao": "128000012025",
-        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 5200.0,
-        "UASG": "128"
-    },
-    {
-        "CNPJ": "49042895000116",
-        "Data": "20250124",
-        "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
-        "Itens": 2,
-        "Licitacao": "698000022025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 10675.0,
-        "UASG": "698"
-    },
-    {
-        "CNPJ": "47094894000190",
-        "Data": "20250325",
-        "Fornecedor": "AL OLIVEIRA LTDA",
-        "Itens": 5,
-        "Licitacao": "1441000132025",
-        "Orgao": "MUNICIPIO DE VICENCIA",
-        "Total": 84448.7,
-        "UASG": "1441"
-    },
-    {
-        "CNPJ": "06178714000170",
-        "Data": "20250121",
-        "Fornecedor": "Life Remocenter Transporte LTDA",
-        "Itens": 10,
-        "Licitacao": "548000022025",
-        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO CENTRO NORDESTE",
-        "Total": 6415979.1899999995,
-        "UASG": "548"
-    },
-    {
-        "CNPJ": "09253952000191",
-        "Data": "20250325",
-        "Fornecedor": "SANDRO VILMAR PIRES ME",
-        "Itens": 2,
-        "Licitacao": "1441000132025",
-        "Orgao": "MUNICIPIO DE VICENCIA",
-        "Total": 118350.0,
-        "UASG": "1441"
-    },
-    {
-        "CNPJ": "53539972000115",
-        "Data": "20250211",
-        "Fornecedor": "VITALIS SOLUCOES EM SERVICOS DE SAUDE LTDA",
-        "Itens": 1,
-        "Licitacao": "943000172025",
-        "Orgao": "MUNICIPIO DE COUTO DE MAGALHAES DE MINAS",
-        "Total": 143963.88,
-        "UASG": "943"
-    },
-    {
-        "CNPJ": "50752211001040",
-        "Data": "20250325",
-        "Fornecedor": "JAVEP-VEICULOS, PECAS E SERVICOS LTDA",
-        "Itens": 1,
-        "Licitacao": "522000872025",
-        "Orgao": "MUNICIPIO DE CORDISBURGO",
-        "Total": 139900.0,
-        "UASG": "522"
-    },
-    {
-        "CNPJ": "44346117000105",
-        "Data": "20250219",
-        "Fornecedor": "DA FRONTEIRA COMERCIO E REPRESENTAÇÃO LTDA",
-        "Itens": 1,
-        "Licitacao": "1000352025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 15776.0,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "18209965000154",
-        "Data": "20250314",
-        "Fornecedor": "BAMAQ SA BANDEIRANTES MAQUINAS E EQUIPAMENTOS - MATRIZ",
-        "Itens": 1,
-        "Licitacao": "892000062025",
-        "Orgao": "MUNICIPIO DE SANTA RITA DE CALDAS",
-        "Total": 450000.0,
-        "UASG": "892"
-    },
-    {
-        "CNPJ": "41884533000160",
-        "Data": "20250227",
-        "Fornecedor": "J L TECNOLOGIA E EMPREENDIMENTOS LTDA",
-        "Itens": 6,
-        "Licitacao": "348000022025",
-        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
-        "Total": 663112.52,
-        "UASG": "348"
-    },
-    {
-        "CNPJ": "15081696000103",
-        "Data": "20250127",
-        "Fornecedor": "BSM ATACADISTA",
-        "Itens": 2,
-        "Licitacao": "301000042025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 392745.0,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "32163902000135",
-        "Data": "20250107",
-        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
-        "Itens": 2,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 239200.0,
-        "UASG": "13003"
-    },
-    {
-        "CNPJ": "04798469000764",
-        "Data": "20250325",
-        "Fornecedor": "GNC AUTOMOTORES LTDA.",
-        "Itens": 1,
-        "Licitacao": "522000872025",
-        "Orgao": "MUNICIPIO DE CORDISBURGO",
-        "Total": 274000.0,
-        "UASG": "522"
-    },
-    {
-        "CNPJ": "25230836000103",
-        "Data": "20250312",
-        "Fornecedor": "RENATA MARCELLA M. S. PRADO PINHEIRO",
-        "Itens": 1,
-        "Licitacao": "197000082025",
-        "Orgao": "MUNICIPIO DE PACO DO LUMIAR",
-        "Total": 12960000.0,
-        "UASG": "197"
-    },
-    {
-        "CNPJ": "10302648000176",
-        "Data": "20250218",
-        "Fornecedor": "R&L INDUSTRIA E COMERCIO DE ARTIGOS DE DECORACOES",
-        "Itens": 1,
-        "Licitacao": "000000042000322025",
-        "Orgao": "MUNICIPIO DE SALVADOR",
-        "Total": 87021.74,
-        "UASG": "000000042"
+        "Licitacao": "781000192025",
+        "Orgao": "MUNICIPIO DE VIRGINIA",
+        "Total": 117600.0,
+        "UASG": "781"
     },
     {
         "CNPJ": "29953468000182",
@@ -950,24 +140,134 @@
         "UASG": "128"
     },
     {
-        "CNPJ": "10158356000101",
-        "Data": "20250107",
-        "Fornecedor": "PNEUSTORECOMBR",
-        "Itens": 2,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 31704.0,
-        "UASG": "06005"
+        "CNPJ": "65122590000170",
+        "Data": "20250428",
+        "Fornecedor": "Duarte Dental Eireli",
+        "Itens": 1,
+        "Licitacao": "10001032025",
+        "Orgao": "MUNICIPIO DE CLAUDIO",
+        "Total": 1218.5,
+        "UASG": "10"
     },
     {
-        "CNPJ": "01645409000390",
-        "Data": "20250117",
-        "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
+        "CNPJ": "27651175000115",
+        "Data": "20250428",
+        "Fornecedor": "EDILSON APARECIDO DA SILVA",
+        "Itens": 2,
+        "Licitacao": "10001032025",
+        "Orgao": "MUNICIPIO DE CLAUDIO",
+        "Total": 244.0,
+        "UASG": "10"
+    },
+    {
+        "CNPJ": "09053134001621",
+        "Data": "20250219",
+        "Fornecedor": "ELFA MEDICAMENTOS S.A",
+        "Itens": 5,
+        "Licitacao": "488000102025",
+        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
+        "Total": 1658772.0899999999,
+        "UASG": "488"
+    },
+    {
+        "CNPJ": "03735304000195",
+        "Data": "20250313",
+        "Fornecedor": "GAP Service Ltda",
+        "Itens": 10,
+        "Licitacao": "633000162025",
+        "Orgao": "MUNICIPIO DE SAO GONCALO DO RIO ABAIXO",
+        "Total": 129996.0,
+        "UASG": "633"
+    },
+    {
+        "CNPJ": "52597304000181",
+        "Data": "20250415",
+        "Fornecedor": "ATLAS ATACADO E VAREJO LTDA",
+        "Itens": 3,
+        "Licitacao": "1301000382025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "Total": 117864.0,
+        "UASG": "1301"
+    },
+    {
+        "CNPJ": "15734600000150",
+        "Data": "20250227",
+        "Fornecedor": "J DE O SOUZA EVENTOS ME",
+        "Itens": 5,
+        "Licitacao": "698000172025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 1105330.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "21935659000100",
+        "Data": "20250108",
+        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "Itens": 1,
+        "Licitacao": "301001532024",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 13695180.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "22223426000147",
+        "Data": "20250124",
+        "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
+        "Itens": 1,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 6228.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "14308627000119",
+        "Data": "20250416",
+        "Fornecedor": "COSTA E CARVALHO CONSULTORIA E ASSESSORIA LTDA",
+        "Itens": 1,
+        "Licitacao": "248000082025",
+        "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
+        "Total": 384368.4,
+        "UASG": "248"
+    },
+    {
+        "CNPJ": "36832659000151",
+        "Data": "20250402",
+        "Fornecedor": "JM COMERCIO DE CLIMATIZADORES LTDA",
+        "Itens": 1,
+        "Licitacao": "020000992025",
+        "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "Total": 714000.0,
+        "UASG": "020"
+    },
+    {
+        "CNPJ": "04798469000764",
+        "Data": "20250228",
+        "Fornecedor": "GNC AUTOMOTORES LTDA.",
+        "Itens": 1,
+        "Licitacao": "760000222025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "Total": 266200.0,
+        "UASG": "760"
+    },
+    {
+        "CNPJ": "46687136000112",
+        "Data": "20250113",
+        "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
         "Itens": 4,
-        "Licitacao": "404340002192025",
-        "Orgao": "ESTADO DO RIO DE JANEIRO",
-        "Total": 1001298.1199999999,
-        "UASG": "404340"
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 29723.760000000002,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "41677982000138",
+        "Data": "20250426",
+        "Fornecedor": "AJ MONTAGEM, REPARO E MANUTENCAO INDUSTRIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "1001082025",
+        "Orgao": "MUNICIPIO DE ITAJAI",
+        "Total": 1480000.0,
+        "UASG": "1"
     },
     {
         "CNPJ": "35078961000101",
@@ -980,24 +280,134 @@
         "UASG": "301"
     },
     {
-        "CNPJ": "61562112000554",
-        "Data": "20250221",
-        "Fornecedor": "PRICEWATERHOUSECOOPERS AUDITORES INDEPENDENTES LTDA",
+        "CNPJ": "08504258000137",
+        "Data": "20250127",
+        "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
         "Itens": 1,
-        "Licitacao": "1784000042025",
-        "Orgao": "COMPANHIA DE DESENVOLVIMENTO DE MINAS GERAIS - CODEMGE",
-        "Total": 1921829.4,
-        "UASG": "1784"
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 22880.0,
+        "UASG": "301"
     },
     {
-        "CNPJ": "06294126000100",
-        "Data": "20250324",
-        "Fornecedor": "SOMA/RS PRODUTOS HOSPITALARES LTDA",
+        "CNPJ": "10658008000101",
+        "Data": "20250221",
+        "Fornecedor": " CARVALHO E NUNES INFORMATICA LTDA",
         "Itens": 1,
-        "Licitacao": "08011001702025",
-        "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 2300.0,
-        "UASG": "08011"
+        "Licitacao": "781000012025",
+        "Orgao": "MUNICIPIO DE VIRGINIA",
+        "Total": 76000.0,
+        "UASG": "781"
+    },
+    {
+        "CNPJ": "50752211001040",
+        "Data": "20250325",
+        "Fornecedor": "JAVEP-VEICULOS, PECAS E SERVICOS LTDA",
+        "Itens": 1,
+        "Licitacao": "522000872025",
+        "Orgao": "MUNICIPIO DE CORDISBURGO",
+        "Total": 139900.0,
+        "UASG": "522"
+    },
+    {
+        "CNPJ": "34240500000112",
+        "Data": "20250212",
+        "Fornecedor": "HM Informatica LTDA",
+        "Itens": 2,
+        "Licitacao": "1073000042025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 307.95000000000005,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "47695345000170",
+        "Data": "20250212",
+        "Fornecedor": "PREPAVE COMERCIO DE MOVEIS E EQUIPAMENTOS LTDA",
+        "Itens": 2,
+        "Licitacao": "1073000042025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 1056.0,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "50630988000140",
+        "Data": "20250320",
+        "Fornecedor": "AGRO ZAIDAN COMERCIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "1029000142025",
+        "Orgao": "SAAE DE BOA ESPERANCA",
+        "Total": 6500.0,
+        "UASG": "1029"
+    },
+    {
+        "CNPJ": "54927717000102",
+        "Data": "20250214",
+        "Fornecedor": "N2J VEICULOS ESPECIAIS LTDA",
+        "Itens": 1,
+        "Licitacao": "2110000062025",
+        "Orgao": "MINAS NOVAS CAMARA MUNICIPAL",
+        "Total": 147999.0,
+        "UASG": "2110"
+    },
+    {
+        "CNPJ": "12011917000332",
+        "Data": "20250124",
+        "Fornecedor": "ALEA COMERCIAL LTDA",
+        "Itens": 2,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 16219.2,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "10275087000163",
+        "Data": "20250310",
+        "Fornecedor": "AMB TRANSPORTE LTDA EPP",
+        "Itens": 2,
+        "Licitacao": "1576000142025",
+        "Orgao": "MUNICIPIO DE ITAPEMA",
+        "Total": 1472034.72,
+        "UASG": "1576"
+    },
+    {
+        "CNPJ": "32410222000179",
+        "Data": "20250430",
+        "Fornecedor": "PAMELA STEPHANIE DA SILVA ROCHA 42929203897",
+        "Itens": 5,
+        "Licitacao": "873000042025",
+        "Orgao": "MUNICIPIO DE DIONISIO",
+        "Total": 59900.0,
+        "UASG": "873"
+    },
+    {
+        "CNPJ": "41884533000160",
+        "Data": "20250227",
+        "Fornecedor": "J L TECNOLOGIA E EMPREENDIMENTOS LTDA",
+        "Itens": 6,
+        "Licitacao": "348000022025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
+        "Total": 663112.52,
+        "UASG": "348"
+    },
+    {
+        "CNPJ": "39906139000134",
+        "Data": "20250211",
+        "Fornecedor": "Gustavo de Paula Silva",
+        "Itens": 1,
+        "Licitacao": "1729000072025",
+        "Orgao": "MUNICIPIO DE SABINOPOLIS",
+        "Total": 8800.0,
+        "UASG": "1729"
+    },
+    {
+        "CNPJ": "58543909000176",
+        "Data": "20250307",
+        "Fornecedor": "ANGULAR SOLUCOES EM DISTRIBUICAO LTDA",
+        "Itens": 1,
+        "Licitacao": "128000012025",
+        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
+        "Total": 11959.8,
+        "UASG": "128"
     },
     {
         "CNPJ": "09505958000109",
@@ -1020,174 +430,74 @@
         "UASG": "1202"
     },
     {
-        "CNPJ": "30379344000114",
-        "Data": "20250218",
-        "Fornecedor": "RG DISTRIBUIDORA DE PRODUTOS LABORATORIAIS",
-        "Itens": 2,
-        "Licitacao": "111000312025",
-        "Orgao": "MUNICIPIO DE PARAGUACU",
-        "Total": 125996.0,
-        "UASG": "111"
+        "CNPJ": "11011847000198",
+        "Data": "20250417",
+        "Fornecedor": "MEDICARE SERVIÇOS LTDA",
+        "Itens": 10,
+        "Licitacao": "301000462025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 323604.83999999997,
+        "UASG": "301"
     },
     {
-        "CNPJ": "07678133000160",
-        "Data": "20250314",
-        "Fornecedor": "FORZAN LOCAÇÕES E SERVIÇOS LTDA",
+        "CNPJ": "19612735000102",
+        "Data": "20250331",
+        "Fornecedor": "Ribeiro Comercio Varejista e Atacadista Eireli ME",
+        "Itens": 2,
+        "Licitacao": "987000282025",
+        "Orgao": "MUNICIPIO DE PEDRALVA",
+        "Total": 47120.0,
+        "UASG": "987"
+    },
+    {
+        "CNPJ": "29987662000189",
+        "Data": "20250317",
+        "Fornecedor": "SOCIÉTÉ COMÉRCIO DE VEÍCULOS LTDA.",
         "Itens": 1,
-        "Licitacao": "342000102025",
-        "Orgao": "MUNICIPIO DE MATEUS LEME",
-        "Total": 3663121.56,
-        "UASG": "342"
+        "Licitacao": "703000132025",
+        "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
+        "Total": 269990.0,
+        "UASG": "703"
     },
     {
         "CNPJ": "25531224000150",
-        "Data": "20250331",
+        "Data": "20250328",
         "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
-        "Itens": 2,
-        "Licitacao": "07002000632025",
+        "Itens": 1,
+        "Licitacao": "07002000602025",
         "Orgao": "MUNICIPIO DE GRAMADO",
-        "Total": 2797135.92,
+        "Total": 2756185.56,
         "UASG": "07002"
     },
     {
-        "CNPJ": "10275087000163",
-        "Data": "20250310",
-        "Fornecedor": "AMB TRANSPORTE LTDA EPP",
-        "Itens": 2,
-        "Licitacao": "1576000142025",
-        "Orgao": "MUNICIPIO DE ITAPEMA",
-        "Total": 1472034.72,
-        "UASG": "1576"
-    },
-    {
-        "CNPJ": "07752236000123",
-        "Data": "20250324",
-        "Fornecedor": "MEDILAR IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS MEDICO HOSPITLARES",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
-        "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 6840.0,
-        "UASG": "08011"
-    },
-    {
-        "CNPJ": "42128438000361",
-        "Data": "20250325",
-        "Fornecedor": "42.128.438/0003-61 PRIMAVIA FRANCE COMÉRCIO DE AUT LTDA",
-        "Itens": 1,
-        "Licitacao": "522000872025",
-        "Orgao": "MUNICIPIO DE CORDISBURGO",
-        "Total": 79900.0,
-        "UASG": "522"
-    },
-    {
-        "CNPJ": "55695599000117",
-        "Data": "20250225",
-        "Fornecedor": "MAGBA E-COMMERCE LTDA",
-        "Itens": 1,
-        "Licitacao": "1202000122025",
-        "Orgao": "MUNICIPIO DE PIQUETE",
-        "Total": 2376.0,
-        "UASG": "1202"
-    },
-    {
-        "CNPJ": "44472217000170",
-        "Data": "20250131",
-        "Fornecedor": "JN PNEUS LTDA",
-        "Itens": 1,
-        "Licitacao": "1000262025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 41877.0,
+        "CNPJ": "36705522000136",
+        "Data": "20250121",
+        "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
+        "Itens": 3,
+        "Licitacao": "1000012025",
+        "Orgao": "MUNICIPIO DE RONDONOPOLIS",
+        "Total": 174600.0,
         "UASG": "1"
     },
     {
-        "CNPJ": "43252294000151",
-        "Data": "20250219",
-        "Fornecedor": "GB GIRO BRASIL COMERCIO DE PRODUTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "1073000062025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 1684.68,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "37598374000160",
-        "Data": "20250218",
-        "Fornecedor": "LR SERVICOS MEDICOS E GESTAO EM SAUDE LTDA",
-        "Itens": 1,
-        "Licitacao": "32000082025",
-        "Orgao": "MUNICIPIO DE SAO GERALDO DO BAIXIO",
-        "Total": 126000.0,
-        "UASG": "32"
-    },
-    {
-        "CNPJ": "45806440000179",
+        "CNPJ": "06176619000138",
         "Data": "20250113",
-        "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
-        "Itens": 1,
+        "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
+        "Itens": 2,
         "Licitacao": "196000952024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 802.0,
+        "Total": 9219.0,
         "UASG": "196"
     },
     {
-        "CNPJ": "05609101000188",
-        "Data": "20250218",
-        "Fornecedor": "FLORIAN & CIA LTDA",
+        "CNPJ": "55623647000161",
+        "Data": "20250107",
+        "Fornecedor": "GAMA PNEUS LTDA",
         "Itens": 4,
-        "Licitacao": "62600000392025",
-        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
-        "Total": 4834.74,
-        "UASG": "62600"
-    },
-    {
-        "CNPJ": "11399773000109",
-        "Data": "20250123",
-        "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
-        "Itens": 1,
-        "Licitacao": "620000032025",
-        "Orgao": "MUNICIPIO DE PITANGUI",
-        "Total": 24528.0,
-        "UASG": "620"
-    },
-    {
-        "CNPJ": "36634645000123",
-        "Data": "20250219",
-        "Fornecedor": "36.634.645 MIRIAM POLITO VENANCIO",
-        "Itens": 6,
-        "Licitacao": "1073000062025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 47225.07,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "47646580000152",
-        "Data": "20250226",
-        "Fornecedor": "FRANCIELE ELETRO LTDA",
-        "Itens": 2,
-        "Licitacao": "2003000432025",
-        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 4550.0,
-        "UASG": "2003"
-    },
-    {
-        "CNPJ": "45897289000121",
-        "Data": "20250226",
-        "Fornecedor": "ODETE MARIA FREITAS",
-        "Itens": 3,
-        "Licitacao": "2003000432025",
-        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 9246.0,
-        "UASG": "2003"
-    },
-    {
-        "CNPJ": "04610985000128",
-        "Data": "20250321",
-        "Fornecedor": "LOJA EDMUNDO SIQUEIRA LTDA.",
-        "Itens": 7,
-        "Licitacao": "591000202025",
-        "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 873.0,
-        "UASG": "591"
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 16394.79,
+        "UASG": "06005"
     },
     {
         "CNPJ": "76669670000167",
@@ -1200,14 +510,474 @@
         "UASG": "1576"
     },
     {
-        "CNPJ": "21935659000100",
-        "Data": "20250108",
-        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "CNPJ": "53539972000115",
+        "Data": "20250211",
+        "Fornecedor": "VITALIS SOLUCOES EM SERVICOS DE SAUDE LTDA",
         "Itens": 1,
-        "Licitacao": "301001532024",
+        "Licitacao": "943000172025",
+        "Orgao": "MUNICIPIO DE COUTO DE MAGALHAES DE MINAS",
+        "Total": 143963.88,
+        "UASG": "943"
+    },
+    {
+        "CNPJ": "07220279000168",
+        "Data": "20250407",
+        "Fornecedor": "Nutrir Distribuidora de Produtos Para Terapia Nutricional",
+        "Itens": 1,
+        "Licitacao": "355000292025",
+        "Orgao": "MUNICIPIO DE PAPAGAIOS",
+        "Total": 53500.0,
+        "UASG": "355"
+    },
+    {
+        "CNPJ": "46418740000143",
+        "Data": "20250113",
+        "Fornecedor": "PALADIR LTDA",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 3504.0,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "09145361000109",
+        "Data": "20250312",
+        "Fornecedor": "ANDRADE E GUARNIERI PANIFICAÇÃO LTDA",
+        "Itens": 2,
+        "Licitacao": "301000112025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 13695180.0,
+        "Total": 82890.0,
         "UASG": "301"
+    },
+    {
+        "CNPJ": "47915446000100",
+        "Data": "20250407",
+        "Fornecedor": "L E C DISTRIBUIDORA DE PRODUTOS NUTRICIONAIS LTDA",
+        "Itens": 6,
+        "Licitacao": "355000292025",
+        "Orgao": "MUNICIPIO DE PAPAGAIOS",
+        "Total": 320573.0,
+        "UASG": "355"
+    },
+    {
+        "CNPJ": "27951336000196",
+        "Data": "20250212",
+        "Fornecedor": "JMF COMERCIAL EIRELI",
+        "Itens": 2,
+        "Licitacao": "1073000042025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 998.0,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "54983423000106",
+        "Data": "20250414",
+        "Fornecedor": "MT SAUDE LTDA",
+        "Itens": 10,
+        "Licitacao": "962000302025",
+        "Orgao": "MUNICIPIO DE SENHORA DO PORTO",
+        "Total": 1448999.96,
+        "UASG": "962"
+    },
+    {
+        "CNPJ": "26991097000135",
+        "Data": "20250414",
+        "Fornecedor": "SIGMA MAQUINAS E REPRESENTACOES LTDA",
+        "Itens": 1,
+        "Licitacao": "1600000502025",
+        "Orgao": "MUNICIPIO DE SAO JOAO NEPOMUCENO",
+        "Total": 109900.0,
+        "UASG": "1600"
+    },
+    {
+        "CNPJ": "49042895000116",
+        "Data": "20250124",
+        "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
+        "Itens": 2,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 10675.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "22862531000126",
+        "Data": "20250407",
+        "Fornecedor": "TOP NORTE COMERCIO DE MATERIAL MEDICO HOSPITALAR LTDA",
+        "Itens": 1,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 2060.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "35457127000119",
+        "Data": "20250429",
+        "Fornecedor": "MABELÊ VEICULOS ESPECIAIS LTDA",
+        "Itens": 1,
+        "Licitacao": "231000462025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE PRUDENTE",
+        "Total": 315000.0,
+        "UASG": "231"
+    },
+    {
+        "CNPJ": "47123165000114",
+        "Data": "20250212",
+        "Fornecedor": "L FORASTIERI MACHADO LTDA",
+        "Itens": 1,
+        "Licitacao": "1073000042025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 298.0,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "10685820000118",
+        "Data": "20250422",
+        "Fornecedor": "SANEBRAS LOCACAO E SERVICOS LTDA",
+        "Itens": 2,
+        "Licitacao": "301000482025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 61000.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "11787596000138",
+        "Data": "20250218",
+        "Fornecedor": "ATEND TUDO COMERCIO E SERVICOS LTDA ME",
+        "Itens": 1,
+        "Licitacao": "000000042000322025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "Total": 70900.0,
+        "UASG": "000000042"
+    },
+    {
+        "CNPJ": "00028682000140",
+        "Data": "20250327",
+        "Fornecedor": "PROMEDON DO BRASIL PRODUTOS MÉDICO HOSPITALARES LTDA",
+        "Itens": 1,
+        "Licitacao": "404340014462025",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "Total": 36299.76,
+        "UASG": "404340"
+    },
+    {
+        "CNPJ": "24675507000103",
+        "Data": "20250325",
+        "Fornecedor": "MICROFORT INFORMATICA LTDA",
+        "Itens": 1,
+        "Licitacao": "1441000132025",
+        "Orgao": "MUNICIPIO DE VICENCIA",
+        "Total": 36720.0,
+        "UASG": "1441"
+    },
+    {
+        "CNPJ": "24687735000101",
+        "Data": "20250410",
+        "Fornecedor": "ZENITE COMERCIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "277000912025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 20790.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "43297596000146",
+        "Data": "20250416",
+        "Fornecedor": "RIO DAS PEDRAS COMERCIO DE ARTIGOS PLASTICOS EIRELI",
+        "Itens": 1,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 17171.7,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "09517901000120",
+        "Data": "20250404",
+        "Fornecedor": "ANDERSON DA S. R. COELHO CONSULTORIA E ASSESSORIA ",
+        "Itens": 2,
+        "Licitacao": "20000282025",
+        "Orgao": "MUNICIPIO DE SAO FRANCISCO DO GUAPORE",
+        "Total": 87900.0,
+        "UASG": "20"
+    },
+    {
+        "CNPJ": "23448375000114",
+        "Data": "20250415",
+        "Fornecedor": "LEOPOLDINO BORGES ROSA  CIA LTDA",
+        "Itens": 1,
+        "Licitacao": "1301000382025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "Total": 41408.0,
+        "UASG": "1301"
+    },
+    {
+        "CNPJ": "38874848000112",
+        "Data": "20250430",
+        "Fornecedor": "D.M.P.EQUIPAMENTOS LTDA.",
+        "Itens": 3,
+        "Licitacao": "852000082025",
+        "Orgao": "MUNICIPIO DE BOFETE",
+        "Total": 179438.6,
+        "UASG": "852"
+    },
+    {
+        "CNPJ": "15310120000162",
+        "Data": "20250307",
+        "Fornecedor": "L.M. Comercio de Móveis Ltda",
+        "Itens": 2,
+        "Licitacao": "128000012025",
+        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
+        "Total": 50800.0,
+        "UASG": "128"
+    },
+    {
+        "CNPJ": "40697295000111",
+        "Data": "20250415",
+        "Fornecedor": "PET SEM FRONTEIRAS LTDA",
+        "Itens": 2,
+        "Licitacao": "22000552025",
+        "Orgao": "MUNICIPIO DE MATOZINHOS",
+        "Total": 97800.0,
+        "UASG": "22"
+    },
+    {
+        "CNPJ": "00010439000103",
+        "Data": "20250415",
+        "Fornecedor": "SUPERMERCADO LD LTDA",
+        "Itens": 6,
+        "Licitacao": "1301000382025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "Total": 189657.4,
+        "UASG": "1301"
+    },
+    {
+        "CNPJ": "55695599000117",
+        "Data": "20250225",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "Itens": 1,
+        "Licitacao": "1202000122025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "Total": 2376.0,
+        "UASG": "1202"
+    },
+    {
+        "CNPJ": "57109731000197",
+        "Data": "20250416",
+        "Fornecedor": "MHF MOVEIS LTDA",
+        "Itens": 2,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 49582.0,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "18209965000154",
+        "Data": "20250314",
+        "Fornecedor": "BAMAQ SA BANDEIRANTES MAQUINAS E EQUIPAMENTOS - MATRIZ",
+        "Itens": 1,
+        "Licitacao": "892000062025",
+        "Orgao": "MUNICIPIO DE SANTA RITA DE CALDAS",
+        "Total": 450000.0,
+        "UASG": "892"
+    },
+    {
+        "CNPJ": "26401571000121",
+        "Data": "20250407",
+        "Fornecedor": "Três Pharma Distribuidora e Serviços Ltda.",
+        "Itens": 2,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 3500.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "06178714000170",
+        "Data": "20250121",
+        "Fornecedor": "Life Remocenter Transporte LTDA",
+        "Itens": 10,
+        "Licitacao": "548000022025",
+        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO CENTRO NORDESTE",
+        "Total": 6415979.1899999995,
+        "UASG": "548"
+    },
+    {
+        "CNPJ": "54450630000197",
+        "Data": "20250429",
+        "Fornecedor": "ALPAVEL ALTA PAULISTA VEICULOS LTDA",
+        "Itens": 1,
+        "Licitacao": "231000462025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE PRUDENTE",
+        "Total": 115000.0,
+        "UASG": "231"
+    },
+    {
+        "CNPJ": "26600535000197",
+        "Data": "20250416",
+        "Fornecedor": "RECALL MANHUACU SERVIÇOS LTDA",
+        "Itens": 1,
+        "Licitacao": "589000332025",
+        "Orgao": "MUNICIPIO DE LUISBURGO",
+        "Total": 2850.0,
+        "UASG": "589"
+    },
+    {
+        "CNPJ": "44403694000183",
+        "Data": "20250214",
+        "Fornecedor": "KIMAQUINAS E EQUIPAMENTOS LTDA",
+        "Itens": 1,
+        "Licitacao": "2110000062025",
+        "Orgao": "MINAS NOVAS CAMARA MUNICIPAL",
+        "Total": 360000.0,
+        "UASG": "2110"
+    },
+    {
+        "CNPJ": "46116412000192",
+        "Data": "20250219",
+        "Fornecedor": "FLECHA PHARMA DISTRIBUIDORA LTDA",
+        "Itens": 4,
+        "Licitacao": "488000102025",
+        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
+        "Total": 475247.16,
+        "UASG": "488"
+    },
+    {
+        "CNPJ": "13457500000107",
+        "Data": "20250416",
+        "Fornecedor": "FARIA RODRIGUES INDÚSTRIA DE MÓVEIS LTDA",
+        "Itens": 2,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 30960.0,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "15081696000103",
+        "Data": "20250127",
+        "Fornecedor": "BSM ATACADISTA",
+        "Itens": 2,
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 392745.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "19032430000113",
+        "Data": "20250124",
+        "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
+        "Itens": 3,
+        "Licitacao": "698000022025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 23499.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "42333053000174",
+        "Data": "20250307",
+        "Fornecedor": "DAZK COMERCIAL AUTOMOTIVA LTDA",
+        "Itens": 2,
+        "Licitacao": "07001001122025",
+        "Orgao": "MUNICIPIO DE ITUPORANGA",
+        "Total": 46230.0,
+        "UASG": "07001"
+    },
+    {
+        "CNPJ": "34840358000144",
+        "Data": "20250107",
+        "Fornecedor": "ZEUS COMERCIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 1748.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "35215257000145",
+        "Data": "20250428",
+        "Fornecedor": "DENTAL PREMIUM LTDA",
+        "Itens": 5,
+        "Licitacao": "10001032025",
+        "Orgao": "MUNICIPIO DE CLAUDIO",
+        "Total": 3410.5,
+        "UASG": "10"
+    },
+    {
+        "CNPJ": "11912710000104",
+        "Data": "20250321",
+        "Fornecedor": "TECNOLOGIA LTDA",
+        "Itens": 1,
+        "Licitacao": "850000042025",
+        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
+        "Total": 3970.0,
+        "UASG": "850"
+    },
+    {
+        "CNPJ": "47094894000190",
+        "Data": "20250325",
+        "Fornecedor": "AL OLIVEIRA LTDA",
+        "Itens": 5,
+        "Licitacao": "1441000132025",
+        "Orgao": "MUNICIPIO DE VICENCIA",
+        "Total": 84448.7,
+        "UASG": "1441"
+    },
+    {
+        "CNPJ": "56969923000100",
+        "Data": "20250115",
+        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
+        "Itens": 2,
+        "Licitacao": "06002000012025",
+        "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "Total": 1916990.846,
+        "UASG": "06002"
+    },
+    {
+        "CNPJ": "53892574000188",
+        "Data": "20250321",
+        "Fornecedor": "MKC SOLUCOES LTDA",
+        "Itens": 1,
+        "Licitacao": "850000042025",
+        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
+        "Total": 19550.0,
+        "UASG": "850"
+    },
+    {
+        "CNPJ": "32163902000135",
+        "Data": "20250107",
+        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
+        "Itens": 2,
+        "Licitacao": "13003000032025",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "Total": 239200.0,
+        "UASG": "13003"
+    },
+    {
+        "CNPJ": "11708655000135",
+        "Data": "20250416",
+        "Fornecedor": "M&amp;R EQUIPAMENTOS E MOVEIS LTDA",
+        "Itens": 2,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 20858.0,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "17034870000184",
+        "Data": "20250416",
+        "Fornecedor": "FILIPE MOISES GARCIA ME",
+        "Itens": 1,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 20087.0,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "39935073000100",
+        "Data": "20250407",
+        "Fornecedor": "MG2 NUTRICAO LTDA",
+        "Itens": 3,
+        "Licitacao": "355000292025",
+        "Orgao": "MUNICIPIO DE PAPAGAIOS",
+        "Total": 361550.0,
+        "UASG": "355"
     },
     {
         "CNPJ": "09498341000103",
@@ -1217,6 +987,136 @@
         "Licitacao": "62600000392025",
         "Orgao": "MUNICIPIO DE VENANCIO AIRES",
         "Total": 3418.8,
+        "UASG": "62600"
+    },
+    {
+        "CNPJ": "42098167000187",
+        "Data": "20250219",
+        "Fornecedor": "COMERCIAL MONTEVERDE LTDA",
+        "Itens": 1,
+        "Licitacao": "1073000062025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 520.0,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "45806440000179",
+        "Data": "20250113",
+        "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 802.0,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "08778201000126",
+        "Data": "20250407",
+        "Fornecedor": "Drogafonte LTDA",
+        "Itens": 3,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 25118.4,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "12889035000293",
+        "Data": "20250401",
+        "Fornecedor": "inovamed hospitalar ltda",
+        "Itens": 1,
+        "Licitacao": "835000182025",
+        "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
+        "Total": 1855.0,
+        "UASG": "835"
+    },
+    {
+        "CNPJ": "09439486000133",
+        "Data": "20250423",
+        "Fornecedor": "J C COMERCIO E REFRIGERACAO LTDA",
+        "Itens": 10,
+        "Licitacao": "1963000672025",
+        "Orgao": "MUNICIPIO DE PONTE NOVA",
+        "Total": 706540.0,
+        "UASG": "1963"
+    },
+    {
+        "CNPJ": "37698720000182",
+        "Data": "20250416",
+        "Fornecedor": "Gibraltar Comercio e Industria Eireli",
+        "Itens": 1,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 17910.0,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "14030253000112",
+        "Data": "20250224",
+        "Fornecedor": "GILMAR HENRIQUE MARANGONI 02027572856",
+        "Itens": 10,
+        "Licitacao": "269000112025",
+        "Orgao": "MUNICIPIO DE GUARANESIA",
+        "Total": 3299.0,
+        "UASG": "269"
+    },
+    {
+        "CNPJ": "32532318000100",
+        "Data": "20250127",
+        "Fornecedor": "P&G ALIMENTOS LTDA",
+        "Itens": 4,
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 336321.25,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "40388708000186",
+        "Data": "20250310",
+        "Fornecedor": "40.388.708 DENIS PEREIRA FERREIRA",
+        "Itens": 1,
+        "Licitacao": "439000202025",
+        "Orgao": "MUNICIPIO DE LARANJAL",
+        "Total": 26250.0,
+        "UASG": "439"
+    },
+    {
+        "CNPJ": "30977140000185",
+        "Data": "20250321",
+        "Fornecedor": "NINE DIGITAL BANK CERTIFICAÇÃO DIGITAL E SOLUÇÕES EMPRESARIA",
+        "Itens": 2,
+        "Licitacao": "591000202025",
+        "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
+        "Total": 202.0,
+        "UASG": "591"
+    },
+    {
+        "CNPJ": "21111336000100",
+        "Data": "20250227",
+        "Fornecedor": "V R COSTA LTDA",
+        "Itens": 2,
+        "Licitacao": "348000022025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
+        "Total": 82935.0,
+        "UASG": "348"
+    },
+    {
+        "CNPJ": "08296762000199",
+        "Data": "20250408",
+        "Fornecedor": "PRO-SERVICE COMERCIO LTDA",
+        "Itens": 2,
+        "Licitacao": "255000612025",
+        "Orgao": "MUNICIPIO DE ILICINEA",
+        "Total": 73630.0,
+        "UASG": "255"
+    },
+    {
+        "CNPJ": "52307066000122",
+        "Data": "20250218",
+        "Fornecedor": "LAGUNA ESPORTE LTDA",
+        "Itens": 1,
+        "Licitacao": "62600000392025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "Total": 3468.05,
         "UASG": "62600"
     },
     {
@@ -1230,194 +1130,54 @@
         "UASG": "301"
     },
     {
-        "CNPJ": "53326285000111",
-        "Data": "20250225",
-        "Fornecedor": "BRENNER COMÉRCIO AUTOMOTIVO LTDA",
-        "Itens": 1,
-        "Licitacao": "1000412025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 265000.0,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "52795852000116",
-        "Data": "20250219",
-        "Fornecedor": "LEV INDUSTRIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "1000352025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 13800.0,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "47123165000114",
-        "Data": "20250212",
-        "Fornecedor": "L FORASTIERI MACHADO LTDA",
-        "Itens": 1,
-        "Licitacao": "1073000042025",
-        "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 298.0,
-        "UASG": "1073"
-    },
-    {
-        "CNPJ": "07731777000175",
+        "CNPJ": "32593430000150",
         "Data": "20250226",
-        "Fornecedor": "COMERCIAL GUARA LTDA",
-        "Itens": 2,
+        "Fornecedor": "M CARREGA COMÉRCIO DE PRODUTOS HOSPITALARES",
+        "Itens": 1,
         "Licitacao": "2003000432025",
         "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 3815.0,
+        "Total": 6850.0,
         "UASG": "2003"
     },
     {
-        "CNPJ": "19612735000102",
-        "Data": "20250331",
-        "Fornecedor": "Ribeiro Comercio Varejista e Atacadista Eireli ME",
-        "Itens": 2,
-        "Licitacao": "987000282025",
-        "Orgao": "MUNICIPIO DE PEDRALVA",
-        "Total": 47120.0,
-        "UASG": "987"
-    },
-    {
-        "CNPJ": "14778535000100",
+        "CNPJ": "36634645000123",
         "Data": "20250219",
-        "Fornecedor": "ROBERTI & ELEGEDA LTDA",
-        "Itens": 1,
-        "Licitacao": "1000352025",
-        "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 2633.4,
-        "UASG": "1"
-    },
-    {
-        "CNPJ": "42098167000187",
-        "Data": "20250219",
-        "Fornecedor": "COMERCIAL MONTEVERDE LTDA",
-        "Itens": 1,
+        "Fornecedor": "36.634.645 MIRIAM POLITO VENANCIO",
+        "Itens": 6,
         "Licitacao": "1073000062025",
         "Orgao": "MUNICIPIO DE CHACARA",
-        "Total": 520.0,
+        "Total": 47225.07,
         "UASG": "1073"
     },
     {
-        "CNPJ": "22223426000147",
-        "Data": "20250124",
-        "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
+        "CNPJ": "29987662000189",
+        "Data": "20250414",
+        "Fornecedor": "SOCIETE COMERCIO DE VEICULOS LTDA",
         "Itens": 1,
-        "Licitacao": "698000022025",
-        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
-        "Total": 6228.0,
-        "UASG": "698"
+        "Licitacao": "146000202025",
+        "Orgao": "MUNICIPIO DE MAUA",
+        "Total": 274000.0,
+        "UASG": "146"
     },
     {
-        "CNPJ": "15310120000162",
-        "Data": "20250307",
-        "Fornecedor": "L.M. Comercio de Móveis Ltda",
-        "Itens": 2,
-        "Licitacao": "128000012025",
-        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 50800.0,
-        "UASG": "128"
-    },
-    {
-        "CNPJ": "25531224000150",
-        "Data": "20250328",
-        "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
-        "Itens": 1,
-        "Licitacao": "07002000602025",
-        "Orgao": "MUNICIPIO DE GRAMADO",
-        "Total": 2756185.56,
-        "UASG": "07002"
-    },
-    {
-        "CNPJ": "54927717000102",
-        "Data": "20250214",
-        "Fornecedor": "N2J VEICULOS ESPECIAIS LTDA",
-        "Itens": 1,
-        "Licitacao": "2110000062025",
-        "Orgao": "MINAS NOVAS CAMARA MUNICIPAL",
-        "Total": 147999.0,
-        "UASG": "2110"
-    },
-    {
-        "CNPJ": "58543909000176",
-        "Data": "20250307",
-        "Fornecedor": "ANGULAR SOLUCOES EM DISTRIBUICAO LTDA",
-        "Itens": 1,
-        "Licitacao": "128000012025",
-        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 11959.8,
-        "UASG": "128"
-    },
-    {
-        "CNPJ": "05096610000154",
-        "Data": "20250312",
-        "Fornecedor": "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA",
-        "Itens": 10,
-        "Licitacao": "1058000022025",
-        "Orgao": "CAMARA MUNICIPAL DE CORONEL FABRICIANO",
-        "Total": 95599.8,
-        "UASG": "1058"
-    },
-    {
-        "CNPJ": "13759849000195",
-        "Data": "20250218",
-        "Fornecedor": "INDUSTRIA FENIX CORTE A LASER LTDA",
-        "Itens": 1,
-        "Licitacao": "62600000392025",
-        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
-        "Total": 280.0,
-        "UASG": "62600"
-    },
-    {
-        "CNPJ": "08504258000137",
-        "Data": "20250127",
-        "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
-        "Itens": 1,
-        "Licitacao": "301000042025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 22880.0,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "51011416000146",
-        "Data": "20250117",
-        "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
-        "Itens": 10,
-        "Licitacao": "343000012025",
-        "Orgao": "MUNICIPIO DE SAO GONCALO DO PARA",
-        "Total": 120908.0,
-        "UASG": "343"
-    },
-    {
-        "CNPJ": "12889035000102",
+        "CNPJ": "03652030000170",
         "Data": "20250324",
-        "Fornecedor": "INOVAMED HOSPITALAR LTDA",
-        "Itens": 1,
+        "Fornecedor": "CENTERMEDI COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+        "Itens": 3,
         "Licitacao": "08011001702025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 3420.0,
+        "Total": 11050.0,
         "UASG": "08011"
     },
     {
-        "CNPJ": "02952689000180",
-        "Data": "20250211",
-        "Fornecedor": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
-        "Itens": 1,
-        "Licitacao": "905000162025",
-        "Orgao": "MUNICIPIO DE WITMARSUM",
-        "Total": 760000.0,
-        "UASG": "905"
-    },
-    {
-        "CNPJ": "00028682000140",
-        "Data": "20250327",
-        "Fornecedor": "PROMEDON DO BRASIL PRODUTOS MÉDICO HOSPITALARES LTDA",
-        "Itens": 1,
-        "Licitacao": "404340014462025",
-        "Orgao": "ESTADO DO RIO DE JANEIRO",
-        "Total": 36299.76,
-        "UASG": "404340"
+        "CNPJ": "51355132000177",
+        "Data": "20250220",
+        "Fornecedor": "Maria Aparecida Rodrigues Medeiros",
+        "Itens": 2,
+        "Licitacao": "760000182025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "Total": 119200.0,
+        "UASG": "760"
     },
     {
         "CNPJ": "17294606000180",
@@ -1430,16 +1190,6 @@
         "UASG": "13003"
     },
     {
-        "CNPJ": "11787596000138",
-        "Data": "20250218",
-        "Fornecedor": "ATEND TUDO COMERCIO E SERVICOS LTDA ME",
-        "Itens": 1,
-        "Licitacao": "000000042000322025",
-        "Orgao": "MUNICIPIO DE SALVADOR",
-        "Total": 70900.0,
-        "UASG": "000000042"
-    },
-    {
         "CNPJ": "21483615000196",
         "Data": "20250204",
         "Fornecedor": "ORLY VEÍCULOS E PEÇAS S/A",
@@ -1448,6 +1198,116 @@
         "Orgao": "MUNICIPIO DE LARANJAL",
         "Total": 214500.0,
         "UASG": "350"
+    },
+    {
+        "CNPJ": "56050703000189",
+        "Data": "20250414",
+        "Fornecedor": "EXTREMA COMERCIO DE PECAS LTDA",
+        "Itens": 1,
+        "Licitacao": "1600000502025",
+        "Orgao": "MUNICIPIO DE SAO JOAO NEPOMUCENO",
+        "Total": 299000.0,
+        "UASG": "1600"
+    },
+    {
+        "CNPJ": "24044705000179",
+        "Data": "20250410",
+        "Fornecedor": "Eleni Aparecida Batista Targa",
+        "Itens": 2,
+        "Licitacao": "277000912025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 52580.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "07731777000175",
+        "Data": "20250226",
+        "Fornecedor": "COMERCIAL GUARA LTDA",
+        "Itens": 2,
+        "Licitacao": "2003000432025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "Total": 3815.0,
+        "UASG": "2003"
+    },
+    {
+        "CNPJ": "52795852000116",
+        "Data": "20250219",
+        "Fornecedor": "LEV INDUSTRIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "1000352025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 13800.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "35741144000183",
+        "Data": "20250429",
+        "Fornecedor": "CAMMINARE MAQUINAS E EMPREENDIMENTOS LTDA",
+        "Itens": 1,
+        "Licitacao": "231000462025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE PRUDENTE",
+        "Total": 318000.0,
+        "UASG": "231"
+    },
+    {
+        "CNPJ": "20649395000165",
+        "Data": "20250307",
+        "Fornecedor": "J.MARANGONI COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO EIRELI - EPP",
+        "Itens": 1,
+        "Licitacao": "07001001122025",
+        "Orgao": "MUNICIPIO DE ITUPORANGA",
+        "Total": 140000.0,
+        "UASG": "07001"
+    },
+    {
+        "CNPJ": "48936631000143",
+        "Data": "20250415",
+        "Fornecedor": "SATURNO COMERCIO DE MATERIAL ELETRICO E ELETRONICO LTDA",
+        "Itens": 2,
+        "Licitacao": "22000542025",
+        "Orgao": "MUNICIPIO DE MATOZINHOS",
+        "Total": 88200.0,
+        "UASG": "22"
+    },
+    {
+        "CNPJ": "44346117000105",
+        "Data": "20250219",
+        "Fornecedor": "DA FRONTEIRA COMERCIO E REPRESENTAÇÃO LTDA",
+        "Itens": 1,
+        "Licitacao": "1000352025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 15776.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "23998925000179",
+        "Data": "20250403",
+        "Fornecedor": "CARLOS APARECIDO PEREIRA DA SILVA - EPP",
+        "Itens": 4,
+        "Licitacao": "78000212025",
+        "Orgao": "MUNICIPIO DE AUGUSTO DE LIMA",
+        "Total": 57880.0,
+        "UASG": "78"
+    },
+    {
+        "CNPJ": "41484059000260",
+        "Data": "20250414",
+        "Fornecedor": "Puissance Automoveis Ltda",
+        "Itens": 2,
+        "Licitacao": "1600000502025",
+        "Orgao": "MUNICIPIO DE SAO JOAO NEPOMUCENO",
+        "Total": 596970.0,
+        "UASG": "1600"
+    },
+    {
+        "CNPJ": "07752236000123",
+        "Data": "20250324",
+        "Fornecedor": "MEDILAR IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS MEDICO HOSPITLARES",
+        "Itens": 1,
+        "Licitacao": "08011001702025",
+        "Orgao": "MUNICIPIO DE OSORIO",
+        "Total": 6840.0,
+        "UASG": "08011"
     },
     {
         "CNPJ": "20901039000197",
@@ -1460,14 +1320,344 @@
         "UASG": "703"
     },
     {
-        "CNPJ": "21111336000100",
-        "Data": "20250227",
-        "Fornecedor": "V R COSTA LTDA",
+        "CNPJ": "39535062000133",
+        "Data": "20250225",
+        "Fornecedor": "BENÍCIO PNEUS LTDA.",
+        "Itens": 7,
+        "Licitacao": "1202000122025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "Total": 96632.0,
+        "UASG": "1202"
+    },
+    {
+        "CNPJ": "01645409000390",
+        "Data": "20250117",
+        "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
+        "Itens": 4,
+        "Licitacao": "404340002192025",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "Total": 1001298.1199999999,
+        "UASG": "404340"
+    },
+    {
+        "CNPJ": "02952689000180",
+        "Data": "20250211",
+        "Fornecedor": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
+        "Itens": 1,
+        "Licitacao": "905000162025",
+        "Orgao": "MUNICIPIO DE WITMARSUM",
+        "Total": 760000.0,
+        "UASG": "905"
+    },
+    {
+        "CNPJ": "08515909693",
+        "Data": "20250428",
+        "Fornecedor": "LEANDRO MOREIRA DELPHINO",
+        "Itens": 3,
+        "Licitacao": "166000162025",
+        "Orgao": "MUNICIPIO DE IBITIURA DE MINAS",
+        "Total": 180511.2,
+        "UASG": "166"
+    },
+    {
+        "CNPJ": "48793172000196",
+        "Data": "20250219",
+        "Fornecedor": "GAMA SOLUCOES EM INFRAESTRUTURA LTDA",
+        "Itens": 5,
+        "Licitacao": "1127000062025",
+        "Orgao": "MUNICIPIO DE JACUI",
+        "Total": 690400.0,
+        "UASG": "1127"
+    },
+    {
+        "CNPJ": "47646580000152",
+        "Data": "20250307",
+        "Fornecedor": "FRANCIELE ELETRO LTDA",
+        "Itens": 1,
+        "Licitacao": "128000012025",
+        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
+        "Total": 5200.0,
+        "UASG": "128"
+    },
+    {
+        "CNPJ": "47646580000152",
+        "Data": "20250226",
+        "Fornecedor": "FRANCIELE ELETRO LTDA",
         "Itens": 2,
-        "Licitacao": "348000022025",
-        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
-        "Total": 82935.0,
-        "UASG": "348"
+        "Licitacao": "2003000432025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "Total": 4550.0,
+        "UASG": "2003"
+    },
+    {
+        "CNPJ": "55813062000104",
+        "Data": "20250307",
+        "Fornecedor": "JLM REPRESENTACOES LTDA",
+        "Itens": 3,
+        "Licitacao": "07001001122025",
+        "Orgao": "MUNICIPIO DE ITUPORANGA",
+        "Total": 29471.0,
+        "UASG": "07001"
+    },
+    {
+        "CNPJ": "37279287000140",
+        "Data": "20250115",
+        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
+        "Itens": 1,
+        "Licitacao": "06002000012025",
+        "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "Total": 1154999.24,
+        "UASG": "06002"
+    },
+    {
+        "CNPJ": "56955733000134",
+        "Data": "20250416",
+        "Fornecedor": "ATACADO LIMPEL MG LTDA",
+        "Itens": 1,
+        "Licitacao": "589000332025",
+        "Orgao": "MUNICIPIO DE LUISBURGO",
+        "Total": 19980.0,
+        "UASG": "589"
+    },
+    {
+        "CNPJ": "13851726000180",
+        "Data": "20250113",
+        "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
+        "Itens": 1,
+        "Licitacao": "196000952024",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "Total": 128.66,
+        "UASG": "196"
+    },
+    {
+        "CNPJ": "44838265000139",
+        "Data": "20250220",
+        "Fornecedor": "CREATIVE COMERCIO VAREJISTA LTDA",
+        "Itens": 1,
+        "Licitacao": "760000182025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "Total": 49045.0,
+        "UASG": "760"
+    },
+    {
+        "CNPJ": "49815982000169",
+        "Data": "20250219",
+        "Fornecedor": "RG2 INDUSTRIA E COMERCIO DE MOVEIS LTDA",
+        "Itens": 2,
+        "Licitacao": "1000352025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 12622.5,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "31761939000100",
+        "Data": "20250206",
+        "Fornecedor": "AG SG COMERCIO E TRANSPORTES LTDA",
+        "Itens": 3,
+        "Licitacao": "10000272025",
+        "Orgao": "MUNICIPIO DE CLAUDIO",
+        "Total": 137598.5,
+        "UASG": "10"
+    },
+    {
+        "CNPJ": "12889035000102",
+        "Data": "20250324",
+        "Fornecedor": "INOVAMED HOSPITALAR LTDA",
+        "Itens": 1,
+        "Licitacao": "08011001702025",
+        "Orgao": "MUNICIPIO DE OSORIO",
+        "Total": 3420.0,
+        "UASG": "08011"
+    },
+    {
+        "CNPJ": "18707422000167",
+        "Data": "20250317",
+        "Fornecedor": "MARKA VEICULOS E PEÇAS S/A",
+        "Itens": 1,
+        "Licitacao": "703000132025",
+        "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
+        "Total": 134900.0,
+        "UASG": "703"
+    },
+    {
+        "CNPJ": "43252294000151",
+        "Data": "20250219",
+        "Fornecedor": "GB GIRO BRASIL COMERCIO DE PRODUTOS LTDA",
+        "Itens": 1,
+        "Licitacao": "1073000062025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 1684.68,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "53326285000111",
+        "Data": "20250225",
+        "Fornecedor": "BRENNER COMÉRCIO AUTOMOTIVO LTDA",
+        "Itens": 1,
+        "Licitacao": "1000412025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 265000.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "30379344000114",
+        "Data": "20250218",
+        "Fornecedor": "RG DISTRIBUIDORA DE PRODUTOS LABORATORIAIS",
+        "Itens": 2,
+        "Licitacao": "111000312025",
+        "Orgao": "MUNICIPIO DE PARAGUACU",
+        "Total": 125996.0,
+        "UASG": "111"
+    },
+    {
+        "CNPJ": "51011416000146",
+        "Data": "20250117",
+        "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
+        "Itens": 10,
+        "Licitacao": "343000012025",
+        "Orgao": "MUNICIPIO DE SAO GONCALO DO PARA",
+        "Total": 120908.0,
+        "UASG": "343"
+    },
+    {
+        "CNPJ": "49743058000114",
+        "Data": "20250415",
+        "Fornecedor": "GBC SOLAR E ELETRICA LTDA",
+        "Itens": 3,
+        "Licitacao": "22000542025",
+        "Orgao": "MUNICIPIO DE MATOZINHOS",
+        "Total": 140019.0,
+        "UASG": "22"
+    },
+    {
+        "CNPJ": "52442148000180",
+        "Data": "20250401",
+        "Fornecedor": "52.442.148 MAURICIO RODRIGUES CARLOS",
+        "Itens": 10,
+        "Licitacao": "942000502025",
+        "Orgao": "MUNICIPIO DE URUCANIA",
+        "Total": 16226.42,
+        "UASG": "942"
+    },
+    {
+        "CNPJ": "10302648000176",
+        "Data": "20250218",
+        "Fornecedor": "R&L INDUSTRIA E COMERCIO DE ARTIGOS DE DECORACOES",
+        "Itens": 1,
+        "Licitacao": "000000042000322025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "Total": 87021.74,
+        "UASG": "000000042"
+    },
+    {
+        "CNPJ": "00592198000140",
+        "Data": "20250307",
+        "Fornecedor": "CELINA MOREIRA FREITAS ME",
+        "Itens": 1,
+        "Licitacao": "128000012025",
+        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
+        "Total": 5028.0,
+        "UASG": "128"
+    },
+    {
+        "CNPJ": "18136904000104",
+        "Data": "20250219",
+        "Fornecedor": "GUILHERME XAVIER PIVA EIRELI EPP",
+        "Itens": 1,
+        "Licitacao": "1000352025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 445.5,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "07502724000182",
+        "Data": "20250416",
+        "Fornecedor": "NEOCONSIG TECNOLOGIA S/A",
+        "Itens": 1,
+        "Licitacao": "1963000632025",
+        "Orgao": "MUNICIPIO DE PONTE NOVA",
+        "Total": 0.95,
+        "UASG": "1963"
+    },
+    {
+        "CNPJ": "73472227000103",
+        "Data": "20250218",
+        "Fornecedor": "D FORMA INSTALACOES E DIVISORIAS LTDA",
+        "Itens": 1,
+        "Licitacao": "000000042000322025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "Total": 1995.24,
+        "UASG": "000000042"
+    },
+    {
+        "CNPJ": "07678133000160",
+        "Data": "20250314",
+        "Fornecedor": "FORZAN LOCAÇÕES E SERVIÇOS LTDA",
+        "Itens": 1,
+        "Licitacao": "342000102025",
+        "Orgao": "MUNICIPIO DE MATEUS LEME",
+        "Total": 3663121.56,
+        "UASG": "342"
+    },
+    {
+        "CNPJ": "42921840000137",
+        "Data": "20250219",
+        "Fornecedor": "LEANDRO ALBERTO KERBER LTDA",
+        "Itens": 1,
+        "Licitacao": "1000352025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 3836.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "22316926000123",
+        "Data": "20250218",
+        "Fornecedor": "JACOB CONSTRUCOES LTDA",
+        "Itens": 2,
+        "Licitacao": "000000042000322025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "Total": 79019.93,
+        "UASG": "000000042"
+    },
+    {
+        "CNPJ": "11262969000157",
+        "Data": "20250401",
+        "Fornecedor": "SUPRAMIL COMERCIAL LTDA EPP",
+        "Itens": 2,
+        "Licitacao": "835000182025",
+        "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
+        "Total": 7500.0,
+        "UASG": "835"
+    },
+    {
+        "CNPJ": "03945035000191",
+        "Data": "20250407",
+        "Fornecedor": "ACACIA COMERCIO DE MEDICAMENTOS LTDA",
+        "Itens": 1,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 4059.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "33618020000180",
+        "Data": "20250227",
+        "Fornecedor": "HM SONORIZACAO E ILUMINACAO LTDA",
+        "Itens": 2,
+        "Licitacao": "698000172025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 163700.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "44472217000170",
+        "Data": "20250131",
+        "Fornecedor": "JN PNEUS LTDA",
+        "Itens": 1,
+        "Licitacao": "1000262025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 41877.0,
+        "UASG": "1"
     },
     {
         "CNPJ": "51020411000180",
@@ -1480,6 +1670,56 @@
         "UASG": "760"
     },
     {
+        "CNPJ": "09253952000191",
+        "Data": "20250325",
+        "Fornecedor": "SANDRO VILMAR PIRES ME",
+        "Itens": 2,
+        "Licitacao": "1441000132025",
+        "Orgao": "MUNICIPIO DE VICENCIA",
+        "Total": 118350.0,
+        "UASG": "1441"
+    },
+    {
+        "CNPJ": "11399773000109",
+        "Data": "20250123",
+        "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
+        "Itens": 1,
+        "Licitacao": "620000032025",
+        "Orgao": "MUNICIPIO DE PITANGUI",
+        "Total": 24528.0,
+        "UASG": "620"
+    },
+    {
+        "CNPJ": "01417694000120",
+        "Data": "20250407",
+        "Fornecedor": "DISTRIMIX DISTRIBUIDORA DE MEDICAMENTOS LTDA",
+        "Itens": 3,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 1536.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "48545691000135",
+        "Data": "20250428",
+        "Fornecedor": "USINA COMERCIO DE VEICULOS LTDA",
+        "Itens": 1,
+        "Licitacao": "301000512025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 225980.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "36624228000108",
+        "Data": "20250401",
+        "Fornecedor": "ECOAMBI ENGENHARIA AMBIENTAL E DE SEGURANCA DO TRABALHO LTDA",
+        "Itens": 1,
+        "Licitacao": "1000892025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 141600.0,
+        "UASG": "1"
+    },
+    {
         "CNPJ": "19919775000193",
         "Data": "20250219",
         "Fornecedor": "LUCYR DAS GRAÇAS MENDES GONÇALVES",
@@ -1490,44 +1730,334 @@
         "UASG": "1073"
     },
     {
-        "CNPJ": "41823463000130",
-        "Data": "20250307",
-        "Fornecedor": "COMERCIAL SILVESTRE LTDA",
+        "CNPJ": "13759849000195",
+        "Data": "20250218",
+        "Fornecedor": "INDUSTRIA FENIX CORTE A LASER LTDA",
         "Itens": 1,
-        "Licitacao": "128000012025",
-        "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 8200.0,
-        "UASG": "128"
+        "Licitacao": "62600000392025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "Total": 280.0,
+        "UASG": "62600"
     },
     {
-        "CNPJ": "94389400000184",
-        "Data": "20250324",
-        "Fornecedor": "MCW PRODUTOS MÉDICOS E HOSPITALARES LTDA",
+        "CNPJ": "05609101000188",
+        "Data": "20250218",
+        "Fornecedor": "FLORIAN & CIA LTDA",
+        "Itens": 4,
+        "Licitacao": "62600000392025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "Total": 4834.74,
+        "UASG": "62600"
+    },
+    {
+        "CNPJ": "36188164000131",
+        "Data": "20250410",
+        "Fornecedor": "t.d. comércio e distribuidora ltda.",
         "Itens": 1,
-        "Licitacao": "08011001702025",
-        "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 16100.0,
-        "UASG": "08011"
+        "Licitacao": "277000912025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 12950.0,
+        "UASG": "277"
     },
     {
-        "CNPJ": "09053134001621",
-        "Data": "20250219",
-        "Fornecedor": "ELFA MEDICAMENTOS S.A",
-        "Itens": 5,
-        "Licitacao": "488000102025",
-        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
-        "Total": 1658772.0899999999,
-        "UASG": "488"
+        "CNPJ": "54213979000105",
+        "Data": "20250310",
+        "Fornecedor": "54.213.979 MARCOS FRANCIS VILELA",
+        "Itens": 8,
+        "Licitacao": "439000202025",
+        "Orgao": "MUNICIPIO DE LARANJAL",
+        "Total": 77119.0,
+        "UASG": "439"
     },
     {
-        "CNPJ": "56969923000100",
-        "Data": "20250115",
-        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
+        "CNPJ": "59522599000176",
+        "Data": "20250225",
+        "Fornecedor": "RICARDO JULIANO FRANK ROSA",
+        "Itens": 1,
+        "Licitacao": "1202000122025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "Total": 5397.28,
+        "UASG": "1202"
+    },
+    {
+        "CNPJ": "12889035000293",
+        "Data": "20250407",
+        "Fornecedor": "inovamed hospitalar ltda",
+        "Itens": 1,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 3600.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "12927876000167",
+        "Data": "20250407",
+        "Fornecedor": "SOMA/MG PRODUTOS HOSPITALARES LTDA",
         "Itens": 2,
-        "Licitacao": "06002000012025",
-        "Orgao": "MUNICIPIO DE RIO NEGRO",
-        "Total": 1916990.846,
-        "UASG": "06002"
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 1380.0,
+        "UASG": "277"
+    },
+    {
+        "CNPJ": "04798469000764",
+        "Data": "20250325",
+        "Fornecedor": "GNC AUTOMOTORES LTDA.",
+        "Itens": 1,
+        "Licitacao": "522000872025",
+        "Orgao": "MUNICIPIO DE CORDISBURGO",
+        "Total": 274000.0,
+        "UASG": "522"
+    },
+    {
+        "CNPJ": "26334347000164",
+        "Data": "20250416",
+        "Fornecedor": "CPS MOBILIARIO E EQUIPAMENTOS EIRELI ME",
+        "Itens": 1,
+        "Licitacao": "831000942025",
+        "Orgao": "MUNICIPIO DE UBERABA",
+        "Total": 15960.0,
+        "UASG": "831"
+    },
+    {
+        "CNPJ": "48214791000189",
+        "Data": "20250401",
+        "Fornecedor": "ANIMALFORCE MEDICAMENTOS LTDA",
+        "Itens": 1,
+        "Licitacao": "835000182025",
+        "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
+        "Total": 8700.0,
+        "UASG": "835"
+    },
+    {
+        "CNPJ": "25230836000103",
+        "Data": "20250312",
+        "Fornecedor": "RENATA MARCELLA M. S. PRADO PINHEIRO",
+        "Itens": 1,
+        "Licitacao": "197000082025",
+        "Orgao": "MUNICIPIO DE PACO DO LUMIAR",
+        "Total": 12960000.0,
+        "UASG": "197"
+    },
+    {
+        "CNPJ": "47915446000100",
+        "Data": "20250220",
+        "Fornecedor": "L E C DISTRIBUIDORA DE PRODUTOS NUTRICIONAIS LTDA",
+        "Itens": 4,
+        "Licitacao": "760000182025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "Total": 92060.0,
+        "UASG": "760"
+    },
+    {
+        "CNPJ": "08992911000154",
+        "Data": "20250430",
+        "Fornecedor": "FILGUEIRA & FILGUEIRA LTDA",
+        "Itens": 1,
+        "Licitacao": "852000082025",
+        "Orgao": "MUNICIPIO DE BOFETE",
+        "Total": 36642.0,
+        "UASG": "852"
+    },
+    {
+        "CNPJ": "54892266000115",
+        "Data": "20250402",
+        "Fornecedor": "CALTEC INDUSTRIA & COMERCIO LTDA",
+        "Itens": 6,
+        "Licitacao": "547000082025",
+        "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO DE MARIANA",
+        "Total": 161800.0,
+        "UASG": "547"
+    },
+    {
+        "CNPJ": "45999330000170",
+        "Data": "20250127",
+        "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
+        "Itens": 3,
+        "Licitacao": "301000042025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 358740.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "27577159000120",
+        "Data": "20250220",
+        "Fornecedor": "27.577.159 RELTON UILIAN ARDENGUE",
+        "Itens": 1,
+        "Licitacao": "710000602025",
+        "Orgao": "MUNICIPIO DE MONTE SANTO DE MINAS",
+        "Total": 33600.0,
+        "UASG": "710"
+    },
+    {
+        "CNPJ": "37598374000160",
+        "Data": "20250218",
+        "Fornecedor": "LR SERVICOS MEDICOS E GESTAO EM SAUDE LTDA",
+        "Itens": 1,
+        "Licitacao": "32000082025",
+        "Orgao": "MUNICIPIO DE SAO GERALDO DO BAIXIO",
+        "Total": 126000.0,
+        "UASG": "32"
+    },
+    {
+        "CNPJ": "44442996000160",
+        "Data": "20250408",
+        "Fornecedor": "Agiliza Inovações e Serviços Ltda",
+        "Itens": 2,
+        "Licitacao": "1995001122025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "Total": 6852086.899999999,
+        "UASG": "1995"
+    },
+    {
+        "CNPJ": "18487144000180",
+        "Data": "20250213",
+        "Fornecedor": "I.G.I. INDUSTRIA DE GASES ITAJAI LTDA",
+        "Itens": 3,
+        "Licitacao": "1576000022025",
+        "Orgao": "MUNICIPIO DE ITAPEMA",
+        "Total": 706915.0,
+        "UASG": "1576"
+    },
+    {
+        "CNPJ": "24708774000130",
+        "Data": "20250212",
+        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
+        "Itens": 1,
+        "Licitacao": "1073000042025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "Total": 555.1,
+        "UASG": "1073"
+    },
+    {
+        "CNPJ": "39914097000183",
+        "Data": "20250219",
+        "Fornecedor": "ACTEC ACESSO CONTROLE E TECNOLOGIA LTDA",
+        "Itens": 1,
+        "Licitacao": "350000082025",
+        "Orgao": "MUNICIPIO DE LARANJAL",
+        "Total": 22200.0,
+        "UASG": "350"
+    },
+    {
+        "CNPJ": "55695599000117",
+        "Data": "20250107",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "Itens": 3,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 47070.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "10680757000127",
+        "Data": "20250127",
+        "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
+        "Itens": 1,
+        "Licitacao": "620000062025",
+        "Orgao": "MUNICIPIO DE PITANGUI",
+        "Total": 143950.0,
+        "UASG": "620"
+    },
+    {
+        "CNPJ": "61562112000554",
+        "Data": "20250221",
+        "Fornecedor": "PRICEWATERHOUSECOOPERS AUDITORES INDEPENDENTES LTDA",
+        "Itens": 1,
+        "Licitacao": "1784000042025",
+        "Orgao": "COMPANHIA DE DESENVOLVIMENTO DE MINAS GERAIS - CODEMGE",
+        "Total": 1921829.4,
+        "UASG": "1784"
+    },
+    {
+        "CNPJ": "05096610000154",
+        "Data": "20250312",
+        "Fornecedor": "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA",
+        "Itens": 10,
+        "Licitacao": "1058000022025",
+        "Orgao": "CAMARA MUNICIPAL DE CORONEL FABRICIANO",
+        "Total": 95599.8,
+        "UASG": "1058"
+    },
+    {
+        "CNPJ": "51749573000153",
+        "Data": "20250331",
+        "Fornecedor": "BOGOTEX INDUSTRIA E COMERCIO DE CONFECCOES LTDA",
+        "Itens": 8,
+        "Licitacao": "987000282025",
+        "Orgao": "MUNICIPIO DE PEDRALVA",
+        "Total": 136920.0,
+        "UASG": "987"
+    },
+    {
+        "CNPJ": "12973944000124",
+        "Data": "20250307",
+        "Fornecedor": "CS COM. ATACADISTA DE PEÇAS AUTOMOTIVAS LTDA - ME",
+        "Itens": 1,
+        "Licitacao": "07001001122025",
+        "Orgao": "MUNICIPIO DE ITUPORANGA",
+        "Total": 28500.0,
+        "UASG": "07001"
+    },
+    {
+        "CNPJ": "35231746000190",
+        "Data": "20250227",
+        "Fornecedor": "GADITA COMÉRCIO DE PRODUTOS PERMANENTES E DE CONSUMO LTDA",
+        "Itens": 2,
+        "Licitacao": "348000022025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
+        "Total": 23640.0,
+        "UASG": "348"
+    },
+    {
+        "CNPJ": "89791248000121",
+        "Data": "20250402",
+        "Fornecedor": "AGROTAL DISTRIBUIDORA AGROPECUARIA TAQUARENSE LTDA",
+        "Itens": 2,
+        "Licitacao": "1000902025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 80100.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "10158356000101",
+        "Data": "20250107",
+        "Fornecedor": "PNEUSTORECOMBR",
+        "Itens": 2,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 31704.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "27075106000100",
+        "Data": "20250219",
+        "Fornecedor": "NOVIDÁ INDÚSTRIA E COMÉRCIO DE MÓVEIS LTDA",
+        "Itens": 1,
+        "Licitacao": "1000352025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "Total": 800.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "24879794000173",
+        "Data": "20250430",
+        "Fornecedor": "TENDAS ITAJAÍ LTDA",
+        "Itens": 1,
+        "Licitacao": "1001142025",
+        "Orgao": "MUNICIPIO DE ITAJAI",
+        "Total": 72000.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "46724452000117",
+        "Data": "20250312",
+        "Fornecedor": "RANGO SOLUCOES LTDA",
+        "Itens": 4,
+        "Licitacao": "301000112025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 809810.0,
+        "UASG": "301"
     },
     {
         "CNPJ": "53696164000161",
@@ -1540,13 +2070,193 @@
         "UASG": "62600"
     },
     {
-        "CNPJ": "03652030000170",
+        "CNPJ": "94389400000184",
         "Data": "20250324",
-        "Fornecedor": "CENTERMEDI COMERCIO DE PRODUTOS HOSPITALARES LTDA",
-        "Itens": 3,
+        "Fornecedor": "MCW PRODUTOS MÉDICOS E HOSPITALARES LTDA",
+        "Itens": 1,
         "Licitacao": "08011001702025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 11050.0,
+        "Total": 16100.0,
         "UASG": "08011"
+    },
+    {
+        "CNPJ": "00331788003053",
+        "Data": "20250307",
+        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - POÇOS",
+        "Itens": 1,
+        "Licitacao": "2139000022025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "Total": 24346.56,
+        "UASG": "2139"
+    },
+    {
+        "CNPJ": "17332901000183",
+        "Data": "20250313",
+        "Fornecedor": "VIC PAN LTDA",
+        "Itens": 1,
+        "Licitacao": "1000422025",
+        "Orgao": "MUNICIPIO DE ESTEIO",
+        "Total": 40180.0,
+        "UASG": "1"
+    },
+    {
+        "CNPJ": "42128438000361",
+        "Data": "20250325",
+        "Fornecedor": "42.128.438/0003-61 PRIMAVIA FRANCE COMÉRCIO DE AUT LTDA",
+        "Itens": 1,
+        "Licitacao": "522000872025",
+        "Orgao": "MUNICIPIO DE CORDISBURGO",
+        "Total": 79900.0,
+        "UASG": "522"
+    },
+    {
+        "CNPJ": "76183128000108",
+        "Data": "20250226",
+        "Fornecedor": "ORTOPEDIA PARANA LTDA ME",
+        "Itens": 6,
+        "Licitacao": "01001000072025",
+        "Orgao": "PARANAVAI CONSORCIO INTERMUNICIPAL DE SAUDE",
+        "Total": 216240.0,
+        "UASG": "01001"
+    },
+    {
+        "CNPJ": "05754099000130",
+        "Data": "20250124",
+        "Fornecedor": "MRX TECNOLOGIA LTDA",
+        "Itens": 1,
+        "Licitacao": "020000112025",
+        "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "Total": 530000.0,
+        "UASG": "020"
+    },
+    {
+        "CNPJ": "46339373000192",
+        "Data": "20250401",
+        "Fornecedor": "A.L.C. MORAES COMERCIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "835000182025",
+        "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
+        "Total": 4725.0,
+        "UASG": "835"
+    },
+    {
+        "CNPJ": "45897289000121",
+        "Data": "20250226",
+        "Fornecedor": "ODETE MARIA FREITAS",
+        "Itens": 3,
+        "Licitacao": "2003000432025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "Total": 9246.0,
+        "UASG": "2003"
+    },
+    {
+        "CNPJ": "11262969000157",
+        "Data": "20250403",
+        "Fornecedor": "SUPRAMIL COMERCIAL LTDA EPP",
+        "Itens": 10,
+        "Licitacao": "488001232025",
+        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
+        "Total": 29099.0,
+        "UASG": "488"
+    },
+    {
+        "CNPJ": "28157903000108",
+        "Data": "20250206",
+        "Fornecedor": "MEGADEC DISTRIBUIDORA LTDA",
+        "Itens": 2,
+        "Licitacao": "10000272025",
+        "Orgao": "MUNICIPIO DE CLAUDIO",
+        "Total": 187225.0,
+        "UASG": "10"
+    },
+    {
+        "CNPJ": "02989244000174",
+        "Data": "20250221",
+        "Fornecedor": "Portal Soluções Ltda",
+        "Itens": 4,
+        "Licitacao": "1963000392025",
+        "Orgao": "MUNICIPIO DE PONTE NOVA",
+        "Total": 36400.0,
+        "UASG": "1963"
+    },
+    {
+        "CNPJ": "47188112000181",
+        "Data": "20250321",
+        "Fornecedor": "EDS COMERCIO E SOLUCOES LTDA",
+        "Itens": 1,
+        "Licitacao": "850000042025",
+        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
+        "Total": 289344.0,
+        "UASG": "850"
+    },
+    {
+        "CNPJ": "55149591000236",
+        "Data": "20250321",
+        "Fornecedor": "ALLSET TECNOLOGIA LTDA",
+        "Itens": 1,
+        "Licitacao": "850000042025",
+        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
+        "Total": 7380.0,
+        "UASG": "850"
+    },
+    {
+        "CNPJ": "06294126000100",
+        "Data": "20250324",
+        "Fornecedor": "SOMA/RS PRODUTOS HOSPITALARES LTDA",
+        "Itens": 1,
+        "Licitacao": "08011001702025",
+        "Orgao": "MUNICIPIO DE OSORIO",
+        "Total": 2300.0,
+        "UASG": "08011"
+    },
+    {
+        "CNPJ": "51560442000123",
+        "Data": "20250307",
+        "Fornecedor": "DUFILTER DISTRIBUIDORA DE FILTROS E LUBRIFICANTES LTDA",
+        "Itens": 2,
+        "Licitacao": "07001001122025",
+        "Orgao": "MUNICIPIO DE ITUPORANGA",
+        "Total": 44437.5,
+        "UASG": "07001"
+    },
+    {
+        "CNPJ": "04610985000128",
+        "Data": "20250321",
+        "Fornecedor": "LOJA EDMUNDO SIQUEIRA LTDA.",
+        "Itens": 7,
+        "Licitacao": "591000202025",
+        "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
+        "Total": 873.0,
+        "UASG": "591"
+    },
+    {
+        "CNPJ": "03246708000115",
+        "Data": "20250227",
+        "Fornecedor": "LUIZ ANTONIO PEIXOTO FRANCA EPP",
+        "Itens": 1,
+        "Licitacao": "698000172025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "Total": 202450.0,
+        "UASG": "698"
+    },
+    {
+        "CNPJ": "05234812000115",
+        "Data": "20250321",
+        "Fornecedor": "SANDRA RIBEIRO DOS SANTOS",
+        "Itens": 2,
+        "Licitacao": "850000042025",
+        "Orgao": "ITAJUBA CAMARA MUNICIPAL",
+        "Total": 69669.23000000001,
+        "UASG": "850"
+    },
+    {
+        "CNPJ": "73856593000166",
+        "Data": "20250407",
+        "Fornecedor": "PRATI, DONADUZZI",
+        "Itens": 2,
+        "Licitacao": "277000882025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "Total": 3400.0,
+        "UASG": "277"
     }
 ]
