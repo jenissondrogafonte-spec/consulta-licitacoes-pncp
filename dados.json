@@ -1,1 +1,82 @@
-[]
+[
+    {
+        "CNPJ": "10158356000101",
+        "Data": "20250107",
+        "Fornecedor": "PNEUSTORECOMBR",
+        "Itens": 2,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 31704.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "55623647000161",
+        "Data": "20250107",
+        "Fornecedor": "GAMA PNEUS LTDA",
+        "Itens": 4,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 16394.79,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "55695599000117",
+        "Data": "20250107",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "Itens": 3,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 47070.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "34840358000144",
+        "Data": "20250107",
+        "Fornecedor": "ZEUS COMERCIAL LTDA",
+        "Itens": 1,
+        "Licitacao": "06005016262024",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "Total": 1748.0,
+        "UASG": "06005"
+    },
+    {
+        "CNPJ": "21935659000100",
+        "Data": "20250108",
+        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "Itens": 1,
+        "Licitacao": "301001532024",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "Total": 13695180.0,
+        "UASG": "301"
+    },
+    {
+        "CNPJ": "17294606000180",
+        "Data": "20250107",
+        "Fornecedor": "SUPER COMERCIO E LOCACOES LTDA",
+        "Itens": 1,
+        "Licitacao": "13003000032025",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "Total": 186376.0,
+        "UASG": "13003"
+    },
+    {
+        "CNPJ": "15080472000179",
+        "Data": "20250107",
+        "Fornecedor": "AEG PLAYGROUNDS LTDA",
+        "Itens": 5,
+        "Licitacao": "13003000032025",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "Total": 397840.0,
+        "UASG": "13003"
+    },
+    {
+        "CNPJ": "32163902000135",
+        "Data": "20250107",
+        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
+        "Itens": 2,
+        "Licitacao": "13003000032025",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "Total": 239200.0,
+        "UASG": "13003"
+    }
+]
