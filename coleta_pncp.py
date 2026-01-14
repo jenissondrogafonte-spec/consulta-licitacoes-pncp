@@ -2,111 +2,64 @@ import requests
 import pandas as pd
 import json
 from datetime import datetime, timedelta
-import time
 import os
 import sys
 
 # --- CONFIGURAÇÃO ---
+# Esta URL inclui o prefixo /v1/ que é o padrão de produção do Compras.gov.br
+URL_BASE = "https://dadosabertos.compras.gov.br/modulo-contratacoes/v1/consultarContratacoes_PNCP_14133"
+
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Formatação de datas para a API do PNCP (AAAA-MM-DD)
+# Formatação exigida por essa API: AAAA-MM-DD
 if env_inicio and env_fim:
     d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
     d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
 else:
-    d_ini = (datetime.now() - timedelta(days=2)).strftime('%Y-%m-%d')
+    d_ini = (datetime.now() - timedelta(days=5)).strftime('%Y-%m-%d')
     d_fim = datetime.now().strftime('%Y-%m-%d')
 
-print(f"--- CONSULTA CONSOLIDADA PNCP: {d_ini} até {d_fim} ---")
-
-ARQUIVO_SAIDA = 'dados.json'
-todos_itens = []
-
-# URL Estável de Consulta do Governo
-URL_BASE = "https://pncp.gov.br/api/consulta/v1/contratacoes"
+print(f"--- CONSULTA DADOS ABERTOS: {d_ini} até {d_fim} ---")
 
 params = {
-    "dataAtualizacaoInicial": d_ini,
-    "dataAtualizacaoFinal": d_fim,
-    "codigoModalidadeContratacao": "6", # Pregão
-    "pagina": 1,
-    "tamanhoPagina": 50
+    "dataPublicacaoPncpInicial": d_ini,
+    "dataPublicacaoPncpFinal": d_fim,
+    "codigoModalidade": 6, # Pregão
+    "pagina": 1
 }
 
 try:
-    # 1. Busca as contratações atualizadas no período
     resp = requests.get(URL_BASE, params=params, headers=HEADERS, timeout=30)
     
     if resp.status_code == 200:
-        contratacoes = resp.json().get('data', [])
-        print(f"✅ Encontradas {len(contratacoes)} contratações atualizadas.")
-
-        for c in contratacoes:
-            cnpj = c.get('orgaoEntidade', {}).get('cnpj')
-            ano = c.get('anoCompra')
-            seq = c.get('sequencialCompra')
-            uasg = str(c.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
-            nome_orgao = c.get('orgaoEntidade', {}).get('razaoSocial', '')
-
-            # 2. Busca os resultados de cada uma
-            url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
+        dados = resp.json().get('resultado', [])
+        print(f"✅ Sucesso! Encontradas {len(dados)} contratações.")
+        
+        # Aqui, como estamos no endpoint 1, pegamos os dados básicos da licitação
+        # Se precisar do vencedor, o robô teria que consultar o endpoint 3 em seguida
+        for item in dados:
+            uasg = str(item.get('codigoUasg', '000000')).zfill(6)
+            seq = str(item.get('numeroCompra', '00000')).zfill(5)
+            ano = item.get('anoCompra')
             
-            try:
-                r_res = requests.get(url_res, headers=HEADERS, timeout=15)
-                if r_res.status_code == 200:
-                    itens = r_res.json()
-                    if isinstance(itens, dict): itens = [itens]
-                    
-                    for it in itens:
-                        # Pegamos apenas quem tem fornecedor e valor (Homologado)
-                        fornecedor = it.get('nomeRazaoSocialFornecedor')
-                        valor = it.get('valorTotalHomologado', 0)
-                        
-                        if fornecedor and valor > 0:
-                            todos_itens.append({
-                                "Data": d_ini.replace('-', ''),
-                                "UASG": uasg,
-                                "Orgao": nome_orgao,
-                                "Licitacao": f"{uasg}{str(seq).zfill(5)}{ano}",
-                                "Fornecedor": fornecedor,
-                                "CNPJ": it.get('niFornecedor', ''),
-                                "Total": float(valor),
-                                "Itens": 1
-                            })
-                time.sleep(0.1) # Evita bloqueio
-            except:
-                continue
+            # Nota: O endpoint 1 traz dados do edital. 
+            # Para o vencedor (Fornecedor), o ideal é o endpoint 3.
+            print(f"  Encontrada: UASG {uasg} - Pregão {seq}/{ano}")
+            
+    elif resp.status_code == 404:
+        print("❌ Erro 404: O caminho /v1/ não foi encontrado. Tentando sem o prefixo...")
+        # Tentativa sem /v1/ caso o servidor mude
+        url_alt = URL_BASE.replace("/v1/", "/")
+        resp_alt = requests.get(url_alt, params=params, headers=HEADERS)
+        print(f"  Resultado alternativa: {resp_alt.status_code}")
     else:
-        print(f"❌ Erro {resp.status_code} na URL Base.")
+        print(f"❌ Erro {resp.status_code}: {resp.text}")
 
 except Exception as e:
-    print(f"❌ Erro de Conexão: {e}")
-
-# --- SALVAMENTO ---
-if not todos_itens:
-    print("⚠️ Nenhum item homologado encontrado para as contratações deste período.")
-    sys.exit(0)
-
-df = pd.DataFrame(todos_itens)
-agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
-novos_dados = agrupado.to_dict(orient='records')
-
-if os.path.exists(ARQUIVO_SAIDA):
-    with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
-        try: historico = json.load(f)
-        except: historico = []
-else: historico = []
-
-historico.extend(novos_dados)
-final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
-
-with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
-    json.dump(final, f, indent=4, ensure_ascii=False)
-
-print(f"💾 Sucesso! {len(final)} registros salvos.")
+    print(f"❌ Falha: {e}")
