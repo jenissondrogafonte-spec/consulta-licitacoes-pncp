@@ -6,59 +6,59 @@ import time
 import os
 import sys
 
-# --- CONFIGURAÇÃO DA NOVA API (DADOS ABERTOS COMPRAS.GOV) ---
-BASE_URL = "https://dadosabertos.compras.gov.br/modulo-contratacoes"
+# --- CONFIGURAÇÃO ---
+# URL completa extraída do Swagger (Módulo 07 - Endpoint 3)
+URL_API = "https://dadosabertos.compras.gov.br/modulo-contratacoes/v1/consultarResultadoItensContratacoes_PNCP_14133"
 HEADERS = {
     'Accept': 'application/json',
-    'User-Agent': 'Mozilla/5.0'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if env_inicio and env_fim:
-    # Formato esperado por esta API: AAAA-MM-DD
     d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
     d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
-    print(f"--- BUSCA DADOS ABERTOS: {d_ini} a {d_fim} ---")
 else:
     ontem = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
-    d_ini = ontem
-    d_fim = ontem
+    d_ini, d_fim = ontem, ontem
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# 1. Consultar Resultados de Itens (Endpoint 3)
-url_resultados = f"{BASE_URL}/3_consultarResultadoItensContratacoes_PNCP_14133"
-
+# Parâmetros conforme documentação Swagger
 params = {
     "dataPublicacaoPncpInicial": d_ini,
     "dataPublicacaoPncpFinal": d_fim,
     "pagina": 1
 }
 
+print(f"--- CONSULTANDO DADOS ABERTOS (V1) ---")
+print(f"Período: {d_ini} até {d_fim}")
+
 try:
-    print(f"Consultando resultados da API de Dados Abertos...")
-    resp = requests.get(url_resultados, params=params, headers=HEADERS)
+    # A API de Dados Abertos é robusta, mas exige precisão nos parâmetros
+    resp = requests.get(URL_API, params=params, headers=HEADERS, timeout=60)
     
     if resp.status_code == 200:
-        dados = resp.json().get('resultado', []) # Note que nesta API o campo é 'resultado'
-        print(f"✅ Encontrados {len(dados)} itens com resultado.")
+        # No Swagger, o retorno costuma vir em 'resultado' ou direto na lista
+        conteudo = resp.json()
+        itens = conteudo.get('resultado', []) if isinstance(conteudo, dict) else []
+        
+        print(f"✅ Sucesso! {len(itens)} itens processados pela API.")
 
-        for item in dados:
-            # Filtramos apenas PREGÃO (A API de dados abertos costuma trazer a modalidade descrita)
-            modalidade = str(item.get('modalidadeNome', '')).upper()
-            if "PREGÃO" in modalidade or item.get('codigoModalidade') == 6:
-                
-                uasg = str(item.get('codigoUasg', '')).zfill(6)
+        for item in itens:
+            # Filtro para Pregão (Modalidade 6)
+            if item.get('codigoModalidade') == 6 or "PREGÃO" in str(item.get('modalidadeNome', '')).upper():
+                uasg = str(item.get('codigoUasg', '000000')).zfill(6)
                 ano = item.get('anoCompra')
-                seq = str(item.get('numeroCompra', '')).zfill(5)
+                seq = str(item.get('numeroCompra', '00000')).zfill(5)
                 
                 todos_itens.append({
-                    "Data": item.get('dataPublicacaoPncp', '')[:10].replace('-', ''),
+                    "Data": str(item.get('dataPublicacaoPncp', d_ini))[:10].replace('-', ''),
                     "UASG": uasg,
-                    "Orgao": item.get('nomeOrgao', 'Não identificado'),
+                    "Orgao": item.get('nomeOrgao', 'Órgão Federal'),
                     "Licitacao": f"{uasg}{seq}{ano}",
                     "Fornecedor": item.get('nomeRazaoSocialFornecedor', 'N/I'),
                     "CNPJ": item.get('niFornecedor', ''),
@@ -66,14 +66,15 @@ try:
                     "Itens": 1
                 })
     else:
-        print(f"❌ Erro na API: {resp.status_code}")
+        print(f"❌ Erro {resp.status_code}: Verifique se o serviço está online.")
+        print(f"Resposta: {resp.text[:200]}")
 
 except Exception as e:
-    print(f"❌ Erro de conexão: {e}")
+    print(f"❌ Falha de Conexão: {e}")
 
-# --- SALVAMENTO (IGUAL ANTERIOR) ---
+# --- SALVAMENTO ---
 if not todos_itens:
-    print("⚠️ Nenhum dado encontrado na nova API para este período.")
+    print("⚠️ A busca não retornou pregões homologados para este período.")
     sys.exit(0)
 
 df = pd.DataFrame(todos_itens)
@@ -92,4 +93,4 @@ final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final, f, indent=4, ensure_ascii=False)
 
-print(f"💾 Sucesso! Banco de dados atualizado com a nova API.")
+print(f"💾 Banco de dados atualizado! Total: {len(final)} registros.")
