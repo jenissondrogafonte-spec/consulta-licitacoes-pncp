@@ -4,41 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Inteligência - Compras Públicas</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        :root { --gov-blue: #004494; --gov-light: #f8f9fa; --gov-accent: #2369B3; }
+        :root { --gov-blue: #004494; --gov-light: #f8f9fa; --gov-accent: #2369B3; --gov-yellow: #FFD100; }
         body { background-color: #f4f7fa; font-family: 'Open Sans', sans-serif; color: #333; }
         
         /* Cabeçalho Estilo Governo */
-        .gov-header { background: var(--gov-blue); color: white; padding: 20px 0; border-bottom: 4px solid #FFD100; margin-bottom: 30px; }
+        .gov-header { background: var(--gov-blue); color: white; padding: 25px 0; border-bottom: 5px solid var(--gov-yellow); margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
         .main-container { background: white; border-radius: 8px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         
+        /* Botão de Navegação no Header */
+        .btn-nav-status { background-color: var(--gov-yellow); color: #333; font-weight: 700; border: none; padding: 8px 20px; border-radius: 5px; text-decoration: none; transition: 0.3s; }
+        .btn-nav-status:hover { background-color: #e6bc00; color: black; transform: translateY(-2px); }
+
         /* Cartões de Indicadores */
-        .stat-card { border: none; border-radius: 10px; padding: 20px; color: white; transition: 0.3s; }
-        .bg-money { background: linear-gradient(45deg, #28a745, #20c997); }
-        .bg-items { background: linear-gradient(45deg, #17a2b8, #007bff); }
-        .bg-orgs { background: linear-gradient(45deg, #6610f2, #6f42c1); }
-        .stat-value { font-size: 1.8rem; font-weight: 700; margin: 0; }
-        .stat-label { font-size: 0.8rem; text-transform: uppercase; opacity: 0.9; font-weight: 600; }
+        .stat-card { border: none; border-radius: 10px; padding: 20px; color: white; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .stat-card:hover { transform: translateY(-3px); }
+        .bg-money { background: linear-gradient(135deg, #198754, #20c997); }
+        .bg-items { background: linear-gradient(135deg, #0d6efd, #0dcaf0); }
+        .bg-orgs { background: linear-gradient(135deg, #6f42c1, #a64bf4); }
+        .stat-value { font-size: 2rem; font-weight: 700; margin: 0; letter-spacing: -1px; }
+        .stat-label { font-size: 0.85rem; text-transform: uppercase; opacity: 0.9; font-weight: 600; margin-bottom: 5px; }
 
         /* Filtros */
-        .filter-section { background: var(--gov-light); padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid var(--gov-blue); }
-        .form-label { font-size: 0.75rem; font-weight: 700; color: #555; }
+        .filter-section { background: var(--gov-light); padding: 25px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid var(--gov-blue); }
+        .form-label { font-size: 0.75rem; font-weight: 800; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
         .btn-search { background: var(--gov-blue); color: white; border: none; font-weight: 600; }
         .btn-search:hover { background: var(--gov-accent); color: white; }
 
         /* Tabela */
-        .table-custom { font-size: 0.85rem; border-radius: 8px; overflow: hidden; }
+        .table-custom { font-size: 0.9rem; border-radius: 8px; overflow: hidden; }
         .table-custom thead { background: #343a40; color: white; }
-        .empty-state { text-align: center; padding: 60px; color: #adb5bd; border: 2px dashed #dee2e6; border-radius: 8px; }
+        .table-custom th { border: none; padding: 15px; font-weight: 600; }
+        .table-custom td { padding: 12px 15px; vertical-align: middle; border-bottom: 1px solid #eee; }
+        
+        /* Estado Vazio */
+        .empty-state { text-align: center; padding: 80px 20px; color: #adb5bd; border: 2px dashed #dee2e6; border-radius: 8px; background-color: #fff; }
     </style>
 </head>
 <body>
 
 <header class="gov-header text-center">
     <div class="container">
-        <h2 class="mb-0">🏛️ Painel de Monitoramento PNCP</h2>
-        <p class="small mb-0 opacity-75">Baseado na Lei 14.133/21 - Dados Extraídos do ComprasNet</p>
+        <h2 class="mb-1 fw-bold"><i class="fas fa-chart-line me-2"></i>Painel de Inteligência PNCP</h2>
+        <p class="small mb-4 opacity-75">Monitoramento de Vencedores e Valores Homologados</p>
+        
+        <a href="status.html" class="btn-nav-status shadow">
+            <i class="fas fa-search me-2"></i> Consultar Objetos e Status
+        </a>
     </div>
 </header>
 
@@ -48,20 +69,35 @@
         <div class="row g-3 mb-4" id="rowIndicadores" style="display: none;">
             <div class="col-md-4">
                 <div class="stat-card bg-money">
-                    <p class="stat-label">Valor Total Homologado</p>
-                    <p class="stat-value" id="valTotal">R$ 0,00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="stat-label">Valor Total Homologado</p>
+                            <p class="stat-value" id="valTotal">R$ 0,00</p>
+                        </div>
+                        <i class="fas fa-sack-dollar fa-3x opacity-25"></i>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stat-card bg-items">
-                    <p class="stat-label">Total de Itens Ganhos</p>
-                    <p class="stat-value" id="valItens">0</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="stat-label">Total de Itens Ganhos</p>
+                            <p class="stat-value" id="valItens">0</p>
+                        </div>
+                        <i class="fas fa-boxes-stacked fa-3x opacity-25"></i>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stat-card bg-orgs">
-                    <p class="stat-label">Empresas Encontradas</p>
-                    <p class="stat-value" id="valEmpresas">0</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="stat-label">Empresas Vencedoras</p>
+                            <p class="stat-value" id="valEmpresas">0</p>
+                        </div>
+                        <i class="fas fa-building fa-3x opacity-25"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,11 +105,11 @@
         <div class="filter-section">
             <div class="row g-3 align-items-end">
                 <div class="col-md-3">
-                    <label class="form-label">FORNECEDOR / CNPJ</label>
+                    <label class="form-label">Fornecedor / CNPJ</label>
                     <input type="text" id="inForn" class="form-control" placeholder="Digite nome ou CNPJ...">
                 </div>
                 <div class="col-md-3">
-                    <label class="form-label">ÓRGÃO PÚBLICO</label>
+                    <label class="form-label">Órgão Público</label>
                     <input type="text" id="inOrg" class="form-control" placeholder="Ex: Prefeitura de...">
                 </div>
                 <div class="col-md-2">
@@ -81,17 +117,25 @@
                     <input type="text" id="inUasg" class="form-control" placeholder="Ex: 926150">
                 </div>
                 <div class="col-md-2">
-                    <label class="form-label">LICITAÇÃO (UASG+SEQ+ANO)</label>
-                    <input type="text" id="inLic" class="form-control" placeholder="Identificação da Compra">
+                    <label class="form-label">Licitação (ID)</label>
+                    <input type="text" id="inLic" class="form-control" placeholder="Ano/Sequencial">
                 </div>
                 <div class="col-md-2 d-flex gap-2">
-                    <button onclick="buscar()" class="btn btn-search w-100 py-2">PESQUISAR</button>
-                    <button onclick="limpar()" class="btn btn-outline-secondary py-2">LIMPAR</button>
+                    <button onclick="buscar()" class="btn btn-search w-100 py-2 shadow-sm">
+                        <i class="fas fa-search me-1"></i> BUSCAR
+                    </button>
+                    <button onclick="limpar()" class="btn btn-outline-secondary py-2" title="Limpar filtros">
+                        <i class="fas fa-eraser"></i>
+                    </button>
                 </div>
             </div>
         </div>
 
         <div id="resultadoContainer" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <small class="text-muted">Resultados ordenados por data (mais recente primeiro)</small>
+                <span class="badge bg-light text-dark border">Dados atualizados via PNCP</span>
+            </div>
             <div class="table-responsive">
                 <table class="table table-hover table-custom border">
                     <thead>
@@ -99,10 +143,10 @@
                             <th>DATA</th>
                             <th>UASG</th>
                             <th>ÓRGÃO / ENTIDADE</th>
-                            <th>IDENTIFICAÇÃO DA COMPRA</th>
-                            <th>FORNECEDOR</th>
+                            <th>IDENTIFICAÇÃO</th>
+                            <th>FORNECEDOR VENCEDOR</th>
                             <th class="text-center">ITENS</th>
-                            <th class="text-end">VALOR TOTAL (R$)</th>
+                            <th class="text-end">VALOR (R$)</th>
                         </tr>
                     </thead>
                     <tbody id="corpoTabela"></tbody>
@@ -111,9 +155,9 @@
         </div>
 
         <div id="estadoVazio" class="empty-state">
-            <img src="https://cdn-icons-png.flaticon.com/512/1076/1076334.png" width="80" class="mb-3 opacity-25">
-            <h5>Nenhum dado filtrado</h5>
-            <p>Preencha os campos acima para gerar os indicadores e a listagem de processos.</p>
+            <i class="fas fa-magnifying-glass-chart fa-4x mb-3 opacity-25"></i>
+            <h5>Painel de Vencedores</h5>
+            <p>Utilize os filtros acima para analisar quem está ganhando licitações e quanto.</p>
         </div>
 
     </div>
@@ -122,11 +166,11 @@
 <script>
     let dadosBanco = [];
     
-    // Carrega dados evitando cache
+    // Carrega o banco de dados (dados.json) forçando recarregamento sem cache
     fetch('dados.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => { dadosBanco = data; })
-        .catch(err => console.error("Erro ao carregar banco:", err));
+        .catch(err => console.error("Ainda não há dados gerados ou erro ao ler:", err));
 
     function buscar() {
         const fF = document.getElementById('inForn').value.toLowerCase().trim();
@@ -135,10 +179,11 @@
         const fL = document.getElementById('inLic').value.trim();
 
         if(!fF && !fO && !fU && !fL) {
-            alert("Por favor, informe ao menos um critério de pesquisa.");
+            alert("Por favor, preencha pelo menos um campo para filtrar.");
             return;
         }
 
+        // Filtra os dados
         const resultados = dadosBanco.filter(i => {
             return ( (i.Fornecedor || '').toLowerCase().includes(fF) || (i.CNPJ || '').includes(fF) ) &&
                    ( (i.Orgao || '').toLowerCase().includes(fO) ) &&
@@ -156,7 +201,7 @@
         const tbody = document.getElementById('corpoTabela');
 
         if (lista.length === 0) {
-            alert("Nenhum registro encontrado para estes filtros.");
+            alert("Nenhum registro encontrado. Tente outros termos.");
             return;
         }
 
@@ -164,11 +209,12 @@
         rowInd.style.display = 'flex';
         resCont.style.display = 'block';
 
-        // Cálculos dos Indicadores
+        // Cálculos Financeiros
         let totalDinheiro = 0;
         let totalItens = 0;
         let empresasUnicas = new Set();
 
+        // Renderiza a tabela
         tbody.innerHTML = lista.reverse().map(i => {
             totalDinheiro += i.Total;
             totalItens += i.Itens;
@@ -177,30 +223,47 @@
             return `
                 <tr>
                     <td>${formatarData(i.Data)}</td>
-                    <td class="text-secondary fw-bold">${i.UASG || ''}</td>
+                    <td class="text-secondary fw-bold small">${i.UASG || ''}</td>
                     <td>${i.Orgao || ''}</td>
-                    <td class="text-primary fw-bold">${i.Licitacao || ''}</td>
-                    <td><b>${i.Fornecedor || ''}</b><br><small class="text-muted">${i.CNPJ || ''}</small></td>
-                    <td class="text-center">${i.Itens || '0'}</td>
-                    <td class="text-end fw-bold text-success">R$ ${Number(i.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                    <td>
+                        <span class="badge bg-light text-primary border border-primary-subtle">
+                            ${i.Licitacao.slice(6,11)}/${i.Licitacao.slice(11)}
+                        </span>
+                    </td>
+                    <td>
+                        <div class="fw-bold text-dark">${i.Fornecedor || 'Nome não inf.'}</div>
+                        <small class="text-muted" style="font-size: 0.75rem;">CNPJ: ${i.CNPJ || ''}</small>
+                    </td>
+                    <td class="text-center"><span class="badge bg-secondary">${i.Itens || '0'}</span></td>
+                    <td class="text-end fw-bold text-success">
+                        R$ ${Number(i.Total).toLocaleString('pt-BR', {minimumFractionDigits: 2})}
+                    </td>
                 </tr>
             `;
         }).join('');
 
-        // Atualiza os cartões
+        // Atualiza os cards do topo com animação simples
         document.getElementById('valTotal').innerText = totalDinheiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
         document.getElementById('valItens').innerText = totalItens;
         document.getElementById('valEmpresas').innerText = empresasUnicas.size;
     }
 
     function limpar() {
-        location.reload(); // Forma mais rápida de resetar o estado
+        location.reload(); 
     }
 
     function formatarData(d) {
         if (!d || d.length !== 8) return d;
         return d.slice(6,8) + '/' + d.slice(4,6) + '/' + d.slice(0,4);
     }
+
+    // Atalho: Enter para buscar
+    document.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            const active = document.activeElement;
+            if(active.tagName === 'INPUT') buscar();
+        }
+    });
 </script>
 
 </body>
