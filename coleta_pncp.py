@@ -16,11 +16,15 @@ env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if env_inicio and env_fim:
+    # Se informado manualmente no GitHub Actions
     d_ini, d_fim = env_inicio, env_fim
 else:
-    # Usando Outubro onde sabemos que há dados
-    d_ini = "20251001"
-    d_fim = "20251002"
+    # --- MODO AUTOMÁTICO (PRODUÇÃO) ---
+    # Se rodar pelo Cron (Agendado), pega os últimos 3 dias para garantir
+    hoje = datetime.now()
+    inicio = hoje - timedelta(days=3)
+    d_ini = inicio.strftime('%Y%m%d')
+    d_fim = hoje.strftime('%Y%m%d')
 
 print(f"--- ROBÔ HÍBRIDO (STATUS + VENCEDORES POR ITEM): {d_ini} até {d_fim} ---")
 
@@ -155,10 +159,10 @@ if lista_vencedores:
     grp = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
     salvar_arquivo_json(ARQ_VENCEDORES, grp.to_dict(orient='records'))
 else:
-    print("⚠️ Nenhum vencedor capturado (Verifique se há licitações com Status 'Homologada').")
+    print("⚠️ Nenhum vencedor novo capturado.")
 
 if lista_status:
     df_st = pd.DataFrame(lista_status).drop_duplicates(subset=['Licitacao', 'Status'])
     salvar_arquivo_json(ARQ_STATUS, df_st.to_dict(orient='records'))
 else:
-    print("⚠️ Nenhum status capturado.")
+    print("⚠️ Nenhum status novo capturado.")
