@@ -4,7 +4,6 @@ import json
 from datetime import datetime, timedelta
 import os
 import sys
-import time
 
 # --- CONFIGURAÇÃO ---
 HEADERS = {
@@ -15,29 +14,30 @@ HEADERS = {
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Formatação de data para a URL do Governo (AAAAMMDD)
+# Formatação: Este endpoint exige AAAA-MM-DD
 if env_inicio and env_fim:
-    d_ini = env_inicio
-    d_fim = env_fim
+    d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
+    d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
 else:
-    # Padrão: Ontem (Dia 13/01/2026)
-    ontem = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
-    d_ini, d_fim = ontem, ontem
+    # Padrão: Ontem
+    data_ontem = datetime.now() - timedelta(days=1)
+    d_ini = data_ontem.strftime('%Y-%m-%d')
+    d_fim = d_ini
 
-print(f"--- BUSCA DE RESULTADOS PNCP: {d_ini} a {d_fim} ---")
+print(f"--- CONSULTA CONSOLIDADA PNCP: {d_ini} até {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# URL DE RESULTADOS DE ITENS (Endpoint oficial para homologações)
-URL_API = "https://pncp.gov.br/api/consulta/v1/itens/resultado"
+# URL ESTÁVEL: Consulta de itens de contratações
+URL_API = "https://pncp.gov.br/api/consulta/v1/contratacoes/itens"
 
 params = {
-    "dataResultadoInicial": d_ini,
-    "dataResultadoFinal": d_fim,
-    "codigoModalidadeContratacao": "6", # Pregão
     "pagina": 1,
-    "tamanhoPagina": 100
+    "tamanhoPagina": 100,
+    "dataAtualizacaoInicial": d_ini,
+    "dataAtualizacaoFinal": d_fim,
+    "codigoModalidadeContratacao": "6" # Pregão
 }
 
 try:
@@ -45,11 +45,12 @@ try:
     
     if resp.status_code == 200:
         dados = resp.json().get('data', [])
-        print(f"✅ Sucesso! {len(dados)} itens homologados encontrados.")
+        print(f"✅ Sucesso! {len(dados)} registros encontrados.")
 
         for item in dados:
+            # Capturamos apenas se já houver um vencedor (Fornecedor)
             fornecedor = item.get('nomeRazaoSocialFornecedor')
-            valor = item.get('valorTotalHomologado', 0)
+            valor = item.get('valorTotalItem', 0)
             
             if fornecedor and valor > 0:
                 uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
@@ -57,7 +58,7 @@ try:
                 ano = item.get('anoCompra')
                 
                 todos_itens.append({
-                    "Data": d_ini,
+                    "Data": d_ini.replace('-', ''),
                     "UASG": uasg,
                     "Orgao": item.get('orgaoEntidade', {}).get('razaoSocial', 'Órgão não identificado'),
                     "Licitacao": f"{uasg}{seq}{ano}",
@@ -67,13 +68,14 @@ try:
                     "Itens": 1
                 })
     else:
-        print(f"❌ Erro na API: {resp.status_code}")
+        print(f"❌ Erro na API: {resp.status_code} - URL pode ter mudado.")
+
 except Exception as e:
     print(f"❌ Falha de conexão: {e}")
 
-# --- PROCESSAMENTO E SALVAMENTO ---
+# --- SALVAMENTO ---
 if not todos_itens:
-    print("\n⚠️ Nenhum item encontrado para estas datas.")
+    print("\n⚠️ Nenhum item homologado encontrado com esses critérios.")
     sys.exit(0)
 
 df = pd.DataFrame(todos_itens)
@@ -86,16 +88,11 @@ novos_dados = agrupado.to_dict(orient='records')
 
 if os.path.exists(ARQUIVO_SAIDA):
     with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
-        try:
-            historico = json.load(f)
-        except:
-            historico = []
-else:
-    historico = []
+        try: historico = json.load(f)
+        except: historico = []
+else: historico = []
 
 historico.extend(novos_dados)
-
-# Remover duplicatas
 final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
