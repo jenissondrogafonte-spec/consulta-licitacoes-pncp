@@ -3,115 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitor de Editais - Status PNCP</title>
+    <title>Monitor de Editais - PNCP</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        :root { --gov-blue: #004494; --gov-yellow: #FFD100; --gov-bg: #f4f7fa; }
-        body { background-color: var(--gov-bg); font-family: 'Open Sans', sans-serif; color: #333; }
+        body { background-color: #f8f9fa; font-family: 'Open Sans', sans-serif; color: #333; }
         
-        .header-gov { background: var(--gov-blue); color: white; padding: 20px 0; border-bottom: 4px solid var(--gov-yellow); margin-bottom: 30px; }
-        .btn-voltar { border: 1px solid rgba(255,255,255,0.4); color: white; border-radius: 20px; padding: 5px 15px; text-decoration: none; }
-        .btn-voltar:hover { background: white; color: var(--gov-blue); }
-        .main-card { border: none; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); background: white; padding: 25px; }
+        /* Header Minimalista */
+        .header-mini { background: #fff; border-bottom: 1px solid #dee2e6; padding: 15px 0; margin-bottom: 20px; }
+        .btn-outline-custom { color: #004494; border-color: #004494; }
+        .btn-outline-custom:hover { background: #004494; color: white; }
 
-        /* Estilos da Tabela e Inputs */
-        .form-label { font-size: 0.75rem; font-weight: 700; color: #6c757d; text-transform: uppercase; }
-        .table-custom { font-size: 0.9rem; }
-        .table-custom thead { background-color: #343a40; color: white; }
-        .table-custom th { font-weight: 600; padding: 12px; border: none; }
-        .table-custom td { vertical-align: middle; padding: 12px; border-bottom: 1px solid #f0f0f0; }
-
-        .objeto-desc { max-width: 450px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: help; }
-        .objeto-desc:hover { white-space: normal; overflow: visible; background: #fffbe6; position: relative; z-index: 10; padding: 5px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-
-        /* Badges */
-        .badge-status { font-size: 0.8rem; padding: 6px 12px; border-radius: 6px; font-weight: 600; }
+        /* Filtros Compactos */
+        .filter-bar { background: white; padding: 20px; border-radius: 6px; border: 1px solid #e9ecef; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .form-label { font-size: 0.7rem; font-weight: 700; color: #6c757d; text-transform: uppercase; margin-bottom: 4px; }
+        .form-control, .form-select { font-size: 0.9rem; border-radius: 4px; }
+        
+        /* Tabela Clean */
+        .table-custom { font-size: 0.85rem; background: white; }
+        .table-custom thead { background-color: #f1f3f5; color: #495057; }
+        .table-custom th { font-weight: 700; padding: 10px; border-bottom: 2px solid #dee2e6; }
+        .table-custom td { vertical-align: middle; padding: 8px 10px; border-bottom: 1px solid #f1f1f1; }
+        
+        /* Badges e Textos */
+        .badge-status { font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
         .st-verde { background-color: #d1e7dd; color: #0f5132; }
         .st-azul { background-color: #cfe2ff; color: #084298; }
         .st-amarelo { background-color: #fff3cd; color: #664d03; }
         .st-vermelho { background-color: #f8d7da; color: #842029; }
-        .st-cinza { background-color: #e2e3e5; color: #41464b; }
+        
+        .objeto-desc { max-width: 350px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
+        .objeto-desc:hover { white-space: normal; position: relative; background: #fff; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 5px; border-radius: 4px; }
     </style>
 </head>
 <body>
 
-<header class="header-gov">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div>
-            <h4 class="mb-0 fw-bold"><i class="fas fa-search-dollar me-2"></i>Monitor de Editais</h4>
-            <small class="opacity-75">Base de dados de objetos e status de licitações</small>
+<header class="header-mini">
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 fw-bold text-primary"><i class="fas fa-list-ul me-2"></i>Status de Editais</h5>
+        <div class="d-flex align-items-center gap-3">
+            <span class="badge bg-secondary" id="contadorBadge">0 registros</span>
+            <a href="index.html" class="btn btn-sm btn-outline-custom">Ir para Vencedores</a>
         </div>
-        <a href="index.html" class="btn-voltar"><i class="fas fa-arrow-left me-1"></i> Voltar</a>
     </div>
 </header>
 
-<div class="container pb-5">
-    <div class="main-card">
-        
-        <div class="row g-3 align-items-end mb-4">
+<div class="container-fluid px-4 pb-5">
+    
+    <div class="filter-bar mb-3">
+        <div class="row g-2 align-items-end">
+            <div class="col-md-1">
+                <label class="form-label">UASG</label>
+                <input type="text" id="inUasg" class="form-control" placeholder="98765">
+            </div>
             <div class="col-md-2">
                 <label class="form-label">Nº Licitação</label>
-                <input type="text" id="inNum" class="form-control" placeholder="Ex: 90001">
+                <input type="text" id="inNum" class="form-control" placeholder="Ex: 10/2025">
             </div>
             <div class="col-md-3">
                 <label class="form-label">Órgão Público</label>
-                <input type="text" id="inOrg" class="form-control" placeholder="Ex: Prefeitura de...">
+                <input type="text" id="inOrg" class="form-control" placeholder="Nome do órgão...">
             </div>
             <div class="col-md-3">
-                <label class="form-label">Objeto (Palavra-chave)</label>
-                <input type="text" id="inObj" class="form-control" placeholder="Ex: Medicamentos...">
+                <label class="form-label">Objeto</label>
+                <input type="text" id="inObj" class="form-control" placeholder="Palavra-chave...">
             </div>
             <div class="col-md-2">
                 <label class="form-label">Situação</label>
                 <select id="inStatus" class="form-select">
                     <option value="">Todas</option>
-                    <option value="Aguardando">Abertas / Aguardando</option>
+                    <option value="Aguardando">Abertas</option>
                     <option value="Disputa">Em Disputa</option>
                     <option value="Homologad">Homologadas</option>
                     <option value="Suspens">Suspensas</option>
                 </select>
             </div>
-            <div class="col-md-2">
-                <button onclick="buscar()" class="btn btn-primary w-100 fw-bold py-2">
-                    <i class="fas fa-filter me-1"></i> FILTRAR
-                </button>
+            <div class="col-md-1">
+                <button onclick="buscar()" class="btn btn-primary w-100 fw-bold"><i class="fas fa-search"></i></button>
             </div>
         </div>
+    </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-            <small class="text-muted"><i class="fas fa-sort-amount-down me-1"></i> Ordenado por Data de Abertura (Decrescente)</small>
-            <span class="badge bg-light text-dark border">Mostrando <b id="contador">0</b> registros</span>
-        </div>
+    <div class="table-responsive">
+        <table class="table table-custom table-hover border">
+            <thead>
+                <tr>
+                    <th width="10%">Abertura</th>
+                    <th width="8%">UASG</th>
+                    <th width="10%">Nº Edital</th>
+                    <th width="20%">Órgão</th>
+                    <th width="40%">Objeto</th>
+                    <th width="12%" class="text-center">Status</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
 
-        <div class="table-responsive">
-            <table class="table table-custom table-hover">
-                <thead>
-                    <tr>
-                        <th width="12%">Abertura</th>
-                        <th width="20%">Órgão</th>
-                        <th width="13%">Licitação</th>
-                        <th width="40%">Objeto da Compra</th>
-                        <th width="15%" class="text-center">Status</th>
-                    </tr>
-                </thead>
-                <tbody id="corpoTabela"></tbody>
-            </table>
-        </div>
-
-        <div id="loading" class="text-center py-5">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-2 text-muted fw-bold">Carregando base de editais...</p>
-        </div>
-        
-        <div id="emptyState" class="text-center py-5 d-none">
-            <h5 class="text-muted">Nenhum edital encontrado</h5>
-        </div>
+    <div id="loading" class="text-center py-5 text-muted">
+        <div class="spinner-border spinner-border-sm" role="status"></div> Carregando...
+    </div>
+    <div id="emptyState" class="text-center py-5 d-none text-muted">
+        Nenhum edital encontrado com esses filtros.
     </div>
 </div>
 
@@ -122,36 +118,33 @@
         .then(res => res.json())
         .then(data => {
             dadosStatus = data;
+            // Ordena por data de abertura (Mais futura primeiro)
+            dadosStatus.sort((a, b) => (b.DataAbertura || '').localeCompare(a.DataAbertura || ''));
             
-            // ORDENAÇÃO AUTOMÁTICA: Data de Abertura (Mais recente/futura primeiro)
-            dadosStatus.sort((a, b) => {
-                const dataA = a.DataAbertura || '0000';
-                const dataB = b.DataAbertura || '0000';
-                return dataB.localeCompare(dataA);
-            });
-
             document.getElementById('loading').classList.add('d-none');
             buscar();
         })
         .catch(err => {
-            document.getElementById('loading').innerHTML = `<div class="alert alert-warning">Aguardando geração do status.json...</div>`;
+            document.getElementById('loading').innerText = "Aguardando atualização do robô...";
         });
 
     function buscar() {
-        const fNum = document.getElementById('inNum').value.trim();
-        const fOrg = document.getElementById('inOrg').value.toLowerCase().trim();
-        const fObj = document.getElementById('inObj').value.toLowerCase().trim();
-        const fSts = document.getElementById('inStatus').value.toLowerCase();
+        // Captura os valores dos campos novos
+        const fUasg = document.getElementById('inUasg').value.trim();
+        const fNum  = document.getElementById('inNum').value.trim();
+        const fOrg  = document.getElementById('inOrg').value.toLowerCase().trim();
+        const fObj  = document.getElementById('inObj').value.toLowerCase().trim();
+        const fSts  = document.getElementById('inStatus').value.toLowerCase();
 
         const filtrados = dadosStatus.filter(i => {
-            // Filtro por Número (Verifica se o que foi digitado existe no número da licitação)
-            const matchNum = fNum === "" || (i.Numero || i.Licitacao || '').includes(fNum);
+            // Lógica de filtro separada
+            const matchUasg = (i.UASG || '').includes(fUasg);
+            const matchNum  = (i.Numero || i.Licitacao || '').includes(fNum);
+            const matchOrg  = (i.Orgao || '').toLowerCase().includes(fOrg);
+            const matchObj  = (i.Objeto || '').toLowerCase().includes(fObj);
+            const matchSts  = (i.Status || '').toLowerCase().includes(fSts);
             
-            const matchOrg = (i.Orgao || '').toLowerCase().includes(fOrg);
-            const matchObj = (i.Objeto || '').toLowerCase().includes(fObj);
-            const matchSts = (i.Status || '').toLowerCase().includes(fSts);
-            
-            return matchNum && matchOrg && matchObj && matchSts;
+            return matchUasg && matchNum && matchOrg && matchObj && matchSts;
         });
 
         renderizarTabela(filtrados);
@@ -160,10 +153,9 @@
     function renderizarTabela(lista) {
         const tbody = document.getElementById('corpoTabela');
         const emptyState = document.getElementById('emptyState');
-        const contador = document.getElementById('contador');
+        document.getElementById('contadorBadge').innerText = lista.length + " registros";
 
         tbody.innerHTML = '';
-        contador.innerText = lista.length;
 
         if (lista.length === 0) {
             emptyState.classList.remove('d-none');
@@ -177,19 +169,11 @@
         tbody.innerHTML = listaLimitada.map(i => {
             return `
                 <tr>
-                    <td>
-                        <span class="fw-bold text-dark">${formatarDataHora(i.DataAbertura)}</span>
-                    </td>
+                    <td><span class="fw-bold text-dark">${formatarDataHora(i.DataAbertura)}</span></td>
+                    <td class="text-secondary">${i.UASG}</td>
+                    <td class="fw-bold text-primary">${i.Numero || i.Licitacao}</td>
                     <td><small class="fw-bold text-secondary">${i.Orgao}</small></td>
-                    <td>
-                        <div class="d-flex flex-column">
-                            <span class="fw-bold text-primary">${i.Numero || i.Licitacao}</span>
-                            <small class="text-muted" style="font-size:0.7rem">UASG: ${i.UASG}</small>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="objeto-desc" title="${i.Objeto}">${i.Objeto}</div>
-                    </td>
+                    <td><div class="objeto-desc" title="${i.Objeto}">${i.Objeto}</div></td>
                     <td class="text-center">${criarBadge(i.Status)}</td>
                 </tr>
             `;
@@ -197,24 +181,23 @@
     }
 
     function criarBadge(status) {
-        let classe = 'st-cinza';
+        let classe = 'bg-secondary text-white';
         let texto = status || 'Desconhecido';
         const st = texto.toLowerCase();
 
-        if (st.includes('homolog')) { classe = 'st-verde'; }
-        else if (st.includes('aguardando') || st.includes('recebimento')) { classe = 'st-azul'; }
-        else if (st.includes('disputa') || st.includes('julgamento')) { classe = 'st-amarelo'; }
-        else if (st.includes('susp') || st.includes('revog')) { classe = 'st-vermelho'; }
+        if (st.includes('homolog')) classe = 'st-verde';
+        else if (st.includes('aguardando') || st.includes('recebimento')) classe = 'st-azul';
+        else if (st.includes('disputa')) classe = 'st-amarelo';
+        else if (st.includes('susp') || st.includes('revog')) classe = 'st-vermelho';
 
         return `<span class="badge-status ${classe}">${texto}</span>`;
     }
 
     function formatarDataHora(dataISO) {
-        if (!dataISO || dataISO.length < 10) return "Data Pendente";
-        // Formata de 2025-10-14T09:00:00 para 14/10/2025 09:00
-        const data = dataISO.slice(8,10) + '/' + dataISO.slice(5,7) + '/' + dataISO.slice(0,4);
+        if (!dataISO || dataISO.length < 10) return "-";
+        const data = dataISO.slice(8,10) + '/' + dataISO.slice(5,7);
         const hora = dataISO.slice(11,16);
-        return `${data} <small class="text-muted ms-1">${hora}</small>`;
+        return `${data} <small class="text-muted">${hora}</small>`;
     }
 
     // Atalho Enter
