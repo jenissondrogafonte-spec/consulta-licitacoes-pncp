@@ -16,91 +16,85 @@ env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if env_inicio and env_fim:
-    data_atual = datetime.strptime(env_inicio, '%Y%m%d')
-    data_limite = datetime.strptime(env_fim, '%Y%m%d')
+    # A API de Itens exige o formato AAAA-MM-DD
+    d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
+    d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
+    data_atual_dt = datetime.strptime(env_inicio, '%Y%m%d')
+    data_limite_dt = datetime.strptime(env_fim, '%Y%m%d')
 else:
-    data_atual = datetime.now() - timedelta(days=2)
-    data_limite = data_atual
+    # Padrão: Últimos 2 dias
+    data_atual_dt = datetime.now() - timedelta(days=2)
+    data_limite_dt = data_atual_dt
+    d_ini = data_atual_dt.strftime('%Y-%m-%d')
+    d_fim = d_ini
 
-print(f"--- COLETA SEGURA: {data_atual.strftime('%d/%m/%Y')} a {data_limite.strftime('%d/%m/%Y')} ---")
+print(f"--- BUSCA POR RESULTADOS (HOMOLOGADOS): {d_ini} a {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# Loop dia a dia
-while data_atual <= data_limite:
-    DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"Consultando dia {DATA_STR}...", end=" ", flush=True)
+# URL DE ITENS: É a mais completa e traz o vencedor diretamente
+# Usamos dataAtualizacao para pegar tudo que foi "batido o martelo" no período
+url = "https://pncp.gov.br/api/consulta/v1/contratacoes/itens"
+
+params = {
+    "pagina": 1,
+    "tamanhoPagina": 100,
+    "dataAtualizacaoInicial": d_ini,
+    "dataAtualizacaoFinal": d_fim,
+    "codigoModalidadeContratacao": "6" # Pregão
+}
+
+try:
+    # 1. Faz a chamada principal para pegar todos os itens ganhos no período
+    resp = requests.get(url, params=params, headers=HEADERS, timeout=60)
     
-    # URL de Publicação (A mais estável do PNCP)
-    url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-    
-    params = {
-        "dataInicial": DATA_STR,
-        "dataFinal": DATA_STR,
-        "codigoModalidadeContratacao": "6", # Pregão
-        "pagina": 1,
-        "tamanhoPagina": 50
-    }
+    if resp.status_code == 200:
+        dados = resp.json().get('data', [])
+        print(f"✅ Sucesso! {len(dados)} itens atualizados encontrados.")
 
-    try:
-        resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
-        
-        if resp.status_code == 200:
-            licitacoes = resp.json().get('data', [])
-            encontrados_dia = 0
+        for item in dados:
+            # SÓ PROCESSA SE TIVER FORNECEDOR (Ou seja, se já houve homologação)
+            fornecedor = item.get('nomeRazaoSocialFornecedor')
+            valor = item.get('valorTotalItem', 0)
             
-            for lic in licitacoes:
-                cnpj = lic.get('orgaoEntidade', {}).get('cnpj')
-                ano = lic.get('anoCompra')
-                seq = lic.get('sequencialCompra')
-                uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
-                nome_orgao = lic.get('orgaoEntidade', {}).get('razaoSocial', '')
-
-                # Busca os vencedores dentro desta licitação específica
-                url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
+            if fornecedor and valor > 0:
+                # Dados da Licitação para montar a Identificação (UASG+SEQ+ANO)
+                uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
+                seq = str(item.get('sequencialCompra', '00000')).zfill(5)
+                ano = item.get('anoCompra')
                 
-                try:
-                    r_res = requests.get(url_res, headers=HEADERS, timeout=15)
-                    if r_res.status_code == 200:
-                        resultados = r_res.json()
-                        if isinstance(resultados, dict): resultados = [resultados]
-                        
-                        for it in resultados:
-                            if it.get('nomeRazaoSocialFornecedor'):
-                                todos_itens.append({
-                                    "Data": DATA_STR,
-                                    "UASG": uasg,
-                                    "Orgao": nome_orgao,
-                                    "Licitacao": f"{uasg}{str(seq).zfill(5)}{ano}",
-                                    "Fornecedor": it.get('nomeRazaoSocialFornecedor'),
-                                    "CNPJ": it.get('niFornecedor', ''),
-                                    "Total": float(it.get('valorTotalHomologado', 0)),
-                                    "Itens": 1
-                                })
-                                encontrados_dia += 1
-                except:
-                    continue # Se uma licitação falhar, pula para a próxima
-                
-                time.sleep(0.1) # Evita sobrecarga
-            
-            print(f"OK ({encontrados_dia} homologações encontradas)")
-        else:
-            print(f"Erro {resp.status_code}")
+                # Data da atualização (vira a data de registro no nosso banco)
+                data_reg = item.get('dataAtualizacao', d_ini)[:10].replace('-', '')
 
-    except Exception as e:
-        print(f"Falha de conexão")
+                todos_itens.append({
+                    "Data": data_reg,
+                    "UASG": uasg,
+                    "Orgao": item.get('orgaoEntidade', {}).get('razaoSocial', 'Órgão não identificado'),
+                    "Licitacao": f"{uasg}{seq}{ano}",
+                    "Fornecedor": fornecedor,
+                    "CNPJ": item.get('niFornecedor', ''),
+                    "Total": float(valor),
+                    "Itens": 1
+                })
+    else:
+        print(f"❌ Erro na API: {resp.status_code}")
 
-    data_atual += timedelta(days=1)
-    time.sleep(0.5)
+except Exception as e:
+    print(f"❌ Falha de conexão: {e}")
 
-# --- SALVAMENTO ---
+# --- SALVAMENTO E AGRUPAMENTO ---
 if not todos_itens:
-    print("\n⚠️ Nenhuma homologação encontrada. Lembre-se: licitações muito recentes podem ainda não ter resultado.")
+    print("\n⚠️ Nenhum item homologado encontrado com esses critérios.")
     sys.exit(0)
 
+# Agrupa para somar itens se o mesmo fornecedor ganhou vários na mesma licitação
 df = pd.DataFrame(todos_itens)
-agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
+agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
+    'Itens': 'sum', 
+    'Total': 'sum'
+}).reset_index()
+
 novos_dados = agrupado.to_dict(orient='records')
 
 if os.path.exists(ARQUIVO_SAIDA):
@@ -110,9 +104,10 @@ if os.path.exists(ARQUIVO_SAIDA):
 else: historico = []
 
 historico.extend(novos_dados)
+# Remove duplicatas exatas
 final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final, f, indent=4, ensure_ascii=False)
 
-print(f"\n💾 Sucesso! Banco de dados atualizado.")
+print(f"💾 Banco de dados atualizado! Total de {len(final)} registros históricos.")
