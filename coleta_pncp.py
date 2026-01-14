@@ -6,12 +6,13 @@ import time
 import os
 import sys
 
+# --- CONFIGURAÇÃO ---
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json'
 }
 
-# Parâmetros de Data
+# Parâmetros de Data (GitHub Actions)
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
@@ -21,6 +22,7 @@ if env_inicio and env_fim:
     data_atual = datetime.strptime(env_inicio, '%Y%m%d')
     data_limite = datetime.strptime(env_fim, '%Y%m%d')
 else:
+    # Padrão: Ontem
     data_ontem = datetime.now() - timedelta(days=1)
     data_atual = data_ontem
     data_limite = data_ontem
@@ -30,7 +32,7 @@ todos_itens = []
 
 while data_atual <= data_limite:
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n>>> COLETANDO PREGÕES EM: {DATA_STR} <<<")
+    print(f"\n>>> PESQUISANDO PREGÕES EM: {DATA_STR} <<<")
     
     url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
     params = {
@@ -45,15 +47,17 @@ while data_atual <= data_limite:
         resp = requests.get(url, params=params, headers=HEADERS)
         if resp.status_code == 200:
             licitacoes = resp.json().get('data', [])
+            print(f"  Encontradas {len(licitacoes)} licitações.")
+
             for compra in licitacoes:
                 cnpj = compra.get('orgaoEntidade', {}).get('cnpj')
                 ano = compra.get('anoCompra')
                 seq = compra.get('sequencialCompra')
-                # UASG vem como 'codigoUnidade'
-                uasg_limpa = str(compra.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
+                uasg_raw = str(compra.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                 nome_org = compra.get('orgaoEntidade', {}).get('razaoSocial', '')
 
                 if cnpj and ano and seq:
+                    # Busca Resultados (Vencedores)
                     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
                     r_res = requests.get(url_res, headers=HEADERS)
                     if r_res.status_code == 200:
@@ -62,20 +66,22 @@ while data_atual <= data_limite:
                         for item in itens:
                             if item.get('situacaoCompraItemResultadoNome') == 'Homologado':
                                 item['_data'] = DATA_STR
-                                item['_uasg'] = uasg_limpa
+                                item['_uasg'] = uasg_raw if uasg_raw else cnpj
                                 item['_orgao_nome'] = nome_org
-                                # Lógica ComprasNet: UASG + Sequencial + Ano (sem barras)
-                                item['_lic_comprasnet'] = f"{uasg_limpa}{seq}{ano}"
+                                # Padrão ComprasNet: UASG + Sequencial + Ano
+                                item['_lic_comprasnet'] = f"{item['_uasg']}{seq}{ano}"
                                 todos_itens.append(item)
                     time.sleep(0.1)
     except Exception as e:
-        print(f"Erro: {e}")
+        print(f"Erro no dia {DATA_STR}: {e}")
+    
     data_atual += timedelta(days=1)
 
 if not todos_itens:
-    print("Nenhum dado novo encontrado.")
+    print("\n⚠️ Nenhum dado homologado encontrado.")
     sys.exit(0)
 
+# Processamento e Agrupamento
 df = pd.DataFrame(todos_itens)
 agrupado = df.groupby(['niFornecedor', 'nomeRazaoSocialFornecedor', '_lic_comprasnet', '_orgao_nome', '_uasg', '_data']).agg({
     'numeroItem': 'count', 'valorTotalHomologado': 'sum'
@@ -94,14 +100,18 @@ for _, row in agrupado.iterrows():
         "Itens": int(row['numeroItem'])
     })
 
+# Carrega histórico e mescla
 if os.path.exists(ARQUIVO_SAIDA):
-    with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f: historico = json.load(f)
+    with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
+        try: historico = json.load(f)
+        except: historico = []
 else: historico = []
 
 historico.extend(novos_dados)
-historico_final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
+# Remove Duplicatas
+final_list = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
-    json.dump(historico_final, f, indent=4, ensure_ascii=False)
+    json.dump(final_list, f, indent=4, ensure_ascii=False)
 
-print(f"💾 Sucesso! Banco de dados atualizado.")
+print(f"💾 Sucesso! {len(final_list)} registros totais.")
