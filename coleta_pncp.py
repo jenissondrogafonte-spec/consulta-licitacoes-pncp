@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timedelta
 import os
 import sys
+import time
 
 # --- CONFIGURAÇÃO ---
 HEADERS = {
@@ -14,76 +15,84 @@ HEADERS = {
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Formatação: Este endpoint exige AAAA-MM-DD
+# Formatação: O PNCP aceita AAAAMMDD em rotas de publicação
 if env_inicio and env_fim:
-    d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
-    d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
+    d_ini, d_fim = env_inicio, env_fim
 else:
-    # Padrão: Ontem
-    data_ontem = datetime.now() - timedelta(days=1)
-    d_ini = data_ontem.strftime('%Y-%m-%d')
-    d_fim = d_ini
+    d_ini = (datetime.now() - timedelta(days=2)).strftime('%Y%m%d')
+    d_fim = datetime.now().strftime('%Y%m%d')
 
-print(f"--- CONSULTA CONSOLIDADA PNCP: {d_ini} até {d_fim} ---")
+print(f"--- CONSULTA DIRETA PNCP: {d_ini} até {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# URL ESTÁVEL: Consulta de itens de contratações
-URL_API = "https://pncp.gov.br/api/consulta/v1/contratacoes/itens"
+# URL QUE NÃO DÁ 404 (Consulta pública de contratações)
+URL_BASE = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
 
 params = {
+    "dataInicial": d_ini,
+    "dataFinal": d_fim,
+    "codigoModalidadeContratacao": "6", # Pregão
     "pagina": 1,
-    "tamanhoPagina": 100,
-    "dataAtualizacaoInicial": d_ini,
-    "dataAtualizacaoFinal": d_fim,
-    "codigoModalidadeContratacao": "6" # Pregão
+    "tamanhoPagina": 50
 }
 
 try:
-    resp = requests.get(URL_API, params=params, headers=HEADERS, timeout=60)
+    # 1. Busca as publicações (Pasta do Edital)
+    resp = requests.get(URL_BASE, params=params, headers=HEADERS, timeout=30)
     
     if resp.status_code == 200:
-        dados = resp.json().get('data', [])
-        print(f"✅ Sucesso! {len(dados)} registros encontrados.")
+        contratacoes = resp.json().get('data', [])
+        print(f"✅ {len(contratacoes)} licitações encontradas. Verificando resultados...")
 
-        for item in dados:
-            # Capturamos apenas se já houver um vencedor (Fornecedor)
-            fornecedor = item.get('nomeRazaoSocialFornecedor')
-            valor = item.get('valorTotalItem', 0)
+        for c in contratacoes:
+            cnpj = c.get('orgaoEntidade', {}).get('cnpj')
+            ano = c.get('anoCompra')
+            seq = c.get('sequencialCompra')
+            uasg = str(c.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
+            nome_orgao = c.get('orgaoEntidade', {}).get('razaoSocial', '')
+
+            # 2. Entra na URL interna de resultados de cada uma (Endpoint Estável)
+            url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/resultados"
             
-            if fornecedor and valor > 0:
-                uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
-                seq = str(item.get('sequencialCompra', '00000')).zfill(5)
-                ano = item.get('anoCompra')
-                
-                todos_itens.append({
-                    "Data": d_ini.replace('-', ''),
-                    "UASG": uasg,
-                    "Orgao": item.get('orgaoEntidade', {}).get('razaoSocial', 'Órgão não identificado'),
-                    "Licitacao": f"{uasg}{seq}{ano}",
-                    "Fornecedor": fornecedor,
-                    "CNPJ": item.get('niFornecedor', ''),
-                    "Total": float(valor),
-                    "Itens": 1
-                })
+            try:
+                r_res = requests.get(url_res, headers=HEADERS, timeout=15)
+                if r_res.status_code == 200:
+                    itens = r_res.json()
+                    if isinstance(itens, dict): itens = [itens]
+                    
+                    for it in itens:
+                        fornecedor = it.get('nomeRazaoSocialFornecedor')
+                        valor = it.get('valorTotalHomologado', 0)
+                        
+                        if fornecedor and valor > 0:
+                            todos_itens.append({
+                                "Data": d_ini,
+                                "UASG": uasg,
+                                "Orgao": nome_orgao,
+                                "Licitacao": f"{uasg}{str(seq).zfill(5)}{ano}",
+                                "Fornecedor": fornecedor,
+                                "CNPJ": it.get('niFornecedor', ''),
+                                "Total": float(valor),
+                                "Itens": 1
+                            })
+                time.sleep(0.1) # Pausa curta para segurança
+            except:
+                continue
     else:
-        print(f"❌ Erro na API: {resp.status_code} - URL pode ter mudado.")
+        print(f"⚠️ Falha no PNCP: Status {resp.status_code}")
 
 except Exception as e:
-    print(f"❌ Falha de conexão: {e}")
+    print(f"❌ Erro de Conexão: {e}")
 
 # --- SALVAMENTO ---
 if not todos_itens:
-    print("\n⚠️ Nenhum item homologado encontrado com esses critérios.")
+    print("\n⚠️ Nenhuma homologação disponível para as publicações desse período.")
     sys.exit(0)
 
 df = pd.DataFrame(todos_itens)
-agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
-    'Itens': 'sum', 
-    'Total': 'sum'
-}).reset_index()
-
+agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
 novos_dados = agrupado.to_dict(orient='records')
 
 if os.path.exists(ARQUIVO_SAIDA):
@@ -98,4 +107,4 @@ final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in
 with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
     json.dump(final, f, indent=4, ensure_ascii=False)
 
-print(f"💾 Banco de dados atualizado! Total: {len(final)} registros.")
+print(f"💾 Sucesso! {len(final)} registros salvos.")
