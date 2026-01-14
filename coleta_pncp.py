@@ -6,8 +6,8 @@ import os
 import sys
 
 # --- CONFIGURAÇÃO ---
-# Esta URL inclui o prefixo /v1/ que é o padrão de produção do Compras.gov.br
-URL_BASE = "https://dadosabertos.compras.gov.br/modulo-contratacoes/v1/consultarContratacoes_PNCP_14133"
+# URL REAL DE PRODUÇÃO (Baseada no Gateway do Governo)
+URL_API = "https://dadosabertos.compras.gov.br/modulo-contratacoes/v1/consultarResultadoItensContratacoes_PNCP_14133"
 
 HEADERS = {
     'Accept': 'application/json',
@@ -17,7 +17,7 @@ HEADERS = {
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
-# Formatação exigida por essa API: AAAA-MM-DD
+# Formato AAAAMMDD para a API de Dados Abertos
 if env_inicio and env_fim:
     d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
     d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
@@ -25,41 +25,69 @@ else:
     d_ini = (datetime.now() - timedelta(days=5)).strftime('%Y-%m-%d')
     d_fim = datetime.now().strftime('%Y-%m-%d')
 
-print(f"--- CONSULTA DADOS ABERTOS: {d_ini} até {d_fim} ---")
+print(f"--- ACESSANDO DADOS ABERTOS GOV: {d_ini} até {d_fim} ---")
 
+ARQUIVO_SAIDA = 'dados.json'
+todos_itens = []
+
+# Parâmetros exatos conforme o Swagger
 params = {
     "dataPublicacaoPncpInicial": d_ini,
     "dataPublicacaoPncpFinal": d_fim,
-    "codigoModalidade": 6, # Pregão
     "pagina": 1
 }
 
 try:
-    resp = requests.get(URL_BASE, params=params, headers=HEADERS, timeout=30)
+    # Testamos a URL com /v1/ que é o padrão de Gateway
+    resp = requests.get(URL_API, params=params, headers=HEADERS, timeout=30)
     
     if resp.status_code == 200:
-        dados = resp.json().get('resultado', [])
-        print(f"✅ Sucesso! Encontradas {len(dados)} contratações.")
+        # Se entrar aqui, o 404 foi resolvido!
+        resultado = resp.json().get('resultado', [])
+        print(f"✅ Sucesso! {len(resultado)} itens encontrados.")
         
-        # Aqui, como estamos no endpoint 1, pegamos os dados básicos da licitação
-        # Se precisar do vencedor, o robô teria que consultar o endpoint 3 em seguida
-        for item in dados:
-            uasg = str(item.get('codigoUasg', '000000')).zfill(6)
-            seq = str(item.get('numeroCompra', '00000')).zfill(5)
-            ano = item.get('anoCompra')
-            
-            # Nota: O endpoint 1 traz dados do edital. 
-            # Para o vencedor (Fornecedor), o ideal é o endpoint 3.
-            print(f"  Encontrada: UASG {uasg} - Pregão {seq}/{ano}")
-            
-    elif resp.status_code == 404:
-        print("❌ Erro 404: O caminho /v1/ não foi encontrado. Tentando sem o prefixo...")
-        # Tentativa sem /v1/ caso o servidor mude
-        url_alt = URL_BASE.replace("/v1/", "/")
-        resp_alt = requests.get(url_alt, params=params, headers=HEADERS)
-        print(f"  Resultado alternativa: {resp_alt.status_code}")
+        for item in resultado:
+            if item.get('codigoModalidade') == 6: # Pregão
+                uasg = str(item.get('codigoUasg', '')).zfill(6)
+                seq = str(item.get('numeroCompra', '')).zfill(5)
+                ano = item.get('anoCompra')
+                
+                todos_itens.append({
+                    "Data": item.get('dataPublicacaoPncp', '')[:10].replace('-', ''),
+                    "UASG": uasg,
+                    "Orgao": item.get('nomeOrgao', 'Órgão Federal'),
+                    "Licitacao": f"{uasg}{seq}{ano}",
+                    "Fornecedor": item.get('nomeRazaoSocialFornecedor', 'N/I'),
+                    "CNPJ": item.get('niFornecedor', ''),
+                    "Total": float(item.get('valorTotalHomologado', 0)),
+                    "Itens": 1
+                })
     else:
-        print(f"❌ Erro {resp.status_code}: {resp.text}")
+        print(f"❌ Erro {resp.status_code}. A API respondeu: {resp.text[:100]}")
 
 except Exception as e:
-    print(f"❌ Falha: {e}")
+    print(f"❌ Falha de Conexão: {e}")
+
+# --- SALVAMENTO ---
+if not todos_itens:
+    print("⚠️ Nenhum dado capturado.")
+    sys.exit(0)
+
+# Agrupar e salvar (mantendo seu padrão)
+df = pd.DataFrame(todos_itens)
+agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
+novos_dados = agrupado.to_dict(orient='records')
+
+if os.path.exists(ARQUIVO_SAIDA):
+    with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
+        try: historico = json.load(f)
+        except: historico = []
+else: historico = []
+
+historico.extend(novos_dados)
+final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
+
+with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
+    json.dump(final, f, indent=4, ensure_ascii=False)
+
+print(f"💾 Banco de dados atualizado com {len(final)} registros.")
