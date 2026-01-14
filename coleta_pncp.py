@@ -15,60 +15,51 @@ HEADERS = {
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
+# Formatação de data para a URL do Governo (AAAAMMDD)
 if env_inicio and env_fim:
-    # A API de Itens exige o formato AAAA-MM-DD
-    d_ini = f"{env_inicio[:4]}-{env_inicio[4:6]}-{env_inicio[6:8]}"
-    d_fim = f"{env_fim[:4]}-{env_fim[4:6]}-{env_fim[6:8]}"
-    data_atual_dt = datetime.strptime(env_inicio, '%Y%m%d')
-    data_limite_dt = datetime.strptime(env_fim, '%Y%m%d')
+    d_ini = env_inicio
+    d_fim = env_fim
 else:
-    # Padrão: Últimos 2 dias
-    data_atual_dt = datetime.now() - timedelta(days=2)
-    data_limite_dt = data_atual_dt
-    d_ini = data_atual_dt.strftime('%Y-%m-%d')
-    d_fim = d_ini
+    ontem = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
+    d_ini, d_fim = ontem, ontem
 
-print(f"--- BUSCA POR RESULTADOS (HOMOLOGADOS): {d_ini} a {d_fim} ---")
+print(f"--- BUSCA DE RESULTADOS PNCP: {d_ini} a {d_fim} ---")
 
 ARQUIVO_SAIDA = 'dados.json'
 todos_itens = []
 
-# URL DE ITENS: É a mais completa e traz o vencedor diretamente
-# Usamos dataAtualizacao para pegar tudo que foi "batido o martelo" no período
-url = "https://pncp.gov.br/api/consulta/v1/contratacoes/itens"
+# URL DE RESULTADOS DE ITENS (Esta é a URL que não dá 404)
+URL_API = "https://pncp.gov.br/api/consulta/v1/itens/resultado"
 
 params = {
+    "dataResultadoInicial": d_ini,
+    "dataResultadoFinal": d_fim,
+    "codigoModalidadeContratacao": "6", # Pregão
     "pagina": 1,
-    "tamanhoPagina": 100,
-    "dataAtualizacaoInicial": d_ini,
-    "dataAtualizacaoFinal": d_fim,
-    "codigoModalidadeContratacao": "6" # Pregão
+    "tamanhoPagina": 100
 }
 
 try:
-    # 1. Faz a chamada principal para pegar todos os itens ganhos no período
-    resp = requests.get(url, params=params, headers=HEADERS, timeout=60)
+    # Chamada para a API de resultados
+    resp = requests.get(URL_API, params=params, headers=HEADERS, timeout=60)
     
     if resp.status_code == 200:
+        # A API retorna os dados dentro da chave 'data'
         dados = resp.json().get('data', [])
-        print(f"✅ Sucesso! {len(dados)} itens atualizados encontrados.")
+        print(f"✅ Sucesso! {len(dados)} itens homologados encontrados.")
 
         for item in dados:
-            # SÓ PROCESSA SE TIVER FORNECEDOR (Ou seja, se já houve homologação)
+            # Pegamos apenas itens que têm um fornecedor vencedor
             fornecedor = item.get('nomeRazaoSocialFornecedor')
-            valor = item.get('valorTotalItem', 0)
+            valor = item.get('valorTotalHomologado', 0)
             
             if fornecedor and valor > 0:
-                # Dados da Licitação para montar a Identificação (UASG+SEQ+ANO)
                 uasg = str(item.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
                 seq = str(item.get('sequencialCompra', '00000')).zfill(5)
                 ano = item.get('anoCompra')
                 
-                # Data da atualização (vira a data de registro no nosso banco)
-                data_reg = item.get('dataAtualizacao', d_ini)[:10].replace('-', '')
-
                 todos_itens.append({
-                    "Data": data_reg,
+                    "Data": d_ini,
                     "UASG": uasg,
                     "Orgao": item.get('orgaoEntidade', {}).get('razaoSocial', 'Órgão não identificado'),
                     "Licitacao": f"{uasg}{seq}{ano}",
@@ -79,35 +70,18 @@ try:
                 })
     else:
         print(f"❌ Erro na API: {resp.status_code}")
+        print(f"Mensagem: {resp.text[:100]}")
 
 except Exception as e:
     print(f"❌ Falha de conexão: {e}")
 
-# --- SALVAMENTO E AGRUPAMENTO ---
+# --- PROCESSAMENTO E SALVAMENTO ---
 if not todos_itens:
-    print("\n⚠️ Nenhum item homologado encontrado com esses critérios.")
+    print("\n⚠️ Nenhum item encontrado. Dica: Tente dias úteis recentes (ex: ontem).")
     sys.exit(0)
 
-# Agrupa para somar itens se o mesmo fornecedor ganhou vários na mesma licitação
 df = pd.DataFrame(todos_itens)
+# Agrupar itens da mesma licitação para o mesmo fornecedor
 agrupado = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({
     'Itens': 'sum', 
     'Total': 'sum'
-}).reset_index()
-
-novos_dados = agrupado.to_dict(orient='records')
-
-if os.path.exists(ARQUIVO_SAIDA):
-    with open(ARQUIVO_SAIDA, 'r', encoding='utf-8') as f:
-        try: historico = json.load(f)
-        except: historico = []
-else: historico = []
-
-historico.extend(novos_dados)
-# Remove duplicatas exatas
-final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
-
-with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
-    json.dump(final, f, indent=4, ensure_ascii=False)
-
-print(f"💾 Banco de dados atualizado! Total de {len(final)} registros históricos.")
