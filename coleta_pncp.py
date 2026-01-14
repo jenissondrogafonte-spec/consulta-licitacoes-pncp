@@ -16,17 +16,15 @@ env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if env_inicio and env_fim:
-    # Se informado manualmente no GitHub Actions
     d_ini, d_fim = env_inicio, env_fim
 else:
-    # --- MODO AUTOMÁTICO (PRODUÇÃO) ---
-    # Se rodar pelo Cron (Agendado), pega os últimos 3 dias para garantir
+    # AUTOMÁTICO: Pega os últimos 3 dias
     hoje = datetime.now()
     inicio = hoje - timedelta(days=3)
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-print(f"--- ROBÔ HÍBRIDO (STATUS + VENCEDORES POR ITEM): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ HÍBRIDO (STATUS + ABERTURA): {d_ini} até {d_fim} ---")
 
 ARQ_VENCEDORES = 'dados.json'
 ARQ_STATUS = 'status.json'
@@ -43,10 +41,8 @@ while data_atual <= data_final:
     print(f"\n📅 Dia {DATA_STR}:", end=" ")
     
     pagina = 1
-    cont_homologadas = 0
     
     while pagina <= MAX_PAGINAS:
-        # Busca todas as licitações (sem filtro de situação para popular o status.json)
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR,
@@ -66,45 +62,45 @@ while data_atual <= data_final:
             print(f"[P{pagina}]", end=" ", flush=True)
 
             for lic in licitacoes:
-                # --- DADOS COMUNS ---
+                # --- DADOS ---
                 cnpj_orgao = lic.get('orgaoEntidade', {}).get('cnpj')
                 ano = lic.get('anoCompra')
                 seq = lic.get('sequencialCompra')
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '000000')).strip()
                 nome_orgao = lic.get('orgaoEntidade', {}).get('razaoSocial', '')
-                id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}"
+                id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}" # Formato UASG+SEQ+ANO
+                numero_edital = f"{str(seq).zfill(5)}/{ano}"     # Formato Visual (00001/2025)
                 objeto = lic.get('objetoCompra', 'Objeto não informado')
                 
                 situacao_nome = lic.get('situacaoCompraNome', 'Desconhecido')
-                situacao_id = str(lic.get('situacaoCompraId')) # Converte para string para comparar fácil
+                situacao_id = str(lic.get('situacaoCompraId'))
+                
+                # Captura a DATA DE ABERTURA (Novo)
+                data_abertura = lic.get('dataAberturaLicitacao', '') # Vem como 2025-10-14T09:00:00
 
-                # --- 1. SALVA STATUS (Sempre) ---
+                # --- 1. SALVA STATUS ---
                 lista_status.append({
-                    "Data": DATA_STR,
+                    "DataPublicacao": DATA_STR,   # Data que foi pro site
+                    "DataAbertura": data_abertura, # Data da sessão (Importante!)
                     "UASG": uasg,
                     "Orgao": nome_orgao,
-                    "Licitacao": id_licitacao,
+                    "Licitacao": id_licitacao,     # ID para busca interna
+                    "Numero": numero_edital,       # ID para leitura humana
                     "Objeto": objeto,
                     "Status": situacao_nome
                 })
 
                 # --- 2. SALVA VENCEDORES (Só se Homologada/Adjudicada) ---
-                # ID 4 = Homologada, ID 6 = Adjudicada
                 if situacao_id in ['4', '6']:
-                    cont_homologadas += 1
-                    
-                    # Busca a Lista de Itens (Método Lento mas Seguro)
                     url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
                     try:
                         r_it = requests.get(url_itens, headers=HEADERS, timeout=10)
                         if r_it.status_code == 200:
                             itens = r_it.json()
                             for it in itens:
-                                # Só entra no item se ele tiver resultado
                                 if it.get('temResultado') is True:
                                     num_item = it.get('numeroItem')
                                     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens/{num_item}/resultados"
-                                    
                                     try:
                                         r_win = requests.get(url_res, headers=HEADERS, timeout=5)
                                         if r_win.status_code == 200:
@@ -115,7 +111,6 @@ while data_atual <= data_final:
                                                 cnpj_forn = res.get('niFornecedor')
                                                 nome_forn = res.get('nomeRazaoSocialFornecedor')
                                                 if not nome_forn and cnpj_forn: nome_forn = f"CNPJ {cnpj_forn}"
-                                                
                                                 valor = res.get('valorTotalHomologado')
                                                 if valor is None: valor = 0
                                                 
@@ -132,11 +127,8 @@ while data_atual <= data_final:
                                                     })
                                     except: pass
                     except: pass
-            
             pagina += 1
-
         except: break
-    
     data_atual += timedelta(days=1)
 
 # --- SALVAMENTO ---
@@ -153,16 +145,11 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
         json.dump(final, f, indent=4, ensure_ascii=False)
     print(f"💾 {nome_arquivo} atualizado! Total: {len(final)} registros.")
 
-print("\n--- RESUMO FINAL ---")
+print("\n--- RESUMO ---")
 if lista_vencedores:
     df = pd.DataFrame(lista_vencedores)
     grp = df.groupby(['CNPJ', 'Fornecedor', 'Licitacao', 'Orgao', 'UASG', 'Data']).agg({'Itens': 'sum', 'Total': 'sum'}).reset_index()
     salvar_arquivo_json(ARQ_VENCEDORES, grp.to_dict(orient='records'))
-else:
-    print("⚠️ Nenhum vencedor novo capturado.")
-
 if lista_status:
     df_st = pd.DataFrame(lista_status).drop_duplicates(subset=['Licitacao', 'Status'])
     salvar_arquivo_json(ARQ_STATUS, df_st.to_dict(orient='records'))
-else:
-    print("⚠️ Nenhum status novo capturado.")
