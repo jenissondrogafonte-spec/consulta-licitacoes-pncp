@@ -31,12 +31,12 @@
         /* Badges e Textos */
         .badge-status { font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
         
-        /* Cores Atualizadas conforme Lógica */
-        .st-verde { background-color: #d1e7dd; color: #0f5132; } /* Recebendo Propostas */
-        .st-azul { background-color: #cfe2ff; color: #084298; }  /* Homologada */
-        .st-amarelo { background-color: #fff3cd; color: #664d03; } /* Aguardando Resultado */
-        .st-vermelho { background-color: #f8d7da; color: #842029; } /* Fracassada/Suspensa */
-        .st-cinza { background-color: #e2e3e5; color: #41464b; }   /* Outros */
+        /* Cores Atualizadas */
+        .st-verde { background-color: #d1e7dd; color: #0f5132; } 
+        .st-azul { background-color: #cfe2ff; color: #084298; }  
+        .st-amarelo { background-color: #fff3cd; color: #664d03; } 
+        .st-vermelho { background-color: #f8d7da; color: #842029; } 
+        .st-cinza { background-color: #e2e3e5; color: #41464b; }   
         
         .objeto-desc { max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
         .objeto-desc:hover { white-space: normal; position: relative; background: #fff; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 5px; border-radius: 4px; }
@@ -112,7 +112,8 @@
                     <th width="10%">Abertura / Fim</th>
                     <th width="6%">UASG</th>
                     <th width="8%">Nº Edital</th>
-                    <th width="15%">Local</th> <th width="20%">Órgão</th>
+                    <th width="15%">Local</th>
+                    <th width="20%">Órgão</th>
                     <th width="30%">Objeto</th>
                     <th width="11%" class="text-center">Status</th>
                 </tr>
@@ -132,14 +133,11 @@
 <script>
     let dadosStatus = [];
 
-    // Cache busting para garantir dado novo
     fetch('status.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => {
             dadosStatus = data;
-            // Ordena por data de abertura (Mais futura primeiro)
             dadosStatus.sort((a, b) => (b.DataAbertura || '').localeCompare(a.DataAbertura || ''));
-            
             document.getElementById('loading').classList.add('d-none');
             buscar();
         })
@@ -149,21 +147,17 @@
 
     function buscar() {
         const fUasg = document.getElementById('inUasg').value.trim();
-        const fUF   = document.getElementById('inUF').value.trim(); // Novo
-        const fCid  = document.getElementById('inCidade').value.toLowerCase().trim(); // Novo
+        const fUF   = document.getElementById('inUF').value.trim();
+        const fCid  = document.getElementById('inCidade').value.toLowerCase().trim();
         const fNum  = document.getElementById('inNum').value.trim();
         const fObj  = document.getElementById('inObj').value.toLowerCase().trim();
         const fSts  = document.getElementById('inStatus').value.toLowerCase();
 
         const filtrados = dadosStatus.filter(i => {
             const matchUasg = (i.UASG || '').includes(fUasg);
-            // Verifica filtros novos
             const matchUF   = fUF === '' || (i.UF || '').includes(fUF);
             const matchCid  = fCid === '' || (i.Cidade || '').toLowerCase().includes(fCid);
-            
-            // Verifica numero (tanto no formato visual quanto no ID)
             const matchNum  = (i.Numero || '').includes(fNum) || (i.Licitacao || '').includes(fNum);
-            
             const matchObj  = (i.Objeto || '').toLowerCase().includes(fObj) || (i.Orgao || '').toLowerCase().includes(fObj);
             const matchSts  = (i.Status || '').toLowerCase().includes(fSts);
             
@@ -187,7 +181,6 @@
             emptyState.classList.add('d-none');
         }
 
-        // Limita a 200 para não travar navegador
         const listaLimitada = lista.slice(0, 200);
 
         tbody.innerHTML = listaLimitada.map(i => {
@@ -206,11 +199,10 @@
     }
 
     function criarBadge(status) {
-        let classe = 'st-cinza'; // Padrão
+        let classe = 'st-cinza';
         let texto = status || 'Desconhecido';
         const st = texto.toLowerCase();
 
-        // Lógica de Cores baseada na sua solicitação
         if (st.includes('homolog') || st.includes('adjudica')) classe = 'st-azul';
         else if (st.includes('recebendo') || st.includes('aberto')) classe = 'st-verde';
         else if (st.includes('aguardando')) classe = 'st-amarelo';
@@ -219,15 +211,18 @@
         return `<span class="badge-status ${classe}">${texto}</span>`;
     }
 
+    // AQUI ESTÁ A FUNÇÃO AJUSTADA PARA DD/MM/AA
     function formatarDataHora(dataISO) {
         if (!dataISO || dataISO.length < 10) return "-";
-        // Formato esperado do PNCP: YYYY-MM-DDTHH:MM:SS
-        const data = dataISO.slice(8,10) + '/' + dataISO.slice(5,7);
+        
+        const dia = dataISO.slice(8,10);
+        const mes = dataISO.slice(5,7);
+        const ano = dataISO.slice(2,4); // Pega apenas '25' de '2025'
         const hora = dataISO.slice(11,16);
-        return `${data} <small class="text-muted">${hora}</small>`;
+        
+        return `${dia}/${mes}/${ano} <small class="text-muted">${hora}</small>`;
     }
 
-    // Atalho Enter nos inputs
     document.addEventListener('keypress', function (e) {
         if (e.key === 'Enter' && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT')) {
             buscar();
