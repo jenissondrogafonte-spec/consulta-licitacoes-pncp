@@ -20,22 +20,25 @@
         /* Filtros Compactos */
         .filter-bar { background: white; padding: 20px; border-radius: 6px; border: 1px solid #e9ecef; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
         .form-label { font-size: 0.7rem; font-weight: 700; color: #6c757d; text-transform: uppercase; margin-bottom: 4px; }
-        .form-control, .form-select { font-size: 0.9rem; border-radius: 4px; }
+        .form-control, .form-select { font-size: 0.85rem; border-radius: 4px; }
         
         /* Tabela Clean */
         .table-custom { font-size: 0.85rem; background: white; }
         .table-custom thead { background-color: #f1f3f5; color: #495057; }
-        .table-custom th { font-weight: 700; padding: 10px; border-bottom: 2px solid #dee2e6; }
+        .table-custom th { font-weight: 700; padding: 10px; border-bottom: 2px solid #dee2e6; white-space: nowrap; }
         .table-custom td { vertical-align: middle; padding: 8px 10px; border-bottom: 1px solid #f1f1f1; }
         
         /* Badges e Textos */
         .badge-status { font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
-        .st-verde { background-color: #d1e7dd; color: #0f5132; }
-        .st-azul { background-color: #cfe2ff; color: #084298; }
-        .st-amarelo { background-color: #fff3cd; color: #664d03; }
-        .st-vermelho { background-color: #f8d7da; color: #842029; }
         
-        .objeto-desc { max-width: 350px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
+        /* Cores Atualizadas conforme Lógica */
+        .st-verde { background-color: #d1e7dd; color: #0f5132; } /* Recebendo Propostas */
+        .st-azul { background-color: #cfe2ff; color: #084298; }  /* Homologada */
+        .st-amarelo { background-color: #fff3cd; color: #664d03; } /* Aguardando Resultado */
+        .st-vermelho { background-color: #f8d7da; color: #842029; } /* Fracassada/Suspensa */
+        .st-cinza { background-color: #e2e3e5; color: #41464b; }   /* Outros */
+        
+        .objeto-desc { max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
         .objeto-desc:hover { white-space: normal; position: relative; background: #fff; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 5px; border-radius: 4px; }
     </style>
 </head>
@@ -59,15 +62,30 @@
                 <label class="form-label">UASG</label>
                 <input type="text" id="inUasg" class="form-control" placeholder="98765">
             </div>
+            <div class="col-md-1">
+                <label class="form-label">UF</label>
+                <select id="inUF" class="form-select">
+                    <option value="">Todas</option>
+                    <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option>
+                    <option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option>
+                    <option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option>
+                    <option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+                    <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option>
+                    <option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option>
+                    <option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option>
+                    <option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+                    <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Cidade</label>
+                <input type="text" id="inCidade" class="form-control" placeholder="Ex: Caruaru">
+            </div>
             <div class="col-md-2">
                 <label class="form-label">Nº Licitação</label>
-                <input type="text" id="inNum" class="form-control" placeholder="Ex: 10/2025">
+                <input type="text" id="inNum" class="form-control" placeholder="Ex: 90000">
             </div>
-            <div class="col-md-3">
-                <label class="form-label">Órgão Público</label>
-                <input type="text" id="inOrg" class="form-control" placeholder="Nome do órgão...">
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <label class="form-label">Objeto</label>
                 <input type="text" id="inObj" class="form-control" placeholder="Palavra-chave...">
             </div>
@@ -75,14 +93,14 @@
                 <label class="form-label">Situação</label>
                 <select id="inStatus" class="form-select">
                     <option value="">Todas</option>
-                    <option value="Aguardando">Abertas</option>
-                    <option value="Disputa">Em Disputa</option>
+                    <option value="Recebendo">Recebendo Propostas</option>
+                    <option value="Aguardando">Aguardando Resultado</option>
                     <option value="Homologad">Homologadas</option>
-                    <option value="Suspens">Suspensas</option>
+                    <option value="Fracassa">Fracassadas/Desertas</option>
                 </select>
             </div>
-            <div class="col-md-1">
-                <button onclick="buscar()" class="btn btn-primary w-100 fw-bold"><i class="fas fa-search"></i></button>
+            <div class="col-md-2">
+                <button onclick="buscar()" class="btn btn-primary w-100 fw-bold"><i class="fas fa-search"></i> Filtrar</button>
             </div>
         </div>
     </div>
@@ -91,12 +109,12 @@
         <table class="table table-custom table-hover border">
             <thead>
                 <tr>
-                    <th width="10%">Abertura</th>
-                    <th width="8%">UASG</th>
-                    <th width="10%">Nº Edital</th>
-                    <th width="20%">Órgão</th>
-                    <th width="40%">Objeto</th>
-                    <th width="12%" class="text-center">Status</th>
+                    <th width="10%">Abertura / Fim</th>
+                    <th width="6%">UASG</th>
+                    <th width="8%">Nº Edital</th>
+                    <th width="15%">Local</th> <th width="20%">Órgão</th>
+                    <th width="30%">Objeto</th>
+                    <th width="11%" class="text-center">Status</th>
                 </tr>
             </thead>
             <tbody id="corpoTabela"></tbody>
@@ -114,6 +132,7 @@
 <script>
     let dadosStatus = [];
 
+    // Cache busting para garantir dado novo
     fetch('status.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => {
@@ -125,26 +144,30 @@
             buscar();
         })
         .catch(err => {
-            document.getElementById('loading').innerText = "Aguardando atualização do robô...";
+            document.getElementById('loading').innerHTML = "<span class='text-danger'>Erro ao carregar status.json</span>";
         });
 
     function buscar() {
-        // Captura os valores dos campos novos
         const fUasg = document.getElementById('inUasg').value.trim();
+        const fUF   = document.getElementById('inUF').value.trim(); // Novo
+        const fCid  = document.getElementById('inCidade').value.toLowerCase().trim(); // Novo
         const fNum  = document.getElementById('inNum').value.trim();
-        const fOrg  = document.getElementById('inOrg').value.toLowerCase().trim();
         const fObj  = document.getElementById('inObj').value.toLowerCase().trim();
         const fSts  = document.getElementById('inStatus').value.toLowerCase();
 
         const filtrados = dadosStatus.filter(i => {
-            // Lógica de filtro separada
             const matchUasg = (i.UASG || '').includes(fUasg);
-            const matchNum  = (i.Numero || i.Licitacao || '').includes(fNum);
-            const matchOrg  = (i.Orgao || '').toLowerCase().includes(fOrg);
-            const matchObj  = (i.Objeto || '').toLowerCase().includes(fObj);
+            // Verifica filtros novos
+            const matchUF   = fUF === '' || (i.UF || '').includes(fUF);
+            const matchCid  = fCid === '' || (i.Cidade || '').toLowerCase().includes(fCid);
+            
+            // Verifica numero (tanto no formato visual quanto no ID)
+            const matchNum  = (i.Numero || '').includes(fNum) || (i.Licitacao || '').includes(fNum);
+            
+            const matchObj  = (i.Objeto || '').toLowerCase().includes(fObj) || (i.Orgao || '').toLowerCase().includes(fObj);
             const matchSts  = (i.Status || '').toLowerCase().includes(fSts);
             
-            return matchUasg && matchNum && matchOrg && matchObj && matchSts;
+            return matchUasg && matchUF && matchCid && matchNum && matchObj && matchSts;
         });
 
         renderizarTabela(filtrados);
@@ -164,6 +187,7 @@
             emptyState.classList.add('d-none');
         }
 
+        // Limita a 200 para não travar navegador
         const listaLimitada = lista.slice(0, 200);
 
         tbody.innerHTML = listaLimitada.map(i => {
@@ -171,8 +195,9 @@
                 <tr>
                     <td><span class="fw-bold text-dark">${formatarDataHora(i.DataAbertura)}</span></td>
                     <td class="text-secondary">${i.UASG}</td>
-                    <td class="fw-bold text-primary">${i.Numero || i.Licitacao}</td>
-                    <td><small class="fw-bold text-secondary">${i.Orgao}</small></td>
+                    <td class="fw-bold text-primary">${i.Numero}</td>
+                    <td><small class="fw-bold text-dark">${i.Cidade || '-'} / ${i.UF || ''}</small></td>
+                    <td><small class="text-secondary" style="font-size:0.75rem">${i.Orgao}</small></td>
                     <td><div class="objeto-desc" title="${i.Objeto}">${i.Objeto}</div></td>
                     <td class="text-center">${criarBadge(i.Status)}</td>
                 </tr>
@@ -181,28 +206,32 @@
     }
 
     function criarBadge(status) {
-        let classe = 'bg-secondary text-white';
+        let classe = 'st-cinza'; // Padrão
         let texto = status || 'Desconhecido';
         const st = texto.toLowerCase();
 
-        if (st.includes('homolog')) classe = 'st-verde';
-        else if (st.includes('aguardando') || st.includes('recebimento')) classe = 'st-azul';
-        else if (st.includes('disputa')) classe = 'st-amarelo';
-        else if (st.includes('susp') || st.includes('revog')) classe = 'st-vermelho';
+        // Lógica de Cores baseada na sua solicitação
+        if (st.includes('homolog') || st.includes('adjudica')) classe = 'st-azul';
+        else if (st.includes('recebendo') || st.includes('aberto')) classe = 'st-verde';
+        else if (st.includes('aguardando')) classe = 'st-amarelo';
+        else if (st.includes('susp') || st.includes('revog') || st.includes('fracas') || st.includes('anula')) classe = 'st-vermelho';
 
         return `<span class="badge-status ${classe}">${texto}</span>`;
     }
 
     function formatarDataHora(dataISO) {
         if (!dataISO || dataISO.length < 10) return "-";
+        // Formato esperado do PNCP: YYYY-MM-DDTHH:MM:SS
         const data = dataISO.slice(8,10) + '/' + dataISO.slice(5,7);
         const hora = dataISO.slice(11,16);
         return `${data} <small class="text-muted">${hora}</small>`;
     }
 
-    // Atalho Enter
+    // Atalho Enter nos inputs
     document.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter' && document.activeElement.tagName === 'INPUT') buscar();
+        if (e.key === 'Enter' && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT')) {
+            buscar();
+        }
     });
 </script>
 
