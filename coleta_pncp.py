@@ -2,7 +2,6 @@ import requests
 import json
 from datetime import datetime, timedelta
 import os
-import sys
 import time
 
 # --- CONFIGURAÇÃO ---
@@ -18,184 +17,120 @@ if env_inicio and env_fim:
     d_ini, d_fim = env_inicio, env_fim
 else:
     hoje = datetime.now()
-    inicio = hoje - timedelta(days=3)
+    inicio = hoje - timedelta(days=2)
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-MODALIDADES_ALVO = ["6", "1"] 
-NOMES_MODALIDADE = {"6": "Pregão", "1": "Dispensa"}
+# FOCO EXCLUSIVO: Pregão Eletrônico (ID 6)
+MODALIDADE = "6"
+ARQ_RESULTADOS = 'dados.json'
 
-print(f"--- ROBÔ RESILIENTE (TRATAMENTO E204): {d_ini} até {d_fim} ---")
-
-ARQ_VENCEDORES = 'dados.json'
-ARQ_STATUS = 'status.json'
-
-dict_vencedores = {} 
-lista_status = []
-MAX_PAGINAS = 200 
-
+dict_resultados = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
+
+print(f"--- ROBÔ DE RESULTADOS (APENAS PREGÃO): {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
     print(f"\n📅 Dia {DATA_STR}:", end=" ")
     
-    for cod_mod in MODALIDADES_ALVO:
-        nome_mod = NOMES_MODALIDADE.get(cod_mod, cod_mod)
-        pagina = 1
-        
-        while pagina <= MAX_PAGINAS:
-            url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-            params = {
-                "dataInicial": DATA_STR,
-                "dataFinal": DATA_STR,
-                "codigoModalidadeContratacao": cod_mod,
-                "pagina": pagina,
-                "tamanhoPagina": 20 
-            }
+    pagina = 1
+    while pagina <= 200:
+        url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+        params = {
+            "dataInicial": DATA_STR, "dataFinal": DATA_STR,
+            "codigoModalidadeContratacao": MODALIDADE,
+            "pagina": pagina, "tamanhoPagina": 20
+        }
 
-            sucesso = False
-            vazio = False
+        try:
+            time.sleep(0.5)
+            resp = requests.get(url, params=params, headers=HEADERS, timeout=20)
+            if resp.status_code != 200: break
             
-            for tentativa in range(3):
-                try:
-                    time.sleep(0.5 if tentativa == 0 else 2.0)
-                    resp = requests.get(url, params=params, headers=HEADERS, timeout=20)
-                    
-                    if resp.status_code == 200:
-                        sucesso = True
-                        break
-                    elif resp.status_code == 204:
-                        # CORREÇÃO AQUI: Se for 204, avisamos que está vazio e paramos as páginas
-                        sucesso = True
-                        vazio = True
-                        break
-                    elif resp.status_code == 404:
-                        sucesso = True
-                        vazio = True
-                        break
-                    else:
-                        print(f"[E{resp.status_code}]", end="", flush=True)
-                except:
-                    print(f"[TCP]", end="", flush=True)
+            data = resp.json().get('data', [])
+            if not data: break
             
-            if not sucesso or vazio:
-                break # Pula para a próxima modalidade ou dia
+            print(".", end="", flush=True)
 
-            try:
-                payload = resp.json()
-                licitacoes = payload.get('data', [])
-            except:
-                licitacoes = []
-
-            if not licitacoes: break
-            
-            if pagina == 1: print(f"[{nome_mod}]", end=" ", flush=True)
-            else: print(f".", end="", flush=True)
-
-            for lic in licitacoes:
-                orgao = lic.get('orgaoEntidade', {})
-                unidade = lic.get('unidadeOrgao', {})
-                cnpj_orgao = orgao.get('cnpj')
-                ano = lic.get('anoCompra')
-                seq = lic.get('sequencialCompra')
-                uasg = str(unidade.get('codigoUnidade', '000000')).strip()
-                id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}" 
-                numero_edital = f"{str(seq).zfill(5)}/{ano}"     
-                objeto = lic.get('objetoCompra', 'Objeto não informado')
-                situacao_nome = lic.get('situacaoCompraNome', 'Desconhecido')
+            for lic in data:
                 situacao_id = str(lic.get('situacaoCompraId'))
-                
-                dt_abertura = lic.get('dataAberturaLicitacao') 
-                dt_encerramento = lic.get('dataEncerramentoProposta')
-                
-                # Deep Fetch
-                if not dt_abertura and not dt_encerramento:
-                    try:
-                        r_f = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}", headers=HEADERS, timeout=5)
-                        if r_f.status_code == 200:
-                            det = r_f.json()
-                            dt_abertura = det.get('dataAberturaLicitacao')
-                            dt_encerramento = det.get('dataEncerramentoProposta')
-                    except: pass
-                
-                data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
-                
-                # Status Calculado
-                status_calc = situacao_nome
-                if situacao_id == '4': status_calc = "Homologada"
-                elif situacao_id == '1' or "Divulgada" in situacao_nome:
-                    if data_final_exibicao:
-                        try:
-                            if datetime.fromisoformat(data_final_exibicao) < datetime.now():
-                                status_calc = "Aguardando Resultado"
-                            else:
-                                status_calc = "Recebendo Propostas"
-                        except: pass
+                # Focamos em licitações que já possuem resultado (Homologada/Encerrada)
+                if situacao_id in ['4', '6', '10']: # 4: Homologada, 6: Adjudicada, 10: Encerrada
+                    orgao = lic.get('orgaoEntidade', {})
+                    unidade = lic.get('unidadeOrgao', {})
+                    cnpj = orgao.get('cnpj')
+                    ano = lic.get('anoCompra')
+                    seq = lic.get('sequencialCompra')
+                    uasg = str(unidade.get('codigoUnidade', '000000')).strip()
+                    id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                lista_status.append({
-                    "DataPublicacao": DATA_STR,
-                    "DataAbertura": data_final_exibicao,
-                    "UASG": uasg,
-                    "Orgao": orgao.get('razaoSocial', ''),
-                    "UF": unidade.get('ufSigla') or orgao.get('ufSigla') or "BR",
-                    "Cidade": unidade.get('municipioNome') or "Não Informado",
-                    "Licitacao": id_licitacao,
-                    "Numero": numero_edital,
-                    "Objeto": objeto,
-                    "Status": status_calc
-                })
+                    # Captura de datas e edital
+                    edital = f"{str(seq).zfill(5)}/{ano}"
+                    ini_rec = lic.get('dataInicioRecebimentoProposta', '')
+                    fim_rec = lic.get('dataEncerramentoProposta', '')
+                    ult_atu = lic.get('dataAtualizacao', DATA_STR)
 
-                # VENCEDORES
-                if situacao_id in ['4', '6']:
+                    # Busca de Itens (Vencedores, Fracassados e Desertos)
                     try:
-                        r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=10)
+                        r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=10)
                         if r_it.status_code == 200:
-                            for it in r_it.json():
+                            itens = r_it.json()
+                            for it in itens:
+                                num_item = it.get('numeroItem')
+                                desc_item = it.get('descricao')
+                                status_item = it.get('situacaoItemNome') # Fracassado, Deserto, Homologado
+                                
+                                # Se o item tem resultado (Vencedor)
                                 if it.get('temResultado'):
-                                    n_it = it.get('numeroItem')
-                                    r_w = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens/{n_it}/resultados", headers=HEADERS, timeout=5)
+                                    r_w = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/{num_item}/resultados", headers=HEADERS, timeout=5)
                                     if r_w.status_code == 200:
-                                        res_list = r_w.json()
-                                        if isinstance(res_list, dict): res_list = [res_list]
-                                        for res in res_list:
-                                            cnpj_f = res.get('niFornecedor')
-                                            if cnpj_f:
-                                                chave = f"{id_licitacao}-{cnpj_f}"
-                                                if chave not in dict_vencedores:
-                                                    dict_vencedores[chave] = {
-                                                        "Data": DATA_STR, "UASG": uasg, "Orgao": orgao.get('razaoSocial', ''),
-                                                        "Licitacao": id_licitacao, "Numero": numero_edital,
-                                                        "Fornecedor": res.get('nomeRazaoSocialFornecedor') or f"CNPJ {cnpj_f}",
-                                                        "CNPJ": cnpj_f, "Total": 0.0, "Itens": 0, "DetalhesItens": []
-                                                    }
-                                                val = float(res.get('valorTotalHomologado') or 0)
-                                                dict_vencedores[chave]["Total"] += val
-                                                dict_vencedores[chave]["Itens"] += 1
-                                                dict_vencedores[chave]["DetalhesItens"].append({"Item": n_it, "Descricao": it.get('descricao'), "Qtd": it.get('quantidade'), "Valor": val})
+                                        vencedores = r_w.json()
+                                        if isinstance(vencedores, dict): vencedores = [vencedores]
+                                        for v in vencedores:
+                                            cnpj_v = v.get('niFornecedor', '00000000000000')
+                                            chave = f"{id_lic}-{cnpj_v}"
+                                            
+                                            if chave not in dict_resultados:
+                                                dict_resultados[chave] = {
+                                                    "DataResult": ult_atu, "UASG": uasg, "Edital": edital,
+                                                    "Orgao": orgao.get('razaoSocial'), "UF": unidade.get('ufSigla'),
+                                                    "Municipio": unidade.get('municipioNome'), "Fornecedor": v.get('nomeRazaoSocialFornecedor'),
+                                                    "CNPJ": cnpj_v, "InicioRec": ini_rec, "FimRec": fim_rec,
+                                                    "Licitacao": id_lic, "Itens": []
+                                                }
+                                            dict_resultados[chave]["Itens"].append({
+                                                "Item": num_item, "Desc": desc_item, "Status": "Venceu",
+                                                "Valor": float(v.get('valorTotalHomologado') or 0)
+                                            })
+                                # Se o item FRACASSOU ou restou DESERTO
+                                elif any(s in status_item.upper() for s in ["FRACASSADO", "DESERTO"]):
+                                    chave = f"{id_lic}-SEM-VENCEDOR"
+                                    if chave not in dict_resultados:
+                                        dict_resultados[chave] = {
+                                            "DataResult": ult_atu, "UASG": uasg, "Edital": edital,
+                                            "Orgao": orgao.get('razaoSocial'), "UF": unidade.get('ufSigla'),
+                                            "Municipio": unidade.get('municipioNome'), "Fornecedor": "ITEM FRACASSADO/DESERTO",
+                                            "CNPJ": "00.000.000/0000-00", "InicioRec": ini_rec, "FimRec": fim_rec,
+                                            "Licitacao": id_lic, "Itens": []
+                                        }
+                                    dict_resultados[chave]["Itens"].append({
+                                        "Item": num_item, "Desc": desc_item, "Status": status_item, "Valor": 0
+                                    })
                     except: pass
             pagina += 1
+        except: break
     data_atual += timedelta(days=1)
 
-def salvar_arquivo_json(nome_arquivo, dados_novos):
-    if not dados_novos: return
-    historico = []
-    if os.path.exists(nome_arquivo):
-        with open(nome_arquivo, 'r', encoding='utf-8') as f:
-            try: historico = json.load(f)
-            except: historico = []
-    historico.extend(dados_novos)
-    if nome_arquivo == ARQ_VENCEDORES:
-        dict_un = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
-        final = list(dict_un.values())
-    else:
-        dict_un = {i['Licitacao']: i for i in historico}
-        final = list(dict_un.values())
-    with open(nome_arquivo, 'w', encoding='utf-8') as f:
-        json.dump(final, f, indent=4, ensure_ascii=False)
-
-lista_vencedores = list(dict_vencedores.values())
-salvar_arquivo_json(ARQ_VENCEDORES, lista_vencedores)
-salvar_arquivo_json(ARQ_STATUS, lista_status)
-print("\n💾 Processo concluído com sucesso.")
+# Salvamento com deduplicação
+historico = []
+if os.path.exists(ARQ_RESULTADOS):
+    with open(ARQ_RESULTADOS, 'r', encoding='utf-8') as f:
+        try: historico = json.load(f)
+        except: pass
+historico.extend(list(dict_resultados.values()))
+dict_final = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
+with open(ARQ_RESULTADOS, 'w', encoding='utf-8') as f:
+    json.dump(list(dict_final.values()), f, indent=4, ensure_ascii=False)
+print("\n✅ Concluído.")
