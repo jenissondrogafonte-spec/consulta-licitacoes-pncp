@@ -3,120 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados PNCP - Pregão Eletrônico</title>
+    <title>Painel de Resultados PNCP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f4f7f6; font-family: 'Segoe UI', sans-serif; }
-        .filter-section { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .card-licitacao { border: none; border-left: 5px solid #0d6efd; transition: 0.3s; }
-        .card-licitacao:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .st-venceu { color: #198754; font-weight: bold; }
-        .st-falha { color: #dc3545; font-weight: bold; }
+        :root { --primary-color: #004494; --secondary-color: #f8f9fa; }
+        body { background-color: #f0f2f5; font-family: 'Inter', sans-serif; }
+        
+        /* Cabeçalho */
+        .header-top { background: var(--primary-color); color: white; padding: 20px 0; margin-bottom: 20px; }
+        
+        /* Filtros */
+        .search-container { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .form-label { font-weight: 600; font-size: 0.85rem; color: #555; }
+        
+        /* Cards de Resultado */
+        .res-card { 
+            background: white; border-radius: 10px; border: none; 
+            transition: all 0.3s; border-left: 5px solid transparent;
+        }
+        .res-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .card-venceu { border-left-color: #198754; }
+        .card-fracassado { border-left-color: #dc3545; background-color: #fffafa; }
+        
+        .badge-data { background: #e9ecef; color: #495057; font-weight: 600; }
+        .valor-tag { color: #198754; font-weight: 700; font-size: 1.1rem; }
     </style>
 </head>
 <body>
 
-<div class="container-fluid py-4">
-    <h2 class="mb-4 text-primary fw-bold"><i class="fas fa-file-contract"></i> Resultados de Pregões</h2>
+<div class="header-top shadow-sm">
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-chart-line me-2"></i> Monitor de Resultados: Pregão Eletrônico</h4>
+            <span class="badge bg-light text-primary" id="contador">0 registros carregados</span>
+        </div>
+    </div>
+</div>
 
-    <div class="filter-section mb-4">
-        <div class="row g-2">
-            <div class="col-md-1"><label class="small fw-bold">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="small fw-bold">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="small fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="small fw-bold">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="small fw-bold">Fornecedor</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="small fw-bold">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="small fw-bold">Data Fim</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
-            <div class="col-md-1 d-flex align-items-end gap-1">
-                <button class="btn btn-primary btn-sm w-100" onclick="filtrar()"><i class="fas fa-search"></i></button>
-                <button class="btn btn-secondary btn-sm w-100" onclick="limpar()"><i class="fas fa-eraser"></i></button>
+<div class="container-fluid px-4">
+    <div class="search-container mb-4">
+        <div class="row g-3">
+            <div class="col-md-1">
+                <label class="form-label">UASG</label>
+                <input type="text" id="fUasg" class="form-control" placeholder="926809">
             </div>
+            <div class="col-md-1">
+                <label class="form-label">Edital</label>
+                <input type="text" id="fEdital" class="form-control" placeholder="01/2025">
+            </div>
+            <div class="col-md-1">
+                <label class="form-label">UF</label>
+                <input type="text" id="fUF" class="form-control" placeholder="PE">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Município</label>
+                <input type="text" id="fMuni" class="form-control" placeholder="Caruaru">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Fornecedor</label>
+                <input type="text" id="fForn" class="form-control" placeholder="Razão Social ou CNPJ">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Data Início (Resultado)</label>
+                <input type="date" id="fDataIni" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Data Fim</label>
+                <input type="date" id="fDataFim" class="form-control">
+            </div>
+        </div>
+        <div class="mt-3 d-flex justify-content-end gap-2">
+            <button class="btn btn-outline-secondary px-4" onclick="limpar()"><i class="fas fa-eraser me-2"></i>Limpar</button>
+            <button class="btn btn-primary px-5" onclick="filtrar()"><i class="fas fa-search me-2"></i>Pesquisar</button>
         </div>
     </div>
 
-    <div id="lista" class="row g-3"></div>
+    <div id="lista" class="row g-3">
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-2 text-muted">Aguardando dados...</p>
+        </div>
+    </div>
 </div>
 
 <div class="modal fade" id="modalItens" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title">Detalhes dos Itens</h5>
+                <h5 class="modal-title fw-bold">Detalhamento dos Itens do Pregão</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body">
-                <table class="table table-sm">
-                    <thead><tr><th>Item</th><th>Descrição</th><th>Status</th><th>Valor</th></tr></thead>
-                    <tbody id="corpoModal"></tbody>
-                </table>
+            <div class="modal-body p-0">
+                <div id="infoLicitacao" class="p-3 bg-light border-bottom small"></div>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-3">Item</th>
+                                <th>Descrição</th>
+                                <th>Situação</th>
+                                <th class="text-end pe-3">Valor Homologado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpoModal"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    let dados = [];
-    fetch('dados.json').then(r => r.json()).then(d => { 
-        dados = d; 
-        filtrar(); 
-    });
+    let dadosOriginais = [];
 
-    function filtrar() {
-        const u = document.getElementById('fUasg').value;
-        const e = document.getElementById('fEdital').value;
-        const uf = document.getElementById('fUF').value.toUpperCase();
-        const m = document.getElementById('fMuni').value.toLowerCase();
-        const f = document.getElementById('fForn').value.toLowerCase();
-        const di = document.getElementById('fDataIni').value;
-        const df = document.getElementById('fDataFim').value;
-
-        const res = dados.filter(i => {
-            const dataItem = i.DataResult.split('T')[0];
-            return (!u || i.UASG.includes(u)) &&
-                   (!e || i.Edital.includes(e)) &&
-                   (!uf || i.UF === uf) &&
-                   (!m || i.Municipio.toLowerCase().includes(m)) &&
-                   (!f || i.Fornecedor.toLowerCase().includes(f)) &&
-                   (!di || dataItem >= di) &&
-                   (!df || dataItem <= df);
+    // Carregar dados com timestamp para evitar cache
+    fetch('dados.json?v=' + Date.now())
+        .then(r => r.json())
+        .then(d => { 
+            dadosOriginais = d; 
+            document.getElementById('contador').innerText = `${dadosOriginais.length} registros carregados`;
+            filtrar(); 
+        })
+        .catch(err => {
+            document.getElementById('lista').innerHTML = `<div class="alert alert-warning">Erro ao carregar dados.json. Certifique-se de que o robô já rodou pelo menos uma vez.</div>`;
         });
 
-        const container = document.getElementById('lista');
-        container.innerHTML = res.map((i, index) => `
-            <div class="col-md-4">
-                <div class="card card-licitacao p-3 h-100">
-                    <div class="d-flex justify-content-between mb-2">
-                        <span class="badge bg-light text-dark border">UASG: ${i.UASG}</span>
-                        <span class="badge bg-info">${i.DataResult.split('T')[0]}</span>
-                    </div>
-                    <h6 class="fw-bold text-truncate">${i.Orgao}</h6>
-                    <p class="small mb-1"><strong>Edital:</strong> ${i.Edital} | <strong>Local:</strong> ${i.Municipio}-${i.UF}</p>
-                    <p class="small text-primary mb-2"><strong>Vencedor:</strong> ${i.Fornecedor}</p>
-                    <div class="mt-auto d-flex justify-content-between">
-                        <button class="btn btn-outline-primary btn-sm" onclick="verItens(${index})">Ver Itens</button>
-                    </div>
-                </div>
-            </div>
-        `).join('');
+    function filtrar() {
+        const query = {
+            uasg: document.getElementById('fUasg').value.trim(),
+            edital: document.getElementById('fEdital').value.trim(),
+            uf: document.getElementById('fUF').value.trim().toUpperCase(),
+            muni: document.getElementById('fMuni').value.trim().toLowerCase(),
+            forn: document.getElementById('fForn').value.trim().toLowerCase(),
+            dIni: document.getElementById('fDataIni').value,
+            dFim: document.getElementById('fDataFim').value
+        };
+
+        const filtrados = dadosOriginais.filter(i => {
+            const dataResult = i.DataResult ? i.DataResult.split('T')[0] : "";
+            const matchUasg = !query.uasg || i.UASG.includes(query.uasg);
+            const matchEdital = !query.edital || i.Edital.includes(query.edital);
+            const matchUF = !query.uf || i.UF === query.uf;
+            const matchMuni = !query.muni || (i.Municipio || "").toLowerCase().includes(query.muni);
+            const matchForn = !query.forn || (i.Fornecedor || "").toLowerCase().includes(query.forn) || i.CNPJ.includes(query.forn);
+            const matchData = (!query.dIni || dataResult >= query.dIni) && (!query.dFim || dataResult <= query.dFim);
+
+            return matchUasg && matchEdital && matchUF && matchMuni && matchForn && matchData;
+        });
+
+        renderizar(filtrados);
     }
 
-    function verItens(idx) {
-        const item = dados[idx];
+    function renderizar(lista) {
+        const container = document.getElementById('lista');
+        if (lista.length === 0) {
+            container.innerHTML = `<div class="text-center py-5"><i class="fas fa-search fa-3x text-muted mb-3"></i><p>Nenhum resultado para os filtros aplicados.</p></div>`;
+            return;
+        }
+
+        container.innerHTML = lista.map((i, idx) => {
+            const isFracassado = i.Fornecedor.includes("FRACASSADO");
+            return `
+            <div class="col-md-4">
+                <div class="card res-card h-100 p-3 ${isFracassado ? 'card-fracassado' : 'card-venceu'}">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="badge badge-data px-2 py-1">${i.DataResult ? i.DataResult.split('T')[0] : 'S/D'}</span>
+                        <span class="small fw-bold text-muted">UASG: ${i.UASG}</span>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-1 text-truncate" title="${i.Orgao}">${i.Orgao}</h6>
+                    <p class="small text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i> ${i.Municipio || 'N/I'} - ${i.UF || 'BR'}</p>
+                    <div class="mb-3">
+                        <small class="d-block text-muted">Edital: <b>${i.Edital}</b></small>
+                        <small class="d-block text-truncate"><b>Fornecedor:</b> ${i.Fornecedor}</small>
+                    </div>
+                    <div class="mt-auto d-flex justify-content-between align-items-center">
+                        <span class="valor-tag">${isFracassado ? '---' : 'R$ ' + calcularTotal(i.Itens)}</span>
+                        <button class="btn btn-sm btn-outline-primary fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">
+                            <i class="fas fa-list me-1"></i> Itens
+                        </button>
+                    </div>
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    function calcularTotal(itens) {
+        return itens.reduce((acc, curr) => acc + (curr.Valor || 0), 0).toLocaleString('pt-BR', {minimumFractionDigits: 2});
+    }
+
+    function verDetalhes(idLic, cnpj) {
+        const item = dadosOriginais.find(x => x.Licitacao === idLic && x.CNPJ === cnpj);
+        if (!item) return;
+
+        document.getElementById('infoLicitacao').innerHTML = `
+            <strong>Órgão:</strong> ${item.Orgao} | <strong>Edital:</strong> ${item.Edital} <br>
+            <strong>Fornecedor:</strong> ${item.Fornecedor} (${item.CNPJ})
+        `;
+
         document.getElementById('corpoModal').innerHTML = item.Itens.map(it => `
             <tr>
-                <td>${it.Item}</td>
-                <td class="small">${it.Desc}</td>
-                <td class="${it.Status === 'Venceu' ? 'st-venceu' : 'st-falha'}">${it.Status}</td>
-                <td>R$ ${it.Valor.toLocaleString('pt-BR')}</td>
+                <td class="ps-3 fw-bold">${it.Item}</td>
+                <td><small>${it.Desc}</small></td>
+                <td><span class="badge ${it.Status === 'Venceu' ? 'bg-success' : 'bg-danger'}">${it.Status}</span></td>
+                <td class="text-end pe-3 fw-bold text-dark">${it.Valor > 0 ? 'R$ ' + it.Valor.toLocaleString('pt-BR', {minimumFractionDigits: 2}) : '-'}</td>
             </tr>
         `).join('');
+
         new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
 
     function limpar() {
-        document.querySelectorAll('input').forEach(i => i.value = '');
+        document.querySelectorAll('input').forEach(input => input.value = '');
         filtrar();
     }
 </script>
