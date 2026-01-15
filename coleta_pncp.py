@@ -24,24 +24,20 @@ else:
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-# LISTA DE MODALIDADES PARA EVITAR O ERRO 400
-# O governo exige que filtremos por algo. Então pedimos uma por uma.
+# --- FILTRO DE OURO: APENAS PREGÃO E DISPENSA ---
+# Isso torna a busca muito mais rápida e leve.
 MODALIDADES_ALVO = [
-    "6",  # Pregão Eletrônico (A maioria)
-    "8",  # Concorrência (Lei 14.133)
-    "1",  # Dispensa de Licitação
-    "2",  # Inexigibilidade
-    "12", # Leilão
-    "13"  # Concurso
+    "6",  # Pregão Eletrônico (A modalidade campeã de vendas)
+    "1"   # Dispensa de Licitação (Compras diretas/rápidas)
 ]
 
 # Nomes para o log ficar bonito
 NOMES_MODALIDADE = {
-    "6": "Pregão", "8": "Concor.", "1": "Dispensa", 
-    "2": "Inexig.", "12": "Leilão", "13": "Concurso"
+    "6": "Pregão", 
+    "1": "Dispensa"
 }
 
-print(f"--- ROBÔ TÁTICO (BUSCA POR TIPOS): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ TURBO (PREGÃO + DISPENSA): {d_ini} até {d_fim} ---")
 
 ARQ_VENCEDORES = 'dados.json'
 ARQ_STATUS = 'status.json'
@@ -57,10 +53,9 @@ while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
     print(f"\n📅 Dia {DATA_STR}:", end=" ")
     
-    # Loop para contornar o Erro 400: Busca tipo por tipo
+    # Loop Otimizado: Busca apenas as 2 modalidades principais
     for cod_mod in MODALIDADES_ALVO:
         nome_mod = NOMES_MODALIDADE.get(cod_mod, cod_mod)
-        # print(f" > {nome_mod}", end="", flush=True) # Descomente se quiser ver detalhe
         
         pagina = 1
         while pagina <= MAX_PAGINAS:
@@ -68,19 +63,18 @@ while data_atual <= data_final:
             params = {
                 "dataInicial": DATA_STR,
                 "dataFinal": DATA_STR,
-                "codigoModalidadeContratacao": cod_mod, # Filtro Obrigatório para não travar
+                "codigoModalidadeContratacao": cod_mod,
                 "pagina": pagina,
                 "tamanhoPagina": 50
             }
 
             try:
-                # Delay micro para não ser bloqueado
+                # Delay reduzido pois fazemos menos requisições agora
                 time.sleep(0.1) 
                 resp = requests.get(url, params=params, headers=HEADERS, timeout=15)
                 
                 if resp.status_code != 200:
-                    # Se der erro, só avisa e pula para a próxima modalidade
-                    if resp.status_code != 404: # 404 é normal (não tem nada)
+                    if resp.status_code != 404: 
                          print(f"[x{cod_mod}]", end="", flush=True)
                     break
                 
@@ -89,7 +83,7 @@ while data_atual <= data_final:
                 
                 if not licitacoes: break
                 
-                # Marca visual de progresso (ex: P1 de Pregão)
+                # Marca visual (Ex: [Pregão] . . . [Dispensa] .)
                 if pagina == 1:
                     print(f"[{nome_mod}]", end=" ", flush=True)
                 else:
@@ -116,11 +110,11 @@ while data_atual <= data_final:
                     situacao_id = str(lic.get('situacaoCompraId'))
                     modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida')
 
-                    # --- LÓGICA DE DATAS ---
+                    # --- LÓGICA DE DATAS (Data de Abertura = Fim da Proposta) ---
                     dt_abertura = lic.get('dataAberturaLicitacao') 
                     dt_encerramento = lic.get('dataEncerramentoProposta')
                     
-                    # Se vazias, Deep Fetch
+                    # Deep Fetch apenas se necessário
                     if not dt_abertura and not dt_encerramento:
                         try:
                             url_full = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}"
@@ -131,7 +125,8 @@ while data_atual <= data_final:
                                 dt_encerramento = detalhe.get('dataEncerramentoProposta')
                         except: pass
                     
-                    # Regra: Abertura = Fim do Recebimento (se houver)
+                    # AQUI ESTÁ A REGRA QUE VOCÊ PEDIU:
+                    # Se tiver "Fim Recebimento", usa ela. Senão, usa Abertura.
                     data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
                     if not data_final_exibicao: data_final_exibicao = ""
 
@@ -150,7 +145,7 @@ while data_atual <= data_final:
                         "Status": situacao_nome
                     })
 
-                    # 2. VENCEDORES (Dicionário Inteligente)
+                    # 2. VENCEDORES (Só se homologado 4 ou adjudicado 6)
                     if situacao_id in ['4', '6']:
                         url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
                         try:
@@ -210,7 +205,7 @@ while data_atual <= data_final:
                         except: pass
                 pagina += 1
             except Exception as e:
-                # Se der erro de conexão, para essa modalidade e tenta a próxima
+                # Se falhar a conexão, tenta a próxima modalidade
                 print(f" (Erro Conexão) ", end="")
                 break
             
@@ -228,12 +223,10 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
     
     historico.extend(dados_novos)
     
-    # Deduplicação Inteligente
+    # Deduplicação
     if nome_arquivo == ARQ_VENCEDORES:
         dict_unico = {}
         for item in historico:
-            # Chave única: ID da Licitação + CNPJ do Vencedor
-            # O último (mais recente) sobrescreve o antigo
             chave = f"{item.get('Licitacao')}-{item.get('CNPJ')}"
             dict_unico[chave] = item
         final = list(dict_unico.values())
