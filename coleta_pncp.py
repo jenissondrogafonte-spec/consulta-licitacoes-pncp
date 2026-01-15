@@ -24,15 +24,31 @@ else:
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-print(f"--- ROBÔ UNIVERSAL (MODO DEBUG ATIVADO): {d_ini} até {d_fim} ---")
+# LISTA DE MODALIDADES PARA EVITAR O ERRO 400
+# O governo exige que filtremos por algo. Então pedimos uma por uma.
+MODALIDADES_ALVO = [
+    "6",  # Pregão Eletrônico (A maioria)
+    "8",  # Concorrência (Lei 14.133)
+    "1",  # Dispensa de Licitação
+    "2",  # Inexigibilidade
+    "12", # Leilão
+    "13"  # Concurso
+]
+
+# Nomes para o log ficar bonito
+NOMES_MODALIDADE = {
+    "6": "Pregão", "8": "Concor.", "1": "Dispensa", 
+    "2": "Inexig.", "12": "Leilão", "13": "Concurso"
+}
+
+print(f"--- ROBÔ TÁTICO (BUSCA POR TIPOS): {d_ini} até {d_fim} ---")
 
 ARQ_VENCEDORES = 'dados.json'
 ARQ_STATUS = 'status.json'
 
-# Estruturas de dados
 dict_vencedores = {} 
 lista_status = []
-MAX_PAGINAS = 200 
+MAX_PAGINAS = 100 
 
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
@@ -41,156 +57,166 @@ while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
     print(f"\n📅 Dia {DATA_STR}:", end=" ")
     
-    pagina = 1
-    
-    while pagina <= MAX_PAGINAS:
-        url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-        params = {
-            "dataInicial": DATA_STR,
-            "dataFinal": DATA_STR,
-            "pagina": pagina,
-            "tamanhoPagina": 50
-        }
+    # Loop para contornar o Erro 400: Busca tipo por tipo
+    for cod_mod in MODALIDADES_ALVO:
+        nome_mod = NOMES_MODALIDADE.get(cod_mod, cod_mod)
+        # print(f" > {nome_mod}", end="", flush=True) # Descomente se quiser ver detalhe
+        
+        pagina = 1
+        while pagina <= MAX_PAGINAS:
+            url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+            params = {
+                "dataInicial": DATA_STR,
+                "dataFinal": DATA_STR,
+                "codigoModalidadeContratacao": cod_mod, # Filtro Obrigatório para não travar
+                "pagina": pagina,
+                "tamanhoPagina": 50
+            }
 
-        try:
-            time.sleep(0.5) # Aumentei um pouco o delay para evitar bloqueio
-            resp = requests.get(url, params=params, headers=HEADERS, timeout=20)
-            
-            if resp.status_code != 200:
-                # AQUI ESTÁ A CORREÇÃO: Mostra o erro real
-                print(f"❌ Erro API: {resp.status_code}")
-                # print(resp.text) # Descomente se quiser ver o detalhe do erro
-                break
-            
-            payload = resp.json()
-            licitacoes = payload.get('data', [])
-            
-            if not licitacoes: 
-                # Se a página vier vazia, mas com status 200, apenas paramos a paginação
-                break
-            
-            print(f"[P{pagina}]", end=" ", flush=True)
-
-            for lic in licitacoes:
-                # --- EXTRAÇÃO DE DADOS ---
-                orgao = lic.get('orgaoEntidade', {})
-                unidade = lic.get('unidadeOrgao', {})
+            try:
+                # Delay micro para não ser bloqueado
+                time.sleep(0.1) 
+                resp = requests.get(url, params=params, headers=HEADERS, timeout=15)
                 
-                cnpj_orgao = orgao.get('cnpj')
-                nome_orgao = orgao.get('razaoSocial', '')
-                uf = unidade.get('ufSigla') or orgao.get('ufSigla') or "BR"
-                cidade = unidade.get('municipioNome') or "Não Informado"
-
-                ano = lic.get('anoCompra')
-                seq = lic.get('sequencialCompra')
-                uasg = str(unidade.get('codigoUnidade', '000000')).strip()
+                if resp.status_code != 200:
+                    # Se der erro, só avisa e pula para a próxima modalidade
+                    if resp.status_code != 404: # 404 é normal (não tem nada)
+                         print(f"[x{cod_mod}]", end="", flush=True)
+                    break
                 
-                id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}" 
-                numero_edital = f"{str(seq).zfill(5)}/{ano}"     
-                objeto = lic.get('objetoCompra', 'Objeto não informado')
-                situacao_nome = lic.get('situacaoCompraNome', 'Desconhecido')
-                situacao_id = str(lic.get('situacaoCompraId'))
-                modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida')
-
-                # --- LÓGICA DE DATAS ---
-                dt_abertura = lic.get('dataAberturaLicitacao') 
-                dt_encerramento = lic.get('dataEncerramentoProposta')
+                payload = resp.json()
+                licitacoes = payload.get('data', [])
                 
-                if not dt_abertura and not dt_encerramento:
-                    try:
-                        url_full = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}"
-                        r_full = requests.get(url_full, headers=HEADERS, timeout=5)
-                        if r_full.status_code == 200:
-                            detalhe = r_full.json()
-                            dt_abertura = detalhe.get('dataAberturaLicitacao')
-                            dt_encerramento = detalhe.get('dataEncerramentoProposta')
-                    except: pass
+                if not licitacoes: break
                 
-                data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
-                if not data_final_exibicao: data_final_exibicao = ""
+                # Marca visual de progresso (ex: P1 de Pregão)
+                if pagina == 1:
+                    print(f"[{nome_mod}]", end=" ", flush=True)
+                else:
+                    print(f".", end="", flush=True)
 
-                # 1. STATUS
-                lista_status.append({
-                    "DataPublicacao": DATA_STR,
-                    "DataAbertura": data_final_exibicao,
-                    "UASG": uasg,
-                    "Orgao": nome_orgao,
-                    "UF": uf,
-                    "Cidade": cidade,
-                    "Licitacao": id_licitacao,
-                    "Numero": numero_edital,
-                    "Modalidade": modalidade_nome,
-                    "Objeto": objeto,
-                    "Status": situacao_nome
-                })
+                for lic in licitacoes:
+                    # --- EXTRAÇÃO DE DADOS ---
+                    orgao = lic.get('orgaoEntidade', {})
+                    unidade = lic.get('unidadeOrgao', {})
+                    
+                    cnpj_orgao = orgao.get('cnpj')
+                    nome_orgao = orgao.get('razaoSocial', '')
+                    uf = unidade.get('ufSigla') or orgao.get('ufSigla') or "BR"
+                    cidade = unidade.get('municipioNome') or "Não Informado"
 
-                # 2. VENCEDORES
-                if situacao_id in ['4', '6']:
-                    url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
-                    try:
-                        r_it = requests.get(url_itens, headers=HEADERS, timeout=10)
-                        if r_it.status_code == 200:
-                            itens = r_it.json()
-                            for it in itens:
-                                if it.get('temResultado') is True:
-                                    num_item = it.get('numeroItem')
-                                    desc_item = it.get('descricao', 'Item sem descrição')
-                                    qtd_item = it.get('quantidade', 1)
-                                    
-                                    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens/{num_item}/resultados"
-                                    try:
-                                        r_win = requests.get(url_res, headers=HEADERS, timeout=5)
-                                        if r_win.status_code == 200:
-                                            resultados = r_win.json()
-                                            if isinstance(resultados, dict): resultados = [resultados]
+                    ano = lic.get('anoCompra')
+                    seq = lic.get('sequencialCompra')
+                    uasg = str(unidade.get('codigoUnidade', '000000')).strip()
+                    
+                    id_licitacao = f"{uasg}{str(seq).zfill(5)}{ano}" 
+                    numero_edital = f"{str(seq).zfill(5)}/{ano}"     
+                    objeto = lic.get('objetoCompra', 'Objeto não informado')
+                    situacao_nome = lic.get('situacaoCompraNome', 'Desconhecido')
+                    situacao_id = str(lic.get('situacaoCompraId'))
+                    modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida')
 
-                                            for res in resultados:
-                                                cnpj_forn = res.get('niFornecedor')
-                                                nome_forn = res.get('nomeRazaoSocialFornecedor')
-                                                if not nome_forn and cnpj_forn: nome_forn = f"CNPJ {cnpj_forn}"
-                                                
-                                                valor = res.get('valorTotalHomologado')
-                                                if valor is None: valor = 0
-                                                valor = float(valor)
+                    # --- LÓGICA DE DATAS ---
+                    dt_abertura = lic.get('dataAberturaLicitacao') 
+                    dt_encerramento = lic.get('dataEncerramentoProposta')
+                    
+                    # Se vazias, Deep Fetch
+                    if not dt_abertura and not dt_encerramento:
+                        try:
+                            url_full = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}"
+                            r_full = requests.get(url_full, headers=HEADERS, timeout=5)
+                            if r_full.status_code == 200:
+                                detalhe = r_full.json()
+                                dt_abertura = detalhe.get('dataAberturaLicitacao')
+                                dt_encerramento = detalhe.get('dataEncerramentoProposta')
+                        except: pass
+                    
+                    # Regra: Abertura = Fim do Recebimento (se houver)
+                    data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
+                    if not data_final_exibicao: data_final_exibicao = ""
 
-                                                if cnpj_forn:
-                                                    chave = f"{id_licitacao}-{cnpj_forn}"
+                    # 1. STATUS
+                    lista_status.append({
+                        "DataPublicacao": DATA_STR,
+                        "DataAbertura": data_final_exibicao,
+                        "UASG": uasg,
+                        "Orgao": nome_orgao,
+                        "UF": uf,
+                        "Cidade": cidade,
+                        "Licitacao": id_licitacao,
+                        "Numero": numero_edital,
+                        "Modalidade": modalidade_nome,
+                        "Objeto": objeto,
+                        "Status": situacao_nome
+                    })
+
+                    # 2. VENCEDORES (Dicionário Inteligente)
+                    if situacao_id in ['4', '6']:
+                        url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
+                        try:
+                            r_it = requests.get(url_itens, headers=HEADERS, timeout=10)
+                            if r_it.status_code == 200:
+                                itens = r_it.json()
+                                for it in itens:
+                                    if it.get('temResultado') is True:
+                                        num_item = it.get('numeroItem')
+                                        desc_item = it.get('descricao', 'Item sem descrição')
+                                        qtd_item = it.get('quantidade', 1)
+                                        
+                                        url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens/{num_item}/resultados"
+                                        try:
+                                            r_win = requests.get(url_res, headers=HEADERS, timeout=5)
+                                            if r_win.status_code == 200:
+                                                resultados = r_win.json()
+                                                if isinstance(resultados, dict): resultados = [resultados]
+
+                                                for res in resultados:
+                                                    cnpj_forn = res.get('niFornecedor')
+                                                    nome_forn = res.get('nomeRazaoSocialFornecedor')
+                                                    if not nome_forn and cnpj_forn: nome_forn = f"CNPJ {cnpj_forn}"
                                                     
-                                                    if chave not in dict_vencedores:
-                                                        dict_vencedores[chave] = {
-                                                            "Data": DATA_STR,
-                                                            "UASG": uasg,
-                                                            "Orgao": nome_orgao,
-                                                            "UF": uf,
-                                                            "Cidade": cidade,
-                                                            "Licitacao": id_licitacao,
-                                                            "Numero": numero_edital,
-                                                            "Fornecedor": nome_forn,
-                                                            "CNPJ": cnpj_forn,
-                                                            "Total": 0.0,
-                                                            "Itens": 0,
-                                                            "DetalhesItens": []
-                                                        }
-                                                    
-                                                    dict_vencedores[chave]["Total"] += valor
-                                                    dict_vencedores[chave]["Itens"] += 1
-                                                    dict_vencedores[chave]["DetalhesItens"].append({
-                                                        "Item": num_item,
-                                                        "Descricao": desc_item,
-                                                        "Qtd": qtd_item,
-                                                        "Valor": valor
-                                                    })
-                                    except: pass
-                    except: pass
-            pagina += 1
-        except Exception as e:
-            # AQUI ESTÁ A CORREÇÃO: Mostra o erro de conexão/timeout
-            print(f"❌ Erro de Conexão: {e}")
-            break
+                                                    valor = res.get('valorTotalHomologado')
+                                                    if valor is None: valor = 0
+                                                    valor = float(valor)
+
+                                                    if cnpj_forn:
+                                                        chave = f"{id_licitacao}-{cnpj_forn}"
+                                                        
+                                                        if chave not in dict_vencedores:
+                                                            dict_vencedores[chave] = {
+                                                                "Data": DATA_STR,
+                                                                "UASG": uasg,
+                                                                "Orgao": nome_orgao,
+                                                                "UF": uf,
+                                                                "Cidade": cidade,
+                                                                "Licitacao": id_licitacao,
+                                                                "Numero": numero_edital,
+                                                                "Fornecedor": nome_forn,
+                                                                "CNPJ": cnpj_forn,
+                                                                "Total": 0.0,
+                                                                "Itens": 0,
+                                                                "DetalhesItens": []
+                                                            }
+                                                        
+                                                        dict_vencedores[chave]["Total"] += valor
+                                                        dict_vencedores[chave]["Itens"] += 1
+                                                        dict_vencedores[chave]["DetalhesItens"].append({
+                                                            "Item": num_item,
+                                                            "Descricao": desc_item,
+                                                            "Qtd": qtd_item,
+                                                            "Valor": valor
+                                                        })
+                                        except: pass
+                        except: pass
+                pagina += 1
+            except Exception as e:
+                # Se der erro de conexão, para essa modalidade e tenta a próxima
+                print(f" (Erro Conexão) ", end="")
+                break
             
     data_atual += timedelta(days=1)
 
-# --- FUNÇÃO DE SALVAMENTO ---
+# --- FUNÇÃO DE SALVAMENTO INTELIGENTE ---
 def salvar_arquivo_json(nome_arquivo, dados_novos):
     if not dados_novos: return
     historico = []
@@ -202,16 +228,17 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
     
     historico.extend(dados_novos)
     
+    # Deduplicação Inteligente
     if nome_arquivo == ARQ_VENCEDORES:
-        # Deduplicação Inteligente (Vencedores)
         dict_unico = {}
         for item in historico:
+            # Chave única: ID da Licitação + CNPJ do Vencedor
+            # O último (mais recente) sobrescreve o antigo
             chave = f"{item.get('Licitacao')}-{item.get('CNPJ')}"
             dict_unico[chave] = item
         final = list(dict_unico.values())
         
     elif nome_arquivo == ARQ_STATUS:
-         # Deduplicação Inteligente (Status)
          dict_unico = {}
          for item in historico:
              chave = f"{item.get('Licitacao')}-{item.get('Status')}"
@@ -223,7 +250,7 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
 
     with open(nome_arquivo, 'w', encoding='utf-8') as f:
         json.dump(final, f, indent=4, ensure_ascii=False)
-    print(f"💾 {nome_arquivo} limpo e atualizado! Total: {len(final)} registros.")
+    print(f"\n💾 {nome_arquivo} atualizado e limpo! Total: {len(final)} registros.")
 
 print("\n--- RESUMO DA COLETA ---")
 lista_vencedores = list(dict_vencedores.values())
