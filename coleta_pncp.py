@@ -10,7 +10,6 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
-# Datas via GitHub Actions ou Automático
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
@@ -28,39 +27,45 @@ dict_resultados = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-print(f"--- ROBÔ DE RESULTADOS: {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ INTELIGENTE (ADAPTATIVO 50/20): {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
     print(f"\n📅 Dia {DATA_STR}:", end=" ")
     
     pagina = 1
-    while pagina <= 150:
+    tamanho_lote = 50 # Começa rápido
+    
+    while pagina <= 200:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR, "dataFinal": DATA_STR,
             "codigoModalidadeContratacao": MODALIDADE,
-            "pagina": pagina, "tamanhoPagina": 20
+            "pagina": pagina, "tamanhoPagina": tamanho_lote
         }
 
         try:
-            time.sleep(0.6)
+            time.sleep(0.5)
             resp = requests.get(url, params=params, headers=HEADERS, timeout=25)
             
-            # Trata erros de API (204, 400, 422) como "fim de dados" para não travar
-            if resp.status_code != 200:
-                print(f"[Fim: {resp.status_code}]", end="")
-                break
+            # SE DER ERRO COM LOTE DE 50, TENTA DIMINUIR PARA 20
+            if resp.status_code in [400, 422] and tamanho_lote == 50:
+                print("[Reduzindo Lote para 20...]", end="")
+                tamanho_lote = 20
+                pagina = 1 # Reinicia o dia com lote menor para garantir consistência
+                continue
+            
+            if resp.status_code != 200: break
             
             payload = resp.json()
             licitacoes = payload.get('data', [])
             if not licitacoes: break
             
-            print(".", end="", flush=True)
+            print("+" if tamanho_lote == 50 else ".", end="", flush=True)
 
             for lic in licitacoes:
-                # Pegamos licitações com resultado (ID 4:Homologada, 6:Adjudicada, 10:Encerrada)
                 sit_id = str(lic.get('situacaoCompraId'))
+                # Captura resultados: Homologada (4), Adjudicada (6), Encerrada (10)
                 if sit_id in ['4', '6', '10']:
                     orgao = lic.get('orgaoEntidade', {})
                     unidade = lic.get('unidadeOrgao', {})
@@ -70,32 +75,29 @@ while data_atual <= data_final:
                     uasg = str(unidade.get('codigoUnidade', '000000')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                    # Dados exigidos para o novo filtro
                     edital = f"{str(seq).zfill(5)}/{ano}"
                     ini_rec = lic.get('dataInicioRecebimentoProposta', '')
                     fim_rec = lic.get('dataEncerramentoProposta', '')
-                    # Data do Resultado ou Última Atualização
-                    data_res = lic.get('dataAtualizacao') or lic.get('dataPublicacaoPncp') or DATA_STR
+                    # Data final de referência para o filtro do site
+                    data_res = lic.get('dataAtualizacao') or lic.get('dataPublicacaoPncp')
 
-                    # Busca profunda de itens
                     try:
-                        time.sleep(0.3)
+                        time.sleep(0.2)
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
-                            itens_api = r_it.json()
-                            for it in itens_api:
+                            for it in r_it.json():
                                 n_it = it.get('numeroItem')
                                 desc = it.get('descricao', 'Sem descrição')
                                 sit_it_nome = (it.get('situacaoItemNome') or "").upper()
                                 
-                                # CASO 1: TEM VENCEDOR
+                                # CASO 1: VENCEDOR
                                 if it.get('temResultado'):
                                     r_w = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens/{n_it}/resultados", headers=HEADERS, timeout=10)
                                     if r_w.status_code == 200:
                                         vends = r_w.json()
                                         if isinstance(vends, dict): vends = [vends]
                                         for v in vends:
-                                            cnpj_v = v.get('niFornecedor', '00.000.000/0000-00')
+                                            cnpj_v = v.get('niFornecedor', '00000000000000')
                                             chave = f"{id_lic}-{cnpj_v}"
                                             if chave not in dict_resultados:
                                                 dict_resultados[chave] = {
@@ -111,8 +113,8 @@ while data_atual <= data_final:
                                                 "Valor": float(v.get('valorTotalHomologado') or 0)
                                             })
                                 
-                                # CASO 2: FRACASSADO OU DESERTO
-                                elif "FRACASSADO" in sit_it_nome or "DESERTO" in sit_it_nome:
+                                # CASO 2: FRACASSADO / DESERTO
+                                elif any(s in sit_it_nome for s in ["FRACASSADO", "DESERTO"]):
                                     chave = f"{id_lic}-SEM-VENC"
                                     if chave not in dict_resultados:
                                         dict_resultados[chave] = {
@@ -128,12 +130,10 @@ while data_atual <= data_final:
                                     })
                     except: pass
             pagina += 1
-        except Exception as e:
-            print(f"[Erro: {e}]", end="")
-            break
+        except: break
     data_atual += timedelta(days=1)
 
-# SALVAMENTO SEGURO
+# SALVAMENTO
 historico = []
 if os.path.exists(ARQ_DADOS):
     with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
@@ -141,10 +141,9 @@ if os.path.exists(ARQ_DADOS):
         except: pass
 
 historico.extend(list(dict_resultados.values()))
-# Deduplicação por Licitação + Fornecedor
 final_dict = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
 
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
     json.dump(list(final_dict.values()), f, indent=4, ensure_ascii=False)
 
-print(f"\n✅ Concluído! Total no arquivo: {len(final_dict)} registros.")
+print(f"\n✅ Total no arquivo: {len(final_dict)}")
