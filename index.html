@@ -3,69 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Resultados PNCP</title>
+    <title>Painel de Resultados PNCP - Pregão Eletrônico</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        :root { --primary-color: #004494; --secondary-color: #f8f9fa; }
-        body { background-color: #f0f2f5; font-family: 'Inter', sans-serif; }
+        :root { --primary-color: #004494; --bg-color: #f0f2f5; }
+        body { background-color: var(--bg-color); font-family: 'Inter', sans-serif; color: #333; }
         
         /* Cabeçalho */
-        .header-top { background: var(--primary-color); color: white; padding: 20px 0; margin-bottom: 20px; }
+        .header-top { background: var(--primary-color); color: white; padding: 25px 0; margin-bottom: 30px; }
         
-        /* Filtros */
-        .search-container { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .form-label { font-weight: 600; font-size: 0.85rem; color: #555; }
+        /* Painel de Filtros */
+        .search-container { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .form-label { font-weight: 700; font-size: 0.8rem; color: #444; text-transform: uppercase; letter-spacing: 0.5px; }
+        .form-control { border-radius: 8px; border: 1px solid #dee2e6; }
+        .form-control:focus { border-color: var(--primary-color); box-shadow: 0 0 0 0.2rem rgba(0,68,148,0.15); }
         
         /* Cards de Resultado */
         .res-card { 
-            background: white; border-radius: 10px; border: none; 
-            transition: all 0.3s; border-left: 5px solid transparent;
+            background: white; border-radius: 12px; border: none; height: 100%;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+            border-top: 6px solid #dee2e6;
         }
-        .res-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .card-venceu { border-left-color: #198754; }
-        .card-fracassado { border-left-color: #dc3545; background-color: #fffafa; }
+        .res-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
         
-        .badge-data { background: #e9ecef; color: #495057; font-weight: 600; }
-        .valor-tag { color: #198754; font-weight: 700; font-size: 1.1rem; }
+        /* Estilo por Status */
+        .card-venceu { border-top-color: #198754; }
+        .card-fracassado { border-top-color: #dc3545; background-color: #fffafa; }
+        
+        .badge-data { background: #e9ecef; color: #495057; font-weight: 600; border-radius: 6px; }
+        .valor-tag { color: #198754; font-weight: 700; font-size: 1.15rem; }
+        .fracassado-text { color: #dc3545; font-weight: 600; font-size: 0.9rem; }
+        
+        /* Modal */
+        .modal-content { border-radius: 15px; overflow: hidden; }
+        .modal-header { border-bottom: none; }
     </style>
 </head>
 <body>
 
-<div class="header-top shadow-sm">
-    <div class="container-fluid px-4">
+<div class="header-top shadow">
+    <div class="container-fluid px-5">
         <div class="d-flex justify-content-between align-items-center">
-            <h4 class="mb-0"><i class="fas fa-chart-line me-2"></i> Monitor de Resultados: Pregão Eletrônico</h4>
-            <span class="badge bg-light text-primary" id="contador">0 registros carregados</span>
+            <div>
+                <h3 class="mb-0 fw-bold"><i class="fas fa-gavel me-2"></i> Resultados: Pregão Eletrônico</h3>
+                <p class="small mb-0 opacity-75">Base de dados do Portal Nacional de Contratações Públicas (PNCP)</p>
+            </div>
+            <div class="text-end">
+                <span class="badge bg-white text-primary fs-6 shadow-sm" id="contador">Carregando...</span>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid px-4">
-    <div class="search-container mb-4">
+<div class="container-fluid px-5">
+    <div class="search-container mb-5">
         <div class="row g-3">
             <div class="col-md-1">
                 <label class="form-label">UASG</label>
-                <input type="text" id="fUasg" class="form-control" placeholder="926809">
+                <input type="text" id="fUasg" class="form-control" placeholder="Ex: 926809">
             </div>
-            <div class="col-md-1">
-                <label class="form-label">Edital</label>
-                <input type="text" id="fEdital" class="form-control" placeholder="01/2025">
+            <div class="col-md-2">
+                <label class="form-label">Nº Edital</label>
+                <input type="text" id="fEdital" class="form-control" placeholder="Ex: 10/2025">
             </div>
             <div class="col-md-1">
                 <label class="form-label">UF</label>
-                <input type="text" id="fUF" class="form-control" placeholder="PE">
+                <input type="text" id="fUF" class="form-control" placeholder="PE" maxlength="2">
             </div>
             <div class="col-md-2">
                 <label class="form-label">Município</label>
-                <input type="text" id="fMuni" class="form-control" placeholder="Caruaru">
+                <input type="text" id="fMuni" class="form-control" placeholder="Ex: Caruaru">
             </div>
             <div class="col-md-2">
-                <label class="form-label">Fornecedor</label>
+                <label class="form-label">Fornecedor / CNPJ</label>
                 <input type="text" id="fForn" class="form-control" placeholder="Razão Social ou CNPJ">
             </div>
             <div class="col-md-2">
-                <label class="form-label">Data Início (Resultado)</label>
+                <label class="form-label">Data Início</label>
                 <input type="date" id="fDataIni" class="form-control">
             </div>
             <div class="col-md-2">
@@ -73,42 +91,49 @@
                 <input type="date" id="fDataFim" class="form-control">
             </div>
         </div>
-        <div class="mt-3 d-flex justify-content-end gap-2">
-            <button class="btn btn-outline-secondary px-4" onclick="limpar()"><i class="fas fa-eraser me-2"></i>Limpar</button>
-            <button class="btn btn-primary px-5" onclick="filtrar()"><i class="fas fa-search me-2"></i>Pesquisar</button>
+        <div class="mt-4 d-flex justify-content-end gap-3">
+            <button class="btn btn-light border px-4 fw-bold text-muted" onclick="limpar()">
+                <i class="fas fa-eraser me-2"></i>Limpar Filtros
+            </button>
+            <button class="btn btn-primary px-5 fw-bold shadow-sm" onclick="filtrar()">
+                <i class="fas fa-search me-2"></i>Pesquisar Agora
+            </button>
         </div>
     </div>
 
-    <div id="lista" class="row g-3">
+    <div id="lista" class="row g-4 mb-5">
         <div class="text-center py-5">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-2 text-muted">Aguardando dados...</p>
+            <div class="spinner-border text-primary mb-3" role="status"></div>
+            <p class="text-muted fw-bold">Buscando dados no repositório...</p>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalItens" tabindex="-1">
     <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold">Detalhamento dos Itens do Pregão</h5>
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header bg-primary text-white p-4">
+                <h5 class="modal-title fw-bold"><i class="fas fa-list-ul me-2"></i> Detalhamento dos Itens</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-0">
-                <div id="infoLicitacao" class="p-3 bg-light border-bottom small"></div>
+                <div id="infoLicitacao" class="p-4 bg-light border-bottom border-2"></div>
                 <div class="table-responsive">
-                    <table class="table table-hover mb-0">
-                        <thead class="table-light">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-dark">
                             <tr>
-                                <th class="ps-3">Item</th>
-                                <th>Descrição</th>
-                                <th>Situação</th>
-                                <th class="text-end pe-3">Valor Homologado</th>
+                                <th class="ps-4 py-3">Item</th>
+                                <th class="py-3">Descrição do Objeto</th>
+                                <th class="py-3">Situação</th>
+                                <th class="text-end pe-4 py-3">Valor Homologado</th>
                             </tr>
                         </thead>
                         <tbody id="corpoModal"></tbody>
                     </table>
                 </div>
+            </div>
+            <div class="modal-footer bg-light p-3">
+                <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
@@ -118,70 +143,89 @@
 <script>
     let dadosOriginais = [];
 
-    // Carregar dados com timestamp para evitar cache
-    fetch('dados.json?v=' + Date.now())
-        .then(r => r.json())
+    // Carregar JSON com cache buster
+    fetch('dados.json?t=' + Date.now())
+        .then(r => {
+            if (!r.ok) throw new Error("Falha ao abrir arquivo de dados.");
+            return r.json();
+        })
         .then(d => { 
             dadosOriginais = d; 
-            document.getElementById('contador').innerText = `${dadosOriginais.length} registros carregados`;
-            filtrar(); 
+            document.getElementById('contador').innerText = `${dadosOriginais.length} registros encontrados`;
+            renderizar(dadosOriginais); 
         })
         .catch(err => {
-            document.getElementById('lista').innerHTML = `<div class="alert alert-warning">Erro ao carregar dados.json. Certifique-se de que o robô já rodou pelo menos uma vez.</div>`;
+            document.getElementById('lista').innerHTML = `
+                <div class="col-12 text-center py-5">
+                    <div class="alert alert-warning d-inline-block p-4 shadow-sm border-0">
+                        <i class="fas fa-exclamation-circle fa-2x mb-3 text-warning"></i>
+                        <h5>Aguardando Publicação de Dados</h5>
+                        <p class="mb-0 text-muted">Certifique-se de que o robô já concluiu a primeira coleta no GitHub Actions.</p>
+                    </div>
+                </div>`;
         });
 
     function filtrar() {
-        const query = {
-            uasg: document.getElementById('fUasg').value.trim(),
-            edital: document.getElementById('fEdital').value.trim(),
-            uf: document.getElementById('fUF').value.trim().toUpperCase(),
-            muni: document.getElementById('fMuni').value.trim().toLowerCase(),
-            forn: document.getElementById('fForn').value.trim().toLowerCase(),
-            dIni: document.getElementById('fDataIni').value,
-            dFim: document.getElementById('fDataFim').value
-        };
+        const u = document.getElementById('fUasg').value.trim();
+        const e = document.getElementById('fEdital').value.trim();
+        const uf = document.getElementById('fUF').value.trim().toUpperCase();
+        const m = document.getElementById('fMuni').value.trim().toLowerCase();
+        const f = document.getElementById('fForn').value.trim().toLowerCase();
+        const di = document.getElementById('fDataIni').value;
+        const df = document.getElementById('fDataFim').value;
 
-        const filtrados = dadosOriginais.filter(i => {
-            const dataResult = i.DataResult ? i.DataResult.split('T')[0] : "";
-            const matchUasg = !query.uasg || i.UASG.includes(query.uasg);
-            const matchEdital = !query.edital || i.Edital.includes(query.edital);
-            const matchUF = !query.uf || i.UF === query.uf;
-            const matchMuni = !query.muni || (i.Municipio || "").toLowerCase().includes(query.muni);
-            const matchForn = !query.forn || (i.Fornecedor || "").toLowerCase().includes(query.forn) || i.CNPJ.includes(query.forn);
-            const matchData = (!query.dIni || dataResult >= query.dIni) && (!query.dFim || dataResult <= query.dFim);
+        const res = dadosOriginais.filter(i => {
+            const dataItem = i.DataResult ? i.DataResult.split('T')[0] : "";
+            
+            // Comparação insensível a maiúsculas/minúsculas
+            const matchU = !u || String(i.UASG).includes(u);
+            const matchE = !e || String(i.Edital).includes(e);
+            const matchUF = !uf || String(i.UF).toUpperCase() === uf;
+            const matchM = !m || String(i.Municipio).toLowerCase().includes(m);
+            const matchF = !f || String(i.Fornecedor).toLowerCase().includes(f) || String(i.CNPJ).includes(f);
+            
+            // Lógica de intervalo de datas (trata se preencher apenas um campo)
+            let matchD = true;
+            if (di && df) { matchD = dataItem >= di && dataItem <= df; }
+            else if (di) { matchD = dataItem >= di; }
+            else if (df) { matchD = dataItem <= df; }
 
-            return matchUasg && matchEdital && matchUF && matchMuni && matchForn && matchData;
+            return matchU && matchE && matchUF && matchM && matchF && matchD;
         });
 
-        renderizar(filtrados);
+        renderizar(res);
     }
 
     function renderizar(lista) {
         const container = document.getElementById('lista');
         if (lista.length === 0) {
-            container.innerHTML = `<div class="text-center py-5"><i class="fas fa-search fa-3x text-muted mb-3"></i><p>Nenhum resultado para os filtros aplicados.</p></div>`;
+            container.innerHTML = `<div class="col-12 text-center py-5 text-muted"><h5>Nenhum registro encontrado para estes filtros.</h5></div>`;
             return;
         }
 
         container.innerHTML = lista.map((i, idx) => {
-            const isFracassado = i.Fornecedor.includes("FRACASSADO");
+            const isFracassado = String(i.Fornecedor).includes("FRACASSADO");
             return `
-            <div class="col-md-4">
-                <div class="card res-card h-100 p-3 ${isFracassado ? 'card-fracassado' : 'card-venceu'}">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="badge badge-data px-2 py-1">${i.DataResult ? i.DataResult.split('T')[0] : 'S/D'}</span>
+            <div class="col-md-6 col-lg-4">
+                <div class="card res-card p-4 ${isFracassado ? 'card-fracassado' : 'card-venceu'} shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge badge-data p-2"><i class="far fa-calendar-alt me-1"></i> ${i.DataResult ? i.DataResult.split('T')[0] : '---'}</span>
                         <span class="small fw-bold text-muted">UASG: ${i.UASG}</span>
                     </div>
-                    <h6 class="fw-bold text-primary mb-1 text-truncate" title="${i.Orgao}">${i.Orgao}</h6>
-                    <p class="small text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i> ${i.Municipio || 'N/I'} - ${i.UF || 'BR'}</p>
-                    <div class="mb-3">
-                        <small class="d-block text-muted">Edital: <b>${i.Edital}</b></small>
+                    <h6 class="fw-bold text-dark mb-1 text-truncate" title="${i.Orgao}">${i.Orgao}</h6>
+                    <p class="small text-muted mb-3"><i class="fas fa-map-marker-alt me-1 text-primary"></i> ${i.Municipio || 'N/I'} - ${i.UF || '--'}</p>
+                    
+                    <div class="mb-4 bg-light p-2 rounded">
+                        <small class="d-block text-muted">Edital: <b class="text-dark">${i.Edital}</b></small>
                         <small class="d-block text-truncate"><b>Fornecedor:</b> ${i.Fornecedor}</small>
                     </div>
-                    <div class="mt-auto d-flex justify-content-between align-items-center">
-                        <span class="valor-tag">${isFracassado ? '---' : 'R$ ' + calcularTotal(i.Itens)}</span>
-                        <button class="btn btn-sm btn-outline-primary fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">
-                            <i class="fas fa-list me-1"></i> Itens
+
+                    <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-3">
+                        <div>
+                            ${isFracassado ? '<span class="fracassado-text">FRACASSADO / DESERTO</span>' : '<span class="valor-tag">R$ ' + calcTotal(i.Itens) + '</span>'}
+                        </div>
+                        <button class="btn btn-sm btn-primary px-3 rounded-pill fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">
+                            Detalhes <i class="fas fa-arrow-right ms-1"></i>
                         </button>
                     </div>
                 </div>
@@ -189,25 +233,35 @@
         }).join('');
     }
 
-    function calcularTotal(itens) {
-        return itens.reduce((acc, curr) => acc + (curr.Valor || 0), 0).toLocaleString('pt-BR', {minimumFractionDigits: 2});
+    function calcTotal(itens) {
+        if (!itens) return "0,00";
+        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Valor) || 0), 0);
+        return t.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
     }
 
-    function verDetalhes(idLic, cnpj) {
-        const item = dadosOriginais.find(x => x.Licitacao === idLic && x.CNPJ === cnpj);
-        if (!item) return;
+    function verDetalhes(idL, cnpj) {
+        const i = dadosOriginais.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
+        if (!i) return;
 
         document.getElementById('infoLicitacao').innerHTML = `
-            <strong>Órgão:</strong> ${item.Orgao} | <strong>Edital:</strong> ${item.Edital} <br>
-            <strong>Fornecedor:</strong> ${item.Fornecedor} (${item.CNPJ})
+            <div class="row">
+                <div class="col-md-8">
+                    <h6 class="fw-bold text-primary mb-1">${i.Orgao}</h6>
+                    <p class="small text-muted mb-0">Edital: <strong>${i.Edital}</strong> | UASG: <strong>${i.UASG}</strong></p>
+                </div>
+                <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                    <h6 class="fw-bold text-dark mb-1">Resultado: ${i.DataResult ? i.DataResult.split('T')[0] : 'S/D'}</h6>
+                    <p class="small mb-0">CNPJ: ${i.CNPJ}</p>
+                </div>
+            </div>
         `;
 
-        document.getElementById('corpoModal').innerHTML = item.Itens.map(it => `
+        document.getElementById('corpoModal').innerHTML = i.Itens.map(it => `
             <tr>
-                <td class="ps-3 fw-bold">${it.Item}</td>
-                <td><small>${it.Desc}</small></td>
+                <td class="ps-4 fw-bold text-muted">${it.Item}</td>
+                <td><div class="small fw-600">${it.Desc}</div></td>
                 <td><span class="badge ${it.Status === 'Venceu' ? 'bg-success' : 'bg-danger'}">${it.Status}</span></td>
-                <td class="text-end pe-3 fw-bold text-dark">${it.Valor > 0 ? 'R$ ' + it.Valor.toLocaleString('pt-BR', {minimumFractionDigits: 2}) : '-'}</td>
+                <td class="text-end pe-4 fw-bold text-dark">${it.Valor > 0 ? 'R$ ' + parseFloat(it.Valor).toLocaleString('pt-BR', {minimumFractionDigits: 2}) : '---'}</td>
             </tr>
         `).join('');
 
@@ -216,7 +270,7 @@
 
     function limpar() {
         document.querySelectorAll('input').forEach(input => input.value = '');
-        filtrar();
+        renderizar(dadosOriginais);
     }
 </script>
 </body>
