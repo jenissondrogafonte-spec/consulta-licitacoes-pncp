@@ -1,144 +1,51 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        let dadosGlobais = [];
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de Licitações - Vencedores</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', sans-serif; }
+        .header-bg { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 40px 0; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card { border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .btn-detalhes { background-color: #e3f2fd; color: #1565c0; border: none; font-weight: 600; }
+        .btn-detalhes:hover { background-color: #bbdefb; color: #0d47a1; }
+        .modal-header { background-color: #1e3c72; color: white; }
+        .badge-valor { font-size: 0.95em; padding: 8px 12px; background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+    </style>
+</head>
+<body>
 
-        // Carrega o JSON
-        async function carregarDados() {
-            try {
-                // Adicionei ?v=Data para evitar cache do navegador e pegar sempre o json novo
-                const response = await fetch('dados.json?v=' + Date.now());
-                if (!response.ok) throw new Error("Arquivo não encontrado");
-                dadosGlobais = await response.json();
-                
-                // Ordena por data (mais recente primeiro)
-                dadosGlobais.sort((a, b) => b.Data.localeCompare(a.Data));
-                
-                renderizar(dadosGlobais.slice(0, 50)); 
-                document.getElementById('loading').classList.add('d-none');
-            } catch (error) {
-                document.getElementById('loading').innerHTML = '<p class="text-danger">Erro ao carregar dados.json</p>';
-            }
-        }
+    <div class="header-bg text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold"><i class="fas fa-trophy"></i> Vencedores & Itens</h1>
+            <p class="lead">Consulte os resultados homologados e detalhes dos itens por fornecedor</p>
+            <a href="status.html" class="btn btn-outline-light mt-2"><i class="fas fa-chart-line"></i> Ir para Status de Editais</a>
+        </div>
+    </div>
 
-        function formatarMoeda(valor) {
-            return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-        }
-
-        function renderizar(lista) {
-            const container = document.getElementById('listaResultados');
-            container.innerHTML = '';
-
-            if (lista.length === 0) {
-                document.getElementById('semResultados').classList.remove('d-none');
-                return;
-            } else {
-                document.getElementById('semResultados').classList.add('d-none');
-            }
-
-            lista.forEach(dado => {
-                const col = document.createElement('div');
-                col.className = 'col-md-6 col-lg-4';
-
-                // Tratamento de erro para dados antigos (undefined)
-                const numEdital = dado.Numero || '---'; // Se não tiver número, põe traço
-                const licitacaoSafe = dado.Licitacao || ''; 
-                const cnpjSafe = dado.CNPJ || ''; 
-
-                col.innerHTML = `
-                    <div class="card h-100 p-3">
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <span class="badge bg-secondary">${dado.Data}</span>
-                            <span class="badge bg-light text-dark border">UASG: ${dado.UASG}</span>
-                        </div>
-                        <h6 class="fw-bold text-primary text-truncate" title="${dado.Orgao}">${dado.Orgao}</h6>
-                        <div class="mb-3">
-                            <small class="text-muted d-block">Edital: <strong>${numEdital}</strong></small>
-                            <small class="text-muted d-block">Fornecedor:</small>
-                            <span class="fw-bold text-dark text-truncate d-block" title="${dado.Fornecedor}">${dado.Fornecedor}</span>
-                        </div>
-                        
-                        <div class="mt-auto d-flex justify-content-between align-items-center">
-                            <span class="badge-valor fw-bold">${formatarMoeda(dado.Total)}</span>
-                            
-                            <button class="btn btn-sm btn-detalhes" 
-                                onclick="abrirModal('${licitacaoSafe}', '${cnpjSafe}')">
-                                <i class="fas fa-eye"></i> Ver Itens (${dado.Itens || 0})
-                            </button>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(col);
-            });
-        }
-
-        function abrirModal(idLicitacao, cnpjFornecedor) {
-            const registro = dadosGlobais.find(item => item.Licitacao === idLicitacao && item.CNPJ === cnpjFornecedor);
-
-            if (!registro) {
-                alert("Erro: Dados não encontrados ou incompatíveis.");
-                return;
-            }
-
-            document.getElementById('modalFornecedor').textContent = registro.Fornecedor;
-            document.getElementById('modalCnpj').textContent = "CNPJ: " + registro.CNPJ;
-            document.getElementById('modalTotal').textContent = formatarMoeda(registro.Total);
-
-            const tbody = document.getElementById('corpoTabelaItens');
-            tbody.innerHTML = '';
-
-            if (registro.DetalhesItens && registro.DetalhesItens.length > 0) {
-                registro.DetalhesItens.forEach(item => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td class="fw-bold">${item.Item}</td>
-                        <td>${item.Descricao}</td>
-                        <td class="text-center">${item.Qtd}</td>
-                        <td class="text-end fw-bold text-success">${formatarMoeda(item.Valor)}</td>
-                    `;
-                    tbody.appendChild(tr);
-                });
-            } else {
-                tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted">Sem detalhes de itens.</td></tr>';
-            }
-
-            new bootstrap.Modal(document.getElementById('modalItens')).show();
-        }
-
-        function aplicarFiltros() {
-            const uasg = document.getElementById('filtroUasg').value.toLowerCase().trim();
-            const numero = document.getElementById('filtroNumero').value.toLowerCase().trim();
-            const cnpj = document.getElementById('filtroCnpj').value.replace(/\D/g, ''); 
-            const texto = document.getElementById('filtroTexto').value.toLowerCase().trim();
-
-            const filtrados = dadosGlobais.filter(item => {
-                // Tratamento seguro para campos vazios/antigos
-                const itemUasg = (item.UASG || '').toLowerCase();
-                const itemNum = (item.Numero || '').toLowerCase(); // Aqui evita o erro no filter
-                const itemCnpj = (item.CNPJ || '').replace(/\D/g, '');
-                const itemForn = (item.Fornecedor || '').toLowerCase();
-                const itemOrg = (item.Orgao || '').toLowerCase();
-
-                const matchUasg = uasg === '' || itemUasg.includes(uasg);
-                const matchNumero = numero === '' || itemNum.includes(numero);
-                const matchCnpj = cnpj === '' || itemCnpj.includes(cnpj);
-
-                let matchTexto = false;
-                if (texto === '') {
-                    matchTexto = true;
-                } else {
-                    if (itemForn.includes(texto) || itemOrg.includes(texto)) {
-                        matchTexto = true;
-                    } 
-                    else if (item.DetalhesItens) {
-                        matchTexto = item.DetalhesItens.some(sub => (sub.Descricao || '').toLowerCase().includes(texto));
-                    }
-                }
-
-                return matchUasg && matchNumero && matchCnpj && matchTexto;
-            });
-
-            renderizar(filtrados.slice(0, 100));
-        }
-
-        document.addEventListener('DOMContentLoaded', carregarDados);
-    </script>
+    <div class="container mb-5">
+        <div class="card p-4 mb-4">
+            <div class="row g-3">
+                <div class="col-md-2">
+                    <label class="form-label fw-bold">UASG</label>
+                    <input type="text" id="filtroUasg" class="form-control" placeholder="Ex: 926809">
+                </div>
+                <div class="col-md-2">
+                    <label class="form-label fw-bold">Nº Edital</label>
+                    <input type="text" id="filtroNumero" class="form-control" placeholder="Ex: 90000">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">CNPJ Fornecedor</label>
+                    <input type="text" id="filtroCnpj" class="form-control" placeholder="Apenas números">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Descrição / Objeto</label>
+                    <input type="text" id="filtroTexto" class="form-control" placeholder="Ex: Medicamento...">
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button class="btn btn-primary w-100 fw-bold" onclick="aplicarFiltros()">
