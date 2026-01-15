@@ -24,12 +24,12 @@ else:
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-print(f"--- ROBÔ UNIVERSAL (TODAS AS MODALIDADES): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ UNIVERSAL (MODO DEBUG ATIVADO): {d_ini} até {d_fim} ---")
 
 ARQ_VENCEDORES = 'dados.json'
 ARQ_STATUS = 'status.json'
 
-# Estruturas de dados (Sem Pandas)
+# Estruturas de dados
 dict_vencedores = {} 
 lista_status = []
 MAX_PAGINAS = 200 
@@ -44,27 +44,30 @@ while data_atual <= data_final:
     pagina = 1
     
     while pagina <= MAX_PAGINAS:
-        # URL de busca pública
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR,
             "dataFinal": DATA_STR,
-            # REMOVIDO FILTRO DE MODALIDADE: Agora traz Pregão, Dispensa, Inexigibilidade, etc.
             "pagina": pagina,
             "tamanhoPagina": 50
         }
 
         try:
-            # Pequeno delay para não sobrecarregar a API
-            time.sleep(0.3)
+            time.sleep(0.5) # Aumentei um pouco o delay para evitar bloqueio
             resp = requests.get(url, params=params, headers=HEADERS, timeout=20)
             
-            if resp.status_code != 200: break
+            if resp.status_code != 200:
+                # AQUI ESTÁ A CORREÇÃO: Mostra o erro real
+                print(f"❌ Erro API: {resp.status_code}")
+                # print(resp.text) # Descomente se quiser ver o detalhe do erro
+                break
             
             payload = resp.json()
             licitacoes = payload.get('data', [])
             
-            if not licitacoes: break
+            if not licitacoes: 
+                # Se a página vier vazia, mas com status 200, apenas paramos a paginação
+                break
             
             print(f"[P{pagina}]", end=" ", flush=True)
 
@@ -75,7 +78,6 @@ while data_atual <= data_final:
                 
                 cnpj_orgao = orgao.get('cnpj')
                 nome_orgao = orgao.get('razaoSocial', '')
-                # Captura UF e Cidade para os filtros
                 uf = unidade.get('ufSigla') or orgao.get('ufSigla') or "BR"
                 cidade = unidade.get('municipioNome') or "Não Informado"
 
@@ -90,12 +92,10 @@ while data_atual <= data_final:
                 situacao_id = str(lic.get('situacaoCompraId'))
                 modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida')
 
-                # --- LÓGICA DE DATAS (SOLICITAÇÃO ATENDIDA) ---
-                # Prioridade: Data de Fim de Recebimento de Proposta. Se não houver, usa Abertura.
+                # --- LÓGICA DE DATAS ---
                 dt_abertura = lic.get('dataAberturaLicitacao') 
                 dt_encerramento = lic.get('dataEncerramentoProposta')
                 
-                # Se ambas vazias, tenta busca profunda (Deep Fetch)
                 if not dt_abertura and not dt_encerramento:
                     try:
                         url_full = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}"
@@ -106,18 +106,17 @@ while data_atual <= data_final:
                             dt_encerramento = detalhe.get('dataEncerramentoProposta')
                     except: pass
                 
-                # Regra: Considerar Abertura = Fim do Recebimento (se existir)
                 data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
                 if not data_final_exibicao: data_final_exibicao = ""
 
-                # --- 1. POPULA LISTA DE STATUS ---
+                # 1. STATUS
                 lista_status.append({
                     "DataPublicacao": DATA_STR,
                     "DataAbertura": data_final_exibicao,
                     "UASG": uasg,
                     "Orgao": nome_orgao,
-                    "UF": uf,           # Novo Campo
-                    "Cidade": cidade,   # Novo Campo
+                    "UF": uf,
+                    "Cidade": cidade,
                     "Licitacao": id_licitacao,
                     "Numero": numero_edital,
                     "Modalidade": modalidade_nome,
@@ -125,8 +124,7 @@ while data_atual <= data_final:
                     "Status": situacao_nome
                 })
 
-                # --- 2. POPULA VENCEDORES (DICIONÁRIO INTELIGENTE) ---
-                # Só processa se tiver resultado (Homologada/Adjudicada)
+                # 2. VENCEDORES
                 if situacao_id in ['4', '6']:
                     url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
                     try:
@@ -156,10 +154,8 @@ while data_atual <= data_final:
                                                 valor = float(valor)
 
                                                 if cnpj_forn:
-                                                    # CHAVE ÚNICA: Licitação + Fornecedor
                                                     chave = f"{id_licitacao}-{cnpj_forn}"
                                                     
-                                                    # Se é a primeira vez que vemos esse fornecedor nessa licitação, cria a estrutura
                                                     if chave not in dict_vencedores:
                                                         dict_vencedores[chave] = {
                                                             "Data": DATA_STR,
@@ -167,16 +163,15 @@ while data_atual <= data_final:
                                                             "Orgao": nome_orgao,
                                                             "UF": uf,
                                                             "Cidade": cidade,
-                                                            "Licitacao": id_licitacao, # ID interno
-                                                            "Numero": numero_edital,   # Visual (00001/2025)
+                                                            "Licitacao": id_licitacao,
+                                                            "Numero": numero_edital,
                                                             "Fornecedor": nome_forn,
                                                             "CNPJ": cnpj_forn,
                                                             "Total": 0.0,
                                                             "Itens": 0,
-                                                            "DetalhesItens": [] # Lista que acumula os itens
+                                                            "DetalhesItens": []
                                                         }
                                                     
-                                                    # AGREGANDO VALORES (Sem Pandas)
                                                     dict_vencedores[chave]["Total"] += valor
                                                     dict_vencedores[chave]["Itens"] += 1
                                                     dict_vencedores[chave]["DetalhesItens"].append({
@@ -189,7 +184,8 @@ while data_atual <= data_final:
                     except: pass
             pagina += 1
         except Exception as e:
-            # Em caso de erro de conexão, tenta continuar o loop
+            # AQUI ESTÁ A CORREÇÃO: Mostra o erro de conexão/timeout
+            print(f"❌ Erro de Conexão: {e}")
             break
             
     data_atual += timedelta(days=1)
@@ -199,7 +195,6 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
     if not dados_novos: return
     historico = []
     
-    # Lê arquivo existente se houver
     if os.path.exists(nome_arquivo):
         with open(nome_arquivo, 'r', encoding='utf-8') as f:
             try: historico = json.load(f)
@@ -207,21 +202,30 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
     
     historico.extend(dados_novos)
     
-    # Remove duplicatas
-    if nome_arquivo == ARQ_STATUS:
-         # Chave única para status: Licitação + Status atual
-         unicos = {f"{i['Licitacao']}-{i['Status']}": i for i in historico}
-         final = list(unicos.values())
+    if nome_arquivo == ARQ_VENCEDORES:
+        # Deduplicação Inteligente (Vencedores)
+        dict_unico = {}
+        for item in historico:
+            chave = f"{item.get('Licitacao')}-{item.get('CNPJ')}"
+            dict_unico[chave] = item
+        final = list(dict_unico.values())
+        
+    elif nome_arquivo == ARQ_STATUS:
+         # Deduplicação Inteligente (Status)
+         dict_unico = {}
+         for item in historico:
+             chave = f"{item.get('Licitacao')}-{item.get('Status')}"
+             dict_unico[chave] = item
+         final = list(dict_unico.values())
+         
     else:
-        # Para vencedores, usamos a serialização para garantir unicidade
         final = [json.loads(x) for x in list(set([json.dumps(i, sort_keys=True) for i in historico]))]
 
     with open(nome_arquivo, 'w', encoding='utf-8') as f:
         json.dump(final, f, indent=4, ensure_ascii=False)
-    print(f"💾 {nome_arquivo} atualizado! Total: {len(final)} registros.")
+    print(f"💾 {nome_arquivo} limpo e atualizado! Total: {len(final)} registros.")
 
 print("\n--- RESUMO DA COLETA ---")
-# Converte o dicionário em lista para salvar
 lista_vencedores = list(dict_vencedores.values())
 
 if lista_vencedores:
