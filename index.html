@@ -3,267 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radar de Licitações - Vencedores</title>
-    
+    <title>Resultados PNCP - Pregão Eletrônico</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
     <style>
-        body { background-color: #f0f2f5; font-family: 'Segoe UI', sans-serif; }
-        .header-bg { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 40px 0; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .card { border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; }
-        .btn-detalhes { background-color: #e3f2fd; color: #1565c0; border: none; font-weight: 600; }
-        .btn-detalhes:hover { background-color: #bbdefb; color: #0d47a1; }
-        .modal-header { background-color: #1e3c72; color: white; }
-        .badge-valor { font-size: 0.95em; padding: 8px 12px; background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
-        /* Garante que a barra de filtros tenha fundo branco e destaque */
-        .search-bar { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        body { background-color: #f4f7f6; font-family: 'Segoe UI', sans-serif; }
+        .filter-section { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .card-licitacao { border: none; border-left: 5px solid #0d6efd; transition: 0.3s; }
+        .card-licitacao:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .st-venceu { color: #198754; font-weight: bold; }
+        .st-falha { color: #dc3545; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="header-bg text-center">
-        <div class="container">
-            <h1 class="display-5 fw-bold"><i class="fas fa-trophy"></i> Vencedores & Itens</h1>
-            <p class="lead">Consulte os resultados homologados e detalhes dos itens por fornecedor</p>
-            <a href="status.html" class="btn btn-outline-light mt-2"><i class="fas fa-chart-line"></i> Ir para Status de Editais</a>
-        </div>
-    </div>
+<div class="container-fluid py-4">
+    <h2 class="mb-4 text-primary fw-bold"><i class="fas fa-file-contract"></i> Resultados de Pregões</h2>
 
-    <div class="container mb-5">
-        
-        <div class="search-bar">
-            <div class="row g-3">
-                <div class="col-md-2">
-                    <label class="form-label fw-bold">UASG</label>
-                    <input type="text" id="filtroUasg" class="form-control" placeholder="Ex: 926809" onkeyup="aplicarFiltros()">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label fw-bold">Nº Edital</label>
-                    <input type="text" id="filtroNumero" class="form-control" placeholder="Ex: 90000" onkeyup="aplicarFiltros()">
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label fw-bold">CNPJ Fornecedor</label>
-                    <input type="text" id="filtroCnpj" class="form-control" placeholder="Apenas números" onkeyup="aplicarFiltros()">
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label fw-bold">Descrição / Objeto</label>
-                    <input type="text" id="filtroTexto" class="form-control" placeholder="Ex: Medicamento..." onkeyup="aplicarFiltros()">
-                </div>
-                <div class="col-md-2 d-flex align-items-end">
-                    <button class="btn btn-primary w-100 fw-bold" onclick="aplicarFiltros()">
-                        <i class="fas fa-filter"></i> Filtrar
-                    </button>
-                </div>
-            </div>
-            <div class="text-end mt-2">
-                <small class="text-muted" id="contadorResultados">Carregando...</small>
-            </div>
-        </div>
-
-        <div id="loading" class="text-center py-5">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-2 text-muted">Carregando vencedores...</p>
-        </div>
-
-        <div id="listaResultados" class="row g-4"></div>
-        
-        <div id="semResultados" class="text-center py-5 d-none">
-            <i class="fas fa-inbox fa-3x text-muted mb-3"></i>
-            <p class="text-muted">Nenhum resultado encontrado para os filtros.</p>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalItens" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-list-ul"></i> Detalhamento dos Itens</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="alert alert-light border mb-3">
-                        <strong id="modalFornecedor" class="d-block text-primary fs-5"></strong>
-                        <span id="modalCnpj" class="text-muted small"></span>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-hover align-middle">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>Item</th>
-                                    <th>Descrição</th>
-                                    <th class="text-center">Qtd</th>
-                                    <th class="text-end">Valor Total (R$)</th>
-                                </tr>
-                            </thead>
-                            <tbody id="corpoTabelaItens">
-                                </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="modal-footer bg-light">
-                    <strong class="me-auto text-dark">Total do Lote: <span id="modalTotal" class="text-success"></span></strong>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
+    <div class="filter-section mb-4">
+        <div class="row g-2">
+            <div class="col-md-1"><label class="small fw-bold">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="small fw-bold">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="small fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="small fw-bold">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="small fw-bold">Fornecedor</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="small fw-bold">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="small fw-bold">Data Fim</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
+            <div class="col-md-1 d-flex align-items-end gap-1">
+                <button class="btn btn-primary btn-sm w-100" onclick="filtrar()"><i class="fas fa-search"></i></button>
+                <button class="btn btn-secondary btn-sm w-100" onclick="limpar()"><i class="fas fa-eraser"></i></button>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        let dadosGlobais = [];
+    <div id="lista" class="row g-3"></div>
+</div>
 
-        async function carregarDados() {
-            const loading = document.getElementById('loading');
-            try {
-                // Cache busting para garantir dados frescos
-                const response = await fetch('dados.json?v=' + Date.now());
-                if (!response.ok) throw new Error("Arquivo não encontrado");
-                dadosGlobais = await response.json();
-                
-                // Ordena por data (mais recente primeiro)
-                dadosGlobais.sort((a, b) => b.Data.localeCompare(a.Data));
-                
-                renderizar(dadosGlobais.slice(0, 50)); 
-                loading.classList.add('d-none');
-            } catch (error) {
-                loading.innerHTML = '<p class="text-danger">Erro ao carregar dados.json. Verifique se o robô rodou corretamente.</p>';
-                console.error(error);
-            }
-        }
+<div class="modal fade" id="modalItens" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Detalhes dos Itens</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-sm">
+                    <thead><tr><th>Item</th><th>Descrição</th><th>Status</th><th>Valor</th></tr></thead>
+                    <tbody id="corpoModal"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
-        function formatarMoeda(valor) {
-            return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-        }
+<script>
+    let dados = [];
+    fetch('dados.json').then(r => r.json()).then(d => { 
+        dados = d; 
+        filtrar(); 
+    });
 
-        function renderizar(lista) {
-            const container = document.getElementById('listaResultados');
-            container.innerHTML = '';
-            
-            document.getElementById('contadorResultados').innerText = `Exibindo ${Math.min(lista.length, 50)} de ${lista.length} resultados`;
+    function filtrar() {
+        const u = document.getElementById('fUasg').value;
+        const e = document.getElementById('fEdital').value;
+        const uf = document.getElementById('fUF').value.toUpperCase();
+        const m = document.getElementById('fMuni').value.toLowerCase();
+        const f = document.getElementById('fForn').value.toLowerCase();
+        const di = document.getElementById('fDataIni').value;
+        const df = document.getElementById('fDataFim').value;
 
-            if (lista.length === 0) {
-                document.getElementById('semResultados').classList.remove('d-none');
-                return;
-            } else {
-                document.getElementById('semResultados').classList.add('d-none');
-            }
+        const res = dados.filter(i => {
+            const dataItem = i.DataResult.split('T')[0];
+            return (!u || i.UASG.includes(u)) &&
+                   (!e || i.Edital.includes(e)) &&
+                   (!uf || i.UF === uf) &&
+                   (!m || i.Municipio.toLowerCase().includes(m)) &&
+                   (!f || i.Fornecedor.toLowerCase().includes(f)) &&
+                   (!di || dataItem >= di) &&
+                   (!df || dataItem <= df);
+        });
 
-            lista.slice(0, 50).forEach(dado => {
-                const col = document.createElement('div');
-                col.className = 'col-md-6 col-lg-4';
-
-                // Tratamento BLINDADO
-                const numEdital = dado.Numero ? String(dado.Numero) : '---'; 
-                const licitacaoSafe = dado.Licitacao || ''; 
-                const cnpjSafe = dado.CNPJ || ''; 
-                const itensCount = dado.Itens || 0;
-
-                col.innerHTML = `
-                    <div class="card h-100 p-3">
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <span class="badge bg-secondary">${dado.Data}</span>
-                            <span class="badge bg-light text-dark border">UASG: ${dado.UASG}</span>
-                        </div>
-                        <h6 class="fw-bold text-primary text-truncate" title="${dado.Orgao}">${dado.Orgao}</h6>
-                        <div class="mb-3">
-                            <small class="text-muted d-block">Edital: <strong>${numEdital}</strong></small>
-                            <small class="text-muted d-block">Fornecedor:</small>
-                            <span class="fw-bold text-dark text-truncate d-block" title="${dado.Fornecedor}">${dado.Fornecedor}</span>
-                        </div>
-                        
-                        <div class="mt-auto d-flex justify-content-between align-items-center">
-                            <span class="badge-valor fw-bold">${formatarMoeda(dado.Total)}</span>
-                            
-                            <button class="btn btn-sm btn-detalhes" 
-                                onclick="abrirModal('${licitacaoSafe}', '${cnpjSafe}')">
-                                <i class="fas fa-eye"></i> Ver Itens (${itensCount})
-                            </button>
-                        </div>
+        const container = document.getElementById('lista');
+        container.innerHTML = res.map((i, index) => `
+            <div class="col-md-4">
+                <div class="card card-licitacao p-3 h-100">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="badge bg-light text-dark border">UASG: ${i.UASG}</span>
+                        <span class="badge bg-info">${i.DataResult.split('T')[0]}</span>
                     </div>
-                `;
-                container.appendChild(col);
-            });
-        }
+                    <h6 class="fw-bold text-truncate">${i.Orgao}</h6>
+                    <p class="small mb-1"><strong>Edital:</strong> ${i.Edital} | <strong>Local:</strong> ${i.Municipio}-${i.UF}</p>
+                    <p class="small text-primary mb-2"><strong>Vencedor:</strong> ${i.Fornecedor}</p>
+                    <div class="mt-auto d-flex justify-content-between">
+                        <button class="btn btn-outline-primary btn-sm" onclick="verItens(${index})">Ver Itens</button>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
 
-        function abrirModal(idLicitacao, cnpjFornecedor) {
-            const registro = dadosGlobais.find(item => item.Licitacao === idLicitacao && item.CNPJ === cnpjFornecedor);
+    function verItens(idx) {
+        const item = dados[idx];
+        document.getElementById('corpoModal').innerHTML = item.Itens.map(it => `
+            <tr>
+                <td>${it.Item}</td>
+                <td class="small">${it.Desc}</td>
+                <td class="${it.Status === 'Venceu' ? 'st-venceu' : 'st-falha'}">${it.Status}</td>
+                <td>R$ ${it.Valor.toLocaleString('pt-BR')}</td>
+            </tr>
+        `).join('');
+        new bootstrap.Modal(document.getElementById('modalItens')).show();
+    }
 
-            if (!registro) {
-                alert("Erro: Dados não encontrados. Tente recarregar a página.");
-                return;
-            }
-
-            document.getElementById('modalFornecedor').textContent = registro.Fornecedor;
-            document.getElementById('modalCnpj').textContent = "CNPJ: " + registro.CNPJ;
-            document.getElementById('modalTotal').textContent = formatarMoeda(registro.Total);
-
-            const tbody = document.getElementById('corpoTabelaItens');
-            tbody.innerHTML = '';
-
-            if (registro.DetalhesItens && registro.DetalhesItens.length > 0) {
-                registro.DetalhesItens.forEach(item => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td class="fw-bold">${item.Item}</td>
-                        <td>${item.Descricao}</td>
-                        <td class="text-center">${item.Qtd}</td>
-                        <td class="text-end fw-bold text-success">${formatarMoeda(item.Valor)}</td>
-                    `;
-                    tbody.appendChild(tr);
-                });
-            } else {
-                tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted">Sem detalhes de itens nesta versão dos dados.</td></tr>';
-            }
-
-            new bootstrap.Modal(document.getElementById('modalItens')).show();
-        }
-
-        function aplicarFiltros() {
-            const uasg = document.getElementById('filtroUasg').value.toLowerCase().trim();
-            const numero = document.getElementById('filtroNumero').value.toLowerCase().trim();
-            const cnpj = document.getElementById('filtroCnpj').value.replace(/\D/g, ''); 
-            const texto = document.getElementById('filtroTexto').value.toLowerCase().trim();
-
-            const filtrados = dadosGlobais.filter(item => {
-                try {
-                    const itemUasg = String(item.UASG || '').toLowerCase();
-                    const itemNum = String(item.Numero || '').toLowerCase();
-                    const itemLicitacao = String(item.Licitacao || '').toLowerCase();
-                    const itemCnpj = String(item.CNPJ || '').replace(/\D/g, '');
-                    const itemForn = String(item.Fornecedor || '').toLowerCase();
-                    const itemOrg = String(item.Orgao || '').toLowerCase();
-
-                    const matchUasg = uasg === '' || itemUasg.includes(uasg);
-                    // Match Número flexível (Edital ou ID)
-                    const matchNumero = numero === '' || itemNum.includes(numero) || itemLicitacao.includes(numero);
-                    const matchCnpj = cnpj === '' || itemCnpj.includes(cnpj);
-
-                    let matchTexto = false;
-                    if (texto === '') {
-                        matchTexto = true;
-                    } else {
-                        if (itemForn.includes(texto) || itemOrg.includes(texto)) {
-                            matchTexto = true;
-                        } 
-                        else if (item.DetalhesItens) {
-                            matchTexto = item.DetalhesItens.some(sub => 
-                                String(sub.Descricao || '').toLowerCase().includes(texto)
-                            );
-                        }
-                    }
-
-                    return matchUasg && matchNumero && matchCnpj && matchTexto;
-                } catch (e) {
-                    return false;
-                }
-            });
-
-            renderizar(filtrados);
-        }
-
-        document.addEventListener('DOMContentLoaded', carregarDados);
-    </script>
+    function limpar() {
+        document.querySelectorAll('input').forEach(i => i.value = '');
+        filtrar();
+    }
+</script>
 </body>
 </html>
