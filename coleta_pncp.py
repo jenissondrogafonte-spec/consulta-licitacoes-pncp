@@ -22,7 +22,7 @@ else:
     d_ini = inicio.strftime('%Y%m%d')
     d_fim = hoje.strftime('%Y%m%d')
 
-print(f"--- ROBÔ INFALÍVEL (COM BUSCA PROFUNDA DE DATAS): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ UNIVERSAL (TODAS MODALIDADES): {d_ini} até {d_fim} ---")
 
 ARQ_VENCEDORES = 'dados.json'
 ARQ_STATUS = 'status.json'
@@ -45,6 +45,7 @@ while data_atual <= data_final:
         params = {
             "dataInicial": DATA_STR,
             "dataFinal": DATA_STR,
+            # REMOVI O FILTRO DE MODALIDADE AQUI. AGORA ELE VÊ TUDO.
             "pagina": pagina,
             "tamanhoPagina": 50
         }
@@ -59,7 +60,7 @@ while data_atual <= data_final:
             print(f"[P{pagina}]", end=" ", flush=True)
 
             for lic in licitacoes:
-                # --- DADOS BÁSICOS ---
+                # --- DADOS ---
                 cnpj_orgao = lic.get('orgaoEntidade', {}).get('cnpj')
                 ano = lic.get('anoCompra')
                 seq = lic.get('sequencialCompra')
@@ -70,43 +71,24 @@ while data_atual <= data_final:
                 objeto = lic.get('objetoCompra', 'Objeto não informado')
                 situacao_nome = lic.get('situacaoCompraNome', 'Desconhecido')
                 situacao_id = str(lic.get('situacaoCompraId'))
-                modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida')
+                data_abertura = lic.get('dataAberturaLicitacao', '')
+                modalidade_nome = lic.get('modalidadeAmparoNome', 'Desconhecida') # Captura o tipo (Pregão, Dispensa...)
 
-                # --- LÓGICA DE DATA INTELIGENTE ---
-                # Tenta pegar no resumo (rápido)
-                # OBS: dataEncerramentoProposta é o "Fim do Recebimento"
-                dt_abertura = lic.get('dataAberturaLicitacao') 
-                dt_encerramento = lic.get('dataEncerramentoProposta')
-
-                # Se estiver vazio, faz a BUSCA PROFUNDA (Lento, mas garantido)
-                if not dt_abertura and not dt_encerramento:
-                    try:
-                        url_full = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}"
-                        r_full = requests.get(url_full, headers=HEADERS, timeout=5)
-                        if r_full.status_code == 200:
-                            detalhe = r_full.json()
-                            dt_abertura = detalhe.get('dataAberturaLicitacao')
-                            dt_encerramento = detalhe.get('dataEncerramentoProposta')
-                    except: pass
-                
-                # Prioriza a Data de Encerramento (Fim do Recebimento), se não tiver, usa Abertura
-                data_final_exibicao = dt_encerramento if dt_encerramento else dt_abertura
-                if not data_final_exibicao: data_final_exibicao = "" # Garante string vazia se tudo falhar
-
-                # 1. SALVA STATUS
+                # 1. STATUS
                 lista_status.append({
                     "DataPublicacao": DATA_STR,
-                    "DataAbertura": data_final_exibicao, # Aqui vai a data correta agora
+                    "DataAbertura": data_abertura,
                     "UASG": uasg,
                     "Orgao": nome_orgao,
                     "Licitacao": id_licitacao,
                     "Numero": numero_edital,
-                    "Modalidade": modalidade_nome,
+                    "Modalidade": modalidade_nome, # Adicionei para você saber o tipo
                     "Objeto": objeto,
                     "Status": situacao_nome
                 })
 
-                # 2. SALVA VENCEDORES (Se homologada)
+                # 2. VENCEDORES (Agrupamento com Detalhes)
+                # Status 4 (Homologada) ou 6 (Adjudicada)
                 if situacao_id in ['4', '6']:
                     url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_orgao}/compras/{ano}/{seq}/itens"
                     try:
@@ -177,6 +159,7 @@ def salvar_arquivo_json(nome_arquivo, dados_novos):
     historico.extend(dados_novos)
     
     if nome_arquivo == ARQ_STATUS:
+         # Remove duplicatas baseado em chaves específicas
          unicos = {f"{i['Licitacao']}-{i['Status']}": i for i in historico}
          final = list(unicos.values())
     else:
