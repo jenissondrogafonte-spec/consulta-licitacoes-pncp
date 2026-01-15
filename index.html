@@ -29,17 +29,21 @@
     <div class="container mb-5">
         <div class="card p-4 mb-4">
             <div class="row g-3">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <label class="form-label fw-bold">UASG</label>
                     <input type="text" id="filtroUasg" class="form-control" placeholder="Ex: 926809">
+                </div>
+                <div class="col-md-2">
+                    <label class="form-label fw-bold">Nº Edital</label>
+                    <input type="text" id="filtroNumero" class="form-control" placeholder="Ex: 90000">
                 </div>
                 <div class="col-md-3">
                     <label class="form-label fw-bold">CNPJ Fornecedor</label>
                     <input type="text" id="filtroCnpj" class="form-control" placeholder="Apenas números">
                 </div>
-                <div class="col-md-4">
-                    <label class="form-label fw-bold">Descrição do Item / Objeto</label>
-                    <input type="text" id="filtroTexto" class="form-control" placeholder="Ex: Medicamento, Pneu...">
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Descrição / Objeto</label>
+                    <input type="text" id="filtroTexto" class="form-control" placeholder="Ex: Medicamento...">
                 </div>
                 <div class="col-md-2 d-flex align-items-end">
                     <button class="btn btn-primary w-100 fw-bold" onclick="aplicarFiltros()">
@@ -101,17 +105,17 @@
     <script>
         let dadosGlobais = [];
 
-        // Carrega o JSON gerado pelo Python
+        // Carrega o JSON
         async function carregarDados() {
             try {
                 const response = await fetch('dados.json');
                 if (!response.ok) throw new Error("Arquivo não encontrado");
                 dadosGlobais = await response.json();
                 
-                // Ordena por data (mais recente primeiro)
+                // Ordena por data
                 dadosGlobais.sort((a, b) => b.Data.localeCompare(a.Data));
                 
-                renderizar(dadosGlobais.slice(0, 50)); // Mostra os 50 primeiros de cara
+                renderizar(dadosGlobais.slice(0, 50)); 
                 document.getElementById('loading').classList.add('d-none');
             } catch (error) {
                 document.getElementById('loading').innerHTML = '<p class="text-danger">Erro ao carregar dados.json</p>';
@@ -122,7 +126,6 @@
             return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         }
 
-        // A CORREÇÃO MÁGICA ESTÁ AQUI NA HORA DE CRIAR O BOTÃO
         function renderizar(lista) {
             const container = document.getElementById('listaResultados');
             container.innerHTML = '';
@@ -138,7 +141,7 @@
                 const col = document.createElement('div');
                 col.className = 'col-md-6 col-lg-4';
 
-                // Escapa aspas para não quebrar o HTML do onclick
+                // Escapa aspas para não quebrar o HTML
                 const licitacaoSafe = dado.Licitacao; 
                 const cnpjSafe = dado.CNPJ; 
 
@@ -169,26 +172,22 @@
             });
         }
 
-        // A CORREÇÃO LÓGICA DO MODAL
         function abrirModal(idLicitacao, cnpjFornecedor) {
-            // Agora buscamos usando AS DUAS CHAVES para ser único
+            // Busca Exata (Licitação + CNPJ)
             const registro = dadosGlobais.find(item => item.Licitacao === idLicitacao && item.CNPJ === cnpjFornecedor);
 
             if (!registro) {
-                alert("Erro: Dados não encontrados para este fornecedor.");
+                alert("Erro: Dados não encontrados.");
                 return;
             }
 
-            // Preenche o Cabeçalho
             document.getElementById('modalFornecedor').textContent = registro.Fornecedor;
             document.getElementById('modalCnpj').textContent = "CNPJ: " + registro.CNPJ;
             document.getElementById('modalTotal').textContent = formatarMoeda(registro.Total);
 
-            // Preenche a Tabela
             const tbody = document.getElementById('corpoTabelaItens');
             tbody.innerHTML = '';
 
-            // Verifica se tem a lista de detalhes (versão nova do robô)
             if (registro.DetalhesItens && registro.DetalhesItens.length > 0) {
                 registro.DetalhesItens.forEach(item => {
                     const tr = document.createElement('tr');
@@ -201,46 +200,44 @@
                     tbody.appendChild(tr);
                 });
             } else {
-                // Fallback para dados antigos (se houver)
-                tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted">Detalhes dos itens não disponíveis nesta versão dos dados.</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted">Sem detalhes de itens.</td></tr>';
             }
 
-            // Abre o Modal
             new bootstrap.Modal(document.getElementById('modalItens')).show();
         }
 
+        // LÓGICA DE FILTROS ATUALIZADA
         function aplicarFiltros() {
             const uasg = document.getElementById('filtroUasg').value.toLowerCase();
-            const cnpj = document.getElementById('filtroCnpj').value.replace(/\D/g, ''); // Remove pontos/traços
+            const numero = document.getElementById('filtroNumero').value.toLowerCase(); // NOVO FILTRO
+            const cnpj = document.getElementById('filtroCnpj').value.replace(/\D/g, ''); 
             const texto = document.getElementById('filtroTexto').value.toLowerCase();
 
             const filtrados = dadosGlobais.filter(item => {
-                // Match UASG
                 const matchUasg = uasg === '' || item.UASG.includes(uasg);
                 
-                // Match CNPJ (Limpa o CNPJ do json para comparar apenas numeros)
+                // Match Número do Edital (Ex: digita "90000", acha "90000/2025")
+                const matchNumero = numero === '' || item.Numero.includes(numero);
+
                 const itemCnpjClean = item.CNPJ.replace(/\D/g, '');
                 const matchCnpj = cnpj === '' || itemCnpjClean.includes(cnpj);
 
-                // Match Texto (Procura nos itens também!)
                 let matchTexto = false;
                 if (texto === '') {
                     matchTexto = true;
                 } else {
-                    // Procura no nome do fornecedor ou orgão
                     if (item.Fornecedor.toLowerCase().includes(texto) || item.Orgao.toLowerCase().includes(texto)) {
                         matchTexto = true;
                     } 
-                    // Procura dentro da lista de itens
                     else if (item.DetalhesItens) {
                         matchTexto = item.DetalhesItens.some(sub => sub.Descricao.toLowerCase().includes(texto));
                     }
                 }
 
-                return matchUasg && matchCnpj && matchTexto;
+                return matchUasg && matchNumero && matchCnpj && matchTexto;
             });
 
-            renderizar(filtrados.slice(0, 100)); // Limita exibição para não travar
+            renderizar(filtrados.slice(0, 100));
         }
 
         document.addEventListener('DOMContentLoaded', carregarDados);
