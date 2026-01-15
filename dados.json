@@ -1,41 +1,66 @@
 [
     {
-        "CNPJ": "22223426000147",
         "Data": "20250124",
-        "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
-        "Itens": 1,
-        "Licitacao": "698000022025",
+        "UASG": "698",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Cidade": "Pitangueiras",
+        "Licitacao": "698000022025",
+        "Numero": "00002/2025",
+        "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
+        "CNPJ": "22223426000147",
         "Total": 6228.0,
-        "UASG": "698"
-    },
-    {
-        "CNPJ": "08504258000137",
-        "Data": "20250127",
-        "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
         "Itens": 1,
-        "Licitacao": "301000042025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 22880.0,
-        "UASG": "301"
-    },
-    {
-        "CNPJ": "45806440000179",
-        "Data": "20250113",
         "DetalhesItens": [
             {
-                "Descricao": "Conjunto agrotóxicoColaboradores que exerce atividade com exposição a agentes agrotóxicos Roundup.\r",
+                "Item": 2,
+                "Descricao": "PALITO DE MADEIRA TIPO ESPETO (PCT COM 100)",
+                "Qtd": 1200.0,
+                "Valor": 6228.0
+            }
+        ]
+    },
+    {
+        "Data": "20250127",
+        "UASG": "301",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Cidade": "Coronel Fabriciano",
+        "Licitacao": "301000042025",
+        "Numero": "00004/2025",
+        "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
+        "CNPJ": "08504258000137",
+        "Total": 22880.0,
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 10,
+                "Descricao": "SALSICHA EMBUTIDO TIP: SALSICHA HOT DOG TIPO PREPARACAO COZIDA ESTADO DE CONSERVACAO: RESFRIADO * ACONDICIONADOS EM EMBALAGEM PRIMÁRIA À VÁCUO EM PLÁSTICO TRANSPARENTE, CONTENDO TODAS AS INFORMAÇÕES DO PRODUTO COMO CORTE, PROCEDÊNCIA, FORNECEDOR, DATA DE VALIDADE. PARÂMETROS INDICATIVOS DE QUALIDADE: SEARA, LEBON, SADIA, PERDIGÃO\r",
+                "Qtd": 2200.0,
+                "Valor": 22880.0
+            }
+        ]
+    },
+    {
+        "Data": "20250113",
+        "UASG": "196",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "UF": "MG",
+        "Cidade": "Aiuruoca",
+        "Licitacao": "196000952024",
+        "Numero": "00095/2024",
+        "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
+        "CNPJ": "45806440000179",
+        "Total": 802.0,
+        "Itens": 1,
+        "DetalhesItens": [
+            {
                 "Item": 9,
+                "Descricao": "Conjunto agrotóxicoColaboradores que exerce atividade com exposição a agentes agrotóxicos Roundup.\r",
                 "Qtd": 2.0,
                 "Valor": 802.0
             }
-        ],
-        "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 802.0,
-        "UASG": "196"
+        ]
     },
     {
         "CNPJ": "26334347000164",
@@ -58,14 +83,25 @@
         "UASG": "488"
     },
     {
-        "CNPJ": "11399773000109",
         "Data": "20250123",
-        "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
-        "Itens": 1,
-        "Licitacao": "620000032025",
+        "UASG": "620",
         "Orgao": "MUNICIPIO DE PITANGUI",
+        "UF": "MG",
+        "Cidade": "Pitangui",
+        "Licitacao": "620000032025",
+        "Numero": "00003/2025",
+        "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
+        "CNPJ": "11399773000109",
         "Total": 24528.0,
-        "UASG": "620"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "COLETA, TRANSPORTE E INCINERAÇÃO DE RESÍDUOS PERIGOSOS, CLASSE I E II , INCLUSIVE DE SERVIÇOS DE SAUDE DOS GRUPOS A, B E E.\nOBSERVAÇÃO 01: A COLETA SERÁ REALIZADA UMA VEZ POR SEMANA, EM APROXIMADAMENTE 12 PONTOS NA ZONA URBANA MUNICIPAL, MAIS PSF BRUMADO, CAMPO GRANDE(POVOADO) E RIO DO PEIXE(RODOVIA).\nOBSERVAÇÃO 02: A EMPRESA FORNECERÁ VASILHAME ACONDICIONADOR DE RESÍDUOS PERGOSOS PARA OS PONTOS DE COLETA.\nOBSERVAÇÃO 03: A QUANTIDADE APROXIMADA PREVISTA É ENTRE 200 KG A 400 KG POR MÊS.",
+                "Qtd": 4800.0,
+                "Valor": 24528.0
+            }
+        ]
     },
     {
         "CNPJ": "51020411000180",
@@ -78,14 +114,25 @@
         "UASG": "760"
     },
     {
-        "CNPJ": "44472217000170",
         "Data": "20250131",
-        "Fornecedor": "JN PNEUS LTDA",
-        "Itens": 1,
-        "Licitacao": "1000262025",
+        "UASG": "1",
         "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Cidade": "Taquara",
+        "Licitacao": "1000262025",
+        "Numero": "00026/2025",
+        "Fornecedor": "JN PNEUS LTDA",
+        "CNPJ": "44472217000170",
         "Total": 41877.0,
-        "UASG": "1"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "Pneu 17.5-25 16 lonas (Prof. Sulco 27mm) Aplicação E3L3  - \n-Pneu 17.5-25 16 lonas (Prof. Sulco 27mm) Aplicação E3L3-novo (primeira vida), garantia de cinco anos contra defeitos de fabricação (conforme Código de Defesa do Consumidor), data de fabricação na entrega não superior a 12 meses, com certificação do INMETRO\n",
+                "Qtd": 15.0,
+                "Valor": 41877.0
+            }
+        ]
     },
     {
         "CNPJ": "25230836000103",
@@ -218,28 +265,31 @@
         "UASG": "000000042"
     },
     {
-        "CNPJ": "06176619000138",
         "Data": "20250113",
+        "UASG": "196",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "UF": "MG",
+        "Cidade": "Aiuruoca",
+        "Licitacao": "196000952024",
+        "Numero": "00095/2024",
+        "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
+        "CNPJ": "06176619000138",
+        "Total": 9219.0,
+        "Itens": 2,
         "DetalhesItens": [
             {
-                "Descricao": "Bota de PVC Cano Longo - (PAR)Calçado de segurança tipo bota cano alto, confeccionado em PVC na cor branca ou preta, acabamento interno com meia em poliéster solado injetado em PVC com desenhoantiderrapante, com biqueira de aço carbono. PROTEÇÃO DOS PÉS DO USUÁRIO CONTRA IMPACTOS DE QUEDAS DE OBJETOS SOBRE OS ARTELHOS, CONTRAAGENTES ABRASIVOS E ESCORIANTES E CONTRA UMIDADE PROVENIENTE DEOPERAÇÕES COM USO DE ÁGUA. Tamanhos: 34-35,36-37,38-39, 39-40, 41-42, 43-44.Certificação: INMETRO\" e Certificado de aprovação - CA pelo Ministério do Trabalho.\r",
                 "Item": 5,
+                "Descricao": "Bota de PVC Cano Longo - (PAR)Calçado de segurança tipo bota cano alto, confeccionado em PVC na cor branca ou preta, acabamento interno com meia em poliéster solado injetado em PVC com desenhoantiderrapante, com biqueira de aço carbono. PROTEÇÃO DOS PÉS DO USUÁRIO CONTRA IMPACTOS DE QUEDAS DE OBJETOS SOBRE OS ARTELHOS, CONTRAAGENTES ABRASIVOS E ESCORIANTES E CONTRA UMIDADE PROVENIENTE DEOPERAÇÕES COM USO DE ÁGUA. Tamanhos: 34-35,36-37,38-39, 39-40, 41-42, 43-44.Certificação: INMETRO\" e Certificado de aprovação - CA pelo Ministério do Trabalho.\r",
                 "Qtd": 168.0,
                 "Valor": 7308.0
             },
             {
-                "Descricao": "Calçado de segurançaUtilizado por: Enfermeiro-CAPS; Técnico de Enfermagem-CAPS; Terapeuta Ocupacional; Enfermeiro-Centro de Saúde; Médico; Técnico de Enfermagem-Centro de Saúde; Técnico em Saúde Suplementar; Auxiliar em Saúde Bucal; Cirurgião Especialista em Endodontologia; Dentista Especialista em Cirurgia Oral Menor; Técnico em Saúde Bucal; Farmacêutico; Farmacêutico Bioquímico; Farmacêutico-Laboratório; Técnico em Laboratório de Análises Clínicas; Técnico em Saúde Suplementar; Enfermeiro-PSF; Fisioterapeuta; Fonoaudiólogo; Cirurgião Dentista; Enfermeiro ESF; Médico ESF e Técnico em Enfermagem. Cores: azul ou verde.\r",
                 "Item": 7,
+                "Descricao": "Calçado de segurançaUtilizado por: Enfermeiro-CAPS; Técnico de Enfermagem-CAPS; Terapeuta Ocupacional; Enfermeiro-Centro de Saúde; Médico; Técnico de Enfermagem-Centro de Saúde; Técnico em Saúde Suplementar; Auxiliar em Saúde Bucal; Cirurgião Especialista em Endodontologia; Dentista Especialista em Cirurgia Oral Menor; Técnico em Saúde Bucal; Farmacêutico; Farmacêutico Bioquímico; Farmacêutico-Laboratório; Técnico em Laboratório de Análises Clínicas; Técnico em Saúde Suplementar; Enfermeiro-PSF; Fisioterapeuta; Fonoaudiólogo; Cirurgião Dentista; Enfermeiro ESF; Médico ESF e Técnico em Enfermagem. Cores: azul ou verde.\r",
                 "Qtd": 6.0,
                 "Valor": 1911.0
             }
-        ],
-        "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
-        "Itens": 2,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 9219.0,
-        "UASG": "196"
+        ]
     },
     {
         "CNPJ": "40697295000111",
@@ -292,16 +342,6 @@
         "UASG": "277"
     },
     {
-        "CNPJ": "06176619000138",
-        "Data": "20250113",
-        "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
-        "Itens": 2,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 9219.0,
-        "UASG": "196"
-    },
-    {
         "CNPJ": "51560442000123",
         "Data": "20250307",
         "Fornecedor": "DUFILTER DISTRIBUIDORA DE FILTROS E LUBRIFICANTES LTDA",
@@ -312,14 +352,79 @@
         "UASG": "07001"
     },
     {
-        "CNPJ": "06178714000170",
         "Data": "20250121",
-        "Fornecedor": "Life Remocenter Transporte LTDA",
-        "Itens": 10,
-        "Licitacao": "548000022025",
+        "UASG": "548",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO CENTRO NORDESTE",
+        "UF": "MG",
+        "Cidade": "Guanhães",
+        "Licitacao": "548000022025",
+        "Numero": "00002/2025",
+        "Fornecedor": "Life Remocenter Transporte LTDA",
+        "CNPJ": "06178714000170",
         "Total": 6415979.1899999995,
-        "UASG": "548"
+        "Itens": 10,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "Serviço de Transporte de Urgência (UTI Móvel tipo D) para transporte de pacientes em estado grave, \nIncluso condutor socorrista, Médico e Enfermeiro \n",
+                "Qtd": 157000.0,
+                "Valor": 2232540.0
+            },
+            {
+                "Item": 2,
+                "Descricao": "Serviço de Transporte de Urgência (UTI Móvel tipo D) Deslocamento até 80km para transporte de pacientes em estado grave. Incluso condutor socorrista, Médico e Enfermeiro c/s retorno.\n\n",
+                "Qtd": 384.0,
+                "Valor": 696445.44
+            },
+            {
+                "Item": 3,
+                "Descricao": "Serviço de Transporte de Urgência (UTI Móvel TIPO D DESLOCAMENTO) deslocamento acima 81 até 150km para transporte de pacientes em estado grave  c/s retorno. \nIncluso condutor socorrista, Médico e Enfermeiro \n\n",
+                "Qtd": 125.0,
+                "Valor": 250003.75
+            },
+            {
+                "Item": 4,
+                "Descricao": "Serviços de UTI MÓVEL TIPO D para cobertura de eventos (mínimo de 6h) nos municípios consorciados. \nincluso: condutor socorrista, Médico e Enfermeiro.\n",
+                "Qtd": 350.0,
+                "Valor": 1295000.0
+            },
+            {
+                "Item": 5,
+                "Descricao": "HORA ADICIONAL ao item 04 lote 02",
+                "Qtd": 200.0,
+                "Valor": 33990.0
+            },
+            {
+                "Item": 6,
+                "Descricao": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \nincluso somente condutor socorrista.\n",
+                "Qtd": 100000.0,
+                "Valor": 753000.0
+            },
+            {
+                "Item": 7,
+                "Descricao": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \n Deslocamento até 80km para transporte de pacientes c/s retorno.\n.\nincluso somente condutor socorrista \n",
+                "Qtd": 50.0,
+                "Valor": 30000.0
+            },
+            {
+                "Item": 8,
+                "Descricao": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \n Deslocamento acima de 81 até 150km para transporte de pacientes c/s retorno.\nincluso somente condutor socorrista. \n",
+                "Qtd": 50.0,
+                "Valor": 35000.0
+            },
+            {
+                "Item": 9,
+                "Descricao": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo B \nincluso condutor socorrista, enfermeiro c/s técnico auxiliar.\n",
+                "Qtd": 100000.0,
+                "Valor": 980000.0
+            },
+            {
+                "Item": 10,
+                "Descricao": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo B \n Deslocamento até 80km para transporte de pacientes c/s retorno.\nincluso condutor socorrista, enfermeiro c/s técnico auxiliar.\n",
+                "Qtd": 50.0,
+                "Valor": 110000.0
+            }
+        ]
     },
     {
         "CNPJ": "57109731000197",
@@ -362,24 +467,64 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "01645409000390",
         "Data": "20250117",
-        "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
-        "Itens": 4,
-        "Licitacao": "404340002192025",
+        "UASG": "404340",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "UF": "RJ",
+        "Cidade": "Rio de Janeiro",
+        "Licitacao": "404340002192025",
+        "Numero": "00219/2025",
+        "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
+        "CNPJ": "01645409000390",
         "Total": 1001298.1199999999,
-        "UASG": "404340"
+        "Itens": 4,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "ACESSORIO: DILATADOR",
+                "Qtd": 252.0,
+                "Valor": 31557.96
+            },
+            {
+                "Item": 2,
+                "Descricao": "ESTIMULACAO: BICAMERAL",
+                "Qtd": 142.0,
+                "Valor": 533694.22
+            },
+            {
+                "Item": 3,
+                "Descricao": "MARCAPASSO: DEFINITIVO, TIPO: ENDOCARDIO ATRIAL ATIVO, MARCA: N/A, ESTIMULACAO: UNI/ BIPOLAR, EXTREMIDADE DISTAL: N/A, MATERIAL: FIO ESTIMULADOR REVESTIDO DE SILICONE, CALIBRE: 5F~7F, COMPRIMENTO: 53~60CM, ACESSORIO: N/A",
+                "Qtd": 239.0,
+                "Valor": 218022.97
+            },
+            {
+                "Item": 4,
+                "Descricao": "MARCAPASSO: DEFINITIVO BICAMERAL, TIPO: ENDOCARDIO VENTRICULAR ATIVO, MARCA: N/A, ESTIMULACAO: UNI/ BIPOLAR, EXTREMIDADE DISTAL: MECANISMO HELICOIDAL DE FIXACAO ATIVA, MATERIAL: FIO ESTIMULADOR REVESTIDO DE SILICONE, COMPATIVEL COM RESSONANCIA NUCLEAR MAGNETICA (RNM), CALIBRE: 5FR~7FR, COMPRIMENTO: 50CM ~ 65CM, ACESSORIO: COM CORTICOIDE E COMPATIVEL COM RESSONANCIA NUCLEAR MAGNETICA (RNM), FORMA FORNECIMENTO: UNIDADE",
+                "Qtd": 239.0,
+                "Valor": 218022.97
+            }
+        ]
     },
     {
-        "CNPJ": "37279287000140",
         "Data": "20250115",
-        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
-        "Itens": 1,
-        "Licitacao": "06002000012025",
+        "UASG": "06002",
         "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "UF": "PR",
+        "Cidade": "Rio Negro",
+        "Licitacao": "06002000012025",
+        "Numero": "00001/2025",
+        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
+        "CNPJ": "37279287000140",
         "Total": 1154999.24,
-        "UASG": "06002"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 3,
+                "Descricao": "SERVIÇOS DE TRANSPORTE ESCOLAR",
+                "Qtd": 89900.0,
+                "Valor": 1154999.24
+            }
+        ]
     },
     {
         "CNPJ": "18264177000160",
@@ -402,14 +547,25 @@
         "UASG": "698"
     },
     {
-        "CNPJ": "34840358000144",
         "Data": "20250107",
-        "Fornecedor": "ZEUS COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "06005016262024",
+        "UASG": "06005",
         "Orgao": "MUNICIPIO DE CARAZINHO",
+        "UF": "RS",
+        "Cidade": "Carazinho",
+        "Licitacao": "06005016262024",
+        "Numero": "01626/2024",
+        "Fornecedor": "ZEUS COMERCIAL LTDA",
+        "CNPJ": "34840358000144",
         "Total": 1748.0,
-        "UASG": "06005"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 7,
+                "Descricao": "PNEU 205/75 R16 8 LONAS",
+                "Qtd": 4.0,
+                "Valor": 1748.0
+            }
+        ]
     },
     {
         "CNPJ": "42333053000174",
@@ -422,14 +578,43 @@
         "UASG": "07001"
     },
     {
-        "CNPJ": "46687136000112",
         "Data": "20250113",
-        "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
-        "Itens": 4,
-        "Licitacao": "196000952024",
+        "UASG": "196",
         "Orgao": "MUNICIPIO DE AIURUOCA",
+        "UF": "MG",
+        "Cidade": "Aiuruoca",
+        "Licitacao": "196000952024",
+        "Numero": "00095/2024",
+        "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
+        "CNPJ": "46687136000112",
         "Total": 29723.760000000002,
-        "UASG": "196"
+        "Itens": 4,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "AVENTAL DE PVCAvental confeccionado em tecido sintético (malha poliéster revestido de PVC em ambas as faces), com tiras do próprio material para ajuste, soldada eletronicamente. Utilização: Proteção do usuário contra respingos d'água e respingos de produtos químicos. Tamanhos: P, M, G, GG e XG. Certificação: INMETRO e Certificado de aprovação - CA pelo Ministério do Trabalho. \r",
+                "Qtd": 261.0,
+                "Valor": 1612.98
+            },
+            {
+                "Item": 2,
+                "Descricao": "Avental de Raspa de CouroAvental de segurança confeccionada em raspa natural curtida ao cromo, sem emendas, com fivelas metálicas, costurado com linha nylon, largura de no mínimo 60 cm e comprimento total de no mínimo 120 cm. Aprovado para proteção do corpo do usuário contra agentes abrasivos, escoriantes e térmicos provenientes de operações de soldagem e processos similares. Com resultado de níveis de desempenho ?CLASSE 2? ? NORMA TECNICA 11611:2007. Deverá possuir Certificado de Aprovação válido e emitido pelo Ministério de Trabalho e Emprego. Deverá entregar juntamente com aproposta comercial o Certificado de Aprovação ? CA e Catálogo Técnico. \r",
+                "Qtd": 57.0,
+                "Valor": 1846.8
+            },
+            {
+                "Item": 4,
+                "Descricao": "Boné ÁrabeBoné confeccionado em brim, com proteção para a nuca, fechamento frontal na altura do pescoço através de velcro e com aba.\r",
+                "Qtd": 261.0,
+                "Valor": 2395.98
+            },
+            {
+                "Item": 10,
+                "Descricao": "Creme Protetor Grupo 2Creme óleo resistente que aplicado à pele forma uma película protetora invisível contra os ataques de produtos, tais como: óleos brutos, solventes, metiletilcetona, acetona, thinner, gasolina, óleo mineral, óleo diesel, graxas, tinta a base de óleo, sem que o usuário perca a sensibilidade ao tato.\r",
+                "Qtd": 100.0,
+                "Valor": 23868.0
+            }
+        ]
     },
     {
         "CNPJ": "15734600000150",
@@ -472,14 +657,43 @@
         "UASG": "301"
     },
     {
-        "CNPJ": "55623647000161",
         "Data": "20250107",
-        "Fornecedor": "GAMA PNEUS LTDA",
-        "Itens": 4,
-        "Licitacao": "06005016262024",
+        "UASG": "06005",
         "Orgao": "MUNICIPIO DE CARAZINHO",
+        "UF": "RS",
+        "Cidade": "Carazinho",
+        "Licitacao": "06005016262024",
+        "Numero": "01626/2024",
+        "Fornecedor": "GAMA PNEUS LTDA",
+        "CNPJ": "55623647000161",
         "Total": 16394.79,
-        "UASG": "06005"
+        "Itens": 4,
+        "DetalhesItens": [
+            {
+                "Item": 4,
+                "Descricao": "PNEU 185/65  R14 102/100 S",
+                "Qtd": 12.0,
+                "Valor": 3300.0
+            },
+            {
+                "Item": 5,
+                "Descricao": "PNEU 185/60 R14",
+                "Qtd": 21.0,
+                "Valor": 5018.79
+            },
+            {
+                "Item": 6,
+                "Descricao": "PNEU 185/70 R14 (88T)",
+                "Qtd": 20.0,
+                "Valor": 5740.0
+            },
+            {
+                "Item": 8,
+                "Descricao": "PNEU 225/70 R15 BORRACHUDO CAMIONETE 8 LONAS",
+                "Qtd": 4.0,
+                "Valor": 2336.0
+            }
+        ]
     },
     {
         "CNPJ": "08223036000146",
@@ -642,24 +856,58 @@
         "UASG": "781"
     },
     {
-        "CNPJ": "12011917000332",
         "Data": "20250124",
-        "Fornecedor": "ALEA COMERCIAL LTDA",
-        "Itens": 2,
-        "Licitacao": "698000022025",
+        "UASG": "698",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Cidade": "Pitangueiras",
+        "Licitacao": "698000022025",
+        "Numero": "00002/2025",
+        "Fornecedor": "ALEA COMERCIAL LTDA",
+        "CNPJ": "12011917000332",
         "Total": 16219.2,
-        "UASG": "698"
+        "Itens": 2,
+        "DetalhesItens": [
+            {
+                "Item": 3,
+                "Descricao": "APONTADOR DE LÁPIS COM DEPÓSITO",
+                "Qtd": 12000.0,
+                "Valor": 6000.0
+            },
+            {
+                "Item": 8,
+                "Descricao": "PAPEL CONTACT TRANSPARENTE 45CM X 25M",
+                "Qtd": 240.0,
+                "Valor": 10219.2
+            }
+        ]
     },
     {
-        "CNPJ": "56969923000100",
         "Data": "20250115",
-        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
-        "Itens": 2,
-        "Licitacao": "06002000012025",
+        "UASG": "06002",
         "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "UF": "PR",
+        "Cidade": "Rio Negro",
+        "Licitacao": "06002000012025",
+        "Numero": "00001/2025",
+        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
+        "CNPJ": "56969923000100",
         "Total": 1916990.846,
-        "UASG": "06002"
+        "Itens": 2,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "SERVIÇOS DE TRANSPORTE ESCOLAR",
+                "Qtd": 96200.0,
+                "Valor": 1048993.66
+            },
+            {
+                "Item": 2,
+                "Descricao": "SERVIÇOS DE TRANSPORTE ESCOLAR",
+                "Qtd": 126980.0,
+                "Valor": 867997.186
+            }
+        ]
     },
     {
         "CNPJ": "58311182000100",
@@ -672,14 +920,25 @@
         "UASG": "2243"
     },
     {
-        "CNPJ": "09505958000109",
         "Data": "20250131",
-        "Fornecedor": "SCHWAB COMÉRCIO DE PNEUS LTDA",
-        "Itens": 1,
-        "Licitacao": "1000262025",
+        "UASG": "1",
         "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Cidade": "Taquara",
+        "Licitacao": "1000262025",
+        "Numero": "00026/2025",
+        "Fornecedor": "SCHWAB COMÉRCIO DE PNEUS LTDA",
+        "CNPJ": "09505958000109",
         "Total": 41680.0,
-        "UASG": "1"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 2,
+                "Descricao": "Pneu 14.00-24 16 lonas (Prof. Sulco 25,3mm) Classificação G2L2\n-Pneu 14.00-24 16 lonas (Prof. Sulco 25,3mm) Classificação G2L2, TM 95-novo (primeira vida), garantia de cinco anos contra defeitos de fabricação (conforme Código de Defesa do Consumidor), data de fabricação na entrega não superior a 12 meses, com certificação do INMETRO.",
+                "Qtd": 20.0,
+                "Valor": 41680.0
+            }
+        ]
     },
     {
         "CNPJ": "09498341000103",
@@ -692,44 +951,166 @@
         "UASG": "62600"
     },
     {
-        "CNPJ": "46418740000143",
         "Data": "20250113",
-        "Fornecedor": "PALADIR LTDA",
-        "Itens": 1,
-        "Licitacao": "196000952024",
+        "UASG": "196",
         "Orgao": "MUNICIPIO DE AIURUOCA",
+        "UF": "MG",
+        "Cidade": "Aiuruoca",
+        "Licitacao": "196000952024",
+        "Numero": "00095/2024",
+        "Fornecedor": "PALADIR LTDA",
+        "CNPJ": "46418740000143",
         "Total": 3504.0,
-        "UASG": "196"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 3,
+                "Descricao": "Avental Para Alta TemperaturaAvental térmico Colaboradores que exercem atividades com exposição em calor (cozinha)\r",
+                "Qtd": 73.0,
+                "Valor": 3504.0
+            }
+        ]
     },
     {
-        "CNPJ": "51011416000146",
         "Data": "20250117",
-        "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
-        "Itens": 10,
-        "Licitacao": "343000012025",
+        "UASG": "343",
         "Orgao": "MUNICIPIO DE SAO GONCALO DO PARA",
+        "UF": "MG",
+        "Cidade": "São Gonçalo do Pará",
+        "Licitacao": "343000012025",
+        "Numero": "00001/2025",
+        "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
+        "CNPJ": "51011416000146",
         "Total": 120908.0,
-        "UASG": "343"
+        "Itens": 10,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "GALÃO DE 20 LITROS OLEO HIDRAULICO SAE 68 PARA RETROESCAVADEIRA CASE 580 L, COM CERTIFICADO TS 16.949.",
+                "Qtd": 50.0,
+                "Valor": 7395.0
+            },
+            {
+                "Item": 2,
+                "Descricao": "GALÃO DE 20 LITROS DE ÓLEO DIFERENCIAL",
+                "Qtd": 30.0,
+                "Valor": 8787.0
+            },
+            {
+                "Item": 3,
+                "Descricao": "GALÕES 20 LITROS ÓLEO LUBRIFICANTE SAE 15W40 PARA VEICULOS A DIESEL (CAMINHÕES) COM CERTIFICADO TS 16.949.",
+                "Qtd": 80.0,
+                "Valor": 17600.0
+            },
+            {
+                "Item": 4,
+                "Descricao": "GALÃO DE 20 LITROS DE ÓLEO DE CAIXA SAE",
+                "Qtd": 40.0,
+                "Valor": 13876.0
+            },
+            {
+                "Item": 5,
+                "Descricao": "GALÃO DE 20 LITROS DE ÓLEO DE DIREÇÃO HIDRÁULICA ATF TIPO A",
+                "Qtd": 30.0,
+                "Valor": 9720.0
+            },
+            {
+                "Item": 6,
+                "Descricao": "GALÃO DE 20 LITROS DE ÓLEO PARA MOTOR A DIESEL 10W40",
+                "Qtd": 20.0,
+                "Valor": 10000.0
+            },
+            {
+                "Item": 7,
+                "Descricao": "GALÃO DE 20 LITROS DE ÓLEO HIDRÁULICO ATF OH50 COM CERITICADO TS 16.949",
+                "Qtd": 20.0,
+                "Valor": 9580.0
+            },
+            {
+                "Item": 8,
+                "Descricao": "OLEO MOTOR",
+                "Qtd": 200.0,
+                "Valor": 6200.0
+            },
+            {
+                "Item": 9,
+                "Descricao": "GALÃO DE 20 LITROS DE GRAXA AUTOMOTIVA DE MÚLTIPLAS APLICAÇÕES NLGI 2",
+                "Qtd": 60.0,
+                "Valor": 36600.0
+            },
+            {
+                "Item": 10,
+                "Descricao": "ADITIVO DE RADIADOR 1 LITRO (GASOLINA)",
+                "Qtd": 100.0,
+                "Valor": 1150.0
+            }
+        ]
     },
     {
-        "CNPJ": "15081696000103",
         "Data": "20250127",
+        "UASG": "301",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Cidade": "Coronel Fabriciano",
+        "Licitacao": "301000042025",
+        "Numero": "00004/2025",
         "Fornecedor": "BSM ATACADISTA",
-        "Itens": 2,
-        "Licitacao": "301000042025",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "CNPJ": "15081696000103",
         "Total": 392745.0,
-        "UASG": "301"
+        "Itens": 2,
+        "DetalhesItens": [
+            {
+                "Item": 5,
+                "Descricao": "PERNIL EM CUBOS CARNE SUINA IN NATURA TIPO CORTE: PERNIL, APRESENTACAO CORTADA EM CUBOS PROCESSAMENTO SEM PELE ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 8250.0,
+                "Valor": 139425.0
+            },
+            {
+                "Item": 7,
+                "Descricao": "ACEM MOIDA CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO MOIDA ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 12000.0,
+                "Valor": 253320.0
+            }
+        ]
     },
     {
-        "CNPJ": "32532318000100",
         "Data": "20250127",
-        "Fornecedor": "P&G ALIMENTOS LTDA",
-        "Itens": 4,
-        "Licitacao": "301000042025",
+        "UASG": "301",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Cidade": "Coronel Fabriciano",
+        "Licitacao": "301000042025",
+        "Numero": "00004/2025",
+        "Fornecedor": "P&G ALIMENTOS LTDA",
+        "CNPJ": "32532318000100",
         "Total": 336321.25,
-        "UASG": "301"
+        "Itens": 4,
+        "DetalhesItens": [
+            {
+                "Item": 3,
+                "Descricao": "ACEM EM CUBOS CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO CORTADA EM CUBOS ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 7875.0,
+                "Valor": 188133.75
+            },
+            {
+                "Item": 4,
+                "Descricao": "ACEM EM CUBOS CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO CORTADA EM CUBOS ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 2625.0,
+                "Valor": 70612.5
+            },
+            {
+                "Item": 6,
+                "Descricao": "PERNIL EM CUBOS CARNE SUINA IN NATURA TIPO CORTE: PERNIL, APRESENTACAO CORTADA EM CUBOS PROCESSAMENTO SEM PELE ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 2750.0,
+                "Valor": 49225.0
+            },
+            {
+                "Item": 9,
+                "Descricao": "LINGUICA CALABRESA GROSSA TAMANHO GROSSA TIPO PREPARACAO DEFUMADA ESTADO DE CONSERVACAO RESFRIADO * EMBALADA À VÁCUO EM PLÁSTICO PVC TRANSPARENTE. EMBALAGEM DEVE CONTER A IDENTIFICAÇÃO DO PRODUTO, PESO, DATA DE FABRICAÇÃO, DATA DE VALIDADE, LOTE, FORMA DE CONSERVAÇÃO, CARIMBO DO SIF.PACOTES CONTENDO NO MÁXIMO 4 KG. O PRODUTO DEVERÁ TER VALIDADE MÍNIMA DE 90 DIAS DA DATA DE ENTREGA, QUE NÃO DEVERÁ SER SUPERIOR A 45 DIAS DA DATA DE FABRICAÇÃO. PARÂMETROS INDICATIVOS DE QUALIDADE: PALADAR, SAUDALI, FRIGOLESTE\r",
+                "Qtd": 1500.0,
+                "Valor": 28350.0
+            }
+        ]
     },
     {
         "CNPJ": "02952689000180",
@@ -872,22 +1253,25 @@
         "UASG": "146"
     },
     {
-        "CNPJ": "97530228000125",
         "Data": "20250113",
+        "UASG": "196",
+        "Orgao": "MUNICIPIO DE AIURUOCA",
+        "UF": "MG",
+        "Cidade": "Aiuruoca",
+        "Licitacao": "196000952024",
+        "Numero": "00095/2024",
+        "Fornecedor": "R. DE O. SANTIL EPI",
+        "CNPJ": "97530228000125",
+        "Total": 13544.5,
+        "Itens": 1,
         "DetalhesItens": [
             {
-                "Descricao": "Bota de Segurança Bico PVC - (PAR)Calçado ocupacional tipo botina, fechamento em elástico, confeccionado em couro curtido ao cromo, palmilha de montagem em material sintético, solado poliuretano bi densidade injetado diretamente ao cabedal, sem biqueira de aço, isolante elétrico. Todos os tamanhos Deverá possuir Certificado de Aprovação válido e emitido pelo Ministério de Trabalho e Emprego. Todos os Tamanhos\r",
                 "Item": 6,
+                "Descricao": "Bota de Segurança Bico PVC - (PAR)Calçado ocupacional tipo botina, fechamento em elástico, confeccionado em couro curtido ao cromo, palmilha de montagem em material sintético, solado poliuretano bi densidade injetado diretamente ao cabedal, sem biqueira de aço, isolante elétrico. Todos os tamanhos Deverá possuir Certificado de Aprovação válido e emitido pelo Ministério de Trabalho e Emprego. Todos os Tamanhos\r",
                 "Qtd": 263.0,
                 "Valor": 13544.5
             }
-        ],
-        "Fornecedor": "R. DE O. SANTIL EPI",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 13544.5,
-        "UASG": "196"
+        ]
     },
     {
         "CNPJ": "47915446000100",
@@ -980,24 +1364,6 @@
         "UASG": "439"
     },
     {
-        "CNPJ": "37279287000140",
-        "Data": "20250115",
-        "DetalhesItens": [
-            {
-                "Descricao": "SERVIÇOS DE TRANSPORTE ESCOLAR",
-                "Item": 3,
-                "Qtd": 89900.0,
-                "Valor": 1154999.24
-            }
-        ],
-        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
-        "Itens": 1,
-        "Licitacao": "06002000012025",
-        "Orgao": "MUNICIPIO DE RIO NEGRO",
-        "Total": 1154999.24,
-        "UASG": "06002"
-    },
-    {
         "CNPJ": "42921840000137",
         "Data": "20250219",
         "Fornecedor": "LEANDRO ALBERTO KERBER LTDA",
@@ -1028,70 +1394,76 @@
         "UASG": "78"
     },
     {
-        "CNPJ": "32163902000135",
         "Data": "20250107",
+        "UASG": "13003",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "UF": "PR",
+        "Cidade": "Guaíra",
+        "Licitacao": "13003000032025",
+        "Numero": "00003/2025",
+        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
+        "CNPJ": "32163902000135",
+        "Total": 239200.0,
+        "Itens": 2,
         "DetalhesItens": [
             {
-                "Descricao": "Circuito com Inclusão 2 Plataformas.\nConforme memorial descritivo.",
                 "Item": 6,
+                "Descricao": "Circuito com Inclusão 2 Plataformas.\nConforme memorial descritivo.",
                 "Qtd": 2.0,
                 "Valor": 52000.0
             },
             {
-                "Descricao": "Circuito com Inclusão Compacto.\nConforme memorial descritivo.",
                 "Item": 7,
+                "Descricao": "Circuito com Inclusão Compacto.\nConforme memorial descritivo.",
                 "Qtd": 2.0,
                 "Valor": 187200.0
             }
-        ],
-        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
-        "Itens": 2,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 239200.0,
-        "UASG": "13003"
+        ]
     },
     {
-        "CNPJ": "15080472000179",
         "Data": "20250107",
+        "UASG": "13003",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "UF": "PR",
+        "Cidade": "Guaíra",
+        "Licitacao": "13003000032025",
+        "Numero": "00003/2025",
+        "Fornecedor": "AEG PLAYGROUNDS LTDA",
+        "CNPJ": "15080472000179",
+        "Total": 397840.0,
+        "Itens": 5,
         "DetalhesItens": [
             {
-                "Descricao": "Conjunto de Parque infantil temático Barco colorido.\nConforme memorial descritivo.",
                 "Item": 1,
+                "Descricao": "Conjunto de Parque infantil temático Barco colorido.\nConforme memorial descritivo.",
                 "Qtd": 2.0,
                 "Valor": 99800.0
             },
             {
-                "Descricao": "Conjunto de Parque infantil temático Avião colorido.\nConforme memorial descritivo.",
                 "Item": 2,
+                "Descricao": "Conjunto de Parque infantil temático Avião colorido.\nConforme memorial descritivo.",
                 "Qtd": 2.0,
                 "Valor": 153000.0
             },
             {
-                "Descricao": "Conjunto de Parque infantil temático Trem colorido.\nConforme memorial descritivo.",
                 "Item": 3,
+                "Descricao": "Conjunto de Parque infantil temático Trem colorido.\nConforme memorial descritivo.",
                 "Qtd": 2.0,
                 "Valor": 79800.0
             },
             {
-                "Descricao": "Conjunto de Parque infantil temático Trator colorido.\nConforme memorial descritivo.",
                 "Item": 4,
+                "Descricao": "Conjunto de Parque infantil temático Trator colorido.\nConforme memorial descritivo.",
                 "Qtd": 2.0,
                 "Valor": 41000.0
             },
             {
-                "Descricao": "Escalada infantil Domos no formato de meia esfera, fabricado em aço tubos redondos com diâmetro de no mínimo 3,50 metros e altura da parte central de 1,75, tubos galvanizados e pinturas eletrostática e acabamento no formato de flores coloridas.",
                 "Item": 8,
+                "Descricao": "Escalada infantil Domos no formato de meia esfera, fabricado em aço tubos redondos com diâmetro de no mínimo 3,50 metros e altura da parte central de 1,75, tubos galvanizados e pinturas eletrostática e acabamento no formato de flores coloridas.",
                 "Qtd": 4.0,
                 "Valor": 24240.0
             }
-        ],
-        "Fornecedor": "AEG PLAYGROUNDS LTDA",
-        "Itens": 5,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 397840.0,
-        "UASG": "13003"
+        ]
     },
     {
         "CNPJ": "02059560000147",
@@ -1132,24 +1504,6 @@
         "Orgao": "MUNICIPIO DE BOM JESUS DO AMPARO",
         "Total": 510500.0,
         "UASG": "81"
-    },
-    {
-        "CNPJ": "46418740000143",
-        "Data": "20250113",
-        "DetalhesItens": [
-            {
-                "Descricao": "Avental Para Alta TemperaturaAvental térmico Colaboradores que exercem atividades com exposição em calor (cozinha)\r",
-                "Item": 3,
-                "Qtd": 73.0,
-                "Valor": 3504.0
-            }
-        ],
-        "Fornecedor": "PALADIR LTDA",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 3504.0,
-        "UASG": "196"
     },
     {
         "CNPJ": "13259179000148",
@@ -1322,32 +1676,58 @@
         "UASG": "62600"
     },
     {
-        "CNPJ": "17294606000180",
         "Data": "20250107",
+        "UASG": "13003",
+        "Orgao": "MUNICIPIO DE GUAIRA",
+        "UF": "PR",
+        "Cidade": "Guaíra",
+        "Licitacao": "13003000032025",
+        "Numero": "00003/2025",
+        "Fornecedor": "SUPER COMERCIO E LOCACOES LTDA",
+        "CNPJ": "17294606000180",
+        "Total": 186376.0,
+        "Itens": 1,
         "DetalhesItens": [
             {
-                "Descricao": "Conjunto de Parque infantil colorido com estrutura principal (torres) em colunas de alumínio (5 torres). Conforme memorial descritivo.",
                 "Item": 5,
+                "Descricao": "Conjunto de Parque infantil colorido com estrutura principal (torres) em colunas de alumínio (5 torres). Conforme memorial descritivo.",
                 "Qtd": 4.0,
                 "Valor": 186376.0
             }
-        ],
-        "Fornecedor": "SUPER COMERCIO E LOCACOES LTDA",
-        "Itens": 1,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 186376.0,
-        "UASG": "13003"
+        ]
     },
     {
-        "CNPJ": "45999330000170",
         "Data": "20250127",
-        "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
-        "Itens": 3,
-        "Licitacao": "301000042025",
+        "UASG": "301",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Cidade": "Coronel Fabriciano",
+        "Licitacao": "301000042025",
+        "Numero": "00004/2025",
+        "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
+        "CNPJ": "45999330000170",
         "Total": 358740.0,
-        "UASG": "301"
+        "Itens": 3,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "COXA E SOBRECOXA CARNE DE AVE IN NATURA TIPO ANIMAL FRANGO TIPO CORTE COXA E SOBRECOXA APRESENTACAO INTEIRO ESTADO DE CONSERVACAO: CONGELADO PROCESSAMENTO: SEM PELE SEM OSSO\r",
+                "Qtd": 12750.0,
+                "Valor": 202725.0
+            },
+            {
+                "Item": 2,
+                "Descricao": "COXA E SOBRECOXA CARNE DE AVE IN NATURA TIPO ANIMAL FRANGO TIPO CORTE COXA E SOBRECOXA APRESENTACAO INTEIRO ESTADO DE CONSERVACAO: CONGELADO PROCESSAMENTO: SEM PELE SEM OSSO\r",
+                "Qtd": 4250.0,
+                "Valor": 67575.0
+            },
+            {
+                "Item": 8,
+                "Descricao": "ACEM MOIDA CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO MOIDA ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 4000.0,
+                "Valor": 88440.0
+            }
+        ]
     },
     {
         "CNPJ": "52795852000116",
@@ -1390,34 +1770,6 @@
         "UASG": "850"
     },
     {
-        "CNPJ": "15080472000179",
-        "Data": "20250107",
-        "Fornecedor": "AEG PLAYGROUNDS LTDA",
-        "Itens": 5,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 397840.0,
-        "UASG": "13003"
-    },
-    {
-        "CNPJ": "34840358000144",
-        "Data": "20250107",
-        "DetalhesItens": [
-            {
-                "Descricao": "PNEU 205/75 R16 8 LONAS",
-                "Item": 7,
-                "Qtd": 4.0,
-                "Valor": 1748.0
-            }
-        ],
-        "Fornecedor": "ZEUS COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 1748.0,
-        "UASG": "06005"
-    },
-    {
         "CNPJ": "36832659000151",
         "Data": "20250402",
         "Fornecedor": "JM COMERCIO DE CLIMATIZADORES LTDA",
@@ -1426,42 +1778,6 @@
         "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
         "Total": 714000.0,
         "UASG": "020"
-    },
-    {
-        "CNPJ": "55623647000161",
-        "Data": "20250107",
-        "DetalhesItens": [
-            {
-                "Descricao": "PNEU 185/65  R14 102/100 S",
-                "Item": 4,
-                "Qtd": 12.0,
-                "Valor": 3300.0
-            },
-            {
-                "Descricao": "PNEU 185/60 R14",
-                "Item": 5,
-                "Qtd": 21.0,
-                "Valor": 5018.79
-            },
-            {
-                "Descricao": "PNEU 185/70 R14 (88T)",
-                "Item": 6,
-                "Qtd": 20.0,
-                "Valor": 5740.0
-            },
-            {
-                "Descricao": "PNEU 225/70 R15 BORRACHUDO CAMIONETE 8 LONAS",
-                "Item": 8,
-                "Qtd": 4.0,
-                "Valor": 2336.0
-            }
-        ],
-        "Fornecedor": "GAMA PNEUS LTDA",
-        "Itens": 4,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 16394.79,
-        "UASG": "06005"
     },
     {
         "CNPJ": "47646580000152",
@@ -1554,14 +1870,25 @@
         "UASG": "1127"
     },
     {
-        "CNPJ": "05754099000130",
         "Data": "20250124",
-        "Fornecedor": "MRX TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "020000112025",
+        "UASG": "020",
         "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "UF": "SP",
+        "Cidade": "São José dos Campos",
+        "Licitacao": "020000112025",
+        "Numero": "00011/2025",
+        "Fornecedor": "MRX TECNOLOGIA LTDA",
+        "CNPJ": "05754099000130",
         "Total": 530000.0,
-        "UASG": "020"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "LOTE1-CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO (TI), CUJO OBJETO É A CONCESSÃO DE LICENÇA DE USO DE SISTEMA PARA ACOMPANHAMENTO E ANÁLISE DOS VALORES QUE COMPÕEM O ÍNDICE DE PARTICIPAÇÃO DOS MUNÍCIPIOS DO PRODUTO DE ARRECADAÇÃO DO IMPOSTO SOBRE OPERAÇÕES RELATIVAS A CIRCULAÇÃO DE MERCADORIAS E SOBRE PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE INTERESTADUAL E INTERMUNICIPAL E DE COMUNICAÇÃO (ICMS) DESTA MUNICIPALIDADE",
+                "Qtd": 1.0,
+                "Valor": 530000.0
+            }
+        ]
     },
     {
         "CNPJ": "18136904000104",
@@ -1614,28 +1941,31 @@
         "UASG": "231"
     },
     {
-        "CNPJ": "10158356000101",
         "Data": "20250107",
+        "UASG": "06005",
+        "Orgao": "MUNICIPIO DE CARAZINHO",
+        "UF": "RS",
+        "Cidade": "Carazinho",
+        "Licitacao": "06005016262024",
+        "Numero": "01626/2024",
+        "Fornecedor": "PNEUSTORECOMBR",
+        "CNPJ": "10158356000101",
+        "Total": 31704.0,
+        "Itens": 2,
         "DetalhesItens": [
             {
-                "Descricao": "PNEU 165/70 R13",
                 "Item": 1,
+                "Descricao": "PNEU 165/70 R13",
                 "Qtd": 36.0,
                 "Valor": 8640.0
             },
             {
-                "Descricao": "PNEU 1000 X 20, BORRACHUDO, PROFUNDIDADE MÍNIMA DE SULCO DE 23,1MM, MÍNIMO DE 16 LONAS, RADIAL, MISTO",
                 "Item": 11,
+                "Descricao": "PNEU 1000 X 20, BORRACHUDO, PROFUNDIDADE MÍNIMA DE SULCO DE 23,1MM, MÍNIMO DE 16 LONAS, RADIAL, MISTO",
                 "Qtd": 12.0,
                 "Valor": 23064.0
             }
-        ],
-        "Fornecedor": "PNEUSTORECOMBR",
-        "Itens": 2,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 31704.0,
-        "UASG": "06005"
+        ]
     },
     {
         "CNPJ": "24675507000103",
@@ -1688,14 +2018,25 @@
         "UASG": "07001"
     },
     {
-        "CNPJ": "10680757000127",
         "Data": "20250127",
-        "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
-        "Itens": 1,
-        "Licitacao": "620000062025",
+        "UASG": "620",
         "Orgao": "MUNICIPIO DE PITANGUI",
+        "UF": "MG",
+        "Cidade": "Pitangui",
+        "Licitacao": "620000062025",
+        "Numero": "00006/2025",
+        "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
+        "CNPJ": "10680757000127",
         "Total": 143950.0,
-        "UASG": "620"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 1,
+                "Descricao": "LOCAÇÃO POR HORA TRABALHADA DE VEÍCULOS DE GRANDE PORTE – MÁQUINA PESADA (TRATOR DE ESTEIRA) com motorista/operador, transporte do trator até o local do aterro, combustível e toda manutenção preventiva e corretiva, em atendimento a solicitação da Secretaria de Desenvolvimento Urbano e Serviços Públicos",
+                "Qtd": 1500.0,
+                "Valor": 143950.0
+            }
+        ]
     },
     {
         "CNPJ": "27651175000115",
@@ -1758,14 +2099,37 @@
         "UASG": "1404"
     },
     {
-        "CNPJ": "36705522000136",
         "Data": "20250121",
-        "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
-        "Itens": 3,
-        "Licitacao": "1000012025",
+        "UASG": "1",
         "Orgao": "MUNICIPIO DE RONDONOPOLIS",
+        "UF": "MT",
+        "Cidade": "Rondonópolis",
+        "Licitacao": "1000012025",
+        "Numero": "00001/2025",
+        "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
+        "CNPJ": "36705522000136",
         "Total": 174600.0,
-        "UASG": "1"
+        "Itens": 3,
+        "DetalhesItens": [
+            {
+                "Item": 125892,
+                "Descricao": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANALISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATADA, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 15 X 1,60 M DE ALTURA, COM VOLUME DE 600 M³. CONFORME TERMO DE REFERÊNCIA.",
+                "Qtd": 12.0,
+                "Valor": 58200.0
+            },
+            {
+                "Item": 125893,
+                "Descricao": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANÁLISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATANTE, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 20 X 1,60 DE ALTURA, COM VOLUME DE 800 M³. CONFORME TERMO DE REFERÊNCIA. ",
+                "Qtd": 12.0,
+                "Valor": 58200.0
+            },
+            {
+                "Item": 125894,
+                "Descricao": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANÁLISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATANTE, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 20 X 1,20 DE ALTURA, COM VOLUME DE 600 M³. CONFORME TERMO DE REFERÊNCIA. ",
+                "Qtd": 12.0,
+                "Valor": 58200.0
+            }
+        ]
     },
     {
         "CNPJ": "52597304000181",
@@ -2006,16 +2370,6 @@
         "Orgao": "MUNICIPIO DE COUTO DE MAGALHAES DE MINAS",
         "Total": 143963.88,
         "UASG": "943"
-    },
-    {
-        "CNPJ": "45806440000179",
-        "Data": "20250113",
-        "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 802.0,
-        "UASG": "196"
     },
     {
         "CNPJ": "07731777000175",
@@ -2408,14 +2762,37 @@
         "UASG": "301"
     },
     {
-        "CNPJ": "19032430000113",
         "Data": "20250124",
-        "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
-        "Itens": 3,
-        "Licitacao": "698000022025",
+        "UASG": "698",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Cidade": "Pitangueiras",
+        "Licitacao": "698000022025",
+        "Numero": "00002/2025",
+        "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
+        "CNPJ": "19032430000113",
         "Total": 23499.0,
-        "UASG": "698"
+        "Itens": 3,
+        "DetalhesItens": [
+            {
+                "Item": 5,
+                "Descricao": "TESOURA ESCOLAR",
+                "Qtd": 7000.0,
+                "Valor": 8323.0
+            },
+            {
+                "Item": 6,
+                "Descricao": "BORRACHA BRANCA COM CAPA PROTETORA",
+                "Qtd": 20000.0,
+                "Valor": 9980.0
+            },
+            {
+                "Item": 9,
+                "Descricao": "RÉGUA 30CM",
+                "Qtd": 4000.0,
+                "Valor": 5196.0
+            }
+        ]
     },
     {
         "CNPJ": "24675507000103",
@@ -2428,14 +2805,37 @@
         "UASG": "1441"
     },
     {
-        "CNPJ": "55695599000117",
         "Data": "20250107",
-        "Fornecedor": "MAGBA E-COMMERCE LTDA",
-        "Itens": 3,
-        "Licitacao": "06005016262024",
+        "UASG": "06005",
         "Orgao": "MUNICIPIO DE CARAZINHO",
+        "UF": "RS",
+        "Cidade": "Carazinho",
+        "Licitacao": "06005016262024",
+        "Numero": "01626/2024",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "CNPJ": "55695599000117",
         "Total": 47070.0,
-        "UASG": "06005"
+        "Itens": 3,
+        "DetalhesItens": [
+            {
+                "Item": 2,
+                "Descricao": "PNEU 175/70 R13",
+                "Qtd": 16.0,
+                "Valor": 3776.0
+            },
+            {
+                "Item": 3,
+                "Descricao": "PNEU BITOLA 175/70R14",
+                "Qtd": 37.0,
+                "Valor": 9694.0
+            },
+            {
+                "Item": 9,
+                "Descricao": "PNEU TRASEIRO 18/4/30, TT 12 LONAS, APLICAÇÃO TRATOR",
+                "Qtd": 12.0,
+                "Valor": 33600.0
+            }
+        ]
     },
     {
         "CNPJ": "34479102000153",
@@ -2496,46 +2896,6 @@
         "Orgao": "ITAJUBA CAMARA MUNICIPAL",
         "Total": 289344.0,
         "UASG": "850"
-    },
-    {
-        "CNPJ": "97530228000125",
-        "Data": "20250113",
-        "Fornecedor": "R. DE O. SANTIL EPI",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 13544.5,
-        "UASG": "196"
-    },
-    {
-        "CNPJ": "55695599000117",
-        "Data": "20250107",
-        "DetalhesItens": [
-            {
-                "Descricao": "PNEU 175/70 R13",
-                "Item": 2,
-                "Qtd": 16.0,
-                "Valor": 3776.0
-            },
-            {
-                "Descricao": "PNEU BITOLA 175/70R14",
-                "Item": 3,
-                "Qtd": 37.0,
-                "Valor": 9694.0
-            },
-            {
-                "Descricao": "PNEU TRASEIRO 18/4/30, TT 12 LONAS, APLICAÇÃO TRATOR",
-                "Item": 9,
-                "Qtd": 12.0,
-                "Valor": 33600.0
-            }
-        ],
-        "Fornecedor": "MAGBA E-COMMERCE LTDA",
-        "Itens": 3,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 47070.0,
-        "UASG": "06005"
     },
     {
         "CNPJ": "43252294000151",
@@ -2616,16 +2976,6 @@
         "Orgao": "MUNICIPIO DE BOM JESUS DO AMPARO",
         "Total": 85840.0,
         "UASG": "81"
-    },
-    {
-        "CNPJ": "10158356000101",
-        "Data": "20250107",
-        "Fornecedor": "PNEUSTORECOMBR",
-        "Itens": 2,
-        "Licitacao": "06005016262024",
-        "Orgao": "MUNICIPIO DE CARAZINHO",
-        "Total": 31704.0,
-        "UASG": "06005"
     },
     {
         "CNPJ": "35215257000145",
@@ -2758,16 +3108,6 @@
         "UASG": "1301"
     },
     {
-        "CNPJ": "32163902000135",
-        "Data": "20250107",
-        "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
-        "Itens": 2,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 239200.0,
-        "UASG": "13003"
-    },
-    {
         "CNPJ": "00304166000100",
         "Data": "20250207",
         "Fornecedor": "Laboratório Bona Ltda",
@@ -2858,14 +3198,31 @@
         "UASG": "781"
     },
     {
-        "CNPJ": "49042895000116",
         "Data": "20250124",
-        "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
-        "Itens": 2,
-        "Licitacao": "698000022025",
+        "UASG": "698",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Cidade": "Pitangueiras",
+        "Licitacao": "698000022025",
+        "Numero": "00002/2025",
+        "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
+        "CNPJ": "49042895000116",
         "Total": 10675.0,
-        "UASG": "698"
+        "Itens": 2,
+        "DetalhesItens": [
+            {
+                "Item": 4,
+                "Descricao": "FITA ADESIVA CREPE 19MM X 50M",
+                "Qtd": 2500.0,
+                "Valor": 6225.0
+            },
+            {
+                "Item": 10,
+                "Descricao": "PAPEL VERGÊ A4 180G 210 X 297MM - PCT COM 50",
+                "Qtd": 500.0,
+                "Valor": 4450.0
+            }
+        ]
     },
     {
         "CNPJ": "36975874000101",
@@ -2988,42 +3345,6 @@
         "UASG": "703"
     },
     {
-        "CNPJ": "46687136000112",
-        "Data": "20250113",
-        "DetalhesItens": [
-            {
-                "Descricao": "AVENTAL DE PVCAvental confeccionado em tecido sintético (malha poliéster revestido de PVC em ambas as faces), com tiras do próprio material para ajuste, soldada eletronicamente. Utilização: Proteção do usuário contra respingos d'água e respingos de produtos químicos. Tamanhos: P, M, G, GG e XG. Certificação: INMETRO e Certificado de aprovação - CA pelo Ministério do Trabalho. \r",
-                "Item": 1,
-                "Qtd": 261.0,
-                "Valor": 1612.98
-            },
-            {
-                "Descricao": "Avental de Raspa de CouroAvental de segurança confeccionada em raspa natural curtida ao cromo, sem emendas, com fivelas metálicas, costurado com linha nylon, largura de no mínimo 60 cm e comprimento total de no mínimo 120 cm. Aprovado para proteção do corpo do usuário contra agentes abrasivos, escoriantes e térmicos provenientes de operações de soldagem e processos similares. Com resultado de níveis de desempenho ?CLASSE 2? ? NORMA TECNICA 11611:2007. Deverá possuir Certificado de Aprovação válido e emitido pelo Ministério de Trabalho e Emprego. Deverá entregar juntamente com aproposta comercial o Certificado de Aprovação ? CA e Catálogo Técnico. \r",
-                "Item": 2,
-                "Qtd": 57.0,
-                "Valor": 1846.8
-            },
-            {
-                "Descricao": "Boné ÁrabeBoné confeccionado em brim, com proteção para a nuca, fechamento frontal na altura do pescoço através de velcro e com aba.\r",
-                "Item": 4,
-                "Qtd": 261.0,
-                "Valor": 2395.98
-            },
-            {
-                "Descricao": "Creme Protetor Grupo 2Creme óleo resistente que aplicado à pele forma uma película protetora invisível contra os ataques de produtos, tais como: óleos brutos, solventes, metiletilcetona, acetona, thinner, gasolina, óleo mineral, óleo diesel, graxas, tinta a base de óleo, sem que o usuário perca a sensibilidade ao tato.\r",
-                "Item": 10,
-                "Qtd": 100.0,
-                "Valor": 23868.0
-            }
-        ],
-        "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
-        "Itens": 4,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 29723.760000000002,
-        "UASG": "196"
-    },
-    {
         "CNPJ": "41823463000130",
         "Data": "20250307",
         "Fornecedor": "COMERCIAL SILVESTRE LTDA",
@@ -3042,16 +3363,6 @@
         "Orgao": "MUNICIPIO DE GUAXUPE",
         "Total": 12240.0,
         "UASG": "277"
-    },
-    {
-        "CNPJ": "17294606000180",
-        "Data": "20250107",
-        "Fornecedor": "SUPER COMERCIO E LOCACOES LTDA",
-        "Itens": 1,
-        "Licitacao": "13003000032025",
-        "Orgao": "MUNICIPIO DE GUAIRA",
-        "Total": 186376.0,
-        "UASG": "13003"
     },
     {
         "CNPJ": "53696164000161",
@@ -3144,14 +3455,25 @@
         "UASG": "422"
     },
     {
-        "CNPJ": "13851726000180",
         "Data": "20250113",
-        "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
-        "Itens": 1,
-        "Licitacao": "196000952024",
+        "UASG": "196",
         "Orgao": "MUNICIPIO DE AIURUOCA",
+        "UF": "MG",
+        "Cidade": "Aiuruoca",
+        "Licitacao": "196000952024",
+        "Numero": "00095/2024",
+        "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
+        "CNPJ": "13851726000180",
         "Total": 128.66,
-        "UASG": "196"
+        "Itens": 1,
+        "DetalhesItens": [
+            {
+                "Item": 8,
+                "Descricao": "Calçado de segurança (EVA)Colaboradores que trabalham com riscos de queda de objetos sobre os pés, materiais cortantes, perfurantes, abrasivos ou escoriantes. Cores: Preto para trabalhadores da limpeza e branco para trabalhadores da cozinha.\r",
+                "Qtd": 42.0,
+                "Valor": 128.66
+            }
+        ]
     },
     {
         "CNPJ": "32634899000190",
@@ -3234,22 +3556,25 @@
         "UASG": "1600"
     },
     {
-        "CNPJ": "21935659000100",
         "Data": "20250108",
+        "UASG": "301",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Cidade": "Coronel Fabriciano",
+        "Licitacao": "301001532024",
+        "Numero": "00153/2024",
+        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "CNPJ": "21935659000100",
+        "Total": 13695180.0,
+        "Itens": 1,
         "DetalhesItens": [
             {
-                "Descricao": "CONTRATAÇÃO DE EMPRESA NA ADMINISTRAÇÃO E FORNECIMENTO DE VALE ALIMENTAÇÃO ATRAVÉS DE CARTÃO ELETRÔNICO COM CHIP, CONTEMPLANDO CARGA E RECARGA DE VALOR DE FACE, NA MODALIDADE ON-LINE, VISANDO À AQUISIÇÃO DE GÊNERO ALIMENTÍCIO IN NATURA EM ESTABELECIMENTOS CREDENCIADOS, EM ÂMBITO DO MUNICÍPIO DE CORONEL FABRICIANO E NAS DEMAIS CIDADES DA REGIÃO METROPOLITANA DO VALE DO AÇO.\r",
                 "Item": 1,
+                "Descricao": "CONTRATAÇÃO DE EMPRESA NA ADMINISTRAÇÃO E FORNECIMENTO DE VALE ALIMENTAÇÃO ATRAVÉS DE CARTÃO ELETRÔNICO COM CHIP, CONTEMPLANDO CARGA E RECARGA DE VALOR DE FACE, NA MODALIDADE ON-LINE, VISANDO À AQUISIÇÃO DE GÊNERO ALIMENTÍCIO IN NATURA EM ESTABELECIMENTOS CREDENCIADOS, EM ÂMBITO DO MUNICÍPIO DE CORONEL FABRICIANO E NAS DEMAIS CIDADES DA REGIÃO METROPOLITANA DO VALE DO AÇO.\r",
                 "Qtd": 44400.0,
                 "Valor": 13695180.0
             }
-        ],
-        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
-        "Itens": 1,
-        "Licitacao": "301001532024",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 13695180.0,
-        "UASG": "301"
+        ]
     },
     {
         "CNPJ": "09251627000190",
@@ -3260,16 +3585,6 @@
         "Orgao": "MUNICIPIO DE ENTRE FOLHAS",
         "Total": 850.0,
         "UASG": "1322"
-    },
-    {
-        "CNPJ": "21935659000100",
-        "Data": "20250108",
-        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
-        "Itens": 1,
-        "Licitacao": "301001532024",
-        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 13695180.0,
-        "UASG": "301"
     },
     {
         "CNPJ": "41856036000159",
@@ -3310,30 +3625,6 @@
         "Orgao": "MUNICIPIO DE VENANCIO AIRES",
         "Total": 3468.05,
         "UASG": "62600"
-    },
-    {
-        "CNPJ": "56969923000100",
-        "Data": "20250115",
-        "DetalhesItens": [
-            {
-                "Descricao": "SERVIÇOS DE TRANSPORTE ESCOLAR",
-                "Item": 1,
-                "Qtd": 96200.0,
-                "Valor": 1048993.66
-            },
-            {
-                "Descricao": "SERVIÇOS DE TRANSPORTE ESCOLAR",
-                "Item": 2,
-                "Qtd": 126980.0,
-                "Valor": 867997.186
-            }
-        ],
-        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
-        "Itens": 2,
-        "Licitacao": "06002000012025",
-        "Orgao": "MUNICIPIO DE RIO NEGRO",
-        "Total": 1916990.846,
-        "UASG": "06002"
     },
     {
         "CNPJ": "48214791000189",
@@ -3544,24 +3835,6 @@
         "Orgao": "MUNICIPIO DE RIO MANSO",
         "Total": 194000.0,
         "UASG": "1370"
-    },
-    {
-        "CNPJ": "13851726000180",
-        "Data": "20250113",
-        "DetalhesItens": [
-            {
-                "Descricao": "Calçado de segurança (EVA)Colaboradores que trabalham com riscos de queda de objetos sobre os pés, materiais cortantes, perfurantes, abrasivos ou escoriantes. Cores: Preto para trabalhadores da limpeza e branco para trabalhadores da cozinha.\r",
-                "Item": 8,
-                "Qtd": 42.0,
-                "Valor": 128.66
-            }
-        ],
-        "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
-        "Itens": 1,
-        "Licitacao": "196000952024",
-        "Orgao": "MUNICIPIO DE AIURUOCA",
-        "Total": 128.66,
-        "UASG": "196"
     },
     {
         "CNPJ": "19919775000193",
