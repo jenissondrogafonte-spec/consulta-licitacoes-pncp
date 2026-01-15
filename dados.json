@@ -666,22 +666,22 @@
         ]
     },
     {
-        "Data": "20250107",
+        "DataResult": "2025-01-23T11:16:06",
         "UASG": "06005",
+        "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
         "UF": "RS",
-        "Cidade": "Carazinho",
-        "Licitacao": "06005016262024",
-        "Numero": "01626/2024",
+        "Municipio": "Carazinho",
         "Fornecedor": "ZEUS COMERCIAL LTDA",
         "CNPJ": "34840358000144",
-        "Total": 1748.0,
-        "Itens": 1,
-        "DetalhesItens": [
+        "InicioRec": "",
+        "FimRec": "2025-02-05T08:30:00",
+        "Licitacao": "06005016262024",
+        "Itens": [
             {
                 "Item": 7,
-                "Descricao": "PNEU 205/75 R16 8 LONAS",
-                "Qtd": 4.0,
+                "Desc": "PNEU 205/75 R16 8 LONAS",
+                "Status": "Venceu",
                 "Valor": 1748.0
             }
         ]
@@ -840,40 +840,40 @@
         "UASG": "301"
     },
     {
-        "Data": "20250107",
+        "DataResult": "2025-01-23T11:16:06",
         "UASG": "06005",
+        "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
         "UF": "RS",
-        "Cidade": "Carazinho",
-        "Licitacao": "06005016262024",
-        "Numero": "01626/2024",
+        "Municipio": "Carazinho",
         "Fornecedor": "GAMA PNEUS LTDA",
         "CNPJ": "55623647000161",
-        "Total": 16394.79,
-        "Itens": 4,
-        "DetalhesItens": [
+        "InicioRec": "",
+        "FimRec": "2025-02-05T08:30:00",
+        "Licitacao": "06005016262024",
+        "Itens": [
             {
                 "Item": 4,
-                "Descricao": "PNEU 185/65  R14 102/100 S",
-                "Qtd": 12.0,
+                "Desc": "PNEU 185/65  R14 102/100 S",
+                "Status": "Venceu",
                 "Valor": 3300.0
             },
             {
                 "Item": 5,
-                "Descricao": "PNEU 185/60 R14",
-                "Qtd": 21.0,
+                "Desc": "PNEU 185/60 R14",
+                "Status": "Venceu",
                 "Valor": 5018.79
             },
             {
                 "Item": 6,
-                "Descricao": "PNEU 185/70 R14 (88T)",
-                "Qtd": 20.0,
+                "Desc": "PNEU 185/70 R14 (88T)",
+                "Status": "Venceu",
                 "Valor": 5740.0
             },
             {
                 "Item": 8,
-                "Descricao": "PNEU 225/70 R15 BORRACHUDO CAMIONETE 8 LONAS",
-                "Qtd": 4.0,
+                "Desc": "PNEU 225/70 R15 BORRACHUDO CAMIONETE 8 LONAS",
+                "Status": "Venceu",
                 "Valor": 2336.0
             }
         ]
@@ -2440,28 +2440,28 @@
         "UASG": "231"
     },
     {
-        "Data": "20250107",
+        "DataResult": "2025-01-23T11:16:06",
         "UASG": "06005",
+        "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
         "UF": "RS",
-        "Cidade": "Carazinho",
-        "Licitacao": "06005016262024",
-        "Numero": "01626/2024",
+        "Municipio": "Carazinho",
         "Fornecedor": "PNEUSTORECOMBR",
         "CNPJ": "10158356000101",
-        "Total": 31704.0,
-        "Itens": 2,
-        "DetalhesItens": [
+        "InicioRec": "",
+        "FimRec": "2025-02-05T08:30:00",
+        "Licitacao": "06005016262024",
+        "Itens": [
             {
                 "Item": 1,
-                "Descricao": "PNEU 165/70 R13",
-                "Qtd": 36.0,
+                "Desc": "PNEU 165/70 R13",
+                "Status": "Venceu",
                 "Valor": 8640.0
             },
             {
                 "Item": 11,
-                "Descricao": "PNEU 1000 X 20, BORRACHUDO, PROFUNDIDADE MÍNIMA DE SULCO DE 23,1MM, MÍNIMO DE 16 LONAS, RADIAL, MISTO",
-                "Qtd": 12.0,
+                "Desc": "PNEU 1000 X 20, BORRACHUDO, PROFUNDIDADE MÍNIMA DE SULCO DE 23,1MM, MÍNIMO DE 16 LONAS, RADIAL, MISTO",
+                "Status": "Venceu",
                 "Valor": 23064.0
             }
         ]
@@ -3611,34 +3611,34 @@
         "UASG": "1441"
     },
     {
-        "Data": "20250107",
+        "DataResult": "2025-01-23T11:16:06",
         "UASG": "06005",
+        "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
         "UF": "RS",
-        "Cidade": "Carazinho",
-        "Licitacao": "06005016262024",
-        "Numero": "01626/2024",
+        "Municipio": "Carazinho",
         "Fornecedor": "MAGBA E-COMMERCE LTDA",
         "CNPJ": "55695599000117",
-        "Total": 47070.0,
-        "Itens": 3,
-        "DetalhesItens": [
+        "InicioRec": "",
+        "FimRec": "2025-02-05T08:30:00",
+        "Licitacao": "06005016262024",
+        "Itens": [
             {
                 "Item": 2,
-                "Descricao": "PNEU 175/70 R13",
-                "Qtd": 16.0,
+                "Desc": "PNEU 175/70 R13",
+                "Status": "Venceu",
                 "Valor": 3776.0
             },
             {
                 "Item": 3,
-                "Descricao": "PNEU BITOLA 175/70R14",
-                "Qtd": 37.0,
+                "Desc": "PNEU BITOLA 175/70R14",
+                "Status": "Venceu",
                 "Valor": 9694.0
             },
             {
                 "Item": 9,
-                "Descricao": "PNEU TRASEIRO 18/4/30, TT 12 LONAS, APLICAÇÃO TRATOR",
-                "Qtd": 12.0,
+                "Desc": "PNEU TRASEIRO 18/4/30, TT 12 LONAS, APLICAÇÃO TRATOR",
+                "Status": "Venceu",
                 "Valor": 33600.0
             }
         ]
@@ -4723,22 +4723,22 @@
         "UASG": "1600"
     },
     {
-        "Data": "20250108",
+        "DataResult": "2025-02-11T14:40:30",
         "UASG": "301",
+        "Edital": "00153/2024",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
         "UF": "MG",
-        "Cidade": "Coronel Fabriciano",
-        "Licitacao": "301001532024",
-        "Numero": "00153/2024",
+        "Municipio": "Coronel Fabriciano",
         "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
         "CNPJ": "21935659000100",
-        "Total": 13695180.0,
-        "Itens": 1,
-        "DetalhesItens": [
+        "InicioRec": "",
+        "FimRec": "2025-02-27T13:00:00",
+        "Licitacao": "301001532024",
+        "Itens": [
             {
                 "Item": 1,
-                "Descricao": "CONTRATAÇÃO DE EMPRESA NA ADMINISTRAÇÃO E FORNECIMENTO DE VALE ALIMENTAÇÃO ATRAVÉS DE CARTÃO ELETRÔNICO COM CHIP, CONTEMPLANDO CARGA E RECARGA DE VALOR DE FACE, NA MODALIDADE ON-LINE, VISANDO À AQUISIÇÃO DE GÊNERO ALIMENTÍCIO IN NATURA EM ESTABELECIMENTOS CREDENCIADOS, EM ÂMBITO DO MUNICÍPIO DE CORONEL FABRICIANO E NAS DEMAIS CIDADES DA REGIÃO METROPOLITANA DO VALE DO AÇO.\r",
-                "Qtd": 44400.0,
+                "Desc": "CONTRATAÇÃO DE EMPRESA NA ADMINISTRAÇÃO E FORNECIMENTO DE VALE ALIMENTAÇÃO ATRAVÉS DE CARTÃO ELETRÔNICO COM CHIP, CONTEMPLANDO CARGA E RECARGA DE VALOR DE FACE, NA MODALIDADE ON-LINE, VISANDO À AQUISIÇÃO DE GÊNERO ALIMENTÍCIO IN NATURA EM ESTABELECIMENTOS CREDENCIADOS, EM ÂMBITO DO MUNICÍPIO DE CORONEL FABRICIANO E NAS DEMAIS CIDADES DA REGIÃO METROPOLITANA DO VALE DO AÇO.\r",
+                "Status": "Venceu",
                 "Valor": 13695180.0
             }
         ]
