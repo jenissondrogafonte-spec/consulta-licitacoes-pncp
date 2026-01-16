@@ -29,18 +29,17 @@
         <div class="row g-2">
             <div class="col-md-1"><label class="form-label fw-bold">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
             <div class="col-md-1"><label class="form-label fw-bold">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="form-label fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm" maxlength="2"></div>
             <div class="col-md-2"><label class="form-label fw-bold">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
             <div class="col-md-2"><label class="form-label fw-bold">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
-            <div class="col-md-1.5"><label class="form-label fw-bold">Data Inicial</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
-            <div class="col-md-1.5"><label class="form-label fw-bold">Data Final</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
-            <div class="col-md-2 d-flex align-items-end gap-1">
-                <button class="btn btn-primary btn-sm w-100" onclick="filtrar()">Pesquisar</button>
-                <button class="btn btn-light btn-sm w-100 border" onclick="limpar()">Limpar</button>
+            <div class="col-md-1.5"><label class="form-label fw-bold">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
+            <div class="col-md-1.5"><label class="form-label fw-bold">Data Fim</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
+            <div class="col-md-1 d-flex align-items-end gap-1">
+                <button class="btn btn-primary btn-sm w-100" onclick="filtrar()">OK</button>
+                <button class="btn btn-light btn-sm w-100 border" onclick="limpar()"><i class="fas fa-eraser"></i></button>
             </div>
         </div>
     </div>
-
     <div id="lista" class="row g-3"></div>
 </div>
 
@@ -48,7 +47,7 @@
     <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content shadow border-0">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold">Itens do Fornecedor no Edital</h5>
+                <h5 class="modal-title fw-bold">Detalhamento por Item</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-0">
@@ -56,7 +55,7 @@
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0">
                         <thead class="table-dark">
-                            <tr><th class="ps-4">Item</th><th>Descrição</th><th>Qtd</th><th>Unitário</th><th>Total</th></tr>
+                            <tr><th>Item</th><th>Descrição</th><th>Qtd</th><th>Unitário</th><th>Total</th></tr>
                         </thead>
                         <tbody id="corpoModal"></tbody>
                     </table>
@@ -74,11 +73,9 @@
         try {
             const r = await fetch('dados.json?v=' + Date.now());
             dadosOriginal = await r.json();
-            document.getElementById('contador').innerText = `${dadosOriginal.length} Editais/Vencedores`;
+            document.getElementById('contador').innerText = `${dadosOriginal.length} Resultados Únicos`;
             renderizar(dadosOriginal);
-        } catch (e) { 
-            document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><h5>Erro ao carregar dados.json</h5></div>`;
-        }
+        } catch (e) { console.error("Erro ao carregar"); }
     }
 
     function renderizar(lista) {
@@ -89,11 +86,11 @@
             <div class="col-md-4">
                 <div class="card res-card p-3">
                     <div class="d-flex justify-content-between mb-2">
-                        <span class="badge bg-light text-dark border">${i.DataResult ? i.DataResult.split('T')[0] : '---'}</span>
+                        <span class="badge bg-light text-dark border">${i.DataResult.split('T')[0]}</span>
                         <small class="text-muted fw-bold">UASG: ${i.UASG}</small>
                     </div>
                     <h6 class="fw-bold text-primary text-truncate mb-1" title="${i.Orgao}">${i.Orgao}</h6>
-                    <p class="small text-muted mb-2">${i.Municipio || 'N/I'} - ${i.UF || '--'} | Edital: ${i.Edital}</p>
+                    <p class="small text-muted mb-2">${i.Municipio || '---'} - ${i.UF} | Edital: ${i.Edital}</p>
                     
                     <div class="row g-1 mb-3">
                         <div class="col-4"><div class="stats-box bg-hml">HML: ${res.Homologados}</div></div>
@@ -102,13 +99,13 @@
                     </div>
 
                     <div class="p-2 border rounded bg-light mb-3">
-                        <small class="d-block fw-bold text-truncate">${i.Fornecedor || 'ITEM SEM VENCEDOR'}</small>
+                        <small class="d-block fw-bold text-truncate">${i.Fornecedor}</small>
                         <small class="text-muted">CNPJ: ${i.CNPJ}</small>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center mt-auto">
+                    <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
                         <span class="fw-bold text-success">R$ ${calcTotal(i.Itens)}</span>
-                        <button class="btn btn-sm btn-primary" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
+                        <button class="btn btn-sm btn-primary px-3" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
                     </div>
                 </div>
             </div>`;
@@ -117,21 +114,21 @@
 
     function calcTotal(itens) {
         if(!itens) return "0,00";
-        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total || curr.Valor) || 0), 0);
+        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total) || 0), 0);
         return t.toLocaleString('pt-BR', {minimumFractionDigits: 2});
     }
 
     function verDetalhes(idL, cnpj) {
         const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
         if(!i) return;
-        document.getElementById('infoLicitacao').innerHTML = `<h6>${i.Orgao}</h6><p class="small mb-0"><b>Edital:</b> ${i.Edital} | <b>Empresa:</b> ${i.Fornecedor}</p>`;
-        document.getElementById('corpoModal').innerHTML = (i.Itens || []).map(it => `
+        document.getElementById('infoLicitacao').innerHTML = `<h6>${i.Orgao}</h6><p class="small mb-0"><b>Edital:</b> ${i.Edital} | <b>UASG:</b> ${i.UASG}</p>`;
+        document.getElementById('corpoModal').innerHTML = i.Itens.map(it => `
             <tr>
                 <td class="ps-4 fw-bold">${it.Item}</td>
                 <td class="small">${it.Desc}</td>
                 <td>${it.Qtd || '--'}</td>
                 <td>R$ ${(it.Unitario || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                <td class="fw-bold">R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                <td class="fw-bold">R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
             </tr>`).join('');
         new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
@@ -147,19 +144,14 @@
             df: document.getElementById('fDataFim').value
         };
         const filtrados = dadosOriginal.filter(i => {
-            const data = i.DataResult ? i.DataResult.split('T')[0] : "";
-            const matchU = !query.u || i.UASG.includes(query.u);
-            const matchE = !query.e || i.Edital.includes(query.e);
-            const matchUF = !query.uf || i.UF === query.uf;
-            const matchM = !query.m || (i.Municipio || "").toLowerCase().includes(query.m);
-            const matchF = !query.f || (i.Fornecedor || "").toLowerCase().includes(query.f) || i.CNPJ.includes(query.f);
-            
-            let matchD = true;
-            if (query.di && query.df) matchD = data >= query.di && data <= query.df;
-            else if (query.di) matchD = data >= query.di;
-            else if (query.df) matchD = data <= query.df;
-
-            return matchU && matchE && matchUF && matchM && matchF && matchD;
+            const data = i.DataResult.split('T')[0];
+            const matchData = (!query.di || data >= query.di) && (!query.df || data <= query.df);
+            return (!query.u || i.UASG.includes(query.u)) &&
+                   (!query.e || i.Edital.includes(query.e)) &&
+                   (!query.uf || i.UF === query.uf) &&
+                   (!query.m || (i.Municipio || "").toLowerCase().includes(query.m)) &&
+                   (!query.f || i.Fornecedor.toLowerCase().includes(query.f) || i.CNPJ.includes(query.f)) &&
+                   matchData;
         });
         renderizar(filtrados);
     }
@@ -168,7 +160,6 @@
         document.querySelectorAll('input').forEach(i => i.value = '');
         renderizar(dadosOriginal);
     }
-
     carregar();
 </script>
 </body>
