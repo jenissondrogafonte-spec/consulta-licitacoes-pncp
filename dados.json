@@ -1,1 +1,3323 @@
-[]
+[
+    {
+        "DataResult": "2025-02-11T14:40:30",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-27T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2024",
+        "UASG": "301",
+        "Edital": "00153/2024",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "CNPJ": "21935659000100",
+        "Licitacao": "301001532024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CONTRATAÇÃO DE EMPRESA NA ADMINISTRAÇÃO E FORNECIMENTO DE VALE ALIMENTAÇÃO ATRAVÉS DE CARTÃO ELETRÔNICO COM CHIP, CONTEMPLANDO CARGA E RECARGA DE VALOR DE FACE, NA MODALIDADE ON-LINE, VISANDO À AQUISIÇÃO DE GÊNERO ALIMENTÍCIO IN NATURA EM ESTABELECIMENTOS CREDENCIADOS, EM ÂMBITO DO MUNICÍPIO DE CORONEL FABRICIANO E NAS DEMAIS CIDADES DA REGIÃO METROPOLITANA DO VALE DO AÇO.\r",
+                "Qtd": 44400.0,
+                "Unitario": 308.45,
+                "Total": 13695180.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-31T14:07:52",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-03T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "06002",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "UF": "PR",
+        "Municipio": "Rio Negro",
+        "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
+        "CNPJ": "56969923000100",
+        "Licitacao": "06002000012025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇOS DE TRANSPORTE ESCOLAR",
+                "Qtd": 96200.0,
+                "Unitario": 10.9043,
+                "Total": 1048993.66,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "SERVIÇOS DE TRANSPORTE ESCOLAR",
+                "Qtd": 126980.0,
+                "Unitario": 6.8357,
+                "Total": 867997.186,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-31T14:07:52",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-03T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "06002",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE RIO NEGRO",
+        "UF": "PR",
+        "Municipio": "Rio Negro",
+        "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
+        "CNPJ": "37279287000140",
+        "Licitacao": "06002000012025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "SERVIÇOS DE TRANSPORTE ESCOLAR",
+                "Qtd": 89900.0,
+                "Unitario": 12.8476,
+                "Total": 1154999.24,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-29T09:15:31",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-11T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "343",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE SAO GONCALO DO PARA",
+        "UF": "MG",
+        "Municipio": "São Gonçalo do Pará",
+        "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
+        "CNPJ": "51011416000146",
+        "Licitacao": "343000012025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "GALÃO DE 20 LITROS OLEO HIDRAULICO SAE 68 PARA RETROESCAVADEIRA CASE 580 L, COM CERTIFICADO TS 16.949.",
+                "Qtd": 50.0,
+                "Unitario": 147.9,
+                "Total": 7395.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "GALÃO DE 20 LITROS DE ÓLEO DIFERENCIAL",
+                "Qtd": 30.0,
+                "Unitario": 292.9,
+                "Total": 8787.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "GALÕES 20 LITROS ÓLEO LUBRIFICANTE SAE 15W40 PARA VEICULOS A DIESEL (CAMINHÕES) COM CERTIFICADO TS 16.949.",
+                "Qtd": 80.0,
+                "Unitario": 220.0,
+                "Total": 17600.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "GALÃO DE 20 LITROS DE ÓLEO DE CAIXA SAE",
+                "Qtd": 40.0,
+                "Unitario": 346.9,
+                "Total": 13876.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "GALÃO DE 20 LITROS DE ÓLEO DE DIREÇÃO HIDRÁULICA ATF TIPO A",
+                "Qtd": 30.0,
+                "Unitario": 324.0,
+                "Total": 9720.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "GALÃO DE 20 LITROS DE ÓLEO PARA MOTOR A DIESEL 10W40",
+                "Qtd": 20.0,
+                "Unitario": 500.0,
+                "Total": 10000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "GALÃO DE 20 LITROS DE ÓLEO HIDRÁULICO ATF OH50 COM CERITICADO TS 16.949",
+                "Qtd": 20.0,
+                "Unitario": 479.0,
+                "Total": 9580.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "OLEO MOTOR",
+                "Qtd": 200.0,
+                "Unitario": 31.0,
+                "Total": 6200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "GALÃO DE 20 LITROS DE GRAXA AUTOMOTIVA DE MÚLTIPLAS APLICAÇÕES NLGI 2",
+                "Qtd": 60.0,
+                "Unitario": 610.0,
+                "Total": 36600.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "ADITIVO DE RADIADOR 1 LITRO (GASOLINA)",
+                "Qtd": 100.0,
+                "Unitario": 11.5,
+                "Total": 1150.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-05T15:27:27",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T09:59:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "404340",
+        "Edital": "00219/2025",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
+        "CNPJ": "01645409000390",
+        "Licitacao": "404340002192025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ACESSORIO: DILATADOR",
+                "Qtd": 252.0,
+                "Unitario": 125.23,
+                "Total": 31557.96,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "ESTIMULACAO: BICAMERAL",
+                "Qtd": 142.0,
+                "Unitario": 3758.41,
+                "Total": 533694.22,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "MARCAPASSO: DEFINITIVO, TIPO: ENDOCARDIO ATRIAL ATIVO, MARCA: N/A, ESTIMULACAO: UNI/ BIPOLAR, EXTREMIDADE DISTAL: N/A, MATERIAL: FIO ESTIMULADOR REVESTIDO DE SILICONE, CALIBRE: 5F~7F, COMPRIMENTO: 53~60CM, ACESSORIO: N/A",
+                "Qtd": 239.0,
+                "Unitario": 912.23,
+                "Total": 218022.97,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "MARCAPASSO: DEFINITIVO BICAMERAL, TIPO: ENDOCARDIO VENTRICULAR ATIVO, MARCA: N/A, ESTIMULACAO: UNI/ BIPOLAR, EXTREMIDADE DISTAL: MECANISMO HELICOIDAL DE FIXACAO ATIVA, MATERIAL: FIO ESTIMULADOR REVESTIDO DE SILICONE, COMPATIVEL COM RESSONANCIA NUCLEAR MAGNETICA (RNM), CALIBRE: 5FR~7FR, COMPRIMENTO: 50CM ~ 65CM, ACESSORIO: COM CORTICOIDE E COMPATIVEL COM RESSONANCIA NUCLEAR MAGNETICA (RNM), FORMA FORNECIMENTO: UNIDADE",
+                "Qtd": 239.0,
+                "Unitario": 912.23,
+                "Total": 218022.97,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 4,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-06T17:36:21",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "548",
+        "Edital": "00002/2025",
+        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO CENTRO NORDESTE",
+        "UF": "MG",
+        "Municipio": "Guanhães",
+        "Fornecedor": "Life Remocenter Transporte LTDA",
+        "CNPJ": "06178714000170",
+        "Licitacao": "548000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Serviço de Transporte de Urgência (UTI Móvel tipo D) para transporte de pacientes em estado grave, \nIncluso condutor socorrista, Médico e Enfermeiro \n",
+                "Qtd": 157000.0,
+                "Unitario": 14.22,
+                "Total": 2232540.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "Serviço de Transporte de Urgência (UTI Móvel tipo D) Deslocamento até 80km para transporte de pacientes em estado grave. Incluso condutor socorrista, Médico e Enfermeiro c/s retorno.\n\n",
+                "Qtd": 384.0,
+                "Unitario": 1813.66,
+                "Total": 696445.44,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Serviço de Transporte de Urgência (UTI Móvel TIPO D DESLOCAMENTO) deslocamento acima 81 até 150km para transporte de pacientes em estado grave  c/s retorno. \nIncluso condutor socorrista, Médico e Enfermeiro \n\n",
+                "Qtd": 125.0,
+                "Unitario": 2000.03,
+                "Total": 250003.75,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Serviços de UTI MÓVEL TIPO D para cobertura de eventos (mínimo de 6h) nos municípios consorciados. \nincluso: condutor socorrista, Médico e Enfermeiro.\n",
+                "Qtd": 350.0,
+                "Unitario": 3700.0,
+                "Total": 1295000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "HORA ADICIONAL ao item 04 lote 02",
+                "Qtd": 200.0,
+                "Unitario": 169.95,
+                "Total": 33990.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \nincluso somente condutor socorrista.\n",
+                "Qtd": 100000.0,
+                "Unitario": 7.53,
+                "Total": 753000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \n Deslocamento até 80km para transporte de pacientes c/s retorno.\n.\nincluso somente condutor socorrista \n",
+                "Qtd": 50.0,
+                "Unitario": 600.0,
+                "Total": 30000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \n Deslocamento acima de 81 até 150km para transporte de pacientes c/s retorno.\nincluso somente condutor socorrista. \n",
+                "Qtd": 50.0,
+                "Unitario": 700.0,
+                "Total": 35000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo B \nincluso condutor socorrista, enfermeiro c/s técnico auxiliar.\n",
+                "Qtd": 100000.0,
+                "Unitario": 9.8,
+                "Total": 980000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo B \n Deslocamento até 80km para transporte de pacientes c/s retorno.\nincluso condutor socorrista, enfermeiro c/s técnico auxiliar.\n",
+                "Qtd": 100.0,
+                "Unitario": 1100.0,
+                "Total": 110000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-04T15:49:21",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-03T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE RONDONOPOLIS",
+        "UF": "MT",
+        "Municipio": "Rondonópolis",
+        "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
+        "CNPJ": "36705522000136",
+        "Licitacao": "1000012025",
+        "Itens": [
+            {
+                "Item": 125892,
+                "Desc": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANALISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATADA, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 15 X 1,60 M DE ALTURA, COM VOLUME DE 600 M³. CONFORME TERMO DE REFERÊNCIA.",
+                "Qtd": 12.0,
+                "Unitario": 4850.0,
+                "Total": 58200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 125893,
+                "Desc": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANÁLISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATANTE, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 20 X 1,60 DE ALTURA, COM VOLUME DE 800 M³. CONFORME TERMO DE REFERÊNCIA. ",
+                "Qtd": 12.0,
+                "Unitario": 4850.0,
+                "Total": 58200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 125894,
+                "Desc": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANÁLISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATANTE, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 20 X 1,20 DE ALTURA, COM VOLUME DE 600 M³. CONFORME TERMO DE REFERÊNCIA. ",
+                "Qtd": 12.0,
+                "Unitario": 4850.0,
+                "Total": 58200.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-01T09:10:25",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-01T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "620",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE PITANGUI",
+        "UF": "MG",
+        "Municipio": "Pitangui",
+        "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
+        "CNPJ": "11399773000109",
+        "Licitacao": "620000032025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA, TRANSPORTE E INCINERAÇÃO DE RESÍDUOS PERIGOSOS, CLASSE I E II , INCLUSIVE DE SERVIÇOS DE SAUDE DOS GRUPOS A, B E E.\nOBSERVAÇÃO 01: A COLETA SERÁ REALIZADA UMA VEZ POR SEMANA, EM APROXIMADAMENTE 12 PONTOS NA ZONA URBANA MUNICIPAL, MAIS PSF BRUMADO, CAMPO GRANDE(POVOADO) E RIO DO PEIXE(RODOVIA).\nOBSERVAÇÃO 02: A EMPRESA FORNECERÁ VASILHAME ACONDICIONADOR DE RESÍDUOS PERGOSOS PARA OS PONTOS DE COLETA.\nOBSERVAÇÃO 03: A QUANTIDADE APROXIMADA PREVISTA É ENTRE 200 KG A 400 KG POR MÊS.",
+                "Qtd": 4800.0,
+                "Unitario": 5.11,
+                "Total": 24528.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
+        "CNPJ": "22223426000147",
+        "Licitacao": "698000022025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "PALITO DE MADEIRA TIPO ESPETO (PCT COM 100)",
+                "Qtd": 1200.0,
+                "Unitario": 5.19,
+                "Total": 6228.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "ALEA COMERCIAL LTDA",
+        "CNPJ": "12011917000332",
+        "Licitacao": "698000022025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "APONTADOR DE LÁPIS COM DEPÓSITO",
+                "Qtd": 12000.0,
+                "Unitario": 0.5,
+                "Total": 6000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "PAPEL CONTACT TRANSPARENTE 45CM X 25M",
+                "Qtd": 240.0,
+                "Unitario": 42.58,
+                "Total": 10219.2,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
+        "CNPJ": "49042895000116",
+        "Licitacao": "698000022025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "FITA ADESIVA CREPE 19MM X 50M",
+                "Qtd": 2500.0,
+                "Unitario": 2.49,
+                "Total": 6225.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "PAPEL VERGÊ A4 180G 210 X 297MM - PCT COM 50",
+                "Qtd": 500.0,
+                "Unitario": 8.9,
+                "Total": 4450.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
+        "CNPJ": "19032430000113",
+        "Licitacao": "698000022025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "TESOURA ESCOLAR",
+                "Qtd": 7000.0,
+                "Unitario": 1.189,
+                "Total": 8323.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "BORRACHA BRANCA COM CAPA PROTETORA",
+                "Qtd": 20000.0,
+                "Unitario": 0.499,
+                "Total": 9980.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "RÉGUA 30CM",
+                "Qtd": 4000.0,
+                "Unitario": 1.299,
+                "Total": 5196.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-09-12T11:01:16",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-09-29T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "020",
+        "Edital": "00011/2025",
+        "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "UF": "SP",
+        "Municipio": "São José dos Campos",
+        "Fornecedor": "MRX TECNOLOGIA LTDA",
+        "CNPJ": "05754099000130",
+        "Licitacao": "020000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LOTE1-CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO (TI), CUJO OBJETO É A CONCESSÃO DE LICENÇA DE USO DE SISTEMA PARA ACOMPANHAMENTO E ANÁLISE DOS VALORES QUE COMPÕEM O ÍNDICE DE PARTICIPAÇÃO DOS MUNÍCIPIOS DO PRODUTO DE ARRECADAÇÃO DO IMPOSTO SOBRE OPERAÇÕES RELATIVAS A CIRCULAÇÃO DE MERCADORIAS E SOBRE PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE INTERESTADUAL E INTERMUNICIPAL E DE COMUNICAÇÃO (ICMS) DESTA MUNICIPALIDADE",
+                "Qtd": 1.0,
+                "Unitario": 530000.0,
+                "Total": 530000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-14T14:29:23",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "620",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE PITANGUI",
+        "UF": "MG",
+        "Municipio": "Pitangui",
+        "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
+        "CNPJ": "10680757000127",
+        "Licitacao": "620000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LOCAÇÃO POR HORA TRABALHADA DE VEÍCULOS DE GRANDE PORTE – MÁQUINA PESADA (TRATOR DE ESTEIRA) com motorista/operador, transporte do trator até o local do aterro, combustível e toda manutenção preventiva e corretiva, em atendimento a solicitação da Secretaria de Desenvolvimento Urbano e Serviços Públicos",
+                "Qtd": 500.0,
+                "Unitario": 287.9,
+                "Total": 143950.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "301",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
+        "CNPJ": "45999330000170",
+        "Licitacao": "301000042025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COXA E SOBRECOXA CARNE DE AVE IN NATURA TIPO ANIMAL FRANGO TIPO CORTE COXA E SOBRECOXA APRESENTACAO INTEIRO ESTADO DE CONSERVACAO: CONGELADO PROCESSAMENTO: SEM PELE SEM OSSO\r",
+                "Qtd": 12750.0,
+                "Unitario": 15.9,
+                "Total": 202725.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "COXA E SOBRECOXA CARNE DE AVE IN NATURA TIPO ANIMAL FRANGO TIPO CORTE COXA E SOBRECOXA APRESENTACAO INTEIRO ESTADO DE CONSERVACAO: CONGELADO PROCESSAMENTO: SEM PELE SEM OSSO\r",
+                "Qtd": 4250.0,
+                "Unitario": 15.9,
+                "Total": 67575.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "ACEM MOIDA CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO MOIDA ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 4000.0,
+                "Unitario": 22.11,
+                "Total": 88440.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "301",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "P&G ALIMENTOS LTDA",
+        "CNPJ": "32532318000100",
+        "Licitacao": "301000042025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "ACEM EM CUBOS CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO CORTADA EM CUBOS ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 7875.0,
+                "Unitario": 23.89,
+                "Total": 188133.75,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "ACEM EM CUBOS CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO CORTADA EM CUBOS ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 2625.0,
+                "Unitario": 26.9,
+                "Total": 70612.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "PERNIL EM CUBOS CARNE SUINA IN NATURA TIPO CORTE: PERNIL, APRESENTACAO CORTADA EM CUBOS PROCESSAMENTO SEM PELE ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 2750.0,
+                "Unitario": 17.9,
+                "Total": 49225.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "LINGUICA CALABRESA GROSSA TAMANHO GROSSA TIPO PREPARACAO DEFUMADA ESTADO DE CONSERVACAO RESFRIADO * EMBALADA À VÁCUO EM PLÁSTICO PVC TRANSPARENTE. EMBALAGEM DEVE CONTER A IDENTIFICAÇÃO DO PRODUTO, PESO, DATA DE FABRICAÇÃO, DATA DE VALIDADE, LOTE, FORMA DE CONSERVAÇÃO, CARIMBO DO SIF.PACOTES CONTENDO NO MÁXIMO 4 KG. O PRODUTO DEVERÁ TER VALIDADE MÍNIMA DE 90 DIAS DA DATA DE ENTREGA, QUE NÃO DEVERÁ SER SUPERIOR A 45 DIAS DA DATA DE FABRICAÇÃO. PARÂMETROS INDICATIVOS DE QUALIDADE: PALADAR, SAUDALI, FRIGOLESTE\r",
+                "Qtd": 1500.0,
+                "Unitario": 18.9,
+                "Total": 28350.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "301",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "BSM ATACADISTA",
+        "CNPJ": "15081696000103",
+        "Licitacao": "301000042025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "PERNIL EM CUBOS CARNE SUINA IN NATURA TIPO CORTE: PERNIL, APRESENTACAO CORTADA EM CUBOS PROCESSAMENTO SEM PELE ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 8250.0,
+                "Unitario": 16.9,
+                "Total": 139425.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "ACEM MOIDA CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO MOIDA ESTADO DE CONSERVACAO CONGELADO\r",
+                "Qtd": 12000.0,
+                "Unitario": 21.11,
+                "Total": 253320.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "301",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
+        "CNPJ": "08504258000137",
+        "Licitacao": "301000042025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "SALSICHA EMBUTIDO TIP: SALSICHA HOT DOG TIPO PREPARACAO COZIDA ESTADO DE CONSERVACAO: RESFRIADO * ACONDICIONADOS EM EMBALAGEM PRIMÁRIA À VÁCUO EM PLÁSTICO TRANSPARENTE, CONTENDO TODAS AS INFORMAÇÕES DO PRODUTO COMO CORTE, PROCEDÊNCIA, FORNECEDOR, DATA DE VALIDADE. PARÂMETROS INDICATIVOS DE QUALIDADE: SEARA, LEBON, SADIA, PERDIGÃO\r",
+                "Qtd": 2200.0,
+                "Unitario": 10.4,
+                "Total": 22880.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-27T08:28:19",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00026/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "JN PNEUS LTDA",
+        "CNPJ": "44472217000170",
+        "Licitacao": "1000262025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Pneu 17.5-25 16 lonas (Prof. Sulco 27mm) Aplicação E3L3  - \n-Pneu 17.5-25 16 lonas (Prof. Sulco 27mm) Aplicação E3L3-novo (primeira vida), garantia de cinco anos contra defeitos de fabricação (conforme Código de Defesa do Consumidor), data de fabricação na entrega não superior a 12 meses, com certificação do INMETRO\n",
+                "Qtd": 15.0,
+                "Unitario": 2791.8,
+                "Total": 41877.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-27T08:28:19",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00026/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "SCHWAB COMÉRCIO DE PNEUS LTDA",
+        "CNPJ": "09505958000109",
+        "Licitacao": "1000262025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Pneu 14.00-24 16 lonas (Prof. Sulco 25,3mm) Classificação G2L2\n-Pneu 14.00-24 16 lonas (Prof. Sulco 25,3mm) Classificação G2L2, TM 95-novo (primeira vida), garantia de cinco anos contra defeitos de fabricação (conforme Código de Defesa do Consumidor), data de fabricação na entrega não superior a 12 meses, com certificação do INMETRO.",
+                "Qtd": 20.0,
+                "Unitario": 2084.0,
+                "Total": 41680.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-17T14:11:09",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-28T13:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "350",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE LARANJAL",
+        "UF": "MG",
+        "Municipio": "Laranjal",
+        "Fornecedor": "ORLY VEÍCULOS E PEÇAS S/A",
+        "CNPJ": "21483615000196",
+        "Licitacao": "350000042025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEICULO TIPO CAMIONETE PICK-UP 0 KM NA COR BRANCA, PRETA OU CHUMBO (EX: FIAT TOURO)\r",
+                "Qtd": 1.0,
+                "Unitario": 214500.0,
+                "Total": 214500.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-25T13:16:17",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-29T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1729",
+        "Edital": "00007/2025",
+        "Orgao": "MUNICIPIO DE SABINOPOLIS",
+        "UF": "MG",
+        "Municipio": "Sabinópolis",
+        "Fornecedor": "Gustavo de Paula Silva",
+        "CNPJ": "39906139000134",
+        "Licitacao": "1729000072025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "AERONAVES TELEGUIADASTIPO: AERONAVE REMOTAMENTE PILOTADA (DRONE)QUANTIDADE MOTORES: 4 MOTORESTAMANHO DIAGONAL: 350 MMPESO MÁXIMO: 1.375 GVELOCIDADE ASCENSÃO VERTICAL: 6 M/SCARACTERÍSTICAS ADICIONAIS: CMOS DE 20 MEGAPIXELS DE 1POL, CÂMERA 4K.",
+                "Qtd": 1.0,
+                "Unitario": 8800.0,
+                "Total": 8800.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-25T13:25:05",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-13T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "943",
+        "Edital": "00017/2025",
+        "Orgao": "MUNICIPIO DE COUTO DE MAGALHAES DE MINAS",
+        "UF": "MG",
+        "Municipio": "Couto de Magalhães de Minas",
+        "Fornecedor": "VITALIS SOLUCOES EM SERVICOS DE SAUDE LTDA",
+        "CNPJ": "53539972000115",
+        "Licitacao": "943000172025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Medico Clinico Geral para atuar no ESF  Estrategia da Saude da Familia, com carga horaria de 40 horas semanais, diariamente (8 horas diaria), segundas a sextas feiras (exceto feriados), os servicos serao prestados na Unidade Rio Manso:",
+                "Qtd": 12.0,
+                "Unitario": 11996.99,
+                "Total": 143963.88,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-27T14:07:08",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-20T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "905",
+        "Edital": "00016/2025",
+        "Orgao": "MUNICIPIO DE WITMARSUM",
+        "UF": "SC",
+        "Municipio": "Witmarsum",
+        "Fornecedor": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
+        "CNPJ": "02952689000180",
+        "Licitacao": "905000162025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CAMINHÃO PIPA NOVO (0 KM), POTÊNCIA DO MOTOR MÍNIMA DE 270 CV, CAIXA DE CÂMBIO SINCRONIZADA COM NO MÍNIMO 6 MARCHAS À FRENTE E 1 MARCHA À RÉ, COM TANQUE DE ÁGUA (PIPA) DE NO MÍNIMO 12.000 LITROS, CONSTRUÍDO COM CHAPA DE AÇO EM INOX, COM IRRIGAÇÃO COM COMANDO DENTRO DA CABINE DO CAMINHÃO,",
+                "Qtd": 1.0,
+                "Unitario": 760000.0,
+                "Total": 760000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-18T07:58:07",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-06T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "277",
+        "Edital": "00032/2025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE LTDA COOXUPE",
+        "CNPJ": "20770566001505",
+        "Licitacao": "277000322025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CAFE TORRADO E MOIDO PACOTE COM 500 GRS  café torrado e moído pacote com 500grs predominante arábica com selo de pureza expedido pela ABIC, produzido conforme especificação da portaria SDA nº 570, de 09 de maio de 2022 - MAPA (embalagem: pacote com no mínimo 500 gramas). As embalagens devem conter informações nutricionais.\r",
+                "Qtd": 18000.0,
+                "Unitario": 21.55,
+                "Total": 387900.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-21T08:45:51",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-14T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "L FORASTIERI MACHADO LTDA",
+        "CNPJ": "47123165000114",
+        "Licitacao": "1073000042025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Andador\r",
+                "Qtd": 2.0,
+                "Unitario": 149.0,
+                "Total": 298.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-21T08:45:51",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-14T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "PREPAVE COMERCIO DE MOVEIS E EQUIPAMENTOS LTDA",
+        "CNPJ": "47695345000170",
+        "Licitacao": "1073000042025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Armário\r",
+                "Qtd": 2.0,
+                "Unitario": 410.0,
+                "Total": 820.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "Cadeira\r",
+                "Qtd": 2.0,
+                "Unitario": 118.0,
+                "Total": 236.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-21T08:45:51",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-14T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "HM Informatica LTDA",
+        "CNPJ": "34240500000112",
+        "Licitacao": "1073000042025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Balde a Pedal\r",
+                "Qtd": 1.0,
+                "Unitario": 147.99,
+                "Total": 147.99,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "Balde/ Lixeira\r",
+                "Qtd": 4.0,
+                "Unitario": 39.99,
+                "Total": 159.96,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-21T08:45:51",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-14T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "JMF COMERCIAL EIRELI",
+        "CNPJ": "27951336000196",
+        "Licitacao": "1073000042025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Biombo\r",
+                "Qtd": 2.0,
+                "Unitario": 370.0,
+                "Total": 740.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Escacada com 2 degraus\r",
+                "Qtd": 2.0,
+                "Unitario": 129.0,
+                "Total": 258.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-21T08:45:51",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-14T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
+        "CNPJ": "24708774000130",
+        "Licitacao": "1073000042025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "Cama Elástica Proprioceptiva\r",
+                "Qtd": 2.0,
+                "Unitario": 277.55,
+                "Total": 555.1,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T11:10:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-25T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1576",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE ITAPEMA",
+        "UF": "SC",
+        "Municipio": "Itapema",
+        "Fornecedor": "I.G.I. INDUSTRIA DE GASES ITAJAI LTDA",
+        "CNPJ": "18487144000180",
+        "Licitacao": "1576000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "NITROGÊNIO LIQUIDO REFRIGERADO - ONU 1977-C SUB.2.2",
+                "Qtd": 3000.0,
+                "Unitario": 9.3,
+                "Total": 27900.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "OXIGÊNIO MEDICINAL PPU GASOSO - 1 M³.",
+                "Qtd": 350.0,
+                "Unitario": 132.9,
+                "Total": 46515.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "OXIGÊNIO MEDICINAL..",
+                "Qtd": 25000.0,
+                "Unitario": 25.3,
+                "Total": 632500.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-18T16:22:53",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-02T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "2110",
+        "Edital": "00006/2025",
+        "Orgao": "MINAS NOVAS CAMARA MUNICIPAL",
+        "UF": "MG",
+        "Municipio": "Minas Novas",
+        "Fornecedor": "N2J VEICULOS ESPECIAIS LTDA",
+        "CNPJ": "54927717000102",
+        "Licitacao": "2110000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEICULO OKM",
+                "Qtd": 1.0,
+                "Unitario": 147999.0,
+                "Total": 147999.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-18T16:22:53",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-02T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "2110",
+        "Edital": "00006/2025",
+        "Orgao": "MINAS NOVAS CAMARA MUNICIPAL",
+        "UF": "MG",
+        "Municipio": "Minas Novas",
+        "Fornecedor": "KIMAQUINAS E EQUIPAMENTOS LTDA",
+        "CNPJ": "44403694000183",
+        "Licitacao": "2110000062025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "VEICULO OKM",
+                "Qtd": 1.0,
+                "Unitario": 360000.0,
+                "Total": 360000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-07T15:26:55",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-20T14:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "32",
+        "Edital": "00008/2025",
+        "Orgao": "MUNICIPIO DE SAO GERALDO DO BAIXIO",
+        "UF": "MG",
+        "Municipio": "São Geraldo do Baixio",
+        "Fornecedor": "LR SERVICOS MEDICOS E GESTAO EM SAUDE LTDA",
+        "CNPJ": "37598374000160",
+        "Licitacao": "32000082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇOS MÉDICOS CLINICO GERAL",
+                "Qtd": 12.0,
+                "Unitario": 10500.0,
+                "Total": 126000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-06-04T09:00:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-05-30T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "62600",
+        "Edital": "00039/2025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "UF": "RS",
+        "Municipio": "Venâncio Aires",
+        "Fornecedor": "MULTI TROFEUS  TROFEUS E MEDALHAS LTDA",
+        "CNPJ": "09498341000103",
+        "Licitacao": "62600000392025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Medalha-Medalha de Zamac 5 cm (medalha contendo arte do evento em adesivo vinílico e cobertura de resina epóxi transparente). Tamanho total de 50mm, com área para arte de 45mm,  Cor da medalha: dourada, prata ou bronze \nFita: 16 mm de largura - Cor da fita: a definir.  - (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 777.0,
+                "Unitario": 4.4,
+                "Total": 3418.8,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-06-04T09:00:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-05-30T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "62600",
+        "Edital": "00039/2025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "UF": "RS",
+        "Municipio": "Venâncio Aires",
+        "Fornecedor": "LAGUNA ESPORTE LTDA",
+        "CNPJ": "52307066000122",
+        "Licitacao": "62600000392025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Medalha-Medalha em Acrílico colorido ou transparente, em formas variadas de acordo com a solicitação, com impressão UV diretamente sobre o acrílico (sem o uso de adesivo impresso). Tamanho da medalha: 50mm - Espessura mínima: 4 mm\nFita: 16 mm - Cor da fita: cor da fita dourada, prata, bronze ou preta.  (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 695.0,
+                "Unitario": 4.99,
+                "Total": 3468.05,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-06-04T09:00:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-05-30T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "62600",
+        "Edital": "00039/2025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "UF": "RS",
+        "Municipio": "Venâncio Aires",
+        "Fornecedor": "FLORIAN & CIA LTDA",
+        "CNPJ": "05609101000188",
+        "Licitacao": "62600000392025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Medalha-Medalha, em acrílico, formato de cuia de chimarrão (modelo fornecido), contendo arte personalizada do evento em impressão UV direta sobre o acrílico (sem o uso de adesivo impresso), tamanho total de 75 milímetros com área da arte de 45mm, cor medalha dourada, prata ou bronze com fita 16 mm de largura, cor da fita dourada, prata, bronze ou preta.  (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)\n",
+                "Qtd": 300.0,
+                "Unitario": 3.0,
+                "Total": 900.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Troféu-TROFÉUS DE 20 CM 100% acrílico, corte Laser, acrílico espelhado e artes com impressão UV direto no acrílico (sem o uso de vinil adesivo impresso) aplicada sobre as peças estruturais com fita dupla face. (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 23.0,
+                "Unitario": 17.95,
+                "Total": 412.85,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Troféu-TROFÉUS DE 25 CM Base em PS injetado de 95mm de altura, estrutura com corte Laser em MDF e acrílico cristal, acrílico espelhado e artes com impressão UV direto no acrílico (sem o uso de adesivo impresso) aplicada sobre as peças estruturais com fita dupla face. (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante).",
+                "Qtd": 34.0,
+                "Unitario": 22.0,
+                "Total": 748.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Troféu-TROFÉUS DE 30 CM Base em PS injetado de 95mm de altura, estrutura com corte Laser em MDF e acrílico cristal, acrílico espelhado e artes com impressão UV direto no acrílico (sem o uso de adesivo impresso) aplicada sobre as peças estruturais com fita dupla face. (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 111.0,
+                "Unitario": 24.99,
+                "Total": 2773.89,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-06-04T09:00:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-05-30T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "62600",
+        "Edital": "00039/2025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "UF": "RS",
+        "Municipio": "Venâncio Aires",
+        "Fornecedor": "AK INOVACOES LTDA",
+        "CNPJ": "53696164000161",
+        "Licitacao": "62600000392025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Enfeite-Enfeite para Chimarrão Confeccionado em material de  MDF, formato de cuia (modelo fornecido), 3 mm de espessura, 5cm de altura x 4cm largura, mais base para suporte na erva. Podendo ser gravado a Laser ou impressão UV diretamente sobre o material, frente e verso, colorido (sem o uso de adesivo impresso). (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 300.0,
+                "Unitario": 3.19,
+                "Total": 957.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Enfeite-Enfeite de chimarrão em formato de cuia (modelo fornecido), Confeccionado em acrílico de 3 mm de espessura, 5cm de altura x 4cm largura, mais base para suporte na erva. Impressão UV diretamente no acrílico, frente e verso, colorido (sem o uso de adesivo impresso).  (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 300.0,
+                "Unitario": 4.41,
+                "Total": 1323.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-06-04T09:00:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-05-30T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "62600",
+        "Edital": "00039/2025",
+        "Orgao": "MUNICIPIO DE VENANCIO AIRES",
+        "UF": "RS",
+        "Municipio": "Venâncio Aires",
+        "Fornecedor": "INDUSTRIA FENIX CORTE A LASER LTDA",
+        "CNPJ": "13759849000195",
+        "Licitacao": "62600000392025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "Troféu-TROFÉUS DE 15 CM 100% acrílico, corte Laser, acrílico espelhado e artes com impressão UV direto no acrílico (sem o uso de adesivo impresso) aplicada sobre as peças estruturais com fita dupla face. (Obs. A Contratada se responsabilizará pela Arte conforme orientações do solicitante)",
+                "Qtd": 28.0,
+                "Unitario": 10.0,
+                "Total": 280.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-20T12:45:24",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-04T13:01:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "111",
+        "Edital": "00031/2025",
+        "Orgao": "MUNICIPIO DE PARAGUACU",
+        "UF": "MG",
+        "Municipio": "Paraguaçu",
+        "Fornecedor": "RG DISTRIBUIDORA DE PRODUTOS LABORATORIAIS",
+        "CNPJ": "30379344000114",
+        "Licitacao": "111000312025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ANALISADOR AUTOMÁTICO HEMATOLÓGICO - Equipamento compacto, de fácil operação, software em português, com resultados com diferencial de 5 partes para leucócitos e deverá possuir no mínimo 29 parâmetros e no mínimo 03 histogramas.  Deverá realizar no mínimo princípio de citometria de fluxo para diferenciação das células brancas, contagem global de WBC mais os Basófilos e possuir a tecnologia de dispersão a laser triangular e coloração química  para Diferencial. Deverá possuir método de Impedância para contagem de RBC e PLT e dosar hemoglobina por Colorimetria.  Deverá possuir no mínimo 03 2D Diff Scatter Gram, no mínimo 01 2D BASO Scatter Gram e no mínimo 01 1 3D Diff Scatter Gram. Deverá executar no mínimo 60 testes por hora com capacidade de armazenamento no mínimo 50.000 resultados e salvar os resultados automaticamente no software, incluindo informações numéricas e gráficos. O analisador deverá ter a  capacidade de linearidade de WBC igual ou maior de 500.00 X 10 a nona/L e Plaquetas  igual e  maior que 5.000 x 10 a nona/L. Possuir tela Touchscreen colorida e facilidade de conexão e interfaceamento no mínimo via LIS.  O volume de amostra deverá ser de no máximo 18µL para sangue total e no máximo de 20 µL para amostra pré-diluída. Deverá ser compacto para adequar ao espaço destinado no laboratórioDeverá utilizar reagente livre de Cianeto para medição HGB. Permitir as manutenções do usuário via software. Deverá fornecer Nobreak bivolt senoidal de no mínimo 1,5 KVA, com capacidade mínima de 30 minutos de funcionamento do equipamento em caso de falta de energiaelétrica. Deverá possuir impressora interna e possibilidade de implantar impressora externa e leitor de código de Barras. Voltagem: 110 ? 240 V.",
+                "Qtd": 12.0,
+                "Unitario": 3433.0,
+                "Total": 41196.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "HEMOGRAMA",
+                "Qtd": 40000.0,
+                "Unitario": 2.12,
+                "Total": 84800.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-11-13T23:00:17",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-10T10:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "000000042",
+        "Edital": "00032/2025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "Fornecedor": "ATEND TUDO COMERCIO E SERVICOS LTDA ME",
+        "CNPJ": "11787596000138",
+        "Licitacao": "000000042000322025",
+        "Itens": [
+            {
+                "Item": 10002,
+                "Desc": "MOVEIS PLANEJADOS (DESCRIÇÃO COMPLETA ENCONTRA-SE NO ANEXO III DO EDITAL)",
+                "Qtd": 1.0,
+                "Unitario": 70900.0,
+                "Total": 70900.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 5,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-11-13T23:00:17",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-10T10:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "000000042",
+        "Edital": "00032/2025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "Fornecedor": "R&L INDUSTRIA E COMERCIO DE ARTIGOS DE DECORACOES",
+        "CNPJ": "10302648000176",
+        "Licitacao": "000000042000322025",
+        "Itens": [
+            {
+                "Item": 20003,
+                "Desc": "FORNECIMENTO E INSTALAÇÃO DE CORTINAS ROLÔ (DESCRIÇÃO COMPLETA ENCONTRA-SE NO ANEXO III DO EDITAL)",
+                "Qtd": 1.0,
+                "Unitario": 87021.74,
+                "Total": 87021.74,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 5,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-11-13T23:00:17",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-10T10:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "000000042",
+        "Edital": "00032/2025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "Fornecedor": "JACOB CONSTRUCOES LTDA",
+        "CNPJ": "22316926000123",
+        "Licitacao": "000000042000322025",
+        "Itens": [
+            {
+                "Item": 30002,
+                "Desc": "FORNECIMENTO E INSTALAÇÃO DE VIDROS (DESCRIÇÃO DETALHADA ENCONTRA-SE NO ANEXO III DO EDITAL)",
+                "Qtd": 1.0,
+                "Unitario": 71599.93,
+                "Total": 71599.93,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 40001,
+                "Desc": "FORNECIMENTO E INSTALAÇÃO DE ESPELHOS (DETALHAMENTO DO ITEM ENCONTRA-SE NO ANEXO III DO EDITAL)",
+                "Qtd": 1.0,
+                "Unitario": 7420.0,
+                "Total": 7420.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 5,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-11-13T23:00:17",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-10T10:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "000000042",
+        "Edital": "00032/2025",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "Fornecedor": "D FORMA INSTALACOES E DIVISORIAS LTDA",
+        "CNPJ": "73472227000103",
+        "Licitacao": "000000042000322025",
+        "Itens": [
+            {
+                "Item": 50001,
+                "Desc": "VASOS DECORATIVOS PARA PLANTAS (DESCRIÇÃO DETALHADA ENCONTRA-SE NO ANEXO III DO EDITAL)",
+                "Qtd": 1.0,
+                "Unitario": 1995.24,
+                "Total": 1995.24,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 5,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-28T17:04:29",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-17T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1127",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE JACUI",
+        "UF": "MG",
+        "Municipio": "Jacuí",
+        "Fornecedor": "GAMA SOLUCOES EM INFRAESTRUTURA LTDA",
+        "CNPJ": "48793172000196",
+        "Licitacao": "1127000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CONCRETO ASFALTICO PARA REPA- ROS. Saco com 25Kg. Especificacoes Tecnicas: com polimeros, enriquecido com 1,5% de po de borracha, granulometria passante nao inferior a 94% na peneira 3/8, teor de betume entre 4,6% e 5,0%, densidade aparente da massa entre 1,90 g/cm a 2,15 g/cm. O produto dever ser atestado atraves de relatorio de ensaio da massa por laboratorio credenciado pelo INMETRO, obedecendo as normas do DNIT e NBR.) O produto deve dispensar o uso de pintura de ligacao ou imprimacao, e deve ser suportavel para aplicacao em periodo de chuva.",
+                "Qtd": 500.0,
+                "Unitario": 23.0,
+                "Total": 11500.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "MASSA ASFALTICA EM C.B.U.Q. Concreto Betuminoso Usinado a Quente, Faixa C, com pintura de ligacao, tipo emulsao RRS 1C (na proporcao 12l/ton) com fornecimento de todos os materiais, conforme ABNT e NBR.",
+                "Qtd": 375.0,
+                "Unitario": 497.9,
+                "Total": 186712.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "MASSA ASFALTICA EM C.B.U.Q. Concreto Betuminoso Usinado a Quente, Faixa C, com pintura de ligacao, tipo emulsao RRS 1C (na proporcao 12l/ton) com fornecimento de todos os materiais, conforme ABNT e NBR.",
+                "Qtd": 125.0,
+                "Unitario": 497.9,
+                "Total": 62237.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "TAPA BURACO - TAPA BURACO -REALIZAÇÃO DO SERVIÇO TIPO TAPA BURACO.EXECUÇÃO INCLUINDO USINAGEM DA MASSA ASFALTICA ,COM FORNECIMENTO ,TRANSPORTE,PREPARAÇÃO,LIMPEZA DO TERRENO E APLICAÇÃO DOS AGREGADOS E DO MATERIAL BETUMINOSO ,E TAMBÉM FORNECIMENTO DE EMULSÃO ASFÁLTICA RRIC (CONSUMO DE 10 LITROS TONELADAS)",
+                "Qtd": 375.0,
+                "Unitario": 859.9,
+                "Total": 322462.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "TAPA BURACO - TAPA BURACO -REALIZAÇÃO DO SERVIÇO TIPO TAPA BURACO.EXECUÇÃO INCLUINDO USINAGEM DA MASSA ASFALTICA ,COM FORNECIMENTO ,TRANSPORTE,PREPARAÇÃO,LIMPEZA DO TERRENO E APLICAÇÃO DOS AGREGADOS E DO MATERIAL BETUMINOSO ,E TAMBÉM FORNECIMENTO DE EMULSÃO ASFÁLTICA RRIC (CONSUMO DE 10 LITROS TONELADAS)",
+                "Qtd": 125.0,
+                "Unitario": 859.9,
+                "Total": 107487.5,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 5,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-10T13:56:30",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-20T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "350",
+        "Edital": "00008/2025",
+        "Orgao": "MUNICIPIO DE LARANJAL",
+        "UF": "MG",
+        "Municipio": "Laranjal",
+        "Fornecedor": "ACTEC ACESSO CONTROLE E TECNOLOGIA LTDA",
+        "CNPJ": "39914097000183",
+        "Licitacao": "350000082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Registrador de ponto facial e proximidade com fonte 12v",
+                "Qtd": 20.0,
+                "Unitario": 1110.0,
+                "Total": 22200.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "GUILHERME XAVIER PIVA EIRELI EPP",
+        "CNPJ": "18136904000104",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Aquecedor portátil de ambiente, potência de 1500 a 2000 watts - Descrição conforme Plano de Trabalho",
+                "Qtd": 3.0,
+                "Unitario": 148.5,
+                "Total": 445.5,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "DA FRONTEIRA COMERCIO E REPRESENTAÇÃO LTDA",
+        "CNPJ": "44346117000105",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Aparelho de ar condicionado, tipo split, quente/frio, 12.000BTUs, 220V.",
+                "Qtd": 8.0,
+                "Unitario": 1972.0,
+                "Total": 15776.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "RG2 INDUSTRIA E COMERCIO DE MOVEIS LTDA",
+        "CNPJ": "49815982000169",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Armário em aço - Descrição conforme Plano de Trabalho-Material de confecção de aço - descrição conforme plano de trabalho\nMaterial de confecção: aço\nPintura em tratamento anticorrosivo, altura mínima 190 cm\nLargura mínima 90cm\nProfundidade mínima 40cm\n2 portas\nMínimo 3 prateleiras, com capacidade mínima de 20kg/prateleira \ncom chave\ncor: cinza",
+                "Qtd": 15.0,
+                "Unitario": 782.1,
+                "Total": 11731.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Arquivo de aço com 4 gavetas-material de confecção: aço\ntratamento antiferrugem e pintura eletrostática\n4 gavetas \ndeslizamento das gavetas por trilho telescópico\nfechadura com travamento simultâneo de todas as gavetas \naltura mínima: 1,30m\ncor cinza",
+                "Qtd": 1.0,
+                "Unitario": 891.0,
+                "Total": 891.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "NOVIDÁ INDÚSTRIA E COMÉRCIO DE MÓVEIS LTDA",
+        "CNPJ": "27075106000100",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "BALCÃO DE ATENDIMENTO, Confeccionado em MDP/MDF ou similar, Modelo Reto, mínimo 140 cm de largura, Altura mínima 95 cm, Dois níveis: o de funcionário, com aprox 75 cm de altura, mínimo 50 cm de profundidade, com passa fio; o de usuário/paciente com no mínímo 15 cm de largura, Com pés para regulagem de nível, Cor: predominantemente Branco.",
+                "Qtd": 1.0,
+                "Unitario": 800.0,
+                "Total": 800.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "LEANDRO ALBERTO KERBER LTDA",
+        "CNPJ": "42921840000137",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "BEBEDOURO ELÉTRICO CONJUGADO, POTÊNCIA 120-145W, para água gelada - Gabinete em aço carbono pré-tratado contra corrosão e pintura epóxi a pó, Três torneiras em latão cromado, duas de jato para boca e a outra para copo todas com regulagem, Duas Pias em aço inoxidável polido;Filtro de água com carvão ativado e vela sinterizada, Reservatório de água em aço inoxidável com serpentina externa, Termostato para ajuste da temperatura de 4° a 15°C, Dimensões: Altura:960mm, Largura: 660mm, Profundidade:290mm, Altura da parte conjugada: 650mm. Voltagem: 220V",
+                "Qtd": 4.0,
+                "Unitario": 959.0,
+                "Total": 3836.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "ROBERTI & ELEGEDA LTDA",
+        "CNPJ": "14778535000100",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "Cadeira giratória-CADEIRA - GIRATÓRIA ENCOSTO ALTO\nAssento com apoio em 05 (cinco) pés, com rodízios\nBase estofada com material de densidade mínima de 40 (quarenta) kg/m3 ;\nAltura da superfície superior ajustável, em relação ao piso, entre 37 cm (trinta e sete centímetros) e 50 cm (cinquenta centímetros).\nprofundidade útil de no mínimo 40 cm (quarenta centímetros)\nBorda frontal arredondada;\nEncosto ajustável em altura e em sentido anteroposterior, com forma levemente adaptada ao corpo para proteção da região lombar;\nLargura de, no mínimo, 40 cm (quarenta centímetros) e, com relação aos encostos, de no mínimo, 30,5 cm (trinta vírgula cinquenta centímetros);\nAltura de, no mínimo, 50 cm (cinquenta centímetros)\nPeso máximo suportado, mínimo 120 kg\n\n",
+                "Qtd": 7.0,
+                "Unitario": 376.2,
+                "Total": 2633.4,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-24T08:43:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-11T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00035/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "LEV INDUSTRIAL LTDA",
+        "CNPJ": "52795852000116",
+        "Licitacao": "1000352025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "Câmara para conservação de Imunobiológicos - Descrição conforme plano de trabalho-Especificação constante do anexo I",
+                "Qtd": 1.0,
+                "Unitario": 13800.0,
+                "Total": 13800.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-15T23:45:23",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-27T10:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "488",
+        "Edital": "00010/2025",
+        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
+        "UF": "PE",
+        "Municipio": "Jaboatão dos Guararapes",
+        "Fornecedor": "ELFA MEDICAMENTOS S.A",
+        "CNPJ": "09053134001621",
+        "Licitacao": "488000102025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COMPLEMENTO ALIMENTAR - Suplemento alimentar nutricionalmente completo em pó hipercalórico, (de 1,25 à 1,5 Kcal/ml), hiperproteico (18% VCT), rico em vitaminas e minerais. Apresentação sem sabor, isento de glúten e lactose. Acondicionado em lata com no mínimo 700g. (75% COTA AMPLA)",
+                "Qtd": 6381.0,
+                "Unitario": 87.7,
+                "Total": 559613.7,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "DIETA EM PÓ PARA SUPORTE NUTRICIONAL ENTERAL OU ORAL - Alimento nutricionalmente completo em pó para nutrição enteral ou oral para crianças de 01 a 10 anos; hipercalórica com densidade calórica de 1.5 kcal/m na diluição padrão. Isenta de lactose e glúten. Sabor neutro. Acondicionado em lata de 400g. (75% COTA AMPLA)",
+                "Qtd": 10422.0,
+                "Unitario": 43.73,
+                "Total": 455754.06,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "DIETA semi-elementar - Dieta semielementar e hipoalergênica, extensamente hidrolisada, a base de 100% de proteína de soro de leite, 100% maltodextrina, 50% TCM, adicionado de LC-PUfas. Isento de sacarose, lactose, frutose e Glúten. Acondicionado em lata de 400g. O produto deve atender à Resolução\n449/1999. Acondicionado em lata de 400g. (75% - COTA AMPLA)",
+                "Qtd": 2250.0,
+                "Unitario": 86.67,
+                "Total": 195007.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "FÓRMULA INFANTIL DE PROTEINA DE SORO DE LEITE - Fórmula infantil a base de proteína do soro do leite extensamente hidrolisada (85% de peptídeo e 15% de aminoácidos), com lactose, prebióticos, nucleotídeos e ácidos graxos de cadeia longa. Isento de frutose e glúten. Acondicionado em lata de 400g. (75% COTA AMPLA)",
+                "Qtd": 1512.0,
+                "Unitario": 63.85,
+                "Total": 96541.2,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Fórmula Infantil para lactentes desde o nascimento e crianças de 1ª infância, com alergias alimentares ou distúrbios da digestão ou absorção de nutrientes. Nutricionalmente completa, com 100% de aminoácidos sintéticos e não alergênicos, DHA, ARA, TCM e Nucleotídeos. Isento de Proteína Láctea, lactose e Glútem e Ingredientes de origem animal. O produto deverá obedecer á RDC45/2011 e as IDR,s. Acondicionado em lata de 400g Acondicionado em lata de 400g. (75% COTA AMPLA)",
+                "Qtd": 2961.0,
+                "Unitario": 118.83,
+                "Total": 351855.63,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-15T23:45:23",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-27T10:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "488",
+        "Edital": "00010/2025",
+        "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
+        "UF": "PE",
+        "Municipio": "Jaboatão dos Guararapes",
+        "Fornecedor": "FLECHA PHARMA DISTRIBUIDORA LTDA",
+        "CNPJ": "46116412000192",
+        "Licitacao": "488000102025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "COMPLEMENTO ALIMENTAR - Suplemento alimentar nutricionalmente completo em pó hipercalórico, (de 1,25 à 1,5 Kcal/ml), hiperproteico (18% VCT), rico em vitaminas e minerais. Apresentação sem sabor, isento de glúten e lactose. Acondicionado em lata com no mínimo 700g. (25% COTA RESERVADA)",
+                "Qtd": 2127.0,
+                "Unitario": 92.0,
+                "Total": 195684.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "DIETA EM PÓ PARA SUPORTE NUTRICIONAL ENTERAL OU ORAL - Alimento nutricionalmente completo em pó para nutrição enteral ou oral para crianças de 01 a 10 anos; hipercalórica com densidade calórica de 1.5 kcal/m na diluição padrão. Isenta de lactose e glúten. Sabor neutro. Acondicionado em lata de 400g. (25% COTA RESERVADA)",
+                "Qtd": 3474.0,
+                "Unitario": 46.73,
+                "Total": 162340.02,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "DIETA semi-elementar - Dieta semielementar e hipoalergênica, extensamente hidrolisada, a base de 100% de proteína de soro de leite, 100% maltodextrina, 50% TCM, adicionado de LC-PUfas. Isento de sacarose, lactose, frutose e Glúten. Acondicionado em lata de 400g. O produto deve atender à Resolução\n449/1999. Acondicionado em lata de 400g. (25% - COTA RESERVADA)",
+                "Qtd": 750.0,
+                "Unitario": 109.15,
+                "Total": 81862.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "FÓRMULA INFANTIL DE PROTEINA DE SORO DE LEITE - Fórmula infantil a base de proteína do soro do leite extensamente hidrolisada (85% de peptídeo e 15% de aminoácidos), com lactose, prebióticos, nucleotídeos e ácidos graxos de cadeia longa. Isento de frutose e glúten. Acondicionado em lata de 400g. (25% - COTA RESERVADA)",
+                "Qtd": 504.0,
+                "Unitario": 70.16,
+                "Total": 35360.64,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T08:46:58",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-26T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "COMERCIAL MONTEVERDE LTDA",
+        "CNPJ": "42098167000187",
+        "Licitacao": "1073000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Almofada 40x40 de curvinAlmofada em Courino é perfeita para quem busca uma peça decorativa e protetora ao mesmo tempo.Tamanho: 40 cm de comprimento e 40 cm larguraCor: multicolor\r",
+                "Qtd": 20.0,
+                "Unitario": 26.0,
+                "Total": 520.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T08:46:58",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-26T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "36.634.645 MIRIAM POLITO VENANCIO",
+        "CNPJ": "36634645000123",
+        "Licitacao": "1073000062025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Armário de 2 portas para professorConfeccionado em chapa de aço #26 (0,45mm) normalizada laminada a frio nas laterais, no fundo, prateleiras e portas. A - Produto montável utilizando sistema de travas, alavanca e unha, desenvolvidas em altas tecnologias de estampagem, não havendo necessidade de utilização de parafusos. B - Trava superior confeccionada em chapa de aço #20 (0,90mm) com 3 dobras perpendiculares sendo a 1ª a 25mm com 90°, a 2ª a 25mm com 90°, a terceira a 15mm com 90° e termina com 10mm, e com sistema de alavanca para travamento nas laterais. C - Trava inferior confeccionada em chapa de aço # 20 (0,90mm) 2 dobras perpendiculares sendo a 1ª a 20mm com 90°, a 2ª a 45mm com 90° e termina com 15mm e com sistema de alavanca para travamento nas laterais. D - Portas com fechamento sobreposto com medidas esquerdas e direitas de 380mm(L)x1840mm(A) em chapa de aço #26 (0,45mm) , lado esquerdo moldado por 2 dobras sendo a 1ª a 340mm com 225°, a 2ª a 20mm com 135° e finaliza com 30mm\r",
+                "Qtd": 10.0,
+                "Unitario": 1300.0,
+                "Total": 13000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Cadeira de escritório: Giratória operacional, no mínimo do tipo B, com braços reguláveis em, no mínimo altura, conforme ABNT NBR 13962/2018 com, no mínimo, espaldar baixo. Ajustes mínimos para os movimentos independentes para altura do assento, rodízios de duplo giro, giro de 360 graus do assento/encosto, altura dos braços, altura e inclinação do encosto. Encosto: estruturado em chassi de polipropileno injetado com aletas de reforços estruturais, estofamento em espuma flexível de poliuretano injetada moldada com espessura média predominante de, no mínimo, 40 mm e dotado de carenagem para contracapa do encosto injetada em polipropileno que deixe inacessível e não aparente os pontos de fixação do extensor de encosto no chassi do espaldar e que cubra o mesmo extensor, não deixando-o aparente durante o curso operacional de ajuste vertical. Largura mínima do encosto de 450 mm e extensão vertical mínima do encosto de 400 mm, ajuste de altura do encosto em no mínimo 5 pontos, com curso vertic\r",
+                "Qtd": 4.0,
+                "Unitario": 1060.0,
+                "Total": 4240.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "CONJUNTO HEXAGONAL EM RESINA TERMOPLÁSTICA COMPOSTO DE MESA E 6 CADEIRAS ? TAMANHO ADULTO, mesa com tampo bipartido, bicolor medindo 1,20m de diâmetro, sextavada para uso coletivo e não individual, com cada aresta medindo 60cm, tampo em resina termoplástica ABS injetado, liso, dotada de nervuras, com espessura mínima de 4mm, bordas medindo 30mm de largura, Base da mesa formada por um tubo único, medindo 20mm x 20mm posicionado sob o tampo, fabricada pelo processo de conformação mecânica por dobramento, resultando em um único ponto de solda unindo as extremidades do mesmo tudo, e uma barra de sustentação horizontal confeccionada em tubo 20mm x 20mm, 6 colunas com tubo de 1.1/2? polegadas para os pés, com ponteiras em polipropileno injetado, altura tampo/chão 760mm, marca do fabricante injetada em auto-relevo deverá estar no encosto e no tampo da mesa. Toda a estrutura metálica é fabricada em tubo de aço industrial tratados por conjuntos de banhos químicos para proteção e longevidade da\r",
+                "Qtd": 2.0,
+                "Unitario": 5738.0,
+                "Total": 11476.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Estante baixa de ferroEstante Pesada desmontável de aço com 03 prateleiras na medida de 1250 mm de altura por 920mm de largura com 400mm de profundidade Prateleiras: Formada por 4 travessas sendo 2 laterais direito/esquerdo em chapa #22 (0,75 mm) na medida 66mm(A)x386mm(L)x21mm(P) com 9 dobras sendo a 1ª a 8mm com 90°, a 2ª a 11mm com 90°, a 3ª a 10mm com 90°, a 4ª a 11mm com 90°, a 5ª a 29mm com 45°, a 6ª a 6mm com 45°, a 7ª a 6mm com 45°, a 8ª a 25mm com 90°, a 9ª a 9mm com 90° e termina com 6mm) e 2 frontais/traseiras em chapa #22 (0,75 mm) na medida 66mm(A)x910mm(L)x21mm(P) com 9 dobras sendo a 1ª a 8mm com 90°, a 2ª a 11mm com 90°, a 3ª a 10mm com 90°, a 4ª a 11mm com 90°, a 5ª a 29mm com 45°, a 6ª a 6mm com 45°, a 7ª a 6mm com 45°, a 8ª a 25mm com 90°, a 9ª a 9mm com 90° e termina com 6mm), possuí também 1 travessa central encaixada por deslizamento entre as travessas frontais e traseiras em chapa #22 (0,75 mm) na medida 53mm(A)x388mm(L)x19mm(P) com 4 dobras sendo a 1ª a 15,5mm\r",
+                "Qtd": 2.0,
+                "Unitario": 755.55,
+                "Total": 1511.1,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Mesa Redonda e 6 cadeirasTampo: Confeccionado em MDP BP (15mm) (Partículas de Média Densidade) fabricado através de partículas de madeira com resinas sintéticas (Ureia Formol), revestido por ambas as faces por uma folha celulósica decorativa banhada em solução melamínica fixada através de um processo de prensa de baixa pressão medindo 15mm(E) x1104mm (Diâmetro) com acabamento em Perfil Ergonsoft 180°. Pés: Em ''X'' composto por 2 Partes iguais utilizando um sistema de encaixe Superior e Inferior em \"U\".Confeccionado em MDP BP (15mm) (Partículas de Média Densidade) fabricado através de partículas de madeira com resinas sintéticas (Ureia Formol), revestido por ambas as faces por uma folha celulósica decorativa banhada em solução melamínica fixada através de um processo de prensa de baixa pressão medindo 15mm(E) x 600mm(L) x 700mm(A) com acabamento em fita PVC 0,45mm. Ponteiras: ço chapa #20(0,90mm) com ponteiro regulável tipo octogonal em polietileno (Plástico de Alto Impacto) derivado\r",
+                "Qtd": 1.0,
+                "Unitario": 1698.0,
+                "Total": 1698.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T08:46:58",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-26T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "GB GIRO BRASIL COMERCIO DE PRODUTOS LTDA",
+        "CNPJ": "43252294000151",
+        "Licitacao": "1073000062025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Cadeira isso fixaCadeira uso múltiplo (geral), empilhável, com assento e encosto injetados em polipropileno, com orifícios para facilitar perspiração no assento e no encosto, cor preta, dimensões mínimas de 460 mm de largura para o assento, 390 mm de profundidade de superfície para assento, 300 mm de altura total absoluta do encosto e 460 mm de largura total útil do encosto. Fixação do encosto à estrutura com isolamento em relação à estrutura para não marca o plástico e fixação final através de plugs com a mesma cor do encosto. Fixação do assento através de encaixe sob pressão e rebites de alumínio ou parafusos especiais para plástico. Estrutura fixa tipo 04 pés manufaturada em aço carbono de seção oblonga com travessas sob o assento em tubos de seção cilíndrica. Todas as terminações de tubo deverão ser protegidas por ponteiras injetadas em termoplástico preto com acoplagem tipo externa. Suporte de encosto confeccionado em duas hastes tubulares oblongas e todos os componentes metálico\r",
+                "Qtd": 12.0,
+                "Unitario": 140.39,
+                "Total": 1684.68,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T08:46:58",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-26T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1073",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE CHACARA",
+        "UF": "MG",
+        "Municipio": "Chácara",
+        "Fornecedor": "LUCYR DAS GRAÇAS MENDES GONÇALVES",
+        "CNPJ": "19919775000193",
+        "Licitacao": "1073000062025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Caixa Organizadora 05 litros\r",
+                "Qtd": 10.0,
+                "Unitario": 13.0,
+                "Total": 130.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Caixa Organizadora 20 litros\r",
+                "Qtd": 10.0,
+                "Unitario": 29.0,
+                "Total": 290.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-03T08:34:02",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-03T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "710",
+        "Edital": "00060/2025",
+        "Orgao": "MUNICIPIO DE MONTE SANTO DE MINAS",
+        "UF": "MG",
+        "Municipio": "Monte Santo de Minas",
+        "Fornecedor": "27.577.159 RELTON UILIAN ARDENGUE",
+        "CNPJ": "27577159000120",
+        "Licitacao": "710000602025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS DE CONSULTORIA Prestação de serviços de consultoria técnica em gestão de saúde pública, destinada a atender a Secretaria Municipal de Saúde de Monte Santo de Minas, conforme especificações e demais condições contidas no edital e seus anexos.",
+                "Qtd": 12.0,
+                "Unitario": 2800.0,
+                "Total": 33600.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-28T14:36:29",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "760",
+        "Edital": "00018/2025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "UF": "MG",
+        "Municipio": "Bom Sucesso",
+        "Fornecedor": "Maria Aparecida Rodrigues Medeiros",
+        "CNPJ": "51355132000177",
+        "Licitacao": "760000182025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ALIMENTO ENTERAL NORMACALÓRICO 1.2 Kcal",
+                "Qtd": 3500.0,
+                "Unitario": 18.4,
+                "Total": 64400.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "FORMULA MODIFICADA PARA NUTRIÇÃO ENTERAL",
+                "Qtd": 2000.0,
+                "Unitario": 27.4,
+                "Total": 54800.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-28T14:36:29",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "760",
+        "Edital": "00018/2025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "UF": "MG",
+        "Municipio": "Bom Sucesso",
+        "Fornecedor": "L E C DISTRIBUIDORA DE PRODUTOS NUTRICIONAIS LTDA",
+        "CNPJ": "47915446000100",
+        "Licitacao": "760000182025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "FÓRMULA MODIFICADA PARA NUTRIÇÃO ENTERAL.",
+                "Qtd": 1900.0,
+                "Unitario": 30.0,
+                "Total": 57000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "DIETA FORMULA INFANTIL PARA LACTENTE",
+                "Qtd": 120.0,
+                "Unitario": 138.0,
+                "Total": 16560.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "FÓRMULA INFANTIL A BASE DE SOJA PARA CRIANÇAS ATÉ 12 MESES",
+                "Qtd": 100.0,
+                "Unitario": 80.0,
+                "Total": 8000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "DIETA LEITE EM PÓ SEM LACTOSE",
+                "Qtd": 100.0,
+                "Unitario": 105.0,
+                "Total": 10500.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-28T14:36:29",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "760",
+        "Edital": "00018/2025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "UF": "MG",
+        "Municipio": "Bom Sucesso",
+        "Fornecedor": "CREATIVE COMERCIO VAREJISTA LTDA",
+        "CNPJ": "44838265000139",
+        "Licitacao": "760000182025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "DIETA: NUTRIÇÃO COMPLETA E BALANCEADA, EM PÓ PARA DILUIÇÃO EM ÁGUA",
+                "Qtd": 850.0,
+                "Unitario": 57.7,
+                "Total": 49045.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-02-28T14:36:29",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "760",
+        "Edital": "00018/2025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "UF": "MG",
+        "Municipio": "Bom Sucesso",
+        "Fornecedor": "3EV COMERCIO DE DIETAS E SUPLEMENTOS LTDA",
+        "CNPJ": "51020411000180",
+        "Licitacao": "760000182025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "LEITE EM PÓ CRIANÇAS ATÉ 06 MESES",
+                "Qtd": 350.0,
+                "Unitario": 52.0,
+                "Total": 18200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "LEITE EM PÓ PARA CRIANÇA DE 06M A 1ANO",
+                "Qtd": 200.0,
+                "Unitario": 52.0,
+                "Total": 10400.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "LEITE EM PÓ CRIANÇA ATÉ 2 ANOS",
+                "Qtd": 120.0,
+                "Unitario": 65.0,
+                "Total": 7800.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-06-05T16:03:44",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-22T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1963",
+        "Edital": "00039/2025",
+        "Orgao": "MUNICIPIO DE PONTE NOVA",
+        "UF": "MG",
+        "Municipio": "Ponte Nova",
+        "Fornecedor": "Portal Soluções Ltda",
+        "CNPJ": "02989244000174",
+        "Licitacao": "1963000392025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Customização, migração de conteúdo, ativação e treinamento in company, para servidores, segmentados por área de gerenciamento do Portal Institucional da Prefeitura Municipal de Ponte Nova",
+                "Qtd": 1.0,
+                "Unitario": 2400.0,
+                "Total": 2400.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "Licença de Uso, Hospedagem Domínio, Suporte Técnico Mensal - Site Institucional -",
+                "Qtd": 12.0,
+                "Unitario": 2000.0,
+                "Total": 24000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Desenvolvimento de aplicativo para dispositivos móveis (APP) personalizado para a Prefeitura Municipal de Ponte Nova, incluindo publicação na Play Store (Android)",
+                "Qtd": 1.0,
+                "Unitario": 2080.0,
+                "Total": 2080.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Licenciamento de uso da solução para gerenciamento de conteúdo do app da prefeitura de Ponte Nova incluindo suporte técnico",
+                "Qtd": 12.0,
+                "Unitario": 660.0,
+                "Total": 7920.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 4,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-08T09:15:14",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-25T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1784",
+        "Edital": "00004/2025",
+        "Orgao": "COMPANHIA DE DESENVOLVIMENTO DE MINAS GERAIS - CODEMGE",
+        "UF": "MG",
+        "Municipio": "Belo Horizonte",
+        "Fornecedor": "PRICEWATERHOUSECOOPERS AUDITORES INDEPENDENTES LTDA",
+        "CNPJ": "61562112000554",
+        "Licitacao": "1784000042025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Serviços de auditoria em área financeira\n",
+                "Qtd": 1.0,
+                "Unitario": 1921829.4,
+                "Total": 1921829.4,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-04T09:57:01",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-31T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "781",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE VIRGINIA",
+        "UF": "MG",
+        "Municipio": "Virgínia",
+        "Fornecedor": " CARVALHO E NUNES INFORMATICA LTDA",
+        "CNPJ": "10658008000101",
+        "Licitacao": "781000012025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AQUISIÇÃO DE PEÇAS, EQUIPAMENTOS E COMPONENTES DE\nINFORMÁTICA, PARA ATENDER AS DEMANDAS DE DIVERSOS DEPARTAMENTOS DA\nPREFEITURA MUNICIPAL DE VIRGÍNIA, tudo conforme descrito no Termo de Referência\ndeste Edital.",
+                "Qtd": 1.0,
+                "Unitario": 76000.0,
+                "Total": 76000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-05-13T13:51:07",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-05-13T14:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "269",
+        "Edital": "00011/2025",
+        "Orgao": "MUNICIPIO DE GUARANESIA",
+        "UF": "MG",
+        "Municipio": "Guaranésia",
+        "Fornecedor": "GILMAR HENRIQUE MARANGONI 02027572856",
+        "CNPJ": "14030253000112",
+        "Licitacao": "269000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PLOTAGEM COLOR A0",
+                "Qtd": 30.0,
+                "Unitario": 12.0,
+                "Total": 360.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "PLOTAGEM DE PROJETO TAMANHO A1 COLOR",
+                "Qtd": 70.0,
+                "Unitario": 9.9,
+                "Total": 693.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "PLOTAGEM A2 COLOR",
+                "Qtd": 50.0,
+                "Unitario": 6.5,
+                "Total": 325.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "PLOTAGEM  COLOR A3",
+                "Qtd": 30.0,
+                "Unitario": 3.5,
+                "Total": 105.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "PLOTAGEM A4 COLOR",
+                "Qtd": 100.0,
+                "Unitario": 1.8,
+                "Total": 180.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "PLOTAGEM A0 MONO",
+                "Qtd": 30.0,
+                "Unitario": 15.0,
+                "Total": 450.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "PLOTAGEM A1 MONO",
+                "Qtd": 70.0,
+                "Unitario": 8.5,
+                "Total": 595.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "PLOTAGEM A2 MONO",
+                "Qtd": 50.0,
+                "Unitario": 5.5,
+                "Total": 275.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "PLOTAGEM DE PROJETO TAMANHO A3 MONO",
+                "Qtd": 30.0,
+                "Unitario": 2.2,
+                "Total": 66.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "PLOTAGEM EM SULFITE MONO A4.",
+                "Qtd": 100.0,
+                "Unitario": 2.5,
+                "Total": 250.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T13:35:48",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-21T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1202",
+        "Edital": "00012/2025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "UF": "SP",
+        "Municipio": "Piquete",
+        "Fornecedor": "RICARDO JULIANO FRANK ROSA",
+        "CNPJ": "59522599000176",
+        "Licitacao": "1202000122025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Pneumatico para Automovel Leve; Construcao Radial; Reforcado; Dimensoes 175/70 R14; Aro 14; Capacidade de Carga Ic 88 h ; Novo (primeira Vida),com Certificado Compulsoria Inmetro;",
+                "Qtd": 16.0,
+                "Unitario": 337.33,
+                "Total": 5397.28,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T13:35:48",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-21T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1202",
+        "Edital": "00012/2025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "UF": "SP",
+        "Municipio": "Piquete",
+        "Fornecedor": "BENÍCIO PNEUS LTDA.",
+        "CNPJ": "39535062000133",
+        "Licitacao": "1202000122025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Pneumatico para Automovel Leve; Construcao Radial; Reforcado; Dimensoes 185/60r15; Aro 15; Capacidade de Carga Ic 88 h ; Novo (primeira Vida),com Certificado Compulsoria Inmetro;",
+                "Qtd": 8.0,
+                "Unitario": 248.0,
+                "Total": 1984.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "Pneumatico para Caminhao,onibus e Seus Rebocados; Dimensoes 215/75r 17,5; Construcao Radial, Direcional(liso); Aro 17,5; Indice de Carga 126/124, Velocidade \"l\"; Novo (primeira Vida),com Certificacao Compulsoria Inmetro;",
+                "Qtd": 18.0,
+                "Unitario": 620.0,
+                "Total": 11160.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Pneumatico para Maquinas Fora de Estrada; 17.5x25; Novo (primeira Vida), para Maquina Carregadeira;  Desenho L-3 Tracao; 16 Lonas (h);",
+                "Qtd": 16.0,
+                "Unitario": 2800.0,
+                "Total": 44800.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "Pneumatico para Maquinas Fora de Estrada; 14.00-24; Novo (primeira Vida), para Maquina Retroescavadeira; Tipo G2, Roda de Tracao Traseira; Capacidade de Carga 12 Lonas;",
+                "Qtd": 8.0,
+                "Unitario": 2150.0,
+                "Total": 17200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Pneumatico para Automovel Leve; Radial; Normal;Construcao, Dimensoes 185/70r14; Aro 14; de Carga Ic88; Novo (primeira Vida),com Certificacao Compulsoria Inmetro;",
+                "Qtd": 16.0,
+                "Unitario": 279.0,
+                "Total": 4464.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Pneumatico para Trator Agricola;Novo, (primeira Vida), Dimensoes12.5/80 - 18; Roda de Tracao; Desenho Da Banda R-4; 12 Lonas;",
+                "Qtd": 16.0,
+                "Unitario": 950.0,
+                "Total": 15200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Pneumatico para Automovel Leve; Construcao Radial; Normal, Sem Camara; Dimensoes 175/70 R13; Aro 13; Capacidade de Carga Ic82; Novo (primeira Vida),com Certificado Compulsoria Inmetro;",
+                "Qtd": 8.0,
+                "Unitario": 228.0,
+                "Total": 1824.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T13:35:48",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-21T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1202",
+        "Edital": "00012/2025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "UF": "SP",
+        "Municipio": "Piquete",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "CNPJ": "55695599000117",
+        "Licitacao": "1202000122025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Pneumatico para Automovel Leve; Construcao Radial; Reforcado; Dimensoes 185/65r14; Aro 14; Capacidade de Carga Ic 88 h ; Novo (primeira Vida),com Certificado Compulsoria Inmetro;",
+                "Qtd": 8.0,
+                "Unitario": 297.0,
+                "Total": 2376.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-11T13:35:48",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-21T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1202",
+        "Edital": "00012/2025",
+        "Orgao": "MUNICIPIO DE PIQUETE",
+        "UF": "SP",
+        "Municipio": "Piquete",
+        "Fornecedor": "LAGB ACESSÓRIOS E PEÇAS LTDA",
+        "CNPJ": "02678428000113",
+        "Licitacao": "1202000122025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Pneumatico para Utilitario; Dimensoes 245/70 R16; Construcao Radial; Reforcado, Sem Camara; Aro 16; Indice de Carga 111,codigo de Velocidade\"t\"; Novo (primeira Vida), Com Certificado Compulsoria Novo,com Certificado do Inmetro;",
+                "Qtd": 48.0,
+                "Unitario": 587.0,
+                "Total": 28176.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-17T09:59:22",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-28T08:30:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "1",
+        "Edital": "00041/2025",
+        "Orgao": "MUNICIPIO DE TAQUARA",
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "BRENNER COMÉRCIO AUTOMOTIVO LTDA",
+        "CNPJ": "53326285000111",
+        "Licitacao": "1000412025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEÍCULO PICK-UP CABINE DUPLA 4X4 (DIESEL); Zero Km, com fabricação ano 2024, modelo 2024, ou superior; Motorização: mínimo de 140 CV; Câmbio Manual ou Automático; Direção Hidráulica ou Elétrica, com regulagem de altura e profundidade; Ar Condicionado; Trio Elétrico; Vidros e travas elétricas nas 04 portas; Alarme original de fábrica; Com protetor de caçamba e Capota em fibra (espessura mínima 6mm), na altura da cabine do motorista, com janela lateral de correr e tampa com fechamento por Chave; Cinco Lugares; Tração 4x4; Combustível Diesel; Motor Mínimo 2.0; Comprimento Total Mínimo 5.300 mm; Tanque de combustível mínimo 75 litros; Controle de tração e estabilidade; Rodas de liga leve, Mínimo Aro 17, Originais de Fábrica; Computador de bordo; Central multimídia de fábrica, com no mínimo 4 alto falantes, bluetooth e 2 entradas USB; Câmera de ré e sensor de estacionamento traseiro originais de fábrica; Mínimo 06 airbags; Assistente de partida em rampas; Controle eletrônico de estabilidade; Cintos de segurança de 3 pontos para todos os ocupantes; Faróis de neblina originais de fábrica; Espelhos retrovisores com ajuste elétrico; Capacidade de carga útil mínimo 1.000kg; Tapetes de borracha dianteiros e traseiros; Protetor de cárter e demais equipamentos obrigatórios de segurança, bem como todos os itens obrigatórios do código de trânsito brasileiro; Veículo na cor branca; Entregue adesivado conforme layout fornecido pela secretaria solicitante; 02 (duas) revisões gratuitas inclusas no preço ofertado pela licitante; Veículo devera ser entregue emplacado em nome do Município de Taquara, sendo este município o primeiro proprietário em conformidade com legislação pertinente.\nO veículo deverá ser entregue emplacado e licenciado em nome do Município de Taquara. O veículo deverá apresentar uma garantia mínima de 12 meses, sem limite de quilometragem, contra quaisquer defeitos de fabricação; Insulfilm ou película nos vidros conforme legislação e adesivado com Brasão e nome do Pre",
+                "Qtd": 1.0,
+                "Unitario": 265000.0,
+                "Total": 265000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-13T15:30:04",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-01T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "01001",
+        "Edital": "00007/2025",
+        "Orgao": "PARANAVAI CONSORCIO INTERMUNICIPAL DE SAUDE",
+        "UF": "PR",
+        "Municipio": "Paranavaí",
+        "Fornecedor": "ORTOPEDIA PARANA LTDA ME",
+        "CNPJ": "76183128000108",
+        "Licitacao": "01001000072025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PROTESE CANADENSE ENDOESQUELETICA EM ALUMINIO OU AÇO (DESARTICULAÇÃO DO QUADRIL) PARA COTO MUITO CURTO TRANSFEMORAL, DESARTICULADO DE QUADRIL E HEMIPELVECTOMIA PARCIAL/TOTAL, COM CESTO PELVICO EM RESINA ACRILICA OU PROLIPROPILENO, ARTICULAÇÃO DE QUADRIL MONOCENTRICA E COM OU SEM BLOQUEIO, COM OU SEM IMPULSOR, JOELHO TIPOMONOEIXO OU POLICENTRICO MECANICO COM OU SEM IMPULSOR, LIVRE OU COM TRAVA OU COM FREIO DE ATRITO, REVESTIDA COM ESPUMA E MEIA COSMÉTICA PÉ SACHOU ARTICULADO UNIXIAL, OU DE ADAPTAÇÃO DINAMICA.",
+                "Qtd": 6.0,
+                "Unitario": 4710.0,
+                "Total": 28260.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "PROTESES ENDOESQUELETICA P/ DESARTICULAÇÃO DE JOELHO (NIVEL  ACIMA DO JOELHO)  EM  ALUMINIO OU AÇO EM RESINA ACRILICA COM OU SEM SOQUETE FLEXIVEL INTERNO, JOELHO ENDOESQUELETICO DE QUATRO BARRAS EM AÇO COM IMPULSOR, REVESTIMENTO DE ESPUMA E MEIA COSMETICA, PE SACH, ARTICULADO OU DE ADAPTAÇÃO DINAMICA.",
+                "Qtd": 8.0,
+                "Unitario": 3980.0,
+                "Total": 31840.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "PROTESES ENDOESQUELETICA PARA AMPUTAÇÃO TRANSFEMURAL (NIVEL COXA)  EM AÇO OU ALUMINIO COM ENCAIXE QUADRILATERO, OU DE CONTENÇÃO ISQUIATICA, EM RESINA ACRILICA E FIBRA DE CARBONO, ENCAIXE INTERNO FLEXIVEL, COM OU SEM CINTO PELVICO OU SILESIANO, JOELHO ENDOESQUELETICO MONOEIXO OU POLICENTRICO EM AÇO, COM OU SEM IMPULSOR, LIVRE OU COM TRAVA, REVESTIDA COM ESPUMA E MEIA COSMETICA, PE SACH OU ARTICULADO.",
+                "Qtd": 23.0,
+                "Unitario": 3490.0,
+                "Total": 80270.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "PROTESE ENDOESQUELETICA PARA AMPUTAÇÃO TRANSTIBIAL TIPO PTB-PTS-KBM (NIVEL ABAIXO DO JOELHO) EM AÇO OU ALUMINIO, ENCAIXE LAMINADO EM RESINA ACRILICA E FIBRA DE CARBONO, CARTUCHO/ENCAIXE INTERNO FLEXIVEL, REVESTIDA COM ESPUMA E MEIA COSMETICA. PE SACH, ARTICULADO OU DE ADPTAÇÃO.",
+                "Qtd": 36.0,
+                "Unitario": 1590.0,
+                "Total": 57240.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "PRÓTESE PARA AMPUTAÇÃO TIPO CHOPART (PÉ MECANICO)PROTESE LAMINADA EM RESINA ACRILICA REFORCADA EM FIBRA DE CARBONO, PARA AMPUTACAO DE CHOPART, BIVALVADA OU NAO, COM OU SEM APOIO NO TENDAO PATELAR, COM PE ESPECIFICO PARA COTO CHOPART",
+                "Qtd": 12.0,
+                "Unitario": 1440.0,
+                "Total": 17280.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "PROTESE TIPO PALMILHA P/ AMPUTAÇÃO EM NIVEL DO ANTE PE, RIGIDA OU FLEXIVEL PARA AMPUTAÇÃO DO ANTE PE, CONFECCIONADA EM TERMOPLASTICO SOB MEDIDA, COMPLEMENTAÇÃO DISTAL EM SILICONE OU PLASTAZOTE E ADAPTAVEL INTERNAMENTE AO CALÇADO COMUM OU ORTOPEDICO.",
+                "Qtd": 3.0,
+                "Unitario": 450.0,
+                "Total": 1350.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 6,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-08T13:32:03",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-24T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "2003",
+        "Edital": "00043/2025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "FRANCIELE ELETRO LTDA",
+        "CNPJ": "47646580000152",
+        "Licitacao": "2003000432025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "FREEZER HORIZONTAL - Especificação: Conforme termo de referência\r",
+                "Qtd": 1.0,
+                "Unitario": 3350.0,
+                "Total": 3350.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "TANQUINHO DE LAVAR ROUPAS 20 KG - Especificação: Conforme termo de referência\r",
+                "Qtd": 2.0,
+                "Unitario": 600.0,
+                "Total": 1200.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-08T13:32:03",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-24T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "2003",
+        "Edital": "00043/2025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "ODETE MARIA FREITAS",
+        "CNPJ": "45897289000121",
+        "Licitacao": "2003000432025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "GELADEIRA - Especificação: Conforme termo de referência\r",
+                "Qtd": 1.0,
+                "Unitario": 2550.0,
+                "Total": 2550.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "FOGÃO - Especificação: Conforme termo de referência\r",
+                "Qtd": 2.0,
+                "Unitario": 1248.0,
+                "Total": 2496.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Maquina de lavar roupas - Especificação: Conforme termo de referência\r",
+                "Qtd": 2.0,
+                "Unitario": 2100.0,
+                "Total": 4200.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-08T13:32:03",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-24T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "2003",
+        "Edital": "00043/2025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "M CARREGA COMÉRCIO DE PRODUTOS HOSPITALARES",
+        "CNPJ": "32593430000150",
+        "Licitacao": "2003000432025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Desfibrilador Externo Automático (DEA) - Especificação: Conforme termo de referência\r",
+                "Qtd": 1.0,
+                "Unitario": 6850.0,
+                "Total": 6850.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-08T13:32:03",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-24T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "2003",
+        "Edital": "00043/2025",
+        "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "COMERCIAL GUARA LTDA",
+        "CNPJ": "07731777000175",
+        "Licitacao": "2003000432025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "SECADORA DE ROUPAS SUSPENSA 10 KG - Especificação: Conforme termo de referência\r",
+                "Qtd": 1.0,
+                "Unitario": 2445.0,
+                "Total": 2445.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "MESA DE REUNIÃO RETANGULAR - Especificação: Conforme termo de referência\r",
+                "Qtd": 2.0,
+                "Unitario": 685.0,
+                "Total": 1370.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-03T14:55:47",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-09T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00017/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "HM SONORIZACAO E ILUMINACAO LTDA",
+        "CNPJ": "33618020000180",
+        "Licitacao": "698000172025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LOCAÇÃO DE SOM PEQUENO PORTE",
+                "Qtd": 99.0,
+                "Unitario": 1200.0,
+                "Total": 118800.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "LOCAÇÃO DE SOM DE PEQUENO PORTE PCT COM 04 DIÁRIAS",
+                "Qtd": 10.0,
+                "Unitario": 4490.0,
+                "Total": 44900.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-03T14:55:47",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-09T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00017/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "J DE O SOUZA EVENTOS ME",
+        "CNPJ": "15734600000150",
+        "Licitacao": "698000172025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "LOCAÇÃO DE SOM GRANDE PORTE E ILUMINAÇÃO.",
+                "Qtd": 12.0,
+                "Unitario": 12900.0,
+                "Total": 154800.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "LOCAÇÃO DE SOM E ILUMINAÇÃO DE MÉDIO PORTE",
+                "Qtd": 53.0,
+                "Unitario": 6990.0,
+                "Total": 370470.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "LOCAÇÃO DE SOM E ILUMINAÇÃO MÉDIO PORTE PCT COM 04 DIÁRIAS",
+                "Qtd": 10.0,
+                "Unitario": 24900.0,
+                "Total": 249000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "LOCAÇÃO DE PAINEL DE LED",
+                "Qtd": 774.0,
+                "Unitario": 190.0,
+                "Total": 147060.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "LOCAÇÃO DE PAINEL DE LED PCT COM 04 DIÁRIAS",
+                "Qtd": 10.0,
+                "Unitario": 18400.0,
+                "Total": 184000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-03T14:55:47",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-09T09:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "698",
+        "Edital": "00017/2025",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Fornecedor": "LUIZ ANTONIO PEIXOTO FRANCA EPP",
+        "CNPJ": "03246708000115",
+        "Licitacao": "698000172025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "LOCAÇÃO DE SOM E ILUMINAÇÃO GRANDE PORTE PCT COM 04 DIÁRIAS",
+                "Qtd": 5.0,
+                "Unitario": 40490.0,
+                "Total": 202450.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-07T09:10:20",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-22T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "348",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
+        "UF": "MA",
+        "Municipio": "Presidente Vargas",
+        "Fornecedor": "GADITA COMÉRCIO DE PRODUTOS PERMANENTES E DE CONSUMO LTDA",
+        "CNPJ": "35231746000190",
+        "Licitacao": "348000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Aperelho de televisão Tipo 1 com as seguintes especificações mínimas: Smart TV LED 43 polegadas, monitor Full HD, Closed Caption, Youtube, Netflix, Globo Play, Bluetooth, potência do Áudio (RMS)20, Wi-Fi integrado, garantia de 12 Meses, taxa de atualização 60Hz, PQI (Picture Quality Index) 1000, HDR, mega Contraste, micro Dimming, modo Filme e modo Natural, navegador (Web Browser), espelhamento do Smartphone para TV, acessibilidade guia de Voz, ampliar, aumento de Contraste, busca automática de canais, desligamento Automático, legenda, HDD, USB 2.0, compatível com HID USB, IPv6 Support, sensor Ecológico, selo Procel (\"A\"), consumo (KW/h) 120, recursos de Áudio, Dolby, Potência Sonora 20 W RMS, 01 entrada USB.",
+                "Qtd": 3.0,
+                "Unitario": 1680.0,
+                "Total": 5040.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Aparelho de Televisão tipo 4 com as seguintes especificações mínimas: Smart TV LED de 32 polegadas, display de alta definição WXGA (1920x1080) Widescreen 16,9 e full screen (4:3); ter brilho de no mínimo 500 cd/m², ter contraste de no mínimo: 8000:1, ter suporte a SAP e Closed Caption; Voltagem: AC 100-240V; ter no mínimo as seguintes conexões: 1(uma) entrada HDMI; 1(uma) entrada Vídeo Componente; 1(uma) entrada S-Vídeo; 1(um) conjuntos de entrada RCA para áudio e vídeo; 1(uma) saída para fone de ouvido; Ser operado nos idiomas português e inglês, vir acompanhado de controle remoto, cabos e acessórios para o seu bom funcionamento e manual em português.",
+                "Qtd": 15.0,
+                "Unitario": 1240.0,
+                "Total": 18600.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-07T09:10:20",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-22T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "348",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
+        "UF": "MA",
+        "Municipio": "Presidente Vargas",
+        "Fornecedor": "J L TECNOLOGIA E EMPREENDIMENTOS LTDA",
+        "CNPJ": "41884533000160",
+        "Licitacao": "348000022025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Aparelho de Televisão Tipo 2 com as seguintes especificações mínimas: Smart TV LED 70 polegadas, tela sem limite, monitor UHD 4k, múltiplo controle por voz, Closed Caption, Youtube, Netflix, Globo Play, Bluetooth, potência do Áudio (RMS)20, Wi-Fi integrado, garantia de 12 Meses, taxa de atualização 60Hz, PQI (Picture Quality Index) 1000, HDR, mega Contraste, micro Dimming, modo Filme e modo Natural, navegador (Web Browser), espelhamento do Smartphone para TV, acessibilidade guia de Voz, ampliar, aumento de Contraste, busca automática de canais, desligamento Automático, legenda, HDD, USB 2.0, compatível com HID USB, IPv6 Support, sensor Ecológico, selo Procel (\"A\"), consumo (KW/h) 120, recursos de Áudio, Dolby, Potência Sonora 20 W RMS, 01 entrada USB.",
+                "Qtd": 2.0,
+                "Unitario": 4039.74,
+                "Total": 8079.48,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Aparelho de Televisão Tipo 3 com as seguintes especificações mínimas: Smart TV LED de 55 polegadas, display de alta definição WXGA (1920x1080) Widescreen 16,9 e full screen (4:3); ter brilho de no mínimo 500 cd/m², ter contraste de no mínimo: 8000:1, ter suporte a SAP e Closed Caption; Voltagem: AC 100-240V; ter no mínimo as seguintes conexões: 1(uma) entrada HDMI; 1(uma) entrada Vídeo Componente; 1(uma) entrada S-Vídeo; 1(um) conjuntos de entrada RCA para áudio e vídeo; 1(uma) saída para fone de ouvido; Ser operado nos idiomas português e inglês, vir acompanhado de controle remoto, cabos e acessórios para o seu bom funcionamento e manual em português",
+                "Qtd": 3.0,
+                "Unitario": 2375.78,
+                "Total": 7127.34,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "AR CONDICIONADO 9.000 BTUS: Tipo SPLIT, Bifásico (evaporador e condensador), Controle sem fio, Filtro lavável e removível, Display digital na evaporadora, Com baixo consumo de energia ,Selo Procel  “A” , Timer , filtro de proteção  ativa, Direcionadores de Ar, Saída  Regulável do Ar, Painel eletrônico, Controle de temperatura, 3 velocidades de ventilação, ajuste automático da direção do fluxo de ar (para cima ou para baixo), Garantia Mínima do Fabricante 12(doze) meses, contados da aquisição.",
+                "Qtd": 30.0,
+                "Unitario": 2266.67,
+                "Total": 68000.1,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "AR CONDICIONADO 12.000 BTUS: Tipo SPLIT, Bifásico (evaporador e condensador), Controle sem fio, Filtro lavável e removível, Display digital na evaporadora, Com baixo consumo de energia ,Selo Procel  “A” , Timer , filtro de proteção  ativa, Direcionadores de Ar, Saída  Regulável do Ar, Painel eletrônico, Controle de temperatura, 3 velocidades de ventilação, ajuste automático da direção do fluxo de ar (para cima ou para baixo), Garantia Mínima do Fabricante 12(doze) meses, contados da aquisição.",
+                "Qtd": 80.0,
+                "Unitario": 2567.88,
+                "Total": 205430.4,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "AR CONDICONADO 18.000 BTUS: Tipo SPLIT de piso teto, Bifásico (evaporador e condensador), Classe de consumo Procel “B”, Filtro lavável e removível, Comprimento Médio Utilizado 10(m), Presença de controle remoto sem fio, com funções de refrigeração, ventilação, termômetro e termostato, com alcance mínimo de cinco metros, display integrado, Display na unidade evaporadora, com as funções de temperatura, ventilação e refrigeração, Garantia Mínima do Fabricante 12(doze) meses, contados da aquisição.",
+                "Qtd": 80.0,
+                "Unitario": 3394.16,
+                "Total": 271532.8,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "AR CONDICONADO 24.000 BTUS: Tipo SPLIT de piso teto, Bifásico (evaporador e condensador), Classe de consumo Procel “B”, Filtro lavável e removível, Comprimento Médio Utilizado 10(m), Presença de controle remoto sem fio, com funções de refrigeração, ventilação, termômetro e termostato, com alcance mínimo de cinco metros, display integrado, Display na unidade evaporadora, com as funções de temperatura, ventilação e refrigeração, Garantia Mínima do Fabricante 12(doze) meses, contados da aquisição.",
+                "Qtd": 20.0,
+                "Unitario": 5147.12,
+                "Total": 102942.4,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-07T09:10:20",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-22T08:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "348",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PRESIDENTE VARGAS",
+        "UF": "MA",
+        "Municipio": "Presidente Vargas",
+        "Fornecedor": "V R COSTA LTDA",
+        "CNPJ": "21111336000100",
+        "Licitacao": "348000022025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "Armário de aço com fechadura e as seguintes especificações mínimas: 02 portas de abrir com reforços internos tipo Omega, puxador estampado na própria porta no sentido vertical com acabamento em PVC, possui sistema de cremalheira para regulagem das prateleiras a cada 50 mm, com 01 prateleira fixa para travamento das portas e 03 reguláveis, fechadura cilíndrica com chaves tipo Yale. Estrutura confeccionada em chapa de aço nº 24 (0,60mm). Acabamento tratado pelo processo anti-corrosivo à base de fosfato de zinco e pintura eletrostática a pó na cor cinza cristal e portas com pintura em esmalte sintético. Pés reguláveis com base em polietileno de alto impacto com diâmetro de 50 mm, fixado por parafuso de 3/8 x 1”. Capacidade :  30 kg por prateleira . Dimensões mínimas: 900 mm x 400 mm x 1975 mm (l x p x h).",
+                "Qtd": 50.0,
+                "Unitario": 819.9,
+                "Total": 40995.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Arquivo de aço com 03 gavetas: Arquivo de aço com 03 (três) gavetas para pasta suspensa chapa de aço de no mínimo n° 24 (0,60mm), nas laterais, no fUNDo e parte superior. Sistema de deslizamento das gavetas por trilhos, corrediça telescópica de abertura total, em chapa de aço n° 18 (1,20mm). Porta etiquetas e puxadores estampados na parte superior das gavetas, pés com regulagem de altura, fechadura cilíndrica tipo Yale com chaves em duplicata. Tratamento anticorrosivo por fosfatização a base zinco e pintura eletrostática a pó na cor cinza. Pés reguláveis com base em polietileno de alto impacto com diâmetro de 50 mm, fixado por parafuso de 3/8 x 1”. Capacidade de 40 a 50 pastas ou 45 Kg por gavetas. Dimensões mínimas:465mmx670mmx1010mm.",
+                "Qtd": 30.0,
+                "Unitario": 1398.0,
+                "Total": 41940.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-03-20T18:03:03",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-07T13:00:00",
+        "Link": "https://pncp.gov.br/app/editais/None/2025",
+        "UASG": "760",
+        "Edital": "00022/2025",
+        "Orgao": "MUNICIPIO DE BOM SUCESSO",
+        "UF": "MG",
+        "Municipio": "Bom Sucesso",
+        "Fornecedor": "GNC AUTOMOTORES LTDA.",
+        "CNPJ": "04798469000764",
+        "Licitacao": "760000222025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEICULO 1.8 0KM 7 LUGARES",
+                "Qtd": 2.0,
+                "Unitario": 133100.0,
+                "Total": 266200.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    }
+]
