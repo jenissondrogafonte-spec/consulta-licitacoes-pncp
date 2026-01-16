@@ -1,49 +1,49 @@
-name: Atualizar Licitações
+name: Robô Sniper Automático 2025
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    # Roda a cada 2 horas (no minuto 0)
+    - cron: '0 */2 * * *'
   workflow_dispatch:
-    inputs:
-      data_inicial:
-        description: 'Data Inicial (AAAAMMDD)'
-        required: false
-      data_final:
-        description: 'Data Final (AAAAMMDD)'
-        required: false
-
-permissions:
-  contents: write
+    # Permite que você clique em "Run Workflow" para testar manualmente
 
 jobs:
-  coletar:
+  coleta:
     runs-on: ubuntu-latest
-    timeout-minutes: 360 # <--- AUMENTADO PARA 6 HORAS (IMPORTANTE PARA 90 DIAS)
     
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 
+    # Permissões necessárias para o Bot salvar arquivos no seu GitHub
+    permissions:
+      contents: write
 
-      - name: Configurar Python
+    steps:
+      - name: 1. Checkout do Código
+        uses: actions/checkout@v3
+
+      - name: 2. Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Instalar Dependências
-        run: pip install requests
+      - name: 3. Instalar Dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Rodar Robô
-        env:
-          DATA_INICIAL: ${{ github.event.inputs.data_inicial }}
-          DATA_FINAL: ${{ github.event.inputs.data_final }}
+      - name: 4. Executar Coleta (Fatias de 10 dias)
         run: python coleta_pncp.py
 
-      - name: Commit e Push dos Dados
+      - name: 5. Salvar Progresso e Dados no GitHub
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add dados.json
-          git commit -m "Atualização 90 dias: $(date +'%Y-%m-%d')" || echo "Sem novos dados"
-          git pull --rebase
-          git push
+          git config --global user.name "SniperBot-Drogafonte"
+          git config --global user.email "actions@github.com"
+          
+          # Adiciona os arquivos que mudaram
+          git add dados.json checkpoint.txt
+          
+          # Verifica se há algo para commitar (evita erro se nada for encontrado)
+          if git diff --cached --quiet; then
+            echo "Nenhuma mudança relevante encontrada neste ciclo."
+          else
+            git commit -m "🤖 Progresso Auto: $(cat checkpoint.txt)"
+            git push
+          fi
