@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PNCP Analytics - CNPJ 08778201000126</title>
+    <title>PNCP Analytics - Drogafonte</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -14,12 +14,14 @@
         .filter-container { background: white; margin-top: -40px; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .form-control { border-radius: 10px; border: 1px solid #e9ecef; font-size: 0.9rem; padding: 10px; }
         .form-label { font-size: 0.75rem; font-weight: 700; color: #7f8c8d; text-transform: uppercase; margin-bottom: 4px; }
-        .edital-card { background: white; border-radius: 16px; border: 1px solid #f1f3f5; transition: all 0.3s; height: 100%; position: relative; overflow: hidden; }
+        .edital-card { background: white; border-radius: 16px; border: 1px solid #f1f3f5; transition: all 0.3s; height: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; }
         .edital-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-color: var(--primary); }
         .card-header-custom { background: #f8f9fa; padding: 15px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
-        .badge-data { background: #e3f2fd; color: #004494; font-weight: 700; border-radius: 8px; padding: 6px 10px; }
+        .badge-data { background: #e3f2fd; color: #004494; font-weight: 700; border-radius: 8px; padding: 6px 10px; font-size: 0.75rem; }
         .valor-destaque { color: var(--success); font-weight: 800; font-size: 1.2rem; }
-        .badge-cnpj { background: #004494; color: white; padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; }
+        .badge-cnpj { background: #004494; color: white; padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; }
+        .modal-content { border-radius: 20px; border: none; overflow: hidden; }
+        .fw-800 { font-weight: 800; }
     </style>
 </head>
 <body>
@@ -28,16 +30,21 @@
     <div class="container-fluid px-5">
         <div class="row align-items-center">
             <div class="col-md-7">
-                <div class="badge-cnpj mb-2">Monitoramento de Empresa</div>
-                <h3 class="fw-800 mb-0">Resultados: 08.778.201/0001-26</h3>
-                <p class="opacity-75 mb-0 small">Filtrando apenas contratos vinculados a este CNPJ</p>
+                <div class="mb-3">
+                    <a href="index.html" class="btn btn-sm btn-outline-light rounded-pill px-3" style="border-color: rgba(255,255,255,0.3)">
+                        <i class="fas fa-arrow-left me-2"></i>Voltar ao Painel Geral
+                    </a>
+                </div>
+                <div class="badge-cnpj mb-2">Painel de Performance</div>
+                <h3 class="fw-800 mb-0">Resultados Drogafonte</h3>
+                <p class="opacity-75 mb-0 small">CNPJ: 08.778.201/0001-26</p>
             </div>
             <div class="col-md-5 text-end">
                 <div class="d-inline-block text-start me-4">
-                    <span class="d-block small opacity-75 text-white">Total Ganho (Filtro)</span>
+                    <span class="d-block small opacity-75 text-white">Total Faturado (Filtro)</span>
                     <h4 class="fw-bold mb-0" id="dash-total">R$ 0,00</h4>
                 </div>
-                <span class="badge bg-white text-primary rounded-pill px-3 py-2" id="contador">...</span>
+                <span class="badge bg-white text-primary rounded-pill px-3 py-2 fw-bold shadow-sm" id="contador">...</span>
             </div>
         </div>
     </div>
@@ -46,14 +53,13 @@
 <div class="container-fluid px-5 mb-5">
     <div class="filter-container mb-5">
         <div class="row g-2 align-items-end">
-            <div class="col-md-2"><label class="form-label">Órgão / UASG</label><input type="text" id="fOrgao" class="form-control" placeholder="Buscar no órgão..." oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control" placeholder="00000/2025" oninput="debounceFiltrar()"></div>
+            <div class="col-md-3"><label class="form-label">Órgão / UASG</label><input type="text" id="fOrgao" class="form-control" placeholder="Buscar..." oninput="debounceFiltrar()"></div>
+            <div class="col-md-2"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control" placeholder="Ex: 01/2025" oninput="debounceFiltrar()"></div>
             <div class="col-md-1"><label class="form-label">UF</label><input type="text" id="fUF" class="form-control" maxlength="2" oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="form-label">Município</label><input type="text" id="fMuni" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="form-label">Período Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
-            <div class="col-md-2"><label class="form-label">Período Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
-            <div class="col-md-1">
-                <button class="btn btn-light border w-100 py-2" onclick="limpar()"><i class="fas fa-eraser"></i></button>
+            <div class="col-md-2"><label class="form-label">Data Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-2"><label class="form-label">Data Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-2">
+                <button class="btn btn-light border w-100 py-2" onclick="limpar()"><i class="fas fa-sync me-2"></i>Limpar</button>
             </div>
         </div>
     </div>
@@ -65,13 +71,12 @@
 
 <div class="modal fade" id="modalDetalhes" tabindex="-1">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
-            <div class="modal-header bg-primary text-white py-3">
-                <h5 class="modal-title fw-bold">Itens do Contrato</h5>
+        <div class="modal-content shadow-lg">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-file-invoice-dollar me-2"></i>Vitória Detalhada</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body p-0 bg-light" id="corpoModal">
-                </div>
+            <div class="modal-body p-0 bg-light" id="corpoModal"></div>
         </div>
     </div>
 </div>
@@ -79,16 +84,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     let dadosOriginal = [];
-    const CNPJ_ALVO = "08778201000126"; // CNPJ TRAVADO NESTA PÁGINA
+    const CNPJ_ALVO = "08778201000126";
 
     async function carregar() {
         try {
             const r = await fetch('dados.json?v=' + Date.now());
             const json = await r.json();
-            
-            // FILTRO INICIAL: Só o que tem a empresa
-            dadosOriginal = json.filter(i => i.CNPJ === CNPJ_ALVO);
-            
+            // Filtra apenas o que pertence à empresa
+            dadosOriginal = json.filter(i => i.CNPJ.replace(/\D/g,'') === CNPJ_ALVO);
             filtrar();
         } catch(e) {
             document.getElementById('lista').innerHTML = `<div class='alert alert-danger'>Erro ao carregar dados.json</div>`;
@@ -98,75 +101,75 @@
     function renderizar(lista) {
         const container = document.getElementById('lista');
         if (lista.length === 0) {
-            container.innerHTML = `<div class="col-12 text-center text-muted py-5"><h4>Nenhum registro encontrado para este CNPJ.</h4></div>`;
+            container.innerHTML = `<div class="col-12 text-center text-muted py-5"><h5>Nenhum resultado encontrado.</h5></div>`;
             return;
         }
 
-        const grupos = {};
-        let totalGeral = 0;
+        let totalFinanceiro = 0;
+        const html = lista.sort((a,b) => new Date(b.DataResult) - new Date(a.DataResult)).map(g => {
+            const totalForn = g.Itens.reduce((acc, it) => acc + (it.Status === "Venceu" ? it.Total : 0), 0);
+            totalFinanceiro += totalForn;
 
-        lista.forEach(item => {
-            const id = item.Licitacao;
-            if (!grupos[id]) {
-                grupos[id] = { ...item, TotalEmpresa: 0, ItensEmpresa: [] };
-            }
-            if (item.Itens) {
-                item.Itens.forEach(it => {
-                    if ((it.Status || "").toUpperCase() === "VENCEU") {
-                        grupos[id].TotalEmpresa += parseFloat(it.Total || it.Valor || 0);
-                        grupos[id].ItensEmpresa.push(it);
-                    }
-                });
-            }
-        });
-
-        const html = Object.values(grupos).map(g => {
-            totalGeral += g.TotalEmpresa;
             return `
             <div class="col-md-6 col-lg-4">
-                <div class="edital-card">
+                <div class="edital-card shadow-sm">
                     <div class="card-header-custom">
                         <span class="badge-data">${g.DataResult.split('T')[0]}</span>
                         <small class="fw-bold text-muted">${g.Edital}</small>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 flex-grow-1">
                         <h6 class="fw-bold text-primary mb-1 text-truncate">${g.Orgao}</h6>
                         <p class="small text-muted mb-3">${g.Municipio} - ${g.UF}</p>
-                        <div class="small mb-1 text-uppercase fw-bold text-muted" style="font-size:0.6rem">Valor Ganho</div>
-                        <div class="valor-destaque">R$ ${g.TotalEmpresa.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
+                        <div class="small text-uppercase fw-bold text-muted" style="font-size:0.6rem">Faturamento neste Edital</div>
+                        <div class="valor-destaque">R$ ${totalForn.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
                     </div>
-                    <div class="p-3 bg-light border-top text-end">
-                        <button class="btn btn-sm btn-outline-primary rounded-pill px-4" onclick="verItens('${g.Licitacao}')">Ver Itens</button>
-                        <a href="${g.Link}" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3"><i class="fas fa-link"></i></a>
+                    <div class="p-3 bg-light border-top d-flex gap-2">
+                        <button class="btn btn-primary w-100 rounded-pill btn-sm fw-bold" onclick="verItens('${g.Licitacao}')">Ver Itens Ganhos</button>
+                        <a href="${g.Link}" target="_blank" class="btn btn-outline-primary rounded-circle btn-sm"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
             </div>`;
         }).join('');
 
         container.innerHTML = html;
-        document.getElementById('dash-total').innerText = totalGeral.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-        document.getElementById('contador').innerText = lista.length + " Contratos";
+        document.getElementById('dash-total').innerText = totalFinanceiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.getElementById('contador').innerText = lista.length + " Vitórias";
     }
 
     function verItens(idLic) {
         const lic = dadosOriginal.find(x => x.Licitacao === idLic);
         const corpo = document.getElementById('corpoModal');
+        const totalForn = lic.Itens.reduce((acc, it) => acc + (it.Status === "Venceu" ? it.Total : 0), 0);
+
         corpo.innerHTML = `
-            <div class="p-4 bg-white border-bottom">
-                <h5 class="fw-bold mb-1">${lic.Orgao}</h5>
-                <p class="text-muted small mb-0">UASG: ${lic.UASG} | Edital: ${lic.Edital}</p>
+            <div class="p-4 bg-white border-bottom shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold text-primary mb-1">${lic.Orgao}</h5>
+                        <p class="text-muted small mb-0">UASG: ${lic.UASG} | Edital: ${lic.Edital}</p>
+                    </div>
+                    <div class="text-end">
+                        <div class="small fw-bold text-muted text-uppercase">Total do Contrato</div>
+                        <div class="h4 fw-800 text-success mb-0">R$ ${totalForn.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
+                    </div>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-hover align-middle mb-0">
                     <thead class="bg-dark text-white">
-                        <tr><th class="ps-4">Item</th><th>Descrição</th><th>Qtd</th><th class="text-end pe-4">Total</th></tr>
+                        <tr>
+                            <th class="ps-4">Item</th>
+                            <th>Descrição</th>
+                            <th class="text-center">Qtd</th>
+                            <th class="text-end pe-4">Valor Total Item</th>
+                        </tr>
                     </thead>
                     <tbody>
                         ${lic.Itens.map(it => `
                             <tr>
                                 <td class="ps-4 fw-bold">${it.Item}</td>
-                                <td class="small">${it.Desc}</td>
-                                <td>${it.Qtd}</td>
+                                <td class="small text-muted">${it.Desc}</td>
+                                <td class="text-center fw-bold">${it.Qtd.toLocaleString('pt-BR')}</td>
                                 <td class="text-end pe-4 fw-bold text-success">R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits:2})}</td>
                             </tr>
                         `).join('')}
@@ -181,7 +184,6 @@
             o: document.getElementById('fOrgao').value.toLowerCase(),
             e: document.getElementById('fEdital').value.trim(),
             uf: document.getElementById('fUF').value.toUpperCase(),
-            m: document.getElementById('fMuni').value.toLowerCase(),
             di: document.getElementById('fDataIni').value,
             df: document.getElementById('fDataFim').value
         };
@@ -190,7 +192,6 @@
             return (!q.o || i.Orgao.toLowerCase().includes(q.o) || i.UASG.includes(q.o)) &&
                    (!q.e || i.Edital.includes(q.e)) &&
                    (!q.uf || i.UF === q.uf) &&
-                   (!q.m || i.Municipio.toLowerCase().includes(q.m)) &&
                    (!q.di || d >= q.di) && (!q.df || d <= q.df);
         });
         renderizar(res);
