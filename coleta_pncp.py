@@ -22,7 +22,7 @@ dict_resultados = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-print(f"--- ROBÔ DE RESULTADOS COMPLETO: {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ BRASIL TOTAL: {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
@@ -51,9 +51,8 @@ while data_atual <= data_final:
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                    # Busca profunda de itens e resultados
                     try:
-                        time.sleep(0.2)
+                        time.sleep(0.15)
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
                             itens_api = r_it.json()
@@ -86,8 +85,10 @@ while data_atual <= data_final:
                                                 }
                                             forn_pregao[chave]["Itens"].append({
                                                 "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
-                                                "Qtd": v.get('quantidadeHomologada'), "Unitario": float(v.get('valorUnitarioHomologado') or 0),
-                                                "Total": float(v.get('valorTotalHomologado') or 0), "Status": "Venceu"
+                                                "Qtd": v.get('quantidadeHomologada'), 
+                                                "Unitario": float(v.get('valorUnitarioHomologado') or 0),
+                                                "Total": float(v.get('valorTotalHomologado') or 0), 
+                                                "Status": "Venceu"
                                             })
                             
                             for c, dados in forn_pregao.items():
@@ -98,16 +99,20 @@ while data_atual <= data_final:
         except: break
     data_atual += timedelta(days=1)
 
-# --- SALVAMENTO SEM PERDA DE DADOS ---
+# --- SALVAMENTO ACUMULATIVO (CORREÇÃO DO TOTAL) ---
 historico = []
 if os.path.exists(ARQ_DADOS):
-    with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
-        try: historico = json.load(f)
-        except: pass
+    try:
+        with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
+            historico = json.load(f)
+    except:
+        historico = []
 
+# Mesclamos usando Licitação + Fornecedor como chave para evitar duplicatas e permitir novos editais
 banco = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
 banco.update(dict_resultados)
 
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
     json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
-print(f"\n✅ Concluído! Total no arquivo: {len(banco)}")
+
+print(f"\n✅ Concluído! O arquivo agora contém {len(banco)} registros acumulados.")
