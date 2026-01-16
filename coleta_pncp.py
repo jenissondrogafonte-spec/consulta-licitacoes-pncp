@@ -34,7 +34,7 @@ dict_novos = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-print(f"--- ROBÔ (MODO PROFUNDO): {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ GERAL (ATUALIZAÇÃO): {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
@@ -45,7 +45,7 @@ while data_atual <= data_final:
     while True:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         
-        # Busca por ATUALIZAÇÃO para pegar movimentações recentes
+        # Busca por ATUALIZAÇÃO (Pega tudo que se mexeu na data)
         params = {
             "dataAtualizacaoInicial": DATA_STR,
             "dataAtualizacaoFinal": DATA_STR,
@@ -70,9 +70,7 @@ while data_atual <= data_final:
             print(".", end="", flush=True)
 
             for lic in lics:
-                # --- CORREÇÃO CRÍTICA AQUI ---
-                # Antes ignorávamos o '1' (Divulgada). Agora aceitamos TUDO.
-                # A responsabilidade de filtrar será do "temResultado" lá embaixo.
+                # Aceita QUALQUER status, pois vamos validar item a item
                 status_validos = ['1','2','3','4','5','6','7','8','9','10']
                 
                 if str(lic.get('situacaoCompraId')) in status_validos:
@@ -85,19 +83,22 @@ while data_atual <= data_final:
                     dt_abertura = lic.get('dataAberturaLicitacao', '')
                     dt_encerra = lic.get('dataEncerramentoProposta', '')
                     
+                    # --- LINK SEGURO (CORRIGIDO) ---
+                    # Usa o ID único da contratação, não a composição manual
                     item_id = lic.get('id')
                     link_pncp = f"https://pncp.gov.br/app/editais/{item_id}"
+                    # -------------------------------
 
                     try:
-                        time.sleep(0.1)
-                        # Busca Itens (Aqui veremos a verdade, independente do status do edital)
+                        time.sleep(0.1) # Pausa técnica
+                        # Entra nos Itens para ver a verdade
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
                             itens_api = r_it.json()
                             resumo = {"Homologados": 0, "Fracassados": 0, "Desertos": 0}
                             forn_local = {}
                             
-                            tem_novidade = False # Flag para saber se salvamos este edital
+                            tem_novidade = False
 
                             for it in itens_api:
                                 sit_item = (it.get('situacaoItemNome') or "").upper()
@@ -107,7 +108,7 @@ while data_atual <= data_final:
                                 if is_fracassado: resumo["Fracassados"] += 1
                                 elif is_deserto: resumo["Desertos"] += 1
                                 
-                                # CASO 1: TEM RESULTADO REAL (Mesmo que edital diga "Divulgada")
+                                # 1. TEM RESULTADO (VENCEDOR)
                                 if it.get('temResultado'):
                                     tem_novidade = True
                                     resumo["Homologados"] += 1
@@ -131,7 +132,7 @@ while data_atual <= data_final:
                                                 "Status": "Venceu"
                                             })
                                 
-                                # CASO 2: FRACASSADO/DESERTO
+                                # 2. NÃO TEM VENCEDOR (Fracassado/Deserto)
                                 elif is_fracassado or is_deserto:
                                     tem_novidade = True
                                     chave_fail = f"{id_lic}-SEM_RESULTADO"
@@ -146,7 +147,7 @@ while data_atual <= data_final:
                                         "Status": "Fracassado" if is_fracassado else "Deserto"
                                     })
 
-                            # Só salva se encontrou algo relevante (Vencedor, Fracasso ou Deserto)
+                            # Salva se houve alguma movimentação relevante no edital
                             if tem_novidade:
                                 for c, dados in forn_local.items():
                                     dados["Resumo"] = resumo
@@ -175,16 +176,20 @@ def criar_estrutura(lic, uasg, seq, ano, cnpj, razao, id_lic, data_str, dt_a, dt
         "Fornecedor": razao, "CNPJ": cnpj, "Licitacao": id_lic, "Itens": []
     }
 
-# --- SALVAMENTO ---
+# --- SALVAMENTO SEGURO ---
 historico = []
 if os.path.exists(ARQ_DADOS):
     try:
         with open(ARQ_DADOS, 'r', encoding='utf-8') as f: historico = json.load(f)
     except: pass
 
-print(f"\n\n📊 Total Coletado: {len(dict_novos)}")
+print(f"\n\n📊 Novos Coletados: {len(dict_novos)}")
+
+# Atualiza sem duplicar (chave composta: Licitacao + CNPJ)
 banco = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
 banco.update(dict_novos)
+
+print(f"📈 Total na Base: {len(banco)}")
 
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
     json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
