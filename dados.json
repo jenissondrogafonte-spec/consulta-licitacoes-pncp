@@ -63,14 +63,31 @@
         ]
     },
     {
-        "CNPJ": "26334347000164",
-        "Data": "20250507",
-        "Fornecedor": "CPS MOBILIARIO E EQUIPAMENTOS EIRELI ME",
-        "Itens": 2,
-        "Licitacao": "10001112025",
+        "DataResult": "2025-06-04T16:13:30",
+        "UASG": "10",
+        "Edital": "00111/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 39260.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "CPS MOBILIARIO E EQUIPAMENTOS EIRELI ME",
+        "CNPJ": "26334347000164",
+        "InicioRec": "",
+        "FimRec": "2025-06-24T09:30:00",
+        "Licitacao": "10001112025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "CONJUNTO HEXAGONAL COMPOSTO DE MESA E 6 CADEIRAS - CONJUNTO INFANTIL 6 MESAS+6CADEIRAS+ MESA CENTRAL\r",
+                "Status": "Venceu",
+                "Valor": 9660.0
+            },
+            {
+                "Item": 3,
+                "Desc": "CONJUNTO REFEITORIO INFANTIL 8 LUGARES COMP. 1 MESA E 8 CADEIRAS\r",
+                "Status": "Venceu",
+                "Valor": 29600.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-15T23:45:23",
@@ -229,14 +246,43 @@
         ]
     },
     {
-        "CNPJ": "18519219000167",
-        "Data": "20250529",
-        "Fornecedor": "POUSO FARMA LTDA",
-        "Itens": 4,
-        "Licitacao": "10001222025",
+        "DataResult": "2025-07-30T08:23:06",
+        "UASG": "10",
+        "Edital": "00122/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 1645.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "POUSO FARMA LTDA",
+        "CNPJ": "18519219000167",
+        "InicioRec": "",
+        "FimRec": "2025-08-12T09:30:00",
+        "Licitacao": "10001222025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "AGUA P/ INJECAOAGUA P/ INJECAO 10 ML, SOLUCAO ESTERIL E APIROGENICA, DILUENTE INJETAVEL ENDOVENOSO EM AMPOLA\r",
+                "Status": "Venceu",
+                "Valor": 120.0
+            },
+            {
+                "Item": 3,
+                "Desc": "AGUA P/ INJECAOAGUA P/ INJECAO 1L, SOLUCAO ESTERIL E APIROGENICA, DILUENTE INJETAVEL ENDOVENOSO EM SISTEMA FECHADO\r",
+                "Status": "Venceu",
+                "Valor": 475.0
+            },
+            {
+                "Item": 5,
+                "Desc": "AGUA P/ INJECAOAGUA P/ INJECAO 250 ML, SOLUCAO ESTERIL E APIROGENICA, DILUENTE INJETAVEL ENDOVENOSO EM SISTEMA FECHADO\r",
+                "Status": "Venceu",
+                "Valor": 500.0
+            },
+            {
+                "Item": 6,
+                "Desc": "AGUA P/ INJECAOAGUA P/ INJECAO 500 ML, SOLUCAO ESTERIL E APIROGENICA, DILUENTE INJETAVEL ENDOVENOSO EM SISTEMA FECHADO\r",
+                "Status": "Venceu",
+                "Valor": 550.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-16T15:13:49",
@@ -566,14 +612,25 @@
         ]
     },
     {
-        "CNPJ": "00331788003134",
-        "Data": "20250521",
-        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - CONTAGEM",
-        "Itens": 1,
-        "Licitacao": "81000492025",
+        "DataResult": "2025-06-12T13:07:59",
+        "UASG": "81",
+        "Edital": "00049/2025",
         "Orgao": "MUNICIPIO DE BOM JESUS DO AMPARO",
-        "Total": 102780.0,
-        "UASG": "81"
+        "UF": "MG",
+        "Municipio": "Bom Jesus do Amparo",
+        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - CONTAGEM",
+        "CNPJ": "00331788003134",
+        "InicioRec": "",
+        "FimRec": "2025-07-01T09:29:00",
+        "Licitacao": "81000492025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "LocaCao de Concentradores de Oxigenio Concentrador de oxigenio estacionario que produz oxigenio concentrado a partir do ar ambiente com baixo consumo de energia, para terapia com baixo fluxo de oxigenio de ate 5 litros por minuto. Com nivel de ruido de 45 dBA, fluxo por litro de ate 5 litros e pressao de saida de 5,5 PSI. ConcentraCao de oxigenio de 93%  3% de 0,5 a 5 lmin. Modo de fluxo continuo: de 0,5 a 5 lmin sem modo pulso e sem modo noturno. Alarmes e indicadores: Sonoro e luzes indicadoras. Consumo de energia: 120V com OPI 1020002BR : 290W, medidasA x L x M : 58cm x 38cm x 24 cm, peso: 14Kg, temperatura de operaCao: 13C a 32C, altitude em operaCao: ate 2.286 metros, temperatura de armazenamento: -34C a 71C. Com AlCa moldada facil de segurar e carregar com apenas uma mao, contendo suporte universal para umidificador, armazenamento interno para o tubo de conexao com o umidificador, conexao da canula metalica para maior durabilidade, medidor de fluxo rebaixado que reduz",
+                "Status": "Venceu",
+                "Valor": 102780.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T13:35:48",
@@ -747,14 +804,25 @@
         ]
     },
     {
-        "CNPJ": "04729418000195",
-        "Data": "20250514",
-        "Fornecedor": "BONIN SERVICOS E EMPREENDIMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "BONIN SERVICOS E EMPREENDIMENTOS LTDA",
+        "CNPJ": "04729418000195",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T08:46:58",
@@ -784,14 +852,31 @@
         ]
     },
     {
-        "CNPJ": "43109155000173",
-        "Data": "20250514",
-        "Fornecedor": "PAMELA TOURINHO BRITO DUARTE",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "PAMELA TOURINHO BRITO DUARTE",
+        "CNPJ": "43109155000173",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-05T15:27:27",
@@ -854,14 +939,25 @@
         ]
     },
     {
-        "CNPJ": "18264177000160",
-        "Data": "20250506",
-        "Fornecedor": "KLEYBER JORGE DA SILVEIRA ME",
-        "Itens": 1,
-        "Licitacao": "277001152025",
+        "DataResult": "2025-05-20T13:52:51",
+        "UASG": "277",
+        "Edital": "00115/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 76000.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "KLEYBER JORGE DA SILVEIRA ME",
+        "CNPJ": "18264177000160",
+        "InicioRec": "",
+        "FimRec": "2025-06-02T09:00:00",
+        "Licitacao": "277001152025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PRESTAÇAO DE SERVIÇO PARA MAPEAMENTO TURISTICO DE ROTAS RURAIS E URBANAS PARA FINS DE PROMOÇAO TURISTICA          1º ETAPA: 1 - PLANEJAMENTO : 1.1. - Elaboração do plano de trabalho; 1.2  -Reunião de alinhamento entre consultor, departamento de turismo local e COMTUR (Conselho Municipal de Turismo) para criar o plano de trabalho; 1.3 -Relatório da apresentação do plano de trabalho e das visitas técnicas. 2º ETAPA: 2 - ANÁLISE SITUACIONAL  2.1. - Analisar todas as informações coletadas referentes a oferta turística e demanda turística; 2.2 - Analisar as potencialidades turísticas e a competitividade do segmento; 2.3 - Analisar o ambiente interno e externo: pontos fortes e fracos, ameaças e fraquezas respectivamente; 2.4 -Apresentar um relatório sobre o diagnóstico turístico; 2.5 - Apresentar um relatório sobre o prognóstico turístico. 3 - ELABORAÇÃO DO PLANO MUNICIPAL DE TURISMO 3.1 - Definir a visão, valores e princípios; 3.2 -Definir o objetivo geral e os objetivos específicos a serem atingidos;  3.3 - Definir as linhas de atuação; 3.4 - Definir as ações dentro de cada atuação; 3.5 - Definir os programas e projetos; 3.6 - Definir os resultados esperados; 3.7 - Elaborar e entregar o documento preliminar do PMT. 4 - APRESENTAÇÃO DO PMT (Plano Municipal de Turismo) 4.1 - Apresentar o PMT (Plano Municipal de Turismo) a empresários e entidades do ramo turístico, representantes da sociedade civil e da comunidade local; 4.2 - Encaminhar a versão final do PMT (Plano Municipal de Turismo) para o departamento de turismo local. 3º ETAPA : 5 - MAPEAMENTO TURÍSTICO 5.1 - prestadora do serviço deverá entregar, no mínimo, 6 rotas nas diferentes direções e regiões do município, todas geo-referenciadas. 5.2 - As Coordenadas especificadas nesse projeto deverão estar descritas em formato tradicional e decimal (padrão Google) As 6 rotas deverão estar disponibilizadas em formato de região de abrangênciauma ao lado da outra, fechando um circuito ao redor de todo o Município. 5.3 - Cad",
+                "Status": "Venceu",
+                "Valor": 76000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T14:55:47",
@@ -1197,14 +1293,37 @@
         ]
     },
     {
-        "CNPJ": "08223036000146",
-        "Data": "20250522",
-        "Fornecedor": "jose donizete da silva cpf 47212489620 me",
-        "Itens": 3,
-        "Licitacao": "591000472025",
+        "DataResult": "2025-06-27T08:28:09",
+        "UASG": "591",
+        "Edital": "00047/2025",
         "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 34025.0,
-        "UASG": "591"
+        "UF": "MG",
+        "Municipio": "Conceição do Rio Verde",
+        "Fornecedor": "jose donizete da silva cpf 47212489620 me",
+        "CNPJ": "08223036000146",
+        "InicioRec": "",
+        "FimRec": "2025-07-14T08:00:00",
+        "Licitacao": "591000472025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "SERVIÇOS DE CARRO SOM - Prestação de serviço de propaganda volante em carro de som com microfone sem fio",
+                "Status": "Venceu",
+                "Valor": 14512.5
+            },
+            {
+                "Item": 8,
+                "Desc": "SERVIÇOS DE GRAVAÇÃO DE SPOTS - gravação de spot para propaganda volante ou chamadas de radio. - Serviço de gravação em studio com confecção mixagem, realizar spot ou chamadas gravadas em cd ou pen-drive",
+                "Status": "Venceu",
+                "Valor": 9837.5
+            },
+            {
+                "Item": 9,
+                "Desc": "SERVIÇOS DE MOTO SOM - Prestação de serviço de propaganda volante em moto som",
+                "Status": "Venceu",
+                "Valor": 9675.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-29T15:05:45",
@@ -1309,54 +1428,187 @@
         ]
     },
     {
-        "CNPJ": "41191505000168",
-        "Data": "20250530",
-        "Fornecedor": "ALIMENTEX DISTRIBUIDORA LTDA",
-        "Itens": 4,
-        "Licitacao": "30001001862025",
+        "DataResult": "2025-09-19T10:20:55",
+        "UASG": "30001",
+        "Edital": "00186/2025",
         "Orgao": "MUNICIPIO DE CASCAVEL",
-        "Total": 80097.5,
-        "UASG": "30001"
+        "UF": "PR",
+        "Municipio": "Cascavel",
+        "Fornecedor": "ALIMENTEX DISTRIBUIDORA LTDA",
+        "CNPJ": "41191505000168",
+        "InicioRec": "",
+        "FimRec": "2025-10-06T08:59:00",
+        "Licitacao": "30001001862025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ACHOCOLATADO EM PÓ INSTANTÂNEO CONTENDO OS SEGUINTES INGREDIENTES BÁSICOS, AÇÚCAR, CACAU EM PÓ, SORO DE LEITE, AROMA NATURAL DE CHOCOLATE, SEM CORANTES ARTIFICIAIS, SEM GLÚTEN. EMBALAGEM: PACOTE DE 400 A 500 GRAMAS, EM POLIETILENO ATÓXICO, TRANSPARENTE, LEITOSA OU ALUMINIZADA, RESISTENTE, ACONDICIONADO EM CAIXA DE DE PAPELÃO, COM DATA DE FABRICAÇÃO E PRAZO DE VALIDADE DE NO MÍNIMO 06 MESES\r\nCONTENDO OS SEGUINTES INGREDIENTES BÁSICOS, AÇÚCAR, CACAU EM PÓ, SORO DE LEITE, AROMA NATURAL DE CHOCOLATE, SEM CORANTES ARTIFICIAIS, SEM GLÚTEN. EMBALAGEM: PACOTE DE 400 A 500 GRAMAS, EM POLIETILENO ATÓXICO, TRANSPARENTE, LEITOSA OU ALUMINIZADA, RESISTENTE, ACONDICIONADO EM CAIXA DE DE PAPELÃO, COM DATA DE FABRICAÇÃO E PRAZO DE VALIDADE DE NO MÍNIMO 06 MESES",
+                "Status": "Venceu",
+                "Valor": 15088.0
+            },
+            {
+                "Item": 7,
+                "Desc": "ÁGUA DE COCO. EMBALAGEM 200ML. A EMBALAGEM DEVERÁ CONTER EXTERNAMENTE OS DADOS DE IDENTIFICAÇÃO, PROCEDÊNCIA, QUANTIDADE, PRAZO DE VALIDADE E LOTE.",
+                "Status": "Venceu",
+                "Valor": 6951.0
+            },
+            {
+                "Item": 9,
+                "Desc": "ÁGUA MINERAL NATURAL, CONTENDO CARACTERÍSTICA FISICO-QUIMICAS E COMPOSIÇÃO QUÍMICA  E INFORMAÇÕES ADICIONAIS, COPO DE 200 ML, EMBALAGEM COM 48 COPOS.",
+                "Status": "Venceu",
+                "Valor": 48793.6
+            },
+            {
+                "Item": 10,
+                "Desc": "ÁGUA MINERAL; NATURAL SEM GÁS; ACONDICIONADA EM GARRAFA PET, TAMPA C/ROSCA E LACRE; CONTENDO 500 ML, FORNECIDA DENTRO DO PRAZO DE VALIDADE.",
+                "Status": "Venceu",
+                "Valor": 9264.9
+            }
+        ]
     },
     {
-        "CNPJ": "10338548000108",
-        "Data": "20250514",
-        "Fornecedor": "AOT AMBIENTAL E EMPREENDIMENTOS TECNICOS LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "AOT AMBIENTAL E EMPREENDIMENTOS TECNICOS LTDA",
+        "CNPJ": "10338548000108",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
-        "CNPJ": "55695599000117",
-        "Data": "20250508",
-        "Fornecedor": "MAGBA E-COMMERCE LTDA",
-        "Itens": 1,
-        "Licitacao": "1474000072025",
+        "DataResult": "2025-05-16T13:57:50",
+        "UASG": "1474",
+        "Edital": "00007/2025",
         "Orgao": "MUNICIPIO DE QUELUZ",
-        "Total": 19800.0,
-        "UASG": "1474"
+        "UF": "SP",
+        "Municipio": "Queluz",
+        "Fornecedor": "MAGBA E-COMMERCE LTDA",
+        "CNPJ": "55695599000117",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T08:30:00",
+        "Licitacao": "1474000072025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PNEU 215/75 RODA 17,5\r",
+                "Status": "Venceu",
+                "Valor": 19800.0
+            }
+        ]
     },
     {
-        "CNPJ": "24344495000134",
-        "Data": "20250521",
-        "Fornecedor": "companhia mineira de automóveis ltda",
-        "Itens": 1,
-        "Licitacao": "2036000812025",
+        "DataResult": "2025-07-02T10:46:26",
+        "UASG": "2036",
+        "Edital": "00081/2025",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
-        "Total": 139700.0,
-        "UASG": "2036"
+        "UF": "MG",
+        "Municipio": "São Tiago",
+        "Fornecedor": "companhia mineira de automóveis ltda",
+        "CNPJ": "24344495000134",
+        "InicioRec": "",
+        "FimRec": "2025-06-24T09:00:00",
+        "Licitacao": "2036000812025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AUTOMÓVEL  AUTOMÁTICO\nAutomóvel zero km;\nMotorização de mínimo de 1.8;\nCapacidade mínima de 7 (sete) passageiros incluindo o motorista;\nAno/modelo 2024/2024 ou superior;\nTipo passeio;\nPintura na cor branca ou prata;\n4 portas e 1 Porta-malas;\nFlex;\nEntre eixos mínimo de 2620 (mm);\nPotência mínima 106 cv;\n4 cilindros em linha;\n8 válvulas;\nTransmissão automática de no mínimo 5 velocidades a frente e uma a ré;\nDireção hidráulica ou elétrica;\nAir Bag duplo;\nAr condicionado, instalado pelo fabricante;\nFreios ABS (Sistema Antitravamento) dianteiros ventilados;\nTanque com capacidade mínima de 50 litros de combustível;\nLimpador e lavador do vidro diante e traseiro e desembaçador do vidro traseiro;\nChave tipo canivete com alarme;\nVidros elétricos nas 4 portas laterais,\nTravas elétricas nas 4 portas laterais e porta malas;\nTrava automática das portas a partir de 20 km/h;\nCintos de segurança dianteiros retráteis de 3 pontos com regulagem de altura,\nCintos de segurança laterais traseiros retráteis de 3 pontos e central fixo de 2 ou 3 pontos;\nBancos dianteiros com encosto e com ajuste de altura;\nBancos traseiros com apoios de cabeça;\nTapetes dianteiros e traseiros;\nFaróis de neblina;\nTomada 12V;\nkit multimidia com entrada USB instalado com no mínimo 4 alto-falantes;\ncâmara de ré;\nsensor de estacionamento traseiro;\nvolante multifuncional com regulagem de altura;\npara-choques,\nmaçanetas externas e retrovisores na cor do veículo com comandos elétricos;\nrodas em liga leve;\nvidros dianteiros e traseiros elétricos;\npainel de instrumentos com conta-giros, velocímetro;\nmarcador do nível de combustível;\nmarcador de temperatura e com computador de bordo;\nbanco do motorista com regulagem de altura;\ncapacidade do porta-malas (mínimo de 160L) com abertura elétrica;\n\nDemais equipamentos obrigatórios exigidos pelo CONTRAN.",
+                "Status": "Venceu",
+                "Valor": 139700.0
+            }
+        ]
     },
     {
-        "CNPJ": "44798952000178",
-        "Data": "20250530",
-        "Fornecedor": "OSBI EXTINTORES LTDA",
-        "Itens": 10,
-        "Licitacao": "03001000822025",
+        "DataResult": "2025-06-25T16:01:45",
+        "UASG": "03001",
+        "Edital": "00082/2025",
         "Orgao": "MUNICIPIO DE VIDEIRA",
-        "Total": 124471.05,
-        "UASG": "03001"
+        "UF": "SC",
+        "Municipio": "Videira",
+        "Fornecedor": "OSBI EXTINTORES LTDA",
+        "CNPJ": "44798952000178",
+        "InicioRec": "",
+        "FimRec": "2025-07-10T13:59:00",
+        "Licitacao": "03001000822025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PLACA DE SINALIZAÇÃO PARA EXTINTOR EM PVC 15X15CM - PICTOGRAMA INDICATIVO DE EXTINTOR DE INCÊNDIO - CONFORME IN006 (CBMSC, 2024) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 11130.0
+            },
+            {
+                "Item": 2,
+                "Desc": "PLACA DE SINALIZAÇÃO PARA EXTINTOR EM PVC 20X20CM - PICTOGRAMA INDICATIVO DE EXTINTOR DE INCÊNDIO - CONFORME IN006 (CBMSC, 2022) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 13000.0
+            },
+            {
+                "Item": 3,
+                "Desc": "PLACA DE SINALIZAÇÃO PARA EXTINTOR EM PVC 30X30CM - PICTOGRAMA INDICATIVO DE EXTINTOR DE INCÊNDIO - CONFORME IN006 (CBMSC, 2024) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 12116.0
+            },
+            {
+                "Item": 4,
+                "Desc": "PLACA DE SINALIZAÇÃO PARA EXTINTOR EM PVC 20X20CM-PROIBIDO COLOCAR MATERIAIS - CONFORME IN006 (CBMSC,2022) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 5518.8
+            },
+            {
+                "Item": 5,
+                "Desc": "PLACA DE INDICAÇÃO DE SAÍDA FOTOLUMINESCENTE EM PVC 2MM 30X15 CM - \"SAÍDA\" - CONFORME IN013 (CBMSC, 2024) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 11875.0
+            },
+            {
+                "Item": 6,
+                "Desc": "PLACA DE INDICAÇÃO DE SAÍDA FOTOLUMINESCENTE EM PVC 2MM 30X15CM - \"SAÍDA\" COM SETA PARA A DIREITA - CONFORME IN013 (CBMSC, 2022) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 7114.5
+            },
+            {
+                "Item": 7,
+                "Desc": "PLACA DE INDICAÇÃO DE SAÍDA FOTOLUMINESCENTE EM PVC 2MM 30X15CM - \"SAÍDA\" COM SETA PARA A ESQUERDA - CONFORME IN013 (CBMSC, 2022) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 7044.75
+            },
+            {
+                "Item": 8,
+                "Desc": "PLACA DE INDICAÇÃO DE SAÍDA FOTOLUMINESCENTE EM PVC 2MM 50X32CM - \"SAÍDA\" - CONFORME IN013 (CBMSC, 2022) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 13800.0
+            },
+            {
+                "Item": 9,
+                "Desc": "PLACA DE INDICAÇÃO DE SAÍDA FOTOLUMINESCENTE EM PVC 2MM 60X30CM - \"SAÍDA\" COM SETA PARA A DIREITA - CONFORME IN013 (CBMSC, 2024) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 21436.0
+            },
+            {
+                "Item": 10,
+                "Desc": "PLACA DE INDICAÇÃO DE SAÍDA FOTOLUMINESCENTE EM PVC 2MM 60X30CM - \"SAÍDA\" COM SETA PARA A ESQUERDA - CONFORME IN013 (CBMSC, 2024) - FORNECIMENTO E INSTALAÇÃO",
+                "Status": "Venceu",
+                "Valor": 21436.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-23T10:08:26",
@@ -1407,14 +1659,43 @@
         ]
     },
     {
-        "CNPJ": "24159141000110",
-        "Data": "20250509",
-        "Fornecedor": "ALMASTER LOCAÇOES E SERVICOS LTDA",
-        "Itens": 4,
-        "Licitacao": "678000592025",
+        "DataResult": "2025-07-12T06:26:03",
+        "UASG": "678",
+        "Edital": "00059/2025",
         "Orgao": "MUNICIPIO DE JABOTICATUBAS",
-        "Total": 40.55,
-        "UASG": "678"
+        "UF": "MG",
+        "Municipio": "Jaboticatubas",
+        "Fornecedor": "ALMASTER LOCAÇOES E SERVICOS LTDA",
+        "CNPJ": "24159141000110",
+        "InicioRec": "",
+        "FimRec": "2025-07-23T09:00:00",
+        "Licitacao": "678000592025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "MATERIAIS DE ALVENARIA E ACABAMENTO EM GERAL CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 13.12
+            },
+            {
+                "Item": 3,
+                "Desc": "MATERIAIS DE CARPINTARIA COBERTURA E MARCENARIA CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 15.28
+            },
+            {
+                "Item": 4,
+                "Desc": "MATERIAIS DE CIMENTO E CONCRETO PRE MOLDADOS CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 9.09
+            },
+            {
+                "Item": 6,
+                "Desc": "MATERIAIS DE PAISAGISMO CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 3.06
+            }
+        ]
     },
     {
         "DataResult": "2025-11-13T23:00:17",
@@ -1438,24 +1719,118 @@
         ]
     },
     {
-        "CNPJ": "26472461000150",
-        "Data": "20250522",
-        "Fornecedor": "AGV CONSTRUTORA E EVENTOS LTDA",
-        "Itens": 4,
-        "Licitacao": "591000472025",
+        "DataResult": "2025-06-27T08:28:09",
+        "UASG": "591",
+        "Edital": "00047/2025",
         "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 64599.7,
-        "UASG": "591"
+        "UF": "MG",
+        "Municipio": "Conceição do Rio Verde",
+        "Fornecedor": "AGV CONSTRUTORA E EVENTOS LTDA",
+        "CNPJ": "26472461000150",
+        "InicioRec": "",
+        "FimRec": "2025-07-14T08:00:00",
+        "Licitacao": "591000472025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇO DE LOCAÇÃO DE EQUIPAMENTO DE SOM PARA ABERTURA JOGOS ABERTOS - com especificação mínima de 06- Caixas de som ativa ou Passivas de 1000 w rms total 12 polegadas ou 15 p 06 -pedestais para caixas 01- Retorno ativo ou passivo 01- Mesa de som 08- canais Com efeito, 02- Microfones sem fio uhf para voz com Frequência selecionável de faixa. 02 - Microfones com fio 02 - Pedestais para microfones; 01- notebook para Tocar trilhas sonoras; Cabos xlr e p-10, conexões para ligar Todos o sistema; 01 -operador de som. Obs.: Deve-se respeitar os requisitos mínimos referente as especificações, podendo ser igual ou superior.",
+                "Status": "Venceu",
+                "Valor": 2759.7
+            },
+            {
+                "Item": 2,
+                "Desc": "SERVIÇO DE LOCAÇÃO DE EQUIPAMENTO DE SOM PARA REUNIÕES INTERNAS FORMATURAS - com especificação mínima 02- Caixas de som ativa ou Passiva de 12 polegadas ou de 15 polegada 400 w rms com   tripé Amplificação compatíveis com o sistema; 01- Mesa de som 08- canais. Com efeito, 02 - microfones sem fio uhf para voz com Frequência selecionável de faixa. 02 - Microfones com Fio, 02 - Pedestais para microfones; 01 - notebook para tocar trilhas sonoras; 01 -operador de som Cabos xlr e p-10, conexões para ligar TODOS O SISTEMA. Obs.: Deve-se respeitar os requisitos mínimos referente as especificações, podendo ser igual ou superior.",
+                "Status": "Venceu",
+                "Valor": 12900.0
+            },
+            {
+                "Item": 4,
+                "Desc": "SERVIÇO DE LOCAÇÃO DE SISTEMA DE SONORIZAÇÃO PEQUENO PORTE SEM ILUMINAÇÃO - SONORIZAÇÃO   PEQUENO PORTE com especificação mínima de  Para usos no diversos Eventos conter as especificações mínimas e aproximadas sendo: Equipamentos como 04-Graves modelo SB 850 ou similar com 02 falantes de 600watts r cada18”polegada 08- Caixas Line- Array com 1 ou 2 falantes de 12 polegadas com 400 Watts rms cada e 01 drive Titanium de 100 WATTS, 01- Rack de amplificadores de potência compatível com sistema 01-processador digital 01- Console no mínimo 24 canais digital 01V, X32 ou superior 01- Amplificador de fone p vias com 8 canais, 02- Microfones s fios com frequências selecionada 08- Microfones com fio 08 - Pedestais 01- Kit microfone de bateria com 7 04- Direct box 02- Retorno ativo ou passivo 400 Watts rms 01 -notebook para Tocar trilhas sonoras; cabos xlr e p 10 e conexões para ligar Todos o sistema; 01 -operador de som.",
+                "Status": "Venceu",
+                "Valor": 12190.0
+            },
+            {
+                "Item": 5,
+                "Desc": "SERVIÇO DE LOCAÇÃO DE SOM DE PEQUENO PORTE PARA FESTAS JUNINAS - com especificação mínima 02- Caixas ativa ou passiva de grave 600 watts cada 1 falante 18 polegadas 02 -caixas ativas ou passivas definição falante 12 ou 15 polegadas .800 watts rms 02-pedestais para caixas Amplificação compatíveis com o sistema; 01- Retorno ativo ou passivo 200 w rms; 02- Microfone sem fio uhf para voz, com frequência selecionável de faixa; 06 -microfones com Fio para usos diversos; 06 -pedestais;04- direct box 01- Mesa de som no mínimo 16 canais com efeito; 01 -notebook para Tocar trilhas sonoras; cabos xlr e p 10, conexões para ligar todos o sistema 01- Operador de som. Obs.: Deve-se respeitar os requisitos mínimos referente as especificações, podendo ser igual ou superior.",
+                "Status": "Venceu",
+                "Valor": 36750.0
+            }
+        ]
     },
     {
-        "CNPJ": "97528976000173",
-        "Data": "20250530",
-        "Fornecedor": "ANDERSON JOSE DIAS 05796983601",
-        "Itens": 10,
-        "Licitacao": "781000312025",
+        "DataResult": "2025-09-10T17:03:12",
+        "UASG": "781",
+        "Edital": "00031/2025",
         "Orgao": "MUNICIPIO DE VIRGINIA",
-        "Total": 130948.0,
-        "UASG": "781"
+        "UF": "MG",
+        "Municipio": "Virgínia",
+        "Fornecedor": "ANDERSON JOSE DIAS 05796983601",
+        "CNPJ": "97528976000173",
+        "InicioRec": "",
+        "FimRec": "2025-09-24T09:00:00",
+        "Licitacao": "781000312025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Prestação de serviços. - Alinhamento/Geometria para veículos leves por roda",
+                "Status": "Venceu",
+                "Valor": 12000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Prestação de serviços. - Alinhamento/Geometria para veículos médios por roda",
+                "Status": "Venceu",
+                "Valor": 15500.0
+            },
+            {
+                "Item": 3,
+                "Desc": "Prestação de serviços. - Alinhamento/Geometria para veículos pesados por roda",
+                "Status": "Venceu",
+                "Valor": 22000.0
+            },
+            {
+                "Item": 4,
+                "Desc": "Prestação de serviços. - Balanceamento para pneu de veiculos leves por roda",
+                "Status": "Venceu",
+                "Valor": 5200.0
+            },
+            {
+                "Item": 5,
+                "Desc": "Prestação de serviços. - Balanceamento para pneu de veiculos médios por roda",
+                "Status": "Venceu",
+                "Valor": 7000.0
+            },
+            {
+                "Item": 6,
+                "Desc": "Prestação de serviços. - Balanceamento para pneu de veiculos pesados por roda",
+                "Status": "Venceu",
+                "Valor": 13750.0
+            },
+            {
+                "Item": 7,
+                "Desc": "Prestação de serviços. - cambagem de veiculos leves",
+                "Status": "Venceu",
+                "Valor": 14000.0
+            },
+            {
+                "Item": 8,
+                "Desc": "Prestação de serviços. - cambagem de veiculos médios",
+                "Status": "Venceu",
+                "Valor": 17000.0
+            },
+            {
+                "Item": 9,
+                "Desc": "Prestação de serviços. - Conserto com vulcanização (leves)",
+                "Status": "Venceu",
+                "Valor": 10500.0
+            },
+            {
+                "Item": 10,
+                "Desc": "Prestação de serviços. - Conserto com vulcanização (médios)",
+                "Status": "Venceu",
+                "Valor": 13998.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-04T14:16:15",
@@ -1512,14 +1887,25 @@
         ]
     },
     {
-        "CNPJ": "58311182000100",
-        "Data": "20250507",
-        "Fornecedor": "4A SOLUCOES INTEGRADAS LTDA",
-        "Itens": 1,
-        "Licitacao": "2243000022025",
+        "DataResult": "2025-05-30T09:44:54",
+        "UASG": "2243",
+        "Edital": "00002/2025",
         "Orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE TEOFILO OTONI",
-        "Total": 760.0,
-        "UASG": "2243"
+        "UF": "MG",
+        "Municipio": "Teófilo Otoni",
+        "Fornecedor": "4A SOLUCOES INTEGRADAS LTDA",
+        "CNPJ": "58311182000100",
+        "InicioRec": "",
+        "FimRec": "2025-06-16T09:44:00",
+        "Licitacao": "2243000022025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "ESTABILIZADOR COM POTÊNCIA 1000VA, COM 06 TOMADAS 10A - NBR 14136, TENSÃO DE ENTRADA: 115V, TENSÃO DE SAÍDA: 115V, COM FILTRO DE LINHA INTEGRADO, PROTEÇÃO CONTRA SUBTENSÃO 115V: 91V, PROTEÇÃO CONTRA SOBRETENSÃO 115V 143V RENDIMENTO: >92, FREQUÊNCIA DE R\r",
+                "Status": "Venceu",
+                "Valor": 760.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-27T08:28:19",
@@ -1951,24 +2337,46 @@
         ]
     },
     {
-        "CNPJ": "18117739000143",
-        "Data": "20250505",
-        "Fornecedor": "MOTOVAM LTDA",
-        "Itens": 1,
-        "Licitacao": "422000282025",
+        "DataResult": "2025-10-09T07:40:36",
+        "UASG": "422",
+        "Edital": "00028/2025",
         "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
-        "Total": 102000.0,
-        "UASG": "422"
+        "UF": "MG",
+        "Municipio": "Guanhães",
+        "Fornecedor": "MOTOVAM LTDA",
+        "CNPJ": "18117739000143",
+        "InicioRec": "",
+        "FimRec": "2025-09-23T08:30:00",
+        "Licitacao": "422000282025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "MOTO (0 KM) ZERO KM Motocicleta, tipo “trail”, adequada para trânsito em qualquer tipo de terreno (estradas pavimentadas ou não), 0 km (zero quilômetro), cor azul ou preta,.Especificações mínimas: - Ano: modelo do ano vigente ou superior; - Chassi tipo berço semi-duplo; - Painel digital; - Motor de 150 ou 160 cilindradas, podendo variar em até 3 cilindradas para mais ou para menos. - Motor flex (gasolina e/ou etanol), monocilíndrico, refrigerado a ar; - Potência (Gasolina): 12,2 (7.500 rpm) a 14,5 cv (8.500 rpm); - Potência (Etanol): 12,4 a 14,7 cv (7.500 a 8.500 rpm); - Torque (Gasolina): 1,3 a 1,46 kgf.m (6.000 a 5.500 rpm; - Torque (Etanol): 1,3 a 1,60 kgf.m (6.000 a 5.500 rpm; - Sistema de Alimentação: Injeção eletrônica; - Sistema de transmissão: 5 velocidades; - Garfo telescópico na dianteira com 180mm de curso; - Amortecedor único na traseira; - Distância/altura mínima do solo 235 mm; - Capacidade do tanque de combustível: 12 litros; - Sistema de partida elétrica; - Sistema de freios ABS (evita o travamento da roda dianteira) ou CBS (Combined Brake System), que garantem maior estabilidade em qualquer tipo de terreno - Freio a disco na traseira e na dianteira; - Roda 19 polegadas na frente/pneu 90/90-19; - Roda 17 polegadas na traseira/pneu 110/90-17; - Para-lamas elevado na dianteira; - Todos os acessórios e itens obrigatórios exigidos pelo CONTRAN / DETRAN; - Garantia completa de no mínimo 12 (doze) meses sem limite de quilometragem, obedecendo o cronograma de revisões indicado pelo fabricante;",
+                "Status": "Venceu",
+                "Valor": 102000.0
+            }
+        ]
     },
     {
-        "CNPJ": "08315916000142",
-        "Data": "20250508",
-        "Fornecedor": "PORTA SUL 2006 SERVIÇOS DE PORTARIA LTDA",
-        "Itens": 1,
-        "Licitacao": "1474000072025",
+        "DataResult": "2025-05-16T13:57:50",
+        "UASG": "1474",
+        "Edital": "00007/2025",
         "Orgao": "MUNICIPIO DE QUELUZ",
-        "Total": 46440.0,
-        "UASG": "1474"
+        "UF": "SP",
+        "Municipio": "Queluz",
+        "Fornecedor": "PORTA SUL 2006 SERVIÇOS DE PORTARIA LTDA",
+        "CNPJ": "08315916000142",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T08:30:00",
+        "Licitacao": "1474000072025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "PNEU 275/80 RODA 22,5\r",
+                "Status": "Venceu",
+                "Valor": 46440.0
+            }
+        ]
     },
     {
         "DataResult": "2025-07-21T16:48:02",
@@ -2040,14 +2448,43 @@
         ]
     },
     {
-        "CNPJ": "18374433000172",
-        "Data": "20250530",
-        "Fornecedor": "CARMESIM DISTRIBUIDORA LTDA",
-        "Itens": 4,
-        "Licitacao": "30001001862025",
+        "DataResult": "2025-09-19T10:20:55",
+        "UASG": "30001",
+        "Edital": "00186/2025",
         "Orgao": "MUNICIPIO DE CASCAVEL",
-        "Total": 106792.02,
-        "UASG": "30001"
+        "UF": "PR",
+        "Municipio": "Cascavel",
+        "Fornecedor": "CARMESIM DISTRIBUIDORA LTDA",
+        "CNPJ": "18374433000172",
+        "InicioRec": "",
+        "FimRec": "2025-10-06T08:59:00",
+        "Licitacao": "30001001862025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AÇÚCAR DEMERARA, EMBALADO EM SACO PLÁSTICO RESISTENTE DE 1 KG. NO SEU RÓTULO DEVE CONTER INFORMAÇÃO NUTRICIONAL, PRAZO DE VALIDADE/LOTE.",
+                "Status": "Venceu",
+                "Valor": 58413.4
+            },
+            {
+                "Item": 5,
+                "Desc": "ADOÇANTE DIETÉTICO EM PÓ, COM EDULCORANTES ARTIFICIAIS SUCRALOSE E ACESSULFAME DE POTÁSSIO. SACHÊ DE 600 A 800MG. CAIXA COM 1000 UNIDADES.",
+                "Status": "Venceu",
+                "Valor": 6462.99
+            },
+            {
+                "Item": 6,
+                "Desc": "ADOÇANTE NATURAL EM PÓ 100% ERITRITOL, EMBALAGEM CONTENDO 300 GRAMAS. NO SEU RÓTULO DEVERÁ TER INFORMAÇÕES SOBRE GLÚTEN, TABELA NUTRICIONAL COM INDICAÇÃO DA PORÇÃO, PRAZO DE VALIDADE E NÚMERO DO LOTE.",
+                "Status": "Venceu",
+                "Valor": 5738.13
+            },
+            {
+                "Item": 8,
+                "Desc": "ÁGUA MINERAL NATURAL, CONTENDO CARACTERÍSTICA FISICO-QUIMICAS E COMPOSIÇÃO QUÍMICA  E INFORMAÇÕES ADICIONAIS, , EMBALAGEM: GALÃO DE 20 LITROS.",
+                "Status": "Venceu",
+                "Valor": 36177.5
+            }
+        ]
     },
     {
         "DataResult": "2025-07-28T10:19:56",
@@ -2185,34 +2622,91 @@
         ]
     },
     {
-        "CNPJ": "14576552000157",
-        "Data": "20250519",
-        "Fornecedor": "ORBENK SERVIÇOS DE SEGURANÇA LTDA",
-        "Itens": 5,
-        "Licitacao": "23002000372025",
+        "DataResult": "2025-10-31T09:57:29",
+        "UASG": "23002",
+        "Edital": "00037/2025",
         "Orgao": "SERVICO AUTONOMO MUNICIPAL DE AGUA E ESGOTO",
-        "Total": 1563997.2,
-        "UASG": "23002"
+        "UF": "SC",
+        "Municipio": "São Bento do Sul",
+        "Fornecedor": "ORBENK SERVIÇOS DE SEGURANÇA LTDA",
+        "CNPJ": "14576552000157",
+        "InicioRec": "",
+        "FimRec": "2025-06-04T08:30:00",
+        "Licitacao": "23002000372025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇO DE VIGILÂNCIA NA ESTAÇÃO DE TRATAMENTO DE ÁGUA (ETA) E SEUS ENTORNOS",
+                "Status": "Venceu",
+                "Valor": 312799.44
+            },
+            {
+                "Item": 2,
+                "Desc": "SERVIÇO DE VIGILÂNCIA NA ESTAÇÃO DE TRATAMENTO DE ESGOTO - ETE BRASÍLIA E SEUS ENTORNOS",
+                "Status": "Venceu",
+                "Valor": 312799.44
+            },
+            {
+                "Item": 3,
+                "Desc": "SERVIÇO DE VIGILÂNCIA NA ESTAÇÃO DE TRATAMENTO DE ESGOTO - ETE SERRA ALTA E SEUS ENTORNOS",
+                "Status": "Venceu",
+                "Valor": 312799.44
+            },
+            {
+                "Item": 4,
+                "Desc": "SERVIÇO DE VIGILÂNCIA NA CAPTAÇÃO DE ÁGUA BRUTA E SEUS ENTORNOS",
+                "Status": "Venceu",
+                "Valor": 312799.44
+            },
+            {
+                "Item": 5,
+                "Desc": "SERVIÇO DE VIGILÂNCIA NA ESTAÇÃO DE TRATAMENTO DE ESGOTO - ETE CRUZEIRO E SEUS ENTORNOS",
+                "Status": "Venceu",
+                "Valor": 312799.44
+            }
+        ]
     },
     {
-        "CNPJ": "15412998000109",
-        "Data": "20250513",
-        "Fornecedor": "CASTILHO E FERREIRA  COMERCIO E  REPRESENTACOES LTDA",
-        "Itens": 1,
-        "Licitacao": "777000122025",
+        "DataResult": "2025-06-12T11:07:23",
+        "UASG": "777",
+        "Edital": "00012/2025",
         "Orgao": "CAMARA MUNICIPAL DE DORES DO INDAIA",
-        "Total": 1099.99,
-        "UASG": "777"
+        "UF": "MG",
+        "Municipio": "Dores do Indaiá",
+        "Fornecedor": "CASTILHO E FERREIRA  COMERCIO E  REPRESENTACOES LTDA",
+        "CNPJ": "15412998000109",
+        "InicioRec": "",
+        "FimRec": "2025-06-26T09:00:00",
+        "Licitacao": "777000122025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "Microfone profissional condensador (viés de eletreto) de mesa com haste flexível de no mínimo de  46 cm, indicador luminoso, direcionável, com alta sensibilidade, resposta de frequência de 60Hz-18000Hz, baixo ruído de manuseio e alto ganho, projetado pra vozes ao vivo e gravações.",
+                "Status": "Venceu",
+                "Valor": 1099.99
+            }
+        ]
     },
     {
-        "CNPJ": "47094894000190",
-        "Data": "20250507",
-        "Fornecedor": "AL OLIVEIRA LTDA",
-        "Itens": 1,
-        "Licitacao": "10001112025",
+        "DataResult": "2025-06-04T16:13:30",
+        "UASG": "10",
+        "Edital": "00111/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 17100.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "AL OLIVEIRA LTDA",
+        "CNPJ": "47094894000190",
+        "InicioRec": "",
+        "FimRec": "2025-06-24T09:30:00",
+        "Licitacao": "10001112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CAIXA DE SOM ATIVA 350 W BLUETOOTH\r",
+                "Status": "Venceu",
+                "Valor": 17100.0
+            }
+        ]
     },
     {
         "DataResult": "2025-07-29T10:13:21",
@@ -2341,14 +2835,61 @@
         ]
     },
     {
-        "CNPJ": "60788611000178",
-        "Data": "20250507",
-        "Fornecedor": "TECHVITA SOLUCOES LTDA",
-        "Itens": 7,
-        "Licitacao": "449000132025",
+        "DataResult": "2025-06-03T09:36:05",
+        "UASG": "449",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE ITAIPE",
-        "Total": 115194.3,
-        "UASG": "449"
+        "UF": "MG",
+        "Municipio": "Itaipé",
+        "Fornecedor": "TECHVITA SOLUCOES LTDA",
+        "CNPJ": "60788611000178",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T07:59:00",
+        "Licitacao": "449000132025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "CABO HDMI MACHO X HDMI MACHO FLAT 3M 1.4 19 PINOS 4K ULTRA HD",
+                "Status": "Venceu",
+                "Valor": 600.0
+            },
+            {
+                "Item": 3,
+                "Desc": "CABOS VGA MACHO X VGA MACHO DE 5M",
+                "Status": "Venceu",
+                "Valor": 2425.0
+            },
+            {
+                "Item": 5,
+                "Desc": "HD EXTERNO 1TB",
+                "Status": "Venceu",
+                "Valor": 9200.0
+            },
+            {
+                "Item": 6,
+                "Desc": "HD INTERNO 1 TB",
+                "Status": "Venceu",
+                "Valor": 1985.0
+            },
+            {
+                "Item": 7,
+                "Desc": "COMPUTADOR/CPU TIPO DESKTOP",
+                "Status": "Venceu",
+                "Valor": 88500.0
+            },
+            {
+                "Item": 9,
+                "Desc": "MONITOR LED  19,5'",
+                "Status": "Venceu",
+                "Valor": 11820.0
+            },
+            {
+                "Item": 10,
+                "Desc": "MOUSE ÓPTICO USB",
+                "Status": "Venceu",
+                "Valor": 664.3
+            }
+        ]
     },
     {
         "DataResult": "2025-04-16T15:46:35",
@@ -2489,14 +3030,31 @@
         ]
     },
     {
-        "CNPJ": "25404523000124",
-        "Data": "20250514",
-        "Fornecedor": "NIVISA SOLUCOES AMBIENTAIS LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "NIVISA SOLUCOES AMBIENTAIS LTDA",
+        "CNPJ": "25404523000124",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-14T15:04:12",
@@ -2520,24 +3078,64 @@
         ]
     },
     {
-        "CNPJ": "02424001000199",
-        "Data": "20250521",
-        "Fornecedor": "GEVERGAS LTDA - EPP",
-        "Itens": 3,
-        "Licitacao": "81000492025",
+        "DataResult": "2025-06-12T13:07:59",
+        "UASG": "81",
+        "Edital": "00049/2025",
         "Orgao": "MUNICIPIO DE BOM JESUS DO AMPARO",
-        "Total": 510500.0,
-        "UASG": "81"
+        "UF": "MG",
+        "Municipio": "Bom Jesus do Amparo",
+        "Fornecedor": "GEVERGAS LTDA - EPP",
+        "CNPJ": "02424001000199",
+        "InicioRec": "",
+        "FimRec": "2025-07-01T09:29:00",
+        "Licitacao": "81000492025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Recarga de oxigenio 10 m",
+                "Status": "Venceu",
+                "Valor": 140000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Recarga de oxigenio 1 m",
+                "Status": "Venceu",
+                "Valor": 195500.0
+            },
+            {
+                "Item": 3,
+                "Desc": "Recarga de oxigenio 2,5 m",
+                "Status": "Venceu",
+                "Valor": 175000.0
+            }
+        ]
     },
     {
-        "CNPJ": "13259179000148",
-        "Data": "20250514",
-        "Fornecedor": "URBANA LIMPEZA E MANUTENCAO VIARIA LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "URBANA LIMPEZA E MANUTENCAO VIARIA LTDA",
+        "CNPJ": "13259179000148",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-15T12:23:39",
@@ -2567,14 +3165,25 @@
         ]
     },
     {
-        "CNPJ": "36383365000190",
-        "Data": "20250507",
-        "Fornecedor": "JOHNNATAN VIEIRA SILVA",
-        "Itens": 1,
-        "Licitacao": "2243000022025",
+        "DataResult": "2025-05-30T09:44:54",
+        "UASG": "2243",
+        "Edital": "00002/2025",
         "Orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE TEOFILO OTONI",
-        "Total": 45.0,
-        "UASG": "2243"
+        "UF": "MG",
+        "Municipio": "Teófilo Otoni",
+        "Fornecedor": "JOHNNATAN VIEIRA SILVA",
+        "CNPJ": "36383365000190",
+        "InicioRec": "",
+        "FimRec": "2025-06-16T09:44:00",
+        "Licitacao": "2243000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ALICATE CRIMPAGEM CABO DE REDE\r",
+                "Status": "Venceu",
+                "Valor": 45.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-06T09:02:31",
@@ -2742,14 +3351,31 @@
         ]
     },
     {
-        "CNPJ": "40540896000116",
-        "Data": "20250514",
-        "Fornecedor": "NOVA CLASS COMERCIO E SERVIÇOS LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "NOVA CLASS COMERCIO E SERVIÇOS LTDA",
+        "CNPJ": "40540896000116",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-29T15:05:45",
@@ -2836,24 +3462,64 @@
         ]
     },
     {
-        "CNPJ": "21716850000160",
-        "Data": "20250513",
-        "Fornecedor": "SAMANTA SUELEM MADEIRA 11564515664",
-        "Itens": 1,
-        "Licitacao": "777000122025",
+        "DataResult": "2025-06-12T11:07:23",
+        "UASG": "777",
+        "Edital": "00012/2025",
         "Orgao": "CAMARA MUNICIPAL DE DORES DO INDAIA",
-        "Total": 4293.98,
-        "UASG": "777"
+        "UF": "MG",
+        "Municipio": "Dores do Indaiá",
+        "Fornecedor": "SAMANTA SUELEM MADEIRA 11564515664",
+        "CNPJ": "21716850000160",
+        "InicioRec": "",
+        "FimRec": "2025-06-26T09:00:00",
+        "Licitacao": "777000122025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "Microfone profissional condensador (viés de eletreto) de mesa com haste flexível de no mínimo de  60 cm, indicador luminoso, direcionável, com alta sensibilidade, resposta de frequência de 60Hz-18000Hz, baixo ruído de manuseio e alto ganho, projetado pra vozes ao vivo e gravações.",
+                "Status": "Venceu",
+                "Valor": 4293.98
+            }
+        ]
     },
     {
-        "CNPJ": "47854165000194",
-        "Data": "20250526",
-        "Fornecedor": "RF REZENDE COMERCIO E SERVICOS LTDA",
-        "Itens": 4,
-        "Licitacao": "13000482025",
+        "DataResult": "2025-06-30T09:39:19",
+        "UASG": "13",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE PARAOPEBA",
-        "Total": 133124.0,
-        "UASG": "13"
+        "UF": "MG",
+        "Municipio": "Paraopeba",
+        "Fornecedor": "RF REZENDE COMERCIO E SERVICOS LTDA",
+        "CNPJ": "47854165000194",
+        "InicioRec": "",
+        "FimRec": "2025-07-02T09:30:00",
+        "Licitacao": "13000482025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "CADEIRA PARA ESCRITORIO -  FIXA",
+                "Status": "Venceu",
+                "Valor": 17014.0
+            },
+            {
+                "Item": 3,
+                "Desc": "MESA DE REFEITÓRIO ARTICULADO COM 08 LUGARES",
+                "Status": "Venceu",
+                "Valor": 60750.0
+            },
+            {
+                "Item": 5,
+                "Desc": "MESA DE REFEITÓRIO ARTICULADO COM 10 LUGARES",
+                "Status": "Venceu",
+                "Valor": 27160.0
+            },
+            {
+                "Item": 6,
+                "Desc": "MESA DE ESCRITORIO",
+                "Status": "Venceu",
+                "Valor": 28200.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-08T09:15:14",
@@ -2877,24 +3543,52 @@
         ]
     },
     {
-        "CNPJ": "01929665000309",
-        "Data": "20250506",
-        "Fornecedor": "RECREIO BH VEICULOS S/A",
-        "Itens": 1,
-        "Licitacao": "1370000022025",
+        "DataResult": "2025-05-22T09:51:56",
+        "UASG": "1370",
+        "Edital": "00002/2025",
         "Orgao": "MUNICIPIO DE RIO MANSO",
-        "Total": 180000.0,
-        "UASG": "1370"
+        "UF": "MG",
+        "Municipio": "Rio Manso",
+        "Fornecedor": "RECREIO BH VEICULOS S/A",
+        "CNPJ": "01929665000309",
+        "InicioRec": "",
+        "FimRec": "2025-05-21T09:30:00",
+        "Licitacao": "1370000022025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "VEÍCULO NOVO ( Veículo novo, zero KM, fabricação nacional, ano 2025 ou superior).",
+                "Status": "Venceu",
+                "Valor": 180000.0
+            }
+        ]
     },
     {
-        "CNPJ": "07137575000108",
-        "Data": "20250529",
-        "Fornecedor": "MICROBAC PRODUTOS E SERVIÇOS PARA LABORATÓRIOS LTDA",
-        "Itens": 2,
-        "Licitacao": "404340025592025",
+        "DataResult": "2025-07-30T16:25:20",
+        "UASG": "404340",
+        "Edital": "02559/2025",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
-        "Total": 57840.8,
-        "UASG": "404340"
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Fornecedor": "MICROBAC PRODUTOS E SERVIÇOS PARA LABORATÓRIOS LTDA",
+        "CNPJ": "07137575000108",
+        "InicioRec": "",
+        "FimRec": "2025-08-12T09:59:00",
+        "Licitacao": "404340025592025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ASPECTO: LIQUIDA",
+                "Status": "Venceu",
+                "Valor": 5172.8
+            },
+            {
+                "Item": 2,
+                "Desc": "ASPECTO: SOLIDA",
+                "Status": "Venceu",
+                "Valor": 52668.0
+            }
+        ]
     },
     {
         "DataResult": "2025-06-04T09:00:01",
@@ -3179,24 +3873,58 @@
         ]
     },
     {
-        "CNPJ": "94107919000122",
-        "Data": "20250514",
-        "Fornecedor": "BRISA TRANSPORTES LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "BRISA TRANSPORTES LTDA",
+        "CNPJ": "94107919000122",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
-        "CNPJ": "00900846000188",
-        "Data": "20250514",
-        "Fornecedor": "FORTNORT DESENVOLVIMENTO AMBIENTAL E URBANO LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "FORTNORT DESENVOLVIMENTO AMBIENTAL E URBANO LTDA",
+        "CNPJ": "00900846000188",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-14T18:16:30",
@@ -3220,14 +3948,25 @@
         ]
     },
     {
-        "CNPJ": "25109467000103",
-        "Data": "20250526",
-        "Fornecedor": "SOLUCAO INDUSTRIA E COMERCIO DE MOVEIS EIRELI",
-        "Itens": 1,
-        "Licitacao": "13000482025",
+        "DataResult": "2025-06-30T09:39:19",
+        "UASG": "13",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE PARAOPEBA",
-        "Total": 60000.0,
-        "UASG": "13"
+        "UF": "MG",
+        "Municipio": "Paraopeba",
+        "Fornecedor": "SOLUCAO INDUSTRIA E COMERCIO DE MOVEIS EIRELI",
+        "CNPJ": "25109467000103",
+        "InicioRec": "",
+        "FimRec": "2025-07-02T09:30:00",
+        "Licitacao": "13000482025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "MESA DE REFEITÓRIO ARTICULADO COM 10 LUGARES",
+                "Status": "Venceu",
+                "Valor": 60000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-28T17:04:29",
@@ -3365,14 +4104,43 @@
         ]
     },
     {
-        "CNPJ": "23828568000109",
-        "Data": "20250507",
-        "Fornecedor": "FERRAZ E COIMBRA COMERCIO DE PAPELARIA LTDA",
-        "Itens": 4,
-        "Licitacao": "2243000022025",
+        "DataResult": "2025-05-30T09:44:54",
+        "UASG": "2243",
+        "Edital": "00002/2025",
         "Orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE TEOFILO OTONI",
-        "Total": 1383.0,
-        "UASG": "2243"
+        "UF": "MG",
+        "Municipio": "Teófilo Otoni",
+        "Fornecedor": "FERRAZ E COIMBRA COMERCIO DE PAPELARIA LTDA",
+        "CNPJ": "23828568000109",
+        "InicioRec": "",
+        "FimRec": "2025-06-16T09:44:00",
+        "Licitacao": "2243000022025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "CABO ADAPTADOR PARA FONTE ATX IDE PARA SATA\r",
+                "Status": "Venceu",
+                "Valor": 120.0
+            },
+            {
+                "Item": 3,
+                "Desc": "CABO DE REDE CAT6; 305 METROS; CABO DE PAR TRANÇADO 24/23 AWG COM SEPARADOR CENTRAL; ATENDENDO AS NORMAS ANSI/TIA-568-C.2 CATEGORY 6, NBR 14703, NBR 14705, ISO/IEC 11801 E IEC 60332; SUPORTE A GIGABIT ETHERNET, IEEE 802.3Z, 1000 MBPS.\r",
+                "Status": "Venceu",
+                "Valor": 1200.0
+            },
+            {
+                "Item": 4,
+                "Desc": "CABO SATA 3 PARA HD/SSD; COMPRIMENTO MÍNIMO DE 15CM\r",
+                "Status": "Venceu",
+                "Valor": 40.0
+            },
+            {
+                "Item": 8,
+                "Desc": "ESCOVA ANTIESTATICA\r",
+                "Status": "Venceu",
+                "Valor": 23.0
+            }
+        ]
     },
     {
         "DataResult": "2025-09-01T14:14:37",
@@ -3423,24 +4191,52 @@
         ]
     },
     {
-        "CNPJ": "24675507000103",
-        "Data": "20250526",
-        "Fornecedor": "MICROFORT INFORMATICA LTDA",
-        "Itens": 2,
-        "Licitacao": "13000482025",
+        "DataResult": "2025-06-30T09:39:19",
+        "UASG": "13",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE PARAOPEBA",
-        "Total": 53638.0,
-        "UASG": "13"
+        "UF": "MG",
+        "Municipio": "Paraopeba",
+        "Fornecedor": "MICROFORT INFORMATICA LTDA",
+        "CNPJ": "24675507000103",
+        "InicioRec": "",
+        "FimRec": "2025-07-02T09:30:00",
+        "Licitacao": "13000482025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "FREZEER 2 PORTAS 400 LITROS",
+                "Status": "Venceu",
+                "Valor": 28926.0
+            },
+            {
+                "Item": 8,
+                "Desc": "GELADEIRA FROST FREE - DUPLEX",
+                "Status": "Venceu",
+                "Valor": 24712.0
+            }
+        ]
     },
     {
-        "CNPJ": "39935346000117",
-        "Data": "20250515",
-        "Fornecedor": "FBORGES EQUIPAMENTOS EIRELI",
-        "Itens": 1,
-        "Licitacao": "1322000102025",
+        "DataResult": "2025-05-28T10:20:24",
+        "UASG": "1322",
+        "Edital": "00010/2025",
         "Orgao": "MUNICIPIO DE ENTRE FOLHAS",
-        "Total": 11200.0,
-        "UASG": "1322"
+        "UF": "MG",
+        "Municipio": "Entre Folhas",
+        "Fornecedor": "FBORGES EQUIPAMENTOS EIRELI",
+        "CNPJ": "39935346000117",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T08:00:00",
+        "Licitacao": "1322000102025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COMPUTADOR COMPLETO: Modelo de Referência: Desktop Dell OU SIMILAR Optiplex Micro Processador: 13ª geração ou superior Intel® Core™ i5- 13500T (14 Núcleos, 24 MB de Cache, 4.60 GHz, 35W) Sistema Operacional: Windows 11 Home ou superior – Português Memória Ram: Memória de 8 GB expansível até 32 gb (1x8GB), DDR4 3200 Mhz Armazenamento: 512 GB PCIeNVMe M.2 SSD (SolidState Drive) Teclado: Teclado com fio da Dell KB216, preto (português do Brasil) Mouse: Mouse óptico Dell - MS116 (preto) Interface de Rede Gigabit OnBord: 10/100/1000 nterface Wireless: Placa de Rede local sem fio (WLAN) Intel AX211 taxa de transferência de até 2400 Mbps, Wi-Fi 6E (802.11ax) 2x2 + Bluetooth 5.2 com Antena Interna Monitor: Monitor Dell 24 P2422H 24 Polegadas FULL HD OU SIMILAR. Portas adicionais: Porta de saída de vídeo VGA ou HDMI Acessórios: Todos os cabos e acessórios necessários",
+                "Status": "Venceu",
+                "Valor": 11200.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-23T10:08:26",
@@ -3575,14 +4371,55 @@
         ]
     },
     {
-        "CNPJ": "25682778000159",
-        "Data": "20250520",
-        "Fornecedor": "JOAO ALVES DE LIMA BARROS",
-        "Itens": 6,
-        "Licitacao": "69000622025",
+        "DataResult": "2025-06-02T08:51:25",
+        "UASG": "69",
+        "Edital": "00062/2025",
         "Orgao": "MUNICIPIO DE SAO JOSE DO BELMONTE",
-        "Total": 59125.0,
-        "UASG": "69"
+        "UF": "PE",
+        "Municipio": "São José do Belmonte",
+        "Fornecedor": "JOAO ALVES DE LIMA BARROS",
+        "CNPJ": "25682778000159",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T09:00:00",
+        "Licitacao": "69000622025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ENVELOPE MÉDIO 28X19",
+                "Status": "Venceu",
+                "Valor": 3055.0
+            },
+            {
+                "Item": 3,
+                "Desc": "ENVELOPE OFÍCIO BRANCO TAMANHO A4",
+                "Status": "Venceu",
+                "Valor": 3900.0
+            },
+            {
+                "Item": 5,
+                "Desc": "PAPEL CARTÃO (BRANCO) C/20",
+                "Status": "Venceu",
+                "Valor": 24000.0
+            },
+            {
+                "Item": 6,
+                "Desc": "PAPEL FOTOGRAFICO C/20",
+                "Status": "Venceu",
+                "Valor": 10350.0
+            },
+            {
+                "Item": 7,
+                "Desc": "PAPEL ADESIVO C/20",
+                "Status": "Venceu",
+                "Valor": 15480.0
+            },
+            {
+                "Item": 8,
+                "Desc": "PAPEL CARTOLINA DUPLA FACE ( VERMELHO, AZUL (CLARO E ESCURO), AMARELO, PRETO, MARRO, LARANJA, VERDE (TODOS OS TONS), ROXO, ROSA (TODOS OS TONS)",
+                "Status": "Venceu",
+                "Valor": 2340.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T11:10:01",
@@ -3639,14 +4476,79 @@
         ]
     },
     {
-        "CNPJ": "50818586000174",
-        "Data": "20250509",
-        "Fornecedor": "B&A MANUFATURADOS LTDA",
-        "Itens": 10,
-        "Licitacao": "1404000252025",
+        "DataResult": "2025-06-13T13:50:55",
+        "UASG": "1404",
+        "Edital": "00025/2025",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO ALTO DO RIO PARA",
-        "Total": 9052400.0,
-        "UASG": "1404"
+        "UF": "MG",
+        "Municipio": "Pará de Minas",
+        "Fornecedor": "B&A MANUFATURADOS LTDA",
+        "CNPJ": "50818586000174",
+        "InicioRec": "",
+        "FimRec": "2025-07-04T09:00:00",
+        "Licitacao": "1404000252025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "JOGO DE TABULEIRO",
+                "Status": "Venceu",
+                "Valor": 1386000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "ALFABETO MOVÉL DEGRAU",
+                "Status": "Venceu",
+                "Valor": 2212000.0
+            },
+            {
+                "Item": 3,
+                "Desc": "JOGOS DE CARTAS",
+                "Status": "Venceu",
+                "Valor": 428400.0
+            },
+            {
+                "Item": 4,
+                "Desc": "JOGO DE ADVINHA",
+                "Status": "Venceu",
+                "Valor": 1386000.0
+            },
+            {
+                "Item": 5,
+                "Desc": "QUEBRA CABEÇA ESTADOS DO BRASIL",
+                "Status": "Venceu",
+                "Valor": 249200.0
+            },
+            {
+                "Item": 6,
+                "Desc": "CONJUTO DE MOEDAS PLASTICAS",
+                "Status": "Venceu",
+                "Valor": 896000.0
+            },
+            {
+                "Item": 7,
+                "Desc": "CONJUNTO DE DINHEIRO EM PAPEL",
+                "Status": "Venceu",
+                "Valor": 770000.0
+            },
+            {
+                "Item": 8,
+                "Desc": "DISCO FRAÇÕES",
+                "Status": "Venceu",
+                "Valor": 254800.0
+            },
+            {
+                "Item": 9,
+                "Desc": "TABUADA GIRATORIA",
+                "Status": "Venceu",
+                "Valor": 1064000.0
+            },
+            {
+                "Item": 10,
+                "Desc": "JOGO PITAGÓRICA",
+                "Status": "Venceu",
+                "Valor": 406000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-04T15:49:21",
@@ -3772,34 +4674,73 @@
         ]
     },
     {
-        "CNPJ": "43295831000140",
-        "Data": "20250507",
-        "Fornecedor": "Interlab Farmacêutica Ltda",
-        "Itens": 1,
-        "Licitacao": "1998001612025",
+        "DataResult": "2025-07-21T11:27:09",
+        "UASG": "1998",
+        "Edital": "00161/2025",
         "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 6690.0,
-        "UASG": "1998"
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "Interlab Farmacêutica Ltda",
+        "CNPJ": "43295831000140",
+        "InicioRec": "",
+        "FimRec": "2025-06-09T08:00:00",
+        "Licitacao": "1998001612025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "CARBAMAZEPINA 400MG COMPRIMIDO LIB. PROLONGADA (PORT 344/98)\r",
+                "Status": "Venceu",
+                "Valor": 6690.0
+            }
+        ]
     },
     {
-        "CNPJ": "24708774000130",
-        "Data": "20250519",
-        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
-        "Itens": 1,
-        "Licitacao": "363000882025",
+        "DataResult": "2025-06-25T15:29:25",
+        "UASG": "363",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE SANTANA DO PARAISO",
-        "Total": 1092.0,
-        "UASG": "363"
+        "UF": "MG",
+        "Municipio": "Santana do Paraíso",
+        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
+        "CNPJ": "24708774000130",
+        "InicioRec": "",
+        "FimRec": "2025-07-02T14:00:00",
+        "Licitacao": "363000882025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "TENDA ARTICULADA",
+                "Status": "Venceu",
+                "Valor": 1092.0
+            }
+        ]
     },
     {
-        "CNPJ": "15667275000150",
-        "Data": "20250514",
-        "Fornecedor": "E.T.A EMPRESA TECNICA AMBIENTAL LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "E.T.A EMPRESA TECNICA AMBIENTAL LTDA",
+        "CNPJ": "15667275000150",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-09-01T14:14:37",
@@ -3889,14 +4830,25 @@
         ]
     },
     {
-        "CNPJ": "48693228000130",
-        "Data": "20250507",
-        "Fornecedor": "DISTRIBUIDORA SANTO ANTONIO LTDA",
-        "Itens": 1,
-        "Licitacao": "449000132025",
+        "DataResult": "2025-06-03T09:36:05",
+        "UASG": "449",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE ITAIPE",
-        "Total": 268000.0,
-        "UASG": "449"
+        "UF": "MG",
+        "Municipio": "Itaipé",
+        "Fornecedor": "DISTRIBUIDORA SANTO ANTONIO LTDA",
+        "CNPJ": "48693228000130",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T07:59:00",
+        "Licitacao": "449000132025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "COMPUTADOR/CPU TIPO DESKTOP 2",
+                "Status": "Venceu",
+                "Valor": 268000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-07T09:10:20",
@@ -4052,24 +5004,112 @@
         ]
     },
     {
-        "CNPJ": "15661771000105",
-        "Data": "20250507",
-        "Fornecedor": "MONTEIRO DISTRIBUIDORA LTDA",
-        "Itens": 10,
-        "Licitacao": "268000472025",
+        "DataResult": "2025-05-23T14:41:10",
+        "UASG": "268",
+        "Edital": "00047/2025",
         "Orgao": "MUNICIPIO DE ROSARIO",
-        "Total": 1725314.88,
-        "UASG": "268"
+        "UF": "MA",
+        "Municipio": "Rosário",
+        "Fornecedor": "MONTEIRO DISTRIBUIDORA LTDA",
+        "CNPJ": "15661771000105",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:30:00",
+        "Licitacao": "268000472025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "[COTA AMPLA CONCORRÊNCIA] - Aparelho de ar-condicionado capacidade 9.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 206481.55
+            },
+            {
+                "Item": 2,
+                "Desc": "[COTA RESERVADA ME/EPP] - Aparelho de ar-condicionado capacidade 9.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 65205.0
+            },
+            {
+                "Item": 3,
+                "Desc": "[COTA AMPLA CONCORRÊNCIA] - Aparelho de ar-condicionado capacidade 12.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 287610.6
+            },
+            {
+                "Item": 4,
+                "Desc": "[COTA RESERVADA ME/EPP] - Aparelho de ar-condicionado capacidade 12.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 90824.76
+            },
+            {
+                "Item": 5,
+                "Desc": "[COTA AMPLA CONCORRÊNCIA] - Aparelho de ar-condicionado capacidade 18.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 351277.44
+            },
+            {
+                "Item": 6,
+                "Desc": "[COTA RESERVADA ME/EPP] - Aparelho de ar-condicionado capacidade 18.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 106115.35
+            },
+            {
+                "Item": 7,
+                "Desc": "[COTA AMPLA CONCORRÊNCIA] - Aparelho de ar-condicionado capacidade 22-24.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 337263.12
+            },
+            {
+                "Item": 8,
+                "Desc": "[COTA RESERVADA ME/EPP] - Aparelho de ar-condicionado capacidade 22-24.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 107737.06
+            },
+            {
+                "Item": 9,
+                "Desc": "[COTA AMPLA CONCORRÊNCIA] - Aparelho de ar-condicionado capacidade 30.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 135000.0
+            },
+            {
+                "Item": 10,
+                "Desc": "[COTA RESERVADA ME/EPP] - Aparelho de ar-condicionado capacidade 30.000 BTU s, tipo Split, tensão 220 volts, operação frio, controle remoto com todas as funções, redução do nível de ruído, fluxo de ar   de alta eficiência, visualização     central de fácil leitura, desumidificador   superpotência, oscilação horizontal, ajuste automático do fluxo de ar, timer programável.",
+                "Status": "Venceu",
+                "Valor": 37800.0
+            }
+        ]
     },
     {
-        "CNPJ": "58437655000101",
-        "Data": "20250509",
-        "Fornecedor": "COPALA CONSTRUCOES E PAVIMENTACOES LTDA",
-        "Itens": 3,
-        "Licitacao": "257001202025",
+        "DataResult": "2025-10-10T10:19:00",
+        "UASG": "257",
+        "Edital": "00120/2025",
         "Orgao": "AGUA DE IVOTI",
-        "Total": 433074.64,
-        "UASG": "257"
+        "UF": "RS",
+        "Municipio": "Ivoti",
+        "Fornecedor": "COPALA CONSTRUCOES E PAVIMENTACOES LTDA",
+        "CNPJ": "58437655000101",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T08:59:00",
+        "Licitacao": "257001202025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Escavação e transporte de solo",
+                "Status": "Venceu",
+                "Valor": 25448.02
+            },
+            {
+                "Item": 2,
+                "Desc": "Imprimação com asfalto diluído",
+                "Status": "Venceu",
+                "Valor": 27634.93
+            },
+            {
+                "Item": 3,
+                "Desc": "Tapa buraco com pintura de ligação - sem demolição",
+                "Status": "Venceu",
+                "Valor": 379991.69
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T08:17:05",
@@ -4153,34 +5193,73 @@
         ]
     },
     {
-        "CNPJ": "73856593000166",
-        "Data": "20250507",
-        "Fornecedor": "PRATI, DONADUZZI",
-        "Itens": 1,
-        "Licitacao": "1998001612025",
+        "DataResult": "2025-07-21T11:27:09",
+        "UASG": "1998",
+        "Edital": "00161/2025",
         "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 15288.0,
-        "UASG": "1998"
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "PRATI, DONADUZZI",
+        "CNPJ": "73856593000166",
+        "InicioRec": "",
+        "FimRec": "2025-06-09T08:00:00",
+        "Licitacao": "1998001612025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "CANABIDIOL CBD, LIVRE DE THC 200MG/ML FRASCO COM 30ML\r",
+                "Status": "Venceu",
+                "Valor": 15288.0
+            }
+        ]
     },
     {
-        "CNPJ": "34530248000186",
-        "Data": "20250530",
-        "Fornecedor": "ZEM & ZEM DISTRIBUIDORA DE ALIMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "30001001862025",
+        "DataResult": "2025-09-19T10:20:55",
+        "UASG": "30001",
+        "Edital": "00186/2025",
         "Orgao": "MUNICIPIO DE CASCAVEL",
-        "Total": 217.5,
-        "UASG": "30001"
+        "UF": "PR",
+        "Municipio": "Cascavel",
+        "Fornecedor": "ZEM & ZEM DISTRIBUIDORA DE ALIMENTOS LTDA",
+        "CNPJ": "34530248000186",
+        "InicioRec": "",
+        "FimRec": "2025-10-06T08:59:00",
+        "Licitacao": "30001001862025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "AÇÚCAR DE BAUNILHA -  AÇÚCAR AROMATIZADO COM SABOR BAUNILHA. EMBALAGEM FECHADA, CONTENDO 1 KG, COM DATA DE VALIDADE VISIVEL",
+                "Status": "Venceu",
+                "Valor": 217.5
+            }
+        ]
     },
     {
-        "CNPJ": "14954088000195",
-        "Data": "20250514",
-        "Fornecedor": "F. G. KOLBERG E KOLBERG LTDA.",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "F. G. KOLBERG E KOLBERG LTDA.",
+        "CNPJ": "14954088000195",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-15T09:38:38",
@@ -4423,14 +5502,25 @@
         ]
     },
     {
-        "CNPJ": "55149591000236",
-        "Data": "20250526",
-        "Fornecedor": "ALLSET TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "13000482025",
+        "DataResult": "2025-06-30T09:39:19",
+        "UASG": "13",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE PARAOPEBA",
-        "Total": 23450.0,
-        "UASG": "13"
+        "UF": "MG",
+        "Municipio": "Paraopeba",
+        "Fornecedor": "ALLSET TECNOLOGIA LTDA",
+        "CNPJ": "55149591000236",
+        "InicioRec": "",
+        "FimRec": "2025-07-02T09:30:00",
+        "Licitacao": "13000482025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "DATA SHOW MULTIMIDIA",
+                "Status": "Venceu",
+                "Valor": 23450.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-24T10:39:51",
@@ -4454,14 +5544,25 @@
         ]
     },
     {
-        "CNPJ": "34840358000144",
-        "Data": "20250508",
-        "Fornecedor": "ZEUS COMERCIAL EIRELI",
-        "Itens": 1,
-        "Licitacao": "1474000072025",
+        "DataResult": "2025-05-16T13:57:50",
+        "UASG": "1474",
+        "Edital": "00007/2025",
         "Orgao": "MUNICIPIO DE QUELUZ",
-        "Total": 3440.0,
-        "UASG": "1474"
+        "UF": "SP",
+        "Municipio": "Queluz",
+        "Fornecedor": "ZEUS COMERCIAL EIRELI",
+        "CNPJ": "34840358000144",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T08:30:00",
+        "Licitacao": "1474000072025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "PNEU 175/70R/14\r",
+                "Status": "Venceu",
+                "Valor": 3440.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-02T14:28:37",
@@ -4491,14 +5592,25 @@
         ]
     },
     {
-        "CNPJ": "26959683000100",
-        "Data": "20250519",
-        "Fornecedor": "OXIMEDI COMERCIO DE GASES MEDICINAIS LTDA EPP",
-        "Itens": 1,
-        "Licitacao": "1127000212025",
+        "DataResult": "2025-05-28T10:16:02",
+        "UASG": "1127",
+        "Edital": "00021/2025",
         "Orgao": "MUNICIPIO DE JACUI",
-        "Total": 20375.0,
-        "UASG": "1127"
+        "UF": "MG",
+        "Municipio": "Jacuí",
+        "Fornecedor": "OXIMEDI COMERCIO DE GASES MEDICINAIS LTDA EPP",
+        "CNPJ": "26959683000100",
+        "InicioRec": "",
+        "FimRec": "2025-06-10T08:30:00",
+        "Licitacao": "1127000212025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "LOCAÇÃO DE BIPAP AUTO LOCAÇÃO DE BIPAP AUTO",
+                "Status": "Venceu",
+                "Valor": 20375.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-22T09:18:14",
@@ -4549,14 +5661,25 @@
         ]
     },
     {
-        "CNPJ": "65149197000251",
-        "Data": "20250507",
-        "Fornecedor": "Repremig Representação e comercio de MG Ltda",
-        "Itens": 1,
-        "Licitacao": "10001112025",
+        "DataResult": "2025-06-04T16:13:30",
+        "UASG": "10",
+        "Edital": "00111/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 105525.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "Repremig Representação e comercio de MG Ltda",
+        "CNPJ": "65149197000251",
+        "InicioRec": "",
+        "FimRec": "2025-06-24T09:30:00",
+        "Licitacao": "10001112025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "SMART TV 55'' UHD 4K LED\r",
+                "Status": "Venceu",
+                "Valor": 105525.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-22T16:36:39",
@@ -4580,14 +5703,61 @@
         ]
     },
     {
-        "CNPJ": "00331788003053",
-        "Data": "20250519",
-        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - POÇOS",
-        "Itens": 7,
-        "Licitacao": "1127000212025",
+        "DataResult": "2025-05-28T10:16:02",
+        "UASG": "1127",
+        "Edital": "00021/2025",
         "Orgao": "MUNICIPIO DE JACUI",
-        "Total": 701850.0,
-        "UASG": "1127"
+        "UF": "MG",
+        "Municipio": "Jacuí",
+        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - POÇOS",
+        "CNPJ": "00331788003053",
+        "InicioRec": "",
+        "FimRec": "2025-06-10T08:30:00",
+        "Licitacao": "1127000212025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LOCAÇÃO DE BIPAP AUTO LOCAÇÃO DE BIPAP AUTO",
+                "Status": "Venceu",
+                "Valor": 51000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "LOCAÇÃO DE BIPAP COMPLEXO PARA USO INVASIVO E VNI LOCAÇÃO DE BIPAP COMPLEXO PARA USO INVASIVO E VNI",
+                "Status": "Venceu",
+                "Valor": 110250.0
+            },
+            {
+                "Item": 3,
+                "Desc": "LOCAÇÃO DE CPAP AUTO . LOCAÇÃO DE CPAP AUTO",
+                "Status": "Venceu",
+                "Valor": 39000.0
+            },
+            {
+                "Item": 4,
+                "Desc": "LOCAÇÃO DE CONCENTRADOR DE 5LPM COM CILINDRO BACKUP DE 10M3 E REGULADOR DESCATÁVEIS ENTREGUES NA IMPLANTAÇÃO .",
+                "Status": "Venceu",
+                "Valor": 313500.0
+            },
+            {
+                "Item": 5,
+                "Desc": "RECARGA DE OXIGENIO MEDICINAL DE 10M³ RECARGA DE OXIGENIO MEDICINAL DE 10M³ aproximadamente",
+                "Status": "Venceu",
+                "Valor": 132000.0
+            },
+            {
+                "Item": 7,
+                "Desc": "VENDA DE CATETER NASAL VENDA DE CATETER NASAL",
+                "Status": "Venceu",
+                "Valor": 16100.0
+            },
+            {
+                "Item": 8,
+                "Desc": "VENDA DE EXTENSÃO PARA CATETER NASAL VENDA DE EXTENSÃO PARA CATETER NASAL",
+                "Status": "Venceu",
+                "Valor": 40000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-11-13T23:00:17",
@@ -4710,34 +5880,91 @@
         ]
     },
     {
-        "CNPJ": "52277278000104",
-        "Data": "20250507",
-        "Fornecedor": "LICITAINFO LTDA",
-        "Itens": 1,
-        "Licitacao": "449000132025",
+        "DataResult": "2025-06-03T09:36:05",
+        "UASG": "449",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE ITAIPE",
-        "Total": 8000.0,
-        "UASG": "449"
+        "UF": "MG",
+        "Municipio": "Itaipé",
+        "Fornecedor": "LICITAINFO LTDA",
+        "CNPJ": "52277278000104",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T07:59:00",
+        "Licitacao": "449000132025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "PROJETOR 1024X768 PIXELS 4000 ANSI LUMENS",
+                "Status": "Venceu",
+                "Valor": 8000.0
+            }
+        ]
     },
     {
-        "CNPJ": "12020959000178",
-        "Data": "20250522",
-        "Fornecedor": "Jeferson Júnior Bernardes me",
-        "Itens": 2,
-        "Licitacao": "591000472025",
+        "DataResult": "2025-06-27T08:28:09",
+        "UASG": "591",
+        "Edital": "00047/2025",
         "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 155250.0,
-        "UASG": "591"
+        "UF": "MG",
+        "Municipio": "Conceição do Rio Verde",
+        "Fornecedor": "Jeferson Júnior Bernardes me",
+        "CNPJ": "12020959000178",
+        "InicioRec": "",
+        "FimRec": "2025-07-14T08:00:00",
+        "Licitacao": "591000472025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "SERVIÇO DE LOCAÇÃO DE SISTEMA DE SONORIZAÇÃO PEQUENO PORTE COM ILUMINAÇÃO - com Iluminação especificação mínima de  08- caixas modelo line array contendo 01 -falante de 12 de 400 rms e 1 ti de 100 rms cada caixa;  04 -caixas graves sb850 com 02 - falantes de 18 polegadas de 600 rms cada; 01- mesa digital  no minimo 24 canais ex 01v, ls9, x32 01-processador digital 01- power play de oito vias de fones 10- microfones com fio; 10- pedestais estilo girafa; 01- kit microfone de bateria com 7 02- microfones sem fio; 01- side  falante de 12 polegada ou 15 400 wtts rms 1 drive titânio de 100 watts 02-  monitores frontal 1 de 12 e 1 ti de 200 rms cada; 06- direct  box amplificação 01- corpo de bateria 01- cubo  baixo 01- cubo amplificador de guitarra 01- notebook; iluminação - 10- par led 3 watts rgbwa 02 - cob led 200 w rgbw - 01- máq fumaça 1000 watts 01- controladora dmx - 04 moving beam 200 5r ou 7r 35- metros treliça q-25 ou q30 alumínio. 04 - sleeve q-25 ou q30 alumínio. 04-  pau de carga alumínio. 04 - talhas   -  04- bases cabeamento necessário para todo o sistem cabos  xlr, cabos p- 10 cabos ac extensões para atender ac necessidade das atrações 01- operador de som.",
+                "Status": "Venceu",
+                "Valor": 30000.0
+            },
+            {
+                "Item": 6,
+                "Desc": "SERVIÇO DE LOCAÇÃO DE SONORIZAÇÃO E ILUMINAÇÃO MÉDIO PORTE - para usos no palco , devendo conter as especificação mínimas e aproximadas sendo: equipamentos como p.a, 16 submodelo sb850 ou similar com 2 falantes de 18” com 800 watts cada 16 line-array com 1 ou 2 falantes de 12 e drive” com 400 watts cada e 1 drive titanium de 125 watts, 2 amplificadores de 5000 watts rms,02 amplificadores de 3000 watts rms e 2    amplificadores  de 1000 watts rms, 1 console digital de 32 canais com minimo 8 auxiliares 01v96 ,ls9 ,X32,M-32  similar ou superior para aplicação ao vivo com periféricos e cabeamentos compatíveis com memorização dos ganhos de entrada dos prés 8 auxiliares pré-configuráveis, , sistema de amplificação com periféricos e cabeamentos compatíveis em 2 omhs, 1 técnico experiente para operar o sistema de som, equipamento de palco back-line,1 processador digital stéreo 3 vias, 1 filtro de linha, 2 sidestéreo, 3 vias contendo cada side 1 kf e 01 sb 850 ou similares, 4 monitores, 1 monitor sub para bateria, 4 amplificadores 3.000 watsrms classe ab  p monitores, 1 amplificadores para guitarra marshall ou similar, 1 amplificador para contra baixo com 1 a.f de 18” e 04 a.f de 10” gk ou similar, 3 microfones sem fio uhf shure, sennheiser, akg, áudio techinica ou similar ou com qualidade superior com periféricos e cabeamentos compatíveis, 10 microfones de captação direcional com fio shure, akg, sennheiser, audiotechinica, electro voice, dpa similar ou com qualidade superior com periféricos e cabeamentos compatíveis, 4 sub snake, 1 bateria completa de boa qualidade, 1 kit de microfone para bateria 7 peças shure, sennheiser, akg, áudio techinica ou similar ou com qualidade superior com periféricos e cabeamentos compatíveis, 15 garras para microfones, 22 pedestais, 10 direct box ativo, 5 direct box passivo, 40 cabos xlr-10mts, 10 cabos p10, 1 amplificador de fone p vias com 8 canais, cabos de sinal e energia necessários para este sistema, 1 técnico  para operar o sistema de s",
+                "Status": "Venceu",
+                "Valor": 125250.0
+            }
+        ]
     },
     {
-        "CNPJ": "53571459000101",
-        "Data": "20250520",
-        "Fornecedor": "ELLOELLA DISTRIBUIDORA LTDA",
-        "Itens": 4,
-        "Licitacao": "69000622025",
+        "DataResult": "2025-06-02T08:51:25",
+        "UASG": "69",
+        "Edital": "00062/2025",
         "Orgao": "MUNICIPIO DE SAO JOSE DO BELMONTE",
-        "Total": 7839.1,
-        "UASG": "69"
+        "UF": "PE",
+        "Municipio": "São José do Belmonte",
+        "Fornecedor": "ELLOELLA DISTRIBUIDORA LTDA",
+        "CNPJ": "53571459000101",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T09:00:00",
+        "Licitacao": "69000622025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CARTOLINA (AZUL,VERDE, ROSA, AMARELO, BRANCA) OBS: 100 DE CADA",
+                "Status": "Venceu",
+                "Valor": 1224.0
+            },
+            {
+                "Item": 4,
+                "Desc": "PAPEL 40 660X960MM",
+                "Status": "Venceu",
+                "Valor": 2159.0
+            },
+            {
+                "Item": 9,
+                "Desc": "PAPEL CELOFANE (VERMELHO, AMARELO, AZUL, VERDE)",
+                "Status": "Venceu",
+                "Valor": 2088.1
+            },
+            {
+                "Item": 10,
+                "Desc": "PAPEL CREPOM ( VERMELHO, AZUL, AMARELO, PRETO, MARRON, LARANJA, VERDE, ROXO, ROSA, BRANCO",
+                "Status": "Venceu",
+                "Valor": 2368.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T08:17:05",
@@ -4836,14 +6063,25 @@
         ]
     },
     {
-        "CNPJ": "24708774000130",
-        "Data": "20250526",
-        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
-        "Itens": 1,
-        "Licitacao": "13000482025",
+        "DataResult": "2025-06-30T09:39:19",
+        "UASG": "13",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE PARAOPEBA",
-        "Total": 12174.2,
-        "UASG": "13"
+        "UF": "MG",
+        "Municipio": "Paraopeba",
+        "Fornecedor": "JOSE NEYMAR MENDES GONCALVES 06525136628",
+        "CNPJ": "24708774000130",
+        "InicioRec": "",
+        "FimRec": "2025-07-02T09:30:00",
+        "Licitacao": "13000482025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "75285494 VENTILADOR",
+                "Status": "Venceu",
+                "Valor": 12174.2
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T08:46:58",
@@ -5062,24 +6300,88 @@
         ]
     },
     {
-        "CNPJ": "07062925000106",
-        "Data": "20250509",
-        "Fornecedor": "ORGANIZAÇÕES MSL COMÉRCIO DE MATERIAIS ELÉTRICOS LTDA",
-        "Itens": 2,
-        "Licitacao": "678000592025",
+        "DataResult": "2025-07-12T06:26:03",
+        "UASG": "678",
+        "Edital": "00059/2025",
         "Orgao": "MUNICIPIO DE JABOTICATUBAS",
-        "Total": 26.21,
-        "UASG": "678"
+        "UF": "MG",
+        "Municipio": "Jaboticatubas",
+        "Fornecedor": "ORGANIZAÇÕES MSL COMÉRCIO DE MATERIAIS ELÉTRICOS LTDA",
+        "CNPJ": "07062925000106",
+        "InicioRec": "",
+        "FimRec": "2025-07-23T09:00:00",
+        "Licitacao": "678000592025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "FERRAMENTAS MAQUINAS E EQUIPAMENTOS EM GERAL CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 13.91
+            },
+            {
+                "Item": 9,
+                "Desc": "MATERIAIS ELETRICOS EM GERAL DE TELEFONIA E ILUMINACAO PUBLICA CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 12.3
+            }
+        ]
     },
     {
-        "CNPJ": "52954144000180",
-        "Data": "20250508",
-        "Fornecedor": "RAVI E-COMMERCE LTDA.",
-        "Itens": 7,
-        "Licitacao": "1474000072025",
+        "DataResult": "2025-05-16T13:57:50",
+        "UASG": "1474",
+        "Edital": "00007/2025",
         "Orgao": "MUNICIPIO DE QUELUZ",
-        "Total": 49988.0,
-        "UASG": "1474"
+        "UF": "SP",
+        "Municipio": "Queluz",
+        "Fornecedor": "RAVI E-COMMERCE LTDA.",
+        "CNPJ": "52954144000180",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T08:30:00",
+        "Licitacao": "1474000072025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "PNEU 17.5/25 12 LONAS\r",
+                "Status": "Venceu",
+                "Valor": 10432.0
+            },
+            {
+                "Item": 4,
+                "Desc": "PNEU 175/70/13\r",
+                "Status": "Venceu",
+                "Valor": 3760.0
+            },
+            {
+                "Item": 6,
+                "Desc": "PNEU 1000X20\r",
+                "Status": "Venceu",
+                "Valor": 7440.0
+            },
+            {
+                "Item": 7,
+                "Desc": "PNEU185/65 RODA 15\r",
+                "Status": "Venceu",
+                "Valor": 6860.0
+            },
+            {
+                "Item": 8,
+                "Desc": "PNEU 195/65 R15\r",
+                "Status": "Venceu",
+                "Valor": 5500.0
+            },
+            {
+                "Item": 9,
+                "Desc": "PNEU 12.5/80 12 LONAS\r",
+                "Status": "Venceu",
+                "Valor": 6324.0
+            },
+            {
+                "Item": 10,
+                "Desc": "PNEU 225/65 R 16\r",
+                "Status": "Venceu",
+                "Valor": 9672.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-17T09:59:22",
@@ -5310,14 +6612,43 @@
         ]
     },
     {
-        "CNPJ": "34479102000153",
-        "Data": "20250529",
-        "Fornecedor": "NK MATERIAIS HOSPITALARES LTDA",
-        "Itens": 4,
-        "Licitacao": "10001222025",
+        "DataResult": "2025-07-30T08:23:06",
+        "UASG": "10",
+        "Edital": "00122/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 11050.5,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "NK MATERIAIS HOSPITALARES LTDA",
+        "CNPJ": "34479102000153",
+        "InicioRec": "",
+        "FimRec": "2025-08-12T09:30:00",
+        "Licitacao": "10001222025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AGUA OXIGENADA 10 VOLUMESSOLUCAO DE PEROXIDO DE HIDROGENIO 3% 1L\r",
+                "Status": "Venceu",
+                "Valor": 250.5
+            },
+            {
+                "Item": 8,
+                "Desc": "AGULHA HIPODERMICAAGULHA HIPODERMICA DESCARTAVEL 13 X 0,45 MM EM ACO INOXIDAVEL, ESTERIL, ATOXICA E APIROGENICA, BISEL TRIFACETADO\r",
+                "Status": "Venceu",
+                "Valor": 1800.0
+            },
+            {
+                "Item": 9,
+                "Desc": "AGULHA HIPODERMICAAGULHA HIPODERMICA DESCARTAVEL 20 X 0,55 MM EM ACO INOXIDAVEL, ESTERIL, ATOXICA E APIROGENICA, BISEL TRIFACETADO\r",
+                "Status": "Venceu",
+                "Valor": 4500.0
+            },
+            {
+                "Item": 10,
+                "Desc": "AGULHA HIPODERMICAAGULHA HIPODERMICA DESCARTAVEL 25 X 0,60 MM EM ACO INOXIDAVEL, ESTERIL, ATOXICA E APIROGENICA, BISEL TRIFACETADO\r",
+                "Status": "Venceu",
+                "Valor": 4500.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-22T16:36:39",
@@ -5384,14 +6715,31 @@
         "UASG": "1995"
     },
     {
-        "CNPJ": "07336801000171",
-        "Data": "20250514",
-        "Fornecedor": "SAAY'S SOLUÇÕES AMBIENTAIS LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "SAAY'S SOLUÇÕES AMBIENTAIS LTDA",
+        "CNPJ": "07336801000171",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-09T16:55:55",
@@ -5436,24 +6784,70 @@
         ]
     },
     {
-        "CNPJ": "33065699000127",
-        "Data": "20250512",
-        "Fornecedor": "SEGUROS SURA S.A.",
-        "Itens": 4,
-        "Licitacao": "10001142025",
+        "DataResult": "2025-05-29T15:27:07",
+        "UASG": "10",
+        "Edital": "00114/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 10500.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "SEGUROS SURA S.A.",
+        "CNPJ": "33065699000127",
+        "InicioRec": "",
+        "FimRec": "2025-06-12T09:30:00",
+        "Licitacao": "10001142025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SEGURO VEICULAR PARA FIAT SCUDO 0KM\r",
+                "Status": "Venceu",
+                "Valor": 2916.67
+            },
+            {
+                "Item": 2,
+                "Desc": "SEGURO VEICULAR RENAUT MASTER 0KM - VAN ESCOLAR\r",
+                "Status": "Venceu",
+                "Valor": 2916.67
+            },
+            {
+                "Item": 3,
+                "Desc": "SEGURO VEICULAR - 0K - VAN ESCOLAR - RENAUT MASTER\r",
+                "Status": "Venceu",
+                "Valor": 2916.67
+            },
+            {
+                "Item": 4,
+                "Desc": "SEGURO VEICULAR PARA CITROEN C3 AIR CROSS 0 KM\r",
+                "Status": "Venceu",
+                "Valor": 1749.99
+            }
+        ]
     },
     {
-        "CNPJ": "08245855000194",
-        "Data": "20250519",
-        "Fornecedor": "MHEDICA SERVICE COMERCIO E MANUTENCAO LTDA",
-        "Itens": 2,
-        "Licitacao": "1127000212025",
+        "DataResult": "2025-05-28T10:16:02",
+        "UASG": "1127",
+        "Edital": "00021/2025",
         "Orgao": "MUNICIPIO DE JACUI",
-        "Total": 237187.5,
-        "UASG": "1127"
+        "UF": "MG",
+        "Municipio": "Jacuí",
+        "Fornecedor": "MHEDICA SERVICE COMERCIO E MANUTENCAO LTDA",
+        "CNPJ": "08245855000194",
+        "InicioRec": "",
+        "FimRec": "2025-06-10T08:30:00",
+        "Licitacao": "1127000212025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "VENDA DE UMIDIFICADOR VENDA DE UMIDIFICADOR",
+                "Status": "Venceu",
+                "Valor": 14670.0
+            },
+            {
+                "Item": 9,
+                "Desc": "VALVULA REGULADORA C. FLUXOMET VALVULA REGULADORA PARA CILINDRO COM FLUXOMETRO. Fabricada em metal cromado, manometro de alta pressao com escala de 0 a 3000psi, entrada com filtro de bronze sinterizado, pressao fixa de 3,5 kgf/cm2, valvula de seguranca e fluxometro. Conexoes no padrao ABNT NBR 11725 e 11906. Validade superior a 3 anos.",
+                "Status": "Venceu",
+                "Valor": 222517.5
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T07:59:57",
@@ -5510,14 +6904,31 @@
         ]
     },
     {
-        "CNPJ": "10745254000192",
-        "Data": "20250514",
-        "Fornecedor": "C.BRASIL SERVICOS DE LIMPEZA CONSERVACAO E TRANSPORTES LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 2483520.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "C.BRASIL SERVICOS DE LIMPEZA CONSERVACAO E TRANSPORTES LTDA",
+        "CNPJ": "10745254000192",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 1979640.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 503880.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-13T15:30:04",
@@ -5571,14 +6982,37 @@
         ]
     },
     {
-        "CNPJ": "36999842000146",
-        "Data": "20250521",
-        "Fornecedor": "EQUIPSUL COMERCIO E ASSISTENCIA TECNICA DE EQUIPAMENTOS A SAUDE EIRELI",
-        "Itens": 3,
-        "Licitacao": "81000492025",
+        "DataResult": "2025-06-12T13:07:59",
+        "UASG": "81",
+        "Edital": "00049/2025",
         "Orgao": "MUNICIPIO DE BOM JESUS DO AMPARO",
-        "Total": 85840.0,
-        "UASG": "81"
+        "UF": "MG",
+        "Municipio": "Bom Jesus do Amparo",
+        "Fornecedor": "EQUIPSUL COMERCIO E ASSISTENCIA TECNICA DE EQUIPAMENTOS A SAUDE EIRELI",
+        "CNPJ": "36999842000146",
+        "InicioRec": "",
+        "FimRec": "2025-07-01T09:29:00",
+        "Licitacao": "81000492025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Cilindros de Oxigenio Medicinal armazenam oxigenio sob alta pressao, e a vazao dos gases armazenado e controlada por valvulas redutoras e fluxometros de 10 m.",
+                "Status": "Venceu",
+                "Valor": 46943.75
+            },
+            {
+                "Item": 5,
+                "Desc": "Cilindros de Oxigenio Medicinal armazenam oxigenio sob alta pressao, e a vazao dos gases armazenado e controlada por valvulas redutoras e fluxometros de 1 m.",
+                "Status": "Venceu",
+                "Valor": 21460.0
+            },
+            {
+                "Item": 6,
+                "Desc": "Cilindros de Oxigenio Medicinal armazenam oxigenio sob alta pressao, e a vazao dos gases armazenado e controlada por valvulas redutoras e fluxometros de 2,5 m.",
+                "Status": "Venceu",
+                "Valor": 17436.25
+            }
+        ]
     },
     {
         "DataResult": "2025-06-12T10:37:12",
@@ -5626,14 +7060,25 @@
         ]
     },
     {
-        "CNPJ": "60720082000170",
-        "Data": "20250505",
-        "Fornecedor": "GTL COMERCIO DE VEICULOS",
-        "Itens": 1,
-        "Licitacao": "422000282025",
+        "DataResult": "2025-10-09T07:40:36",
+        "UASG": "422",
+        "Edital": "00028/2025",
         "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
-        "Total": 118990.0,
-        "UASG": "422"
+        "UF": "MG",
+        "Municipio": "Guanhães",
+        "Fornecedor": "GTL COMERCIO DE VEICULOS",
+        "CNPJ": "60720082000170",
+        "InicioRec": "",
+        "FimRec": "2025-09-23T08:30:00",
+        "Licitacao": "422000282025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "VEÍCULO FLEX, TIPO UTILITÁRIO LEVE TIPO PICK UP, CABINE DUPLA. Veículo flex, tipo utilitário leve tipo pick up, cabine dupla.Veículo utilitário pick up motorização mínima 1.3 litros, com cabine dupla (02 ou 04 portas), para no mínimo 04 passageiros, zero km, ano de fabricação igual ou superior a este processo licitatório, com no mínimo as seguintes características: - motorização flex (gasolina e álcool) com potência mínima de 125 cv (motor firefly 107 cv); - transmissão manual com no mínimo 05 marchas; - na cor branca ou cinza; - capacidade da carga acima de 600 kg e volume mínimo de 680 litros; - direção elétrica; - rodas de ferro ou alumínio com aro igual ou superior a 15 polegadas inclusos calotas; - tanque de combustível de no mínimo 44 litros; - ar condicionado automático; - Air bag para motorista e passageiro; - trava elétrica em todas as portas; - freios dianteiros ABS com EBD; - protetor de caçamba original confeccionada com material resistente a óleos e graxa; - capota marítima instalada; - moldura de proteção nas caixas de rodas; - protetor de cárter; - conjunto completo de tapetes internos; - com todos os equipamentos normais de produção pertinentes ao modelo e demais equipamentos exigidos pelo conselho de trânsito; e com garantia mínima de 3 (três) anos.",
+                "Status": "Venceu",
+                "Valor": 118990.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-17T14:11:09",
@@ -5657,14 +7102,25 @@
         ]
     },
     {
-        "CNPJ": "03286217000106",
-        "Data": "20250507",
-        "Fornecedor": "TEIXEIRA INFORMATICA LTDA",
-        "Itens": 1,
-        "Licitacao": "2243000022025",
+        "DataResult": "2025-05-30T09:44:54",
+        "UASG": "2243",
+        "Edital": "00002/2025",
         "Orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE TEOFILO OTONI",
-        "Total": 110.0,
-        "UASG": "2243"
+        "UF": "MG",
+        "Municipio": "Teófilo Otoni",
+        "Fornecedor": "TEIXEIRA INFORMATICA LTDA",
+        "CNPJ": "03286217000106",
+        "InicioRec": "",
+        "FimRec": "2025-06-16T09:44:00",
+        "Licitacao": "2243000022025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "CONVERSOR HDMI PARA VGA COM RESOLUÇÃO MÍNIMA SUPORTADA DE 1080P.\r",
+                "Status": "Venceu",
+                "Valor": 110.0
+            }
+        ]
     },
     {
         "DataResult": "2025-06-05T16:03:44",
@@ -5706,24 +7162,46 @@
         ]
     },
     {
-        "CNPJ": "57032406000173",
-        "Data": "20250507",
-        "Fornecedor": "FJF COMERCIO E SERVIÇO LTDA",
-        "Itens": 1,
-        "Licitacao": "10001112025",
+        "DataResult": "2025-06-04T16:13:30",
+        "UASG": "10",
+        "Edital": "00111/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 8028.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "FJF COMERCIO E SERVIÇO LTDA",
+        "CNPJ": "57032406000173",
+        "InicioRec": "",
+        "FimRec": "2025-06-24T09:30:00",
+        "Licitacao": "10001112025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "LAVADORA DE ALTA PRESSAO 1900W 110/220V\r",
+                "Status": "Venceu",
+                "Valor": 8028.0
+            }
+        ]
     },
     {
-        "CNPJ": "32816440000108",
-        "Data": "20250513",
-        "Fornecedor": "ALEXANDRE AUGUSTO VIANTE",
-        "Itens": 1,
-        "Licitacao": "777000122025",
+        "DataResult": "2025-06-12T11:07:23",
+        "UASG": "777",
+        "Edital": "00012/2025",
         "Orgao": "CAMARA MUNICIPAL DE DORES DO INDAIA",
-        "Total": 11250.0,
-        "UASG": "777"
+        "UF": "MG",
+        "Municipio": "Dores do Indaiá",
+        "Fornecedor": "ALEXANDRE AUGUSTO VIANTE",
+        "CNPJ": "32816440000108",
+        "InicioRec": "",
+        "FimRec": "2025-06-26T09:00:00",
+        "Licitacao": "777000122025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Notebook com as configurações avançadas Processador 24-core, cache de 36MB até 5.4GHZ, MAX TURBO, placa de vídeo dedicada de 8GB de memória GDDR6, 32GB DDR (2X16GB); SSD DE 1TB PCIE NVME M.2; 2 PORTAS TYPE-C™; 1 USB Type-A 3.2 DE 1ª geração; 1 porta de saída HDMI 2.1; 1 mini displayport 1.4; 1 porta de entrada de energia/CC; 1 porta ETHERNET RJ45;1 porta USB 3.2 TYPE-A",
+                "Status": "Venceu",
+                "Valor": 11250.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-09T16:55:55",
@@ -5939,14 +7417,25 @@
         ]
     },
     {
-        "CNPJ": "12420164003687",
-        "Data": "20250507",
-        "Fornecedor": "CM HOSPITALAR - BRASILIA 87",
-        "Itens": 1,
-        "Licitacao": "1998001612025",
+        "DataResult": "2025-07-21T11:27:09",
+        "UASG": "1998",
+        "Edital": "00161/2025",
         "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 48192.0,
-        "UASG": "1998"
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "CM HOSPITALAR - BRASILIA 87",
+        "CNPJ": "12420164003687",
+        "InicioRec": "",
+        "FimRec": "2025-06-09T08:00:00",
+        "Licitacao": "1998001612025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "CARBOXIMALTOSE FÉRRICA 1.800 mg (Equivalente a 500 mg Ferro III), SOLUÇÃO INJETÁVEL INTRAVENOSA DE 50 MG DE FERRO\r",
+                "Status": "Venceu",
+                "Valor": 48192.0
+            }
+        ]
     },
     {
         "DataResult": "2025-07-21T16:48:02",
@@ -5970,24 +7459,46 @@
         ]
     },
     {
-        "CNPJ": "47225693000184",
-        "Data": "20250509",
-        "Fornecedor": "PETRANOVA SANEAMENTO E CONSTRUÇÕES LTDA",
-        "Itens": 1,
-        "Licitacao": "458000482025",
+        "DataResult": "2025-05-21T16:35:16",
+        "UASG": "458",
+        "Edital": "00048/2025",
         "Orgao": "DEPARTAMENTO MUNICIPAL DE AGUAS E ESGOTOS",
-        "Total": 380000.0,
-        "UASG": "458"
+        "UF": "MG",
+        "Municipio": "João Monlevade",
+        "Fornecedor": "PETRANOVA SANEAMENTO E CONSTRUÇÕES LTDA",
+        "CNPJ": "47225693000184",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T08:00:00",
+        "Licitacao": "458000482025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "FORNECIMENTO E APLICAÇÃO DOS ELEMENTOS FILTRANTES  - FORNECIMENTO E APLICAÇÃO DOS ELEMENTOS FILTRANTES NOS FILTROS DA ETA-PACAS",
+                "Status": "Venceu",
+                "Valor": 380000.0
+            }
+        ]
     },
     {
-        "CNPJ": "60496699000154",
-        "Data": "20250530",
-        "Fornecedor": "D. CAMP ALIMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "30001001862025",
+        "DataResult": "2025-09-19T10:20:55",
+        "UASG": "30001",
+        "Edital": "00186/2025",
         "Orgao": "MUNICIPIO DE CASCAVEL",
-        "Total": 73066.4,
-        "UASG": "30001"
+        "UF": "PR",
+        "Municipio": "Cascavel",
+        "Fornecedor": "D. CAMP ALIMENTOS LTDA",
+        "CNPJ": "60496699000154",
+        "InicioRec": "",
+        "FimRec": "2025-10-06T08:59:00",
+        "Licitacao": "30001001862025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "AÇÚCAR OBTIDO DA CANA DE AÇÚCAR, TIPO CRISTAL, COM ASPECTO COR, CHEIRO PRÓPRIOS E SABOR DOCE, COM TEOR DE SACAROSE MÍNIMO DE 99,3%, ADMITINDO UMIDADE MÁXIMA DE 0,3%, SEM FERMENTAÇÃO, ISENTO DE SUJIDADES, PARASITAS, MATERIAIS TERROSOS E DETRITOS ANIMAIS OU VEGETAIS, ACONDICIONADO EM PLÁSTICO ATÓXICO E SUAS CONDIÇÕES DEVERÃO ESTAR DE ACORDO COM A RESOLUÇÃO 271 DE 22 DE SETEMBRO DE 2005 E SUAS ALTERAÇÕES POSTERIORES. PRODUTO VERIFICADO NO ATO DA ENTREGA. EMBALAGEM:  PACOTE DE 5KG CADA.",
+                "Status": "Venceu",
+                "Valor": 73066.4
+            }
+        ]
     },
     {
         "DataResult": "2025-02-28T14:36:29",
@@ -6155,14 +7666,37 @@
         ]
     },
     {
-        "CNPJ": "36975874000101",
-        "Data": "20250507",
-        "Fornecedor": "JULIANA FERREIRA DA SILVA",
-        "Itens": 3,
-        "Licitacao": "2243000022025",
+        "DataResult": "2025-05-30T09:44:54",
+        "UASG": "2243",
+        "Edital": "00002/2025",
         "Orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE TEOFILO OTONI",
-        "Total": 1224.4,
-        "UASG": "2243"
+        "UF": "MG",
+        "Municipio": "Teófilo Otoni",
+        "Fornecedor": "JULIANA FERREIRA DA SILVA",
+        "CNPJ": "36975874000101",
+        "InicioRec": "",
+        "FimRec": "2025-06-16T09:44:00",
+        "Licitacao": "2243000022025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "CAIXA DE SOM 2.0 COM NO MÍNIMO 3 WATTS DE POTÊNCIA, CONEXÃO DE ENTRADA USB, COR PRETA, COM DISPLAY DE LED. GARANTIA MÍNIMA 12 MESES.\r",
+                "Status": "Venceu",
+                "Valor": 250.0
+            },
+            {
+                "Item": 6,
+                "Desc": "CAIXA DE SOM COM POTÊNCIA MÍNIMA DE SAÍDA (RMS) 450 W; TIPOS DE ALTO-FALANTE WOOFER, SUBWOOFER; TIPOS DE FILTROS DO ALTO-FALANTE ATIVO; CONFIGURAÇÃO DE CANAIS 2.1; AUTONOMIA DA BATERIA 3 H ; INCLUI BATERIA RECARREGÁVEL ; INCLUI CARREGADOR ; COM BLUETO\r",
+                "Status": "Venceu",
+                "Valor": 670.0
+            },
+            {
+                "Item": 10,
+                "Desc": "FILTRO DE LINHA; VOLTAGEM DE ENTRADA AC 115/127/220 V, VOLTAGEM DE SAÍDA AC 115/127/220 V; CAPACIDADE DE ALIMENTAÇÃO MÍNIMA 2200 WATT.\r",
+                "Status": "Venceu",
+                "Valor": 304.4
+            }
+        ]
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -6282,14 +7816,31 @@
         ]
     },
     {
-        "CNPJ": "28648007000133",
-        "Data": "20250514",
-        "Fornecedor": "MR AMBIENTAL LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "MR AMBIENTAL LTDA",
+        "CNPJ": "28648007000133",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-26T13:36:30",
@@ -6541,14 +8092,25 @@
         ]
     },
     {
-        "CNPJ": "31088105000178",
-        "Data": "20250508",
-        "Fornecedor": "SANTPAV TECNOLOGIA EM ASFALTOS",
-        "Itens": 1,
-        "Licitacao": "1377000482025",
+        "DataResult": "2025-05-21T17:11:17",
+        "UASG": "1377",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE MARTINHO CAMPOS",
-        "Total": 183000.0,
-        "UASG": "1377"
+        "UF": "MG",
+        "Municipio": "Martinho Campos",
+        "Fornecedor": "SANTPAV TECNOLOGIA EM ASFALTOS",
+        "CNPJ": "31088105000178",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T13:00:00",
+        "Licitacao": "1377000482025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Massa asfáltica usinada a quente, composta por pedrisco, pó de pedra, areia (análise granulométrica passante não inferior a 99% na peneira 3/8”) e asfalto, com teor de betume entre 5,0% e 6,5%. O material deve apresentar recuperação elástica no ductilômetro, não menor que 75%, ponto de fulgor superior a 235°C e resistência à tração por compressão diametral (MPa) maior que 0,60, atendendo às especificações da ES-P-05/16 DEINFRA-SC (ANP nº 04/2010).\nO produto deverá ser testado em laboratório credenciado pelo INMETRO, com apresentação de laudos técnicos que comprovem a conformidade com a Faixa C da Norma DNIT 031/2006 – ES.\nObservação: Entregue em big bag de 1 tonelada.\n",
+                "Status": "Venceu",
+                "Valor": 183000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T08:34:02",
@@ -6668,34 +8230,97 @@
         ]
     },
     {
-        "CNPJ": "55245731000199",
-        "Data": "20250513",
-        "Fornecedor": "MICRO BIT INFORMATICA LTDA",
-        "Itens": 2,
-        "Licitacao": "777000122025",
+        "DataResult": "2025-06-12T11:07:23",
+        "UASG": "777",
+        "Edital": "00012/2025",
         "Orgao": "CAMARA MUNICIPAL DE DORES DO INDAIA",
-        "Total": 19699.0,
-        "UASG": "777"
+        "UF": "MG",
+        "Municipio": "Dores do Indaiá",
+        "Fornecedor": "MICRO BIT INFORMATICA LTDA",
+        "CNPJ": "55245731000199",
+        "InicioRec": "",
+        "FimRec": "2025-06-26T09:00:00",
+        "Licitacao": "777000122025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Desktop: completo com monitor 19\" polegadas, mouse e teclado com configurações mínimas: Intel(R) Core (TM) i5, mínimo 12th Gen; Memória RAM: 8GB; Armazenamento: 240GB SSD; placa mãe DDR4; Sistema Operacional Windows 10 PRO 64 Bits acompanhado de mouse e teclado",
+                "Status": "Venceu",
+                "Valor": 16800.0
+            },
+            {
+                "Item": 3,
+                "Desc": "Notebook configurações mínimas: Intel(R) Core (TM) i5, 1i1th, Sistema Operacional: Windows 10 ou 11 PRO 64- its, alto-falantes estéreo, armazenamento: 128 GB SSD, webcam: HD com 1280 x 720 de resolução e gravação de áudio e vídeo em 720p a 30 FPS, wireless e rede wifi",
+                "Status": "Venceu",
+                "Valor": 2899.0
+            }
+        ]
     },
     {
-        "CNPJ": "05652247000106",
-        "Data": "20250527",
-        "Fornecedor": "LUMIAR HEALTH BUILDERS EQUIPAMENTOS LTDA - EPP",
-        "Itens": 5,
-        "Licitacao": "146000442025",
+        "DataResult": "2025-09-30T11:21:35",
+        "UASG": "146",
+        "Edital": "00044/2025",
         "Orgao": "MUNICIPIO DE MAUA",
-        "Total": 1821489.6,
-        "UASG": "146"
+        "UF": "SP",
+        "Municipio": "Mauá",
+        "Fornecedor": "LUMIAR HEALTH BUILDERS EQUIPAMENTOS LTDA - EPP",
+        "CNPJ": "05652247000106",
+        "InicioRec": "",
+        "FimRec": "2025-10-15T08:59:00",
+        "Licitacao": "146000442025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LOCACAO DE CONCENTRADOR DE OXIGENIO E CILINDRO-Locação de concentradores de oxigênio de 5 litros com cilindros de backup e insumos necessários",
+                "Status": "Venceu",
+                "Valor": 726504.0
+            },
+            {
+                "Item": 2,
+                "Desc": "LOCACAO DE CONCENTRADOR DE OXIGENIO E CILINDRO-Locação de concentradores de oxigênio de 10 litros com cilindros de backup e insumos necessários",
+                "Status": "Venceu",
+                "Valor": 76785.6
+            },
+            {
+                "Item": 3,
+                "Desc": "LOCACAO CILINDRO OXIGENIO-Locação mensal de 200 cilindros gasosos de 1m3 com carrinho de transporte e insumos necessários",
+                "Status": "Venceu",
+                "Valor": 84000.0
+            },
+            {
+                "Item": 4,
+                "Desc": "OXIGENIO GASOSO-Oxigênio gasoso com pureza 99,5%",
+                "Status": "Venceu",
+                "Valor": 904800.0
+            },
+            {
+                "Item": 5,
+                "Desc": "LOCAÇÃO DE KITS DE OXIGENOTERAPIA DOMICILIAR",
+                "Status": "Venceu",
+                "Valor": 29400.0
+            }
+        ]
     },
     {
-        "CNPJ": "45770117000192",
-        "Data": "20250505",
-        "Fornecedor": "VENANCIOS EMPREENDIMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "422000282025",
+        "DataResult": "2025-10-09T07:40:36",
+        "UASG": "422",
+        "Edital": "00028/2025",
         "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
-        "Total": 106999.0,
-        "UASG": "422"
+        "UF": "MG",
+        "Municipio": "Guanhães",
+        "Fornecedor": "VENANCIOS EMPREENDIMENTOS LTDA",
+        "CNPJ": "45770117000192",
+        "InicioRec": "",
+        "FimRec": "2025-09-23T08:30:00",
+        "Licitacao": "422000282025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "VEICULO 0 KM TIPO PICK-UP VEÍCULO TIPO PICK-UP (0 KM) ZERO QUILÔMETRO, COR BRANCA OU PRATA.Tipo pick-up (picape), homologado para o transporte de 02 (duas) pessoas (motorista e passageiro).Especificações mínimas:- Ano: modelo do ano vigente ou superior;- Portas: 02 (duas), laterais, originais de fábrica;- Volume dos cilindros do motor (cilindrada): Capacidade mínimo de 1.4 litros (ou 1400 cm³) e máximo de 1.6 litros (ou 1600 cm³). - Bicombustível, injeção eletrônica;- Tração: dianteira 4x2;- Tanque de combustível de 55 litros, no mínimo;- Transmissão: mecânica de no mínimo 5 (cinco) marchas sincronizadas a frente e 1 (uma) a ré; - Direção: hidráulica ou eletro-hidráulica ou elétrica, original de fábrica;- Sistema de ar-condicionado, original de fábrica; - Eixo traseiro rígido, com formato Ômega- Suspensão traseira: Com feixes de molas semi-elípticas ou lâmina única;- Caçamba com volume mínimo de 1200 litros;- Vão livre do solo de 200 mm, no mínimo;- Vidros elétricos, originais de fábrica;- Trava elétrica das portas, original de fábrica; - Sistema de freios ABS, original de fábrica; - Airbag duplo frontal (motorista e passageiro), original de fábrica; - Protetor de caçamba; - Grade vigia barra do vidro traseiro;- Jogo de tapetes de borracha interno; - Todos os acessórios e itens obrigatórios exigidos pelo CONTRAN / DETRAN; - Garantia completa de no mínimo 12 (doze) meses sem limite de quilometragem, obedecendo o cronograma de revisões indicado pelo fabricante.",
+                "Status": "Venceu",
+                "Valor": 106999.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-31T16:33:40",
@@ -6719,14 +8344,25 @@
         ]
     },
     {
-        "CNPJ": "32634899000190",
-        "Data": "20250514",
-        "Fornecedor": "RR RECICLAGEM SJB LTDA",
-        "Itens": 1,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "RR RECICLAGEM SJB LTDA",
+        "CNPJ": "32634899000190",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-13T13:51:07",
@@ -6804,14 +8440,37 @@
         ]
     },
     {
-        "CNPJ": "20657155000102",
-        "Data": "20250507",
-        "Fornecedor": "ILG COMERCIAL LTDA",
-        "Itens": 3,
-        "Licitacao": "1998001612025",
+        "DataResult": "2025-07-21T11:27:09",
+        "UASG": "1998",
+        "Edital": "00161/2025",
         "Orgao": "MUNICIPIO DE PINDAMONHANGABA",
-        "Total": 4582.2,
-        "UASG": "1998"
+        "UF": "SP",
+        "Municipio": "Pindamonhangaba",
+        "Fornecedor": "ILG COMERCIAL LTDA",
+        "CNPJ": "20657155000102",
+        "InicioRec": "",
+        "FimRec": "2025-06-09T08:00:00",
+        "Licitacao": "1998001612025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "BILASTINA 20 MG COMPRIMIDO\r",
+                "Status": "Venceu",
+                "Valor": 2916.0
+            },
+            {
+                "Item": 4,
+                "Desc": "BISOPROLOL 10 MG\r",
+                "Status": "Venceu",
+                "Valor": 380.0
+            },
+            {
+                "Item": 7,
+                "Desc": "BUPROPIONA, CLORIDRATO 150MG\r",
+                "Status": "Venceu",
+                "Valor": 1286.2
+            }
+        ]
     },
     {
         "DataResult": "2025-04-08T13:32:03",
@@ -6889,14 +8548,31 @@
         ]
     },
     {
-        "CNPJ": "53498104000134",
-        "Data": "20250516",
-        "Fornecedor": "SANDRA CRISTINA DE MATTOS - GAS LIDER POA LTDA",
-        "Itens": 2,
-        "Licitacao": "1001462025",
+        "DataResult": "2025-05-16T13:16:52",
+        "UASG": "1",
+        "Edital": "00146/2025",
         "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 329426.45,
-        "UASG": "1"
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "SANDRA CRISTINA DE MATTOS - GAS LIDER POA LTDA",
+        "CNPJ": "53498104000134",
+        "InicioRec": "",
+        "FimRec": "2025-05-30T08:30:00",
+        "Licitacao": "1001462025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Carga de gás de cozinha - GLP P13.",
+                "Status": "Venceu",
+                "Valor": 76046.95
+            },
+            {
+                "Item": 2,
+                "Desc": "Carga de gás de cozinha - GLP P45.",
+                "Status": "Venceu",
+                "Valor": 253379.5
+            }
+        ]
     },
     {
         "DataResult": "2025-05-14T18:16:30",
@@ -6947,34 +8623,67 @@
         ]
     },
     {
-        "CNPJ": "09251627000190",
-        "Data": "20250515",
-        "Fornecedor": "K.C.R.  INDUSTRIA E COMERCIO DE EQUIPAMENTOS EIRELI",
-        "Itens": 1,
-        "Licitacao": "1322000102025",
+        "DataResult": "2025-05-28T10:20:24",
+        "UASG": "1322",
+        "Edital": "00010/2025",
         "Orgao": "MUNICIPIO DE ENTRE FOLHAS",
-        "Total": 850.0,
-        "UASG": "1322"
+        "UF": "MG",
+        "Municipio": "Entre Folhas",
+        "Fornecedor": "K.C.R.  INDUSTRIA E COMERCIO DE EQUIPAMENTOS EIRELI",
+        "CNPJ": "09251627000190",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T08:00:00",
+        "Licitacao": "1322000102025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "BALANÇA PLATAFORMA DIGITAL 200Kg/50g SELO IMETRO ",
+                "Status": "Venceu",
+                "Valor": 850.0
+            }
+        ]
     },
     {
-        "CNPJ": "41856036000159",
-        "Data": "20250529",
-        "Fornecedor": "BRITMED MATERIAL MÉDICO E HOSPITALAR LTDA",
-        "Itens": 1,
-        "Licitacao": "404340025592025",
+        "DataResult": "2025-07-30T16:25:20",
+        "UASG": "404340",
+        "Edital": "02559/2025",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
-        "Total": 42174.0,
-        "UASG": "404340"
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Fornecedor": "BRITMED MATERIAL MÉDICO E HOSPITALAR LTDA",
+        "CNPJ": "41856036000159",
+        "InicioRec": "",
+        "FimRec": "2025-08-12T09:59:00",
+        "Licitacao": "404340025592025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "ASPECTO FISICO: LENTILHAS, FUNCAO: INCLUSAO HISTOLOGICA E/OU HISTOTECNICA, SOLUBILIDADE: INSOLUVEL EM AGUA, SOLUVEL EM XILOL",
+                "Status": "Venceu",
+                "Valor": 42174.0
+            }
+        ]
     },
     {
-        "CNPJ": "53058818000121",
-        "Data": "20250522",
-        "Fornecedor": "Sterf Comércio e Importação Ltda",
-        "Itens": 1,
-        "Licitacao": "192000782025",
+        "DataResult": "2025-06-05T14:50:25",
+        "UASG": "192",
+        "Edital": "00078/2025",
         "Orgao": "MUNICIPIO DE LAGOA DA PRATA",
-        "Total": 15800.0,
-        "UASG": "192"
+        "UF": "MG",
+        "Municipio": "Lagoa da Prata",
+        "Fornecedor": "Sterf Comércio e Importação Ltda",
+        "CNPJ": "53058818000121",
+        "InicioRec": "",
+        "FimRec": "2025-06-16T12:00:00",
+        "Licitacao": "192000782025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "MICRO CHIP P/ IDENT. ANIMALMICRO CHIP P/ IDENT. ANIMAL\r",
+                "Status": "Venceu",
+                "Valor": 15800.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-21T14:26:05",
@@ -7046,14 +8755,31 @@
         ]
     },
     {
-        "CNPJ": "19919775000193",
-        "Data": "20250515",
-        "Fornecedor": "LUCYR DAS GRAÇAS MENDES GONÇALVES",
-        "Itens": 2,
-        "Licitacao": "1322000102025",
+        "DataResult": "2025-05-28T10:20:24",
+        "UASG": "1322",
+        "Edital": "00010/2025",
         "Orgao": "MUNICIPIO DE ENTRE FOLHAS",
-        "Total": 11050.0,
-        "UASG": "1322"
+        "UF": "MG",
+        "Municipio": "Entre Folhas",
+        "Fornecedor": "LUCYR DAS GRAÇAS MENDES GONÇALVES",
+        "CNPJ": "19919775000193",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T08:00:00",
+        "Licitacao": "1322000102025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "MESA AÇO INOX INDUSTRIAL 170x70x90cm COM 2 PRATELEIRA FENESTRADAS",
+                "Status": "Venceu",
+                "Valor": 4170.0
+            },
+            {
+                "Item": 5,
+                "Desc": "GELADEIRA INDUSTRIAL COMERCIAL 4 PORTAS INOX: MÍNIMO 675 LITROS TENSÃO 127 V ",
+                "Status": "Venceu",
+                "Valor": 6880.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-21T14:26:05",
@@ -7173,14 +8899,43 @@
         ]
     },
     {
-        "CNPJ": "57707876000190",
-        "Data": "20250513",
-        "Fornecedor": "ARMOND E-COMMERCE LTDA",
-        "Itens": 4,
-        "Licitacao": "777000122025",
+        "DataResult": "2025-06-12T11:07:23",
+        "UASG": "777",
+        "Edital": "00012/2025",
         "Orgao": "CAMARA MUNICIPAL DE DORES DO INDAIA",
-        "Total": 24045.0,
-        "UASG": "777"
+        "UF": "MG",
+        "Municipio": "Dores do Indaiá",
+        "Fornecedor": "ARMOND E-COMMERCE LTDA",
+        "CNPJ": "57707876000190",
+        "InicioRec": "",
+        "FimRec": "2025-06-26T09:00:00",
+        "Licitacao": "777000122025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Tablets: Processador Oct-Core,  8GB de memória RAM + 128GB de armazenamento,  Wi-Fi Dual Band (2.4+ 5GHz), Bluetooh 5.0,  Sistema operacional Android 14, com tela de 10 polegadas.",
+                "Status": "Venceu",
+                "Valor": 16200.0
+            },
+            {
+                "Item": 5,
+                "Desc": "Suporte antifurto para tablet 10 polegadas, com cabo mola que permita a movimentação em 360º, trava de segurança com chave, permitindo a retirada do dispositivo quando necessário, acompanhado de fita dupla face para fixação em mesa de vidro.",
+                "Status": "Venceu",
+                "Valor": 2520.0
+            },
+            {
+                "Item": 7,
+                "Desc": "Impressora laser multifuncional monocromática com as funções de imprimir, copiar e digitalizar, opções de frente e verso para cópia, impressão e digitalização, alimentador automático de documentos em passagem única, ou seja, não precisa virar a folha para que o outro lado seja preenchido. Capacidade mínima de 200 folhas na bandeja padrão, 100 folhas na bandeja multiuso e 50 folhas no alimentador automático. Conexão:  Gigabit Ethernet, Wireless (2.4 e 5Ghz), Wi-fi Direct e USB 2.0. Impressão e cópia: aproximadamente 50 páginas por minuto e digitalização frente e verso em preto de aproximadamente 50 imagens por minuto, resolução de impressão: 1200 x 1200dpi; tamanho de papel suportado nas bandejas: A4; A5; A6; ofício (216 x 340 mm); 16k (195 x 270 mm); 16k (184 x 260 mm); 16k (197 x 273 mm); envelope. Compatível com sistemas operacionais: Windows 11; Windows 10; Windows 7; Windows Client; Android; IOS. Tela de operação: Tela touch screen de aproximadamente 7 polegadas.",
+                "Status": "Venceu",
+                "Valor": 4725.0
+            },
+            {
+                "Item": 8,
+                "Desc": "Impressora de Cheques Comunicação USB: Tecnologia de impressão jato de tinta; operação integrada com computador e em rede; operação independente através de Teclado e display alfanumérico que possibilite o lançamento direto dos dados para a emissão do cheque; alinhamento automático do cheque; bivolt. Acessórios: cabos de conexão com PC e energia, fonte de alimentação. Software: próprio para impressão do cheque, criação de banco de dados de favorecidos e geração de relatórios de controle. Compatível com Windows 10 e 11.",
+                "Status": "Venceu",
+                "Valor": 600.0
+            }
+        ]
     },
     {
         "DataResult": "2025-07-08T10:35:38",
@@ -7234,14 +8989,31 @@
         ]
     },
     {
-        "CNPJ": "05599171000100",
-        "Data": "20250509",
-        "Fornecedor": "COMERCIAL ROART LTDA",
-        "Itens": 2,
-        "Licitacao": "678000592025",
+        "DataResult": "2025-07-12T06:26:03",
+        "UASG": "678",
+        "Edital": "00059/2025",
         "Orgao": "MUNICIPIO DE JABOTICATUBAS",
-        "Total": 25.439999999999998,
-        "UASG": "678"
+        "UF": "MG",
+        "Municipio": "Jaboticatubas",
+        "Fornecedor": "COMERCIAL ROART LTDA",
+        "CNPJ": "05599171000100",
+        "InicioRec": "",
+        "FimRec": "2025-07-23T09:00:00",
+        "Licitacao": "678000592025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "MATERIAIS DE PAVIMENTACAO CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 16.4
+            },
+            {
+                "Item": 8,
+                "Desc": "MATERIAIS DE VIDRACARIA CONFORME APENDICE I DO TERMO DE REFERENCIA",
+                "Status": "Venceu",
+                "Valor": 9.04
+            }
+        ]
     },
     {
         "DataResult": "2025-05-20T10:05:04",
@@ -7421,24 +9193,58 @@
         ]
     },
     {
-        "CNPJ": "05480821000196",
-        "Data": "20250514",
-        "Fornecedor": "TEXEL CONSTRUCOES LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "TEXEL CONSTRUCOES LTDA",
+        "CNPJ": "05480821000196",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
-        "CNPJ": "12964775000166",
-        "Data": "20250514",
-        "Fornecedor": "URBAN SERVICOS E TRANSPORTES LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "URBAN SERVICOS E TRANSPORTES LTDA",
+        "CNPJ": "12964775000166",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-23T08:40:35",
@@ -7468,14 +9274,31 @@
         ]
     },
     {
-        "CNPJ": "24859617000125",
-        "Data": "20250514",
-        "Fornecedor": "NELSON FERRARI LTDA",
-        "Itens": 2,
-        "Licitacao": "004000112025",
+        "DataResult": "2025-06-11T09:14:23",
+        "UASG": "004",
+        "Edital": "00011/2025",
         "Orgao": "SERVICO DE INFRAESTRUTURA, SANEAMENTO E ABASTECIMENTO DE AGUA MUNICIPAL",
-        "Total": 0.0,
-        "UASG": "004"
+        "UF": "SC",
+        "Municipio": "São João Batista",
+        "Fornecedor": "NELSON FERRARI LTDA",
+        "CNPJ": "24859617000125",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T08:15:00",
+        "Licitacao": "004000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COLETA E TRANSPORTE DOS RESÍDUOS SÓLIDOS URBANOS DOMICILIARES, COMERCIAIS E DE VARRIÇÃO.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COLETA, TRANSPORTE E TRIAGEM DO LIXO RECICLÁVEL.",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-10T09:21:47",
@@ -7499,44 +9322,88 @@
         ]
     },
     {
-        "CNPJ": "05471879000173",
-        "Data": "20250506",
-        "Fornecedor": "KASA MOTORS LTDA",
-        "Itens": 1,
-        "Licitacao": "1370000022025",
+        "DataResult": "2025-05-22T09:51:56",
+        "UASG": "1370",
+        "Edital": "00002/2025",
         "Orgao": "MUNICIPIO DE RIO MANSO",
-        "Total": 194000.0,
-        "UASG": "1370"
+        "UF": "MG",
+        "Municipio": "Rio Manso",
+        "Fornecedor": "KASA MOTORS LTDA",
+        "CNPJ": "05471879000173",
+        "InicioRec": "",
+        "FimRec": "2025-05-21T09:30:00",
+        "Licitacao": "1370000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEÍCULO AUTOMOTOR",
+                "Status": "Venceu",
+                "Valor": 194000.0
+            }
+        ]
     },
     {
-        "CNPJ": "19919775000193",
-        "Data": "20250507",
-        "Fornecedor": "LUCYR DAS GRAÇAS MENDES GONÇALVES",
-        "Itens": 1,
-        "Licitacao": "10001112025",
+        "DataResult": "2025-06-04T16:13:30",
+        "UASG": "10",
+        "Edital": "00111/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 517.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "LUCYR DAS GRAÇAS MENDES GONÇALVES",
+        "CNPJ": "19919775000193",
+        "InicioRec": "",
+        "FimRec": "2025-06-24T09:30:00",
+        "Licitacao": "10001112025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "FOGAO INDUST. 2 QUEIMADORES\r",
+                "Status": "Venceu",
+                "Valor": 517.0
+            }
+        ]
     },
     {
-        "CNPJ": "11912710000104",
-        "Data": "20250513",
-        "Fornecedor": "TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "777000122025",
+        "DataResult": "2025-06-12T11:07:23",
+        "UASG": "777",
+        "Edital": "00012/2025",
         "Orgao": "CAMARA MUNICIPAL DE DORES DO INDAIA",
-        "Total": 2396.0,
-        "UASG": "777"
+        "UF": "MG",
+        "Municipio": "Dores do Indaiá",
+        "Fornecedor": "TECNOLOGIA LTDA",
+        "CNPJ": "11912710000104",
+        "InicioRec": "",
+        "FimRec": "2025-06-26T09:00:00",
+        "Licitacao": "777000122025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Impressora a laser preto e branco, conexão Wi-Fi e USB, acompanhado de, no mínimo,  fonte de energia e cabo para conexão USB com PC.",
+                "Status": "Venceu",
+                "Valor": 2396.0
+            }
+        ]
     },
     {
-        "CNPJ": "36669701000165",
-        "Data": "20250515",
-        "Fornecedor": "CARVALHO EQUIPAMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "1322000102025",
+        "DataResult": "2025-05-28T10:20:24",
+        "UASG": "1322",
+        "Edital": "00010/2025",
         "Orgao": "MUNICIPIO DE ENTRE FOLHAS",
-        "Total": 1650.0,
-        "UASG": "1322"
+        "UF": "MG",
+        "Municipio": "Entre Folhas",
+        "Fornecedor": "CARVALHO EQUIPAMENTOS LTDA",
+        "CNPJ": "36669701000165",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T08:00:00",
+        "Licitacao": "1322000102025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "FOGÃO INDUSTRIAL 6 BOCAS 30x30 P7 INOX BP COM FORNO",
+                "Status": "Venceu",
+                "Valor": 1650.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-18T07:58:07",
