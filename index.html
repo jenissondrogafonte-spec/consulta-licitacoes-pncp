@@ -8,10 +8,11 @@
     <style>
         body { background: #f0f2f5; font-family: 'Inter', sans-serif; }
         .header-top { background: #004494; color: white; padding: 20px; }
-        .res-card { background: white; border-radius: 12px; border-top: 6px solid #198754; transition: 0.3s; }
+        .res-card { background: white; border-radius: 12px; border-top: 6px solid #198754; transition: 0.3s; height: 100%; }
         .res-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .stats-box { font-size: 0.7rem; font-weight: bold; padding: 4px; border-radius: 4px; text-align: center; color: white; }
         .bg-hml { background: #198754; } .bg-frc { background: #dc3545; } .bg-dst { background: #ffc107; color: #000; }
+        .form-label { font-size: 0.75rem; margin-bottom: 2px; }
     </style>
 </head>
 <body>
@@ -24,14 +25,15 @@
 </div>
 
 <div class="container-fluid px-4">
-    <div class="card p-4 shadow-sm mb-4 border-0">
+    <div class="card p-3 shadow-sm mb-4 border-0">
         <div class="row g-2">
-            <div class="col-md-1"><label class="small fw-bold">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="small fw-bold">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="small fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="small fw-bold">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
-            <div class="col-md-3"><label class="small fw-bold">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="small fw-bold">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label fw-bold">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label fw-bold">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="form-label fw-bold">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="form-label fw-bold">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
+            <div class="col-md-1.5"><label class="form-label fw-bold">Data Inicial</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
+            <div class="col-md-1.5"><label class="form-label fw-bold">Data Final</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
             <div class="col-md-2 d-flex align-items-end gap-1">
                 <button class="btn btn-primary btn-sm w-100" onclick="filtrar()">Pesquisar</button>
                 <button class="btn btn-light btn-sm w-100 border" onclick="limpar()">Limpar</button>
@@ -74,7 +76,9 @@
             dadosOriginal = await r.json();
             document.getElementById('contador').innerText = `${dadosOriginal.length} Editais/Vencedores`;
             renderizar(dadosOriginal);
-        } catch (e) { console.error("Erro ao carregar"); }
+        } catch (e) { 
+            document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><h5>Erro ao carregar dados.json</h5></div>`;
+        }
     }
 
     function renderizar(lista) {
@@ -85,11 +89,11 @@
             <div class="col-md-4">
                 <div class="card res-card p-3">
                     <div class="d-flex justify-content-between mb-2">
-                        <span class="badge bg-light text-dark border">${i.DataResult.split('T')[0]}</span>
+                        <span class="badge bg-light text-dark border">${i.DataResult ? i.DataResult.split('T')[0] : '---'}</span>
                         <small class="text-muted fw-bold">UASG: ${i.UASG}</small>
                     </div>
-                    <h6 class="fw-bold text-primary text-truncate mb-1">${i.Orgao}</h6>
-                    <p class="small text-muted mb-2">${i.Municipio} - ${i.UF} | Edital: ${i.Edital}</p>
+                    <h6 class="fw-bold text-primary text-truncate mb-1" title="${i.Orgao}">${i.Orgao}</h6>
+                    <p class="small text-muted mb-2">${i.Municipio || 'N/I'} - ${i.UF || '--'} | Edital: ${i.Edital}</p>
                     
                     <div class="row g-1 mb-3">
                         <div class="col-4"><div class="stats-box bg-hml">HML: ${res.Homologados}</div></div>
@@ -98,7 +102,7 @@
                     </div>
 
                     <div class="p-2 border rounded bg-light mb-3">
-                        <small class="d-block fw-bold text-truncate">${i.Fornecedor}</small>
+                        <small class="d-block fw-bold text-truncate">${i.Fornecedor || 'ITEM SEM VENCEDOR'}</small>
                         <small class="text-muted">CNPJ: ${i.CNPJ}</small>
                     </div>
 
@@ -113,7 +117,7 @@
 
     function calcTotal(itens) {
         if(!itens) return "0,00";
-        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total) || 0), 0);
+        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total || curr.Valor) || 0), 0);
         return t.toLocaleString('pt-BR', {minimumFractionDigits: 2});
     }
 
@@ -121,13 +125,13 @@
         const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
         if(!i) return;
         document.getElementById('infoLicitacao').innerHTML = `<h6>${i.Orgao}</h6><p class="small mb-0"><b>Edital:</b> ${i.Edital} | <b>Empresa:</b> ${i.Fornecedor}</p>`;
-        document.getElementById('corpoModal').innerHTML = i.Itens.map(it => `
+        document.getElementById('corpoModal').innerHTML = (i.Itens || []).map(it => `
             <tr>
                 <td class="ps-4 fw-bold">${it.Item}</td>
                 <td class="small">${it.Desc}</td>
-                <td>${it.Qtd}</td>
-                <td>R$ ${it.Unitario.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                <td class="fw-bold">R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                <td>${it.Qtd || '--'}</td>
+                <td>R$ ${(it.Unitario || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                <td class="fw-bold">R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
             </tr>`).join('');
         new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
@@ -139,16 +143,23 @@
             uf: document.getElementById('fUF').value.toUpperCase(),
             m: document.getElementById('fMuni').value.toLowerCase(),
             f: document.getElementById('fForn').value.toLowerCase(),
-            di: document.getElementById('fDataIni').value
+            di: document.getElementById('fDataIni').value,
+            df: document.getElementById('fDataFim').value
         };
         const filtrados = dadosOriginal.filter(i => {
-            const data = i.DataResult.split('T')[0];
-            return (!query.u || i.UASG.includes(query.u)) &&
-                   (!query.e || i.Edital.includes(query.e)) &&
-                   (!query.uf || i.UF === query.uf) &&
-                   (!query.m || i.Municipio.toLowerCase().includes(query.m)) &&
-                   (!query.f || i.Fornecedor.toLowerCase().includes(query.f) || i.CNPJ.includes(query.f)) &&
-                   (!query.di || data >= query.di);
+            const data = i.DataResult ? i.DataResult.split('T')[0] : "";
+            const matchU = !query.u || i.UASG.includes(query.u);
+            const matchE = !query.e || i.Edital.includes(query.e);
+            const matchUF = !query.uf || i.UF === query.uf;
+            const matchM = !query.m || (i.Municipio || "").toLowerCase().includes(query.m);
+            const matchF = !query.f || (i.Fornecedor || "").toLowerCase().includes(query.f) || i.CNPJ.includes(query.f);
+            
+            let matchD = true;
+            if (query.di && query.df) matchD = data >= query.di && data <= query.df;
+            else if (query.di) matchD = data >= query.di;
+            else if (query.df) matchD = data <= query.df;
+
+            return matchU && matchE && matchUF && matchM && matchF && matchD;
         });
         renderizar(filtrados);
     }
