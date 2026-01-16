@@ -2,60 +2,127 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Painel de Resultados PNCP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dinâmico PNCP</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
     <style>
-        body { background: #f0f2f5; font-family: 'Inter', sans-serif; }
-        .header-top { background: #004494; color: white; padding: 20px; }
-        .res-card { background: white; border-radius: 12px; border-top: 6px solid #198754; height: 100%; transition: 0.3s; }
-        .res-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .stats-box { font-size: 0.7rem; font-weight: bold; padding: 4px; border-radius: 4px; text-align: center; color: white; }
-        .bg-hml { background: #198754; } .bg-frc { background: #dc3545; } .bg-dst { background: #ffc107; color: #000; }
-        .form-label { font-size: 0.75rem; font-weight: bold; }
+        :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #ffc107; }
+        body { background: #f4f7fa; font-family: 'Plus Jakarta Sans', sans-serif; color: #2d3436; }
+        
+        /* Navbar Dinâmica */
+        .navbar-custom { background: var(--primary); color: white; padding: 1.5rem 0; border-radius: 0 0 25px 25px; }
+        
+        /* Dashboard Cards */
+        .dash-card { background: white; border-radius: 18px; padding: 1.5rem; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+        .dash-card i { font-size: 2rem; opacity: 0.3; position: absolute; right: 20px; bottom: 20px; }
+        
+        /* Filtros flutuantes */
+        .filter-box { background: white; border-radius: 20px; padding: 20px; margin-top: -30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        
+        /* Card de Resultado Estilizado */
+        .res-card { 
+            background: white; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+        }
+        .res-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: var(--primary); }
+        
+        .progress { height: 8px; border-radius: 10px; background: #eee; margin: 10px 0; }
+        .progress-bar-hml { background: var(--success); }
+        .progress-bar-frc { background: var(--danger); }
+
+        .btn-detail { border-radius: 12px; font-weight: 600; padding: 8px 20px; }
+        
+        .valor-total { font-size: 1.4rem; font-weight: 800; color: var(--success); }
+        .label-small { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; color: #636e72; }
     </style>
 </head>
 <body>
 
-<div class="header-top shadow mb-4">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-        <h4 class="mb-0 fw-bold">Resultados PNCP - Pregão Eletrônico</h4>
-        <span class="badge bg-white text-primary px-3 py-2" id="contador">Carregando...</span>
-    </div>
-</div>
-
-<div class="container-fluid px-4">
-    <div class="card p-3 shadow-sm mb-4 border-0">
-        <div class="row g-2">
-            <div class="col-md-1"><label class="form-label">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="form-label">UF</label><input type="text" id="fUF" class="form-control form-control-sm" maxlength="2"></div>
-            <div class="col-md-2"><label class="form-label">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="form-label">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
-            <div class="col-md-1.5"><label class="form-label">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
-            <div class="col-md-1.5"><label class="form-label">Data Fim</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
-            <div class="col-md-1 d-flex align-items-end gap-1">
-                <button class="btn btn-primary btn-sm w-100 fw-bold" onclick="filtrar()">BUSCAR</button>
-                <button class="btn btn-light btn-sm border" onclick="limpar()"><i class="fas fa-eraser"></i></button>
+<div class="navbar-custom shadow-lg">
+    <div class="container-fluid px-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-800 mb-0">PNCP <span class="fw-400 opacity-75">Analytics</span></h2>
+                <p class="small opacity-75 mb-0">Monitorização de Resultados em Tempo Real</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <div class="d-inline-block text-start me-4">
+                    <div class="label-small text-white opacity-75">Total em Volume</div>
+                    <h4 class="mb-0 fw-800" id="dash-valor-total">R$ 0,00</h4>
+                </div>
+                <span class="badge bg-white text-primary rounded-pill px-4 py-2 fw-bold" id="contador">0 Editais</span>
             </div>
         </div>
     </div>
-    <div id="lista" class="row g-3"></div>
+</div>
+
+<div class="container-fluid px-5">
+    <div class="filter-box mb-5">
+        <div class="row g-3">
+            <div class="col-md-1"><label class="label-small">UASG</label><input type="text" id="fUasg" class="form-control" placeholder="926809" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="label-small">Edital</label><input type="text" id="fEdital" class="form-control" placeholder="10/2025" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="label-small">UF</label><input type="text" id="fUF" class="form-control" placeholder="PE" oninput="debounceFiltrar()"></div>
+            <div class="col-md-2"><label class="label-small">Município</label><input type="text" id="fMuni" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-3"><label class="label-small">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1.5"><label class="label-small">Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-1.5"><label class="label-small">Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-1 d-flex align-items-end">
+                <button class="btn btn-dark w-100" onclick="limpar()"><i class="fas fa-undo"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="dash-card">
+                <div class="label-small">Itens Homologados</div>
+                <h3 class="fw-800 mb-0 text-success" id="stat-hml">0</h3>
+                <i class="fas fa-check-circle text-success"></i>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="dash-card">
+                <div class="label-small">Itens Fracassados</div>
+                <h3 class="fw-800 mb-0 text-danger" id="stat-frc">0</h3>
+                <i class="fas fa-times-circle text-danger"></i>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="dash-card">
+                <div class="label-small">Itens Desertos</div>
+                <h3 class="fw-800 mb-0 text-warning" id="stat-dst">0</h3>
+                <i class="fas fa-exclamation-triangle text-warning"></i>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="dash-card" style="background: var(--primary); color: white;">
+                <div class="label-small text-white opacity-75">Ticket Médio / Edital</div>
+                <h3 class="fw-800 mb-0" id="stat-ticket">R$ 0,00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista" class="row g-4 mb-5"></div>
 </div>
 
 <div class="modal fade" id="modalItens" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content shadow border-0">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold">Itens Vencidos</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 25px;">
+            <div class="modal-header border-0 p-4">
+                <h5 class="modal-title fw-800 text-primary">Detalhamento Técnico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-0">
-                <div id="infoLicitacao" class="p-4 bg-light border-bottom"></div>
+                <div id="infoLicitacao" class="px-4 py-3 bg-light"></div>
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0">
-                        <thead class="table-dark">
-                            <tr><th>Item</th><th>Descrição</th><th>Qtd</th><th>Unitário</th><th>Total</th></tr>
+                        <thead class="bg-dark text-white">
+                            <tr><th class="ps-4">Item</th><th>Descrição</th><th>Qtd</th><th>Unitário</th><th>Total</th></tr>
                         </thead>
                         <tbody id="corpoModal"></tbody>
                     </table>
@@ -68,66 +135,82 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     let dadosOriginal = [];
+    let timeoutBusca = null;
 
     async function carregar() {
         try {
             const r = await fetch('dados.json?v=' + Date.now());
             dadosOriginal = await r.json();
-            document.getElementById('contador').innerText = `${dadosOriginal.length} Editais com Vencedores`;
-            renderizar(dadosOriginal);
-        } catch (e) { console.error("Erro ao carregar dados."); }
+            filtrar(); // Renderiza inicial
+        } catch (e) {
+            document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><h4>Aguardando base de dados...</h4></div>`;
+        }
     }
 
     function renderizar(lista) {
         const container = document.getElementById('lista');
+        let totalVolume = 0;
+        let totalHml = 0, totalFrc = 0, totalDst = 0;
+
         container.innerHTML = lista.map(i => {
             const res = i.Resumo || {Homologados: 0, Fracassados: 0, Desertos: 0};
+            const valorEdital = i.Itens.reduce((acc, it) => acc + (parseFloat(it.Total) || 0), 0);
+            
+            totalVolume += valorEdital;
+            totalHml += res.Homologados;
+            totalFrc += res.Fracassados;
+            totalDst += res.Desertos;
+
+            const percHml = (res.Homologados / (res.Homologados + res.Fracassados + res.Desertos) * 100) || 0;
+
             return `
-            <div class="col-md-4">
-                <div class="card res-card p-3">
-                    <div class="d-flex justify-content-between mb-2">
-                        <span class="badge bg-light text-dark border">${i.DataResult.split('T')[0]}</span>
-                        <small class="text-muted fw-bold">UASG: ${i.UASG}</small>
+            <div class="col-md-6 col-lg-4">
+                <div class="res-card p-4 shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-light text-dark rounded-pill border px-3">${i.DataResult.split('T')[0]}</span>
+                        <div class="label-small">UASG: ${i.UASG}</div>
                     </div>
-                    <h6 class="fw-bold text-primary text-truncate mb-1">${i.Orgao}</h6>
-                    <p class="small text-muted mb-2">${i.Municipio || ''} - ${i.UF} | Edital: ${i.Edital}</p>
-                    <div class="row g-1 mb-3">
-                        <div class="col-4"><div class="stats-box bg-hml">HML: ${res.Homologados}</div></div>
-                        <div class="col-4"><div class="stats-box bg-frc">FRC: ${res.Fracassados}</div></div>
-                        <div class="col-4"><div class="stats-box bg-dst">DST: ${res.Desertos}</div></div>
+                    
+                    <h6 class="fw-800 text-truncate mb-1" title="${i.Orgao}">${i.Orgao}</h6>
+                    <p class="small text-muted mb-3">${i.Municipio} - ${i.UF} | Edital: ${i.Edital}</p>
+
+                    <div class="label-small d-flex justify-content-between">
+                        <span>Eficiência do Pregão</span>
+                        <span>${Math.round(percHml)}%</span>
                     </div>
-                    <div class="p-2 border rounded bg-light mb-3 text-truncate">
-                        <small class="fw-bold">${i.Fornecedor}</small><br>
-                        <small class="text-muted">CNPJ: ${i.CNPJ}</small>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-hml" style="width: ${percHml}%"></div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-2">
-                        <span class="fw-bold text-success">R$ ${calcTotal(i.Itens)}</span>
-                        <button class="btn btn-sm btn-primary px-3 rounded-pill" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
+
+                    <div class="p-3 bg-light rounded-4 mb-4 mt-3">
+                        <div class="label-small mb-1">Vencedor</div>
+                        <div class="fw-bold text-truncate" style="font-size:0.9rem">${i.Fornecedor}</div>
+                        <div class="text-muted small">${i.CNPJ}</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="valor-total">R$ ${valorEdital.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
+                        <button class="btn btn-primary btn-detail shadow-sm" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">
+                            <i class="fas fa-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>`;
         }).join('');
+
+        // Atualiza Dashboard
+        document.getElementById('dash-valor-total').innerText = totalVolume.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.getElementById('stat-hml').innerText = totalHml;
+        document.getElementById('stat-frc').innerText = totalFrc;
+        document.getElementById('stat-dst').innerText = totalDst;
+        document.getElementById('stat-ticket').innerText = (totalVolume / (lista.length || 1)).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.getElementById('contador').innerText = `${lista.length} Editais Filtrados`;
     }
 
-    function calcTotal(itens) {
-        if(!itens) return "0,00";
-        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total || curr.Valor) || 0), 0);
-        return t.toLocaleString('pt-BR', {minimumFractionDigits: 2});
-    }
-
-    function verDetalhes(idL, cnpj) {
-        const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
-        if(!i) return;
-        document.getElementById('infoLicitacao').innerHTML = `<h6>${i.Orgao}</h6><p class="small mb-0"><b>Edital:</b> ${i.Edital} | <b>Fornecedor:</b> ${i.Fornecedor}</p>`;
-        document.getElementById('corpoModal').innerHTML = (i.Itens || []).map(it => `
-            <tr>
-                <td class="ps-4 fw-bold">${it.Item}</td>
-                <td class="small" style="font-size:0.8rem">${it.Desc}</td>
-                <td>${it.Qtd || '--'}</td>
-                <td>R$ ${(it.Unitario || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                <td class="fw-bold text-success">R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-            </tr>`).join('');
-        new bootstrap.Modal(document.getElementById('modalItens')).show();
+    // Função de Busca em Tempo Real (Debounce)
+    function debounceFiltrar() {
+        clearTimeout(timeoutBusca);
+        timeoutBusca = setTimeout(filtrar, 400); // Espera 400ms após parar de digitar
     }
 
     function filtrar() {
@@ -140,24 +223,45 @@
             di: document.getElementById('fDataIni').value,
             df: document.getElementById('fDataFim').value
         };
-        const filtrados = dadosOriginal.filter(i => {
+
+        const res = dadosOriginal.filter(i => {
             const data = i.DataResult.split('T')[0];
             const matchData = (!q.di || data >= q.di) && (!q.df || data <= q.df);
             return (!q.u || i.UASG.includes(q.u)) &&
                    (!q.e || i.Edital.includes(q.e)) &&
                    (!q.uf || i.UF === q.uf) &&
                    (!q.m || (i.Municipio || "").toLowerCase().includes(q.m)) &&
-                   (!q.f || i.Fornecedor.toLowerCase().includes(q.f) || i.CNPJ.includes(q.f)) &&
+                   (!q.f || (i.Fornecedor || "").toLowerCase().includes(q.f) || i.CNPJ.includes(q.f)) &&
                    matchData;
         });
-        renderizar(filtrados);
+        renderizar(res);
+    }
+
+    function verDetalhes(idL, cnpj) {
+        const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
+        if(!i) return;
+        document.getElementById('infoLicitacao').innerHTML = `
+            <h5 class="fw-800 mb-0">${i.Orgao}</h5>
+            <div class="label-small text-muted mt-1">Pregão ${i.Edital} • ${i.Fornecedor}</div>`;
+        
+        document.getElementById('corpoModal').innerHTML = (i.Itens || []).map(it => `
+            <tr>
+                <td class="ps-4 fw-bold text-muted">${it.Item}</td>
+                <td class="small" style="max-width:300px">${it.Desc}</td>
+                <td>${it.Qtd}</td>
+                <td>R$ ${it.Unitario.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                <td class="fw-bold text-success">R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+            </tr>`).join('');
+        new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
 
     function limpar() {
         document.querySelectorAll('input').forEach(i => i.value = '');
-        renderizar(dadosOriginal);
+        filtrar();
     }
+
     carregar();
 </script>
+
 </body>
 </html>
