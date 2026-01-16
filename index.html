@@ -24,6 +24,7 @@
         .label-small { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: #95a5a6; }
         .modal-content { border-radius: 25px; border: none; overflow: hidden; }
         .table thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .fw-800 { font-weight: 800; }
     </style>
 </head>
 <body>
@@ -130,9 +131,8 @@
                             <div class="text-end"><div class="label-small">Edital</div><div class="fw-bold small">${g.Edital}</div></div>
                         </div>
                     </div>
-                    <div class="px-4 pb-4 pt-0 d-flex gap-2">
-                        <button class="btn btn-primary w-100 rounded-pill fw-bold btn-sm py-2" onclick="verItens('${g.Licitacao}')">Detalhes</button>
-                        <a href="${g.Link}" target="_blank" class="btn btn-outline-primary rounded-circle btn-sm p-2"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="px-4 pb-4 pt-0">
+                        <button class="btn btn-primary w-100 rounded-pill fw-bold btn-sm py-2" onclick="verItens('${g.Licitacao}')">Ver Detalhes</button>
                     </div>
                 </div>
             </div>`;
@@ -150,7 +150,6 @@
 
         let htmlFinal = '';
         registros.forEach(reg => {
-            // Cálculo do total por fornecedor
             const totalForn = reg.Itens.reduce((acc, cur) => acc + (cur.Status === 'Venceu' ? cur.Total : 0), 0);
             
             htmlFinal += `
@@ -161,7 +160,7 @@
                             <h6 class="fw-bold mb-0 text-uppercase">${reg.Fornecedor}</h6>
                         </div>
                         <div class="text-end">
-                            <div class="label-small">Total Fornecedor</div>
+                            <div class="label-small">Total Ganho por Fornecedor</div>
                             <div class="h5 fw-800 text-success mb-0">R$ ${totalForn.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
                         </div>
                     </div>
@@ -173,7 +172,7 @@
                                 <th class="ps-4" style="width: 80px">Item</th>
                                 <th>Descrição do Produto/Serviço</th>
                                 <th class="text-center">Qtd</th>
-                                <th class="text-end pe-4">Valor Total</th>
+                                <th class="text-end pe-4">Valor Total Item</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -197,6 +196,7 @@
                 <div class="label-small">Órgão Comprador</div>
                 <h5 class="fw-bold text-primary mb-1">${lic.Orgao}</h5>
                 <div class="small text-muted">UASG: ${lic.UASG} | Edital: ${lic.Edital} | Local: ${lic.Municipio}/${lic.UF}</div>
+                <div class="mt-2"><a href="${lic.Link}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill"><i class="fas fa-external-link-alt me-1"></i>Acessar PNCP Oficial</a></div>
             </div>
             <div class="pb-4">${htmlFinal}</div>`;
         
