@@ -5,10 +5,7 @@ import os
 import time
 
 # --- CONFIGURAÇÃO ---
-HEADERS = {
-    'Accept': 'application/json',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-}
+HEADERS = {'Accept': 'application/json', 'User-Agent': 'Mozilla/5.0'}
 
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
@@ -26,98 +23,92 @@ dict_resultados = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-print(f"--- ROBÔ DE RESULTADOS EFETIVOS (POR DATA DE ATUALIZAÇÃO): {d_ini} até {d_fim} ---")
-
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n📅 Buscando resultados homologados em: {DATA_STR}", end=" ")
+    print(f"\n📅 Processando: {DATA_STR}", end=" ")
     
     pagina = 1
-    while pagina <= 300: # Aumentado para pegar grandes volumes
-        # ENDPOINT DE RESULTADOS (Este é o segredo para os 250k)
+    while pagina <= 400:
+        # Usando o endpoint de resultados consolidados do PNCP que espelha os dados do Compras.gov
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao/resultados"
-        params = {
-            "data": DATA_STR, # Busca por data do resultado/atualização
-            "pagina": pagina,
-            "tamanhoPagina": 50
-        }
+        params = {"data": DATA_STR, "pagina": pagina, "tamanhoPagina": 50}
 
         try:
-            time.sleep(0.3)
             resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
-            
             if resp.status_code != 200: break
             
-            payload = resp.json()
-            resultados = payload.get('data', [])
-            if not resultados: break
-            
+            data = resp.json().get('data', [])
+            if not data: break
             print(".", end="", flush=True)
 
-            for res in resultados:
-                # Filtramos apenas Pregão (6) conforme seu pedido
-                if str(res.get('modalidadeId')) == "6":
-                    
-                    cnpj_orgao = res.get('cnpjOrgao')
-                    ano = res.get('ano')
+            for res in data:
+                if str(res.get('modalidadeId')) == "6": # Pregão
+                    uasg = str(res.get('codigoUnidadeOrgao')).strip()
                     seq = res.get('sequencial')
-                    uasg = str(res.get('codigoUnidadeOrgao', '000000')).strip()
+                    ano = res.get('ano')
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
+                    cnpj_venc = res.get('niFornecedor') or "SEM-VENCEDOR"
                     
-                    cnpj_venc = res.get('niFornecedor', '---')
+                    # CHAVE: Licitacao + Fornecedor (Para agrupar itens do mesmo fornecedor no mesmo card)
                     chave = f"{id_lic}-{cnpj_venc}"
                     
-                    # Se já processamos este vencedor nesta licitação, apenas somamos
                     if chave not in dict_resultados:
                         dict_resultados[chave] = {
-                            "DataResult": res.get('dataAtualizacao', DATA_STR),
+                            "DataResult": res.get('dataResultadoPncp') or res.get('dataAtualizacao') or DATA_STR,
                             "UASG": uasg,
                             "Edital": f"{str(seq).zfill(5)}/{ano}",
                             "Orgao": res.get('razaoSocialOrgao'),
                             "UF": res.get('ufSiglaOrgao'),
                             "Municipio": res.get('municipioOrgao'),
-                            "Fornecedor": res.get('nomeRazaoSocialFornecedor'),
+                            "Fornecedor": res.get('nomeRazaoSocialFornecedor') or "ITENS FRACASSADOS/DESERTOS",
                             "CNPJ": cnpj_venc,
                             "Licitacao": id_lic,
+                            "Resumo": {"Homologados": 0, "Fracassados": 0, "Desertos": 0},
                             "Itens": []
                         }
                     
-                    # Adiciona o item específico
-                    dict_resultados[chave]["Itens"].append({
+                    # Detalhamento do Item baseado no Swagger enviado
+                    sit_nome = (res.get('situacaoCompraItemResultadoNome') or "").upper()
+                    valor_total = float(res.get('valorTotalHomologado') or 0)
+                    
+                    item_info = {
                         "Item": res.get('numeroItem'),
                         "Desc": res.get('descricaoItem'),
-                        "Status": "Venceu",
-                        "Valor": float(res.get('valorTotalHomologado') or 0)
-                    })
+                        "Qtd": res.get('quantidadeHomologada'),
+                        "Unitario": float(res.get('valorUnitarioHomologado') or 0),
+                        "Total": valor_total,
+                        "Situacao": sit_nome
+                    }
+                    
+                    # Contabilização para o Resumo do Pregão
+                    if "FRACASSADO" in sit_nome: dict_resultados[chave]["Resumo"]["Fracassados"] += 1
+                    elif "DESERTO" in sit_nome: dict_resultados[chave]["Resumo"]["Desertos"] += 1
+                    else: 
+                        dict_resultados[chave]["Resumo"]["Homologados"] += 1
+                        dict_resultados[chave]["Itens"].append(item_info)
+
             pagina += 1
-        except Exception as e:
-            print(f"[Erro: {e}]", end="")
-            break
-            
+        except: break
     data_atual += timedelta(days=1)
 
-# SALVAMENTO
+# Persistência (Deduplicação Inteligente)
 historico = []
 if os.path.exists(ARQ_DADOS):
     with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
         try: historico = json.load(f)
         except: pass
 
-historico.extend(list(dict_resultados.values()))
-# Une itens de licitações/fornecedores repetidos
-final_dict = {}
-for item in historico:
-    chave = f"{item['Licitacao']}-{item['CNPJ']}"
-    if chave not in final_dict:
-        final_dict[chave] = item
+# Mesclar novos dados
+final_data = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
+for k, v in dict_resultados.items():
+    if k in final_data:
+        # Atualiza itens se houver novos no mesmo fornecedor/pregão
+        existentes = {it['Item'] for it in final_data[k]['Itens']}
+        for novo in v['Itens']:
+            if novo['Item'] not in existentes:
+                final_data[k]['Itens'].append(novo)
     else:
-        # Se já existe, apenas mescla os itens sem duplicar
-        existentes = {it['Item'] for it in final_dict[chave]['Itens']}
-        for novo_it in item['Itens']:
-            if novo_it['Item'] not in existentes:
-                final_dict[chave]['Itens'].append(novo_it)
+        final_data[k] = v
 
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
-    json.dump(list(final_dict.values()), f, indent=4, ensure_ascii=False)
-
-print(f"\n✅ Total de resultados salvos: {len(final_dict)}")
+    json.dump(list(final_data.values()), f, indent=4, ensure_ascii=False)
