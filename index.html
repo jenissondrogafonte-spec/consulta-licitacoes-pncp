@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel PNCP - Detalhado</title>
-
-    
+    <title>Painel PNCP - 90 Dias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-
-    
     <style>
         :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #ffc107; }
         body { background: #f4f7fa; font-family: 'Plus Jakarta Sans', sans-serif; color: #2d3436; }
@@ -27,11 +22,8 @@
         .valor-total { font-size: 1.3rem; font-weight: 800; color: var(--success); letter-spacing: -0.5px; }
         .label-small { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; color: #95a5a6; letter-spacing: 0.5px; margin-bottom: 4px; display: block; }
         .form-control { border-radius: 8px; border: 1px solid #dfe6e9; font-size: 0.9rem; padding: 8px 12px; }
-        .form-control:focus { box-shadow: 0 0 0 3px rgba(0,68,148,0.1); border-color: var(--primary); }
         .btn-buscar { background-color: var(--primary); color: white; font-weight: 600; border-radius: 8px; }
-        .btn-buscar:hover { background-color: #003370; color: white; }
         .btn-limpar { background-color: #f1f2f6; color: #636e72; font-weight: 600; border-radius: 8px; }
-        .btn-limpar:hover { background-color: #dfe6e9; color: #2d3436; }
     </style>
 </head>
 <body>
@@ -41,7 +33,6 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h2 class="fw-bold mb-0"><i class="fas fa-chart-network me-2"></i>PNCP <span class="fw-light">Analytics</span></h2>
-                <p class="small opacity-75 mb-0">Monitorização Inteligente de Licitações</p>
             </div>
             <div class="col-md-6 text-end">
                 <div class="d-inline-block text-start me-4">
@@ -66,7 +57,7 @@
             <div class="col-md-1"><label class="label-small">Fim (Res)</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
             <div class="col-md-2">
                 <div class="d-flex gap-2">
-                    <button class="btn btn-buscar w-100" onclick="filtrar()"><i class="fas fa-search me-1"></i> Buscar</button>
+                    <button class="btn btn-buscar w-100" onclick="filtrar()"><i class="fas fa-search me-1"></i></button>
                     <button class="btn btn-limpar w-50" onclick="limpar()"><i class="fas fa-eraser"></i></button>
                 </div>
             </div>
@@ -89,7 +80,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 25px; overflow: hidden;">
             <div class="modal-header bg-primary text-white p-4">
-                <h5 class="modal-title fw-bold"><i class="fas fa-list-ul me-2"></i> Detalhes do Processo</h5>
+                <h5 class="modal-title fw-bold">Detalhes do Processo</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-0">
@@ -103,7 +94,7 @@
                     </table>
                 </div>
             </div>
-            <div class="modal-footer bg-light">
+            <div class="modal-footer bg-light" id="modalFooter">
                 <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>
@@ -118,7 +109,7 @@
     async function carregar() {
         try {
             const r = await fetch('dados.json?v=' + Date.now());
-            if (!r.ok) throw new Error("Erro 404");
+            if (!r.ok) throw new Error("Erro");
             dadosOriginal = await r.json();
             if (!dadosOriginal || dadosOriginal.length === 0) {
                 document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><div class="alert alert-warning">Base vazia.</div></div>`;
@@ -141,18 +132,15 @@
 
         const html = lista.map(i => {
             let hml = 0, frc = 0, dst = 0, valorEdital = 0;
-            if (i.Itens && Array.isArray(i.Itens)) {
+            if (i.Itens) {
                 i.Itens.forEach(it => {
                     valorEdital += parseFloat(it.Total || it.Valor || 0);
                     const st = (it.Status || "").toUpperCase();
-                    if (st.includes("FRACASSADO")) frc++;
-                    else if (st.includes("DESERTO")) dst++;
-                    else hml++;
+                    if (st.includes("FRACASSADO")) frc++; else if (st.includes("DESERTO")) dst++; else hml++;
                 });
             } else if (i.Resumo) {
                 hml = i.Resumo.Homologados; frc = i.Resumo.Fracassados; dst = i.Resumo.Desertos;
             }
-
             totalVolume += valorEdital; tHml += hml; tFrc += frc; tDst += dst;
             const totalItens = hml + frc + dst;
             const percHml = totalItens > 0 ? (hml / totalItens) * 100 : 0;
@@ -165,20 +153,17 @@
                         <div class="label-small text-end">UASG: ${i.UASG}</div>
                     </div>
                     <h6 class="fw-bold text-primary mb-1 text-truncate" title="${i.Orgao}">${i.Orgao}</h6>
-                    <p class="small text-muted mb-3">${i.Municipio || ''} - ${i.UF || ''} | Edital: <b>${i.Edital}</b></p>
-
+                    <p class="small text-muted mb-3">${i.Municipio || ''}-${i.UF || ''} | Edital: <b>${i.Edital}</b></p>
                     <div class="d-flex justify-content-between align-items-end mb-1">
                         <span class="label-small">Aproveitamento</span>
                         <span class="fw-bold small ${percHml === 100 ? 'text-success' : 'text-muted'}">${Math.round(percHml)}%</span>
                     </div>
                     <div class="progress mb-3"><div class="progress-bar progress-bar-hml" style="width: ${percHml}%"></div></div>
-
                     <div class="p-3 bg-light rounded-3 mb-3 border border-light">
                         <div class="label-small mb-1">Fornecedor</div>
                         <div class="fw-bold text-truncate text-dark">${i.Fornecedor}</div>
-                        <div class="text-muted small font-monospace">${i.CNPJ}</div>
+                        <div class="small font-monospace">${i.CNPJ}</div>
                     </div>
-
                     <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
                         <div class="valor-total">R$ ${valorEdital.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</div>
                         <button class="btn btn-outline-primary btn-sm rounded-pill px-4 fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
@@ -208,24 +193,20 @@
             di: document.getElementById('fDataIni').value,
             df: document.getElementById('fDataFim').value
         };
-
         const res = dadosOriginal.filter(i => {
             const data = i.DataResult ? i.DataResult.split('T')[0] : "";
             const matchData = (!q.di || data >= q.di) && (!q.df || data <= q.df);
             const txtMuni = (i.Municipio || "").toLowerCase();
             const txtForn = (i.Fornecedor || "").toLowerCase();
-            
             return (!q.u || String(i.UASG).includes(q.u)) &&
                    (!q.e || String(i.Edital).includes(q.e)) &&
                    (!q.uf || (i.UF || "") === q.uf) &&
                    (!q.m || txtMuni.includes(q.m)) &&
-                   (!q.f || txtForn.includes(q.f) || String(i.CNPJ).includes(q.f)) &&
-                   matchData;
+                   (!q.f || txtForn.includes(q.f) || String(i.CNPJ).includes(q.f)) && matchData;
         });
         renderizar(res);
     }
 
-    // --- NOVA FUNÇÃO FORMATAR DATA (ISO para BR) ---
     function fmtData(dataISO) {
         if (!dataISO) return '<span class="text-muted">---</span>';
         const d = new Date(dataISO);
@@ -236,9 +217,9 @@
         const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
         if(!i) return;
 
-        // Exibe as datas capturadas pelo robô
         const dtAbertura = fmtData(i.DataAbertura);
         const dtFim = fmtData(i.DataEncerramento);
+        const linkBtn = i.Link ? `<a href="${i.Link}" target="_blank" class="btn btn-primary rounded-pill px-4 ms-2"><i class="fas fa-external-link-alt me-2"></i>Ver no PNCP</a>` : '';
 
         document.getElementById('infoLicitacao').innerHTML = `
             <div class="row">
@@ -266,16 +247,15 @@
                 <td class="pe-4 text-end fw-bold text-success text-nowrap">R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
             </tr>`).join('');
         
+        // Insere o botão de Link no rodapé do modal
+        const footer = document.getElementById('modalFooter');
+        footer.innerHTML = `<button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Fechar</button> ${linkBtn}`;
+        
         new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
     
-    function limpar() {
-        document.querySelectorAll('input').forEach(i => i.value = '');
-        filtrar();
-    }
-
+    function limpar() { document.querySelectorAll('input').forEach(i => i.value = ''); filtrer(); }
     carregar();
 </script>
-
 </body>
 </html>
