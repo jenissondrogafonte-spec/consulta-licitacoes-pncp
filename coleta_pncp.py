@@ -12,6 +12,7 @@ HEADERS = {
 ARQ_DADOS = 'dados.json'
 
 # --- 🎯 MODO SNIPER (Opcional) ---
+# Deixe vazio para buscar tudo. Preencha para focar numa empresa.
 CNPJ_ALVO = "" 
 # ---------------------
 
@@ -24,7 +25,7 @@ if not env_inicio:
         d_ini = "20250101"
         d_fim = hoje.strftime('%Y%m%d')
     else:
-        # Padrão de 90 dias para garantir cobertura
+        # Padrão de 90 dias
         d_ini = (hoje - timedelta(days=90)).strftime('%Y%m%d')
         d_fim = hoje.strftime('%Y%m%d')
 else:
@@ -34,29 +35,39 @@ dict_novos = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-print(f"--- ROBÔ INTELIGENTE: {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ VARREDURA INFINITA: {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
     print(f"\n📅 Processando {DATA_STR}:", end=" ")
     
     pagina = 1
-    max_paginas = 50 if CNPJ_ALVO else 200 
     
-    while pagina <= max_paginas:
+    # --- MUDANÇA: LOOP INFINITO (Para só quando acabar os dados) ---
+    while True:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR, "dataFinal": DATA_STR,
             "codigoModalidadeContratacao": "6", # Pregão
-            "pagina": pagina, "tamanhoPagina": 50
+            "pagina": pagina, 
+            "tamanhoPagina": 50 # Máximo permitido pela API por página
         }
         if CNPJ_ALVO: params["niFornecedor"] = CNPJ_ALVO
 
         try:
             resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
-            if resp.status_code != 200: break
-            lics = resp.json().get('data', [])
-            if not lics: break
+            
+            # Se der erro na API, tenta parar o dia atual e ir pro próximo
+            if resp.status_code != 200: 
+                break
+                
+            dados_json = resp.json()
+            total_paginas = dados_json.get('totalPaginas', 1)
+            lics = dados_json.get('data', [])
+            
+            # SE A LISTA ESTIVER VAZIA, ACABOU O DIA. SAI DO LOOP.
+            if not lics: 
+                break
             
             print(".", end="", flush=True)
 
@@ -70,16 +81,13 @@ while data_atual <= data_final:
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                    # --- LINK CORRETO E DATAS ---
+                    # Link e Datas
                     dt_abertura = lic.get('dataAberturaLicitacao', '')
                     dt_encerra = lic.get('dataEncerramentoProposta', '')
-                    # O link oficial usa CNPJ/ANO/SEQUENCIAL
                     link_pncp = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
-                    # ----------------------------
 
                     try:
-                        time.sleep(0.1)
-                        # Busca Itens
+                        time.sleep(0.1) # Respeito à API
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
                             itens_api = r_it.json()
@@ -91,11 +99,10 @@ while data_atual <= data_final:
                                 is_fracassado = "FRACASSADO" in sit_item
                                 is_deserto = "DESERTO" in sit_item
                                 
-                                # Contabiliza Stats
                                 if is_fracassado: resumo["Fracassados"] += 1
                                 elif is_deserto: resumo["Desertos"] += 1
                                 
-                                # Se tem vencedor
+                                # ITEM COM VENCEDOR
                                 if it.get('temResultado'):
                                     resumo["Homologados"] += 1
                                     r_v = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados", headers=HEADERS, timeout=10)
@@ -118,7 +125,7 @@ while data_atual <= data_final:
                                                 "Status": "Venceu"
                                             })
                                 
-                                # Se NÃO tem vencedor mas é Fracassado/Deserto (Importante para o modal)
+                                # ITEM SEM VENCEDOR (Mas entra no modal)
                                 elif is_fracassado or is_deserto:
                                     chave_fail = f"{id_lic}-SEM_RESULTADO"
                                     if chave_fail not in forn_local:
@@ -132,13 +139,22 @@ while data_atual <= data_final:
                                         "Status": "Fracassado" if is_fracassado else "Deserto"
                                     })
 
-                            # Salva tudo no dicionário global
                             for c, dados in forn_local.items():
                                 dados["Resumo"] = resumo
                                 dict_novos[c] = dados
                     except: pass
+            
+            # --- VERIFICAÇÃO FINAL DE PAGINAÇÃO ---
+            # Se a página atual for igual ou maior que o total de páginas, para.
+            if pagina >= total_paginas:
+                break
+                
             pagina += 1
-        except: break
+            
+        except Exception as e: 
+            print(f"X ({e})", end="")
+            break
+            
     data_atual += timedelta(days=1)
 
 def criar_estrutura(lic, uasg, seq, ano, cnpj, razao, id_lic, data_str, dt_a, dt_e, link):
