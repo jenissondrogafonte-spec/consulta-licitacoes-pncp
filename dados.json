@@ -21501,5 +21501,389 @@
                 "Valor": 151208.88
             }
         ]
+    },
+    {
+        "DataResult": "2025-03-14T13:44:58",
+        "UASG": "39",
+        "Edital": "00259/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "39002592024",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "FITA ADESIVA HOSPITALAR, MICROPOROSA, NÃO TECIDO DE VISCOSE RAYON, BRANCA, 50 MM, 10 M, C/ ADESIVO ACRÍLICO HIPO-ALERGÊNICO",
+                "Qtd": 18000.0,
+                "Unitario": 4.16,
+                "Total": 74880.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-04-03T17:04:19",
+        "UASG": "2",
+        "Edital": "00607/2024",
+        "Orgao": "MUNICIPIO DE SAO VICENTE",
+        "UF": "SP",
+        "Municipio": "São Vicente",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "2006072024",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "AMBROXOL XAROPE PEDIÁTRICO 15MG/5ML - FRASCO 100ml",
+                "Qtd": 20000.0,
+                "Unitario": 2.1,
+                "Total": 42000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-03T09:13:35",
+        "UASG": "SUPRIMENTOS",
+        "Edital": "00458/2024",
+        "Orgao": "MUNICIPIO DE BARUERI",
+        "UF": "SP",
+        "Municipio": "Barueri",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "SUPRIMENTOS004582024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ALBENDAZOL 40MG/ML - SUSPENSÃO ORAL 10ML",
+                "Qtd": 15000.0,
+                "Unitario": 0.99,
+                "Total": 14850.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-03T16:58:39",
+        "UASG": "726",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PRATA",
+        "UF": "MG",
+        "Municipio": "Prata",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "726000022025",
+        "Itens": [
+            {
+                "Item": 5143319,
+                "Desc": "ÁCIDO TRANEXÂMICO 50MG/ML AMPOLA 5ML SOLUÇÃO INJETÁVEL USO IV",
+                "Qtd": 3000.0,
+                "Unitario": 3.8,
+                "Total": 11400.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-07T07:10:18",
+        "UASG": "155910",
+        "Edital": "00048/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "SE",
+        "Municipio": "Lagarto",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155910000482025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "Furosemida",
+                "Qtd": 44200.0,
+                "Unitario": 0.64,
+                "Total": 28288.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-07-17T09:28:54",
+        "UASG": "13128798001094",
+        "Edital": "00004/2025",
+        "Orgao": "ESTADO DE SERGIPE",
+        "UF": "SE",
+        "Municipio": "Aracaju",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "13128798001094000042025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "BROMOPRIDA - CONCENTRACAO/DOSAGEM 5 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETÁVEL,FORMA DE APRESENTACAO AMPOLA COM 2ML,VIA DE ADMINISTRACAO INTRAVENOSO OU INTRAMUSCULAR",
+                "Qtd": 72750.0,
+                "Unitario": 1.23,
+                "Total": 89482.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "BROMOPRIDA - CONCENTRACAO/DOSAGEM 5 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETÁVEL,FORMA DE APRESENTACAO AMPOLA COM 2ML,VIA DE ADMINISTRACAO INTRAVENOSO OU INTRAMUSCULAR",
+                "Qtd": 24250.0,
+                "Unitario": 1.23,
+                "Total": 29827.5,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 7,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-08T09:00:24",
+        "UASG": "1064",
+        "Edital": "00456/2024",
+        "Orgao": "MUNICIPIO DE HORTOLANDIA",
+        "UF": "SP",
+        "Municipio": "Hortolândia",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1064004562024",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "CARBAMAZEPINA 200MG - CONFORME MEMORIAL DESCRITIVO",
+                "Qtd": 682500.0,
+                "Unitario": 0.15,
+                "Total": 102375.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "CLONAZEPAM 2 MG  ",
+                "Qtd": 585000.0,
+                "Unitario": 0.04,
+                "Total": 23400.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 9,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-09T07:08:32",
+        "UASG": "925302",
+        "Edital": "00212/2024",
+        "Orgao": "SECRETARIA DE ESTADO DA ADMINISTRACAO",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925302002122024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Ácido Ascórbico",
+                "Qtd": 9800.0,
+                "Unitario": 0.75,
+                "Total": 7350.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Ácido fólico",
+                "Qtd": 36200.0,
+                "Unitario": 0.037,
+                "Total": 1339.4,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Ácido Ascórbico",
+                "Qtd": 353100.0,
+                "Unitario": 0.739,
+                "Total": 260940.9,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Bicarbonato de sódio",
+                "Qtd": 37600.0,
+                "Unitario": 18.49,
+                "Total": 695224.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-09T09:14:28",
+        "UASG": "060",
+        "Edital": "01519/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
+        "UF": "SP",
+        "Municipio": "São José dos Campos",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "060015192024",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "DEXCLORFENIRAMINA, MALEATO 2 MG - COMPRIMIDO. ",
+                "Qtd": 700000.0,
+                "Unitario": 0.03,
+                "Total": 21000.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-07-22T09:28:03",
+        "UASG": "19101",
+        "Edital": "00214/2024",
+        "Orgao": "SECRETARIA DE ESTADO DA ADMINISTRACAO",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "19101002142024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ACIDO ASCÓRBICO (VITAMINA C) 200 mg/mL solução oral (frasco 20 mL).",
+                "Qtd": 9800.0,
+                "Unitario": 0.75,
+                "Total": 7350.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "ACIDO FOLICO 5 mg comprimido em blíster.",
+                "Qtd": 36200.0,
+                "Unitario": 0.037,
+                "Total": 1339.4,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "ÁCIDO ASCÓRBICO (VITAMINA C) 100 mg/mL solução injetável intravenosa (ampola 5 mL).",
+                "Qtd": 353100.0,
+                "Unitario": 0.739,
+                "Total": 260940.9,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "BICARBONATO DE SODIO 84 mg/mL (8,4%) solução injetável sistema fechado (frasco 250 mL).",
+                "Qtd": 37600.0,
+                "Unitario": 18.49,
+                "Total": 695224.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-05-05T10:49:45",
+        "UASG": "00",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE FRANCA",
+        "UF": "SP",
+        "Municipio": "Franca",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "00000032025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ÁCIDO VALPROICO 250 MG 100 ML XAROPE",
+                "Qtd": 13500.0,
+                "Unitario": 5.6726,
+                "Total": 76580.1,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 7,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
+    },
+    {
+        "DataResult": "2025-01-09T16:19:41",
+        "UASG": "1",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE AMERICANA",
+        "UF": "SP",
+        "Municipio": "Americana",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000032025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "DIPIRONA SODICA SOLUÇÃO INJETÁVEL 500MG/ML AMPOLA 2ML",
+                "Qtd": 54000.0,
+                "Unitario": 0.565,
+                "Total": 30510.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "ESCOPOLAMINA + DIPIRONA SÓDICA SOLUÇÃO INJETÁVEL 20MG + 2,5G - AMPOLA DE 5ml",
+                "Qtd": 22500.0,
+                "Unitario": 1.12,
+                "Total": 25200.0,
+                "Status": "Venceu"
+            }
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     }
 ]
