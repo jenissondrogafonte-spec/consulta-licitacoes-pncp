@@ -11,23 +11,20 @@ HEADERS = {
 }
 ARQ_DADOS = 'dados.json'
 
-# --- 🎯 MODO SNIPER ---
-# Se preencher o CNPJ, ele ignora a regra de 90 dias e busca o ano todo focada na empresa
+# --- 🎯 MODO SNIPER (Opcional) ---
 CNPJ_ALVO = "" 
 # ---------------------
 
-# --- DEFINIÇÃO DE DATAS ---
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if not env_inicio:
     hoje = datetime.now()
     if CNPJ_ALVO:
-        # Busca específica (Ano todo)
         d_ini = "20250101"
         d_fim = hoje.strftime('%Y%m%d')
     else:
-        # --- MUDANÇA AQUI: 90 DIAS AUTOMÁTICOS ---
+        # Padrão de 90 dias para garantir cobertura
         d_ini = (hoje - timedelta(days=90)).strftime('%Y%m%d')
         d_fim = hoje.strftime('%Y%m%d')
 else:
@@ -37,12 +34,11 @@ dict_novos = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-modo_txt = f"CNPJ {CNPJ_ALVO}" if CNPJ_ALVO else f"GERAL (90 DIAS)"
-print(f"--- ROBÔ {modo_txt}: {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ INTELIGENTE: {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n📅 Verificando {DATA_STR}:", end=" ")
+    print(f"\n📅 Processando {DATA_STR}:", end=" ")
     
     pagina = 1
     max_paginas = 50 if CNPJ_ALVO else 200 
@@ -54,7 +50,6 @@ while data_atual <= data_final:
             "codigoModalidadeContratacao": "6", # Pregão
             "pagina": pagina, "tamanhoPagina": 50
         }
-        
         if CNPJ_ALVO: params["niFornecedor"] = CNPJ_ALVO
 
         try:
@@ -75,17 +70,16 @@ while data_atual <= data_final:
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                    # --- DADOS EXTRAS ---
+                    # --- LINK CORRETO E DATAS ---
                     dt_abertura = lic.get('dataAberturaLicitacao', '')
                     dt_encerra = lic.get('dataEncerramentoProposta', '')
-                    # Constrói o Link do PNCP
-                    id_pncp = lic.get('id')
-                    link_pncp = f"https://pncp.gov.br/app/editais/{id_pncp}/{ano}"
-                    # --------------------
+                    # O link oficial usa CNPJ/ANO/SEQUENCIAL
+                    link_pncp = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
+                    # ----------------------------
 
                     try:
                         time.sleep(0.1)
-                        # Busca Itens (Deep Search)
+                        # Busca Itens
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
                             itens_api = r_it.json()
@@ -93,10 +87,15 @@ while data_atual <= data_final:
                             forn_local = {}
 
                             for it in itens_api:
-                                sit = (it.get('situacaoItemNome') or "").upper()
-                                if "FRACASSADO" in sit: resumo["Fracassados"] += 1
-                                elif "DESERTO" in sit: resumo["Desertos"] += 1
+                                sit_item = (it.get('situacaoItemNome') or "").upper()
+                                is_fracassado = "FRACASSADO" in sit_item
+                                is_deserto = "DESERTO" in sit_item
                                 
+                                # Contabiliza Stats
+                                if is_fracassado: resumo["Fracassados"] += 1
+                                elif is_deserto: resumo["Desertos"] += 1
+                                
+                                # Se tem vencedor
                                 if it.get('temResultado'):
                                     resumo["Homologados"] += 1
                                     r_v = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados", headers=HEADERS, timeout=10)
@@ -109,18 +108,8 @@ while data_atual <= data_final:
 
                                             chave = f"{id_lic}-{cv}"
                                             if chave not in forn_local:
-                                                forn_local[chave] = {
-                                                    "DataResult": lic.get('dataAtualizacao') or DATA_STR,
-                                                    "DataAbertura": dt_abertura,
-                                                    "DataEncerramento": dt_encerra,
-                                                    "Link": link_pncp, # <--- CAMPO NOVO
-                                                    "UASG": uasg, "Edital": f"{str(seq).zfill(5)}/{ano}",
-                                                    "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
-                                                    "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
-                                                    "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
-                                                    "Fornecedor": v.get('nomeRazaoSocialFornecedor'),
-                                                    "CNPJ": cv, "Licitacao": id_lic, "Itens": []
-                                                }
+                                                forn_local[chave] = criar_estrutura(lic, uasg, seq, ano, cv, v.get('nomeRazaoSocialFornecedor'), id_lic, DATA_STR, dt_abertura, dt_encerra, link_pncp)
+                                            
                                             forn_local[chave]["Itens"].append({
                                                 "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
                                                 "Qtd": v.get('quantidadeHomologada'), 
@@ -128,7 +117,22 @@ while data_atual <= data_final:
                                                 "Total": float(v.get('valorTotalHomologado') or 0), 
                                                 "Status": "Venceu"
                                             })
-                            
+                                
+                                # Se NÃO tem vencedor mas é Fracassado/Deserto (Importante para o modal)
+                                elif is_fracassado or is_deserto:
+                                    chave_fail = f"{id_lic}-SEM_RESULTADO"
+                                    if chave_fail not in forn_local:
+                                        forn_local[chave_fail] = criar_estrutura(lic, uasg, seq, ano, "---", "SEM VENCEDOR", id_lic, DATA_STR, dt_abertura, dt_encerra, link_pncp)
+                                    
+                                    forn_local[chave_fail]["Itens"].append({
+                                        "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
+                                        "Qtd": it.get('quantidade') or 0, 
+                                        "Unitario": float(it.get('valorUnitarioEstimado') or 0),
+                                        "Total": float(it.get('valorTotalEstimado') or 0), 
+                                        "Status": "Fracassado" if is_fracassado else "Deserto"
+                                    })
+
+                            # Salva tudo no dicionário global
                             for c, dados in forn_local.items():
                                 dados["Resumo"] = resumo
                                 dict_novos[c] = dados
@@ -137,23 +141,28 @@ while data_atual <= data_final:
         except: break
     data_atual += timedelta(days=1)
 
+def criar_estrutura(lic, uasg, seq, ano, cnpj, razao, id_lic, data_str, dt_a, dt_e, link):
+    return {
+        "DataResult": lic.get('dataAtualizacao') or data_str,
+        "DataAbertura": dt_a, "DataEncerramento": dt_e, "Link": link,
+        "UASG": uasg, "Edital": f"{str(seq).zfill(5)}/{ano}",
+        "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
+        "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
+        "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
+        "Fornecedor": razao, "CNPJ": cnpj, "Licitacao": id_lic, "Itens": []
+    }
+
 # --- SALVAMENTO ---
 historico = []
 if os.path.exists(ARQ_DADOS):
     try:
-        with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
-            historico = json.load(f)
+        with open(ARQ_DADOS, 'r', encoding='utf-8') as f: historico = json.load(f)
     except: pass
 
-print(f"\n\n📊 RESUMO:")
-print(f"   - Registros anteriores: {len(historico)}")
-print(f"   - Novos registros (90d): {len(dict_novos)}")
-
+print(f"\n\n📊 Total Coletado: {len(dict_novos)}")
 banco = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
 banco.update(dict_novos)
 
-lista_final = list(banco.values())
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
-    json.dump(lista_final, f, indent=4, ensure_ascii=False)
-
-print(f"✅ SUCESSO! Base atualizada.")
+    json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
+print(f"✅ Arquivo atualizado.")
