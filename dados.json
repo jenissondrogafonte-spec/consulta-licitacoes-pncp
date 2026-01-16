@@ -187,24 +187,46 @@
         ]
     },
     {
-        "CNPJ": "25230836000103",
-        "Data": "20250312",
-        "Fornecedor": "RENATA MARCELLA M. S. PRADO PINHEIRO",
-        "Itens": 1,
-        "Licitacao": "197000082025",
+        "DataResult": "2025-03-24T11:47:18",
+        "UASG": "197",
+        "Edital": "00008/2025",
         "Orgao": "MUNICIPIO DE PACO DO LUMIAR",
-        "Total": 12960000.0,
-        "UASG": "197"
+        "UF": "MA",
+        "Municipio": "Paço do Lumiar",
+        "Fornecedor": "RENATA MARCELLA M. S. PRADO PINHEIRO",
+        "CNPJ": "25230836000103",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T11:00:00",
+        "Licitacao": "197000082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Contratação de empresa especializada em prestar serviços de programa educacional complementar, utilizando softwares de informática, em forma de curso, para alunos da rede municipal.",
+                "Status": "Venceu",
+                "Valor": 12960000.0
+            }
+        ]
     },
     {
-        "CNPJ": "05042495681",
-        "Data": "20250307",
-        "Fornecedor": "PATRICIA GRACIELE DE ANDRADE SOUSA",
-        "Itens": 1,
-        "Licitacao": "269000182025",
+        "DataResult": "2025-05-14T09:01:01",
+        "UASG": "269",
+        "Edital": "00018/2025",
         "Orgao": "MUNICIPIO DE GUARANESIA",
-        "Total": 5.0,
-        "UASG": "269"
+        "UF": "MG",
+        "Municipio": "Guaranésia",
+        "Fornecedor": "PATRICIA GRACIELE DE ANDRADE SOUSA",
+        "CNPJ": "05042495681",
+        "InicioRec": "",
+        "FimRec": "2025-05-14T09:00:00",
+        "Licitacao": "269000182025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PREPARACAO, ORGANIZACAO, CONDUCAO E FECHAMENTO DE LEILAO PUBLICO DE BENS MOVEIS INSERVIVEIS DO MUNICIPIO QUE COMPREENDE:I - ELABORAR O EDITAL DO LEILAO;II - REALIZAR AS PUBLICACOES LEGAIS DO LEILAO CONFORME PRECEITUA O ART. 31 DA LEI 14.133/2021 E DEMAIS LEGISLACOES PERTINENTES, ASSIM COMO ARCAR COM OS CUSTOS DA PUBLICACAO;III - ORGANIZAR OS BENS A SEREM LEILOADOS DE MODO QUE FIQUE FACIL A VISITACAO;IV - FORNECER TODOS OS DADOS NECESSARIOS AO DEVIDO PAGAMENTO DOS BENS, NO DIA DO LEILAO.",
+                "Status": "Venceu",
+                "Valor": 5.0
+            }
+        ]
     },
     {
         "CNPJ": "18519219000167",
@@ -237,24 +259,64 @@
         "UASG": "1963"
     },
     {
-        "CNPJ": "05234812000115",
-        "Data": "20250321",
-        "Fornecedor": "SANDRA RIBEIRO DOS SANTOS",
-        "Itens": 2,
-        "Licitacao": "850000042025",
+        "DataResult": "2025-04-09T16:55:55",
+        "UASG": "850",
+        "Edital": "00004/2025",
         "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 69669.23000000001,
-        "UASG": "850"
+        "UF": "MG",
+        "Municipio": "Itajubá",
+        "Fornecedor": "SANDRA RIBEIRO DOS SANTOS",
+        "CNPJ": "05234812000115",
+        "InicioRec": "",
+        "FimRec": "2025-04-23T13:00:00",
+        "Licitacao": "850000042025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "IMPRESSORA MULTIFUNCIONAL JATO DE TINTA COLORIDA:\nImpressão:\nResolução máxima de impressão: 5760 x 1440 dpi\nVelocidade de impressão ISO: 10 ppm em preto e 5 ppm em cores (A4/carta)\nVelocidade de impressão: Até 33 ppm em preto e 15 ppm em cores (rascunho, A4/carta)\nCópia: Velocidade de cópia ISO: 7,7 cpm em preto e 3,8 cpm em cores (A4/carta)\nTamanho máximo da cópia: A4/carta - 1.200 dpi x 2.400 dp\nScanner: Tipo de scanner: Base plana com sensor de linhas CIS colorido\nResolução óptica: 1.200 dpi x 2.400 dpi\nProfundidade de bit de cor: 48 bits de entrada, 24 bits de saída\nProfundidade de bit monocromático: 16 bits de entrada, 1 bit de salida\nProfundidade de bit de tons de cinza: 16 bits de entrada, 8 bits de saída\nÁrea máxima de digitalização: 216 mm x 297 mm\nVelocidade de digitalização: 11 segundos por página em preto e 28 segundos por página em cores (200 dpi)\nManuseio do Papel: Suporte de Papel: Foto: 10x15 cm (4x6 in), 16:9 wide (102x181 mm), 13x18 cm (5x7 in)\nTamanhos de papel: Padrão: A4, Carta, Ofício (215.9 x 355.6mm), Mexico-Oficio (215.9 x 340.4mm), Oficio 9 (214.9 x 315mm), Fólio (215.9x330.2mm), Executivo, Meia carta, A6\nFoto: 10x15 cm (4x6 in), 13x18 cm (5x7 in), 16:9 wide (102x108mm), 8x10 in\nEnvelopes: #10\nDefinido pelo Usuário: 54x86 to 215.9x1200 mm\nTamanho máximo do papel: 215.9 mm x 1.200 mm\nTipos de papel: Comum e Papéis Especiais\nCapacidade de papel: Alimentação traseira: hasta 100 folhas(A4/Carta)\nCapacidade de entrada de papel: 100 folhas de papel A4\nCapacidade de bandeja de saída: 30 folhas de papel A4\nConectividade:\nConectividade padrão: USB 2.0 de alta velocidade / Wireless / Wi-Fi Direct\nProtocolos de impressão em rede: TCP/IPv4, TCP/IPv6\nProtocolos de gerenciamento de redes: SNMP, HTTP, DHCP, APIPA, PING, DDNS, mDNS, SLP, WSD, LLTD WEP (64bit/128bit),WPA-PSK (TKIP), WPA2-PSK (AES),WPA3-SAE (AES)\nSegurança WLAN: WEP (64-bit/128-bit), WPA-PSK (TKIP), WPA2-PSK (AES), WPA3-SAE (AES)\nVoltagem:\nVoltagem nominal: AC 100 - 240 V\nFrequência nominal:",
+                "Status": "Venceu",
+                "Valor": 22040.0
+            },
+            {
+                "Item": 6,
+                "Desc": "PACOTE MICROSOFT OFFICE HOME & BUSINESS 2021 ou mais atual, linguagem Português (BR), contendo Word, Excel, PowerPoint, OneNote e Outlook; a licença deverá ser de primeiro uso; deverá ser permitida a instalação em um PC ou Mac; A licença deverá ser Perpétua na modalidade Microsoft ESD; \nDocumentação: o documento abaixo deve ser apresentado pelo vencedor da licitação quando da assinatura do contrato; deverá apresentar nota fiscal de aquisição das licenças de forma a comprovar que as adquiriu por meio de um Distribuidor Autorizado da Microsoft, sendo verificado pela Contratante em consulta on-line no site oficial da Microsoft contendo lista de Distribuidores Autorizados.\n",
+                "Status": "Venceu",
+                "Valor": 47629.23
+            }
+        ]
     },
     {
-        "CNPJ": "55813062000104",
-        "Data": "20250307",
-        "Fornecedor": "JLM REPRESENTACOES LTDA",
-        "Itens": 3,
-        "Licitacao": "07001001122025",
+        "DataResult": "2025-04-07T11:41:40",
+        "UASG": "07001",
+        "Edital": "00112/2025",
         "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 29471.0,
-        "UASG": "07001"
+        "UF": "SC",
+        "Municipio": "Ituporanga",
+        "Fornecedor": "JLM REPRESENTACOES LTDA",
+        "CNPJ": "55813062000104",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T08:30:00",
+        "Licitacao": "07001001122025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "DOT 4 FLUIDO DE FREIO APLICAÇÃO: FOI DESENVOLVIDA PARA SISTEMA HIDRÁULICO DE FREIOS E EMBREAGENS DE AUTOMÓVEIS, CAMINHÕES, ÔNIBUS, PICK-UPS E TRATORES; RECOMENDAÇÃO: VEÍCULOS DE LINHA LEVE, PESADA E IMPORTADOS. 500 ML.",
+                "Status": "Venceu",
+                "Valor": 2000.0
+            },
+            {
+                "Item": 7,
+                "Desc": "20W50 ÓLEO LUBRIFICANTE MINERAL MULTIVISCOSO PARA USO NOS MOTORES A GASOLINA, ETANOL, FLEX E GNV QUE EXI GEM LUBRIFICANTE COM NÍVEL DE DESEMPENHO API SL OU INFERIORES. VEÍCULOS NACIONAIS OU IMPORTADOS COM INJEÇÃO ELETRÔNICA E MULTIVÁLVULAS, SENDO COMPATÍVEL COM OS CONVERSORES CATALÍTICOS E ATENDE AO NÍVEL DE DESEMPENHO API SL. ENSAIO GRAU SAE 15W-40 GRAU SAE 20W-50. LITRO.",
+                "Status": "Venceu",
+                "Valor": 2472.0
+            },
+            {
+                "Item": 10,
+                "Desc": "85W140 ÓLEO DIFERENCIAL LUBRIFICANTES SEMISSINTÉTICOS DE ELEVADO DESEMPENHO DO TIPO TDL (TOTAL DRIVELINE LUBRICANT), SENDO ASSIM INDICADO TANTO PARA APLICAÇÃO EM EIXOS DIFERENCIAIS CONVENCIONAIS, EIXOS FINAIS E REDUTORES QUANTO EM CAIXAS DE MUDANÇA MANUAIS (SINCRONIZADAS OU NÃO SINCRONIZADAS) E AUTOMATIZADAS. INDICADA PARA APLICAÇÃO EM CAIXAS DE MUDANÇAS, REDUTORES, CAIXAS DE TRANSFERÊNCIA, EIXOS DIFERENCIAIS CONVENCIONAIS E EIXOS FINAIS DE VEÍCULOS DE PASSEIO, VEÍCULOS COMERCIAIS, ÔNIBUS E EQUIPAMENTOS MÓVEIS AGRÍCOLAS QUE REQUEIRAM OS NÍVEIS DE DESEMPENHO API GL-4, API GL-5 OU SAE J2360. 20 LITROS.",
+                "Status": "Venceu",
+                "Valor": 24999.0
+            }
+        ]
     },
     {
         "CNPJ": "65122590000170",
@@ -267,14 +329,31 @@
         "UASG": "10"
     },
     {
-        "CNPJ": "25531224000150",
-        "Data": "20250331",
-        "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
-        "Itens": 2,
-        "Licitacao": "07002000632025",
+        "DataResult": "2025-05-20T16:33:03",
+        "UASG": "07002",
+        "Edital": "00063/2025",
         "Orgao": "MUNICIPIO DE GRAMADO",
-        "Total": 2797135.92,
-        "UASG": "07002"
+        "UF": "RS",
+        "Municipio": "Gramado",
+        "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
+        "CNPJ": "25531224000150",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T08:59:00",
+        "Licitacao": "07002000632025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VIGILÂNCIA - 12 HORAS",
+                "Status": "Venceu",
+                "Valor": 347963.4
+            },
+            {
+                "Item": 2,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS DE ZELADORIA",
+                "Status": "Venceu",
+                "Valor": 2449172.52
+            }
+        ]
     },
     {
         "CNPJ": "24687735000101",
@@ -433,14 +512,31 @@
         "UASG": "277"
     },
     {
-        "CNPJ": "51560442000123",
-        "Data": "20250307",
-        "Fornecedor": "DUFILTER DISTRIBUIDORA DE FILTROS E LUBRIFICANTES LTDA",
-        "Itens": 2,
-        "Licitacao": "07001001122025",
+        "DataResult": "2025-04-07T11:41:40",
+        "UASG": "07001",
+        "Edital": "00112/2025",
         "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 44437.5,
-        "UASG": "07001"
+        "UF": "SC",
+        "Municipio": "Ituporanga",
+        "Fornecedor": "DUFILTER DISTRIBUIDORA DE FILTROS E LUBRIFICANTES LTDA",
+        "CNPJ": "51560442000123",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T08:30:00",
+        "Licitacao": "07001001122025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ÓLEO LUBRIFICANTE ATF TA ÓLEO LUBRIFICANTE MINERAL PARA CAIXAS DE DIREÇÃO HIDRÁULICA AUTOMOTIVAS E GARFOS TELESCÓPICOS DE MOTOCICLETAS. CONTÉM CORANTE VERMELHO PARA A IDENTIFICAÇÃO DO PRODUTO. RECOMENDADO PARA LUBRIFICAÇÃO PARA CAIXAS DE DIREÇÕES HIDRÁULICOS DE VEÍCULOS E EM GARFOS DE MO TOCICLETAS. TIPO A SUFIXO A. 20 LITROS.",
+                "Status": "Venceu",
+                "Valor": 13841.5
+            },
+            {
+                "Item": 5,
+                "Desc": "GRAXA LITIO MP2 GRAXA À BASE DE SABÃO DE LÍTIO, RECOMENDADA PARA A LUBRIFICAÇÃO DE ROLAMENTOS, JUNTAS UNIVERSAIS, CUBOS DE RODA E PINOS DE VEÍCULOS AUTOMOTIVOS, AGRÍCOLAS E DE CONSTRUÇÃO. FORMULADO COM ÓLEOS MINERAIS PARAFÍNICO, DERIVADO DE PETRÓLEO, SABÃO METÁLICO DE LÍTIO. BASE LITIO, APLICAÇÃO MULTI, API NLGI. BALDE 170 KG - EXCLUSIVO PARA ME E EPP.",
+                "Status": "Venceu",
+                "Valor": 30596.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-06T17:36:21",
@@ -687,14 +783,31 @@
         ]
     },
     {
-        "CNPJ": "42333053000174",
-        "Data": "20250307",
-        "Fornecedor": "DAZK COMERCIAL AUTOMOTIVA LTDA",
-        "Itens": 2,
-        "Licitacao": "07001001122025",
+        "DataResult": "2025-04-07T11:41:40",
+        "UASG": "07001",
+        "Edital": "00112/2025",
         "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 46230.0,
-        "UASG": "07001"
+        "UF": "SC",
+        "Municipio": "Ituporanga",
+        "Fornecedor": "DAZK COMERCIAL AUTOMOTIVA LTDA",
+        "CNPJ": "42333053000174",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T08:30:00",
+        "Licitacao": "07001001122025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "GRAXA PARA CHASSI GRAXA LUBRIFICANTE À BASE DE SABÃO DE CÁLCIO E ÓLEO MINERAL NAFTÊNICO PARA LUBRIFICAÇÃO DE PINOS E ARTICULAÇÕES DE CHASSIS AUTOMOTIVOS. DISPONÍVEL NO GRAU NLGI 2.  RECOMENDADA PARA LUBRIFICAÇÃO DE PINOS E ARTICULAÇÕES DE CHASSIS AUTOMOTIVOS, SENDO TAMBÉM INDICADA PARA PONTOS DE LUBRIFICAÇÃO QUE NÃO EXIJAM DA GRAXA UMA ELEVADA ESTABILIDADE AO TRABALHO, BEM COMO ALTAS TEMPERATURAS DE OPERAÇÃO. TAMBOR 170 KG.",
+                "Status": "Venceu",
+                "Valor": 42250.0
+            },
+            {
+                "Item": 9,
+                "Desc": "5W30 ÓLEO LUBRIFICANTE PREMIUM SINTÉTICO DE ÚLTIMA GERAÇÃO DESTINADO PARA USO EM TODOS OS MOTORES DE ELEVADO DESEMPENHO A GASOLINA, ETANOL, FLEX, GNV E DIESEL COM INJEÇÃO ELETRÔNICA, MULTIVÁLVULAS E TURBOALIMENTADOS, SENDO COMPATÍVEL COM CONVERSORES CATALÍTICOS E FILTROS DE PARTÍCULAS DIESEL (DPF).  LITRO.",
+                "Status": "Venceu",
+                "Valor": 3980.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-31T16:33:40",
@@ -830,14 +943,31 @@
         "UASG": "488"
     },
     {
-        "CNPJ": "09145361000109",
-        "Data": "20250312",
-        "Fornecedor": "ANDRADE E GUARNIERI PANIFICAÇÃO LTDA",
-        "Itens": 2,
-        "Licitacao": "301000112025",
+        "DataResult": "2025-03-26T13:36:30",
+        "UASG": "301",
+        "Edital": "00011/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 82890.0,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "ANDRADE E GUARNIERI PANIFICAÇÃO LTDA",
+        "CNPJ": "09145361000109",
+        "InicioRec": "",
+        "FimRec": "2025-04-09T13:30:00",
+        "Licitacao": "301000112025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "ALMOÇO SELF-SERVICE SEM BALANÇA.  REALIZADO EM FORMATO DE BUFFET, COM VARIEDADE E QUALIDADE. O CARDÁPIO INCLUIRÁ ENTRADAS COM MIX DE FOLHAS VERDES (30G POR PESSOA), TOMATES FRESCOS, CENOURA, PEPINO, BETERRABA (50G DE LEGUMES POR PESSOA), SALADA DE GRÃOS (30G POR PESSOA) E SALPICÃO (50G POR PESSOA); PRATOS PRINCIPAIS COMO BIFE DE ALCATRA OU CONTRAFILÉ (150G POR PESSOA), FILÉ DE FRANGO (100G POR PESSOA), PEIXE GRELHADO (100G POR PESSOA), ALÉM DE UMA OPÇÃO VEGETARIANA COMO LASANHA DE LEGUMES (120G POR PESSOA); ACOMPANHAMENTOS DE ARROZ BRANCO E INTEGRAL (100G POR PESSOA), FEIJÃO (100G POR PESSOA), FAROFA (50G POR PESSOA), PURÊ DE BATATA (80G POR PESSOA) E MACARRÃO AO MOLHO (100G POR PESSOA); GUARNIÇÕES DE BATATA RÚSTICA OU POLENTA (80G POR PESSOA); E SOBREMESAS COM FRUTAS FATIADAS (100G POR PESSOA) E PUDIM OU MOUSSE (80G POR PESSOA). SERÃO FORNECIDOS PRATOS DE PORCELANA OU MATERIAL RESISTENTE EQUIVALENTE, TALHERES DE INOX (GARFO, FACA E COLHER), COPOS DE VIDRO OU MATERIAL DE BOA QUALIDADE PARA SUCO (200ML POR PESSOA), GUARDANAPOS DE PAPEL DE BOA GRAMATURA, ALÉM DE TRAVESSAS, CUMBUCAS E RÉCHAUDS PARA MANTER OS ALIMENTOS AQUECIDOS E ORGANIZADOS NO BUFFET. O BUFFET SERÁ HIGIENIZADO E HAVERÁ REPOSIÇÃO CONSTANTE, COM ATENDIMENTO POR EQUIPE TREINADA, GARANTINDO FRESCOR E APRESENTAÇÃO DOS ALIMENTOS DURANTE O SERVIÇO DE DUAS HORAS. AO TÉRMINO DO SERVIÇO, A EQUIPE DE ATENDIMENTO SERÁ RESPONSÁVEL PELA COLETA DE TODOS OS ITENS FORNECIDOS, INCLUINDO PRATOS, TALHERES E UTENSÍLIOS UTILIZADOS.\r",
+                "Status": "Venceu",
+                "Valor": 77000.0
+            },
+            {
+                "Item": 6,
+                "Desc": "BISCOITO ARTESANAL DOCE DE BOA QUALIDADE, COM SABORES VARIADOS (COMO BOLINHO DE CHUVA, ROSQUINHA DE NATA, CASADINHO, GOIABINHA, AMANTEIGADOS). CADA UNIDADE DEVE PESAR ENTRE 4G E 5G. OS BISCOITOS DEVEM APRESENTAR MASSA LEVE, AERADA E BOA APARÊNCIA.  NÃO SERÃO ACEITOS BISCOITOS MAL ASSADOS, QUEIMADOS, AMASSADOS, ESFARELADOS OU \"EMBATUMADOS\" (MASSA PESADA E COM CARACTERÍSTICAS ORGANOLÉPTICAS ANORMAIS). O PRODUTO DEVE ESTAR LIVRE DE SUJIDADES E QUALQUER TIPO DE CONTAMINANTE, COMO FUNGOS E BOLORES. A FABRICAÇÃO DEVE SEGUIR AS NORMAS VIGENTES DA VIGILÂNCIA SANITÁRIA.\r",
+                "Status": "Venceu",
+                "Valor": 5890.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-23T11:16:06",
@@ -899,24 +1029,64 @@
         "UASG": "831"
     },
     {
-        "CNPJ": "76669670000167",
-        "Data": "20250310",
-        "Fornecedor": "TRANSVEPAR - TRANSPORTES E VEICULOS PARANA LTDA",
-        "Itens": 1,
-        "Licitacao": "1576000142025",
+        "DataResult": "2025-03-26T16:44:05",
+        "UASG": "1576",
+        "Edital": "00014/2025",
         "Orgao": "MUNICIPIO DE ITAPEMA",
-        "Total": 431280.0,
-        "UASG": "1576"
+        "UF": "SC",
+        "Municipio": "Itapema",
+        "Fornecedor": "TRANSVEPAR - TRANSPORTES E VEICULOS PARANA LTDA",
+        "CNPJ": "76669670000167",
+        "InicioRec": "",
+        "FimRec": "2025-03-27T14:00:00",
+        "Licitacao": "1576000142025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Locação de veículo para transporte de carga, conforme termo de referencia",
+                "Status": "Venceu",
+                "Valor": 431280.0
+            }
+        ]
     },
     {
-        "CNPJ": "46724452000117",
-        "Data": "20250312",
-        "Fornecedor": "RANGO SOLUCOES LTDA",
-        "Itens": 4,
-        "Licitacao": "301000112025",
+        "DataResult": "2025-03-26T13:36:30",
+        "UASG": "301",
+        "Edital": "00011/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 809810.0,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "RANGO SOLUCOES LTDA",
+        "CNPJ": "46724452000117",
+        "InicioRec": "",
+        "FimRec": "2025-04-09T13:30:00",
+        "Licitacao": "301000112025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ÁGUA MINERAL COPO 200 ML - ÁGUA MINERAL POTÁVEL, ENTREGUE EM COPOS DE 200 ML, COM LACRE DE SEGURANÇA QUE ASSEGURE A INTEGRIDADE E PUREZA DO PRODUTO ATÉ O CONSUMO.\r",
+                "Status": "Venceu",
+                "Valor": 39024.64
+            },
+            {
+                "Item": 2,
+                "Desc": "ÁGUA MINERAL COPO 200 ML - ÁGUA MINERAL POTÁVEL, ENTREGUE EM COPOS DE 200 ML, COM LACRE DE SEGURANÇA QUE ASSEGURE A INTEGRIDADE E PUREZA DO PRODUTO ATÉ O CONSUMO.\r",
+                "Status": "Venceu",
+                "Valor": 13007.36
+            },
+            {
+                "Item": 3,
+                "Desc": "ALMOÇO INDIVIDUAL FORNECIMENTO DE REFEIÇÕES PRONTAS, QUE DEVEM INCLUIR UMA PORÇÃO DE PROTEÍNA (CARNE OU ALTERNATIVA VEGETAL), UM ACOMPANHAMENTO (ARROZ, MASSA OU LEGUME) E UMA SALADA.  AS REFEIÇÕES DEVEM SER EMBALADAS EM RECIPIENTES QUE GARANTAM A CONSERVAÇÃO DA TEMPERATURA E QUALIDADE, COM VALIDADE MÍNIMA DE 48 HORAS A PARTIR DA ENTREGA. AS INFORMAÇÕES NUTRICIONAIS DEVEM ESTAR CLARAMENTE VISÍVEIS NA EMBALAGEM.\r",
+                "Status": "Venceu",
+                "Valor": 568344.8
+            },
+            {
+                "Item": 4,
+                "Desc": "ALMOÇO INDIVIDUAL FORNECIMENTO DE REFEIÇÕES PRONTAS, QUE DEVEM INCLUIR UMA PORÇÃO DE PROTEÍNA (CARNE OU ALTERNATIVA VEGETAL), UM ACOMPANHAMENTO (ARROZ, MASSA OU LEGUME) E UMA SALADA.  AS REFEIÇÕES DEVEM SER EMBALADAS EM RECIPIENTES QUE GARANTAM A CONSERVAÇÃO DA TEMPERATURA E QUALIDADE, COM VALIDADE MÍNIMA DE 48 HORAS A PARTIR DA ENTREGA. AS INFORMAÇÕES NUTRICIONAIS DEVEM ESTAR CLARAMENTE VISÍVEIS NA EMBALAGEM.\r",
+                "Status": "Venceu",
+                "Valor": 189433.2
+            }
+        ]
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -1000,14 +1170,25 @@
         "UASG": "277"
     },
     {
-        "CNPJ": "50630988000140",
-        "Data": "20250320",
-        "Fornecedor": "AGRO ZAIDAN COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "1029000142025",
+        "DataResult": "2025-05-07T13:22:47",
+        "UASG": "1029",
+        "Edital": "00014/2025",
         "Orgao": "SAAE DE BOA ESPERANCA",
-        "Total": 6500.0,
-        "UASG": "1029"
+        "UF": "MG",
+        "Municipio": "Boa Esperança",
+        "Fornecedor": "AGRO ZAIDAN COMERCIAL LTDA",
+        "CNPJ": "50630988000140",
+        "InicioRec": "",
+        "FimRec": "2025-05-20T08:00:00",
+        "Licitacao": "1029000142025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Herbicida roundup galao de 20 l-'",
+                "Status": "Venceu",
+                "Valor": 6500.0
+            }
+        ]
     },
     {
         "CNPJ": "24159141000110",
@@ -1389,14 +1570,31 @@
         ]
     },
     {
-        "CNPJ": "10275087000163",
-        "Data": "20250310",
-        "Fornecedor": "AMB TRANSPORTE LTDA EPP",
-        "Itens": 2,
-        "Licitacao": "1576000142025",
+        "DataResult": "2025-03-26T16:44:05",
+        "UASG": "1576",
+        "Edital": "00014/2025",
         "Orgao": "MUNICIPIO DE ITAPEMA",
-        "Total": 1472034.72,
-        "UASG": "1576"
+        "UF": "SC",
+        "Municipio": "Itapema",
+        "Fornecedor": "AMB TRANSPORTE LTDA EPP",
+        "CNPJ": "10275087000163",
+        "InicioRec": "",
+        "FimRec": "2025-03-27T14:00:00",
+        "Licitacao": "1576000142025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Locação de veículo para transporte de carga, conforme termo de referencia",
+                "Status": "Venceu",
+                "Valor": 280494.72
+            },
+            {
+                "Item": 3,
+                "Desc": "Locação de veiculo para transporte de passageiros, conforme termo de referencia",
+                "Status": "Venceu",
+                "Valor": 1191540.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-18T16:22:53",
@@ -1420,14 +1618,25 @@
         ]
     },
     {
-        "CNPJ": "20649395000165",
-        "Data": "20250307",
-        "Fornecedor": "J.MARANGONI COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO EIRELI - EPP",
-        "Itens": 1,
-        "Licitacao": "07001001122025",
+        "DataResult": "2025-04-07T11:41:40",
+        "UASG": "07001",
+        "Edital": "00112/2025",
         "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 140000.0,
-        "UASG": "07001"
+        "UF": "SC",
+        "Municipio": "Ituporanga",
+        "Fornecedor": "J.MARANGONI COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO EIRELI - EPP",
+        "CNPJ": "20649395000165",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T08:30:00",
+        "Licitacao": "07001001122025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "GRAXA LITIO MP2 GRAXA À BASE DE SABÃO DE LÍTIO, RECOMENDADA PARA A LUBRIFICAÇÃO DE ROLAMENTOS, JUNTAS UNIVERSAIS, CUBOS DE RODA E PINOS DE VEÍCULOS AUTOMOTIVOS, AGRÍCOLAS E DE CONSTRUÇÃO. FORMULADO COM ÓLEOS MINERAIS PARAFÍNICO, DERIVADO DE PETRÓLEO, SABÃO METÁLICO DE LÍTIO. BASE LITIO, APLICAÇÃO MULTI, API NLGI. BALDE 170 KG.",
+                "Status": "Venceu",
+                "Valor": 140000.0
+            }
+        ]
     },
     {
         "CNPJ": "11011847000198",
@@ -1440,14 +1649,25 @@
         "UASG": "301"
     },
     {
-        "CNPJ": "00592198000140",
-        "Data": "20250307",
-        "Fornecedor": "CELINA MOREIRA FREITAS ME",
-        "Itens": 1,
-        "Licitacao": "128000012025",
+        "DataResult": "2025-05-22T16:36:39",
+        "UASG": "128",
+        "Edital": "00001/2025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 5028.0,
-        "UASG": "128"
+        "UF": "MG",
+        "Municipio": "Sete Lagoas",
+        "Fornecedor": "CELINA MOREIRA FREITAS ME",
+        "CNPJ": "00592198000140",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:00:00",
+        "Licitacao": "128000012025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "BANCO SEMI SENTADO ERGONÔMICO COM REGULAGEM DE ALTURA\nESPECIFICAÇÕES:\nMARCA REFERÊNCIA: RHODES\nMODELO: SEMI SENTADO - BENT\nALTURA MÁXIMA:73 CM\nMATERIAL DO ASSENTO: PU SKIN\nMATERIAL DA ESTRUTURA: AÇO\nMATERIAL DO ESTOFAMENTO: PU\nPESO: 10 KG\nPESO SUPORTADO: 120 KG\nQUANTIDADE DE PÉS: 05\nCOM ALTURA AJUSTÁVEL\nCOM ROTAÇÃO DE 360º\nCOM ENCOSTO\nCOM PINTURA EPOXI",
+                "Status": "Venceu",
+                "Valor": 5028.0
+            }
+        ]
     },
     {
         "CNPJ": "18117739000143",
@@ -1480,14 +1700,25 @@
         "UASG": "835"
     },
     {
-        "CNPJ": "20901039000197",
-        "Data": "20250317",
-        "Fornecedor": "AUTO CECÍLIA LTDA",
-        "Itens": 1,
-        "Licitacao": "703000132025",
+        "DataResult": "2025-04-02T16:45:16",
+        "UASG": "703",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
-        "Total": 205800.0,
-        "UASG": "703"
+        "UF": "MG",
+        "Municipio": "Carmópolis de Minas",
+        "Fornecedor": "AUTO CECÍLIA LTDA",
+        "CNPJ": "20901039000197",
+        "InicioRec": "",
+        "FimRec": "2025-04-17T13:00:00",
+        "Licitacao": "703000132025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PICK UP 02 PORTAS - CS - COR BRANCA",
+                "Status": "Venceu",
+                "Valor": 205800.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T13:35:48",
@@ -1623,14 +1854,25 @@
         "UASG": "10"
     },
     {
-        "CNPJ": "07678133000160",
-        "Data": "20250314",
-        "Fornecedor": "FORZAN LOCAÇÕES E SERVIÇOS LTDA",
-        "Itens": 1,
-        "Licitacao": "342000102025",
+        "DataResult": "2025-07-29T10:13:21",
+        "UASG": "342",
+        "Edital": "00010/2025",
         "Orgao": "MUNICIPIO DE MATEUS LEME",
-        "Total": 3663121.56,
-        "UASG": "342"
+        "UF": "MG",
+        "Municipio": "Mateus Leme",
+        "Fornecedor": "FORZAN LOCAÇÕES E SERVIÇOS LTDA",
+        "CNPJ": "07678133000160",
+        "InicioRec": "",
+        "FimRec": "2025-05-08T09:30:00",
+        "Licitacao": "342000102025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PRESTACAO DE SERVICOS DE LIMPEZA URBANA ATRAVES DE EQUIPES DE MULTITAREFA PARA ATENDIMENTOS AS SECRETARIAS MUNICIPAIS DO MUNICIPIO DE MATEUS LEME NO ESTADO DE MINAS GERAIS CONTEMPLANDO AS ATIVIDADES DENTRE OUTROS SERVICOS EVENTUAIS E EXTRAORDINARIOS DE MANUTENCAO CONSERVACAO CAPINA MANUAL E MECANIZADA ROCADA MANUAL E MECANIZADA VARRICAO RASPAGEM DE SARJETAS E GUIAS E RETIRADA DE ENTULHOS LAVAGEM E HIGIENIZACAO DE LOGRADOUROS PRACAS  E AREAS DE ESPACOS PUBLICOS PROPRIOS OU ALUGADOS CANTEIROS E PRACAS QUE ATENDE O MUNICIPIO INCLUINDO A COLETA CARGA E O TRANSPORTE DOS RESIDUOS PROVENIENTES DESSAS ATIVIDADES PARA OS LOCAL IS INDICADO OS E LICENCIADOS PELA SECRETARIA MUNICIPAL DE OBRAS",
+                "Status": "Venceu",
+                "Valor": 3663121.56
+            }
+        ]
     },
     {
         "CNPJ": "41677982000138",
@@ -1643,14 +1885,67 @@
         "UASG": "1"
     },
     {
-        "CNPJ": "54213979000105",
-        "Data": "20250310",
-        "Fornecedor": "54.213.979 MARCOS FRANCIS VILELA",
-        "Itens": 8,
-        "Licitacao": "439000202025",
+        "DataResult": "2025-03-11T11:19:08",
+        "UASG": "439",
+        "Edital": "00020/2025",
         "Orgao": "MUNICIPIO DE LARANJAL",
-        "Total": 77119.0,
-        "UASG": "439"
+        "UF": "PR",
+        "Municipio": "Laranjal",
+        "Fornecedor": "54.213.979 MARCOS FRANCIS VILELA",
+        "CNPJ": "54213979000105",
+        "InicioRec": "",
+        "FimRec": "2025-03-26T09:00:00",
+        "Licitacao": "439000202025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "MANUTENÇÃO DE AR CONDICIONADO 9000,12000 E 18.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 15750.0
+            },
+            {
+                "Item": 3,
+                "Desc": "INSTALAÇÃO DE AR CONDICIONADO DE 18.000 ATE 24.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 7400.0
+            },
+            {
+                "Item": 4,
+                "Desc": "REMOÇÃO/REMANEJAMENTO DESMONTAGEM E MONTAGEM DE AR CONDICIONADO DE    9.000 A 18.000 BTUS   \r",
+                "Status": "Venceu",
+                "Valor": 15743.0
+            },
+            {
+                "Item": 5,
+                "Desc": "CARGA DE GAS AR CONDICIONADO DE 9.000 ATE 18.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 1938.0
+            },
+            {
+                "Item": 6,
+                "Desc": "TROCA DE COMPRESSOR DE AR CONDICIONADO DE 7.000 ATE 12.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 20000.0
+            },
+            {
+                "Item": 7,
+                "Desc": "TROCA DE COMPRESSOR DE AR CONDICIONADO DE 14.000 ATE 18.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 8768.0
+            },
+            {
+                "Item": 8,
+                "Desc": "TROCA CAPACITOR PARA PARTIDA DE AR CONDICIONADO DE 6.000 BTUS    ATE 12.000 BTUS   \r",
+                "Status": "Venceu",
+                "Valor": 3995.0
+            },
+            {
+                "Item": 9,
+                "Desc": "TROCA DE CAPCITORR PARA PARTIDA DE AR CONDICIONADO DE 18.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 3525.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -1816,14 +2111,31 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "19612735000102",
-        "Data": "20250331",
-        "Fornecedor": "Ribeiro Comercio Varejista e Atacadista Eireli ME",
-        "Itens": 2,
-        "Licitacao": "987000282025",
+        "DataResult": "2025-04-15T12:23:39",
+        "UASG": "987",
+        "Edital": "00028/2025",
         "Orgao": "MUNICIPIO DE PEDRALVA",
-        "Total": 47120.0,
-        "UASG": "987"
+        "UF": "MG",
+        "Municipio": "Pedralva",
+        "Fornecedor": "Ribeiro Comercio Varejista e Atacadista Eireli ME",
+        "CNPJ": "19612735000102",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T09:30:00",
+        "Licitacao": "987000282025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Bota de segurança de couro sem bico de aço, com sola antiderrapante em borracha. Disponível em vários tamanhos.",
+                "Status": "Venceu",
+                "Valor": 33480.0
+            },
+            {
+                "Item": 3,
+                "Desc": "BOTA EM CAMURÇA COM ELÁSTICO LATERAL, COM SOLA DE BORRACHA ANTIDERRAPANTE ANATÔMICO, COM PALMILHA EM GEL, DISPONÍVEL EM VÁRIOS TAMANHOS.",
+                "Status": "Venceu",
+                "Valor": 13640.0
+            }
+        ]
     },
     {
         "CNPJ": "36383365000190",
@@ -1836,24 +2148,100 @@
         "UASG": "2243"
     },
     {
-        "CNPJ": "03735304000195",
-        "Data": "20250313",
-        "Fornecedor": "GAP Service Ltda",
-        "Itens": 10,
-        "Licitacao": "633000162025",
+        "DataResult": "2025-05-06T09:02:31",
+        "UASG": "633",
+        "Edital": "00016/2025",
         "Orgao": "MUNICIPIO DE SAO GONCALO DO RIO ABAIXO",
-        "Total": 129996.0,
-        "UASG": "633"
+        "UF": "MG",
+        "Municipio": "São Gonçalo do Rio Abaixo",
+        "Fornecedor": "GAP Service Ltda",
+        "CNPJ": "03735304000195",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T09:01:00",
+        "Licitacao": "633000162025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SOFTWARE DESPACHADOR",
+                "Status": "Venceu",
+                "Valor": 28800.0
+            },
+            {
+                "Item": 2,
+                "Desc": "PLATAFORMA WEB",
+                "Status": "Venceu",
+                "Valor": 12960.0
+            },
+            {
+                "Item": 3,
+                "Desc": "APLICATIVO CELULAR",
+                "Status": "Venceu",
+                "Valor": 2436.0
+            },
+            {
+                "Item": 4,
+                "Desc": "TERMINAL RADIO FIXO TRONCALIZADO DIGITAL",
+                "Status": "Venceu",
+                "Valor": 4200.0
+            },
+            {
+                "Item": 5,
+                "Desc": "TERMINAL RADIO VEICULAR TRONCALIZADO DIGITAL",
+                "Status": "Venceu",
+                "Valor": 14400.0
+            },
+            {
+                "Item": 6,
+                "Desc": "TERMINAL RADIO PORTATIL TRONCALIZADO DIGITAL",
+                "Status": "Venceu",
+                "Valor": 63360.0
+            },
+            {
+                "Item": 7,
+                "Desc": "PTT EXTERNO",
+                "Status": "Venceu",
+                "Valor": 3840.0
+            },
+            {
+                "Item": 8,
+                "Desc": "TAXA DE HABILITACAO",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 9,
+                "Desc": "SERVICO DE INSTALACAO DE RADIO MOVEL",
+                "Status": "Venceu",
+                "Valor": 0.0
+            },
+            {
+                "Item": 10,
+                "Desc": "SERVICO DE INSTALCAO DE RADIO FIXO",
+                "Status": "Venceu",
+                "Valor": 0.0
+            }
+        ]
     },
     {
-        "CNPJ": "17332901000183",
-        "Data": "20250313",
-        "Fornecedor": "VIC PAN LTDA",
-        "Itens": 1,
-        "Licitacao": "1000422025",
+        "DataResult": "2025-05-20T12:04:27",
+        "UASG": "1",
+        "Edital": "00042/2025",
         "Orgao": "MUNICIPIO DE ESTEIO",
-        "Total": 40180.0,
-        "UASG": "1"
+        "UF": "RS",
+        "Municipio": "Esteio",
+        "Fornecedor": "VIC PAN LTDA",
+        "CNPJ": "17332901000183",
+        "InicioRec": "",
+        "FimRec": "2025-03-27T10:00:00",
+        "Licitacao": "1000422025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Sanduíche, sanduíche. Código CATMAT 108138.-Sanduíche de pão de forma com duas fatias de pão, margarina, uma fatia de presunto magro, uma fatia de queijo, cortado ao meio e embalado em filme plástico individualmente. Validade três dias.\n",
+                "Status": "Venceu",
+                "Valor": 40180.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-21T08:45:51",
@@ -1883,24 +2271,46 @@
         ]
     },
     {
-        "CNPJ": "47646580000152",
-        "Data": "20250307",
-        "Fornecedor": "FRANCIELE ELETRO LTDA",
-        "Itens": 1,
-        "Licitacao": "128000012025",
+        "DataResult": "2025-05-22T16:36:39",
+        "UASG": "128",
+        "Edital": "00001/2025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 5200.0,
-        "UASG": "128"
+        "UF": "MG",
+        "Municipio": "Sete Lagoas",
+        "Fornecedor": "FRANCIELE ELETRO LTDA",
+        "CNPJ": "47646580000152",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:00:00",
+        "Licitacao": "128000012025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "GELADEIRA FROST FREE 342 LITROS – 127V CAPACIDADE TOTAL (L): BAIXA - ATÉ 342L - CAPACIDADE FREEZER (L): 47\nCAPACIDADE GELADEIRA (L): 295\nTIPO DE DEGELO: FROST FREE\nCOMPARTIMENTO EXTRA FRIO: SIM\nPORTA OVOS: SIM\nPORTA REVERSÍVEL: SIM\nNº DE PORTAS: 1 PORTA\nDISPENSER DE ÁGUA: NÃO\nPORTA LATAS: SIM\nRECIPIENTE PARA GUARDAR GELO: SIM\nGAVETAS: 1 GAVETA\nPÉS NIVELADORES: SIM\nCONTROLE DE TEMPERATURA: SIM\nTRAVA DE SEGURANÇA: NÃO\nEFICIÊNCIA ENERGÉTICA: A\nGARANTIA DO FORNECEDOR (MÊS): 12\nCOR: BRANCO\nTIPO DO PRODUTO: GELADEIRA / REFRIGERADOR - 1 PORTA\nCONSUMO APROXIMADO DE ENERGIA (KWH): 36,6 KWH\nTENSÃO DE FUNCIONAMENTO: 127 VOLTS",
+                "Status": "Venceu",
+                "Valor": 5200.0
+            }
+        ]
     },
     {
-        "CNPJ": "53892574000188",
-        "Data": "20250321",
-        "Fornecedor": "MKC SOLUCOES LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
+        "DataResult": "2025-04-09T16:55:55",
+        "UASG": "850",
+        "Edital": "00004/2025",
         "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 19550.0,
-        "UASG": "850"
+        "UF": "MG",
+        "Municipio": "Itajubá",
+        "Fornecedor": "MKC SOLUCOES LTDA",
+        "CNPJ": "53892574000188",
+        "InicioRec": "",
+        "FimRec": "2025-04-23T13:00:00",
+        "Licitacao": "850000042025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "PLATAFORMA DE GERENCIAMENTO DE SEGURANÇA - Licenças para 36 meses\nModelo de referência: ESET PROTECT ENTRY\n",
+                "Status": "Venceu",
+                "Valor": 19550.0
+            }
+        ]
     },
     {
         "CNPJ": "40540896000116",
@@ -2168,14 +2578,25 @@
         "UASG": "1"
     },
     {
-        "CNPJ": "11912710000104",
-        "Data": "20250321",
-        "Fornecedor": "TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
+        "DataResult": "2025-04-09T16:55:55",
+        "UASG": "850",
+        "Edital": "00004/2025",
         "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 3970.0,
-        "UASG": "850"
+        "UF": "MG",
+        "Municipio": "Itajubá",
+        "Fornecedor": "TECNOLOGIA LTDA",
+        "CNPJ": "11912710000104",
+        "InicioRec": "",
+        "FimRec": "2025-04-23T13:00:00",
+        "Licitacao": "850000042025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "SWITCH GERENCIÁVEL 48 PORTAS:\n\nCom as características mínimas e semelhantes a:\nCapacidade PoE de 370W para alimentar dispositivos de rede;\n\n48 portas RJ-45 10/100/1000 e 4 portas SFP 1/10GbE;\nCapacidade de comutação de 176 Gbps;\nSuporte a até 256 VLANs para segmentação de rede;\nGerenciamento fácil e confiável com Portal e navegador web;\nTipo de Portas: SFP+ / RJ45\nLargura de Banda: 176 Gbps\n\nGarantia: Vitalícia Limitada\n\nModelo de Referência: HPE 1930-48G\n",
+                "Status": "Venceu",
+                "Valor": 3970.0
+            }
+        ]
     },
     {
         "CNPJ": "36832659000151",
@@ -2524,14 +2945,25 @@
         ]
     },
     {
-        "CNPJ": "12973944000124",
-        "Data": "20250307",
-        "Fornecedor": "CS COM. ATACADISTA DE PEÇAS AUTOMOTIVAS LTDA - ME",
-        "Itens": 1,
-        "Licitacao": "07001001122025",
+        "DataResult": "2025-04-07T11:41:40",
+        "UASG": "07001",
+        "Edital": "00112/2025",
         "Orgao": "MUNICIPIO DE ITUPORANGA",
-        "Total": 28500.0,
-        "UASG": "07001"
+        "UF": "SC",
+        "Municipio": "Ituporanga",
+        "Fornecedor": "CS COM. ATACADISTA DE PEÇAS AUTOMOTIVAS LTDA - ME",
+        "CNPJ": "12973944000124",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T08:30:00",
+        "Licitacao": "07001001122025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "ÓLEO HIDRAULICO 68 ÓLEO HIDRÁULICO MINERAL DE ELEVADO ÍNDICE DE VISCOSIDADE PARA SISTEMAS HI DRÁULICOS DE ESCAVADEIRAS, RETROESCAVADEIRAS E PÁS CARREGADEIRAS. SEUS ADITIVOS SÃO ESPECIAL MENTE SELECIONADOS PARA GARANTIR ELEVADA RESISTÊNCIA AO CISALHAMENTO E À OXIDAÇÃO, PROMOVENDO ALTA DURABILIDADE EM SERVIÇO. ENSAIO GRAU ISO 68. BALDE 20 LITRO.",
+                "Status": "Venceu",
+                "Valor": 28500.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-14T14:29:23",
@@ -2629,14 +3061,25 @@
         ]
     },
     {
-        "CNPJ": "00028682000140",
-        "Data": "20250327",
-        "Fornecedor": "PROMEDON DO BRASIL PRODUTOS MÉDICO HOSPITALARES LTDA",
-        "Itens": 1,
-        "Licitacao": "404340014462025",
+        "DataResult": "2025-07-01T14:31:22",
+        "UASG": "404340",
+        "Edital": "01446/2025",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
-        "Total": 36299.76,
-        "UASG": "404340"
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Fornecedor": "PROMEDON DO BRASIL PRODUTOS MÉDICO HOSPITALARES LTDA",
+        "CNPJ": "00028682000140",
+        "InicioRec": "",
+        "FimRec": "2025-07-17T09:59:00",
+        "Licitacao": "404340014462025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "TIPO: ESTERIL, MATERIAL: POLIPROPILENO, LARGURA: 11,5 MM, ESPESSURA: 0,32 MM, COMPRIMENTO: 420 MM, GRAMATURA: 60 G/M, ELASTICIDADE: 30 %",
+                "Status": "Venceu",
+                "Valor": 36299.76
+            }
+        ]
     },
     {
         "CNPJ": "50818586000174",
@@ -2692,14 +3135,61 @@
         "UASG": "1301"
     },
     {
-        "CNPJ": "04610985000128",
-        "Data": "20250321",
-        "Fornecedor": "LOJA EDMUNDO SIQUEIRA LTDA.",
-        "Itens": 7,
-        "Licitacao": "591000202025",
+        "DataResult": "2025-04-03T07:59:57",
+        "UASG": "591",
+        "Edital": "00020/2025",
         "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 873.0,
-        "UASG": "591"
+        "UF": "MG",
+        "Municipio": "Conceição do Rio Verde",
+        "Fornecedor": "LOJA EDMUNDO SIQUEIRA LTDA.",
+        "CNPJ": "04610985000128",
+        "InicioRec": "",
+        "FimRec": "2025-04-03T14:00:00",
+        "Licitacao": "591000202025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ARGILA:  ARGILA EM PEDAÇOS DE DIFERENTES CORES - Argila:  Argila em pedaços de diferentes cores aproximadamente 1 kg por bloco",
+                "Status": "Venceu",
+                "Valor": 210.0
+            },
+            {
+                "Item": 2,
+                "Desc": "ARGOLA PARA CHAVEIRO - Argola para chaveiro. Confeccionada em metal niquelado e redondo; 22 a 25 mm",
+                "Status": "Venceu",
+                "Valor": 8.0
+            },
+            {
+                "Item": 4,
+                "Desc": "BOTÕES COLORIDOS COM QUATRO FUROS PARA ROUPA 10MM A 12 MM - Botões coloridos com quatro furos para roupa 10mm a 12 mm",
+                "Status": "Venceu",
+                "Valor": 15.0
+            },
+            {
+                "Item": 7,
+                "Desc": "COLA GEL PARA DECOUPAGE COM 120G - Cola gel para decoupage com 120g",
+                "Status": "Venceu",
+                "Valor": 100.0
+            },
+            {
+                "Item": 8,
+                "Desc": "COLA QUENTE DE 1KG DE 7MM - Cola quente de 1kg de 7mm",
+                "Status": "Venceu",
+                "Valor": 130.0
+            },
+            {
+                "Item": 9,
+                "Desc": "COLAS SILICONE PARA ARTESANATO DE 100 ML - Colas silicone para artesanato de 100 ml",
+                "Status": "Venceu",
+                "Valor": 150.0
+            },
+            {
+                "Item": 10,
+                "Desc": "COLCHONETES. COLCHONETE D-40 PARA ACADEMIA, REVESTIDO EM MATERIAL SINTETICO - COM MEDIDAS APROXIMADAS DE 102 X 50 X 3CM - Colchonetes. Colchonete D-40 Para Academia, Revestido Em Material Sintetico - com medidas aproximadas de 102 X 50 X 3Cm",
+                "Status": "Venceu",
+                "Valor": 260.0
+            }
+        ]
     },
     {
         "CNPJ": "43295831000140",
@@ -2946,14 +3436,25 @@
         "UASG": "257"
     },
     {
-        "CNPJ": "12889035000102",
-        "Data": "20250324",
-        "Fornecedor": "INOVAMED HOSPITALAR LTDA",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
+        "DataResult": "2025-04-03T08:17:05",
+        "UASG": "08011",
+        "Edital": "00170/2025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 3420.0,
-        "UASG": "08011"
+        "UF": "RS",
+        "Municipio": "Osório",
+        "Fornecedor": "INOVAMED HOSPITALAR LTDA",
+        "CNPJ": "12889035000102",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T08:59:00",
+        "Licitacao": "08011001702025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ACICLOVIR 200 MILIGRAMAS",
+                "Status": "Venceu",
+                "Valor": 3420.0
+            }
+        ]
     },
     {
         "CNPJ": "48936631000143",
@@ -3074,14 +3575,79 @@
         "UASG": "277"
     },
     {
-        "CNPJ": "05096610000154",
-        "Data": "20250312",
-        "Fornecedor": "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA",
-        "Itens": 10,
-        "Licitacao": "1058000022025",
+        "DataResult": "2025-04-10T17:11:33",
+        "UASG": "1058",
+        "Edital": "00002/2025",
         "Orgao": "CAMARA MUNICIPAL DE CORONEL FABRICIANO",
-        "Total": 95599.8,
-        "UASG": "1058"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA",
+        "CNPJ": "05096610000154",
+        "InicioRec": "",
+        "FimRec": "2025-04-30T13:00:00",
+        "Licitacao": "1058000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CABO DE REDE, CAIXA COM 300 METROS\r",
+                "Status": "Venceu",
+                "Valor": 9150.0
+            },
+            {
+                "Item": 2,
+                "Desc": "CONECTOR RJ45, PARA CABO DE REDE\r",
+                "Status": "Venceu",
+                "Valor": 1400.0
+            },
+            {
+                "Item": 3,
+                "Desc": "FONTE DE ALIMENTAÇÃO 12V 2A\r",
+                "Status": "Venceu",
+                "Valor": 3960.0
+            },
+            {
+                "Item": 4,
+                "Desc": "HDD PARA GRAVADOR NVR\r",
+                "Status": "Venceu",
+                "Valor": 4500.0
+            },
+            {
+                "Item": 5,
+                "Desc": "CABO FLEXIVEL 2,5MM\r",
+                "Status": "Venceu",
+                "Valor": 1800.0
+            },
+            {
+                "Item": 6,
+                "Desc": "CAMERA BULLET IP 4 MP COLOR\r",
+                "Status": "Venceu",
+                "Valor": 48964.8
+            },
+            {
+                "Item": 7,
+                "Desc": "GRAVADOR DIGITAL DE VÍDEO IP 4K 64 CANAIS\r",
+                "Status": "Venceu",
+                "Valor": 18000.0
+            },
+            {
+                "Item": 8,
+                "Desc": "NOBREAK 1500 VA\r",
+                "Status": "Venceu",
+                "Valor": 1500.0
+            },
+            {
+                "Item": 9,
+                "Desc": "SWITCH 16 PORTAS 10/100/1000 PARA RACK\r",
+                "Status": "Venceu",
+                "Valor": 4400.0
+            },
+            {
+                "Item": 10,
+                "Desc": "SWITCH DE 8 PORTAS 10/100/1000\r",
+                "Status": "Venceu",
+                "Valor": 1925.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-21T08:45:51",
@@ -3115,14 +3681,25 @@
         "UASG": "13"
     },
     {
-        "CNPJ": "00331788003053",
-        "Data": "20250307",
-        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - POÇOS",
-        "Itens": 1,
-        "Licitacao": "2139000022025",
+        "DataResult": "2025-03-24T10:39:51",
+        "UASG": "2139",
+        "Edital": "00002/2025",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "Total": 24346.56,
-        "UASG": "2139"
+        "UF": "MG",
+        "Municipio": "Itanhandu",
+        "Fornecedor": "AIR LIQUIDE BRASIL LTDA - POÇOS",
+        "CNPJ": "00331788003053",
+        "InicioRec": "",
+        "FimRec": "2025-04-09T09:00:00",
+        "Licitacao": "2139000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LOCAÇÃO MENSAL DE APARELHO CPAP COM UMIDIFICADOR E ACESSÓRIOS\r",
+                "Status": "Venceu",
+                "Valor": 24346.56
+            }
+        ]
     },
     {
         "CNPJ": "34840358000144",
@@ -3135,14 +3712,31 @@
         "UASG": "1474"
     },
     {
-        "CNPJ": "09253952000191",
-        "Data": "20250325",
-        "Fornecedor": "SANDRO VILMAR PIRES ME",
-        "Itens": 2,
-        "Licitacao": "1441000132025",
+        "DataResult": "2025-04-02T14:28:37",
+        "UASG": "1441",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE VICENCIA",
-        "Total": 118350.0,
-        "UASG": "1441"
+        "UF": "PE",
+        "Municipio": "Vicência",
+        "Fornecedor": "SANDRO VILMAR PIRES ME",
+        "CNPJ": "09253952000191",
+        "InicioRec": "",
+        "FimRec": "2025-04-07T09:30:00",
+        "Licitacao": "1441000132025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COMPUTADOR (DESKTOP). Especificação mínima: que esteja em linha de produção pelo fabricante; computador desktop com processador no mínimo Intel corei3 miinimo oitva geracao  aMD a10 ou similar; possuir 1 (um) disco rígido de 500 gigabyte; memória RAM de 08 (oito) gigabytes,  do tipo SDRAM ddr4 2.133 MHZ ou superior, operando em modalidade dual CHANNEL; a placa principal deve ter arquitetura ATX, MICROATX, BTX ou MICROBTX, conforme padrões estabelecidos e divulgados no sítio www.formfactors.org, organismo que define os padrões existentes; possuir pelo menos 01 (um) slot PCI-EXPRESS 2.0 x16 ou superior; possuir sistema de detecção de intrusão de chassis, com acionador instalado no gabinete; o adaptador de vídeo integrado deverá ser no mínimo de 01 (um) gigabyte de memória, possuir suporte ao MICROSOFT DIRECTX 10.1 ou superior, suportar monitor estendido, possuir no mínimo 02 (duas) saídas de vídeo, sendo pelo menos 01 (uma) digital do tipo HDMI, display PORT ou DVI; unidade combinada de gravação de disco ótico CD, DVD rom; teclado USB, abnt2, 107 teclas (com fio) e mouse USB, 800 DPI, 2 botões, scroll (com fio); monitor de LED 19 polegadas (widescreen 16:9); interfaces de rede 10/100/1000 e WIFI padrão IEEE 802.11 b/g/n; sistema operacional Windows 10 pro (64 bits); fonte compatível e que suporte toda a configuração exigida no item; gabinete e periféricos deverão funcionar na vertical ou horizontal; todos os equipamentos ofertados (gabinete, teclado, mouse e monitor) devem possuir gradações neutras das cores branca, preta ou cinza, e manter o mesmo padrão de cor; todos os componentes do produto deverão ser novos, sem uso, reforma ou recondicionamento; garantia de 12 meses. AMPLA CONCORRÊNCIA 75%.  ",
+                "Status": "Venceu",
+                "Valor": 89420.0
+            },
+            {
+                "Item": 2,
+                "Desc": "COMPUTADOR (DESKTOP). Especificação mínima: que esteja em linha de produção pelo fabricante; computador desktop com processador no mínimo Intel corei3 miinimo oitva geracao  aMD a10 ou similar; possuir 1 (um) disco rígido de 500 gigabyte; memória RAM de 08 (oito) gigabytes,  do tipo SDRAM ddr4 2.133 MHZ ou superior, operando em modalidade dual CHANNEL; a placa principal deve ter arquitetura ATX, MICROATX, BTX ou MICROBTX, conforme padrões estabelecidos e divulgados no sítio www.formfactors.org, organismo que define os padrões existentes; possuir pelo menos 01 (um) slot PCI-EXPRESS 2.0 x16 ou superior; possuir sistema de detecção de intrusão de chassis, com acionador instalado no gabinete; o adaptador de vídeo integrado deverá ser no mínimo de 01 (um) gigabyte de memória, possuir suporte ao MICROSOFT DIRECTX 10.1 ou superior, suportar monitor estendido, possuir no mínimo 02 (duas) saídas de vídeo, sendo pelo menos 01 (uma) digital do tipo HDMI, display PORT ou DVI; unidade combinada de gravação de disco ótico CD, DVD rom; teclado USB, abnt2, 107 teclas (com fio) e mouse USB, 800 DPI, 2 botões, scroll (com fio); monitor de LED 19 polegadas (widescreen 16:9); interfaces de rede 10/100/1000 e WIFI padrão IEEE 802.11 b/g/n; sistema operacional Windows 10 pro (64 bits); fonte compatível e que suporte toda a configuração exigida no item; gabinete e periféricos deverão funcionar na vertical ou horizontal; todos os equipamentos ofertados (gabinete, teclado, mouse e monitor) devem possuir gradações neutras das cores branca, preta ou cinza, e manter o mesmo padrão de cor; todos os componentes do produto deverão ser novos, sem uso, reforma ou recondicionamento; garantia de 12 meses. COTA RESERVADA ME, EPP, ATÉ 25%.  ",
+                "Status": "Venceu",
+                "Valor": 28930.0
+            }
+        ]
     },
     {
         "CNPJ": "26959683000100",
@@ -3155,14 +3749,25 @@
         "UASG": "1127"
     },
     {
-        "CNPJ": "50752211001040",
-        "Data": "20250325",
-        "Fornecedor": "JAVEP-VEICULOS, PECAS E SERVICOS LTDA",
-        "Itens": 1,
-        "Licitacao": "522000872025",
+        "DataResult": "2025-04-22T09:18:14",
+        "UASG": "522",
+        "Edital": "00087/2025",
         "Orgao": "MUNICIPIO DE CORDISBURGO",
-        "Total": 139900.0,
-        "UASG": "522"
+        "UF": "MG",
+        "Municipio": "Cordisburgo",
+        "Fornecedor": "JAVEP-VEICULOS, PECAS E SERVICOS LTDA",
+        "CNPJ": "50752211001040",
+        "InicioRec": "",
+        "FimRec": "2025-05-09T09:00:00",
+        "Licitacao": "522000872025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "VEICULO DE PASSEIO 7 LUGARES VEÍCULO DE PASSEIO 7 LUGARES MODELO/ANO NÃO INFERIOR A 2024/2025 CARACTERÍSTICAS MÍNIMAS: MOTORIZAÇÃO 1.8; MÍNIMA POTÊNCIA EFETIVA LÍQUIDA 111 CV (E) E 106 CV (G); COMBUSTÍVEL GASOLINA E ETANOL (FLEX); TRANSMISSÃO MANUAL DE 07 MARCHAS (06 A FRENTE + 01 RÉ); DIREÇÃO HIDRÁULICA OU ELÉTRICA; PNEUS DA LINHA DE MONTAGEM; ESTEPE DA LINHA DE MONTAGEM; SISTEMA DE FREIOS ABS COM EBD; SISTEMA ELÉTRICO MÍNIMO 12 VOLTS; CAPACIDADE PARA 7 PASSAGEIROS; 05 PORTAS (INCLUINDO A PORTA TRASEIRA); COR BRANCA; VIDROS ELÉTRICOS DIANTEIROS ETRASEIROS; TRAVA ELÉTRICA; SISTEMA DE AR CONDICIONADO; SISTEMA DE SOM RÁDIO AM/FM/USB COM AUTO FALANTES; KIT DEFERRAMENTAS EXIGIDO POR LEI E NORMAS DO CONTRAN; 2 AIRBAGS FRONTAIS MOTORISTA E PASSAGEIRO; CINTO 3 PONTAS; ENCOSTO DE CABEÇA; E DEMAIS ITENS DE SEGURANÇA PREVISTOS EM LEGISLAÇÃO. GARANTIA DE 12 MESES DA ENTRADA EM OPERAÇÃO; PROMOVER A ENTREGA TÉCNICA. -PODENDO SER OFERTADOANO/MODELO SUPERIOR. TODOS OS ACESSÓRIOS MÍNIMOS OBRIGATÓRIOS, CONFORME LEGISLAÇÃO EM VIGOR. GARANTIA MÍNIMA DO FORNECEDOR DE 12 MESES.",
+                "Status": "Venceu",
+                "Valor": 139900.0
+            }
+        ]
     },
     {
         "CNPJ": "26401571000121",
@@ -3185,14 +3790,25 @@
         "UASG": "10"
     },
     {
-        "CNPJ": "58543909000176",
-        "Data": "20250307",
-        "Fornecedor": "ANGULAR SOLUCOES EM DISTRIBUICAO LTDA",
-        "Itens": 1,
-        "Licitacao": "128000012025",
+        "DataResult": "2025-05-22T16:36:39",
+        "UASG": "128",
+        "Edital": "00001/2025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 11959.8,
-        "UASG": "128"
+        "UF": "MG",
+        "Municipio": "Sete Lagoas",
+        "Fornecedor": "ANGULAR SOLUCOES EM DISTRIBUICAO LTDA",
+        "CNPJ": "58543909000176",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:00:00",
+        "Licitacao": "128000012025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "CADEIRA PRESIDENTE GIRATÓRIA BRAÇOS REGULÁVEIS ESTOFADA EM COURO\nMODELO DE REFERÊNCIA: FOX RACER PRETA - UT-C300\nAJUSTE DE ALTURA: SIM\nAPOIO PARA OS PÉS: NÃO\nBASE: CROMADA\nBRAÇO REGULÁVEL: NÃO\nCATEGORIA: ESCRITÓRIO\nCLASSE DO PISTÃO: 2\nCOM APOIO DE BRAÇO: SIM\nCOM RODAS: SIM\nCOR: PRETA\nENCOSTO RECLINÁVEL: SISTEMA RELAX\nGIRATÓRIA: SIM\nPESO SUPORTADO: 120KG\nTECIDO DO REVESTIMENTO: METAL + MADEIRA COMPENSADA\nGARANTIA: 12 MESES CONTRA DEFEITOS DE FABRICAÇÃO\n",
+                "Status": "Venceu",
+                "Valor": 11959.8
+            }
+        ]
     },
     {
         "CNPJ": "00331788003053",
@@ -3226,14 +3842,25 @@
         ]
     },
     {
-        "CNPJ": "07752236000123",
-        "Data": "20250324",
-        "Fornecedor": "MEDILAR IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS MEDICO HOSPITLARES",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
+        "DataResult": "2025-04-03T08:17:05",
+        "UASG": "08011",
+        "Edital": "00170/2025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 6840.0,
-        "UASG": "08011"
+        "UF": "RS",
+        "Municipio": "Osório",
+        "Fornecedor": "MEDILAR IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS MEDICO HOSPITLARES",
+        "CNPJ": "07752236000123",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T08:59:00",
+        "Licitacao": "08011001702025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "ALOPURINOL 300 MG",
+                "Status": "Venceu",
+                "Valor": 6840.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-07T09:10:20",
@@ -3344,24 +3971,100 @@
         "UASG": "69"
     },
     {
-        "CNPJ": "06294126000100",
-        "Data": "20250324",
-        "Fornecedor": "SOMA/RS PRODUTOS HOSPITALARES LTDA",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
+        "DataResult": "2025-04-03T08:17:05",
+        "UASG": "08011",
+        "Edital": "00170/2025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 2300.0,
-        "UASG": "08011"
+        "UF": "RS",
+        "Municipio": "Osório",
+        "Fornecedor": "SOMA/RS PRODUTOS HOSPITALARES LTDA",
+        "CNPJ": "06294126000100",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T08:59:00",
+        "Licitacao": "08011001702025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "ALENDRONATO DE SODIO 70MG",
+                "Status": "Venceu",
+                "Valor": 2300.0
+            }
+        ]
     },
     {
-        "CNPJ": "35078961000101",
-        "Data": "20250318",
-        "Fornecedor": "RP CARVALHO ASSESSORIA E GESTAO LTDA",
-        "Itens": 10,
-        "Licitacao": "301000152025",
+        "DataResult": "2025-04-08T14:49:01",
+        "UASG": "301",
+        "Edital": "00015/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 17855.04,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "RP CARVALHO ASSESSORIA E GESTAO LTDA",
+        "CNPJ": "35078961000101",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T13:00:00",
+        "Licitacao": "301000152025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE POEIRA TOTAL E SILICA LIVRE CRISTALINA.  AVALIAÇÃO QUANTITATIVA DE POEIRA TOTAL MAIS SILICA LIVRE CRISTALINA CONFORME A METODOLOGIA DE NIOSH 0500 E 7602.",
+                "Status": "Venceu",
+                "Valor": 1578.4
+            },
+            {
+                "Item": 2,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE BENZENO, TOLUENO, ETILBENZENO E XILENO (BTEX).  AVALIAÇÃO QUANTITATIVA DE BENZENO, TOLUENO, ETILBENZENO E XILENO (BTEX) CONFORME A METODOLOGIA DE NIOSH 1501",
+                "Status": "Venceu",
+                "Valor": 811.08
+            },
+            {
+                "Item": 3,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE FUMOS METÁLICOS AVALIAÇÃO QUANTITATIVA DE FUMOS METÁLICOS COM OS SEGUINTES METAIS: BÁRIO, BERÍLIO, MOLIBDÊNIO, TITÂNIO, TUNGSTÊNIO, VANÁDIO, ESTANHO, CÁDMIO, ALUMÍNIO, CHUMBO, COBRE, CROMO, FERRO, MANGANÊS, NÍQUEL, ZINCO, COBALTO, MAGNÉSIO, CÁLCIO, POTÁSSIO, CONFORME A METODOLOGIA DE OSHA ID – 121 OU METODOLOGIA SIMILAR.",
+                "Status": "Venceu",
+                "Valor": 6179.2
+            },
+            {
+                "Item": 4,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE FUMOS DE ASFALTO (BETUME)  AVALIAÇÃO QUANTITATIVA DE FUMOS DE ASFALTO (BETUME) (CAS 8052-42-4) FRAÇÃO SOLÚVEL EM BENZENO E PARTICULADO TOTAL CONFORME A METODOLOGIA DE NIOSH 5042",
+                "Status": "Venceu",
+                "Valor": 1162.4
+            },
+            {
+                "Item": 5,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE HIPOCLORITO DE SÓDIO  AVALIAÇÃO QUANTITATIVA DE HIPOCLORITO DE SÓDIO CONFORME A METODOLOGIA DE NIOSH 7907",
+                "Status": "Venceu",
+                "Valor": 3032.64
+            },
+            {
+                "Item": 6,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE VAPORES ORGÂNICOS  AVALIAÇÃO QUANTITATIVA DE VAPORES ORGÂNICOS CONFORME A METODOLOGIA DE NIOSH 2549",
+                "Status": "Venceu",
+                "Valor": 1702.28
+            },
+            {
+                "Item": 7,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE GASOLINA  AVALIAÇÃO QUANTITATIVA DE GASOLINA CONFORME A METODOLOGIA DE NIOSH 1550.",
+                "Status": "Venceu",
+                "Valor": 629.6
+            },
+            {
+                "Item": 8,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE GLIFOSATO AVALIAÇÃO QUANTITATIVA DE GLIFOSATO CONFORME A METODOLOGIA ADEQUADA, PODENDO SER ADAPTADA DA OSHA PV2067",
+                "Status": "Venceu",
+                "Valor": 1278.32
+            },
+            {
+                "Item": 9,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE ISOPROPANOL (ÁLCOOL ISOPROPÍLICO) AVALIAÇÃO QUANTITATIVA DE ISOPROPANOL (ÁLCOOL ISOPROPÍLICO) CONFORME A METODOLOGIA DE NIOSH 1400.",
+                "Status": "Venceu",
+                "Valor": 614.04
+            },
+            {
+                "Item": 10,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS PARA AVALIAÇÃO QUANTITATIVA DE PERÓXIDO DE HIDROGÊNIO  AVALIAÇÃO QUANTITATIVA DE PERÓXIDO DE HIDROGÊNIO CONFORME A METODOLOGIA DE OSHA 1019.",
+                "Status": "Venceu",
+                "Valor": 867.08
+            }
+        ]
     },
     {
         "CNPJ": "24708774000130",
@@ -3405,14 +4108,25 @@
         "UASG": "547"
     },
     {
-        "CNPJ": "46388826000170",
-        "Data": "20250324",
-        "Fornecedor": "OCIAN COMERCIAL FARMACEUTICA UNIPESSOAL LTDA",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
+        "DataResult": "2025-04-03T08:17:05",
+        "UASG": "08011",
+        "Edital": "00170/2025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 6000.0,
-        "UASG": "08011"
+        "UF": "RS",
+        "Municipio": "Osório",
+        "Fornecedor": "OCIAN COMERCIAL FARMACEUTICA UNIPESSOAL LTDA",
+        "CNPJ": "46388826000170",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T08:59:00",
+        "Licitacao": "08011001702025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "ALOPURINOL 100MG",
+                "Status": "Venceu",
+                "Valor": 6000.0
+            }
+        ]
     },
     {
         "CNPJ": "11708655000135",
@@ -3425,14 +4139,25 @@
         "UASG": "831"
     },
     {
-        "CNPJ": "18209965000154",
-        "Data": "20250314",
-        "Fornecedor": "BAMAQ SA BANDEIRANTES MAQUINAS E EQUIPAMENTOS - MATRIZ",
-        "Itens": 1,
-        "Licitacao": "892000062025",
+        "DataResult": "2025-04-02T13:51:47",
+        "UASG": "892",
+        "Edital": "00006/2025",
         "Orgao": "MUNICIPIO DE SANTA RITA DE CALDAS",
-        "Total": 450000.0,
-        "UASG": "892"
+        "UF": "MG",
+        "Municipio": "Santa Rita de Caldas",
+        "Fornecedor": "BAMAQ SA BANDEIRANTES MAQUINAS E EQUIPAMENTOS - MATRIZ",
+        "CNPJ": "18209965000154",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T09:00:00",
+        "Licitacao": "892000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "RETROESCAVADEIRA -",
+                "Status": "Venceu",
+                "Valor": 450000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-21T08:45:51",
@@ -3466,14 +4191,37 @@
         "UASG": "301"
     },
     {
-        "CNPJ": "03652030000170",
-        "Data": "20250324",
-        "Fornecedor": "CENTERMEDI COMERCIO DE PRODUTOS HOSPITALARES LTDA",
-        "Itens": 3,
-        "Licitacao": "08011001702025",
+        "DataResult": "2025-04-03T08:17:05",
+        "UASG": "08011",
+        "Edital": "00170/2025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 11050.0,
-        "UASG": "08011"
+        "UF": "RS",
+        "Municipio": "Osório",
+        "Fornecedor": "CENTERMEDI COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+        "CNPJ": "03652030000170",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T08:59:00",
+        "Licitacao": "08011001702025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "ALBENDAZOL 400MG",
+                "Status": "Venceu",
+                "Valor": 1950.0
+            },
+            {
+                "Item": 6,
+                "Desc": "ALBENDAZOL SUSP. 40MG/ML - 10ML",
+                "Status": "Venceu",
+                "Valor": 4900.0
+            },
+            {
+                "Item": 10,
+                "Desc": "AMBROXOL, CLORIDRATO 15MG/5ML - 100ML",
+                "Status": "Venceu",
+                "Valor": 4200.0
+            }
+        ]
     },
     {
         "CNPJ": "07062925000106",
@@ -3544,24 +4292,70 @@
         ]
     },
     {
-        "CNPJ": "18707422000167",
-        "Data": "20250317",
-        "Fornecedor": "MARKA VEICULOS E PEÇAS S/A",
-        "Itens": 1,
-        "Licitacao": "703000132025",
+        "DataResult": "2025-04-02T16:45:16",
+        "UASG": "703",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
-        "Total": 134900.0,
-        "UASG": "703"
+        "UF": "MG",
+        "Municipio": "Carmópolis de Minas",
+        "Fornecedor": "MARKA VEICULOS E PEÇAS S/A",
+        "CNPJ": "18707422000167",
+        "InicioRec": "",
+        "FimRec": "2025-04-17T13:00:00",
+        "Licitacao": "703000132025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "VEÍCULO NOVO, ZERO KM, 07 (SETE) LUGARES; ANO DE FABRICAÇÃO 2024 ANO MODELO 2024.\nMOTORIZAÇÃO MÍNIMA 1.8. COR BRANCO. AIRBAG DUPLO. ALARME ANTIFURTO. CONTROLE ELETRÔNICO DE ESTABILIDADE E TRAÇÃO. LUZES INDICADORAS DE DIREÇÃO LATERAIS. LANTERNA DE NEBLINA. REGULAGEM DE ALTURA DOS FARÓIS. CONJUNTO RODA DE AÇO E PNEU SOBRESSALENTE ARO 16\". AR CONDICIONADO.\nLIMPADOR E LAVADOR ELÉTRICO DO VIDRO TRASEIRO. PAINEL DE INSTRUMENTOS COM CONTA-GIROS, HODÔMETRO PARCIAL, MARCADOR DE NÍVEL DE COMBUSTÍVEL E DEMAIS FUNÇÕES. TRAVA ELÉTRICA EM TODAS AS PORTAS COM ACIONAMENTO NA CHAVE. VIDRO ELÉTRICO EM TODAS AS PORTAS, BANCO DO MOTORISTA COM REGULAGEM DE ALTURA. ENCOSTOS DE CABEÇA LATERAIS E CENTRAL DO BANCO DA SEGUNDA FILEIRA. ENCOSTO DE CABEÇA DOS BANCOS DIANTEIROS COM AJUSTE DE ALTURA. ESPELHOS RETROVISORES EXTERNOS ELÉTRICOS NA COR DO VEÍCULO. SENSOR DE ESTACIONAMENTO TRASEIRO. RÁDIO AM/FM, ENTRADA USB, CONEXÃO BLUETOOTH PARA CELULAR E CONFIGURAÇÕES DO VEÍCULO. SISTEMA DE SOM (RÁDIO) INSTALADO COM CONJUNTO DE ALTO FALANTES E ANTENA. LUZ DE POSIÇÃO EM LED. FARÓIS DE NEBLINA. COMPUTADOR DE BORDO COM MOSTRADOR NO PAINEL DE INSTRUMENTOS COM FUNÇÕES DE CONSUMO MÉDIO, VELOCIDADE MÉDIA, AUTONOMIA, ENTRE OUTRAS. CÂMERA DE RÉ. FREIOS ABS.\nAPLICAÇÃO DE PELÍCULA DE PROTEÇÃO SOLAR NOS VIDROS LATERAIS E TRASEIRO, DE ACORDO COM AS NORMAS VIGENTES. EQUIPADO COM PROTETOR DO CARTER, CINTOS DE SEGURANÇA, CONJUNTO DE TAPETES DE BORRACHA, MACACO, CHAVE DE RODA, ESTEPE E DEMAIS ITENS DE SEGURANÇA OBRIGATÓRIOS CONSTANTES NA LEGISLAÇÃO VIGENTE E EM CONFORMIDADE COM O CÓDIGO NACIONAL DE TRÂNSITO, ALÉM DAS DEMAIS CARACTERÍSTICAS DE ACORDO COM O MODELO DO FABRICANTE.",
+                "Status": "Venceu",
+                "Valor": 134900.0
+            }
+        ]
     },
     {
-        "CNPJ": "47094894000190",
-        "Data": "20250325",
-        "Fornecedor": "AL OLIVEIRA LTDA",
-        "Itens": 5,
-        "Licitacao": "1441000132025",
+        "DataResult": "2025-04-02T14:28:37",
+        "UASG": "1441",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE VICENCIA",
-        "Total": 84448.7,
-        "UASG": "1441"
+        "UF": "PE",
+        "Municipio": "Vicência",
+        "Fornecedor": "AL OLIVEIRA LTDA",
+        "CNPJ": "47094894000190",
+        "InicioRec": "",
+        "FimRec": "2025-04-07T09:30:00",
+        "Licitacao": "1441000132025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "IMPRESSORA  MULTIFUNCIONAL COM TANQUE DE TINTA. Impressora Multifuncional com Tanque jato de Tinta colorida - Bivolt; - Tanque de Tinta de Fabrica; - Scanner; - Copiadora; - Wifi- Conexões USB 2.0 de alta velocidade; Wi-Fi ; Impressão frente e verso; Wireless; Velocidade de 15ppm em cores; Velocidade em preto 33 ppm; papel suportado A4, A5, A6, papeis especiais; Capacidade de papel suportado: 100 folhas. Sistema Operacional Windows XP/XP Professional x64 Edition/Vista/7/8/8.1,Windows Server 2003/2003 x64 Edition/2003 R2/2003 R2 x64 Edition/2008/2008 R2/2012/2012 R2, Mac OS X 10.6.8, 10.7.x, 10.8.x, 10.9.x, ou equivalente.  AMPLA CONCORRÊNCIA 75%.  ",
+                "Status": "Venceu",
+                "Valor": 49980.0
+            },
+            {
+                "Item": 6,
+                "Desc": "IMPRESSORA  MULTIFUNCIONAL COM TANQUE DE TINTA. Impressora Multifuncional com Tanque jato de Tinta colorida - Bivolt; - Tanque de Tinta de Fabrica; - Scanner; - Copiadora; - Wifi- Conexões USB 2.0 de alta velocidade; Wi-Fi ; Impressão frente e verso; Wireless; Velocidade de 15ppm em cores; Velocidade em preto 33 ppm; papel suportado A4, A5, A6, papeis especiais; Capacidade de papel suportado: 100 folhas. Sistema Operacional Windows XP/XP Professional x64 Edition/Vista/7/8/8.1,Windows Server 2003/2003 x64 Edition/2003 R2/2003 R2 x64 Edition/2008/2008 R2/2012/2012 R2, Mac OS X 10.6.8, 10.7.x, 10.8.x, 10.9.x, ou equivalente.  COTA RESERVADA ME, EPP, ATÉ 25%.  ",
+                "Status": "Venceu",
+                "Valor": 15470.0
+            },
+            {
+                "Item": 7,
+                "Desc": "CABO HDMI Comprimento: 2 metros. Condutores: Feitos de cobre. Revestimento: PVC preto. Velocidade: Alta velocidade. Contatos: Banhados a ouro. Garantia: 1 ano.",
+                "Status": "Venceu",
+                "Valor": 499.8
+            },
+            {
+                "Item": 8,
+                "Desc": "CABO VGA Comprimento: Mínimo de 1,5 metros. Conector: VGA – VGA Garantia: 1 ano",
+                "Status": "Venceu",
+                "Valor": 499.8
+            },
+            {
+                "Item": 10,
+                "Desc": "ESTABILIZADOR. Especificação mínima: 1000w Bivolt, o produto deverá ser novo, sem uso, reforma ou recondicionamento garantia de 06 meses.",
+                "Status": "Venceu",
+                "Valor": 17999.1
+            }
+        ]
     },
     {
         "CNPJ": "10685820000118",
@@ -3607,14 +4401,25 @@
         ]
     },
     {
-        "CNPJ": "24675507000103",
-        "Data": "20250325",
-        "Fornecedor": "MICROFORT INFORMATICA LTDA",
-        "Itens": 1,
-        "Licitacao": "1441000132025",
+        "DataResult": "2025-04-02T14:28:37",
+        "UASG": "1441",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE VICENCIA",
-        "Total": 36720.0,
-        "UASG": "1441"
+        "UF": "PE",
+        "Municipio": "Vicência",
+        "Fornecedor": "MICROFORT INFORMATICA LTDA",
+        "CNPJ": "24675507000103",
+        "InicioRec": "",
+        "FimRec": "2025-04-07T09:30:00",
+        "Licitacao": "1441000132025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "IMPRESSORA LASER MULTIFUNCIONAL (COPIADORA, SCANNER E FAX). Especificação mínima: Laserjet, Impressão/ Scanner / Copiadora/, Monocromática (Preto), Impressão duplex automática, Touchscreen de 2.7' para a navegação e menu intuitivo, Alimentador automático de documentos para 35 folhas, Bandeja de papel com capacidade para 250 folhas, Impressão a laser de até 2400 x 600 dpi, Conexão USB 2.0 de alta velocidade, rede Ethernet e Wireless, Velocidade de impressões e cópias em até 30 ppm; o produto deverá ser novo, sem uso, reforma ou recondicionamento; garantia mínima de 12 meses. ",
+                "Status": "Venceu",
+                "Valor": 36720.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-23T11:16:06",
@@ -3660,14 +4465,31 @@
         "UASG": "10"
     },
     {
-        "CNPJ": "15310120000162",
-        "Data": "20250307",
-        "Fornecedor": "L.M. Comercio de Móveis Ltda",
-        "Itens": 2,
-        "Licitacao": "128000012025",
+        "DataResult": "2025-05-22T16:36:39",
+        "UASG": "128",
+        "Edital": "00001/2025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 50800.0,
-        "UASG": "128"
+        "UF": "MG",
+        "Municipio": "Sete Lagoas",
+        "Fornecedor": "L.M. Comercio de Móveis Ltda",
+        "CNPJ": "15310120000162",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:00:00",
+        "Licitacao": "128000012025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CADEIRA SECRETÁRIA GIRATÓRIA SEM BRAÇOS - TECIDO PRETO MODELO DE REFERÊNCIA: ULTRA MÓVEIS\nASSENTO: ESPUMA INJETÁVEL D33\nENCOSTO: ESPUMA INJETÁVEL D33\nREGULAGEM DO ASSENTO: REGULAGEM DE ALTURA\nREGULAGEM DO ENCOSTO: REGULAGEM DE ALTURA E INCLINAÇÃO ATÉ 45º\nMECANISMO: BACKYSYSTEM ERGONÔMICA\nBRAÇO: REGULÁVEL NA ALTURA\nREVESTIMENTO: VIENA\nBASE: NYLON\nPESO MÉDIO SUPORTADO: 110 KG\nCOR: PRETA\nNORMA: NR 17 DA ABNT\nGARANTIA: 12 MESES CONTRA DEFEITOS DE FABRICAÇÃO",
+                "Status": "Venceu",
+                "Valor": 27900.0
+            },
+            {
+                "Item": 2,
+                "Desc": "CADEIRA EXECUTIVA GIRATÓRIA COM BRAÇOS - TECIDO PRETO\nMODELO DE REFERÊNCIA: FOX RACER PRETA - UT-C300\nASSENTO: ESPUMA INJETÁVEL D33\nENCOSTO: ESPUMA INJETÁVEL D33\nREGULAGEM DO ASSENTO: REGULAGEM DE ALTURA\nREGULAGEM DO ENCOSTO: REGULAGEM DE ALTURA E INCLINAÇÃO ATÉ 45º\nMECANISMO: BACKYSYSTEM ERGONÔMICA\nBRAÇO: REGULÁVEL NA ALTURA\nREVESTIMENTO: VIENA\nBASE: NYLON\nPESO MÉDIO SUPORTADO: 110 KG\nCOR: PRETA\nNORMA: NR 17 DA ABNT\nGARANTIA: 12 MESES CONTRA DEFEITOS DE FABRICAÇÃO\n",
+                "Status": "Venceu",
+                "Valor": 22900.0
+            }
+        ]
     },
     {
         "CNPJ": "73856593000166",
@@ -3700,14 +4522,25 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "47188112000181",
-        "Data": "20250321",
-        "Fornecedor": "EDS COMERCIO E SOLUCOES LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
+        "DataResult": "2025-04-09T16:55:55",
+        "UASG": "850",
+        "Edital": "00004/2025",
         "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 289344.0,
-        "UASG": "850"
+        "UF": "MG",
+        "Municipio": "Itajubá",
+        "Fornecedor": "EDS COMERCIO E SOLUCOES LTDA",
+        "CNPJ": "47188112000181",
+        "InicioRec": "",
+        "FimRec": "2025-04-23T13:00:00",
+        "Licitacao": "850000042025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "COMPUTADOR TIPO ALL IN ON -PROCESSADOR 13ª geração Intel® ou superior CoreTM i7-1355U ou similar, com cachê de 12mb até 5.10 ghz; 8 núcleos; threads 16; litografia 14nm; velocidade de barramento 8gt/s dmi3; tdp 125w – placa mãe compatível com o processador descrito anteriormente, 16GB DDR4 (2x8GB) 3200MT/s; - SSD de 512GB ou maior PCIe NVMe M.2 \nPLACA DE VÍDEO com memória gráfica compartilhada ou similar clock dos núcleos 350mhz; quantidade máxima de memória gráfica de vídeo 64gb; máxima frequência dinâmica de placa gráfica 1.20ghz; DIRECTX 12.1 - Teclado e mouse sem fio, Branco Gelo, em Português ABNT2,PORTAS DE CONEXÃO: pelo menos 1 porta USB 3.2 Type-C Gen 2 e 3 portas USB 3.2 Gen 1\n1 porta de saída HDMI 1.4b/HDCP 2.3\n1 porta de entrada HDMI 1.4b/HDCP 1.4\n1 porta do adaptador de energia\n1 porta Ethernet RJ45\n1 porta USB 3.2 Gen 2 com PowerShare\n1 Conector de áudio\nWIRELESS: Intel® Wi-Fi 6E AX211, 2x2, 802.11ax, placa de rede wireless com Bluetooth®\nTELA IPS FULL HD DE 23.8\" ou maior (1920 x 1080), anti-reflexo e borda infinita;\nWINDOWS 11 PRO, Português, 01 licença original para cada computador.\nGARANTIA ON SITE assistência técnica in loco ofertados pelo fabricante do equipamento – suporte todos os drivers para os sistemas operacionais suportados devem estar disponíveis para download na web-site do fabricante do equipamento; o fabricante do equipamento deverá possuir um sistema de atendimento de suporte técnico via telefone 0800; Suporte Técnico para hardware; Suporte no horário comercial; Solicitação de peças on-line; Resposta no local e peças no próximo dia útil; Serviços de devolução para reparo; Suporte cooperativo para software; Suporte 24 horas por dia, 7 dias por semana; Serviços de resposta no local, de peças no mesmo dia e de missão crítica; Opções especializadas no local; Opções de proteção de dados e ativos; Opções de serviço de consultoria e manutenção proativa; Prestação de suporte otimizado via parceiro por colaboração; Recursos de suporte remoto.\nG",
+                "Status": "Venceu",
+                "Valor": 289344.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T08:46:58",
@@ -3751,14 +4584,31 @@
         "UASG": "1127"
     },
     {
-        "CNPJ": "30977140000185",
-        "Data": "20250321",
-        "Fornecedor": "NINE DIGITAL BANK CERTIFICAÇÃO DIGITAL E SOLUÇÕES EMPRESARIA",
-        "Itens": 2,
-        "Licitacao": "591000202025",
+        "DataResult": "2025-04-03T07:59:57",
+        "UASG": "591",
+        "Edital": "00020/2025",
         "Orgao": "MUNICIPIO DE CONCEICAO DO RIO VERDE",
-        "Total": 202.0,
-        "UASG": "591"
+        "UF": "MG",
+        "Municipio": "Conceição do Rio Verde",
+        "Fornecedor": "NINE DIGITAL BANK CERTIFICAÇÃO DIGITAL E SOLUÇÕES EMPRESARIA",
+        "CNPJ": "30977140000185",
+        "InicioRec": "",
+        "FimRec": "2025-04-03T14:00:00",
+        "Licitacao": "591000202025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "CANETINHA HIDROCOR COM 24 UNIDADES - Canetinha hidrocor com 24 unidades",
+                "Status": "Venceu",
+                "Valor": 24.0
+            },
+            {
+                "Item": 6,
+                "Desc": "CHITÃO DE ALGODÃO - Chitão de algodão",
+                "Status": "Venceu",
+                "Valor": 178.0
+            }
+        ]
     },
     {
         "CNPJ": "39935073000100",
@@ -3952,14 +4802,31 @@
         "UASG": "777"
     },
     {
-        "CNPJ": "55149591000236",
-        "Data": "20250321",
-        "Fornecedor": "ALLSET TECNOLOGIA LTDA",
-        "Itens": 1,
-        "Licitacao": "850000042025",
+        "DataResult": "2025-04-09T16:55:55",
+        "UASG": "850",
+        "Edital": "00004/2025",
         "Orgao": "ITAJUBA CAMARA MUNICIPAL",
-        "Total": 7380.0,
-        "UASG": "850"
+        "UF": "MG",
+        "Municipio": "Itajubá",
+        "Fornecedor": "ALLSET TECNOLOGIA LTDA",
+        "CNPJ": "55149591000236",
+        "InicioRec": "",
+        "FimRec": "2025-04-23T13:00:00",
+        "Licitacao": "850000042025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "IMPRESSORA TIPO LASER MONOCROMÁTICA MULTIFUNCIONAL (SCANNER, IMPRESSORA E COPIADORA):\nImpressão: Impressão frente e verso; velocidade de impressão: A4 40 ppm; tipo consumível cartucho de toner e unidade de cilindro; Velocidade de CPU: 800 Mhz; resolução de impressão: 1200x1200 dpi; monocromática.\nCópia: Velociade de cópia em preto A4: 40 ppm; Resolução cópia: 1200x600 dpi; Cópia frente e verso; cópia documentos de identidade; Redução/Ampliação: 25%-400%; função classificação; cópia autônoma.\nScanner: Digitalização frente e verso; Resolução de varredura interpolada: 19200x19200 dpi; Resolução de digitalização óptica (dpi Máx): 1200x1200 dpi(vidro de exposição), 600x600 dpi(ADF); capacidade de digitalização: Monocromática e colorida.\nTratamento de Papel: capacidade do alimentador automático de documentos (máxi pag) 70; impressão frente e verso; Capacidade da bandeja multifuncional: 50 págs.; capacidade de saída de papel 150 págs;\nTamanho de papel-bandejo multiuso: carta, envelope, tamanhos personalizados, 12,7-35,6 cm(C), Oficio, Executivo, A4, A5; Tamanho de papel Bandeja de papel: Carta, Oficio, Executivo, A4, A5, A6;\nGramatura da folha-ADF(min/max):64-90 g/m2; Gramatura folha-bandeja multiuso(min/max): 60-200g /m2; Gramatura da folha-Bandeja de papel(min/max): 60-120 g/m2; capacidade padrão entrada de papel: 250 págs.\nGeral: Tela LCD; Ciclo de trabalho mensal máximo: até 50.000 páginas; volume de impressão mensal: até 3.500 páginas; Memória padrão: 512 MB;\nConectividade: Interface Ethernet Gigabit e USB2.0\nVoltagem: 127V\nSistemas Operacionais Compatíveis:\nWindows Vista® / 7 / 8 / 8.1 /10 /11 ou mais recente (32 bit, 64 bit)\nModelo de referência: Brother DCP-L5652DN\n",
+                "Status": "Venceu",
+                "Valor": 10800.0
+            },
+            {
+                "Item": 4,
+                "Desc": "IMPRESSORA LASER/LED COLORIDA:\nImpressão:\nPadrão de impressão frente e verso: Sim\nVelocidade de impressão em preto A4 (max. ppm): 26\nVelocidade de impressão em preto Carta (max. ppm): 27\nVelocidade de impressão em cores A4 (max. ppm): 26\nVelocidade de impressão em cores Carta (max. ppm): 27\nEmulação: BR-Script3, PCL5c, PCL5e, PCL6 (PCL XL Classe 3.0), PDF Versão 1.7, XPS Versão 1.0\nCópia:\nVelocidade de cópia em preto A4 (max. ppm): 26\nVelocidade de cópia em preto Carta (max. ppm): 27\nVelocidade de cópia em cores A4 (max. ppm): 26\nVelocidade de cópia em cores Carta (max. ppm): 27\nConectividade e Compatibilidade:\nCompatibilidade com dispositivos móveis: AirPrint, iPrint&Scan, Mopria, Wi-Fi Direct\nConfiguração sem fio com um toque: Wi-Fi Protected Setup Interface(s) padrão: Wireless 802.11 b/g/n, Gigabit Ethernet, Wi Fi Direct, Hi-Speed USB 2.0\nCertificação Wi-Fi: Sim\nScanner:\nDigitalização frente e verso: Não\nResolução de digitalização óptica (dpi máx.): 1200 x 1200 dpi (vidro de exposição), 600 x 600 dpi (ADF)\nVelocidades de digitalização simplex A4 (preto/cor) (max. ipm): 27 ipm / 21 ipm\nTratamento de papel:\nCapacidade do alimentador automático de documentos (máx. pág.): 50\nCapacidade de impressão frente e verso: Sim\nEntrada máxima do ADF (largura/altura): 215,9/355,6 mm (8,5/14 pol.)\nEntrada mínima do ADF (largura/altura): 105/148 mm\nCapacidade de saída de papel (págs.): 150\nGramatura da folha - ADF (mín./máx.): 60-105 g/m2\nGeral:\nCiclo de trabalho mensal máximo: 40.000 páginas\nVolume de impressão mensal recomendado: Até 3.000 páginas\nMemória padrão: 512\nCaracterísticas de pesquisa:\nFunção: Imprimir, digitalizar, copiar\nTecnologia de impressão: Laser/LED colorido\nCapacidade de papel padrão (págs.): 250\nTamanho do grupo de trabalho: Home Office/Small Office\nEnergia:\nVoltagem: CA 127V, 50/60Hz\nDeverá acompanhar pelo menos:\n1 Cartucho de toner preto para cada impressora\n1 Cartucho para cada impressora das cores Ciano, Magenta, Amarelo\n1 Conjunto de unidades cilindro\nC",
+                "Status": "Venceu",
+                "Valor": 7380.0
+            }
+        ]
     },
     {
         "CNPJ": "08296762000199",
@@ -3972,14 +4839,25 @@
         "UASG": "255"
     },
     {
-        "CNPJ": "42128438000361",
-        "Data": "20250325",
-        "Fornecedor": "42.128.438/0003-61 PRIMAVIA FRANCE COMÉRCIO DE AUT LTDA",
-        "Itens": 1,
-        "Licitacao": "522000872025",
+        "DataResult": "2025-04-22T09:18:14",
+        "UASG": "522",
+        "Edital": "00087/2025",
         "Orgao": "MUNICIPIO DE CORDISBURGO",
-        "Total": 79900.0,
-        "UASG": "522"
+        "UF": "MG",
+        "Municipio": "Cordisburgo",
+        "Fornecedor": "42.128.438/0003-61 PRIMAVIA FRANCE COMÉRCIO DE AUT LTDA",
+        "CNPJ": "42128438000361",
+        "InicioRec": "",
+        "FimRec": "2025-05-09T09:00:00",
+        "Licitacao": "522000872025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEÍCULO ZERO KM TIPO HATCH VEÍCULO ZERO KM, TIPO HATCH, 5 LUGARES COM AS SEGUINTES CARACTERÍSTICAS, ANO/MODELO NÃO INFERIOR A 2024/2025, COR BRANCA, TANQUE DE COMBUSTÍVEL COM CAPACIDADE MÍNIMA DE 45 LITROS, PORTA MALAS COM CAPACIDADE MINIMA DE 200 LITROS. CÂMBIO MANUAL, MOTOR BICOMBUSTÍVEL, MOTORIZAÇÃO MÍNIMA DE 1.0 COM NO MÍNIMO 04 CILINDROS, EQUIPADO COM AR CONDICIONADO DE FÁBRICA (QUENTE E FRIO), DIREÇÃO HIDRÁULICA, TRAVAS, ELÉTRICAS, SOM (USB, AUX E BLUETOOTH)  AIR BAG DUPLO FRONTAL; SUSPENSÃO ELEVADA O VEICULO DEVERÁ VIR ACOMPANHADO DE TODOS OS ACESSÓRIOS OBRIGATÓRIOS CONFORME NORMAS DO DETRAN E CONTRAN. TODOS OS ACESSÓRIOS MÍNIMOS OBRIGATÓRIOS, CONFORME LEGISLAÇÃO EM VIGOR. GARANTIA MÍNIMA DO FORNECEDOR DE 12 MESES.",
+                "Status": "Venceu",
+                "Valor": 79900.0
+            }
+        ]
     },
     {
         "CNPJ": "43297596000146",
@@ -3992,14 +4870,25 @@
         "UASG": "831"
     },
     {
-        "CNPJ": "04798469000764",
-        "Data": "20250325",
-        "Fornecedor": "GNC AUTOMOTORES LTDA.",
-        "Itens": 1,
-        "Licitacao": "522000872025",
+        "DataResult": "2025-04-22T09:18:14",
+        "UASG": "522",
+        "Edital": "00087/2025",
         "Orgao": "MUNICIPIO DE CORDISBURGO",
-        "Total": 274000.0,
-        "UASG": "522"
+        "UF": "MG",
+        "Municipio": "Cordisburgo",
+        "Fornecedor": "GNC AUTOMOTORES LTDA.",
+        "CNPJ": "04798469000764",
+        "InicioRec": "",
+        "FimRec": "2025-05-09T09:00:00",
+        "Licitacao": "522000872025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "VEICULO ZERO KM TIPO CAMINHONETE DIESEL VEICULO ZERO KM, TIPO CAMINHONETE, COR BRANCA, ANO FABRICAÇÃO E ANO MODELO NÃO INFERIOR A 2024, CAPACIDADE PARA 05 (CINCO) OCUPANTES, MOTORIZAÇÃO, COMBUSTÍVEL (DISEL), COM MOTORIZAÇÃO MINIMA DE 2.8 CV  COM POTENCIA MÍNIMA DE 180 CV, COM TRANSMISSÃO AUTOMÁTICA, 7 MARCHAS (6 A FRENTE + 1 RÉ) E SISTEMA DE TRAÇÃO 4X4; DIREÇÃO HIDRÁULICA OU ELÉTRICA, VOLANTE COM REGULAGEM DE ALTURA, AR CONDICIONADO, TRAVA ELÉTRICA NAS QUATRO PORTAS, VIDROS ELÉTRICO COM ONE TOUCH E ANTIESMAGAMENTO, SISTEMA DE ALARME ANTIFURTO, LIMPADOR E SISTEMA DE  DESEMBAÇADOR, PROTETOR DE MOTOR (CARTER), E JOGO DE TAPETES DE BORRACHA; TANQUE DE COMBUSTIVEL NO MINIMO 80 LITROS; CARROCERIA COM CAPACIDADE DE CARGA DE NO MÍNIMO 1.100 QUILOS; EXISTÊNCIA DE NO MÍNIMO 04  AIRBAGS PARA MOTORISTA E PASSAGEIROS; FREIOS ABS COM DISTRIBUIÇÃO ELETRÔNICA DE FRENAGEM; KIT MULTIMÍDIA COM NO MÍNIMO A ENTRADA DE USB; RÁDIO FM/AM; O VEICULO DEVERÁ VIR ACOMPANHADO DE TODOS OS ACESSÓRIOS OBRIGATÓRIOS CONFORME NORMAS DO DETRAN E CONTRAN. TODOS OS ACESSÓRIOS MÍNIMOS OBRIGATÓRIOS, CONFORME LEGISLAÇÃO EM VIGOR. GARANTIA MÍNIMA DO FORNECEDOR DE 12 MESES.",
+                "Status": "Venceu",
+                "Valor": 274000.0
+            }
+        ]
     },
     {
         "CNPJ": "23448375000114",
@@ -4148,14 +5037,67 @@
         ]
     },
     {
-        "CNPJ": "51749573000153",
-        "Data": "20250331",
-        "Fornecedor": "BOGOTEX INDUSTRIA E COMERCIO DE CONFECCOES LTDA",
-        "Itens": 8,
-        "Licitacao": "987000282025",
+        "DataResult": "2025-04-15T12:23:39",
+        "UASG": "987",
+        "Edital": "00028/2025",
         "Orgao": "MUNICIPIO DE PEDRALVA",
-        "Total": 136920.0,
-        "UASG": "987"
+        "UF": "MG",
+        "Municipio": "Pedralva",
+        "Fornecedor": "BOGOTEX INDUSTRIA E COMERCIO DE CONFECCOES LTDA",
+        "CNPJ": "51749573000153",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T09:30:00",
+        "Licitacao": "987000282025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AVENTAL BRANCO 100% POLIÉSTER ABERTO NAS LATERAIS COM FITILHOS DISPONÍVEL EM TODOS OS TAMANHOS.",
+                "Status": "Venceu",
+                "Valor": 5850.0
+            },
+            {
+                "Item": 4,
+                "Desc": "CALÇA DE BRIN COM MEIO ELÁSTICO COM LOGO EM SILK BRASÃO DA PREFEITURA DISPONÍVEL EM TODOS OS TAMANHOS.",
+                "Status": "Venceu",
+                "Valor": 20800.0
+            },
+            {
+                "Item": 5,
+                "Desc": "CALÇA JEANS COM LOGO EM SILK BRASÃO DA PREFEITURA DISPONÍVEL EM TODOS OS TAMANHOS.",
+                "Status": "Venceu",
+                "Valor": 48750.0
+            },
+            {
+                "Item": 6,
+                "Desc": "CALÇA JEANS MODELO TRADICIONAL COM LYCRA, MODELO FEMININO E MASCULINO. COM SILK NA COXA, TAMANHOS DIVERSOS.",
+                "Status": "Venceu",
+                "Valor": 14800.0
+            },
+            {
+                "Item": 7,
+                "Desc": "CAMISA DE BRIN FECHADA COM TRÊS BOTÕES MANGA CURTA (PARA MECÂNICO) COM LOGO BRASÃO DA PREFEITURA BORDADO DISPONÍVEL EM TODOS OS TAMANHOS.",
+                "Status": "Venceu",
+                "Valor": 26400.0
+            },
+            {
+                "Item": 8,
+                "Desc": "CAMISA DE MALHA FRIA FECHADA COM TRÊS BOTÕES MANGA LONGA COM FAIXA REFLETIVA, COM LOGO BRASÃO DA PREFEITURA BORDADO DISPONÍVEL EM TODOS OS TAMANHOS.",
+                "Status": "Venceu",
+                "Valor": 8960.0
+            },
+            {
+                "Item": 9,
+                "Desc": "CAMISA MASCULINA MANGA CURTA TECIDO (50% POLIÉSTER E 50% ALGODÃO NA COR MARINHO SAVILLE LISTRADINHO, DETALHE COLARINHO, VISTA EM AZUL MARINHO. BORDADO NA FRENTE, TAMANHOS DIVERSOS.",
+                "Status": "Venceu",
+                "Valor": 5360.0
+            },
+            {
+                "Item": 10,
+                "Desc": "CAMISA MASCULINA MANGA LONGA TECIDO (50% POLIÉSTER E 50% ALGODÃO NA COR MARINHO SAVILLE LISTRADINHO, DETALHE COLARINHO, VISTA EM AZUL MARINHO. BORDADO NA FRENTE, TAMANHOS DIVERSOS.",
+                "Status": "Venceu",
+                "Valor": 6000.0
+            }
+        ]
     },
     {
         "CNPJ": "49743058000114",
@@ -4342,14 +5284,43 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "10896566000105",
-        "Data": "20250312",
-        "Fornecedor": "W A RIBEIRO",
-        "Itens": 4,
-        "Licitacao": "301000112025",
+        "DataResult": "2025-03-26T13:36:30",
+        "UASG": "301",
+        "Edital": "00011/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 81616.7,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "W A RIBEIRO",
+        "CNPJ": "10896566000105",
+        "InicioRec": "",
+        "FimRec": "2025-04-09T13:30:00",
+        "Licitacao": "301000112025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "BOLO 40G, BOLO ALIMENTICIO, SABORES DIVERSOS. CÓDIGO COMPRAS NET: 263548\r",
+                "Status": "Venceu",
+                "Valor": 95.2
+            },
+            {
+                "Item": 8,
+                "Desc": "BOLO CONFEITADO ALIMENTÍCIO COM ATÉ DUAS CAMADAS DE RECHEIO, SEM GLÚTEN, SEM LACTOSE E SEM AÇÚCAR. O PRODUTO DEVE TER VALIDADE MÍNIMA DE 7 DIAS, COM OPÇÕES DE MASSA: BOLO BRANCO OU ESCURO (CHOCOLATE), E SABOR VARIADO.  O BOLO DEVE SER PRODUZIDO CONFORME AS NORMAS DA VIGILÂNCIA SANITÁRIA, GARANTINDO A SEGURANÇA ALIMENTAR E A QUALIDADE DO PRODUTO.\r",
+                "Status": "Venceu",
+                "Valor": 3056.4
+            },
+            {
+                "Item": 9,
+                "Desc": "BOLO SIMPLES, SEM RECHEIO OU COBERTURA, EM SABORES VARIADOS (COMO LARANJA, FUBÁ OU CENOURA), COM TEXTURA LEVE E MACIA.  BOLO SEM COBERTURA E SEM RECHEIO. SABOR DO BOLO INDICADO NA ORDEM DE FORNECIMENTO. BOLO RECEITA TRADICIONAL. DEVERÁ SER FEITO DE FARINHA DE TRIGO ESPECIAL, ENRIQUECIDADE COM FERRO E ÁCIDO FÓLICO, PODENDO SER DE CENOURA, MILHO, FUBÁ, MANDIOCA, COCO, LARANJA, LIMÃO, CHOCOLATE OU MARMORIZADO SEM COBERTURA OU RECHEIO. PRODUTO PRODUZIDO DENTRO DAS NORMAS DA VIGILÂNCIA SANITÁRIA\r",
+                "Status": "Venceu",
+                "Valor": 24694.6
+            },
+            {
+                "Item": 10,
+                "Desc": "BROA DE FUBA : BROA DE FUBÁ PRODUZIDA COM FARINHA DE MILHO, FARINHA DE TRIGO, OVOS, AÇÚCAR E OUTROS INGREDIENTES TRADICIONAIS, GARANTINDO UMA TEXTURA MACIA E LIGEIRAMENTE ÚMIDA, COM SABOR DOCE E SUAVE. O PRODUTO DEVE SER ENTREGUE FRESCO  E EVITE A ABSORÇÃO DE UMIDADE OU CONTAMINAÇÃO EXTERNA. A VALIDADE MÍNIMA DEVE SER DE 48 HORAS A PARTIR DA ENTREGA, COM A DATA DE FABRICAÇÃO E VALIDADE CLARAMENTE IMPRESSAS NA EMBALAGEM. A EMBALAGEM TAMBÉM DEVE CONTER INFORMAÇÕES NUTRICIONAIS, COM A LISTA DE INGREDIENTES E ALÉRGENOS.\r",
+                "Status": "Venceu",
+                "Valor": 53770.5
+            }
+        ]
     },
     {
         "DataResult": "2025-03-10T09:11:13",
@@ -4422,24 +5393,46 @@
         ]
     },
     {
-        "CNPJ": "29987662000189",
-        "Data": "20250317",
-        "Fornecedor": "SOCIÉTÉ COMÉRCIO DE VEÍCULOS LTDA.",
-        "Itens": 1,
-        "Licitacao": "703000132025",
+        "DataResult": "2025-04-02T16:45:16",
+        "UASG": "703",
+        "Edital": "00013/2025",
         "Orgao": "MUNICIPIO DE CARMOPOLIS DE MINAS",
-        "Total": 269990.0,
-        "UASG": "703"
+        "UF": "MG",
+        "Municipio": "Carmópolis de Minas",
+        "Fornecedor": "SOCIÉTÉ COMÉRCIO DE VEÍCULOS LTDA.",
+        "CNPJ": "29987662000189",
+        "InicioRec": "",
+        "FimRec": "2025-04-17T13:00:00",
+        "Licitacao": "703000132025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "VEICULO 0 KM, FABRICADO, NO MAXIMO, HÁ 6 (SEIS) MESES, COM TODOS OS ACESSORIOS MINIMOS OBRIGATORIOS, CONFORME LEGISLACAO EM VIGOR.  \nCAPACIDADE TOTAL / ACESSO AO CADEIRANTE: MÍNIMO DE 10 PESSOAS COM ACESSIBILIDADE; RESOLUÇÃO CONTRAN 939/2022; VEÍCULO 0 KM; POTÊNCIA MÍNIMA 130 CV; DISTÂNCIA ENTRE EIXOS: MÍNIMO 3665 MM; TV COM KIT MULTIMÍDIA; COMBUSTÍVEL: DIESEL; CÂMBIO MANUAL; DIREÇÃO HIDRÁULICA; TRAÇÃO 4 X 2. FORNECER VINIL ADESIVO PARA GRAFISMO DO VEÍCULO, COMPOSTO POR NOME E LOGOMARCA OFICIAL DO GOVERNO DE MINAS GERAIS, DE ACORDO COM O PADRÃO DO MANUAL DE IDENTIDADE VISUAL, DISPONÍVEL NO SÍTIO ELETRÔNICO DA SECRETARIA DE ESTADO DE GOVERNO - SEGOV",
+                "Status": "Venceu",
+                "Valor": 269990.0
+            }
+        ]
     },
     {
-        "CNPJ": "41823463000130",
-        "Data": "20250307",
-        "Fornecedor": "COMERCIAL SILVESTRE LTDA",
-        "Itens": 1,
-        "Licitacao": "128000012025",
+        "DataResult": "2025-05-22T16:36:39",
+        "UASG": "128",
+        "Edital": "00001/2025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 8200.0,
-        "UASG": "128"
+        "UF": "MG",
+        "Municipio": "Sete Lagoas",
+        "Fornecedor": "COMERCIAL SILVESTRE LTDA",
+        "CNPJ": "41823463000130",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:00:00",
+        "Licitacao": "128000012025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "LONGARINA EXECUTIVA 3 LUGARES TECIDO PRETO - MODELO DE REFERÊNCIA: STILOS MÓVEIS\nESPUMA INJETADA DE ALTA DENSIDADE\nLARGURA ASSENTO: 43 CM\nPROFUNDIDADE ASSENTO: 39 CM\nALTURA TOTAL: 83 CM\nLARGURA TOTAL: 155 CM\nPROFUNDIDADE: 55 CM\nESTRUTURA AÇO CARBONO COLUNA DUPLA 50 X 30 MM\nPINTURA ELETROSTÁTICA A PÓ\nPESO APROXIMADO: 18 KG\nPESO RECOMENDADO: 120 KG POR ASSENTO\nGARANTIA: 12 MESES CONTRA DEFEITOS DE FABRICAÇÃO",
+                "Status": "Venceu",
+                "Valor": 8200.0
+            }
+        ]
     },
     {
         "CNPJ": "52967925000100",
@@ -4520,14 +5513,25 @@
         ]
     },
     {
-        "CNPJ": "40388708000186",
-        "Data": "20250310",
-        "Fornecedor": "40.388.708 DENIS PEREIRA FERREIRA",
-        "Itens": 1,
-        "Licitacao": "439000202025",
+        "DataResult": "2025-03-11T11:19:08",
+        "UASG": "439",
+        "Edital": "00020/2025",
         "Orgao": "MUNICIPIO DE LARANJAL",
-        "Total": 26250.0,
-        "UASG": "439"
+        "UF": "PR",
+        "Municipio": "Laranjal",
+        "Fornecedor": "40.388.708 DENIS PEREIRA FERREIRA",
+        "CNPJ": "40388708000186",
+        "InicioRec": "",
+        "FimRec": "2025-03-26T09:00:00",
+        "Licitacao": "439000202025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "INSTALAÇÃO DE AR CONDICIONADO ATE 12.000 BTUS      \r",
+                "Status": "Venceu",
+                "Valor": 26250.0
+            }
+        ]
     },
     {
         "CNPJ": "54983423000106",
@@ -4876,14 +5880,25 @@
         "UASG": "589"
     },
     {
-        "CNPJ": "29953468000182",
-        "Data": "20250307",
-        "Fornecedor": "LICITARA COMERCIO DE MAQUINAS E EQUIPAMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "128000012025",
+        "DataResult": "2025-05-22T16:36:39",
+        "UASG": "128",
+        "Edital": "00001/2025",
         "Orgao": "SETE LAGOAS CAMARA MUNICIPAL",
-        "Total": 18800.0,
-        "UASG": "128"
+        "UF": "MG",
+        "Municipio": "Sete Lagoas",
+        "Fornecedor": "LICITARA COMERCIO DE MAQUINAS E EQUIPAMENTOS LTDA",
+        "CNPJ": "29953468000182",
+        "InicioRec": "",
+        "FimRec": "2025-06-06T09:00:00",
+        "Licitacao": "128000012025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "FORNO MICRO-ONDAS COMERCIAL 1000W 220V (MARCA REFERÊNCIA - PRÁTICA, LINHA - FINISHER, IGUAL OU SUPERIOR)  \nCAPACIDADE: 34 LITROS;\n- DIMENSÕES INTERNAS (AXLXP): 23 X 38,5 X 37 CM;\n- POTÊNCIA: 1000W;\n- FREQUÊNCIA: 60 HZ;\n- VOLTAGEM: 220V - MONOFÁSICO;\n- DISJUNTOR: 15 A;\n- CABO: 3X2,5MM²;\n- TOMADA: 16 A (2P + T);\n- DIMENSÕES TOTAIS (AXLXP): 34,3 X 55,3 X 48,8 CM;\n- PESO: 18,4 KG.",
+                "Status": "Venceu",
+                "Valor": 18800.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-08T13:32:03",
@@ -4919,14 +5934,25 @@
         ]
     },
     {
-        "CNPJ": "94389400000184",
-        "Data": "20250324",
-        "Fornecedor": "MCW PRODUTOS MÉDICOS E HOSPITALARES LTDA",
-        "Itens": 1,
-        "Licitacao": "08011001702025",
+        "DataResult": "2025-04-03T08:17:05",
+        "UASG": "08011",
+        "Edital": "00170/2025",
         "Orgao": "MUNICIPIO DE OSORIO",
-        "Total": 16100.0,
-        "UASG": "08011"
+        "UF": "RS",
+        "Municipio": "Osório",
+        "Fornecedor": "MCW PRODUTOS MÉDICOS E HOSPITALARES LTDA",
+        "CNPJ": "94389400000184",
+        "InicioRec": "",
+        "FimRec": "2025-04-08T08:59:00",
+        "Licitacao": "08011001702025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AAS 100MILIGRAMAS",
+                "Status": "Venceu",
+                "Valor": 16100.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -4990,14 +6016,25 @@
         "UASG": "873"
     },
     {
-        "CNPJ": "25531224000150",
-        "Data": "20250328",
-        "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
-        "Itens": 1,
-        "Licitacao": "07002000602025",
+        "DataResult": "2025-05-20T16:38:29",
+        "UASG": "07002",
+        "Edital": "00060/2025",
         "Orgao": "MUNICIPIO DE GRAMADO",
-        "Total": 2756185.56,
-        "UASG": "07002"
+        "UF": "RS",
+        "Municipio": "Gramado",
+        "Fornecedor": "SEGURA - COOPERATIVA DE TRABALHO DE PORTARIA LIMPEZA E SERVICOS",
+        "CNPJ": "25531224000150",
+        "InicioRec": "",
+        "FimRec": "2025-05-28T08:59:00",
+        "Licitacao": "07002000602025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "PRESTAÇÃO DE SERVIÇOS DE LIMPEZA E HIGIENIZAÇÃO",
+                "Status": "Venceu",
+                "Valor": 2756185.56
+            }
+        ]
     },
     {
         "CNPJ": "07502724000182",
