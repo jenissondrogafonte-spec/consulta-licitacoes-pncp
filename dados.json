@@ -989,17 +989,22 @@
         "Municipio": "Carazinho",
         "Fornecedor": "ZEUS COMERCIAL LTDA",
         "CNPJ": "34840358000144",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T08:30:00",
         "Licitacao": "06005016262024",
         "Itens": [
             {
                 "Item": 7,
                 "Desc": "PNEU 205/75 R16 8 LONAS",
-                "Status": "Venceu",
-                "Valor": 1748.0
+                "Qtd": 4.0,
+                "Unitario": 437.0,
+                "Total": 1748.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-04-07T11:41:40",
@@ -1262,35 +1267,46 @@
         "Municipio": "Carazinho",
         "Fornecedor": "GAMA PNEUS LTDA",
         "CNPJ": "55623647000161",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T08:30:00",
         "Licitacao": "06005016262024",
         "Itens": [
             {
                 "Item": 4,
                 "Desc": "PNEU 185/65  R14 102/100 S",
-                "Status": "Venceu",
-                "Valor": 3300.0
+                "Qtd": 12.0,
+                "Unitario": 275.0,
+                "Total": 3300.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 5,
                 "Desc": "PNEU 185/60 R14",
-                "Status": "Venceu",
-                "Valor": 5018.79
+                "Qtd": 21.0,
+                "Unitario": 238.99,
+                "Total": 5018.79,
+                "Status": "Venceu"
             },
             {
                 "Item": 6,
                 "Desc": "PNEU 185/70 R14 (88T)",
-                "Status": "Venceu",
-                "Valor": 5740.0
+                "Qtd": 20.0,
+                "Unitario": 287.0,
+                "Total": 5740.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 8,
                 "Desc": "PNEU 225/70 R15 BORRACHUDO CAMIONETE 8 LONAS",
-                "Status": "Venceu",
-                "Valor": 2336.0
+                "Qtd": 4.0,
+                "Unitario": 584.0,
+                "Total": 2336.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-27T08:28:09",
@@ -2939,23 +2955,30 @@
         "Municipio": "Guaíra",
         "Fornecedor": "BEB PLAYGROUNDS IND E COM. DE BRINQUEDOS EIRELI",
         "CNPJ": "32163902000135",
-        "InicioRec": "",
-        "FimRec": "2025-01-24T09:00:00",
         "Licitacao": "13003000032025",
         "Itens": [
             {
                 "Item": 6,
                 "Desc": "Circuito com Inclusão 2 Plataformas.\nConforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 52000.0
+                "Qtd": 2.0,
+                "Unitario": 26000.0,
+                "Total": 52000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 7,
                 "Desc": "Circuito com Inclusão Compacto.\nConforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 187200.0
+                "Qtd": 2.0,
+                "Unitario": 93600.0,
+                "Total": 187200.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-23T15:27:41",
@@ -2966,41 +2989,54 @@
         "Municipio": "Guaíra",
         "Fornecedor": "AEG PLAYGROUNDS LTDA",
         "CNPJ": "15080472000179",
-        "InicioRec": "",
-        "FimRec": "2025-01-24T09:00:00",
         "Licitacao": "13003000032025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "Conjunto de Parque infantil temático Barco colorido.\nConforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 99800.0
+                "Qtd": 2.0,
+                "Unitario": 49900.0,
+                "Total": 99800.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "Conjunto de Parque infantil temático Avião colorido.\nConforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 153000.0
+                "Qtd": 2.0,
+                "Unitario": 76500.0,
+                "Total": 153000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 3,
                 "Desc": "Conjunto de Parque infantil temático Trem colorido.\nConforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 79800.0
+                "Qtd": 2.0,
+                "Unitario": 39900.0,
+                "Total": 79800.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 4,
                 "Desc": "Conjunto de Parque infantil temático Trator colorido.\nConforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 41000.0
+                "Qtd": 2.0,
+                "Unitario": 20500.0,
+                "Total": 41000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 8,
                 "Desc": "Escalada infantil Domos no formato de meia esfera, fabricado em aço tubos redondos com diâmetro de no mínimo 3,50 metros e altura da parte central de 1,75, tubos galvanizados e pinturas eletrostática e acabamento no formato de flores coloridas.",
-                "Status": "Venceu",
-                "Valor": 24240.0
+                "Qtd": 4.0,
+                "Unitario": 6060.0,
+                "Total": 24240.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-12T10:37:12",
@@ -3620,17 +3656,22 @@
         "Municipio": "Guaíra",
         "Fornecedor": "SUPER COMERCIO E LOCACOES LTDA",
         "CNPJ": "17294606000180",
-        "InicioRec": "",
-        "FimRec": "2025-01-24T09:00:00",
         "Licitacao": "13003000032025",
         "Itens": [
             {
                 "Item": 5,
                 "Desc": "Conjunto de Parque infantil colorido com estrutura principal (torres) em colunas de alumínio (5 torres). Conforme memorial descritivo.",
-                "Status": "Venceu",
-                "Valor": 186376.0
+                "Qtd": 4.0,
+                "Unitario": 46594.0,
+                "Total": 186376.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-27T16:33:32",
@@ -4172,23 +4213,30 @@
         "Municipio": "Carazinho",
         "Fornecedor": "PNEUSTORECOMBR",
         "CNPJ": "10158356000101",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T08:30:00",
         "Licitacao": "06005016262024",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "PNEU 165/70 R13",
-                "Status": "Venceu",
-                "Valor": 8640.0
+                "Qtd": 36.0,
+                "Unitario": 240.0,
+                "Total": 8640.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 11,
                 "Desc": "PNEU 1000 X 20, BORRACHUDO, PROFUNDIDADE MÍNIMA DE SULCO DE 23,1MM, MÍNIMO DE 16 LONAS, RADIAL, MISTO",
-                "Status": "Venceu",
-                "Valor": 23064.0
+                "Qtd": 12.0,
+                "Unitario": 1922.0,
+                "Total": 23064.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-30T09:39:19",
@@ -6587,29 +6635,38 @@
         "Municipio": "Carazinho",
         "Fornecedor": "MAGBA E-COMMERCE LTDA",
         "CNPJ": "55695599000117",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T08:30:00",
         "Licitacao": "06005016262024",
         "Itens": [
             {
                 "Item": 2,
                 "Desc": "PNEU 175/70 R13",
-                "Status": "Venceu",
-                "Valor": 3776.0
+                "Qtd": 16.0,
+                "Unitario": 236.0,
+                "Total": 3776.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 3,
                 "Desc": "PNEU BITOLA 175/70R14",
-                "Status": "Venceu",
-                "Valor": 9694.0
+                "Qtd": 37.0,
+                "Unitario": 262.0,
+                "Total": 9694.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 9,
                 "Desc": "PNEU TRASEIRO 18/4/30, TT 12 LONAS, APLICAÇÃO TRATOR",
-                "Status": "Venceu",
-                "Valor": 33600.0
+                "Qtd": 12.0,
+                "Unitario": 2800.0,
+                "Total": 33600.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-07-30T08:23:06",
@@ -8615,17 +8672,22 @@
         "Municipio": "Coronel Fabriciano",
         "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
         "CNPJ": "21935659000100",
-        "InicioRec": "",
-        "FimRec": "2025-02-27T13:00:00",
         "Licitacao": "301001532024",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "CONTRATAÇÃO DE EMPRESA NA ADMINISTRAÇÃO E FORNECIMENTO DE VALE ALIMENTAÇÃO ATRAVÉS DE CARTÃO ELETRÔNICO COM CHIP, CONTEMPLANDO CARGA E RECARGA DE VALOR DE FACE, NA MODALIDADE ON-LINE, VISANDO À AQUISIÇÃO DE GÊNERO ALIMENTÍCIO IN NATURA EM ESTABELECIMENTOS CREDENCIADOS, EM ÂMBITO DO MUNICÍPIO DE CORONEL FABRICIANO E NAS DEMAIS CIDADES DA REGIÃO METROPOLITANA DO VALE DO AÇO.\r",
-                "Status": "Venceu",
-                "Valor": 13695180.0
+                "Qtd": 44400.0,
+                "Unitario": 308.45,
+                "Total": 13695180.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-05-28T10:20:24",
