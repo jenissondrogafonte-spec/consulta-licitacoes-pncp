@@ -2,8 +2,9 @@ name: Atualizar Licitações
 
 on:
   schedule:
-    # Roda todo dia às 05:00 da manhã (Brasília/Recife)
+    # 08:00 UTC = 05:00 da manhã no Brasil (Horário Padrão)
     - cron: '0 8 * * *'
+  
   workflow_dispatch:
     inputs:
       data_inicial:
@@ -19,20 +20,23 @@ permissions:
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Baixar Repositório
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Necessário para o histórico do git
+          fetch-depth: 0 
 
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Instalar Dependencias
-        run: pip install requests pandas
+      - name: Instalar Dependências
+        # Removido 'pandas' pois o robô novo só usa json nativo (mais rápido)
+        run: pip install requests
 
-      - name: Rodar Robo
+      - name: Rodar Robô
         env:
           DATA_INICIAL: ${{ github.event.inputs.data_inicial }}
           DATA_FINAL: ${{ github.event.inputs.data_final }}
@@ -44,13 +48,13 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # 2. Adiciona os arquivos gerados (dados.json e status.json)
-          git add .
+          # 2. Adiciona dados.json
+          git add dados.json
           
-          # 3. Salva localmente (commit)
-          git commit -m "Atualizando base de dados e status" || exit 0
+          # 3. Tenta commitar (se não houver mudanças, não dá erro)
+          git commit -m "Atualização Diária: $(date +'%Y-%m-%d')" || echo "Sem novos dados para salvar"
           
-          # 4. Puxa atualizações do site evitando conflitos
+          # 4. Puxa atualizações do site para evitar conflito (Rebase)
           git pull --rebase
           
           # 5. Envia para o GitHub
