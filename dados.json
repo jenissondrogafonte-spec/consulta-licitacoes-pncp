@@ -239,24 +239,58 @@
         "UASG": "10"
     },
     {
-        "CNPJ": "08992911000154",
-        "Data": "20250430",
-        "Fornecedor": "FILGUEIRA & FILGUEIRA LTDA",
-        "Itens": 1,
-        "Licitacao": "852000082025",
+        "DataResult": "2025-05-16T15:13:49",
+        "UASG": "852",
+        "Edital": "00008/2025",
         "Orgao": "MUNICIPIO DE BOFETE",
-        "Total": 36642.0,
-        "UASG": "852"
+        "UF": "SP",
+        "Municipio": "Bofete",
+        "Fornecedor": "FILGUEIRA & FILGUEIRA LTDA",
+        "CNPJ": "08992911000154",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T08:00:00",
+        "Licitacao": "852000082025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "BRAÇO PARA LUMINÁRIA - CONFORME ANEXO I - TERMO DE REFERÊNCIA",
+                "Status": "Venceu",
+                "Valor": 36642.0
+            }
+        ]
     },
     {
-        "CNPJ": "09439486000133",
-        "Data": "20250423",
-        "Fornecedor": "J C COMERCIO E REFRIGERACAO LTDA",
-        "Itens": 10,
-        "Licitacao": "1963000672025",
+        "DataResult": "2025-05-23T13:48:01",
+        "UASG": "1963",
+        "Edital": "00067/2025",
         "Orgao": "MUNICIPIO DE PONTE NOVA",
-        "Total": 706540.0,
-        "UASG": "1963"
+        "UF": "MG",
+        "Municipio": "Ponte Nova",
+        "Fornecedor": "J C COMERCIO E REFRIGERACAO LTDA",
+        "CNPJ": "09439486000133",
+        "InicioRec": "",
+        "FimRec": "2025-05-21T13:00:00",
+        "Licitacao": "1963000672025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Serviço de Instalação de Ar Condicionado tipo Split ( 9.000 a 30.000 btus)",
+                "Status": "Venceu",
+                "Valor": 65000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Serviço de Instalação de Ar Condicionado tipo Split ( 9.000 a 30.000 btus) - Linha frigorígena de cobre de  5 metros até 15 metros",
+                "Status": "Venceu",
+                "Valor": 55200.0
+            },
+            {
+                "Item": 3,
+                "Desc": "Serviço de Instalação de Ar Condicionado tipo Split ( 9.000 a 30.000 btus) - Linha frigorígena de cobre de até 30 metros",
+                "Status": "Venceu",
+                "Valor": 54720.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-09T16:55:55",
@@ -319,14 +353,25 @@
         ]
     },
     {
-        "CNPJ": "65122590000170",
-        "Data": "20250428",
-        "Fornecedor": "Duarte Dental Eireli",
-        "Itens": 1,
-        "Licitacao": "10001032025",
+        "DataResult": "2025-06-12T10:37:12",
+        "UASG": "10",
+        "Edital": "00103/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 1218.5,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "Duarte Dental Eireli",
+        "CNPJ": "65122590000170",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T09:30:00",
+        "Licitacao": "10001032025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "AGULHA GENGIVAL DESCARTAVEL LONGA - CX 100 UND\r",
+                "Status": "Venceu",
+                "Valor": 1218.5
+            }
+        ]
     },
     {
         "DataResult": "2025-05-20T16:33:03",
@@ -356,24 +401,46 @@
         ]
     },
     {
-        "CNPJ": "24687735000101",
-        "Data": "20250410",
-        "Fornecedor": "ZENITE COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "277000912025",
+        "DataResult": "2025-04-23T10:08:26",
+        "UASG": "277",
+        "Edital": "00091/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 20790.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "ZENITE COMERCIAL LTDA",
+        "CNPJ": "24687735000101",
+        "InicioRec": "",
+        "FimRec": "2025-05-08T14:00:00",
+        "Licitacao": "277000912025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CAMISETA 100% POLIESTER DRY  Estampada por sublimação total na frente,costas e mangas. Tamanhos P/M/G/GG/XGG\r",
+                "Status": "Venceu",
+                "Valor": 20790.0
+            }
+        ]
     },
     {
-        "CNPJ": "26334347000164",
-        "Data": "20250416",
-        "Fornecedor": "CPS MOBILIARIO E EQUIPAMENTOS EIRELI ME",
-        "Itens": 1,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 15960.0,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "CPS MOBILIARIO E EQUIPAMENTOS EIRELI ME",
+        "CNPJ": "26334347000164",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "MESA DE ESCRITÓRIO EM MADEIRA/ MDF/ FÓRMICA/SIMILAR  MESA DE ESCRITÓRIO EM MODELO/FORMATO L; COR DO TAMPO: CINZA CLARO; COR DA ESTRUTURA: CINZA CLARO; BASE EM MADEIRA/MDF/FÓRMICA/SIMILAR; TAMPO: RETO EM MDP OU MDF COM ESPESSURA DE, NO MÍNIMO, 25MM; MEDIDAS MÍNIMAS DO LADO A COM 1350MM, LADO B COM 1350MM E LADO C COM 600MM; AS MEDIDAS PODEM SER ALTERADAS EM FUNÇÃO DA NECESSIDADE; ALTURA DA SUPERFÍCIE SUPERIOR DO TAMPO DA MESA DEVE SER ENTRE 720MM E 750MM; REVESTIMENTO EM LAMINADO MELAMÍNICO DE ALTA PRESSÃO E COR CLARA; ACABAMENTO DA BORDA FRONTAL ARREDONDA COM RAIO MÍNIMO DE 2,5MM, SUPERFÍCIE DE CURVATURA 180°; PAINEL FRONTAL SOB O TAMPO DA MESA DE, NO MÍNIMO, 15MM, REVESTIDO COM LAMINADO MELAMÍNICO DE ALTA PRESSÃO (FÓRMICA) NA MESMA COR DO TAMPO; ACABAMENTO DA ESTRUTURA: PINTURA ELETROSTÁTICA EM EPÓXI; PÉS EM TUBO DE AÇO, NA COR PRETA COM SAPATAS REGULADORAS EM NYLON COM NO MÍNIMO 6MM DE ESPESSURA; ESTRUTURA SOB O TAMPO CONFECCIONADA EM AÇO COM QUATRO APOIOS REGULÁVEIS NO PISO E FIXAÇÃO DO TAMPO E PAINEL COM BUCHAS METÁLICAS E PARAFUSOS; GAVETEIRO FIXO COM 2 (DUAS) GAVETAS; CARACTERÍSTICAS ADICIONAIS: TAMPO INTEIRIÇO L/ESTRUTURADO 2 COLUNA EM AÇO; FABRICAÇÃO EM CONFORMIDADE COM AS NORMAS DA ABNT (ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS) / NORMAS DE SEGURANÇA NO TRABALHO / NORMA DE ERGONOMIA - NR-17 E SEUS ANEXOS; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 15960.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -451,24 +518,52 @@
         ]
     },
     {
-        "CNPJ": "40697295000111",
-        "Data": "20250415",
-        "Fornecedor": "PET SEM FRONTEIRAS LTDA",
-        "Itens": 2,
-        "Licitacao": "22000552025",
+        "DataResult": "2025-05-12T15:44:54",
+        "UASG": "22",
+        "Edital": "00055/2025",
         "Orgao": "MUNICIPIO DE MATOZINHOS",
-        "Total": 97800.0,
-        "UASG": "22"
+        "UF": "MG",
+        "Municipio": "Matozinhos",
+        "Fornecedor": "PET SEM FRONTEIRAS LTDA",
+        "CNPJ": "40697295000111",
+        "InicioRec": "",
+        "FimRec": "2025-05-28T09:30:00",
+        "Licitacao": "22000552025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CASTRAÇÃO/ESTERILIZAÇÃO CIRÚRGICA DECAES E GATOS  ESPECIFICAÇÕES CONSTANTES DO TERMO DE REFERÊNCIA ANEXO - DISPUTA GERAL",
+                "Status": "Venceu",
+                "Valor": 90000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "CASTRAÇÃO/ESTERILIZAÇÃO CIRÚRGICA DECAES E GATOS  ESPECIFICAÇÕES CONSTANTES DO TERMO DE REFERÊNCIA ANEXO - COTA RESERVA",
+                "Status": "Venceu",
+                "Valor": 7800.0
+            }
+        ]
     },
     {
-        "CNPJ": "37698720000182",
-        "Data": "20250416",
-        "Fornecedor": "Gibraltar Comercio e Industria Eireli",
-        "Itens": 1,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 17910.0,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "Gibraltar Comercio e Industria Eireli",
+        "CNPJ": "37698720000182",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "MESA PARA COMPUTADOR  COM AS SEGUINTES CARACTERÍSTICAS: PORTA TECLADO REBAIXADO, MODELO CENTRAL; FABRICADA EM MDP; REVESTIMENTO EM LAMINADO MELAMÍNICO NA COR CINZA, COM ACABAMENTO EM PERFIL DE PVC NA MESMA COR; COM TAMPO RETANGULAR MEDINDO APROXIMADAMENTE (LXP) 1,00 X 0,70M, ESPESSURA MÍNIMA DE 18 MM E PORTA TECLADO MEDINDO APROXIMADAMENTE (LXP) 0,52 X 0,24M, ESPESSURA MÍNIMA DE 15MM; ALTURA TOTAL DE 0,75M; COM ESTRUTURA EM AÇO RETANGULAR; CHAPA COM ESPESSURA MÍNIMA DE 1,2 MM; PINTADA EM EPÓXI NA COR CINZA OU PRETA; COM PÉS NIVELADORES; PODERÁ TER UMA VARIAÇÃO DE ATÉ 10% (DEZ) NAS MEDIDAS PARA MAIS OU PARA MENOS; FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 17910.0
+            }
+        ]
     },
     {
         "CNPJ": "00331788003134",
@@ -502,14 +597,25 @@
         ]
     },
     {
-        "CNPJ": "22862531000126",
-        "Data": "20250407",
-        "Fornecedor": "TOP NORTE COMERCIO DE MATERIAL MEDICO HOSPITALAR LTDA",
-        "Itens": 1,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 2060.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "TOP NORTE COMERCIO DE MATERIAL MEDICO HOSPITALAR LTDA",
+        "CNPJ": "22862531000126",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "ACIDO FOLICO 5 MG COMPRIMIDOS  Apresentação: Blister ou envelope.\r",
+                "Status": "Venceu",
+                "Valor": 2060.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-07T11:41:40",
@@ -614,14 +720,31 @@
         ]
     },
     {
-        "CNPJ": "57109731000197",
-        "Data": "20250416",
-        "Fornecedor": "MHF MOVEIS LTDA",
-        "Itens": 2,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 49582.0,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "MHF MOVEIS LTDA",
+        "CNPJ": "57109731000197",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "ARMÁRIO DE AÇO  COM AS SEGUINTES CARACTERÍSTICAS: FABRICADO TODO NA CHAPA 24; PINTURA EPÓXI A PÓ E TRATAMENTO ANTIFERRUGEM, NA COR CINZA; 02 PORTAS, COM CHAVES E COM PUXADOR/ MAÇANETA; 04 PRATELEIRAS REGULÁVEIS; MEDINDO APROXIMADAMENTE (AXLXP): 1,98 X 0,92 X 0,40M, PODENDO TER UMA VARIAÇÃO NAS MEDIDAS DE ATÉ 10% (DEZ), PARA MAIS OU PARA MENOS; FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 23782.0
+            },
+            {
+                "Item": 8,
+                "Desc": "ARQUIVO DE AÇO  COM AS SEGUINTES CARACTERÍSTICAS: FABRICADO TODO NA CHAPA 22, COM PINTURA EPÓXI A PÓ E TRATAMENTO ANTIFERRUGEM, NA COR CINZA; 04 GAVETAS PARA PASTAS SUSPENSAS; SISTEMA DE CHAVE SIMULTÂNEA; CORRENDO SOBRE 08 (OITO) ROLAMENTOS ESFÉRICOS DE AÇO EM CARRINHO TELESCÓPICO, ROLDANAS DE AÇO; PUXADORES CROMADOS; PORTA ETIQUETAS; DIMENSÕES APROXIMADAS (AXLXP): 1,35 X 0,47 X 0,70M; PODERÁ TER UMA VARIAÇÃO DE ATÉ 10% (DEZ) NAS MEDIDAS, PARA MAIS OU PARA MENOS; FABRICADO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12(DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 25800.0
+            }
+        ]
     },
     {
         "CNPJ": "04729418000195",
@@ -933,14 +1056,79 @@
         ]
     },
     {
-        "CNPJ": "11262969000157",
-        "Data": "20250403",
-        "Fornecedor": "SUPRAMIL COMERCIAL LTDA EPP",
-        "Itens": 10,
-        "Licitacao": "488001232025",
+        "DataResult": "2025-10-13T10:24:00",
+        "UASG": "488",
+        "Edital": "00123/2025",
         "Orgao": "MUNICIPIO DE JABOATAO DOS GUARARAPES",
-        "Total": 29099.0,
-        "UASG": "488"
+        "UF": "PE",
+        "Municipio": "Jaboatão dos Guararapes",
+        "Fornecedor": "SUPRAMIL COMERCIAL LTDA EPP",
+        "CNPJ": "11262969000157",
+        "InicioRec": "",
+        "FimRec": "2025-05-20T09:30:00",
+        "Licitacao": "488001232025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SUPLEMENTAÇÃO VITAMÍNICA E MINERAL                                                                         SUPLEMENTAÇÃO DE AMINOÁCIDOS, VITAMINAS, MACRO E MICROMINERAIS PARA CANINOS, FELINOS, AVES, RÉPTEIS, MUSTELÍDEOS E ROEDORES. AUXILIAR NA MELHORA DA QUALIDADE NUTRICIONAL DOS ALIMENTOS, AUXILIAR NA SUPLEMENTAÇÃO NAS FASES CRÍTICAS DA CRIAÇÃO (CRESCIMENTO, DESENVOLVIMENTO, GESTAÇÃO, LACTAÇÃO E GERIATRIA). PREPARO DE ANIMAIS PARA EXPOSIÇÕES E MELHORADOR DA PERFORMANCE DE CÃES EM REINAMENTO.FRASCO C/120 COMPRIMIDOS - (COTA EXCLUSIVA)",
+                "Status": "Venceu",
+                "Valor": 1849.6
+            },
+            {
+                "Item": 2,
+                "Desc": "ANTIBACTERIANO PARA CÃES E GATOS                                                                                                                 SULFADIAZINA ......................20G\nTRIMETOPRIM.........................4G\nVEÍCULO Q.S.P ....................100ML                                                                           APRESENTAÇÃO GOTAS 50 ML - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 1314.0
+            },
+            {
+                "Item": 3,
+                "Desc": "SUPLEMENTO VITAMÍNICO COM ÔMEGA 3 E 6 E BIOTINA E UM SUPLEMENTO QUE CONTÉM VITAMINAS E MINERAIS, ÁCIDOS GRAXOS ESSENCIAIS, COMO ÔMEGA 3 (ÁCIDO EICOSAPENTAENÓICO E ÁCIDO DOCOSAHEXAENÓICO) E ÔMEGA 6 (ÁCIDO LINOLÉICO) FÓRMULA QUE CONTÉM OS PRINCIPAIS ÁCIDOS GRAXOS ESSENCIAIS À DIETA DOS PEQUENOS ANIMAIS, ASSOCIADOS À BIOTINA, ZINCO, VITAMINA A E VITAMINA E, ELEMENTOS QUE ATUAM MANTENDO IDEAIS AS CARACTERÍSTICAS MORFOLÓGICAS, PLÁSTICAS E FUNCIONAIS DA PELAGEM E DA PELE.                                                                                                                   BIOTINA (MÍN)…...100,5 MCG\nÔMEGA 3 (MÍN)............………39,97 MG\nÔMEGA 6 (MÍN)…....………283,4 MG\nVITAMINA A (MÍN).........….…2500 UI\nVITAMINA E (MÍN)…35 UI\nZINCO (MÍN)………2,5 MG                                                                                                                              FRASCO C/60 CAPSULAS - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 2978.4
+            },
+            {
+                "Item": 4,
+                "Desc": "SULFATO DE CONDROITINA A E OUTROS COMPOSTOS                                                                   SULFATO DE CONDROITINA “A”…20.000 MG\nGLUCOSAMINA.........… 30.000 MG\nMOLUSCOS (PERNA CANALICULU).10.000 MG\nCOLÁGENO…...........  5.000 MG\nÁCIDO ASCÓRBICO…....    5.000 MG\nSULFATO DE MANGANÊS…  2.000 MG\nVEÍCULO Q.S.P……..        100 MG\nBLISTER C/ 60 COMPRIMIDOS -  (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 4598.0
+            },
+            {
+                "Item": 5,
+                "Desc": "CLORIDRATO DE TRAMADOL                                                                                                                           CADA COMPRIMIDO PALATÁVEL E SULCADO CONTENDO: CLORIDRATO DE TRAMADOL .............80 MG; BLISTER COM 10 COMPRIMIDOS - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 2964.0
+            },
+            {
+                "Item": 6,
+                "Desc": "DOXICICLINA 50MG -                                                                              CADA COMPRIMIDO REVESTIDO DE 250 MG CONTÉM: \nDOXICICLINA (HICLATO).................50MG\nEXCIPIENTE Q.S.P...................... 250 MG\nBLISTER C/ 14 COMPRIMIDOS  - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 1296.0
+            },
+            {
+                "Item": 7,
+                "Desc": "DOXICICLINA 100MG -                                                                                                                                          CADA COMPRIMIDO REVESTIDO DE 500 MG CONTÉM:\nDOXICICLINA (HICLATO)...................................100MG\nEXCIPIENTE Q.S.P...................... 500 MG\nBLISTER C/ 14 COMPRIMIDOS - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 1314.0
+            },
+            {
+                "Item": 8,
+                "Desc": "DOXICICLINA 200MG                                                                                                                                           CADA COMPRIMIDO REVESTIDO DE 600 MG CONTÉM: \nDOXICICLINA (HICLATO)..............200MG\nEXCIPIENTE Q.S.P......................... 600 MG                                             BLISTER C/ 14 COMPRIMIDOS  - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 1608.0
+            },
+            {
+                "Item": 9,
+                "Desc": "ESPIRAMICINA 750.000 UI + METRONIDAZOL 125 MG ASSOCIAÇÃO DE DOIS PRINCÍPIOS ATIVOS: ESPIRAMICINA, ANTIBIÓTICO DA CLASSE DOS MACROLÍDEOS E METRONIDAZOL, ANTIINFECCIOSO DA SÉRIE DOS NITROIMIDAZÓIS. QUE ATUA SOBRE PEPTOSTREPTOCOCCUS SPP, STREPTOCOCCUS SPP, ACTIONOMYCES SPP, BACTEROIDES SPP, FUSOBACTERIUM SPP, ACTINOBACILLUS SPP, CAPNOCYTOPHAGA SPP, SPIROCHAETA, CLOSTRIDIUM SPP, ENTAMOEBA HISTOLYTICA, GIARDIA LAMBLIA, BALANTIDIUM COLI. NA SEGUINTE COMPOSIÇÃO:\nCADA DRÁGEA CONTÉM : \nESPIRAMICINA.............. 750.000 UI* METRONIDAZOL.................... 125 MG EXCIPIENTE Q.S.P................ 1 DRÁGEA     * CADA MG DE ESPIRAMICINA CONTÉM EM MÉDIA 3.200 UI.\nBLISTER C/ 20 COMPRIMIDOS - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 9245.0
+            },
+            {
+                "Item": 10,
+                "Desc": "HEPATOPROTETOR INJETÁVEL                                                                                                                         CADA 100 ML CONTÉM:\nACETIL DL-METIONINA .................5,00 G\nCLORETO DE COLINA .............. 2,00 G\nCLORIDRATO DE TIAMINA ............1,00 G\nCLORIDRATO DE PIRIDOXINA ........0,04 G\nCLORIDRATO DE L-ARGININA ......... 0,60 G\nRIBOFLAVINA ............................. 0,02 G\nNICOTINAMIDA ......................... 0,50 G\nPANTOTENATO DE CÁLCIO ............. 0,20 G\nGLICOSE ............................. 20,00 G\nVEÍCULO Q.S.P ..................... 100 ML\nFRASCO COM 100 ML\n - (COTA EXCLUSIVA)\n",
+                "Status": "Venceu",
+                "Valor": 1932.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-26T13:36:30",
@@ -1019,14 +1207,25 @@
         "UASG": "591"
     },
     {
-        "CNPJ": "17034870000184",
-        "Data": "20250416",
-        "Fornecedor": "FILIPE MOISES GARCIA ME",
-        "Itens": 1,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 20087.0,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "FILIPE MOISES GARCIA ME",
+        "CNPJ": "17034870000184",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "CADEIRA GIRATÓRIA  COM BRAÇO REGULÁVEL, ENCOSTO E ASSENTO REGULÁVEIS E ANATÔMICOS, COM 50MM DE ESPUMA INJETADA, REVESTIDA EM COURO SINTÉTICO NA COR PRETA; MEDIDAS APROXIMADAS: ASSENTO MEDINDO 550MM DE LARGURA E 470MM DE PROFUNDIDADE, ENCOSTO MEDINDO 410MM DE LARGURA POR 410MM DE PROFUNDIDADE; TRATAMENTO SUPERFICIAL ESTRUTURA: ANTIFERRUGEM, PINTURA COR PRETA; TIPO BASE: GIRATÓRIA, COM 05 (CINCO) RODÍZIOS DUPLOS; PODERÁ TER UMA VARIAÇÃO DE ATÉ 10% (DEZ) PARA MAIS OU PARA MENOS NAS MEDIDAS; FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 20087.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-26T16:44:05",
@@ -1160,14 +1359,31 @@
         "UASG": "03001"
     },
     {
-        "CNPJ": "24044705000179",
-        "Data": "20250410",
-        "Fornecedor": "Eleni Aparecida Batista Targa",
-        "Itens": 2,
-        "Licitacao": "277000912025",
+        "DataResult": "2025-04-23T10:08:26",
+        "UASG": "277",
+        "Edital": "00091/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 52580.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "Eleni Aparecida Batista Targa",
+        "CNPJ": "24044705000179",
+        "InicioRec": "",
+        "FimRec": "2025-05-08T14:00:00",
+        "Licitacao": "277000912025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "CAMISETA FEMININA GOLA PÓLO MALHA PIQUET-PA FIO 30/1- BORDADA BRANCA - MANGA CURTA. BORDADO 10 X10 EM 5 CORES DO LADO ESQUERDO DO PEITO E NAS COSTAS COM 1 COR E ATÉ 17 CM.  TAM: P/M/G/GG/XG .  Tamanhos P/M/G/GG/XGG-Malha Piquet,50% poliéster e 50% algodão. Camiseta com até 3 botões ,manga curta com punho, gola em alto relevo 100% poliéster com reforço, modelagem feminina. bordado no peito do lado esquerdo com até 5 cores na medida de até 10 cm x 10 cm e bordado nas costas com 1 cor e medida máxima de 17 cm .Tamanhos P/M/G/GG/XGG\r",
+                "Status": "Venceu",
+                "Valor": 25280.0
+            },
+            {
+                "Item": 3,
+                "Desc": "CAMISETA MASCULINA GOLA POLO MALHA PIQUET PA FIO 30/1 - BORDADA - BRANCA - MANGA CURTA.  BORDADA em até 5 cores , do lado esquerdo do peito de 10 x10 cm. e nas costas em 1 cor com medida de até 17 cm.  Tamanhos P, M, G, GG, XGG - Malha Piquet ,50% poliéster e 50% algodão. Camiseta com até 4 botões, manga curta com punho, gola em alto relevo 100% poliéster com reforço , modelagem masculina. bordado no peito do lado esquerdo com até 5 cores na medida máxima de até 10 cm x 10 cm e bordado nas costas com 1 cor e medida máxima de 17 cm. Tamanhos P/M/G/GG/ XGG \r",
+                "Status": "Venceu",
+                "Valor": 27300.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-07T13:22:47",
@@ -1639,14 +1855,79 @@
         ]
     },
     {
-        "CNPJ": "11011847000198",
-        "Data": "20250417",
-        "Fornecedor": "MEDICARE SERVIÇOS LTDA",
-        "Itens": 10,
-        "Licitacao": "301000462025",
+        "DataResult": "2025-05-19T14:25:19",
+        "UASG": "301",
+        "Edital": "00046/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 323604.83999999997,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "MEDICARE SERVIÇOS LTDA",
+        "CNPJ": "11011847000198",
+        "InicioRec": "",
+        "FimRec": "2025-06-05T13:00:00",
+        "Licitacao": "301000462025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA IPATINGA - IDA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 22656.0
+            },
+            {
+                "Item": 2,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA BELO HORIZONTE - IDA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 60120.0
+            },
+            {
+                "Item": 3,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA IPATINGA - IDA E VOLTA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 16385.0
+            },
+            {
+                "Item": 4,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA TIMOTEO - IDA E VOLTA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 24808.0
+            },
+            {
+                "Item": 5,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA BELO HORIZONTE - IDA - UTI PEDIATRIA",
+                "Status": "Venceu",
+                "Valor": 39624.0
+            },
+            {
+                "Item": 6,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA BELO HORIZONTE - IDA E VOLTA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 60264.0
+            },
+            {
+                "Item": 7,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA BELO HORIZONTE - IDA E VOLTA - UTI PEDIATRIA",
+                "Status": "Venceu",
+                "Valor": 67362.84
+            },
+            {
+                "Item": 8,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA CARATINGA - IDA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 10200.0
+            },
+            {
+                "Item": 9,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA CARATINGA - IDA - UTI PEDIATRIA",
+                "Status": "Venceu",
+                "Valor": 11985.0
+            },
+            {
+                "Item": 10,
+                "Desc": "SERVIÇO DE REMOÇÃO DE PACIENTE TRAJETO HJMM PARA CARATINGA - IDA E VOLTA - UTI ADULTO",
+                "Status": "Venceu",
+                "Valor": 10200.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-22T16:36:39",
@@ -1690,14 +1971,31 @@
         "UASG": "1474"
     },
     {
-        "CNPJ": "11262969000157",
-        "Data": "20250401",
-        "Fornecedor": "SUPRAMIL COMERCIAL LTDA EPP",
-        "Itens": 2,
-        "Licitacao": "835000182025",
+        "DataResult": "2025-07-21T16:48:02",
+        "UASG": "835",
+        "Edital": "00018/2025",
         "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
-        "Total": 7500.0,
-        "UASG": "835"
+        "UF": "MG",
+        "Municipio": "Ribeirão das Neves",
+        "Fornecedor": "SUPRAMIL COMERCIAL LTDA EPP",
+        "CNPJ": "11262969000157",
+        "InicioRec": "",
+        "FimRec": "2025-06-27T08:59:00",
+        "Licitacao": "835000182025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Anestesico local a base de Cloridrato de Lidocaina 2%, fracionavel, solucao injetavel, frasco 50ml.Anestesico local a base de Cloridrato de Lidocaina 2%, fracionavel, solucao injetavel, frasco 50ml.\r",
+                "Status": "Venceu",
+                "Valor": 900.0
+            },
+            {
+                "Item": 7,
+                "Desc": "Sedativo e analgesico a base de Cloridrato de Xilazina a 2%, frasco contendo 10 ml, fracionavel, solucao injetavel.Sedativo e analgesico a base de Cloridrato de Xilazina a 2%, frasco contendo 10 ml, fracionavel, solucao injetavel.\r",
+                "Status": "Venceu",
+                "Valor": 6600.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-02T16:45:16",
@@ -1752,14 +2050,25 @@
         "UASG": "30001"
     },
     {
-        "CNPJ": "29987662000189",
-        "Data": "20250414",
-        "Fornecedor": "SOCIETE COMERCIO DE VEICULOS LTDA",
-        "Itens": 1,
-        "Licitacao": "146000202025",
+        "DataResult": "2025-07-28T10:19:56",
+        "UASG": "146",
+        "Edital": "00020/2025",
         "Orgao": "MUNICIPIO DE MAUA",
-        "Total": 274000.0,
-        "UASG": "146"
+        "UF": "SP",
+        "Municipio": "Mauá",
+        "Fornecedor": "SOCIETE COMERCIO DE VEICULOS LTDA",
+        "CNPJ": "29987662000189",
+        "InicioRec": "",
+        "FimRec": "2025-08-11T08:59:00",
+        "Licitacao": "146000202025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CARRO AMBULANCIA-Ambulância tipo A, simples remoção – Tipo Furgão.\n",
+                "Status": "Venceu",
+                "Valor": 274000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-31T16:33:40",
@@ -1783,24 +2092,76 @@
         ]
     },
     {
-        "CNPJ": "47915446000100",
-        "Data": "20250407",
-        "Fornecedor": "L E C DISTRIBUIDORA DE PRODUTOS NUTRICIONAIS LTDA",
-        "Itens": 6,
-        "Licitacao": "355000292025",
+        "DataResult": "2025-05-14T15:04:12",
+        "UASG": "355",
+        "Edital": "00029/2025",
         "Orgao": "MUNICIPIO DE PAPAGAIOS",
-        "Total": 320573.0,
-        "UASG": "355"
+        "UF": "MG",
+        "Municipio": "Papagaios",
+        "Fornecedor": "L E C DISTRIBUIDORA DE PRODUTOS NUTRICIONAIS LTDA",
+        "CNPJ": "47915446000100",
+        "InicioRec": "",
+        "FimRec": "2025-05-30T09:00:00",
+        "Licitacao": "355000292025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "FORMULA INFANTIL EM PO PARA LACTENTES E DE SEGUIMENTO PARA LACTENTES DESTINADA A LACTENTES COM REFLUXO E OU REGURGITACAO COM DHA E ARA, DESTINADA A CRIANCA DE 0 A 12 MESES.INGREDIENTES:LACTOSE, LEITE EM PO DESNATADO, OLEOS VEGETAIS (OLEO DE CANOLA, OLEO DE PALMA, OLEO DE GIRASSOL ALTO OLEICO, OLEO DE GIRASSOL), GOMA JATAI, MALTODEXTRINA, OLEO DE PEIXE, CARBONATO DE CALCIO, L-CISTINA, OLEO DE MORTIERELLA ALPINA, L-ASCORBATO DE SODIO, CLORETO DE COLINA, ACIDO L-ASCORBICO, TAURINA, CASEINATO DE CALCIO, SULFATO FERROSO, L-TRIPTOFANO, INOSITOL, PALMITATO DE ASCORBILA, PROTEINA DO SORO DE LEITE, SULFATO DE ZINCO, FOSFATO DE POTASSIO DIBASICO, NICOTINAMIDA, D-PANTOTENATO DE CALCIO, ACETATO DE RETINILA, GLUCONATO CUPRICO, PALMITATO DE RETINILA, ACETATO DE DL-ALFA-TOCOFERILA, DL-ALFA-TOCOFEROL, CLORIDRATO DE CLORETO DE TIAMINA, RIBOFLAVINA, CLORIDRATO DE PIRIDOXINA, ACIDO N-PTEROIL-L-GLUTAMICO, IODATO DE POTASSIO, SULFATO DE MANGANES (II), FITOMENADIONA, SELENITO DE SODIO, COLECALCIFEROL, D",
+                "Status": "Venceu",
+                "Valor": 20997.0
+            },
+            {
+                "Item": 3,
+                "Desc": "FORMULA INFANTIL EM PO PARA LACTENTES E DE SEGUIMENTO PARA LACTENTES E CRIANCAS DE PRIMEIRA INFANCIA COM ALERGIA A PROTEINA DE VACA (APLV) E SEM QUADRO DIARREICO E OU ACOMETIMENTO DO TRATO GASTROINTESTINAL. COM DHA, ARA, PREBIOTICOS (FOS E GOS) E NUCLEOTIDEOS. DESTINADA A CRIANCAS DE 0 A 36 MESES. INGREDIENTES:PROTEINA EXTENSAMENTE HIDROLISADA DE SORO DE LEITE*, MALTODEXTRINA, OLEOS VEGETAIS (OLEO DE PALMA, OLEO DE CANOLA, OLEO DE COCO, OLEO DE GIRASSOL), FIBRAS ALIMENTARES (GALACTO-OLIGOSSACARIDEOS E FRUTO-OLIGOSSACARIDEOS), FOSFATO DE CALCIO TRIBASICO, CLORETO DE POTASSIO, OLEO DE PEIXE, CLORETO DE MAGNESIO, CITRATO TRISSODICO, OLEO DE MORTIERELLA ALPINA, CARBONATO DE CALCIO, CLORETO DE COLINA, ACIDO L-ASCORBICO, TAURINA, L-ASCORBATO DE SODIO, SULFATO FERROSO, MIO-INOSITOL, SULFATO DE ZINCO, SAL DISSODICO DE URIDINA 5- MONOFOSFATO, CITIDINA 5-MONOFOSFATO, ACETATO DE DL-ALFA-TOCOFERILA, ADENOSINA 5-MONOFOSFATO, SAL DISSODICO DE INOSINA 5-MONOFOSFATO, L-CARNITINA, NICOTINAMIDA, D-P",
+                "Status": "Venceu",
+                "Valor": 48000.0
+            },
+            {
+                "Item": 4,
+                "Desc": "FORMULA INFANTIL EM PO SEMI ELEMENTAR HIPOALERGENICA PARA LACTENTES E DE SEGUIMENTO PARA LACTENTES E CRIANCAS DE PRIMEIRA INFANCIA, COM PROTEINA EXTENSAMENTE HIDROLISADA DE SORO DE LEITE E COM RESTRICAO DE LACTOSE PARA CRIANCAS COM ALERGIA A PROTEINA DE VACA (APLV). COM DHA, ARA, TAURINA E NUCLEOTIDEOS. DESTINADA A CRIANCAS DE 0 A 36 MESES. INGREDIENTES:XAROPE DE GLICOSE, PROTEINA HIDROLISADA DO SORO DE LEITE, TRIGLICERIDEOS DE CADEIA MEDIA, OLEOS VEGETAIS (COLZA, GIRASSOL, PALMA), FOSFATO TRICALCICO, FOSFATO DIHIDROGENADO DE POTASSIO, CLORETO DE POTASSIO, CARBONATO DE CALCIO, OLEO DE PEIXE, OLEO DE FUNGOS (MORTIERELLA ALPINA), CLORETO DE COLINA, VITAMINA C, CLORETO DE SODIO, CLORETO DE MAGNESIO, TAURINA, INOSITOL, SULFATO FERROSO, VITAMINA E, SULFATO DE ZINCO, L-CARNITINA, URIDINA, CITIDINA, ADENOSINA, INOSINA, NIACINA, D-PANTOTENATO DE CALCIO, GUANOSINA, D-BIOTINA, SULFATO DE COBRE, ACIDO FOLICO, SULFATO DE MANGANES, VITAMINAS A, B2, B12, B1, D, B6, IODETO DE POTASSIO, VITAMINA K,",
+                "Status": "Venceu",
+                "Valor": 30600.0
+            },
+            {
+                "Item": 5,
+                "Desc": "FORMULA INFANTIL EM PO PARA LACTENTES E DE SEGUIMENTO PARA LACTENTES E/OU CRIANCAS DE PRIMEIRA INFANCIA DESTINADA A NECESSIDADES DIETOTERAPICAS ESPECIFICAS COM RESTRICAO DE LACTOSE, A BASE DE AMINOACIDOS LIVRES, PARA CRIANCAS COM SINTOMAS GRAVES DE ALERGIA A PROTEINA DO LEITE DE VACA (APLV).INGREDIENTES:XAROPE DE GLICOSE, OLEOS VEGETAIS REFINADOS (OLEO DE GIRASSOL, TRIGLICERIDEOS DE CADEIA MEDIA [OLEO DE COCO E/OU PALMISTE] E OLEO DE CANOLA), FOSFATO DE CALCIO DIBASICO, L-ARGININA L-ASPARTATO, L-LEUCINA, CITRATO TRIPOTASSICO, ACETATO DE L-LISINA, L-GLUTAMINA, L-PROLINA, L-VALINA, GLICINA, L-ISOLEUCINA, L-TREONINA, L-FENILALANINA, L-TIROSINA, L-SERINA, L-HISTIDINA, L-ALANINA, CLORETO DE SODIO, L-CISTINA, CLORETO DE MAGNESIO, L-TRIPTOFANO, BITARTARATO DE COLINA, L-METIONINA*, CITRATO DE CALCIO, L-ASPARTATO DE MAGNESIO, OLEO DE MORTIERELLA ALPINA, OLEO DE CRYPTHECODINIUM COHNII, INOSITOL, VITAMINA C, TAURINA, SULFATO FERROSO, SULFATO DE ZINCO, L-CARNITINA, SAL DISSODICO DE URIDINA 5-M",
+                "Status": "Venceu",
+                "Valor": 22886.0
+            },
+            {
+                "Item": 6,
+                "Desc": "FORMULA INFANTIL EM PO DE SEGUIMENTO PARA LACTENTES E CRIANCAS DE PRIMEIRA INFANCIA DE 0 ATE 12 MESES DE IDADE, COM INTOLERANCIA A LACTOSE (GALACTOSEMIA) E OU TRATAMENTO DA ALERGIA AO LEITE DE VACA (APLV) IGE MEDIADA, A BASE DE PROTEINAS DE SOJA E ISENTA DE PROTEINAS LACTEAS.INGREDIENTES: MALTODEXTRINA, OLEOS VEGETAIS (OLEO DE PALMA, OLEO DE CANOLA, OLEO DE COCO, OLEO DE GIRASSOL ALTO OLEICO, OLEO DE GIRASSOL), PROTEINA DE SOJA*, FOSFATO DE CALCIO TRIBASICO, CITRATO TRIPOTASSICO, CARBONATO DE CALCIO, CLORETO DE POTASSIO, FOSFATO DE MAGNESIO DIBASICO, CLORETO DE COLINA, ACIDO L-ASCORBICO, CARBONATO DE MAGNESIO, TAURINA, MIO-INOSITOL, SULFATO FERROSO, SULFATO DE ZINCO, L-CARNITINA, ACETATO DE DL-ALFA- TOCOFERILA, NICOTINAMIDA, D-PANTOTENATO DE CALCIO, RIBOFLAVINA, PALMITATO DE RETINILA, DL-ALFA TOCOFEROL, CLORIDRATO DE CLORETO DE TIAMINA, CLORIDRATO DE PIRIDOXINA, SULFATO CUPRICO, IODETO DE POTASSIO, ACIDO N-PTEROIL-L-GLUTAMICO, FITOMENADIONA, D-BIOTINA, COLECALCIFEROL, SELENITO DE SOD",
+                "Status": "Venceu",
+                "Valor": 87990.0
+            },
+            {
+                "Item": 8,
+                "Desc": "FORMULA PEDIATRICA PARA NUTRICAO ENTERAL E ORAL, EM PO NUTRICIONALMENTE COMPLETA, HIPERCALORICO (1,5 KCAL/ML), COM ALTO TEOR DE VITAMINAS E MINERAIS, SEM LACTOSE, DESENVOLVIDO PARA CRIANCAS DE 3 A 10 ANOS COM DIFICULDADE DE CRESCIMENTO E/OU NA MANUTENCAO DO PESO. (SEM SABOR).MALTODEXTRINA, OLEOS VEGETAIS (PALMA, GIRASSOL ALTO OLEICO, CANOLA), CASEINATO, SACAROSE, CITRATO TRIPOTASSICO, FOSFATO DE POTASSIO DIBASICO, FOSFATO DE MAGNESIO, CLORETO DE SODIO, CARBONATO DE CALCIO, CLORETO DE COLINA, ACIDO L-ASCORBICO, L-ASCORBATO DE SODIO, TAURINA, SULFATO FERROSO, SULFATO DE ZINCO, L-CARNITINA, NICOTINAMIDA, SULFATO DE MANGANES, D-PANTOTENATO DE CALCIO, MONONITRATO DE TIAMINA, SULFATO DE COBRE, RIBOFLAVINA, CLORIDRATO DE PIRIDOXINA, FLUORETO DE SODIO, PALMITATO DE RETINILA, ACETATO DE DL-ALFA-TOCOFERILA, DL-ALFA-TOCOFEROL, COLECALCIFEROL, ACIDO N- PTEROIL-L-GLUTAMICO, IODETO DE POTASSIO, CLORETO DE CROMO, MOLIBDATO DE SODIO, SELENITO DE SODIO, D-BIOTINA, FITOMENADIONA, CIANOCOBALAMINA E EMU",
+                "Status": "Venceu",
+                "Valor": 110100.0
+            }
+        ]
     },
     {
-        "CNPJ": "26991097000135",
-        "Data": "20250414",
-        "Fornecedor": "SIGMA MAQUINAS E REPRESENTACOES LTDA",
-        "Itens": 1,
-        "Licitacao": "1600000502025",
+        "DataResult": "2025-05-14T18:16:30",
+        "UASG": "1600",
+        "Edital": "00050/2025",
         "Orgao": "MUNICIPIO DE SAO JOAO NEPOMUCENO",
-        "Total": 109900.0,
-        "UASG": "1600"
+        "UF": "MG",
+        "Municipio": "São João Nepomuceno",
+        "Fornecedor": "SIGMA MAQUINAS E REPRESENTACOES LTDA",
+        "CNPJ": "26991097000135",
+        "InicioRec": "",
+        "FimRec": "2025-05-28T09:30:00",
+        "Licitacao": "1600000502025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEÍCULO TIPO FURGÃO 0KM (FURGÃO LEVE) - COM NO MÍNIMO 02 PORTAS NA CABINA E MÍNIMO 01 PORTA/TAMPA TRASEIRA PARA ACESSO AO COMPARTIMENTO DE CARGA, ZERO QUILÔMETRO, NO MÍNIMO DO ANO CORRESPONDENTE A DATA DA NOTA FISCAL, NÃO EMPLACADO ANTERIORMENTE, MOTOR BICOMBUSTÍVEL (GASOLINA ETANOL) OU DIESEL, MOTORIZAÇÃO MÍNIMA 1,3, TRANSMISSÃO MANUAL OU AUTOMÁTICA, FREIOS ABS COM EBD, COM DIREÇÃO HIDRÁULICA OU ELÉTRICA, AIR BAG DUPLO; COM AR - CONDICIONADO, AR QUENTE, CAPACIDADE DE CARGA DE TRANSPORTE PARA NO MÍNIMO 02 (DUAS) PESSOAS, CAPACIDADE DE CARGA MÍNIMA DE 600KG, CAPACIDADE DO TANQUE DE COMBUSTÍVEL DE NO MÍNIMO 50 LITROS, PINTURA SÓLIDA EM COR BRANCA, PROTETOR DE CÁRTER, JOGO DE TAPETES COMPLETO PARA MOTORISTA E PASSAGEIRO, ESPELHO RETROVISOR INTERNO, ESPELHO RETROVISORES EXTERNOS AMBOS COM AJUSTE INTERNO MANUAL OU ELÉTRICO, VIDROS E TRAVAS ELÉTRICASS NAS 02 PORTAS DIANTEIRAS, ALARME COM SENSOR DISPOSITIVO DE FECHAMENTO AUTOMÁTICO DOS VIDROS E PORTAS, RODAS COM TAMANHO MÍNIMO DE 14’ INCLUSIVE O ESTEPE (NO CASO DE RODAS DE AÇO INCLUIR AS CALOTAS), TODOS OS DEMAIS EQUIPAMENTOS EXIGIDOS PELO CONTRAN E/OU DENATRAN. COM GARANTIA MÍNIMA DE 12 MESES.",
+                "Status": "Venceu",
+                "Valor": 109900.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-18T16:22:53",
@@ -1875,14 +2236,25 @@
         ]
     },
     {
-        "CNPJ": "41677982000138",
-        "Data": "20250426",
-        "Fornecedor": "AJ MONTAGEM, REPARO E MANUTENCAO INDUSTRIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "1001082025",
+        "DataResult": "2025-04-26T00:00:27",
+        "UASG": "1",
+        "Edital": "00108/2025",
         "Orgao": "MUNICIPIO DE ITAJAI",
-        "Total": 1480000.0,
-        "UASG": "1"
+        "UF": "SC",
+        "Municipio": "Itajaí",
+        "Fornecedor": "AJ MONTAGEM, REPARO E MANUTENCAO INDUSTRIAL LTDA",
+        "CNPJ": "41677982000138",
+        "InicioRec": "",
+        "FimRec": "2025-05-20T08:30:01",
+        "Licitacao": "1001082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇOS DE MANUTENÇÃO PREDIAL",
+                "Status": "Venceu",
+                "Valor": 1480000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T11:19:08",
@@ -1979,14 +2351,43 @@
         "UASG": "449"
     },
     {
-        "CNPJ": "23998925000179",
-        "Data": "20250403",
-        "Fornecedor": "CARLOS APARECIDO PEREIRA DA SILVA - EPP",
-        "Itens": 4,
-        "Licitacao": "78000212025",
+        "DataResult": "2025-04-16T15:46:35",
+        "UASG": "78",
+        "Edital": "00021/2025",
         "Orgao": "MUNICIPIO DE AUGUSTO DE LIMA",
-        "Total": 57880.0,
-        "UASG": "78"
+        "UF": "MG",
+        "Municipio": "Augusto de Lima",
+        "Fornecedor": "CARLOS APARECIDO PEREIRA DA SILVA - EPP",
+        "CNPJ": "23998925000179",
+        "InicioRec": "",
+        "FimRec": "2025-05-06T09:30:00",
+        "Licitacao": "78000212025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "RECARGA DE OXIGENIO MEDICINAL ACONDICIONADOS EM CILINDROS DE  10 METROS CUBICOS.:",
+                "Status": "Venceu",
+                "Valor": 33000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "RECARGA DE OXIGENIO MEDICINAL ACONDICIONADOS EM CILINDROS DE  1,5 METROS CUBICOS.:",
+                "Status": "Venceu",
+                "Valor": 4750.0
+            },
+            {
+                "Item": 3,
+                "Desc": "RECARGA DE OXIGENIO MEDICINAL ACONDICIONADOS EM CILINDROS DE  1 METROS CUBICOS.:",
+                "Status": "Venceu",
+                "Valor": 9690.0
+            },
+            {
+                "Item": 4,
+                "Desc": "RECARGA DE OXIGENIO MEDICINAL ACONDICIONADOS EM CILINDROS DE  02 METROS CUBICOS.:",
+                "Status": "Venceu",
+                "Valor": 10440.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-23T15:27:41",
@@ -2061,14 +2462,31 @@
         ]
     },
     {
-        "CNPJ": "02059560000147",
-        "Data": "20250428",
-        "Fornecedor": "DENTAL SAO CRISTOVAO LTDA - EPP",
-        "Itens": 2,
-        "Licitacao": "10001032025",
+        "DataResult": "2025-06-12T10:37:12",
+        "UASG": "10",
+        "Edital": "00103/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 1357.5,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "DENTAL SAO CRISTOVAO LTDA - EPP",
+        "CNPJ": "02059560000147",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T09:30:00",
+        "Licitacao": "10001032025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "AFASTADOR MINESOTA\r",
+                "Status": "Venceu",
+                "Valor": 332.5
+            },
+            {
+                "Item": 4,
+                "Desc": "AGULHA GENGIVAL CURTA\r",
+                "Status": "Venceu",
+                "Valor": 1025.0
+            }
+        ]
     },
     {
         "CNPJ": "25404523000124",
@@ -2081,14 +2499,25 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "07220279000168",
-        "Data": "20250407",
-        "Fornecedor": "Nutrir Distribuidora de Produtos Para Terapia Nutricional",
-        "Itens": 1,
-        "Licitacao": "355000292025",
+        "DataResult": "2025-05-14T15:04:12",
+        "UASG": "355",
+        "Edital": "00029/2025",
         "Orgao": "MUNICIPIO DE PAPAGAIOS",
-        "Total": 53500.0,
-        "UASG": "355"
+        "UF": "MG",
+        "Municipio": "Papagaios",
+        "Fornecedor": "Nutrir Distribuidora de Produtos Para Terapia Nutricional",
+        "CNPJ": "07220279000168",
+        "InicioRec": "",
+        "FimRec": "2025-05-30T09:00:00",
+        "Licitacao": "355000292025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "FORMULA PADRAO PARA NUTRICAO ENTERAL E ORAL, EM PO, NORMOCALORICA, ISENTA DE LACTOSE. PARA PACIENTES A PARTIR DE 10 ANOS.MALTODEXTRINA, PROTEINA ISOLADA DO SORO DE LEITE, CASEINATO DE CALCIO, SACAROSE, OLEO DE MILHO, MINERAIS (CITRATO DE CALCIO, FOSFATO DE POTASSIO DIBASICO, CLORETO DE SODIO, CARBONATO DE MAGNESIO, SULFATO FERROSO, SULFATO DE ZINCO, SULFATO DE MANGANES, SULFATO DE COBRE, IODETO DE POTASSIO, CLORETO DE CROMO, MOLIBDATO DE SODIO E SELENATO DE SODIO), OLEO DE CANOLA COM BAIXO TEOR ERUCICO, OLEINA DE PALMA, VITAMINAS (BITARTARATO DE COLINA, L-ASCORBATO DE SODIO, NICOTINAMIDA, ACETATO DE DL-ALFA-TOCOFERILA, D-PANTOTENATO DE CALCIO, CLORIDRATO DE PIRIDOXINA, TIAMINA MONONITRATO, RIBOFLAVINA, ACETATO DE RETINILA, ACIDO N-PTEROIL-L-GLUTAMICO, FITOMENADIONA, D-BIOTINA, COLECALCIFEROL E CIANOCOBALAMINA), TAURINA, L-CARNITINA, AROMATIZANTE, REGULADORES DE ACIDEZ CITRATO DE POTASSIO, HIDROXIDO DE POTASSIO E ACIDO CITRICO E EMULSIFICANTE LECITINA DE SOJA. CONTEM DERIVADOS DE SOJA",
+                "Status": "Venceu",
+                "Valor": 53500.0
+            }
+        ]
     },
     {
         "CNPJ": "02424001000199",
@@ -2323,14 +2752,31 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "13457500000107",
-        "Data": "20250416",
-        "Fornecedor": "FARIA RODRIGUES INDÚSTRIA DE MÓVEIS LTDA",
-        "Itens": 2,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 30960.0,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "FARIA RODRIGUES INDÚSTRIA DE MÓVEIS LTDA",
+        "CNPJ": "13457500000107",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "MESA PARA IMPRESSORA  COM AS SEGUINTES CARACTERÍSTICAS: FABRICADA EM MDP; REVESTIMENTO EM LAMINADO MELAMÍNICO NA COR CINZA, COM ACABAMENTO EM PERFIL DE PVC NA MESMA COR; COM TAMPO RETANGULAR MEDINDO APROXIMADAMENTE (LXPXA) 0,92 X 0,62 X 0,75M, ESPESSURA MÍNIMA DE 15MM; ESTRUTURA EM AÇO RETANGULAR; CHAPA COM ESPESSURA MÍNIMA DE 1,2 MM; PINTADA EM EPÓXI NA COR CINZA OU PRETA; PODERÁ FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 13680.0
+            },
+            {
+                "Item": 6,
+                "Desc": "MESA DE REUNIÃO  COM AS SEGUINTES CARACTERÍSTICAS: FABRICADA EM MDP; REVESTIMENTO EM LAMINADO MELAMÍNICO NA COR CINZA, COM ACABAMENTO EM PERFIL DE PVC NA MESMA COR; COM TAMPO RETANGULAR MEDINDO APROXIMADAMENTE (LXPXA) 2,00 X 0,90 X 0,75M, ESPESSURA MÍNIMA DE 15MM; ESTRUTURA EM AÇO RETANGULAR; CHAPA COM ESPESSURA MÍNIMA DE 1,2 MM; PINTADA EM EPÓXI NA COR CINZA OU PRETA; PODERÁ TER UMA VARIAÇÃO DE ATÉ 10% (DEZ) NAS MEDIDAS PARA MAIS OU PARA MENOS; FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 17280.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-11T13:35:48",
@@ -2568,14 +3014,31 @@
         ]
     },
     {
-        "CNPJ": "89791248000121",
-        "Data": "20250402",
-        "Fornecedor": "AGROTAL DISTRIBUIDORA AGROPECUARIA TAQUARENSE LTDA",
-        "Itens": 2,
-        "Licitacao": "1000902025",
+        "DataResult": "2025-05-20T09:35:08",
+        "UASG": "1",
+        "Edital": "00090/2025",
         "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 80100.0,
-        "UASG": "1"
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "AGROTAL DISTRIBUIDORA AGROPECUARIA TAQUARENSE LTDA",
+        "CNPJ": "89791248000121",
+        "InicioRec": "",
+        "FimRec": "2025-06-02T08:30:00",
+        "Licitacao": "1000902025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Mão de obra para manutenção e conserto de tratores (hora/técnica)-HORA TÉCNICA PARA MÃO DE OBRA ESPECIALIZADA PARA MANUTENÇÃO E CONSERTO DE TRATORES",
+                "Status": "Venceu",
+                "Valor": 42600.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Mão de obra para manutenção de implementos diversos  (hora/técnica)-HORA TÉCNICA PARA MÃO DE OBRA ESPECIALIZADA PARA MANUTENÇÃO E CONSERTO DE IMPLEMENTOS AGRÍCOLAS",
+                "Status": "Venceu",
+                "Valor": 37500.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-09T16:55:55",
@@ -2599,14 +3062,25 @@
         ]
     },
     {
-        "CNPJ": "36832659000151",
-        "Data": "20250402",
-        "Fornecedor": "JM COMERCIO DE CLIMATIZADORES LTDA",
-        "Itens": 1,
-        "Licitacao": "020000992025",
+        "DataResult": "2025-04-30T14:49:08",
+        "UASG": "020",
+        "Edital": "00099/2025",
         "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "Total": 714000.0,
-        "UASG": "020"
+        "UF": "SP",
+        "Municipio": "São José dos Campos",
+        "Fornecedor": "JM COMERCIO DE CLIMATIZADORES LTDA",
+        "CNPJ": "36832659000151",
+        "InicioRec": "",
+        "FimRec": "2025-05-16T09:00:00",
+        "Licitacao": "020000992025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CLIMATIZADOR DE AR EVAPORATIVO DE INSTALACAO FIXA, ESTRUTURA EM ACO INOX, COM VAZAO DE AR DE 6000 A 8000 M3/H. CONFORME ESPECIFICACAO ANEXA",
+                "Status": "Venceu",
+                "Valor": 714000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-08T13:32:03",
@@ -2663,24 +3137,46 @@
         ]
     },
     {
-        "CNPJ": "36624228000108",
-        "Data": "20250401",
-        "Fornecedor": "ECOAMBI ENGENHARIA AMBIENTAL E DE SEGURANCA DO TRABALHO LTDA",
-        "Itens": 1,
-        "Licitacao": "1000892025",
+        "DataResult": "2025-04-08T09:24:26",
+        "UASG": "1",
+        "Edital": "00089/2025",
         "Orgao": "MUNICIPIO DE TAQUARA",
-        "Total": 141600.0,
-        "UASG": "1"
+        "UF": "RS",
+        "Municipio": "Taquara",
+        "Fornecedor": "ECOAMBI ENGENHARIA AMBIENTAL E DE SEGURANCA DO TRABALHO LTDA",
+        "CNPJ": "36624228000108",
+        "InicioRec": "",
+        "FimRec": "2025-04-25T10:30:00",
+        "Licitacao": "1000892025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Serviços técnicos profissionais.-SERVIÇOS DE GEOLOGIA E BIOLOGIA, DE ACORDO COM O TERMO DE REFÊNCIA",
+                "Status": "Venceu",
+                "Valor": 141600.0
+            }
+        ]
     },
     {
-        "CNPJ": "12889035000293",
-        "Data": "20250401",
-        "Fornecedor": "inovamed hospitalar ltda",
-        "Itens": 1,
-        "Licitacao": "835000182025",
+        "DataResult": "2025-07-21T16:48:02",
+        "UASG": "835",
+        "Edital": "00018/2025",
         "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
-        "Total": 1855.0,
-        "UASG": "835"
+        "UF": "MG",
+        "Municipio": "Ribeirão das Neves",
+        "Fornecedor": "inovamed hospitalar ltda",
+        "CNPJ": "12889035000293",
+        "InicioRec": "",
+        "FimRec": "2025-06-27T08:59:00",
+        "Licitacao": "835000182025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "Solucao injetavel de Ringer com Lactato, sistema fechado, esteril, frasco de 500ml.Solucao injetavel de Ringer com Lactato, sistema fechado, esteril, frasco de 500ml.\r",
+                "Status": "Venceu",
+                "Valor": 1855.0
+            }
+        ]
     },
     {
         "CNPJ": "94107919000122",
@@ -2703,14 +3199,25 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "56050703000189",
-        "Data": "20250414",
-        "Fornecedor": "EXTREMA COMERCIO DE PECAS LTDA",
-        "Itens": 1,
-        "Licitacao": "1600000502025",
+        "DataResult": "2025-05-14T18:16:30",
+        "UASG": "1600",
+        "Edital": "00050/2025",
         "Orgao": "MUNICIPIO DE SAO JOAO NEPOMUCENO",
-        "Total": 299000.0,
-        "UASG": "1600"
+        "UF": "MG",
+        "Municipio": "São João Nepomuceno",
+        "Fornecedor": "EXTREMA COMERCIO DE PECAS LTDA",
+        "CNPJ": "56050703000189",
+        "InicioRec": "",
+        "FimRec": "2025-05-28T09:30:00",
+        "Licitacao": "1600000502025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "VAN ESCOLAR COM O MÍNIMO DE 15 LUGARES 2024/2024 OU 2024/2025; MOTORIZAÇÃO MÍNIMA DE 2.0/LITRO; COM 04 CILINDROS; COMBUSTÍVEL ÓLEO DIESEL; MÍNIMO 160 CV; CAMBIO DE NO MÍNIMO 06 MARCHAS; TRAÇÃO TRASEIRA; FREIOS A DISCO NAS 04 RODAS COM SISTEMA ABS; SISTEMA DE CONTROLE DE TRAÇÃO E DE ESTABILIDADE; CARROCERIA EM CHAPA DE AÇO, ENTRE EIXO MÍNIMO DE 3665 MM; PBT MÍNIMO DE 4.100 KG: AR CONDICIONADO PARA MOTORISTA E PASSAGEIROS INDIVIDUAL, DIREÇÃO ELÉTRICA OU HIDRÁULICA; VIDROS ELÉTRICOS NA DIANTEIRA; TRAVAS ELÉTRICAS; ALARME ANTIFURTO; BANCOS EM TECIDO; ENCOSTO PARA CABEÇA E CINTO DE SEGURANÇA EM TODOS OS ASSENTOS; COR BRANCA, 02 PORTAS LATERAIS DIANTEIRAS; 01 PORTA CORREDIÇA LATERAL E 02 PORTAS TRASEIRAS; AIR BAG DUPLO; PNEUS COM RODAGEM MÍNIMA ARO 16 SEM CÂMARA; TACÓGRAFO; MULTIMIDIA COM CONEXÃO BLUETOOTH E USB COM AUTO FALANTES; TANQUE DE COMBUSTÍVEL DE NO MÍNIMO 70 LITROS; GARANTIA DO FABRICANTE DE NO MÍNIMO 12 MESES.",
+                "Status": "Venceu",
+                "Valor": 299000.0
+            }
+        ]
     },
     {
         "CNPJ": "25109467000103",
@@ -2810,14 +3317,25 @@
         ]
     },
     {
-        "CNPJ": "46339373000192",
-        "Data": "20250401",
-        "Fornecedor": "A.L.C. MORAES COMERCIAL LTDA",
-        "Itens": 1,
-        "Licitacao": "835000182025",
+        "DataResult": "2025-07-21T16:48:02",
+        "UASG": "835",
+        "Edital": "00018/2025",
         "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
-        "Total": 4725.0,
-        "UASG": "835"
+        "UF": "MG",
+        "Municipio": "Ribeirão das Neves",
+        "Fornecedor": "A.L.C. MORAES COMERCIAL LTDA",
+        "CNPJ": "46339373000192",
+        "InicioRec": "",
+        "FimRec": "2025-06-27T08:59:00",
+        "Licitacao": "835000182025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Mata bicheira, larvicida, bernicida, repelente, antisseptico e cicatrizante, que tenha no minimo, violeta genciana em sua composicao.Mata bicheira, larvicida, bernicida, repelente, antisseptico e cicatrizante, que tenha no minimo, violeta genciana em sua composicao. Apresentacao em spray aerossol.\r",
+                "Status": "Venceu",
+                "Valor": 4725.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-21T08:45:51",
@@ -2857,14 +3375,25 @@
         "UASG": "2243"
     },
     {
-        "CNPJ": "35457127000119",
-        "Data": "20250429",
-        "Fornecedor": "MABELÊ VEICULOS ESPECIAIS LTDA",
-        "Itens": 1,
-        "Licitacao": "231000462025",
+        "DataResult": "2025-09-01T14:14:37",
+        "UASG": "231",
+        "Edital": "00046/2025",
         "Orgao": "MUNICIPIO DE PRESIDENTE PRUDENTE",
-        "Total": 315000.0,
-        "UASG": "231"
+        "UF": "SP",
+        "Municipio": "Presidente Prudente",
+        "Fornecedor": "MABELÊ VEICULOS ESPECIAIS LTDA",
+        "CNPJ": "35457127000119",
+        "InicioRec": "",
+        "FimRec": "2025-07-01T09:00:00",
+        "Licitacao": "231000462025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "AMBULÂNCIA, TIPO:FURGÃO, CAPACIDADE MÍNIMA CARGA:1.500 KG, COR:BRANCA, FORMATO SINALIZADOR:ASA DELTA, ESTRUTURA SINALIZADOR:AÇO EXTRUDADO, TIPO SINALIZADOR:LED COM LENTES VERMELHAS, COMBUSTÍVEL:DIESEL, QUANTIDADE PORTAS:2 FRONTAIS 1 LATERAL DESLIZANTE 2",
+                "Status": "Venceu",
+                "Valor": 315000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-01-23T11:16:06",
@@ -2914,14 +3443,25 @@
         "UASG": "1322"
     },
     {
-        "CNPJ": "36188164000131",
-        "Data": "20250410",
-        "Fornecedor": "t.d. comércio e distribuidora ltda.",
-        "Itens": 1,
-        "Licitacao": "277000912025",
+        "DataResult": "2025-04-23T10:08:26",
+        "UASG": "277",
+        "Edital": "00091/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 12950.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "t.d. comércio e distribuidora ltda.",
+        "CNPJ": "36188164000131",
+        "InicioRec": "",
+        "FimRec": "2025-05-08T14:00:00",
+        "Licitacao": "277000912025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "CAMISETA SEM MANGA 100% POLIESTER DRY  estampa em sublimação total frente e costas Tamanhos P/M/G/GG/XGG \r",
+                "Status": "Venceu",
+                "Valor": 12950.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-07T15:26:55",
@@ -2987,14 +3527,31 @@
         ]
     },
     {
-        "CNPJ": "27651175000115",
-        "Data": "20250428",
-        "Fornecedor": "EDILSON APARECIDO DA SILVA",
-        "Itens": 2,
-        "Licitacao": "10001032025",
+        "DataResult": "2025-06-12T10:37:12",
+        "UASG": "10",
+        "Edital": "00103/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 244.0,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "EDILSON APARECIDO DA SILVA",
+        "CNPJ": "27651175000115",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T09:30:00",
+        "Licitacao": "10001032025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ABRIDOR DE BOCA BORRACHA INF.\r",
+                "Status": "Venceu",
+                "Valor": 124.0
+            },
+            {
+                "Item": 2,
+                "Desc": "ACIDO FOSFORICO GEL Com digluconato de clorhexidina, espessante, aguadibeionizada e corante, em seringa.\r",
+                "Status": "Venceu",
+                "Valor": 120.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-20T18:03:03",
@@ -3125,14 +3682,37 @@
         ]
     },
     {
-        "CNPJ": "52597304000181",
-        "Data": "20250415",
-        "Fornecedor": "ATLAS ATACADO E VAREJO LTDA",
-        "Itens": 3,
-        "Licitacao": "1301000382025",
+        "DataResult": "2025-07-08T10:35:38",
+        "UASG": "1301",
+        "Edital": "00038/2025",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "Total": 117864.0,
-        "UASG": "1301"
+        "UF": "GO",
+        "Municipio": "Bom Jesus de Goiás",
+        "Fornecedor": "ATLAS ATACADO E VAREJO LTDA",
+        "CNPJ": "52597304000181",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T09:00:00",
+        "Licitacao": "1301000382025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "CARNE BOVINA DE 1ª-",
+                "Status": "Venceu",
+                "Valor": 63414.0
+            },
+            {
+                "Item": 7,
+                "Desc": "Carne suína (Lombo)-",
+                "Status": "Venceu",
+                "Valor": 28050.0
+            },
+            {
+                "Item": 8,
+                "Desc": "CARNE SUINA (PERNIL)-",
+                "Status": "Venceu",
+                "Valor": 26400.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T07:59:57",
@@ -3222,24 +3802,46 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "35741144000183",
-        "Data": "20250429",
-        "Fornecedor": "CAMMINARE MAQUINAS E EMPREENDIMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "231000462025",
+        "DataResult": "2025-09-01T14:14:37",
+        "UASG": "231",
+        "Edital": "00046/2025",
         "Orgao": "MUNICIPIO DE PRESIDENTE PRUDENTE",
-        "Total": 318000.0,
-        "UASG": "231"
+        "UF": "SP",
+        "Municipio": "Presidente Prudente",
+        "Fornecedor": "CAMMINARE MAQUINAS E EMPREENDIMENTOS LTDA",
+        "CNPJ": "35741144000183",
+        "InicioRec": "",
+        "FimRec": "2025-07-01T09:00:00",
+        "Licitacao": "231000462025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "VEÍCULO AUTOMOTOR NOVO, DO TIPO VAN DE PASSAGEIROS; COR: BRANCA; CAPACIDADE: PARA 15 PASSAGEIROS SENTADOS + 01 MOTORISTA; CARACTERÍSTICAS ADICIONAIS: ZERO KM, DE FABRICAÇÃO NACIONAL OU IMPORTADA, TETO ALTO, C/POLTRONAS RECLINÁVEIS, TANQUE DE COMBUSTÍVEL COM CAPACIDADE MÍNIMA DE 70 LITROS, DIESEL S-10, TRAÇÃO TRASEIRA, 04 CILINDROS, DIREÇÃO HIDRÁULICA OU ELÉTRICA ORIGINAL, CÂMBIO MANUAL, C/ NO MÍNIMO DE 06 MARCHAS SEQUENCIAIS À FRENTE MAIS A RÉ, POTÊNCIA MÍNIMA DE 160CV, TORQUE DE NO MÍNIMO 36 MKGF, FREIO A DISCO NAS 4 RODAS + ABS, SUSPENSÃO DIANTEIRA E TRASEIRA, PNEUS 225/75 E RODAS EM AÇO ESTAMPADO OU LIGA LEVE R16, AR CONDICIONADO FRONTAL E TRASEIRO CONTENDO 02 COMPRESSORES, VIDROS ELÉTRICOS , TRAVAS ELÉTRICAS E  PILOTO AUTOMÁTICO ORIGINAIS DE FÁBRICA,  CENTRAL DE MULTIMÍDIA E CÂMERA DE RÉ, AIR BAG NO MÍNIMO FRONTAL PARA MOTORISTA E PASSAGEIRO, COM TODOS OS ACESSÓRIOS ORIGINAIS DE FÁBRICA E COM TODOS OS ITENS OBRIGATÓRIOS AO CUMPRIMENTO DO CÓDIGO NACIONAL DE TRÂNSITO (MACACO, CHAVE DE RODA, CHAVE DE FENDA, TRIÂNGULO DE SINALIZAÇÃO, CONJUNTO SOBRESSALENTE DE RODA E PNEU, LIMPADOR DE PARABRISA DIANTEIRO C/ TEMPORIZADOR, CINTO DE SEGURANÇA PARA TODOS OS BANCOS);",
+                "Status": "Venceu",
+                "Valor": 318000.0
+            }
+        ]
     },
     {
-        "CNPJ": "24879794000173",
-        "Data": "20250430",
-        "Fornecedor": "TENDAS ITAJAÍ LTDA",
-        "Itens": 1,
-        "Licitacao": "1001142025",
+        "DataResult": "2025-05-01T00:04:17",
+        "UASG": "1",
+        "Edital": "00114/2025",
         "Orgao": "MUNICIPIO DE ITAJAI",
-        "Total": 72000.0,
-        "UASG": "1"
+        "UF": "SC",
+        "Municipio": "Itajaí",
+        "Fornecedor": "TENDAS ITAJAÍ LTDA",
+        "CNPJ": "24879794000173",
+        "InicioRec": "",
+        "FimRec": "2025-05-26T14:00:01",
+        "Licitacao": "1001142025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Concessão sobre Exploração de Serviços de Estacionamento e Parque de Diversões por empresa gestora de eventos durante a 39ª Festa Nacional do Colono, que ocorrerá de 24 a 27 de Julho de 2025, no Parqu",
+                "Status": "Venceu",
+                "Valor": 72000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-15T23:45:23",
@@ -3375,24 +3977,58 @@
         ]
     },
     {
-        "CNPJ": "08778201000126",
-        "Data": "20250407",
-        "Fornecedor": "Drogafonte LTDA",
-        "Itens": 3,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 25118.4,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "Drogafonte LTDA",
+        "CNPJ": "08778201000126",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "ACETILCISTEINA 600 MG- Apresentação :Envelope/Sache com 5 gr.      Apresentação: Envelopes com 5gr\r",
+                "Status": "Venceu",
+                "Valor": 7838.4
+            },
+            {
+                "Item": 4,
+                "Desc": "ACICLOVIR 200 MG COMPRIMIDOS  Apresentação: Blister ou envelope.\r",
+                "Status": "Venceu",
+                "Valor": 8640.0
+            },
+            {
+                "Item": 6,
+                "Desc": "ACIDO ACETILSALICILICO 100 MG COMPRIMIDOS  APRESENTAÇÃO:BLÍSTER OU ENVELOPE.\r",
+                "Status": "Venceu",
+                "Valor": 8640.0
+            }
+        ]
     },
     {
-        "CNPJ": "54450630000197",
-        "Data": "20250429",
-        "Fornecedor": "ALPAVEL ALTA PAULISTA VEICULOS LTDA",
-        "Itens": 1,
-        "Licitacao": "231000462025",
+        "DataResult": "2025-09-01T14:14:37",
+        "UASG": "231",
+        "Edital": "00046/2025",
         "Orgao": "MUNICIPIO DE PRESIDENTE PRUDENTE",
-        "Total": 115000.0,
-        "UASG": "231"
+        "UF": "SP",
+        "Municipio": "Presidente Prudente",
+        "Fornecedor": "ALPAVEL ALTA PAULISTA VEICULOS LTDA",
+        "CNPJ": "54450630000197",
+        "InicioRec": "",
+        "FimRec": "2025-07-01T09:00:00",
+        "Licitacao": "231000462025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEÍCULO AUTOMOTOR, TIPO SEDAN, CAPACIDADE 05 LUGARES, ANO/MODELO FABRICAÇÃO ATUAL, 0 KM, COR BRANCA, 04 PORTAS, MOTOR MÍNINO 1.4 OU POTÊNCIA MÍNIMA 100 CV, CÂMBIO MANUAL OU AUTOMÁTICO, COMBUSTÍVEL FLEX, AR CONDICIONADO, DIREÇÃO HIDRÁULICA OU ELETRO-HIDRÁULICA OU ELÉTRICA, TRIO ELÉTRICO (TRAVA, VIDRO, ALARME), CHAVE COM CONTROLE DE TRAVAMENTO A DISTÂNCIA, FARÓIS DE MILHA/NEBLINA, VIDRO TRASEIRO COM DESEMBAÇADOR, FREIOS ABS, EBD (DISTRIBUIÇÃO DE FORÇA E FRENAGEM), AIRBAGS FRONTAIS, CINTO DE SEGURANÇA DE 03 PONTOS, JOGO DE TAPETE DE BORRACHA, GARANTIA MÍNIMA DE 01 ANO, ACESSÓRIOS ORIGINAIS DE FÁBRICA E TODOS OS ITENS DE SEGURANÇA OBRIGATÓRIOS AO CUMPRIMENTO DO CÓDIGO NACIONAL DE TRÂNSITO.",
+                "Status": "Venceu",
+                "Valor": 115000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-03-10T13:56:30",
@@ -3457,24 +4093,64 @@
         ]
     },
     {
-        "CNPJ": "48936631000143",
-        "Data": "20250415",
-        "Fornecedor": "SATURNO COMERCIO DE MATERIAL ELETRICO E ELETRONICO LTDA",
-        "Itens": 2,
-        "Licitacao": "22000542025",
+        "DataResult": "2025-09-02T10:44:02",
+        "UASG": "22",
+        "Edital": "00054/2025",
         "Orgao": "MUNICIPIO DE MATOZINHOS",
-        "Total": 88200.0,
-        "UASG": "22"
+        "UF": "MG",
+        "Municipio": "Matozinhos",
+        "Fornecedor": "SATURNO COMERCIO DE MATERIAL ELETRICO E ELETRONICO LTDA",
+        "CNPJ": "48936631000143",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:30:00",
+        "Licitacao": "22000542025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "FORNECIMENTO DE LUMINÁRIA PARA ILUMINAÇÃO PÚBLICA COM TECNOLOGIA LED, POTÊNCIA DE 50W",
+                "Status": "Venceu",
+                "Valor": 84000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "FORNECIMENTO DE LUMINÁRIA PARA ILUMINAÇÃO PÚBLICA COM TECNOLOGIA LED, POTÊNCIA DE 50W COTA RESERVA",
+                "Status": "Venceu",
+                "Valor": 4200.0
+            }
+        ]
     },
     {
-        "CNPJ": "38874848000112",
-        "Data": "20250430",
-        "Fornecedor": "D.M.P.EQUIPAMENTOS LTDA.",
-        "Itens": 3,
-        "Licitacao": "852000082025",
+        "DataResult": "2025-05-16T15:13:49",
+        "UASG": "852",
+        "Edital": "00008/2025",
         "Orgao": "MUNICIPIO DE BOFETE",
-        "Total": 179438.6,
-        "UASG": "852"
+        "UF": "SP",
+        "Municipio": "Bofete",
+        "Fornecedor": "D.M.P.EQUIPAMENTOS LTDA.",
+        "CNPJ": "38874848000112",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T08:00:00",
+        "Licitacao": "852000082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "LUMINÁRIA DE LED - POTÊNCIA MÍNIMA 40W - CONFORME ANEXO I - TERMO DE REFERÊNCIA",
+                "Status": "Venceu",
+                "Valor": 55600.0
+            },
+            {
+                "Item": 2,
+                "Desc": "LUMINÁRIA DE LED - POTÊNCIA MÍNIMA 100W - CONFORME ANEXO I - TERMO DE REFERÊNCIA",
+                "Status": "Venceu",
+                "Valor": 75741.6
+            },
+            {
+                "Item": 3,
+                "Desc": "LUMINÁRIA DE LED - POTÊNCIA MÍNIMA 150W - CONFORME ANEXO I - TERMO DE REFERÊNCIA",
+                "Status": "Venceu",
+                "Valor": 48097.0
+            }
+        ]
     },
     {
         "CNPJ": "73856593000166",
@@ -3507,14 +4183,79 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "52442148000180",
-        "Data": "20250401",
-        "Fornecedor": "52.442.148 MAURICIO RODRIGUES CARLOS",
-        "Itens": 10,
-        "Licitacao": "942000502025",
+        "DataResult": "2025-04-15T09:38:38",
+        "UASG": "942",
+        "Edital": "00050/2025",
         "Orgao": "MUNICIPIO DE URUCANIA",
-        "Total": 16226.42,
-        "UASG": "942"
+        "UF": "MG",
+        "Municipio": "Urucânia",
+        "Fornecedor": "52.442.148 MAURICIO RODRIGUES CARLOS",
+        "CNPJ": "52442148000180",
+        "InicioRec": "",
+        "FimRec": "2025-04-15T13:30:00",
+        "Licitacao": "942000502025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CHAPA DE ACO FINA A QUENTE BITOLA MSG 3/16\", E = 4,75 MM (38,00 KG/M2)",
+                "Status": "Venceu",
+                "Valor": 3625.2
+            },
+            {
+                "Item": 2,
+                "Desc": "CALHA QUADRADA DE CHAPA DE ACO GALVANIZADA NUM 24,CORTE 50CM",
+                "Status": "Venceu",
+                "Valor": 3806.72
+            },
+            {
+                "Item": 3,
+                "Desc": "TUBO ACO GALVANIZADO COM COSTURA, CLASSE LEVE, DN 50 MM (2\"), E = 3,00 MM, *4,40* KG/M(NBR 5580)",
+                "Status": "Venceu",
+                "Valor": 6732.72
+            },
+            {
+                "Item": 4,
+                "Desc": "DOBRADIÇA DE FERRO, MEDIDAS (3/4\"X 1\"), TIPO PINO GONZO NÚMERO 2, INCLUSIVE INSTALAÇÃO,EXCLUSIVE PINTURA DE ACABAMENTO",
+                "Status": "Venceu",
+                "Valor": 160.62
+            },
+            {
+                "Item": 5,
+                "Desc": "FERROLHO COM FECHO CHATO E PORTA CADEADO, EM ACO GALVANIZADO / ZINCADO, DESOBREPOR, COM COMPRIMENTO DE 3\" A 4\", CHAPA COM ESPESSURA MINIMA DE 1,70 MM E LARGURA MINIMA DE 5,00 CM (FECHO REFORCADO)",
+                "Status": "Venceu",
+                "Valor": 35.52
+            },
+            {
+                "Item": 6,
+                "Desc": "PERFIL \"U\" SIMPLES, EM CHAPA DOBRADA DE ACO LAMINADO, E = 3 MM, H = 125 MM, L = 50 MM(5,07 KG/M)",
+                "Status": "Venceu",
+                "Valor": 373.72
+            },
+            {
+                "Item": 7,
+                "Desc": "TUBO ACO GALVANIZADO COM COSTURA, CLASSE MEDIA, DN 3\", E = *4,05* MM, PESO *8,47* KG/M(NBR 5580)",
+                "Status": "Venceu",
+                "Valor": 863.5
+            },
+            {
+                "Item": 8,
+                "Desc": "NIPLE DE FERRO GALVANIZADO, COM ROSCA BSP, DE 3\"",
+                "Status": "Venceu",
+                "Valor": 213.7
+            },
+            {
+                "Item": 9,
+                "Desc": "PINO DE ACO COM ROSCA 1/4 \", COMPRIMENTODA HASTE = 30 MM E ROSCA = 20 MM (ACAODIRETA)",
+                "Status": "Venceu",
+                "Valor": 21.32
+            },
+            {
+                "Item": 10,
+                "Desc": "BARRA DE ACO CHATA, RETANGULAR (QUALQUER BITOLA",
+                "Status": "Venceu",
+                "Valor": 393.4
+            }
+        ]
     },
     {
         "DataResult": "2025-02-25T13:25:05",
@@ -3565,14 +4306,25 @@
         ]
     },
     {
-        "CNPJ": "12889035000293",
-        "Data": "20250407",
-        "Fornecedor": "inovamed hospitalar ltda",
-        "Itens": 1,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 3600.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "inovamed hospitalar ltda",
+        "CNPJ": "12889035000293",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ACEBROFILINA 5MG/ML XAROPE FRASCO C/ 120ML  Apresentação: Frasco com 120ml.\r",
+                "Status": "Venceu",
+                "Valor": 3600.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-10T17:11:33",
@@ -3770,14 +4522,31 @@
         ]
     },
     {
-        "CNPJ": "26401571000121",
-        "Data": "20250407",
-        "Fornecedor": "Três Pharma Distribuidora e Serviços Ltda.",
-        "Itens": 2,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 3500.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "Três Pharma Distribuidora e Serviços Ltda.",
+        "CNPJ": "26401571000121",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "ACIDO FOLICO 0,2MG/ML EM GOTAS  APRESENTAÇÃO: FRASCO COM 30ML.\r",
+                "Status": "Venceu",
+                "Valor": 1750.0
+            },
+            {
+                "Item": 10,
+                "Desc": "ACIDO URSODESOXICOLICO 150MG EM COMPRIMIDOS.  APRESENTAÇÃO: BLISTER OU ENVELOPE\r",
+                "Status": "Venceu",
+                "Valor": 1750.0
+            }
+        ]
     },
     {
         "CNPJ": "65149197000251",
@@ -4098,14 +4867,55 @@
         ]
     },
     {
-        "CNPJ": "54892266000115",
-        "Data": "20250402",
-        "Fornecedor": "CALTEC INDUSTRIA & COMERCIO LTDA",
-        "Itens": 6,
-        "Licitacao": "547000082025",
+        "DataResult": "2025-04-07T15:26:12",
+        "UASG": "547",
+        "Edital": "00008/2025",
         "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO DE MARIANA",
-        "Total": 161800.0,
-        "UASG": "547"
+        "UF": "MG",
+        "Municipio": "Mariana",
+        "Fornecedor": "CALTEC INDUSTRIA & COMERCIO LTDA",
+        "CNPJ": "54892266000115",
+        "InicioRec": "",
+        "FimRec": "2025-04-22T08:00:00",
+        "Licitacao": "547000082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Servico de torno convencionalServico de torno convencional\r",
+                "Status": "Venceu",
+                "Valor": 61200.0
+            },
+            {
+                "Item": 2,
+                "Desc": "SERVICO DE FRESADEIRASERVICO DE FRESADEIRA\r",
+                "Status": "Venceu",
+                "Valor": 36000.0
+            },
+            {
+                "Item": 3,
+                "Desc": "SERVICO DE FURADEIRASERVICO DE FURADEIRA\r",
+                "Status": "Venceu",
+                "Valor": 4900.0
+            },
+            {
+                "Item": 4,
+                "Desc": "SOLDA EM FERRO FUNDIDOSOLDA EM FERRO FUNDIDO\r",
+                "Status": "Venceu",
+                "Valor": 31200.0
+            },
+            {
+                "Item": 5,
+                "Desc": "SOLDA EM ALUMINIOSOLDA EM ALUMINIO\r",
+                "Status": "Venceu",
+                "Valor": 15100.0
+            },
+            {
+                "Item": 6,
+                "Desc": "Solda em aco inoxidavelSolda em aco inoxidavel\r",
+                "Status": "Venceu",
+                "Valor": 13400.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T08:17:05",
@@ -4129,14 +4939,31 @@
         ]
     },
     {
-        "CNPJ": "11708655000135",
-        "Data": "20250416",
-        "Fornecedor": "M&amp;R EQUIPAMENTOS E MOVEIS LTDA",
-        "Itens": 2,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 20858.0,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "M&amp;R EQUIPAMENTOS E MOVEIS LTDA",
+        "CNPJ": "11708655000135",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ARMÁRIO DE AÇO  COM AS SEGUINTES CARACTERÍSTICAS: TIPO ESCANINHO, FABRICADO EM CHAPA DE AÇO 24; COM PINTURA EPÓXI A PÓ E TRATAMENTO ANTIFERRUGEM, NA COR CINZA; 08 PORTAS COM DIMENSÕES APROXIMADAS (AXL) = 46X30CM, COM PELO MENOS UMA VENEZIANA PARA VENTILAÇÃO, COM TRINCO PARA CADEADO QUE PERMANECE FECHADA MESMO QUE ESTEJA SEM O CADEADO NO MOMENTO; SUPORTA ATÉ 20KG POR COMPARTIMENTO; POSSUI PÉS NIVELADORES; DIMENSÕES APROXIMADAS (AXLXP) = 1,98M X 0,70M X 0,40M, PODENDO TER UMA VARIAÇÃO NAS MEDIDAS DE ATÉ 10% (DEZ), PARA MAIS OU PARA MENOS; FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA-NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 9000.0
+            },
+            {
+                "Item": 10,
+                "Desc": "CADEIRA FIXA  CONTENDO AS SEGUINTES CARACTERÍSTICAS: ASSENTO E ENCOSTO EM POLIPROPILENO INJETADO DE ALTA RESISTÊNCIA; REVESTIDA EM COURO SINTÉTICO NA COR PRETA SEM BRAÇOS; 04 (QUATRO) PÉS COM SAPATAS; DIMENSÃO DO ASSENTO 450MMX420MM; ENCOSTO 380X380MM, ESTRUTURA EM AÇO, TUBO RETANGULAR COM MEDIDAS APROXIMADAS 30X50MM, COM REFORÇO SOB O ASSENTO EM TUBO CILÍNDRICO; ACABAMENTO EM PINTURA EPÓXI NA COR PRETA; FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 11858.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-02T13:51:47",
@@ -4181,14 +5008,25 @@
         ]
     },
     {
-        "CNPJ": "48545691000135",
-        "Data": "20250428",
-        "Fornecedor": "USINA COMERCIO DE VEICULOS LTDA",
-        "Itens": 1,
-        "Licitacao": "301000512025",
+        "DataResult": "2025-05-26T14:24:58",
+        "UASG": "301",
+        "Edital": "00051/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 225980.0,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "USINA COMERCIO DE VEICULOS LTDA",
+        "CNPJ": "48545691000135",
+        "InicioRec": "",
+        "FimRec": "2025-06-10T13:00:00",
+        "Licitacao": "301000512025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "VEÍCULOS EM GERAL  Tipo de Veículo:  Picape cabine dupla.  Zero km.  4 portas.  Tração 4x2.  Capacidade para 5 passageiros.  Ano/modelo: 2025 ou superior.  Motorização:  Motor 4 cilindros com potência acima de 100 cv.  Combustível:   Flex.  Câmbio:   Transmissão manual de, no mínimo, 5 marchas.  Dimensões e Capacidades:  Entre-eixos mínimo de 2,8 metros.  Capacidade de carga útil mínima de 650 kg.  Equipamentos de Segurança:  Airbags frontais para motorista e passageiro.  Freios ABS nas quatro rodas.  Alerta de cinto de segurança não afivelado.  Conforto e Conveniência:  Ar-condicionado.  Direção assistida (hidráulica ou elétrica).  Vidros e travas elétricas nas quatro portas.  Rodas e Pneus: Rodas de aço.  Pneus de uso misto.  Garantia:  Garantia mínima de 12 (doze) meses.  Outras Especificações:  Veículo na cor branca.  Manual do proprietário e chave reserva inclusos.  Assistência técnica disponível em um raio de até 120 km do município de Coronel Fabriciano/MG.  Peito de aço  Documentação e Despesas  \r",
+                "Status": "Venceu",
+                "Valor": 225980.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-03T08:17:05",
@@ -4358,14 +5196,31 @@
         ]
     },
     {
-        "CNPJ": "10685820000118",
-        "Data": "20250422",
-        "Fornecedor": "SANEBRAS LOCACAO E SERVICOS LTDA",
-        "Itens": 2,
-        "Licitacao": "301000482025",
+        "DataResult": "2025-05-14T14:20:31",
+        "UASG": "301",
+        "Edital": "00048/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
-        "Total": 61000.0,
-        "UASG": "301"
+        "UF": "MG",
+        "Municipio": "Coronel Fabriciano",
+        "Fornecedor": "SANEBRAS LOCACAO E SERVICOS LTDA",
+        "CNPJ": "10685820000118",
+        "InicioRec": "",
+        "FimRec": "2025-05-30T13:00:00",
+        "Licitacao": "301000482025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "SERVIÇOS DE LOCAÇÃO DE BANHEIROS QUIMICOS BANHEIROS QUIMICOS MASCULINO E FEMININO: BANHEIROS QUÍMICOS: DESCRIÇÃO: FABRICADOS EM POLIETILENO DE ALTA DENSIDADE, RESISTENTE E TOTALMENTE LAVÁVEL, COM COBERTURA TRANSLÚCIDA, INCLINADA, COM CAVALETES PARA IMPEDIR A ENTRADA DA CHUVA. PORTA COM 180º DE ABERTURA, COM MOLA INTERNA (DE ALTA RESISTÊNCIA) QUE A MANTENHA FECHADA; VENTILAÇÃO INTERNA ATRAVÉS DE TELAS, ESPAÇO INTERNO MÍNIMO DE 2,4 METROS CÚBICOS. TRANCA EMBUTIDA RESISTENTE A VIOLAÇÃO COM INDICAÇÃO \"LIVRE/OCUPADO\". CAIXA DE DEJETOS COM ASSENTO, SUPORTE PARA PAPEL HIGIÊNICO, PONTOS DE LUZ, PISO ANTIDERRAPANTE, IDENTIFICAÇÃO \"MASCULINO/FEMININO\". PARA O USO DOS BANHEIROS PÚBLICOS, A CONTRATADA DEVERÁ MANTER A HIGIENIZACAO DURANTE TODO O PERÍODO DE REALIZAÇÃO DO EVENTO, COM ABASTECIMENTO DE PAPEL HIGIÊNICO E PRODUTOS QUÍMICOS PARA HIGIENIZAÇÃO E SE RESPONSABILIZAR POR POSSÍVEIS DANOS ADVINDOS DESSA UTILIZAÇÃO. OS DESCARTES DOS EFLUENTES DEVERÃO SER REALIZADOS EM LOCAL DEVIDAMENTE LICENCIADO.",
+                "Status": "Venceu",
+                "Valor": 45000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "SERVIÇOS DE LOCAÇÃO DE BANHEIROS QUIMICOS BANHEIROS QUIMICOS PORTADORES DE NECESSIDADES ESPECIAIS: BANHEIROS QUÍMICOS: DESCRIÇÃO: FABRICADOS EM POLIETILENO DE ALTA DENSIDADE, RESISTENTE E TOTALMENTE LAVÁVEL, COM COBERTURA TRANSLÚCIDA, INCLINADA, COM CAVALETES PARA IMPEDIR A ENTRADA DA CHUVA. PORTA COM 180º DE ABERTURA, COM MOLA INTERNA (DE ALTA RESISTÊNCIA) QUE A MANTENHA FECHADA; VENTILAÇÃO INTERNA ATRAVÉS DE TELAS, ESPAÇO INTERNO MÍNIMO DE 2,4 METROS CÚBICOS. TRANCA EMBUTIDA RESISTENTE A VIOLAÇÃO COM INDICAÇÃO \"LIVRE/OCUPADO\". CAIXA DE DEJETOS COM ASSENTO, SUPORTE PARA PAPEL HIGIÊNICO, PONTOS DE LUZ, PISO ANTIDERRAPANTE, PARA PESSOAS COM NECESSIDADES ESPECIAIS (CADEIRANTES), DIMENSÕES MÍNIMAS DE 1,57M DE LARGURA X 1,57M DE COMPRIMENTO X 2,31M DE ALTURA, EM ESTRUTURA TAMBÉM DE POLIETILENO. COTAÇÃO: POR UNIDADES,PARA PESSOA COM NECESSIDADE ESPECIAL. A CONTRATADA DEVERÁ MANTER A HIGIENIZACAO DURANTE TODO O PERÍODO DE REALIZAÇÃO DO EVENTO, COM ABASTECIMENTO DE PAPEL HIGIÊNICO E PRODUTOS.",
+                "Status": "Venceu",
+                "Valor": 16000.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-04T14:16:15",
@@ -4492,14 +5347,31 @@
         ]
     },
     {
-        "CNPJ": "73856593000166",
-        "Data": "20250407",
-        "Fornecedor": "PRATI, DONADUZZI",
-        "Itens": 2,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 3400.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "PRATI, DONADUZZI",
+        "CNPJ": "73856593000166",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ACETILCISTEINA 20 MG / ML XAROPE FRASCO- Frasco com 120 ml  Apresentação: Frasco com 120ml.\r",
+                "Status": "Venceu",
+                "Valor": 1700.0
+            },
+            {
+                "Item": 4,
+                "Desc": "ACICLOVIR 200 MG COMPRIMIDOS  Apresentação: Blister ou envelope.\r",
+                "Status": "Venceu",
+                "Valor": 1700.0
+            }
+        ]
     },
     {
         "CNPJ": "44442996000160",
@@ -4611,14 +5483,31 @@
         ]
     },
     {
-        "CNPJ": "39935073000100",
-        "Data": "20250407",
-        "Fornecedor": "MG2 NUTRICAO LTDA",
-        "Itens": 3,
-        "Licitacao": "355000292025",
+        "DataResult": "2025-05-14T15:04:12",
+        "UASG": "355",
+        "Edital": "00029/2025",
         "Orgao": "MUNICIPIO DE PAPAGAIOS",
-        "Total": 361550.0,
-        "UASG": "355"
+        "UF": "MG",
+        "Municipio": "Papagaios",
+        "Fornecedor": "MG2 NUTRICAO LTDA",
+        "CNPJ": "39935073000100",
+        "InicioRec": "",
+        "FimRec": "2025-05-30T09:00:00",
+        "Licitacao": "355000292025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "FORMULA INFANTIL EM PO PARA LACTENTES E DE SEGUIMENTO PARA LACTENTES E CRIANCAS DE PRIMEIRA INFANCIA DESTINADA A NECESSIDADES DE DIETA ESPECIFICA E RESTRICAO DE LACTOSE (DIARREIA PERSISTENTES E/OU TOLERANCIA A LACTOSE). COM DHA,ARA, NUCLEOTIDEOS E TAURINA. DESTINADA A CRIANCAS DE 0 A 36 MESES. INGREDIENTES XAROPE DE GLICOSE, OLEOS VEGETAIS (OLEO DE PALMA, OLEO DE CANOLA, OLEO DE COCO, OLEO DE GIRASSOL ALTO OLEICO E OLEO DE GIRASSOL), CASEINATO DE CALCIO*, MALTODEXTRINA, CITRATO TRISSODICO, CITRATO DE POTASSIO, FOSFATO DE CALCIO TRIBASICO, CLORETO DE MAGNESIO, HIDROGENIO FOSFATO DIPOTASSICO, CLORETO DE POTASSIO, CARBONATO DE CALCIO, CLORIDRATO DE L-CISTEINA, OLEO DE PEIXE, OLEO DE MORTIERELLA ALPINA, CLORETO DE COLINA, ACIDO L-ASCORBICO, TAURINA, L-TRIPTOFANO, MIO-INOSITOL, SULFATO FERROSO, SULFATO DE ZINCO, SAL DISSODICO DE URIDINA-5-MONOFOSFATO, CITIDINA 5-MONOFOSFATO, L-CARNITINA, ADENOSINA 5-MONOFOSFATO, SAL DISSODICO DE INOSINA 5-MONOFOSFATO, ACETATO DE DL-ALFA-TOCOFERILA, NICOTI",
+                "Status": "Venceu",
+                "Valor": 69600.0
+            },
+            {
+                "Item": 9,
+                "Desc": "FORMULA INFANTIL EM PO PARA LACTENTES ATE OS 6 MESES DE VIDA, A BASE DE PROTEINAS LACTEAS, COM DHA E ARA, PREBIOTICOS E NUCLEOTIDEOS.LACTOSE, PROTEINA DO SORO DO LEITE, OLEOS VEGETAIS (OLEO DE PALMA, OLEO DE GIRASSOL ALTO OLEICO, OLEO DE CANOLA, OLEO DE GIRASSOL), LEITE DESNATADO, FIBRAS ALIMENTARES (GALACTO-OLIGOSSACARIDEOS E FRUTO-OLIGOSSACARIDEOS), CARBONATO DE CALCIO, OLEO DE PEIXE, CITRATO TRIPOTASSICO, CLORETO DE SODIO, FOSFATO DE CALCIO DIBASICO, FOSFATO TRICALCICO, OLEO DE MORTIERELLA ALPINA, ACIDO L-ASCORBICO, BITARTARATO DE COLINA, CLORETO DE MAGNESIO, TAURINA, SULFATO FERROSO, CLORETO DE COLINA, SULFATO DE ZINCO, MIO-INOSITOL, CITIDINA 5-MONOFOSFATO, SAL DISSODICO DE URIDINA 5-MONOFOSFATO, ADENOSINA 5-MONOFOSFATO, SAL DISSODICO DE INOSINA 5-MONOFOSFATO, NICOTINAMIDA, SAL DISSODICO DE GUANOSINA 5-MONOFOSFATO, ACETATO DE DL-ALFA TOCOFERILA, GLUCONATO CUPRICO, D-PANTOTENATO DE CALCIO, PALMITATO DE RETINILA, DL-ALFA TOCOFEROL, CLORIDRATO DE CLORETO DE TIAMINA, CLORIDRATO DE PI",
+                "Status": "Venceu",
+                "Valor": 265000.0
+            }
+        ]
     },
     {
         "CNPJ": "10745254000192",
@@ -4692,14 +5581,49 @@
         "UASG": "81"
     },
     {
-        "CNPJ": "35215257000145",
-        "Data": "20250428",
-        "Fornecedor": "DENTAL PREMIUM LTDA",
-        "Itens": 5,
-        "Licitacao": "10001032025",
+        "DataResult": "2025-06-12T10:37:12",
+        "UASG": "10",
+        "Edital": "00103/2025",
         "Orgao": "MUNICIPIO DE CLAUDIO",
-        "Total": 3410.5,
-        "UASG": "10"
+        "UF": "MG",
+        "Municipio": "Cláudio",
+        "Fornecedor": "DENTAL PREMIUM LTDA",
+        "CNPJ": "35215257000145",
+        "InicioRec": "",
+        "FimRec": "2025-06-13T09:30:00",
+        "Licitacao": "10001032025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "ALAVANCA RETA No 304 Com laminas longas afiadas concovas finas eprojetadas para facil insercao entre a ponta deraiz e o processo alveolar. Afiadas nas pontaspara cinzelar protuberancias nas paredes dascavidades que possam interferir na remocao defragmentacao de raiz. Angulo de 45º.\r",
+                "Status": "Venceu",
+                "Valor": 897.5
+            },
+            {
+                "Item": 7,
+                "Desc": "ALAVANCA RETA N 301\r",
+                "Status": "Venceu",
+                "Valor": 359.0
+            },
+            {
+                "Item": 8,
+                "Desc": "ALAVANCA SELDIN\r",
+                "Status": "Venceu",
+                "Valor": 359.0
+            },
+            {
+                "Item": 9,
+                "Desc": "ALAVANCA TIPO SELDIN 1 DIREITA\r",
+                "Status": "Venceu",
+                "Valor": 897.5
+            },
+            {
+                "Item": 10,
+                "Desc": "SELDIN 1 ESQUERDA\r",
+                "Status": "Venceu",
+                "Valor": 897.5
+            }
+        ]
     },
     {
         "CNPJ": "60720082000170",
@@ -4829,14 +5753,31 @@
         ]
     },
     {
-        "CNPJ": "08296762000199",
-        "Data": "20250408",
-        "Fornecedor": "PRO-SERVICE COMERCIO LTDA",
-        "Itens": 2,
-        "Licitacao": "255000612025",
+        "DataResult": "2025-04-25T12:58:26",
+        "UASG": "255",
+        "Edital": "00061/2025",
         "Orgao": "MUNICIPIO DE ILICINEA",
-        "Total": 73630.0,
-        "UASG": "255"
+        "UF": "MG",
+        "Municipio": "Ilicínea",
+        "Fornecedor": "PRO-SERVICE COMERCIO LTDA",
+        "CNPJ": "08296762000199",
+        "InicioRec": "",
+        "FimRec": "2025-05-08T09:00:00",
+        "Licitacao": "255000612025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CPAP CONTÍNUOS POSITIVE AIRWAY PRESSURE  AUTOMÁTICO COM MÁSCARA NASAL - APRESENTAR CERTIFICADO DE REGISTRO NA ANVISA DO EQUIPAMENTO E DOS ACESSÓRIOS E AFE AUTORIZAÇÃO DE FUNCIONAMENTO NA ANVISA.",
+                "Status": "Venceu",
+                "Valor": 46750.0
+            },
+            {
+                "Item": 2,
+                "Desc": "CPAP CONTÍNUOS POSITIVE AIRWAY PRESSURE AUTOMÁTICO COM MÁSCARA ORONASAL - APRESENTAR CERTIFICADO DE REGISTRO NA ANVISA DO EQUIPAMENTO E DOS ACESSÓRIOS E AFE AUTORIZAÇÃO DE FUNCIONAMENTO NA ANVISA",
+                "Status": "Venceu",
+                "Valor": 26880.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-22T09:18:14",
@@ -4860,14 +5801,25 @@
         ]
     },
     {
-        "CNPJ": "43297596000146",
-        "Data": "20250416",
-        "Fornecedor": "RIO DAS PEDRAS COMERCIO DE ARTIGOS PLASTICOS EIRELI",
-        "Itens": 1,
-        "Licitacao": "831000942025",
+        "DataResult": "2025-04-29T15:05:45",
+        "UASG": "831",
+        "Edital": "00094/2025",
         "Orgao": "MUNICIPIO DE UBERABA",
-        "Total": 17171.7,
-        "UASG": "831"
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "RIO DAS PEDRAS COMERCIO DE ARTIGOS PLASTICOS EIRELI",
+        "CNPJ": "43297596000146",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:00:00",
+        "Licitacao": "831000942025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "MESA PLÁSTICA  COM AS SEGUINTES CARACTERÍSTICAS: FABRICADA EM POLIPROPILENO; EMPILHÁVEL; COR BRANCA; APRESENTA TRATAMENTO ANTI-UV, OU SEJA, RESISTENTE AOS RAIOS SOLARES; DIMENSÕES APROXIMADAS (CXLXA) = 0,68 X 0,68 X 0,75M, PODENDO VARIAR 10% (DEZ) PARA MAIS OU PARA MENOS. FABRICAÇÃO EM CONFORMIDADE COM A NORMA DE ERGONOMIA - NR-17; GARANTIA MÍNIMA DE 12 (DOZE) MESES PARA DEFEITOS DE FABRICAÇÃO.\r",
+                "Status": "Venceu",
+                "Valor": 17171.7
+            }
+        ]
     },
     {
         "DataResult": "2025-04-22T09:18:14",
@@ -4891,14 +5843,25 @@
         ]
     },
     {
-        "CNPJ": "23448375000114",
-        "Data": "20250415",
-        "Fornecedor": "LEOPOLDINO BORGES ROSA  CIA LTDA",
-        "Itens": 1,
-        "Licitacao": "1301000382025",
+        "DataResult": "2025-07-08T10:35:38",
+        "UASG": "1301",
+        "Edital": "00038/2025",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "Total": 41408.0,
-        "UASG": "1301"
+        "UF": "GO",
+        "Municipio": "Bom Jesus de Goiás",
+        "Fornecedor": "LEOPOLDINO BORGES ROSA  CIA LTDA",
+        "CNPJ": "23448375000114",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T09:00:00",
+        "Licitacao": "1301000382025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "CARNE DE 2ª MOIDA-",
+                "Status": "Venceu",
+                "Valor": 41408.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-14T14:38:17",
@@ -4986,14 +5949,25 @@
         "UASG": "1998"
     },
     {
-        "CNPJ": "10742506000120",
-        "Data": "20250401",
-        "Fornecedor": "PAULO QUINELLI NETO",
-        "Itens": 1,
-        "Licitacao": "835000182025",
+        "DataResult": "2025-07-21T16:48:02",
+        "UASG": "835",
+        "Edital": "00018/2025",
         "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
-        "Total": 453110.0,
-        "UASG": "835"
+        "UF": "MG",
+        "Municipio": "Ribeirão das Neves",
+        "Fornecedor": "PAULO QUINELLI NETO",
+        "CNPJ": "10742506000120",
+        "InicioRec": "",
+        "FimRec": "2025-06-27T08:59:00",
+        "Licitacao": "835000182025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Solucao injetavel a base de Propofol 1%, frasco de 100ml, fracionavel.Solucao injetavel a base de Propofol 1%, frasco de 100ml, fracionavel.\r",
+                "Status": "Venceu",
+                "Valor": 453110.0
+            }
+        ]
     },
     {
         "CNPJ": "47225693000184",
@@ -5100,14 +6074,37 @@
         ]
     },
     {
-        "CNPJ": "49743058000114",
-        "Data": "20250415",
-        "Fornecedor": "GBC SOLAR E ELETRICA LTDA",
-        "Itens": 3,
-        "Licitacao": "22000542025",
+        "DataResult": "2025-09-02T10:44:02",
+        "UASG": "22",
+        "Edital": "00054/2025",
         "Orgao": "MUNICIPIO DE MATOZINHOS",
-        "Total": 140019.0,
-        "UASG": "22"
+        "UF": "MG",
+        "Municipio": "Matozinhos",
+        "Fornecedor": "GBC SOLAR E ELETRICA LTDA",
+        "CNPJ": "49743058000114",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T09:30:00",
+        "Licitacao": "22000542025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "FORNECIMENTO DE LUMINÁRIA PARA ILUMINAÇÃO PÚBLICA COM TECNOLOGIA LED, POTÊNCIA DE 100W",
+                "Status": "Venceu",
+                "Valor": 45600.0
+            },
+            {
+                "Item": 4,
+                "Desc": "FORNECIMENTO DE LUMINÁRIA PARA ILUMINAÇÃO PÚBLICA COM TECNOLOGIA LED, POTÊNCIA DE 200W",
+                "Status": "Venceu",
+                "Valor": 87425.0
+            },
+            {
+                "Item": 5,
+                "Desc": "FORNECIMENTO DE LUMINÁRIA PARA ILUMINAÇÃO PÚBLICA COM TECNOLOGIA LED, POTÊNCIA DE 200W COTA RESERVADA",
+                "Status": "Venceu",
+                "Valor": 6994.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-04T09:57:01",
@@ -5195,14 +6192,25 @@
         ]
     },
     {
-        "CNPJ": "05018604000189",
-        "Data": "20250417",
-        "Fornecedor": "DROGALESTE PERFUMARIA & COSMETICOS LTDA",
-        "Itens": 1,
-        "Licitacao": "781000192025",
+        "DataResult": "2025-05-02T09:08:38",
+        "UASG": "781",
+        "Edital": "00019/2025",
         "Orgao": "MUNICIPIO DE VIRGINIA",
-        "Total": 117600.0,
-        "UASG": "781"
+        "UF": "MG",
+        "Municipio": "Virgínia",
+        "Fornecedor": "DROGALESTE PERFUMARIA & COSMETICOS LTDA",
+        "CNPJ": "05018604000189",
+        "InicioRec": "",
+        "FimRec": "2025-05-15T14:00:00",
+        "Licitacao": "781000192025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Medicamento Ético",
+                "Status": "Venceu",
+                "Valor": 117600.0
+            }
+        ]
     },
     {
         "DataResult": "2025-04-25T13:16:17",
@@ -5356,14 +6364,25 @@
         ]
     },
     {
-        "CNPJ": "14308627000119",
-        "Data": "20250416",
-        "Fornecedor": "COSTA E CARVALHO CONSULTORIA E ASSESSORIA LTDA",
-        "Itens": 1,
-        "Licitacao": "248000082025",
+        "DataResult": "2025-06-03T08:11:51",
+        "UASG": "248",
+        "Edital": "00008/2025",
         "Orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
-        "Total": 384368.4,
-        "UASG": "248"
+        "UF": "MG",
+        "Municipio": "Itabira",
+        "Fornecedor": "COSTA E CARVALHO CONSULTORIA E ASSESSORIA LTDA",
+        "CNPJ": "14308627000119",
+        "InicioRec": "",
+        "FimRec": "2025-06-18T08:00:00",
+        "Licitacao": "248000082025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Contratação de empresa especializada na prestação de serviços continuados de roçada, capina, poda, destocamento e cercamento, com fornecimento de mão-de-obra, materiais e equipamentos, para o asseio e conservação da área verde das instalações do SAAE de Itabira",
+                "Status": "Venceu",
+                "Valor": 384368.4
+            }
+        ]
     },
     {
         "DataResult": "2025-04-07T09:10:20",
@@ -5435,14 +6454,31 @@
         ]
     },
     {
-        "CNPJ": "52967925000100",
-        "Data": "20250407",
-        "Fornecedor": "ABC FARMACEUTICO LTDA",
-        "Itens": 2,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 12240.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "ABC FARMACEUTICO LTDA",
+        "CNPJ": "52967925000100",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "ACIDO ACETILSALICILICO 100 MG COMPRIMIDOS  APRESENTAÇÃO:BLÍSTER OU ENVELOPE.\r",
+                "Status": "Venceu",
+                "Valor": 6120.0
+            },
+            {
+                "Item": 8,
+                "Desc": "ACIDO FOLICO 0,2MG/ML EM GOTAS  APRESENTAÇÃO: FRASCO COM 30ML.\r",
+                "Status": "Venceu",
+                "Valor": 6120.0
+            }
+        ]
     },
     {
         "DataResult": "2025-06-04T09:00:01",
@@ -5472,14 +6508,37 @@
         ]
     },
     {
-        "CNPJ": "08515909693",
-        "Data": "20250428",
-        "Fornecedor": "LEANDRO MOREIRA DELPHINO",
-        "Itens": 3,
-        "Licitacao": "166000162025",
+        "DataResult": "2025-05-27T14:42:43",
+        "UASG": "166",
+        "Edital": "00016/2025",
         "Orgao": "MUNICIPIO DE IBITIURA DE MINAS",
-        "Total": 180511.2,
-        "UASG": "166"
+        "UF": "MG",
+        "Municipio": "Ibitiúra de Minas",
+        "Fornecedor": "LEANDRO MOREIRA DELPHINO",
+        "CNPJ": "08515909693",
+        "InicioRec": "",
+        "FimRec": "2025-06-09T09:00:00",
+        "Licitacao": "166000162025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Transporte de pacientes para Hemodiálise – Centro de Referência Poços de Caldas MG (viagens: terças/quintas)",
+                "Status": "Venceu",
+                "Valor": 71589.6
+            },
+            {
+                "Item": 2,
+                "Desc": "Transporte de pacientes para Hemodiálise – Centro de Referência São Joao da Boa Vista SP (viagens: segunda/quarta/sexta)",
+                "Status": "Venceu",
+                "Valor": 54460.8
+            },
+            {
+                "Item": 3,
+                "Desc": "Transporte de pacientes para Hemodiálise – Centro de Referência São Joao da Boa Vista SP (viagens: terça/quinta/sábado)",
+                "Status": "Venceu",
+                "Valor": 54460.8
+            }
+        ]
     },
     {
         "CNPJ": "31088105000178",
@@ -5534,14 +6593,79 @@
         ]
     },
     {
-        "CNPJ": "54983423000106",
-        "Data": "20250414",
-        "Fornecedor": "MT SAUDE LTDA",
-        "Itens": 10,
-        "Licitacao": "962000302025",
+        "DataResult": "2025-07-11T09:54:36",
+        "UASG": "962",
+        "Edital": "00030/2025",
         "Orgao": "MUNICIPIO DE SENHORA DO PORTO",
-        "Total": 1448999.96,
-        "UASG": "962"
+        "UF": "MG",
+        "Municipio": "Senhora do Porto",
+        "Fornecedor": "MT SAUDE LTDA",
+        "CNPJ": "54983423000106",
+        "InicioRec": "",
+        "FimRec": "2025-07-09T09:00:00",
+        "Licitacao": "962000302025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Médico Clínico Geral para atuar no ESF   Estratégia da Saúde da Família, com carga horária de 40 horas semanais, diariamente (8 horas diária); segundas à sextas feiras (exceto feriados); os serviços serão prestados presencialmente, conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 468000.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Médico clínico geral para trabalhar sobreaviso Regime de escala segunda a sexta feira de 19:00 âs 07:00 durante a vigência do contrato e convocação. Conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 338000.0
+            },
+            {
+                "Item": 3,
+                "Desc": "Médico clínico geral para trabalhar para eventuais Plantões, sábado e domingo, feriados nacionais, m  para trabalhar para eventuais Plantões, sábado e domingo, feriados nacionais, municipal ou eventuais eventos festivos do Município, ou acompanhamento em caso de necessidade para em caso de Urgência e Emergência escala de horário conforme cronograma da Secretaria de Saúde Carga horária de 12x 36 horas por plantão. Conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 156000.0
+            },
+            {
+                "Item": 4,
+                "Desc": "Enfermeiro para trabalhar Enfermeiro para trabalhar em Regime de escala segunda a sexta feira durante a vigência do contrato e conforme cronograma da Secretaria de Saúde Carga horária de 12x36 horas. Conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 168000.0
+            },
+            {
+                "Item": 5,
+                "Desc": "Técnico enfermagem em Regime  de escala segunda a sexta feira  durante a vigência do contrato e conforme cronograma da Secretaria de Saúde Carga horária de 12x36 horas por plantão. conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 132000.0
+            },
+            {
+                "Item": 6,
+                "Desc": "Enfermeiro, para plantões presenciais (final de semana) das 19:00 as 7:00 horas, para prestação de serviços de enfermagem, conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 48000.0
+            },
+            {
+                "Item": 7,
+                "Desc": "Enfermeiro para plantões presenciais  (final de semana e feriados) das 07:00 as 19:00 horas, para prestação de serviços de enfermagem, conforme estabelecido pela secretaria municipal de saúde",
+                "Status": "Venceu",
+                "Valor": 48000.0
+            },
+            {
+                "Item": 8,
+                "Desc": "Técnico de enfermagem,  para plantões presenciais (final de semana) das 19:00 as 7:00 horas, para prestação de serviços de enfermagem, conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 32760.0
+            },
+            {
+                "Item": 9,
+                "Desc": "Técnico de enfermagem, para plantões presenciais  (final de semana e feriados) das 07:00 as 19:00 horas, para prestação de serviços de enfermagem, conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 32760.0
+            },
+            {
+                "Item": 10,
+                "Desc": "Médico a disposição do Município 24 horas para atender demandas de transferência de pacientes urgentes para hospitais de alta complexibilidade, conforme estabelecido pela secretaria municipal de saúde.",
+                "Status": "Venceu",
+                "Valor": 25479.96
+            }
+        ]
     },
     {
         "CNPJ": "55245731000199",
@@ -5711,14 +6835,31 @@
         ]
     },
     {
-        "CNPJ": "12927876000167",
-        "Data": "20250407",
-        "Fornecedor": "SOMA/MG PRODUTOS HOSPITALARES LTDA",
-        "Itens": 2,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 1380.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "SOMA/MG PRODUTOS HOSPITALARES LTDA",
+        "CNPJ": "12927876000167",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "ACIDO ASCORBICO 200MG/ML 20ML  Apresentação: Frasco com 20ml.\r",
+                "Status": "Venceu",
+                "Valor": 690.0
+            },
+            {
+                "Item": 9,
+                "Desc": "ACIDO FOLICO 5 MG COMPRIMIDOS  Apresentação: Blister ou envelope.\r",
+                "Status": "Venceu",
+                "Valor": 690.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-21T08:45:51",
@@ -5758,14 +6899,31 @@
         "UASG": "1"
     },
     {
-        "CNPJ": "41484059000260",
-        "Data": "20250414",
-        "Fornecedor": "Puissance Automoveis Ltda",
-        "Itens": 2,
-        "Licitacao": "1600000502025",
+        "DataResult": "2025-05-14T18:16:30",
+        "UASG": "1600",
+        "Edital": "00050/2025",
         "Orgao": "MUNICIPIO DE SAO JOAO NEPOMUCENO",
-        "Total": 596970.0,
-        "UASG": "1600"
+        "UF": "MG",
+        "Municipio": "São João Nepomuceno",
+        "Fornecedor": "Puissance Automoveis Ltda",
+        "CNPJ": "41484059000260",
+        "InicioRec": "",
+        "FimRec": "2025-05-28T09:30:00",
+        "Licitacao": "1600000502025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "VEÍCULO DE PASSEIO PARA 5 LUGARES - AUTOMOVEL 0 KM - VEÍCULO HATCH ZERO QUILÔMETRO, COM (05) LUGARES; ANO E MODELO MÍNIMO 2025/2025; COR BRANCA, PARA -CHOQUE NA COR DO VEÍCULO; 4 PORTAS; ALTURA MÍNIMA DO VEÍCULO (mm) 1.500; COMPRIMENTO MÍNIMA DO VEÍCULO (mm) 3.990; LARGURA MÍNIMA DO VEÍCULO (mm) 1.950 DISTÂNCIA MÍNIMA ENTRE -EIXOS (mm) 2.520; MOTOR MÍNIMO 1.0 FLEX; POTÊNCIA MÍNIMA DO MOTOR DE 71CV (SETENTA E UM CAVALOS); TRAVAS ELÉTRICAS; ALARME ANTIFURTO (COM APITO SONORO); VIDROS ELÉTRICOS. FREIOS ABS; AIRBAG DUPLO (MOTORISTA/PASSAGEIRO); CAPACIDADE MÍNIMA DO TANQUE DE 47 LITROS DE COMBUSTÍVEIS; AR CONDICIONADO; TRANSMISSÃO MANUAL MÍNIMA DE 06 (SEIS) MARCHAS; SENDO 5 A FRENTE E 1 RÉ; DIREÇÃO HIDRÁULICA OU ELÉTRICA; RODAS DE ARO NO MÍNIMO 14 (PODENDO SER DE FERRO OU DE LIGA); SISTEMA DE SOM MÍNIMO COM RÁDIO AM/FM, CD PLAYER, MP3, USB, 4 ALTO FALANTES E ANTENA DE TETO, GARANTIA DO VEÍCULO E DOS EQUIPAMENTOS DE NO MÍNIMO DE 1 ANO; EQUIPADOS COM TODOS OS ACESSÓRIOS EXIGIDOS PELO CONTRAM E LEGISLAÇÃO VIGOR.",
+                "Status": "Venceu",
+                "Valor": 240000.0
+            },
+            {
+                "Item": 3,
+                "Desc": "VEÍCULO TIPO MINIVAN COM CAPACIDADE DE 7 LUGARES 0KM / VEÍCULO NOVO/ ANO DE FABRICAÇÃO E MODELO 2025/ TIPO MINIVAN/ BICOMBUSTÍVEL/ CONTENDO NO MÍNIMO AS SEGUINTES CARACTERÍSTICAS: DIREÇÃO HIDRÁULICA OU ELÉTRICA/ CÂMBIO MANUAL OU AUTOMÁTICO/ AR CONDICIONADO/ VIDROS E TRAVAS ELÉTRICAS NAS 04 PORTAS/ COR BRANCA - PARACHOQUES NA COR DO VEÍCULO/ RÁDIO AM/FM COM ENTRADA USB, BLUETOOTH E AUX - IN(AUTOS FALANTES DIANTEIROS, TRASEIROS E ANTENA)/ FARÓIS DE NEBLINA/ TODOS OS ACESSORIOS MÍNIMOS OBRIGATÓRIOS, CONFORME LEGISLAÇÃO EM VIGOR / GARANTIA MÍNIMA DE 12 MESES",
+                "Status": "Venceu",
+                "Valor": 356970.0
+            }
+        ]
     },
     {
         "DataResult": "2025-02-11T14:40:30",
@@ -5819,14 +6977,31 @@
         "UASG": "192"
     },
     {
-        "CNPJ": "26600535000197",
-        "Data": "20250416",
-        "Fornecedor": "RECALL MANHUACU SERVIÇOS LTDA",
-        "Itens": 1,
-        "Licitacao": "589000332025",
+        "DataResult": "2025-05-21T14:26:05",
+        "UASG": "589",
+        "Edital": "00033/2025",
         "Orgao": "MUNICIPIO DE LUISBURGO",
-        "Total": 2850.0,
-        "UASG": "589"
+        "UF": "MG",
+        "Municipio": "Luisburgo",
+        "Fornecedor": "RECALL MANHUACU SERVIÇOS LTDA",
+        "CNPJ": "26600535000197",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T08:00:00",
+        "Licitacao": "589000332025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "TONER MONOCORMÁTICO PB211\nTONER PARA MULTIFUNCIONAL MONOCROMÁTICA QUE SUPORTE NO MÍNIMO DISPOSITIVO ORIGINAL MODELO PB211 COM RENDIMENTO MÉDIO DE 1600 PAGINAS CONSIDERANDO 5% DE COBERTURA EM PAPEL A4.\n",
+                "Status": "Venceu",
+                "Valor": 3375.0
+            },
+            {
+                "Item": 10,
+                "Desc": "TONER MONOCORMÁTICO PD219\nTONER PARA MULTIFUNCIONAL MONOCROMÁTICA QUE SUPORTE NO MÍNIMO DISPOSITIVO ORIGINAL MODELO PD219 COM RENDIMENTO MÉDIO DE 1600 PAGINAS CONSIDERANDO 5% DE COBERTURA EM PAPEL A4.\n",
+                "Status": "Venceu",
+                "Valor": 2850.0
+            }
+        ]
     },
     {
         "DataResult": "2025-06-04T09:00:01",
@@ -5850,14 +7025,25 @@
         ]
     },
     {
-        "CNPJ": "48214791000189",
-        "Data": "20250401",
-        "Fornecedor": "ANIMALFORCE MEDICAMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "835000182025",
+        "DataResult": "2025-07-21T16:48:02",
+        "UASG": "835",
+        "Edital": "00018/2025",
         "Orgao": "MUNICIPIO DE RIBEIRAO DAS NEVES",
-        "Total": 8700.0,
-        "UASG": "835"
+        "UF": "MG",
+        "Municipio": "Ribeirão das Neves",
+        "Fornecedor": "ANIMALFORCE MEDICAMENTOS LTDA",
+        "CNPJ": "48214791000189",
+        "InicioRec": "",
+        "FimRec": "2025-06-27T08:59:00",
+        "Licitacao": "835000182025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Mata bicheira, larvicida, bernicida, repelente, antisseptico e cicatrizante a base de sulfadiazina prata e aluminio.Mata bicheira, larvicida, bernicida, repelente, antisseptico e cicatrizante a base de sulfadiazina prata e aluminio. Apresentacao em spray aerossol.\r",
+                "Status": "Venceu",
+                "Valor": 8700.0
+            }
+        ]
     },
     {
         "CNPJ": "19919775000193",
@@ -5870,14 +7056,25 @@
         "UASG": "1322"
     },
     {
-        "CNPJ": "56955733000134",
-        "Data": "20250416",
-        "Fornecedor": "ATACADO LIMPEL MG LTDA",
-        "Itens": 1,
-        "Licitacao": "589000332025",
+        "DataResult": "2025-05-21T14:26:05",
+        "UASG": "589",
+        "Edital": "00033/2025",
         "Orgao": "MUNICIPIO DE LUISBURGO",
-        "Total": 19980.0,
-        "UASG": "589"
+        "UF": "MG",
+        "Municipio": "Luisburgo",
+        "Fornecedor": "ATACADO LIMPEL MG LTDA",
+        "CNPJ": "56955733000134",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T08:00:00",
+        "Licitacao": "589000332025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "CAIXA DE SOM MULTIFUNÇÃO\n- CAIXA DE SOM AMPLIFICADA DE 2200W COM 2 SUBWOOFERS DE 12 POLEGADAS E 2 TWEETERS DE 4 POLEGADAS, FUNÇÃO MEGABASS, LUZES LED MULTICOLORIDAS NOS ALTO-FALANTES, FUNÇÃO KARAOKÊ, ENTRADAS: AUX, CARTÃO DE MEMÓRIA (SD), BLUETOOTH, CONEXÃO USB, P10 E RÁDIO FM. CONTROLE REMOTO, BIVOLT.\n",
+                "Status": "Venceu",
+                "Valor": 19980.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-22T16:36:39",
@@ -5986,14 +7183,55 @@
         "UASG": "777"
     },
     {
-        "CNPJ": "00010439000103",
-        "Data": "20250415",
-        "Fornecedor": "SUPERMERCADO LD LTDA",
-        "Itens": 6,
-        "Licitacao": "1301000382025",
+        "DataResult": "2025-07-08T10:35:38",
+        "UASG": "1301",
+        "Edital": "00038/2025",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "Total": 189657.4,
-        "UASG": "1301"
+        "UF": "GO",
+        "Municipio": "Bom Jesus de Goiás",
+        "Fornecedor": "SUPERMERCADO LD LTDA",
+        "CNPJ": "00010439000103",
+        "InicioRec": "",
+        "FimRec": "2025-04-29T09:00:00",
+        "Licitacao": "1301000382025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Apresuntado sem capa de gordura, de primeira qualidade.-",
+                "Status": "Venceu",
+                "Valor": 18500.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Bacon defumado - composto por barriga de suíno - de boa qualidade,-",
+                "Status": "Venceu",
+                "Valor": 5197.4
+            },
+            {
+                "Item": 4,
+                "Desc": "Carne bovina de 2ª em pedaços (Paleta, Fraldinha, Acém)-",
+                "Status": "Venceu",
+                "Valor": 61270.0
+            },
+            {
+                "Item": 6,
+                "Desc": "Carne suína (costelinha) -",
+                "Status": "Venceu",
+                "Valor": 16490.0
+            },
+            {
+                "Item": 9,
+                "Desc": "COXA E SOBRECOXA DE FRANGO-",
+                "Status": "Venceu",
+                "Valor": 51500.0
+            },
+            {
+                "Item": 10,
+                "Desc": "FILE DE FRANGO-",
+                "Status": "Venceu",
+                "Valor": 36700.0
+            }
+        ]
     },
     {
         "CNPJ": "05599171000100",
@@ -6006,14 +7244,49 @@
         "UASG": "678"
     },
     {
-        "CNPJ": "32410222000179",
-        "Data": "20250430",
-        "Fornecedor": "PAMELA STEPHANIE DA SILVA ROCHA 42929203897",
-        "Itens": 5,
-        "Licitacao": "873000042025",
+        "DataResult": "2025-05-20T10:05:04",
+        "UASG": "873",
+        "Edital": "00004/2025",
         "Orgao": "MUNICIPIO DE DIONISIO",
-        "Total": 59900.0,
-        "UASG": "873"
+        "UF": "MG",
+        "Municipio": "Dionísio",
+        "Fornecedor": "PAMELA STEPHANIE DA SILVA ROCHA 42929203897",
+        "CNPJ": "32410222000179",
+        "InicioRec": "",
+        "FimRec": "2025-05-29T09:00:00",
+        "Licitacao": "873000042025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Blusa escolar",
+                "Status": "Venceu",
+                "Valor": 28800.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Short /saia escolar",
+                "Status": "Venceu",
+                "Valor": 6200.0
+            },
+            {
+                "Item": 3,
+                "Desc": "Short masculino escolar",
+                "Status": "Venceu",
+                "Valor": 6000.0
+            },
+            {
+                "Item": 4,
+                "Desc": "Jaqueta escolar",
+                "Status": "Venceu",
+                "Valor": 9450.0
+            },
+            {
+                "Item": 5,
+                "Desc": "Calça escolar",
+                "Status": "Venceu",
+                "Valor": 9450.0
+            }
+        ]
     },
     {
         "DataResult": "2025-05-20T16:38:29",
@@ -6037,34 +7310,115 @@
         ]
     },
     {
-        "CNPJ": "07502724000182",
-        "Data": "20250416",
-        "Fornecedor": "NEOCONSIG TECNOLOGIA S/A",
-        "Itens": 1,
-        "Licitacao": "1963000632025",
+        "DataResult": "2025-08-21T13:15:30",
+        "UASG": "1963",
+        "Edital": "00063/2025",
         "Orgao": "MUNICIPIO DE PONTE NOVA",
-        "Total": 0.95,
-        "UASG": "1963"
+        "UF": "MG",
+        "Municipio": "Ponte Nova",
+        "Fornecedor": "NEOCONSIG TECNOLOGIA S/A",
+        "CNPJ": "07502724000182",
+        "InicioRec": "",
+        "FimRec": "2025-08-01T13:00:00",
+        "Licitacao": "1963000632025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Valor cobrado por linha de inserção entre a Contratada às Consignatárias",
+                "Status": "Venceu",
+                "Valor": 0.95
+            }
+        ]
     },
     {
-        "CNPJ": "01417694000120",
-        "Data": "20250407",
-        "Fornecedor": "DISTRIMIX DISTRIBUIDORA DE MEDICAMENTOS LTDA",
-        "Itens": 3,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 1536.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "DISTRIMIX DISTRIBUIDORA DE MEDICAMENTOS LTDA",
+        "CNPJ": "01417694000120",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "ACETILCISTEINA 600 MG- Apresentação :Envelope/Sache com 5 gr.      Apresentação: Envelopes com 5gr\r",
+                "Status": "Venceu",
+                "Valor": 482.0
+            },
+            {
+                "Item": 5,
+                "Desc": "ACICLOVIR CREME  ACICLOVIR 50MG/G. APRESENTAÇÃO: BISNAGA COM 10 G.\r",
+                "Status": "Venceu",
+                "Valor": 482.0
+            },
+            {
+                "Item": 10,
+                "Desc": "ACIDO URSODESOXICOLICO 150MG EM COMPRIMIDOS.  APRESENTAÇÃO: BLISTER OU ENVELOPE\r",
+                "Status": "Venceu",
+                "Valor": 572.0
+            }
+        ]
     },
     {
-        "CNPJ": "23099036000170",
-        "Data": "20250416",
-        "Fornecedor": "Inforocha Ltda",
-        "Itens": 7,
-        "Licitacao": "589000332025",
+        "DataResult": "2025-05-21T14:26:05",
+        "UASG": "589",
+        "Edital": "00033/2025",
         "Orgao": "MUNICIPIO DE LUISBURGO",
-        "Total": 43518.5,
-        "UASG": "589"
+        "UF": "MG",
+        "Municipio": "Luisburgo",
+        "Fornecedor": "Inforocha Ltda",
+        "CNPJ": "23099036000170",
+        "InicioRec": "",
+        "FimRec": "2025-06-03T08:00:00",
+        "Licitacao": "589000332025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AMPLIFICADOR DE SOM PROFISSIONAL\n\nMULTIFUCIONAL: POTÊNCIA: ENTRE 18W E 25W, VISOR: LED DIGITAL, FREQUÊNCIA: 80HZ 18KHZ, ALCANCE EFETIVO: 35M (SEM FIO), ALCANCE TOTAL: 500M2, ENTRADAS: USB / SD CARD / AUX, CONEXÃO: WIRELESS UHF / BLUETOOTH 4.2 OU 5.0, MICROFONE: SEM FIO WIRELESS, ALIMENTAÇÃO: 110/220V DC 5V OU DC 9V, BATERIA: 3.200MAH OU 4.400MAH, GARANTIA: ENTRE 6 A 12 MESES, AINDA, DEVE ACOMPANHAR O AMPLIFICADOR NO, MOMENTO DA ENTREGA: CONTEÚDO DA EMBALAGEM: 1X MICROFONE HEADSET SEM FIO; 1X CARREGADOR USB; 1X CARREGADOR DC 9V; 1X CABO 'Y' USB TIPO 'B'; 1X CABO AUX; 1X ALÇA PARA TRANSPORTE; 1X CASE EM EVA RÍGIDO; 1X MANUAL DE INSTRUÇÕES EM PORTUGUÊS-BR.\n",
+                "Status": "Venceu",
+                "Valor": 14590.0
+            },
+            {
+                "Item": 2,
+                "Desc": "BATERIA PARA NOBREAK SELADA 7A 12 V \n\nPRINCIPAIS CARACTERÍSTICAS:  - BATERIA DE 7A 12V DE CHUMBO-ÁCIDA REGULADA POR VÁLVULA - VRLA.  - TECNOLOGIA COM ELETRÔLITO ABSORVIDO.  - LIVRE DE MANUTENÇÃO.  - VASO EM RESINA ABS ESPECIAL COM ELEVADA RESISTÊNCIA MECÂNICA.  - OPERA EM LARGA FAIXA DE TEMPERATURA: -15 A 50ºC.  - MAIOR EXPECTATIVA DE VIDA.  - MENOR TAXA DE AUTO DESCARGA.  - APRESENTA ALTA PERFORMANCE EM ELEVADAS TAXAS DE DESCARGA.  - SÃO PROJETADAS PARA NÃO PERMITIR A LIBERAÇÃO DE GASES NOCIVOS À SAÚDE.  - A QUANTIDADE DE GASES EXALADA É DESPREZÍVEL.  - PODEM SER UTILIZADAS CONJUGADAS COM OUTROS EQUIPAMENTOS.  - PODE SER UTILIZADA EM DIVERSAS POSIÇÕES.  - PERMITE UMA INSTALAÇÃO SIMPLES E OTIMIZADA.  - ATENDE O GUIA EUROBAT.  - SÃO SEGURAS PARA O TRANSPORTE AÉREO (IATA-A67).\n",
+                "Status": "Venceu",
+                "Valor": 2655.0
+            },
+            {
+                "Item": 3,
+                "Desc": "BOBINA TÉRMICA DE PAPEL PARA RELÓGIO DE PONTO\nBOBINA PARA RELÓGIO DE PONTO ELETRÔNICO COM PAPEL TERMOSSENSÍVEL MEDINDO 57MM X 300M GRAMATURA 48G, LARGURA DO ROLO INTERNO 13MM\n",
+                "Status": "Venceu",
+                "Valor": 1620.0
+            },
+            {
+                "Item": 4,
+                "Desc": "CABO USB  1,80 METROS PARA IMPRESSORA\nCABO PARA CONEXÕES DE COMPUTADORES E NOTEBOOKS À IMPRESSORAS POR MEIO DE CONEXÃO USB 2.0 DO TIPO USB A X USB B COM TAMÍNIMO DE 1,80M COM SUPORTE A VELOCIDADE MÍNIMA DE TRANSMISSÃO DE 480MBPS\n",
+                "Status": "Venceu",
+                "Valor": 920.0
+            },
+            {
+                "Item": 5,
+                "Desc": "CAIXA DE CABO DE REDE RJ45 CAT5 305 METROS \nCABO DE REDE PARA SISTEMA DE CABEAMENTO ESTRUTURADO PARA TRÁFEGO DE VOZ, DADOS E IMAGENS, SEGUNDO REQUISITOS DAS NORMAS ANSI/TIA-568-C.2 (BALANCED TWISTED PAIR CABLING COMPONENTS) CATEGORIA 5 E ISO/IEC-11801, PARA CABEAMENTO HORIZONTAL OU SECUNDÁRIO ENTRE OS PAINÉIS DE DISTRIBUIÇÃO (PATCH PANELS) E OS CONECTORES NAS ÁREAS DE TRABALHO. · DIRETIVA ROHS – QUE ATENDA OS REQUISITOS DA DIRETIVA EUROPÉIA ROHS. BLINDADO, HASTE DE SILICONE FIXADORA CENTRAL, FIO DE NILON CENTRAL, 4 PARES TRANSADOS, 8 PÓLOS RÍGIDOS DE CORES: AZUL CLARO, AZUL ESCURO, VERDE CLARO, VERDE ESCURO, LARANJA CLARO, LARANJA ESCURO, MARROM CLARO E MARROM ESCURO. MARCAÇÃO METRO A METRO SIM - MATERIAL CCA 0.5, OD:5.6-5.8 - PADRÃO ANSI/TIA/EIA 568-B – B.1 - PROTEÇÃO EXTRA CONTRA INGRESSO E EGRESSO DE EMI (INDUÇÃO ELETROMAGNÉTICA) E RFI (INTERFERÊNCIA POR RÁDIOFREQÜÊNCIA), TAIS COMO, ESCRITÓRIOS COM ALTAS FONTES DE RUÍDO E INTERFERÊNCIA, PISOS DE FÁBRICA, ETC. - CABO DE 4 PARES TRANÇADOS COMPOSTOS DE CONDUTORES SÓLIDOS DE COBRE NU, 23 AWG, ISOLADOS EM POLIETILENO ESPECIAL, COM BLINDAGEM HELICOIDAL EM FITA METALIZADA. CAPA EXTERNA EM PVC NÃO PROPAGANTE À CHAMA, NA COR VERMELHA, COM MARCAÇÃO SEQÜENCIAL MÉTRICA, NA OPÇÃO CM, CMR E LSZH.\n",
+                "Status": "Venceu",
+                "Valor": 11023.5
+            },
+            {
+                "Item": 6,
+                "Desc": "CAIXA DE CABO DE REDE RJ45 CAT6 305 METROS \nCABO DE REDE PARA SISTEMA DE CABEAMENTO ESTRUTURADO PARA TRÁFEGO DE VOZ, DADOS E IMAGENS, SEGUNDO REQUISITOS DAS NORMAS ANSI/TIA-568-C.2 (BALANCED TWISTED PAIR CABLING COMPONENTS) CATEGORIA 6 E ISO/IEC-11801, PARA CABEAMENTO HORIZONTAL OU SECUNDÁRIO ENTRE OS PAINÉIS DE DISTRIBUIÇÃO (PATCH PANELS) E OS CONECTORES NAS ÁREAS DE TRABALHO. · DIRETIVA ROHS – QUE ATENDA OS REQUISITOS DA DIRETIVA EUROPÉIA ROHS. BLINDADO, HASTE DE SILICONE FIXADORA CENTRAL, FIO DE NILON CENTRAL, 4 PARES TRANSADOS, 8 PÓLOS RÍGIDOS DE CORES: AZUL CLARO, AZUL ESCURO, VERDE CLARO, VERDE ESCURO, LARANJA CLARO, LARANJA ESCURO, MARROM CLARO E MARROM ESCURO. MARCAÇÃO METRO A METRO SIM - MATERIAL CCA 0.5, OD:5.6-5.8 - PADRÃO ANSI/TIA/EIA 568-B – B.1 - PROTEÇÃO EXTRA CONTRA INGRESSO E EGRESSO DE EMI (INDUÇÃO ELETROMAGNÉTICA) E RFI (INTERFERÊNCIA POR RÁDIOFREQÜÊNCIA), TAIS COMO, ESCRITÓRIOS COM ALTAS FONTES DE RUÍDO E INTERFERÊNCIA, PISOS DE FÁBRICA, ETC. - CABO DE 4 PARES TRANÇADOS COMPOSTOS DE CONDUTORES SÓLIDOS DE COBRE NU, 23 AWG, ISOLADOS EM POLIETILENO ESPECIAL, COM BLINDAGEM HELICOIDAL EM FITA METALIZADA. CAPA EXTERNA EM PVC NÃO PROPAGANTE À CHAMA, NA COR VERMELHA, COM MARCAÇÃO SEQÜENCIAL MÉTRICA, NA OPÇÃO CM, CMR E LSZH.\n",
+                "Status": "Venceu",
+                "Valor": 8990.0
+            },
+            {
+                "Item": 8,
+                "Desc": "CAIXAS DE SOM PARA PC´S\nCOM SISTEMA DE ÁUDIO 2.0, USB 2.0, BLINDAGEM ELETROMAGNÉTICA COMPATIBILIDADE COM TODOS OS NOTEBOOKS E DESKTOPS, MÍNIMO 3W, AJUSTE DE VOLUME NO CABO, CONEXÃO ÁUDIO P2 3,5MM, VOLTAGEM 5VDC ±10%, CORRENTE 100MA (MAX), DISTORÇÃO DE 0.5% 1W 1KHZ, IMPEDÂNCIA DE 4O (OHMS), EM PLÁSTICO ABS COM DIMENSÕES MÍNIMAS DE 69X63X65MM, FREQUÊNCIA MPINIMA DE  20 HZ ~ 16 KHZ,  SNR 80DB,  TEMPERATURA DE TRABALHO ENTRE 0º ~ 45º,  CABO COM TAMAMNHO MÍNIMO DE 1,4M, SAÍDA DE SOM ESTÉRIO, COR PRETO,  CERTIFICAÇÕES: CE, FCC.\n",
+                "Status": "Venceu",
+                "Valor": 3720.0
+            }
+        ]
     },
     {
         "CNPJ": "05480821000196",
@@ -6087,14 +7441,31 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "09517901000120",
-        "Data": "20250404",
-        "Fornecedor": "ANDERSON DA S. R. COELHO CONSULTORIA E ASSESSORIA ",
-        "Itens": 2,
-        "Licitacao": "20000282025",
+        "DataResult": "2025-04-23T08:40:35",
+        "UASG": "20",
+        "Edital": "00028/2025",
         "Orgao": "MUNICIPIO DE SAO FRANCISCO DO GUAPORE",
-        "Total": 87900.0,
-        "UASG": "20"
+        "UF": "RO",
+        "Municipio": "São Francisco do Guaporé",
+        "Fornecedor": "ANDERSON DA S. R. COELHO CONSULTORIA E ASSESSORIA ",
+        "CNPJ": "09517901000120",
+        "InicioRec": "",
+        "FimRec": "2025-04-25T10:40:00",
+        "Licitacao": "20000282025",
+        "Itens": [
+            {
+                "Item": 5557915,
+                "Desc": "Contratação de empresa qualificada para prestar serviços técnicos específicos para RPPS no âmbito da administração pública municipal de assessoria previdenciária; de assessoria na concessão de benefícios e compensação previdenciária; de estudos, planejamento e realizações de eventos relacionados à RPPS (palestra), estes com suporte técnico virtual e a realização de 01 (um) visita técnica mensal in loco, ou quando necessário, (descrição detalhado dos serviços  item 5.1).",
+                "Status": "Venceu",
+                "Valor": 55309.2
+            },
+            {
+                "Item": 5557916,
+                "Desc": "Cessão de direitos de uso de software de sistema de gerenciamento para Regime Próprio de Previdência Social 100 (cem por cento) WEB, com emissão de guia com código de barras, incluindo a sua instalação, importação/migração de todos os dados existentes, bem como serviços de manutenção, suporte, atualização e capacitação da equipe do Instituto, estes com suporte técnico virtual e a realização de 01 (um) visita técnica mensal in loco, ou quando necessário. (descrição detalhado do software  item 5.2).",
+                "Status": "Venceu",
+                "Valor": 32590.8
+            }
+        ]
     },
     {
         "CNPJ": "24859617000125",
@@ -6107,14 +7478,25 @@
         "UASG": "004"
     },
     {
-        "CNPJ": "03945035000191",
-        "Data": "20250407",
-        "Fornecedor": "ACACIA COMERCIO DE MEDICAMENTOS LTDA",
-        "Itens": 1,
-        "Licitacao": "277000882025",
+        "DataResult": "2025-04-10T09:21:47",
+        "UASG": "277",
+        "Edital": "00088/2025",
         "Orgao": "MUNICIPIO DE GUAXUPE",
-        "Total": 4059.0,
-        "UASG": "277"
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "ACACIA COMERCIO DE MEDICAMENTOS LTDA",
+        "CNPJ": "03945035000191",
+        "InicioRec": "",
+        "FimRec": "2025-04-28T09:00:00",
+        "Licitacao": "277000882025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ACETILCISTEINA 20 MG / ML XAROPE FRASCO- Frasco com 120 ml  Apresentação: Frasco com 120ml.\r",
+                "Status": "Venceu",
+                "Valor": 4059.0
+            }
+        ]
     },
     {
         "CNPJ": "05471879000173",
@@ -18117,6 +19499,72 @@
                 "Desc": "Locação de veículo tipo SUV, com capacidade para 5 passageiros, máximo 5.000km rodados ou até 1 (um) ano de fabricação, cor de linha de produção, motorização mínima 1.5, combustível flex, direção elétrica ou hidráulica, câmbio automático ou manual, ar condicionado, vidros, travas e retrovisores elétricos, airbags frontais, freios ABS com EBD, cintos de três pontos, encosto de cabeça para todos os ocupantes.\n\nIncluso na locação: seguro total (colisão, roubo, furto, terceiros), manutenção preventiva e corretiva, assistência 24h, veículo reserva em caso de imobilização superior a 24h, quilometragem livre, veículo emplacado, licenciado e com tributos quitados. Sem condutor e sem fornecimento de combustível.\n\nDesejáveis: central multimídia com Bluetooth, sensor de ré, câmera de ré, controle de estabilidade e tração, piloto automático. ",
                 "Status": "Venceu",
                 "Valor": 61800.72
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-05-14T11:25:46",
+        "UASG": "277",
+        "Edital": "00102/2025",
+        "Orgao": "MUNICIPIO DE GUAXUPE",
+        "UF": "MG",
+        "Municipio": "Guaxupé",
+        "Fornecedor": "FACE CARD ADMINISTRADORA DE CARTÕES LTDA",
+        "CNPJ": "21935659000100",
+        "InicioRec": "",
+        "FimRec": "2025-05-27T09:00:00",
+        "Licitacao": "277001022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "CARTÃO - ALIMENTAÇÃO BENEFICIO EVENTUAL  Seleção e contratação de empresa especializada em serviços de fornecimento, entrega, gerenciamento, implementação e administração de cartão-alimentação por meio de cartão eletrônico com chip e/ou tarja magnética, contemplando carga e recarga de valor, para atender a demanda de benefício eventual (cesta básica e leite integral) da Secretaria de Desenvolvimento Social.      1. CRITÉRIO DE JULGAMENTO MAIOR DESCONTO \r",
+                "Status": "Venceu",
+                "Valor": 4278528.0
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-07-03T16:22:46",
+        "UASG": "67",
+        "Edital": "00048/2025",
+        "Orgao": "MUNICIPIO DE SAO JOSE DO BELMONTE",
+        "UF": "PE",
+        "Municipio": "São José do Belmonte",
+        "Fornecedor": "BRASILIMP GESTÃO EM TERCEIRIZAÇÃO LTDA",
+        "CNPJ": "32298048000114",
+        "InicioRec": "",
+        "FimRec": "2025-07-21T14:00:00",
+        "Licitacao": "67000482025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Prestação de serviços Auxiliar de serviços gerais, 44 horas semanais, De segunda a sexta, Diurno",
+                "Status": "Venceu",
+                "Valor": 634968.0
+            },
+            {
+                "Item": 2,
+                "Desc": "Prestação de serviços de Encarregado, 44 horas semanais, De segunda a sexta, Diurno",
+                "Status": "Venceu",
+                "Valor": 84175.08
+            },
+            {
+                "Item": 3,
+                "Desc": "Prestação de serviços de Merendeira, 44 horas semanais, De segunda a sexta, Diurno",
+                "Status": "Venceu",
+                "Valor": 380438.64
+            },
+            {
+                "Item": 4,
+                "Desc": "Prestação de serviços de portaria / recepção - PORTEIRO, CBO 5174. Posto Diurno, regime de 12hX36h, seg-dom. 1 Posto  2 trabalhadores.",
+                "Status": "Venceu",
+                "Valor": 136992.48
+            },
+            {
+                "Item": 5,
+                "Desc": "Prestação de Serviços de Portaria / Recepção - PORTEIRO, CBO 5174. Posto Noturno, regime de 12hX36h, seg-dom. 1 Posto  2 trabalhadores",
+                "Status": "Venceu",
+                "Valor": 151208.88
             }
         ]
     }
