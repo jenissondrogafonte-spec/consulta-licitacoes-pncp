@@ -5,24 +5,23 @@ import os
 import time
 
 # --- CONFIGURAÇÃO ---
-HEADERS = {'Accept': 'application/json', 'User-Agent': 'Mozilla/5.0'}
+HEADERS = {
+    'Accept': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+}
 ARQ_DADOS = 'dados.json'
+CNPJ_ALVO = "" 
 
-# --- 🎯 MODO SNIPER: COLOQUE O CNPJ AQUI PARA TESTAR UMA EMPRESA ---
-CNPJ_ALVO = "08778201000126"  # Deixe "" vazio para buscar tudo
-# ------------------------------------------------------------------
-
+# --- DATAS ---
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if not env_inicio:
-    # Se for busca por CNPJ específico, pegamos um intervalo MAIOR (o ano todo)
-    # pois é rápido e queremos ver tudo o que ela ganhou.
+    hoje = datetime.now()
     if CNPJ_ALVO:
         d_ini = "20250101"
-        d_fim = datetime.now().strftime('%Y%m%d')
+        d_fim = hoje.strftime('%Y%m%d')
     else:
-        hoje = datetime.now()
         d_ini = (hoje - timedelta(days=3)).strftime('%Y%m%d')
         d_fim = hoje.strftime('%Y%m%d')
 else:
@@ -32,30 +31,24 @@ dict_novos = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-modo_txt = f"CNPJ {CNPJ_ALVO}" if CNPJ_ALVO else "BRASIL TODO"
-print(f"--- ROBÔ MODO {modo_txt}: {d_ini} até {d_fim} ---")
+print(f"--- ROBÔ COM DATAS DE ABERTURA ({d_ini} até {d_fim}) ---")
+if CNPJ_ALVO: print(f"🎯 MODO SNIPER: {CNPJ_ALVO}")
 
-# Se for busca por CNPJ, não precisamos iterar dia a dia, a API aguenta períodos longos
-# Mas manteremos a lógica para ser compatível
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
     print(f"\n📅 Verificando {DATA_STR}:", end=" ")
     
     pagina = 1
-    while pagina <= 50: # Paginação menor pois CNPJ específico tem menos volume
+    max_paginas = 50 if CNPJ_ALVO else 200 
+    
+    while pagina <= max_paginas:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-        
         params = {
-            "dataInicial": DATA_STR, 
-            "dataFinal": DATA_STR,
-            "codigoModalidadeContratacao": "6", 
-            "pagina": pagina, 
-            "tamanhoPagina": 50
+            "dataInicial": DATA_STR, "dataFinal": DATA_STR,
+            "codigoModalidadeContratacao": "6",
+            "pagina": pagina, "tamanhoPagina": 50
         }
-        
-        # O PULO DO GATO: Filtra direto na fonte
-        if CNPJ_ALVO:
-            params["niFornecedor"] = CNPJ_ALVO
+        if CNPJ_ALVO: params["niFornecedor"] = CNPJ_ALVO
 
         try:
             resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
@@ -66,19 +59,22 @@ while data_atual <= data_final:
             print(".", end="", flush=True)
 
             for lic in lics:
-                # Se buscamos CNPJ específico, aceitamos qualquer status para ver onde ele está
-                situacoes_aceitas = ['4', '6', '10'] if not CNPJ_ALVO else ['1', '2', '3', '4', '6', '8', '10']
+                status_validos = ['1','2','3','4','6','8','10'] if CNPJ_ALVO else ['4','6','10']
                 
-                if str(lic.get('situacaoCompraId')) in situacoes_aceitas:
+                if str(lic.get('situacaoCompraId')) in status_validos:
                     cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
                     ano = lic.get('anoCompra')
                     seq = lic.get('sequencialCompra')
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
+                    # --- NOVA CAPTURA DE DATAS ---
+                    dt_abertura = lic.get('dataAberturaLicitacao', '')
+                    dt_encerra = lic.get('dataEncerramentoProposta', '')
+                    # -----------------------------
+
                     try:
                         time.sleep(0.1)
-                        # Busca Itens
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
                             itens_api = r_it.json()
@@ -90,7 +86,6 @@ while data_atual <= data_final:
                                 if "FRACASSADO" in sit: resumo["Fracassados"] += 1
                                 elif "DESERTO" in sit: resumo["Desertos"] += 1
                                 
-                                # Se tem CNPJ Alvo, queremos ver se ELE ganhou este item
                                 if it.get('temResultado'):
                                     resumo["Homologados"] += 1
                                     r_v = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados", headers=HEADERS, timeout=10)
@@ -99,15 +94,16 @@ while data_atual <= data_final:
                                         if isinstance(vends, dict): vends = [vends]
                                         for v in vends:
                                             cv = v.get('niFornecedor') or "SEM-CNPJ"
-                                            
-                                            # SE FOR MODO SNIPER, SÓ SALVA SE FOR O CNPJ ALVO
-                                            if CNPJ_ALVO and CNPJ_ALVO not in cv:
-                                                continue
+                                            if CNPJ_ALVO and CNPJ_ALVO not in cv: continue
 
                                             chave = f"{id_lic}-{cv}"
                                             if chave not in forn_local:
                                                 forn_local[chave] = {
                                                     "DataResult": lic.get('dataAtualizacao') or DATA_STR,
+                                                    # NOVOS CAMPOS SALVOS AQUI
+                                                    "DataAbertura": dt_abertura,
+                                                    "DataEncerramento": dt_encerra,
+                                                    # ------------------------
                                                     "UASG": uasg, "Edital": f"{str(seq).zfill(5)}/{ano}",
                                                     "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
                                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
@@ -139,14 +135,15 @@ if os.path.exists(ARQ_DADOS):
             historico = json.load(f)
     except: pass
 
-print(f"\n\n📈 RESULTADO: {len(dict_novos)} novos contratos encontrados para o alvo.")
+print(f"\n\n📊 RESUMO:")
+print(f"   - Registros anteriores: {len(historico)}")
+print(f"   - Novos registros: {len(dict_novos)}")
 
-# Se for busca específica, podemos optar por LIMPAR o histórico antigo ou manter
-# Aqui vou manter a lógica de adicionar
 banco = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
 banco.update(dict_novos)
 
+lista_final = list(banco.values())
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
-    json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
+    json.dump(lista_final, f, indent=4, ensure_ascii=False)
 
-print(f"✅ FINALIZADO. Arquivo atualizado.")
+print(f"✅ FINALIZADO! Arquivo atualizado.")
