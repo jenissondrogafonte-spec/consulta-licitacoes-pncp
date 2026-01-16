@@ -3,122 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel PNCP - 90 Dias</title>
+    <title>PNCP Analytics - Visão por Edital</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #ffc107; }
-        body { background: #f4f7fa; font-family: 'Plus Jakarta Sans', sans-serif; color: #2d3436; }
+        :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #f1c40f; --bg: #f8f9fa; }
+        body { background: var(--bg); font-family: 'Plus Jakarta Sans', sans-serif; color: #34495e; }
         
-        /* Navbar ajustada para não colar nos filtros */
-        .navbar-custom { 
-            background: linear-gradient(135deg, #004494 0%, #003370 100%); 
-            color: white; 
-            padding: 2rem 0; /* Aumentei um pouco o padding interno */
-            border-radius: 0 0 25px 25px; 
-            margin-bottom: 20px; /* Espaço entre o azul e os filtros */
-        }
+        /* Navbar */
+        .navbar-custom { background: linear-gradient(135deg, #004494 0%, #002a5c 100%); padding: 1.5rem 0 3rem; color: white; border-radius: 0 0 30px 30px; }
         
-        .dash-card { background: white; border-radius: 18px; padding: 1.5rem; border: none; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: transform 0.2s; }
-        .dash-card:hover { transform: translateY(-3px); }
+        /* Filtros */
+        .filter-container { background: white; margin-top: -40px; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .form-control { border-radius: 10px; border: 1px solid #e9ecef; font-size: 0.9rem; padding: 10px; }
+        .form-label { font-size: 0.75rem; font-weight: 700; color: #7f8c8d; text-transform: uppercase; margin-bottom: 4px; }
         
-        /* Filter Box: Removi a margem negativa para não subir em cima do título */
-        .filter-box { 
-            background: white; 
-            border-radius: 20px; 
-            padding: 20px 25px; 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
-            border: 1px solid rgba(0,0,0,0.05);
-        }
+        /* Cards Agrupados */
+        .edital-card { background: white; border-radius: 16px; border: 1px solid #f1f3f5; transition: all 0.3s; height: 100%; position: relative; overflow: hidden; }
+        .edital-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-color: var(--primary); }
+        .edital-card::top { height: 4px; background: var(--primary); width: 100%; display: block; }
         
-        .res-card { background: white; border-radius: 20px; border: 1px solid rgba(0,0,0,0.04); transition: all 0.3s; height: 100%; display: flex; flex-direction: column; overflow: hidden; position: relative; }
-        .res-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); border-color: var(--primary); }
-        .res-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: var(--success); }
-        .progress { height: 6px; border-radius: 10px; background: #e9ecef; margin: 12px 0; }
-        .progress-bar-hml { background: var(--success); }
-        .valor-total { font-size: 1.3rem; font-weight: 800; color: var(--success); letter-spacing: -0.5px; }
-        .label-small { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; color: #95a5a6; letter-spacing: 0.5px; margin-bottom: 4px; display: block; }
-        .form-control { border-radius: 8px; border: 1px solid #dfe6e9; font-size: 0.85rem; padding: 8px 10px; } /* Fonte levemente menor para caber tudo */
+        .card-header-custom { background: #f8f9fa; padding: 15px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        .badge-data { background: #e3f2fd; color: #004494; font-weight: 700; border-radius: 8px; padding: 6px 10px; }
         
-        /* Botões ajustados */
-        .btn-buscar { background-color: var(--primary); color: white; font-weight: 600; border-radius: 8px; border: none; }
-        .btn-buscar:hover { background-color: #003370; color: white; }
-        .btn-limpar { background-color: #f1f2f6; color: #636e72; font-weight: 600; border-radius: 8px; border: none;}
-        .btn-limpar:hover { background-color: #dfe6e9; color: #2d3436; }
+        /* Stats no Card */
+        .stat-pill { font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; font-weight: 600; }
+        .stat-hml { background: #d1e7dd; color: #0f5132; }
+        .stat-frc { background: #f8d7da; color: #842029; }
+        .stat-dst { background: #fff3cd; color: #664d03; }
+
+        /* Modal */
+        .accordion-button:not(.collapsed) { background-color: #e7f1ff; color: #004494; }
+        .table-sm td, .table-sm th { font-size: 0.85rem; vertical-align: middle; }
+        .valor-destaque { color: var(--success); font-weight: 800; }
     </style>
 </head>
 <body>
 
-<div class="navbar-custom shadow-sm">
+<div class="navbar-custom">
     <div class="container-fluid px-5">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h2 class="fw-bold mb-0"><i class="fas fa-chart-network me-2"></i>PNCP <span class="fw-light">Analytics</span></h2>
+                <h3 class="fw-800 mb-0"><i class="fas fa-layer-group me-2"></i>PNCP Analytics</h3>
+                <p class="opacity-75 mb-0 small">Visão Consolidada por Edital</p>
             </div>
             <div class="col-md-6 text-end">
                 <div class="d-inline-block text-start me-4">
-                    <div class="label-small text-white opacity-75" style="color: white !important;">Volume Filtrado</div>
-                    <h4 class="mb-0 fw-bold" id="dash-valor-total">R$ 0,00</h4>
+                    <span class="d-block small opacity-75 text-white">Total Homologado</span>
+                    <h4 class="fw-bold mb-0" id="dash-total">R$ 0,00</h4>
                 </div>
-                <span class="badge bg-white text-primary rounded-pill px-4 py-2 fw-bold shadow-sm" id="contador">Carregando...</span>
+                <span class="badge bg-white text-primary rounded-pill px-3 py-2" id="contador">...</span>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid px-5">
-    <div id="erro-box" class="alert alert-danger shadow-sm mt-3 d-none"></div>
+<div class="container-fluid px-5 mb-5">
+    <div id="erro-box" class="alert alert-danger d-none mt-3"></div>
 
-    <div class="filter-box mb-5">
-        <div class="row g-2 align-items-end"> <div class="col-md-1"><label class="label-small">UASG</label><input type="text" id="fUasg" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="label-small">Edital</label><input type="text" id="fEdital" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="label-small">UF</label><input type="text" id="fUF" class="form-control" maxlength="2" oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="label-small">Município</label><input type="text" id="fMuni" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-3"><label class="label-small">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="label-small">Início (Res)</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
-            <div class="col-md-1"><label class="label-small">Fim (Res)</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
-            
-            <div class="col-md-2">
-                <div class="d-flex gap-2">
-                    <button class="btn btn-buscar flex-fill py-2" onclick="filtrar()" title="Buscar"><i class="fas fa-search"></i></button>
-                    <button class="btn btn-limpar flex-fill py-2" onclick="limpar()" title="Limpar Filtros"><i class="fas fa-eraser"></i></button>
-                </div>
+    <div class="filter-container mb-5">
+        <div class="row g-2 align-items-end">
+            <div class="col-md-1"><label class="form-label">UASG</label><input type="text" id="fUasg" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="form-label">UF</label><input type="text" id="fUF" class="form-control" maxlength="2" oninput="debounceFiltrar()"></div>
+            <div class="col-md-2"><label class="form-label">Município</label><input type="text" id="fMuni" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-3"><label class="form-label">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="form-label">Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-1"><label class="form-label">Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-2 d-flex gap-2">
+                <button class="btn btn-primary flex-fill fw-bold" onclick="filtrar()"><i class="fas fa-search"></i></button>
+                <button class="btn btn-light border flex-fill" onclick="limpar()"><i class="fas fa-eraser"></i></button>
             </div>
         </div>
     </div>
 
-    <div class="row g-4 mb-5">
-        <div class="col-md-3"><div class="dash-card text-center"><div class="label-small text-success">Homologados</div><h3 class="fw-bold text-success" id="stat-hml">0</h3></div></div>
-        <div class="col-md-3"><div class="dash-card text-center"><div class="label-small text-danger">Fracassados</div><h3 class="fw-bold text-danger" id="stat-frc">0</h3></div></div>
-        <div class="col-md-3"><div class="dash-card text-center"><div class="label-small text-warning">Desertos</div><h3 class="fw-bold text-warning" id="stat-dst">0</h3></div></div>
-        <div class="col-md-3"><div class="dash-card text-center" style="background: #004494; color: white;"><div class="label-small text-white opacity-75">Contratos</div><h3 class="fw-bold" id="stat-qtd">0</h3></div></div>
-    </div>
-
-    <div id="lista" class="row g-4 mb-5">
+    <div id="lista" class="row g-4">
         <div class="col-12 text-center py-5"><div class="spinner-border text-primary"></div></div>
     </div>
 </div>
 
-<div class="modal fade" id="modalItens" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 25px; overflow: hidden;">
-            <div class="modal-header bg-primary text-white p-4">
-                <h5 class="modal-title fw-bold">Detalhes do Processo</h5>
+<div class="modal fade" id="modalDetalhes" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+            <div class="modal-header bg-primary text-white py-3">
+                <div>
+                    <h5 class="modal-title fw-bold" id="mTitulo">Detalhes do Edital</h5>
+                    <div class="small opacity-75" id="mSubtitulo">UASG: --- | Pregão: ---</div>
+                </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body p-0">
-                <div id="infoLicitacao" class="px-4 py-3 bg-light border-bottom"></div>
-                <div class="table-responsive">
-                    <table class="table table-hover align-middle mb-0">
-                        <thead class="bg-dark text-white">
-                            <tr><th class="ps-4 py-3">Item</th><th class="py-3">Descrição</th><th class="py-3">Qtd</th><th class="py-3">Unitário</th><th class="py-3 pe-4 text-end">Total</th></tr>
-                        </thead>
-                        <tbody id="corpoModal"></tbody>
-                    </table>
+            <div class="modal-body p-0 bg-light">
+                <div class="p-4 bg-white border-bottom">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h5 class="fw-bold text-dark mb-1" id="mOrgao">Órgão</h5>
+                            <p class="text-muted small mb-0" id="mDataInfo">Abertura: --/--/----</p>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <a href="#" id="btnPncp" target="_blank" class="btn btn-outline-primary rounded-pill fw-bold">
+                                <i class="fas fa-external-link-alt me-2"></i>Link Oficial PNCP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-3">
+                    <div class="accordion" id="accDetalhes">
+                        </div>
                 </div>
             </div>
-            <div class="modal-footer bg-light" id="modalFooter">
+            <div class="modal-footer bg-white">
                 <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>
@@ -131,45 +126,19 @@
     let timeoutBusca = null;
 
     async function carregar() {
-        const errorBox = document.getElementById('erro-box');
-        
         try {
-            const response = await fetch('dados.json?v=' + Date.now());
+            const r = await fetch('dados.json?v=' + Date.now());
+            if(!r.ok) throw new Error("Erro ao ler dados");
+            const txt = await r.text();
+            if(!txt) throw new Error("Arquivo vazio");
+            dadosOriginal = JSON.parse(txt);
+            if(!Array.isArray(dadosOriginal)) dadosOriginal = [];
             
-            if (!response.ok) {
-                throw new Error(`Erro HTTP: ${response.status} - Arquivo não encontrado.`);
-            }
-
-            const text = await response.text();
-            
-            if (!text || text.trim() === "") {
-                throw new Error("O arquivo dados.json está vazio. O robô ainda deve estar a rodar.");
-            }
-
-            try {
-                dadosOriginal = JSON.parse(text);
-            } catch (jsonError) {
-                throw new Error("O arquivo dados.json está corrompido (Erro de Sintaxe JSON).");
-            }
-
-            if (!Array.isArray(dadosOriginal)) {
-                dadosOriginal = [];
-                throw new Error("O formato do JSON não é uma lista válida.");
-            }
-            
-            errorBox.classList.add('d-none');
+            document.getElementById('erro-box').classList.add('d-none');
             filtrar();
-
-        } catch (e) {
-            console.error(e);
-            errorBox.classList.remove('d-none');
-            errorBox.innerHTML = `
-                <h5 class="fw-bold"><i class="fas fa-exclamation-triangle me-2"></i> Falha ao carregar dados!</h5>
-                <p class="mb-0">${e.message}</p>
-                <small class="mt-2 d-block">Dica: Verifique se o GitHub Actions "Coletar" já terminou (ficou verde).</small>
-            `;
-            document.getElementById('lista').innerHTML = "";
-            document.getElementById('contador').innerText = "Erro";
+        } catch(e) {
+            document.getElementById('erro-box').innerText = "Erro: " + e.message;
+            document.getElementById('erro-box').classList.remove('d-none');
         }
     }
 
@@ -180,62 +149,224 @@
             return;
         }
 
-        let totalVolume = 0, tHml = 0, tFrc = 0, tDst = 0;
+        // --- LÓGICA DE AGRUPAMENTO POR EDITAL ---
+        const grupos = {};
+        let totalGeral = 0;
 
-        const html = lista.map(i => {
-            let hml = 0, frc = 0, dst = 0, valorEdital = 0;
-            if (i.Itens) {
-                i.Itens.forEach(it => {
-                    valorEdital += parseFloat(it.Total || it.Valor || 0);
-                    const st = (it.Status || "").toUpperCase();
-                    if (st.includes("FRACASSADO")) frc++; else if (st.includes("DESERTO")) dst++; else hml++;
-                });
-            } else if (i.Resumo) {
-                hml = i.Resumo.Homologados; frc = i.Resumo.Fracassados; dst = i.Resumo.Desertos;
+        lista.forEach(item => {
+            const id = item.Licitacao; // Chave única do Edital
+            if (!grupos[id]) {
+                // Cria o cabeçalho do grupo
+                grupos[id] = {
+                    ...item,
+                    Fornecedores: {}, // Agrupa itens por CNPJ
+                    Fracassados: [],
+                    Desertos: [],
+                    TotalEdital: 0,
+                    QtdVencedores: 0
+                };
             }
-            totalVolume += valorEdital; tHml += hml; tFrc += frc; tDst += dst;
-            const totalItens = hml + frc + dst;
-            const percHml = totalItens > 0 ? (hml / totalItens) * 100 : 0;
+
+            // Processa os itens deste registro
+            if (item.Itens && Array.isArray(item.Itens)) {
+                item.Itens.forEach(it => {
+                    const status = (it.Status || "").toUpperCase();
+                    const valor = parseFloat(it.Total || it.Valor || 0);
+
+                    if (status.includes("FRACASSADO")) {
+                        grupos[id].Fracassados.push({...it, CNPJ: item.CNPJ});
+                    } else if (status.includes("DESERTO")) {
+                        grupos[id].Desertos.push({...it});
+                    } else {
+                        // É Vencedor
+                        if (!grupos[id].Fornecedores[item.CNPJ]) {
+                            grupos[id].Fornecedores[item.CNPJ] = {
+                                Nome: item.Fornecedor,
+                                CNPJ: item.CNPJ,
+                                Total: 0,
+                                Itens: []
+                            };
+                            grupos[id].QtdVencedores++;
+                        }
+                        grupos[id].Fornecedores[item.CNPJ].Itens.push(it);
+                        grupos[id].Fornecedores[item.CNPJ].Total += valor;
+                        grupos[id].TotalEdital += valor;
+                        totalGeral += valor;
+                    }
+                });
+            }
+        });
+
+        // --- GERA O HTML DOS CARDS ---
+        const html = Object.values(grupos).map(g => {
+            const qtdFrc = g.Fracassados.length;
+            const qtdDst = g.Desertos.length;
+            const dataFmt = g.DataResult ? g.DataResult.split('T')[0] : '---';
+
+            // Dados ocultos para o modal
+            const dadosJson = encodeURIComponent(JSON.stringify(g));
 
             return `
             <div class="col-md-6 col-lg-4">
-                <div class="res-card p-4">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="badge bg-light text-dark border px-2 py-1">${i.DataResult ? i.DataResult.split('T')[0] : 'S/D'}</span>
-                        <div class="label-small text-end">UASG: ${i.UASG}</div>
+                <div class="edital-card p-0 d-flex flex-column">
+                    <div style="height:5px; background:var(--primary); width:100%"></div>
+                    <div class="card-header-custom">
+                        <span class="badge-data"><i class="far fa-calendar-alt me-1"></i> ${dataFmt}</span>
+                        <small class="fw-bold text-muted">UASG: ${g.UASG}</small>
                     </div>
-                    <h6 class="fw-bold text-primary mb-1 text-truncate" title="${i.Orgao}">${i.Orgao}</h6>
-                    <p class="small text-muted mb-3">${i.Municipio || ''}-${i.UF || ''} | Edital: <b>${i.Edital}</b></p>
-                    <div class="d-flex justify-content-between align-items-end mb-1">
-                        <span class="label-small">Aproveitamento</span>
-                        <span class="fw-bold small ${percHml === 100 ? 'text-success' : 'text-muted'}">${Math.round(percHml)}%</span>
+                    
+                    <div class="p-4 flex-grow-1">
+                        <h6 class="fw-bold text-primary mb-1 text-truncate" title="${g.Orgao}">${g.Orgao}</h6>
+                        <p class="small text-muted mb-3">${g.Municipio} - ${g.UF} | Edital: <b>${g.Edital}</b></p>
+                        
+                        <div class="d-flex gap-2 mb-3 flex-wrap">
+                            ${g.QtdVencedores > 0 ? `<span class="stat-pill stat-hml">${g.QtdVencedores} Empresas</span>` : ''}
+                            ${qtdFrc > 0 ? `<span class="stat-pill stat-frc">${qtdFrc} Fracassados</span>` : ''}
+                            ${qtdDst > 0 ? `<span class="stat-pill stat-dst">${qtdDst} Desertos</span>` : ''}
+                        </div>
                     </div>
-                    <div class="progress mb-3"><div class="progress-bar progress-bar-hml" style="width: ${percHml}%"></div></div>
-                    <div class="p-3 bg-light rounded-3 mb-3 border border-light">
-                        <div class="label-small mb-1">Fornecedor</div>
-                        <div class="fw-bold text-truncate text-dark">${i.Fornecedor}</div>
-                        <div class="small font-monospace">${i.CNPJ}</div>
-                    </div>
-                    <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
-                        <div class="valor-total">R$ ${valorEdital.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</div>
-                        <button class="btn btn-outline-primary btn-sm rounded-pill px-4 fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
+
+                    <div class="p-3 bg-light border-top d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="small text-muted fw-bold text-uppercase">Total Homologado</div>
+                            <div class="valor-destaque">R$ ${g.TotalEdital.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
+                        </div>
+                        <button class="btn btn-sm btn-primary rounded-pill px-4 fw-bold" 
+                            onclick="abrirModal('${dadosJson}')">
+                            Detalhes
+                        </button>
                     </div>
                 </div>
             </div>`;
         }).join('');
 
         container.innerHTML = html;
-        document.getElementById('dash-valor-total').innerText = totalVolume.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-        document.getElementById('stat-hml').innerText = tHml;
-        document.getElementById('stat-frc').innerText = tFrc;
-        document.getElementById('stat-dst').innerText = tDst;
-        document.getElementById('stat-qtd').innerText = lista.length;
-        document.getElementById('contador').innerText = `${lista.length} Registros`;
+        document.getElementById('dash-total').innerText = totalGeral.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.getElementById('contador').innerText = Object.keys(grupos).length + " Editais";
+    }
+
+    function abrirModal(jsonDados) {
+        const g = JSON.parse(decodeURIComponent(jsonDados));
+        
+        // Cabeçalho
+        document.getElementById('mTitulo').innerText = g.Orgao;
+        document.getElementById('mSubtitulo').innerText = `UASG: ${g.UASG} | Edital: ${g.Edital} | UF: ${g.UF}`;
+        document.getElementById('mOrgao').innerText = g.Orgao;
+        document.getElementById('btnPncp').href = g.Link || "#";
+        
+        const dtAb = g.DataAbertura ? new Date(g.DataAbertura).toLocaleDateString('pt-BR') : '--';
+        const dtEn = g.DataEncerramento ? new Date(g.DataEncerramento).toLocaleDateString('pt-BR') : '--';
+        document.getElementById('mDataInfo').innerHTML = `Abertura: <b>${dtAb}</b> &nbsp;|&nbsp; Fim Propostas: <b>${dtEn}</b>`;
+
+        // Corpo: Acordeão
+        let htmlAcc = '';
+
+        // 1. VENCEDORES
+        const listaVencedores = Object.values(g.Fornecedores);
+        if (listaVencedores.length > 0) {
+            htmlAcc += `
+            <div class="accordion-item border-0 mb-2 shadow-sm rounded overflow-hidden">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVenc" aria-expanded="true">
+                        <i class="fas fa-trophy me-2 text-success"></i> VENCEDORES (${listaVencedores.length})
+                    </button>
+                </h2>
+                <div id="collapseVenc" class="accordion-collapse collapse show" data-bs-parent="#accDetalhes">
+                    <div class="accordion-body p-0">
+                        ${listaVencedores.map(f => `
+                            <div class="p-3 border-bottom">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <div class="fw-bold text-dark">${f.Nome}</div>
+                                        <div class="small text-muted font-monospace">${f.CNPJ}</div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-success">Total: R$ ${f.Total.toLocaleString('pt-BR', {minimumFractionDigits:2})}</span>
+                                    </div>
+                                </div>
+                                <table class="table table-sm table-borderless mb-0 bg-light rounded">
+                                    <thead class="text-muted small"><tr><th>Item</th><th>Descrição</th><th class="text-end">Valor Total</th></tr></thead>
+                                    <tbody>
+                                        ${f.Itens.map(it => `
+                                            <tr>
+                                                <td width="5%" class="fw-bold text-center">${it.Item}</td>
+                                                <td width="75%">${it.Desc}</td>
+                                                <td width="20%" class="text-end fw-bold">R$ ${(it.Total || it.Valor).toLocaleString('pt-BR', {minimumFractionDigits:2})}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        // 2. FRACASSADOS
+        if (g.Fracassados.length > 0) {
+            htmlAcc += `
+            <div class="accordion-item border-0 mb-2 shadow-sm rounded overflow-hidden">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrc">
+                        <i class="fas fa-times-circle me-2"></i> ITENS FRACASSADOS (${g.Fracassados.length})
+                    </button>
+                </h2>
+                <div id="collapseFrc" class="accordion-collapse collapse" data-bs-parent="#accDetalhes">
+                    <div class="accordion-body p-0">
+                        <table class="table table-striped mb-0">
+                             <thead class="table-danger small"><tr><th>Item</th><th>Descrição</th><th>Valor Est.</th></tr></thead>
+                             <tbody>
+                                ${g.Fracassados.map(it => `
+                                    <tr>
+                                        <td class="fw-bold text-center">${it.Item}</td>
+                                        <td>${it.Desc}</td>
+                                        <td>R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits:2})}</td>
+                                    </tr>
+                                `).join('')}
+                             </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        // 3. DESERTOS
+        if (g.Desertos.length > 0) {
+            htmlAcc += `
+            <div class="accordion-item border-0 mb-2 shadow-sm rounded overflow-hidden">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDst">
+                        <i class="fas fa-exclamation-triangle me-2"></i> ITENS DESERTOS (${g.Desertos.length})
+                    </button>
+                </h2>
+                <div id="collapseDst" class="accordion-collapse collapse" data-bs-parent="#accDetalhes">
+                    <div class="accordion-body p-0">
+                        <table class="table table-striped mb-0">
+                             <thead class="table-warning small"><tr><th>Item</th><th>Descrição</th><th>Valor Est.</th></tr></thead>
+                             <tbody>
+                                ${g.Desertos.map(it => `
+                                    <tr>
+                                        <td class="fw-bold text-center">${it.Item}</td>
+                                        <td>${it.Desc}</td>
+                                        <td>R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits:2})}</td>
+                                    </tr>
+                                `).join('')}
+                             </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        document.getElementById('accDetalhes').innerHTML = htmlAcc;
+        new bootstrap.Modal(document.getElementById('modalDetalhes')).show();
     }
 
     function debounceFiltrar() { clearTimeout(timeoutBusca); timeoutBusca = setTimeout(filtrar, 300); }
 
     function filtrar() {
+        if(!dadosOriginal) return;
         const q = {
             u: document.getElementById('fUasg').value.trim(),
             e: document.getElementById('fEdital').value.trim(),
@@ -245,8 +376,6 @@
             di: document.getElementById('fDataIni').value,
             df: document.getElementById('fDataFim').value
         };
-        
-        if(!dadosOriginal) return;
 
         const res = dadosOriginal.filter(i => {
             const data = i.DataResult ? i.DataResult.split('T')[0] : "";
@@ -260,52 +389,6 @@
                    (!q.f || txtForn.includes(q.f) || String(i.CNPJ).includes(q.f)) && matchData;
         });
         renderizar(res);
-    }
-
-    function fmtData(dataISO) {
-        if (!dataISO) return '<span class="text-muted">---</span>';
-        const d = new Date(dataISO);
-        return d.toLocaleDateString('pt-BR') + ' às ' + d.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
-    }
-
-    function verDetalhes(idL, cnpj) {
-        const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
-        if(!i) return;
-
-        const dtAbertura = fmtData(i.DataAbertura);
-        const dtFim = fmtData(i.DataEncerramento);
-        const linkBtn = i.Link ? `<a href="${i.Link}" target="_blank" class="btn btn-primary rounded-pill px-4 ms-2"><i class="fas fa-external-link-alt me-2"></i>Ver no PNCP</a>` : '';
-
-        document.getElementById('infoLicitacao').innerHTML = `
-            <div class="row">
-                <div class="col-md-7">
-                    <h5 class="fw-bold text-primary mb-1">${i.Orgao}</h5>
-                    <p class="text-muted small mb-2">UASG: ${i.UASG} | Edital: ${i.Edital}</p>
-                    <div class="d-flex gap-4 small mt-3">
-                        <div><i class="far fa-clock me-1 text-primary"></i> Abertura:<br><b>${dtAbertura}</b></div>
-                        <div><i class="fas fa-stopwatch me-1 text-danger"></i> Fim Propostas:<br><b>${dtFim}</b></div>
-                    </div>
-                </div>
-                <div class="col-md-5 text-end border-start ps-4">
-                    <div class="label-small text-muted">Vencedor</div>
-                    <div class="fw-bold text-dark">${i.Fornecedor}</div>
-                    <div class="small font-monospace">${i.CNPJ}</div>
-                </div>
-            </div>`;
-        
-        document.getElementById('corpoModal').innerHTML = (i.Itens || []).map(it => `
-            <tr>
-                <td class="ps-4 fw-bold text-muted text-center">${it.Item}</td>
-                <td class="small"><div class="text-wrap" style="max-width: 400px;">${it.Desc}</div></td>
-                <td class="text-center">${it.Qtd || '--'}</td>
-                <td class="text-nowrap">R$ ${(it.Unitario || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                <td class="pe-4 text-end fw-bold text-success text-nowrap">R$ ${(it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-            </tr>`).join('');
-        
-        const footer = document.getElementById('modalFooter');
-        footer.innerHTML = `<button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Fechar</button> ${linkBtn}`;
-        
-        new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
     
     function limpar() { document.querySelectorAll('input').forEach(i => i.value = ''); filtrar(); }
