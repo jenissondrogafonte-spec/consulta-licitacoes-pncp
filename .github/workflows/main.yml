@@ -2,9 +2,7 @@ name: Atualizar Licitações
 
 on:
   schedule:
-    # 08:00 UTC = 05:00 da manhã no Brasil (Horário Padrão)
     - cron: '0 8 * * *'
-  
   workflow_dispatch:
     inputs:
       data_inicial:
@@ -20,10 +18,10 @@ permissions:
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    timeout-minutes: 360 # <--- AUMENTADO PARA 6 HORAS (IMPORTANTE PARA 90 DIAS)
     
     steps:
-      - name: Baixar Repositório
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0 
 
@@ -33,7 +31,6 @@ jobs:
           python-version: '3.9'
 
       - name: Instalar Dependências
-        # Removido 'pandas' pois o robô novo só usa json nativo (mais rápido)
         run: pip install requests
 
       - name: Rodar Robô
@@ -44,18 +41,9 @@ jobs:
 
       - name: Commit e Push dos Dados
         run: |
-          # 1. Identidade do Robô
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
-          # 2. Adiciona dados.json
           git add dados.json
-          
-          # 3. Tenta commitar (se não houver mudanças, não dá erro)
-          git commit -m "Atualização Diária: $(date +'%Y-%m-%d')" || echo "Sem novos dados para salvar"
-          
-          # 4. Puxa atualizações do site para evitar conflito (Rebase)
+          git commit -m "Atualização 90 dias: $(date +'%Y-%m-%d')" || echo "Sem novos dados"
           git pull --rebase
-          
-          # 5. Envia para o GitHub
           git push
