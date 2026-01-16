@@ -1,6 +1,8 @@
 [
     {
         "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
         "UASG": "698",
         "Edital": "00002/2025",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
@@ -8,20 +10,27 @@
         "Municipio": "Pitangueiras",
         "Fornecedor": "GERAÇÃO 3 DISTRIBUIDORA DE PAPÉIS LTDA-ME",
         "CNPJ": "22223426000147",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T09:00:00",
         "Licitacao": "698000022025",
         "Itens": [
             {
                 "Item": 2,
                 "Desc": "PALITO DE MADEIRA TIPO ESPETO (PCT COM 100)",
-                "Status": "Venceu",
-                "Valor": 6228.0
+                "Qtd": 1200.0,
+                "Unitario": 5.19,
+                "Total": 6228.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
         "UASG": "301",
         "Edital": "00004/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
@@ -29,20 +38,27 @@
         "Municipio": "Coronel Fabriciano",
         "Fornecedor": "OLIVEIRA FOODS ATACAREJO EIRELI",
         "CNPJ": "08504258000137",
-        "InicioRec": "",
-        "FimRec": "2025-02-07T13:00:00",
         "Licitacao": "301000042025",
         "Itens": [
             {
                 "Item": 10,
                 "Desc": "SALSICHA EMBUTIDO TIP: SALSICHA HOT DOG TIPO PREPARACAO COZIDA ESTADO DE CONSERVACAO: RESFRIADO * ACONDICIONADOS EM EMBALAGEM PRIMÁRIA À VÁCUO EM PLÁSTICO TRANSPARENTE, CONTENDO TODAS AS INFORMAÇÕES DO PRODUTO COMO CORTE, PROCEDÊNCIA, FORNECEDOR, DATA DE VALIDADE. PARÂMETROS INDICATIVOS DE QUALIDADE: SEARA, LEBON, SADIA, PERDIGÃO\r",
-                "Status": "Venceu",
-                "Valor": 22880.0
+                "Qtd": 2200.0,
+                "Unitario": 10.4,
+                "Total": 22880.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-31T16:33:40",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:01:00",
         "UASG": "196",
         "Edital": "00095/2024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
@@ -50,17 +66,22 @@
         "Municipio": "Aiuruoca",
         "Fornecedor": "COMERCIAL CAETANO VIEIRA LTDA",
         "CNPJ": "45806440000179",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:01:00",
         "Licitacao": "196000952024",
         "Itens": [
             {
                 "Item": 9,
                 "Desc": "Conjunto agrotóxicoColaboradores que exerce atividade com exposição a agentes agrotóxicos Roundup.\r",
-                "Status": "Venceu",
-                "Valor": 802.0
+                "Qtd": 100.0,
+                "Unitario": 8.02,
+                "Total": 802.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-04T16:13:30",
@@ -130,6 +151,8 @@
     },
     {
         "DataResult": "2025-04-01T09:10:25",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-04-01T09:00:00",
         "UASG": "620",
         "Edital": "00003/2025",
         "Orgao": "MUNICIPIO DE PITANGUI",
@@ -137,17 +160,22 @@
         "Municipio": "Pitangui",
         "Fornecedor": "AMBIENTEC SOLUÇÕES EM RESÍDUOS",
         "CNPJ": "11399773000109",
-        "InicioRec": "",
-        "FimRec": "2025-04-01T09:00:00",
         "Licitacao": "620000032025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "COLETA, TRANSPORTE E INCINERAÇÃO DE RESÍDUOS PERIGOSOS, CLASSE I E II , INCLUSIVE DE SERVIÇOS DE SAUDE DOS GRUPOS A, B E E.\nOBSERVAÇÃO 01: A COLETA SERÁ REALIZADA UMA VEZ POR SEMANA, EM APROXIMADAMENTE 12 PONTOS NA ZONA URBANA MUNICIPAL, MAIS PSF BRUMADO, CAMPO GRANDE(POVOADO) E RIO DO PEIXE(RODOVIA).\nOBSERVAÇÃO 02: A EMPRESA FORNECERÁ VASILHAME ACONDICIONADOR DE RESÍDUOS PERGOSOS PARA OS PONTOS DE COLETA.\nOBSERVAÇÃO 03: A QUANTIDADE APROXIMADA PREVISTA É ENTRE 200 KG A 400 KG POR MÊS.",
-                "Status": "Venceu",
-                "Valor": 24528.0
+                "Qtd": 4800.0,
+                "Unitario": 5.11,
+                "Total": 24528.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-02-28T14:36:29",
@@ -184,6 +212,8 @@
     },
     {
         "DataResult": "2025-02-27T08:28:19",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T08:30:00",
         "UASG": "1",
         "Edital": "00026/2025",
         "Orgao": "MUNICIPIO DE TAQUARA",
@@ -191,17 +221,22 @@
         "Municipio": "Taquara",
         "Fornecedor": "JN PNEUS LTDA",
         "CNPJ": "44472217000170",
-        "InicioRec": "",
-        "FimRec": "2025-03-18T08:30:00",
         "Licitacao": "1000262025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "Pneu 17.5-25 16 lonas (Prof. Sulco 27mm) Aplicação E3L3  - \n-Pneu 17.5-25 16 lonas (Prof. Sulco 27mm) Aplicação E3L3-novo (primeira vida), garantia de cinco anos contra defeitos de fabricação (conforme Código de Defesa do Consumidor), data de fabricação na entrega não superior a 12 meses, com certificação do INMETRO\n",
-                "Status": "Venceu",
-                "Valor": 41877.0
+                "Qtd": 15.0,
+                "Unitario": 2791.8,
+                "Total": 41877.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-03-24T11:47:18",
@@ -538,6 +573,8 @@
     },
     {
         "DataResult": "2025-01-31T16:33:40",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:01:00",
         "UASG": "196",
         "Edital": "00095/2024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
@@ -545,23 +582,30 @@
         "Municipio": "Aiuruoca",
         "Fornecedor": "SM SEGURANÇA BELO HORIZONTE LTDA",
         "CNPJ": "06176619000138",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:01:00",
         "Licitacao": "196000952024",
         "Itens": [
             {
                 "Item": 5,
                 "Desc": "Bota de PVC Cano Longo - (PAR)Calçado de segurança tipo bota cano alto, confeccionado em PVC na cor branca ou preta, acabamento interno com meia em poliéster solado injetado em PVC com desenhoantiderrapante, com biqueira de aço carbono. PROTEÇÃO DOS PÉS DO USUÁRIO CONTRA IMPACTOS DE QUEDAS DE OBJETOS SOBRE OS ARTELHOS, CONTRAAGENTES ABRASIVOS E ESCORIANTES E CONTRA UMIDADE PROVENIENTE DEOPERAÇÕES COM USO DE ÁGUA. Tamanhos: 34-35,36-37,38-39, 39-40, 41-42, 43-44.Certificação: INMETRO\" e Certificado de aprovação - CA pelo Ministério do Trabalho.\r",
-                "Status": "Venceu",
-                "Valor": 7308.0
+                "Qtd": 168.0,
+                "Unitario": 43.5,
+                "Total": 7308.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 7,
                 "Desc": "Calçado de segurançaUtilizado por: Enfermeiro-CAPS; Técnico de Enfermagem-CAPS; Terapeuta Ocupacional; Enfermeiro-Centro de Saúde; Médico; Técnico de Enfermagem-Centro de Saúde; Técnico em Saúde Suplementar; Auxiliar em Saúde Bucal; Cirurgião Especialista em Endodontologia; Dentista Especialista em Cirurgia Oral Menor; Técnico em Saúde Bucal; Farmacêutico; Farmacêutico Bioquímico; Farmacêutico-Laboratório; Técnico em Laboratório de Análises Clínicas; Técnico em Saúde Suplementar; Enfermeiro-PSF; Fisioterapeuta; Fonoaudiólogo; Cirurgião Dentista; Enfermeiro ESF; Médico ESF e Técnico em Enfermagem. Cores: azul ou verde.\r",
-                "Status": "Venceu",
-                "Valor": 1911.0
+                "Qtd": 42.0,
+                "Unitario": 45.5,
+                "Total": 1911.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-05-12T15:44:54",
@@ -703,6 +747,8 @@
     },
     {
         "DataResult": "2025-02-06T17:36:21",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:30:00",
         "UASG": "548",
         "Edital": "00002/2025",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DO CENTRO NORDESTE",
@@ -710,71 +756,94 @@
         "Municipio": "Guanhães",
         "Fornecedor": "Life Remocenter Transporte LTDA",
         "CNPJ": "06178714000170",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:30:00",
         "Licitacao": "548000022025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "Serviço de Transporte de Urgência (UTI Móvel tipo D) para transporte de pacientes em estado grave, \nIncluso condutor socorrista, Médico e Enfermeiro \n",
-                "Status": "Venceu",
-                "Valor": 2232540.0
+                "Qtd": 157000.0,
+                "Unitario": 14.22,
+                "Total": 2232540.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "Serviço de Transporte de Urgência (UTI Móvel tipo D) Deslocamento até 80km para transporte de pacientes em estado grave. Incluso condutor socorrista, Médico e Enfermeiro c/s retorno.\n\n",
-                "Status": "Venceu",
-                "Valor": 696445.44
+                "Qtd": 384.0,
+                "Unitario": 1813.66,
+                "Total": 696445.44,
+                "Status": "Venceu"
             },
             {
                 "Item": 3,
                 "Desc": "Serviço de Transporte de Urgência (UTI Móvel TIPO D DESLOCAMENTO) deslocamento acima 81 até 150km para transporte de pacientes em estado grave  c/s retorno. \nIncluso condutor socorrista, Médico e Enfermeiro \n\n",
-                "Status": "Venceu",
-                "Valor": 250003.75
+                "Qtd": 125.0,
+                "Unitario": 2000.03,
+                "Total": 250003.75,
+                "Status": "Venceu"
             },
             {
                 "Item": 4,
                 "Desc": "Serviços de UTI MÓVEL TIPO D para cobertura de eventos (mínimo de 6h) nos municípios consorciados. \nincluso: condutor socorrista, Médico e Enfermeiro.\n",
-                "Status": "Venceu",
-                "Valor": 1295000.0
+                "Qtd": 350.0,
+                "Unitario": 3700.0,
+                "Total": 1295000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 5,
                 "Desc": "HORA ADICIONAL ao item 04 lote 02",
-                "Status": "Venceu",
-                "Valor": 33990.0
+                "Qtd": 200.0,
+                "Unitario": 169.95,
+                "Total": 33990.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 6,
                 "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \nincluso somente condutor socorrista.\n",
-                "Status": "Venceu",
-                "Valor": 753000.0
+                "Qtd": 100000.0,
+                "Unitario": 7.53,
+                "Total": 753000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 7,
                 "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \n Deslocamento até 80km para transporte de pacientes c/s retorno.\n.\nincluso somente condutor socorrista \n",
-                "Status": "Venceu",
-                "Valor": 30000.0
+                "Qtd": 50.0,
+                "Unitario": 600.0,
+                "Total": 30000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 8,
                 "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo A \n Deslocamento acima de 81 até 150km para transporte de pacientes c/s retorno.\nincluso somente condutor socorrista. \n",
-                "Status": "Venceu",
-                "Valor": 35000.0
+                "Qtd": 50.0,
+                "Unitario": 700.0,
+                "Total": 35000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 9,
                 "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo B \nincluso condutor socorrista, enfermeiro c/s técnico auxiliar.\n",
-                "Status": "Venceu",
-                "Valor": 980000.0
+                "Qtd": 100000.0,
+                "Unitario": 9.8,
+                "Total": 980000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 10,
                 "Desc": "Prestação de Serviços de Remoção de Pacientes através de Ambulância Básica Tipo B \n Deslocamento até 80km para transporte de pacientes c/s retorno.\nincluso condutor socorrista, enfermeiro c/s técnico auxiliar.\n",
-                "Status": "Venceu",
-                "Valor": 110000.0
+                "Qtd": 100.0,
+                "Unitario": 1100.0,
+                "Total": 110000.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-04-29T15:05:45",
@@ -1002,6 +1071,8 @@
     },
     {
         "DataResult": "2025-01-23T11:16:06",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T08:30:00",
         "UASG": "06005",
         "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
@@ -1055,6 +1126,8 @@
     },
     {
         "DataResult": "2025-01-31T16:33:40",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:01:00",
         "UASG": "196",
         "Edital": "00095/2024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
@@ -1062,35 +1135,46 @@
         "Municipio": "Aiuruoca",
         "Fornecedor": "COMERCIAL J &amp; C COMEX LTDA",
         "CNPJ": "46687136000112",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:01:00",
         "Licitacao": "196000952024",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "AVENTAL DE PVCAvental confeccionado em tecido sintético (malha poliéster revestido de PVC em ambas as faces), com tiras do próprio material para ajuste, soldada eletronicamente. Utilização: Proteção do usuário contra respingos d'água e respingos de produtos químicos. Tamanhos: P, M, G, GG e XG. Certificação: INMETRO e Certificado de aprovação - CA pelo Ministério do Trabalho. \r",
-                "Status": "Venceu",
-                "Valor": 1612.98
+                "Qtd": 261.0,
+                "Unitario": 6.18,
+                "Total": 1612.98,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "Avental de Raspa de CouroAvental de segurança confeccionada em raspa natural curtida ao cromo, sem emendas, com fivelas metálicas, costurado com linha nylon, largura de no mínimo 60 cm e comprimento total de no mínimo 120 cm. Aprovado para proteção do corpo do usuário contra agentes abrasivos, escoriantes e térmicos provenientes de operações de soldagem e processos similares. Com resultado de níveis de desempenho ?CLASSE 2? ? NORMA TECNICA 11611:2007. Deverá possuir Certificado de Aprovação válido e emitido pelo Ministério de Trabalho e Emprego. Deverá entregar juntamente com aproposta comercial o Certificado de Aprovação ? CA e Catálogo Técnico. \r",
-                "Status": "Venceu",
-                "Valor": 1846.8
+                "Qtd": 57.0,
+                "Unitario": 32.4,
+                "Total": 1846.8,
+                "Status": "Venceu"
             },
             {
                 "Item": 4,
                 "Desc": "Boné ÁrabeBoné confeccionado em brim, com proteção para a nuca, fechamento frontal na altura do pescoço através de velcro e com aba.\r",
-                "Status": "Venceu",
-                "Valor": 2395.98
+                "Qtd": 261.0,
+                "Unitario": 9.18,
+                "Total": 2395.98,
+                "Status": "Venceu"
             },
             {
                 "Item": 10,
                 "Desc": "Creme Protetor Grupo 2Creme óleo resistente que aplicado à pele forma uma película protetora invisível contra os ataques de produtos, tais como: óleos brutos, solventes, metiletilcetona, acetona, thinner, gasolina, óleo mineral, óleo diesel, graxas, tinta a base de óleo, sem que o usuário perca a sensibilidade ao tato.\r",
-                "Status": "Venceu",
-                "Valor": 23868.0
+                "Qtd": 204.0,
+                "Unitario": 117.0,
+                "Total": 23868.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-04-03T14:55:47",
@@ -1280,6 +1364,8 @@
     },
     {
         "DataResult": "2025-01-23T11:16:06",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T08:30:00",
         "UASG": "06005",
         "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
@@ -1870,6 +1956,8 @@
     },
     {
         "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
         "UASG": "698",
         "Edital": "00002/2025",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
@@ -1877,23 +1965,30 @@
         "Municipio": "Pitangueiras",
         "Fornecedor": "ALEA COMERCIAL LTDA",
         "CNPJ": "12011917000332",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T09:00:00",
         "Licitacao": "698000022025",
         "Itens": [
             {
                 "Item": 3,
                 "Desc": "APONTADOR DE LÁPIS COM DEPÓSITO",
-                "Status": "Venceu",
-                "Valor": 6000.0
+                "Qtd": 12000.0,
+                "Unitario": 0.5,
+                "Total": 6000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 8,
                 "Desc": "PAPEL CONTACT TRANSPARENTE 45CM X 25M",
-                "Status": "Venceu",
-                "Valor": 10219.2
+                "Qtd": 240.0,
+                "Unitario": 42.58,
+                "Total": 10219.2,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-31T14:07:52",
@@ -1954,6 +2049,8 @@
     },
     {
         "DataResult": "2025-02-27T08:28:19",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-03-18T08:30:00",
         "UASG": "1",
         "Edital": "00026/2025",
         "Orgao": "MUNICIPIO DE TAQUARA",
@@ -1961,17 +2058,22 @@
         "Municipio": "Taquara",
         "Fornecedor": "SCHWAB COMÉRCIO DE PNEUS LTDA",
         "CNPJ": "09505958000109",
-        "InicioRec": "",
-        "FimRec": "2025-03-18T08:30:00",
         "Licitacao": "1000262025",
         "Itens": [
             {
                 "Item": 2,
                 "Desc": "Pneu 14.00-24 16 lonas (Prof. Sulco 25,3mm) Classificação G2L2\n-Pneu 14.00-24 16 lonas (Prof. Sulco 25,3mm) Classificação G2L2, TM 95-novo (primeira vida), garantia de cinco anos contra defeitos de fabricação (conforme Código de Defesa do Consumidor), data de fabricação na entrega não superior a 12 meses, com certificação do INMETRO.",
-                "Status": "Venceu",
-                "Valor": 41680.0
+                "Qtd": 20.0,
+                "Unitario": 2084.0,
+                "Total": 41680.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 2,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-04T09:00:01",
@@ -1996,6 +2098,8 @@
     },
     {
         "DataResult": "2025-01-31T16:33:40",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:01:00",
         "UASG": "196",
         "Edital": "00095/2024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
@@ -2003,17 +2107,22 @@
         "Municipio": "Aiuruoca",
         "Fornecedor": "PALADIR LTDA",
         "CNPJ": "46418740000143",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:01:00",
         "Licitacao": "196000952024",
         "Itens": [
             {
                 "Item": 3,
                 "Desc": "Avental Para Alta TemperaturaAvental térmico Colaboradores que exercem atividades com exposição em calor (cozinha)\r",
-                "Status": "Venceu",
-                "Valor": 3504.0
+                "Qtd": 73.0,
+                "Unitario": 48.0,
+                "Total": 3504.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-29T09:15:31",
@@ -2117,6 +2226,8 @@
     },
     {
         "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
         "UASG": "301",
         "Edital": "00004/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
@@ -2124,26 +2235,35 @@
         "Municipio": "Coronel Fabriciano",
         "Fornecedor": "BSM ATACADISTA",
         "CNPJ": "15081696000103",
-        "InicioRec": "",
-        "FimRec": "2025-02-07T13:00:00",
         "Licitacao": "301000042025",
         "Itens": [
             {
                 "Item": 5,
                 "Desc": "PERNIL EM CUBOS CARNE SUINA IN NATURA TIPO CORTE: PERNIL, APRESENTACAO CORTADA EM CUBOS PROCESSAMENTO SEM PELE ESTADO DE CONSERVACAO CONGELADO\r",
-                "Status": "Venceu",
-                "Valor": 139425.0
+                "Qtd": 8250.0,
+                "Unitario": 16.9,
+                "Total": 139425.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 7,
                 "Desc": "ACEM MOIDA CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO MOIDA ESTADO DE CONSERVACAO CONGELADO\r",
-                "Status": "Venceu",
-                "Valor": 253320.0
+                "Qtd": 12000.0,
+                "Unitario": 21.11,
+                "Total": 253320.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
         "UASG": "301",
         "Edital": "00004/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
@@ -2151,35 +2271,46 @@
         "Municipio": "Coronel Fabriciano",
         "Fornecedor": "P&G ALIMENTOS LTDA",
         "CNPJ": "32532318000100",
-        "InicioRec": "",
-        "FimRec": "2025-02-07T13:00:00",
         "Licitacao": "301000042025",
         "Itens": [
             {
                 "Item": 3,
                 "Desc": "ACEM EM CUBOS CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO CORTADA EM CUBOS ESTADO DE CONSERVACAO CONGELADO\r",
-                "Status": "Venceu",
-                "Valor": 188133.75
+                "Qtd": 7875.0,
+                "Unitario": 23.89,
+                "Total": 188133.75,
+                "Status": "Venceu"
             },
             {
                 "Item": 4,
                 "Desc": "ACEM EM CUBOS CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO CORTADA EM CUBOS ESTADO DE CONSERVACAO CONGELADO\r",
-                "Status": "Venceu",
-                "Valor": 70612.5
+                "Qtd": 2625.0,
+                "Unitario": 26.9,
+                "Total": 70612.5,
+                "Status": "Venceu"
             },
             {
                 "Item": 6,
                 "Desc": "PERNIL EM CUBOS CARNE SUINA IN NATURA TIPO CORTE: PERNIL, APRESENTACAO CORTADA EM CUBOS PROCESSAMENTO SEM PELE ESTADO DE CONSERVACAO CONGELADO\r",
-                "Status": "Venceu",
-                "Valor": 49225.0
+                "Qtd": 2750.0,
+                "Unitario": 17.9,
+                "Total": 49225.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 9,
                 "Desc": "LINGUICA CALABRESA GROSSA TAMANHO GROSSA TIPO PREPARACAO DEFUMADA ESTADO DE CONSERVACAO RESFRIADO * EMBALADA À VÁCUO EM PLÁSTICO PVC TRANSPARENTE. EMBALAGEM DEVE CONTER A IDENTIFICAÇÃO DO PRODUTO, PESO, DATA DE FABRICAÇÃO, DATA DE VALIDADE, LOTE, FORMA DE CONSERVAÇÃO, CARIMBO DO SIF.PACOTES CONTENDO NO MÁXIMO 4 KG. O PRODUTO DEVERÁ TER VALIDADE MÍNIMA DE 90 DIAS DA DATA DE ENTREGA, QUE NÃO DEVERÁ SER SUPERIOR A 45 DIAS DA DATA DE FABRICAÇÃO. PARÂMETROS INDICATIVOS DE QUALIDADE: PALADAR, SAUDALI, FRIGOLESTE\r",
-                "Status": "Venceu",
-                "Valor": 28350.0
+                "Qtd": 1500.0,
+                "Unitario": 18.9,
+                "Total": 28350.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-02-27T14:07:08",
@@ -2579,6 +2710,8 @@
     },
     {
         "DataResult": "2025-01-31T16:33:40",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:01:00",
         "UASG": "196",
         "Edital": "00095/2024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
@@ -2586,17 +2719,22 @@
         "Municipio": "Aiuruoca",
         "Fornecedor": "R. DE O. SANTIL EPI",
         "CNPJ": "97530228000125",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:01:00",
         "Licitacao": "196000952024",
         "Itens": [
             {
                 "Item": 6,
                 "Desc": "Bota de Segurança Bico PVC - (PAR)Calçado ocupacional tipo botina, fechamento em elástico, confeccionado em couro curtido ao cromo, palmilha de montagem em material sintético, solado poliuretano bi densidade injetado diretamente ao cabedal, sem biqueira de aço, isolante elétrico. Todos os tamanhos Deverá possuir Certificado de Aprovação válido e emitido pelo Ministério de Trabalho e Emprego. Todos os Tamanhos\r",
-                "Status": "Venceu",
-                "Valor": 13544.5
+                "Qtd": 263.0,
+                "Unitario": 51.5,
+                "Total": 13544.5,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-05-14T15:04:12",
@@ -3002,6 +3140,8 @@
     },
     {
         "DataResult": "2025-01-23T15:27:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-01-24T09:00:00",
         "UASG": "13003",
         "Edital": "00003/2025",
         "Orgao": "MUNICIPIO DE GUAIRA",
@@ -3036,6 +3176,8 @@
     },
     {
         "DataResult": "2025-01-23T15:27:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-01-24T09:00:00",
         "UASG": "13003",
         "Edital": "00003/2025",
         "Orgao": "MUNICIPIO DE GUAIRA",
@@ -3703,6 +3845,8 @@
     },
     {
         "DataResult": "2025-01-23T15:27:41",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-01-24T09:00:00",
         "UASG": "13003",
         "Edital": "00003/2025",
         "Orgao": "MUNICIPIO DE GUAIRA",
@@ -3729,6 +3873,8 @@
     },
     {
         "DataResult": "2025-01-27T16:33:32",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-07T13:00:00",
         "UASG": "301",
         "Edital": "00004/2025",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
@@ -3736,29 +3882,38 @@
         "Municipio": "Coronel Fabriciano",
         "Fornecedor": "SMH REPRESENTAÇÃO, DISTRIBUIÇÃO E LOGÍSTICA LTDA",
         "CNPJ": "45999330000170",
-        "InicioRec": "",
-        "FimRec": "2025-02-07T13:00:00",
         "Licitacao": "301000042025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "COXA E SOBRECOXA CARNE DE AVE IN NATURA TIPO ANIMAL FRANGO TIPO CORTE COXA E SOBRECOXA APRESENTACAO INTEIRO ESTADO DE CONSERVACAO: CONGELADO PROCESSAMENTO: SEM PELE SEM OSSO\r",
-                "Status": "Venceu",
-                "Valor": 202725.0
+                "Qtd": 12750.0,
+                "Unitario": 15.9,
+                "Total": 202725.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "COXA E SOBRECOXA CARNE DE AVE IN NATURA TIPO ANIMAL FRANGO TIPO CORTE COXA E SOBRECOXA APRESENTACAO INTEIRO ESTADO DE CONSERVACAO: CONGELADO PROCESSAMENTO: SEM PELE SEM OSSO\r",
-                "Status": "Venceu",
-                "Valor": 67575.0
+                "Qtd": 4250.0,
+                "Unitario": 15.9,
+                "Total": 67575.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 8,
                 "Desc": "ACEM MOIDA CARNE BOVINA IN NATURA TIPO CORTE ACEM APRESENTACAO MOIDA ESTADO DE CONSERVACAO CONGELADO\r",
-                "Status": "Venceu",
-                "Valor": 88440.0
+                "Qtd": 4000.0,
+                "Unitario": 22.11,
+                "Total": 88440.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -4110,6 +4265,8 @@
     },
     {
         "DataResult": "2025-09-12T11:01:16",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-09-29T08:30:00",
         "UASG": "020",
         "Edital": "00011/2025",
         "Orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
@@ -4117,17 +4274,22 @@
         "Municipio": "São José dos Campos",
         "Fornecedor": "MRX TECNOLOGIA LTDA",
         "CNPJ": "05754099000130",
-        "InicioRec": "",
-        "FimRec": "2025-09-29T08:30:00",
         "Licitacao": "020000112025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "LOTE1-CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO (TI), CUJO OBJETO É A CONCESSÃO DE LICENÇA DE USO DE SISTEMA PARA ACOMPANHAMENTO E ANÁLISE DOS VALORES QUE COMPÕEM O ÍNDICE DE PARTICIPAÇÃO DOS MUNÍCIPIOS DO PRODUTO DE ARRECADAÇÃO DO IMPOSTO SOBRE OPERAÇÕES RELATIVAS A CIRCULAÇÃO DE MERCADORIAS E SOBRE PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE INTERESTADUAL E INTERMUNICIPAL E DE COMUNICAÇÃO (ICMS) DESTA MUNICIPALIDADE",
-                "Status": "Venceu",
-                "Valor": 530000.0
+                "Qtd": 1.0,
+                "Unitario": 530000.0,
+                "Total": 530000.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-04-24T08:43:41",
@@ -4260,6 +4422,8 @@
     },
     {
         "DataResult": "2025-01-23T11:16:06",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T08:30:00",
         "UASG": "06005",
         "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
@@ -4405,6 +4569,8 @@
     },
     {
         "DataResult": "2025-02-14T14:29:23",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T09:00:00",
         "UASG": "620",
         "Edital": "00006/2025",
         "Orgao": "MUNICIPIO DE PITANGUI",
@@ -4412,17 +4578,22 @@
         "Municipio": "Pitangui",
         "Fornecedor": "PLANA LOCACAO E TERRAPLENAGEM LTDA",
         "CNPJ": "10680757000127",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T09:00:00",
         "Licitacao": "620000062025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "LOCAÇÃO POR HORA TRABALHADA DE VEÍCULOS DE GRANDE PORTE – MÁQUINA PESADA (TRATOR DE ESTEIRA) com motorista/operador, transporte do trator até o local do aterro, combustível e toda manutenção preventiva e corretiva, em atendimento a solicitação da Secretaria de Desenvolvimento Urbano e Serviços Públicos",
-                "Status": "Venceu",
-                "Valor": 143950.0
+                "Qtd": 500.0,
+                "Unitario": 287.9,
+                "Total": 143950.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 1,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-12T10:37:12",
@@ -4654,6 +4825,8 @@
     },
     {
         "DataResult": "2025-02-04T15:49:21",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-03T09:00:00",
         "UASG": "1",
         "Edital": "00001/2025",
         "Orgao": "MUNICIPIO DE RONDONOPOLIS",
@@ -4661,29 +4834,38 @@
         "Municipio": "Rondonópolis",
         "Fornecedor": "36.705.522 JEFERSON LUIS VAZ",
         "CNPJ": "36705522000136",
-        "InicioRec": "",
-        "FimRec": "2025-02-03T09:00:00",
         "Licitacao": "1000012025",
         "Itens": [
             {
                 "Item": 125892,
                 "Desc": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANALISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATADA, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 15 X 1,60 M DE ALTURA, COM VOLUME DE 600 M³. CONFORME TERMO DE REFERÊNCIA.",
-                "Status": "Venceu",
-                "Valor": 58200.0
+                "Qtd": 12.0,
+                "Unitario": 4850.0,
+                "Total": 58200.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 125893,
                 "Desc": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANÁLISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATANTE, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 20 X 1,60 DE ALTURA, COM VOLUME DE 800 M³. CONFORME TERMO DE REFERÊNCIA. ",
-                "Status": "Venceu",
-                "Valor": 58200.0
+                "Qtd": 12.0,
+                "Unitario": 4850.0,
+                "Total": 58200.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 125894,
                 "Desc": "SERVIÇO DE LIMPEZA E MANUTENÇÃO DE PISCINA – CENTRO DE CONVIVÊNCIA. SERVIÇO DE LIMPEZA, TRATAMENTO, CONSERVAÇÃO E MANUTENÇÃO PREVENTIVA E CORRETIVA, INCLUINDO TODOS OS MATERIAIS DE CONSUMO NECESSÁRIOS A REALIZAÇÃO DO SERVIÇO, MÃO DE OBRA ESPECIALIZADA, ANÁLISES FÍSICO-QUÍMICAS E MICROBIOLÓGICAS, EQUIPAMENTOS E MATERIAIS PARA REALIZAÇÃO DOS SERVIÇOS DE MANUTENÇÃO DEVERÃO SER FORNECIDOS PELA CONTRATANTE, POR UM PERÍODO DE 12 (DOZE) MESES. CARACTERÍSTICAS DA PISCINA: MEDIDAS: 25 X 20 X 1,20 DE ALTURA, COM VOLUME DE 600 M³. CONFORME TERMO DE REFERÊNCIA. ",
-                "Status": "Venceu",
-                "Valor": 58200.0
+                "Qtd": 12.0,
+                "Unitario": 4850.0,
+                "Total": 58200.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-07-08T10:35:38",
@@ -6628,6 +6810,8 @@
     },
     {
         "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
         "UASG": "698",
         "Edital": "00002/2025",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
@@ -6635,29 +6819,38 @@
         "Municipio": "Pitangueiras",
         "Fornecedor": "PRINTSUL COMERCIO ATACADISTA LTDA",
         "CNPJ": "19032430000113",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T09:00:00",
         "Licitacao": "698000022025",
         "Itens": [
             {
                 "Item": 5,
                 "Desc": "TESOURA ESCOLAR",
-                "Status": "Venceu",
-                "Valor": 8323.0
+                "Qtd": 7000.0,
+                "Unitario": 1.189,
+                "Total": 8323.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 6,
                 "Desc": "BORRACHA BRANCA COM CAPA PROTETORA",
-                "Status": "Venceu",
-                "Valor": 9980.0
+                "Qtd": 20000.0,
+                "Unitario": 0.499,
+                "Total": 9980.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 9,
                 "Desc": "RÉGUA 30CM",
-                "Status": "Venceu",
-                "Valor": 5196.0
+                "Qtd": 4000.0,
+                "Unitario": 1.299,
+                "Total": 5196.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-04-02T14:28:37",
@@ -6682,6 +6875,8 @@
     },
     {
         "DataResult": "2025-01-23T11:16:06",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T08:30:00",
         "UASG": "06005",
         "Edital": "01626/2024",
         "Orgao": "MUNICIPIO DE CARAZINHO",
@@ -7756,6 +7951,8 @@
     },
     {
         "DataResult": "2025-02-04T14:16:15",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-05T09:00:00",
         "UASG": "698",
         "Edital": "00002/2025",
         "Orgao": "MUNICIPIO DE PITANGUEIRAS",
@@ -7763,23 +7960,30 @@
         "Municipio": "Pitangueiras",
         "Fornecedor": "RCE ARTIGOS DE PAPELARIA LTDA",
         "CNPJ": "49042895000116",
-        "InicioRec": "",
-        "FimRec": "2025-02-05T09:00:00",
         "Licitacao": "698000022025",
         "Itens": [
             {
                 "Item": 4,
                 "Desc": "FITA ADESIVA CREPE 19MM X 50M",
-                "Status": "Venceu",
-                "Valor": 6225.0
+                "Qtd": 2500.0,
+                "Unitario": 2.49,
+                "Total": 6225.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 10,
                 "Desc": "PAPEL VERGÊ A4 180G 210 X 297MM - PCT COM 50",
-                "Status": "Venceu",
-                "Valor": 4450.0
+                "Qtd": 500.0,
+                "Unitario": 8.9,
+                "Total": 4450.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 8,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-05-30T09:44:54",
@@ -8440,6 +8644,8 @@
     },
     {
         "DataResult": "2025-01-31T16:33:40",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T13:01:00",
         "UASG": "196",
         "Edital": "00095/2024",
         "Orgao": "MUNICIPIO DE AIURUOCA",
@@ -8447,17 +8653,22 @@
         "Municipio": "Aiuruoca",
         "Fornecedor": "Total Segurança Equipamentos de Protecão e Serviços Especial",
         "CNPJ": "13851726000180",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T13:01:00",
         "Licitacao": "196000952024",
         "Itens": [
             {
                 "Item": 8,
                 "Desc": "Calçado de segurança (EVA)Colaboradores que trabalham com riscos de queda de objetos sobre os pés, materiais cortantes, perfurantes, abrasivos ou escoriantes. Cores: Preto para trabalhadores da limpeza e branco para trabalhadores da cozinha.\r",
-                "Status": "Venceu",
-                "Valor": 128.66
+                "Qtd": 2.0,
+                "Unitario": 64.33,
+                "Total": 128.66,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-06-11T09:14:23",
@@ -8719,6 +8930,8 @@
     },
     {
         "DataResult": "2025-02-11T14:40:30",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-27T13:00:00",
         "UASG": "301",
         "Edital": "00153/2024",
         "Orgao": "MUNICIPIO DE CORONEL FABRICIANO",
