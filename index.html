@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel PNCP Dinâmico</title>
+    <title>Painel PNCP - Detalhado</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -12,38 +12,19 @@
     <style>
         :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #ffc107; }
         body { background: #f4f7fa; font-family: 'Plus Jakarta Sans', sans-serif; color: #2d3436; }
-        
-        /* Navbar com gradiente suave */
         .navbar-custom { background: linear-gradient(135deg, #004494 0%, #003370 100%); color: white; padding: 1.5rem 0; border-radius: 0 0 25px 25px; }
-        
-        /* Cards de Estatísticas */
         .dash-card { background: white; border-radius: 18px; padding: 1.5rem; border: none; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: transform 0.2s; }
         .dash-card:hover { transform: translateY(-3px); }
-        
-        /* Caixa de Filtros Flutuante */
         .filter-box { background: white; border-radius: 20px; padding: 25px; margin-top: -40px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
-        
-        /* Cards de Resultado */
-        .res-card { 
-            background: white; border-radius: 20px; border: 1px solid rgba(0,0,0,0.04); 
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
-            height: 100%; display: flex; flex-direction: column;
-            overflow: hidden;
-            position: relative;
-        }
+        .res-card { background: white; border-radius: 20px; border: 1px solid rgba(0,0,0,0.04); transition: all 0.3s; height: 100%; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         .res-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); border-color: var(--primary); }
         .res-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: var(--success); }
-        
-        /* Elementos UI */
         .progress { height: 6px; border-radius: 10px; background: #e9ecef; margin: 12px 0; }
         .progress-bar-hml { background: var(--success); }
-        
         .valor-total { font-size: 1.3rem; font-weight: 800; color: var(--success); letter-spacing: -0.5px; }
         .label-small { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; color: #95a5a6; letter-spacing: 0.5px; margin-bottom: 4px; display: block; }
-        
         .form-control { border-radius: 8px; border: 1px solid #dfe6e9; font-size: 0.9rem; padding: 8px 12px; }
         .form-control:focus { box-shadow: 0 0 0 3px rgba(0,68,148,0.1); border-color: var(--primary); }
-        
         .btn-buscar { background-color: var(--primary); color: white; font-weight: 600; border-radius: 8px; }
         .btn-buscar:hover { background-color: #003370; color: white; }
         .btn-limpar { background-color: #f1f2f6; color: #636e72; font-weight: 600; border-radius: 8px; }
@@ -73,67 +54,31 @@
 <div class="container-fluid px-5">
     <div class="filter-box mb-5">
         <div class="row g-3 align-items-end">
-            <div class="col-md-1"><label class="label-small">UASG</label><input type="text" id="fUasg" class="form-control" placeholder="Ex: 123" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="label-small">Edital</label><input type="text" id="fEdital" class="form-control" placeholder="10/2025" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="label-small">UF</label><input type="text" id="fUF" class="form-control" placeholder="PE" maxlength="2" oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="label-small">Município</label><input type="text" id="fMuni" class="form-control" placeholder="Caruaru" oninput="debounceFiltrar()"></div>
-            <div class="col-md-3"><label class="label-small">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" placeholder="Nome ou CNPJ" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="label-small">Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
-            <div class="col-md-1"><label class="label-small">Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
-            
+            <div class="col-md-1"><label class="label-small">UASG</label><input type="text" id="fUasg" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="label-small">Edital</label><input type="text" id="fEdital" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="label-small">UF</label><input type="text" id="fUF" class="form-control" maxlength="2" oninput="debounceFiltrar()"></div>
+            <div class="col-md-2"><label class="label-small">Município</label><input type="text" id="fMuni" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-3"><label class="label-small">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="label-small">Início (Res)</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-1"><label class="label-small">Fim (Res)</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
             <div class="col-md-2">
                 <div class="d-flex gap-2">
                     <button class="btn btn-buscar w-100" onclick="filtrar()"><i class="fas fa-search me-1"></i> Buscar</button>
-                    <button class="btn btn-limpar w-50" onclick="limpar()" title="Limpar Filtros"><i class="fas fa-eraser"></i></button>
+                    <button class="btn btn-limpar w-50" onclick="limpar()"><i class="fas fa-eraser"></i></button>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="row g-4 mb-5">
-        <div class="col-md-3">
-            <div class="dash-card d-flex align-items-center justify-content-between">
-                <div>
-                    <div class="label-small text-success">Homologados</div>
-                    <h3 class="fw-bold mb-0 text-success" id="stat-hml">0</h3>
-                </div>
-                <div class="bg-success bg-opacity-10 p-3 rounded-circle text-success"><i class="fas fa-check"></i></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="dash-card d-flex align-items-center justify-content-between">
-                <div>
-                    <div class="label-small text-danger">Fracassados</div>
-                    <h3 class="fw-bold mb-0 text-danger" id="stat-frc">0</h3>
-                </div>
-                <div class="bg-danger bg-opacity-10 p-3 rounded-circle text-danger"><i class="fas fa-times"></i></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="dash-card d-flex align-items-center justify-content-between">
-                <div>
-                    <div class="label-small text-warning">Desertos</div>
-                    <h3 class="fw-bold mb-0 text-warning" id="stat-dst">0</h3>
-                </div>
-                <div class="bg-warning bg-opacity-10 p-3 rounded-circle text-warning"><i class="fas fa-exclamation-triangle"></i></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="dash-card d-flex align-items-center justify-content-between" style="background: #004494; color: white;">
-                <div>
-                    <div class="label-small text-white opacity-75">Contratos Listados</div>
-                    <h3 class="fw-bold mb-0" id="stat-qtd">0</h3>
-                </div>
-                <div class="bg-white bg-opacity-25 p-3 rounded-circle"><i class="fas fa-file-contract"></i></div>
-            </div>
-        </div>
+        <div class="col-md-3"><div class="dash-card text-center"><div class="label-small text-success">Homologados</div><h3 class="fw-bold text-success" id="stat-hml">0</h3></div></div>
+        <div class="col-md-3"><div class="dash-card text-center"><div class="label-small text-danger">Fracassados</div><h3 class="fw-bold text-danger" id="stat-frc">0</h3></div></div>
+        <div class="col-md-3"><div class="dash-card text-center"><div class="label-small text-warning">Desertos</div><h3 class="fw-bold text-warning" id="stat-dst">0</h3></div></div>
+        <div class="col-md-3"><div class="dash-card text-center" style="background: #004494; color: white;"><div class="label-small text-white opacity-75">Contratos</div><h3 class="fw-bold" id="stat-qtd">0</h3></div></div>
     </div>
 
     <div id="lista" class="row g-4 mb-5">
-        <div class="col-12 text-center py-5">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-2 text-muted fw-bold">A carregar dados...</p>
-        </div>
+        <div class="col-12 text-center py-5"><div class="spinner-border text-primary"></div></div>
     </div>
 </div>
 
@@ -141,7 +86,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 25px; overflow: hidden;">
             <div class="modal-header bg-primary text-white p-4">
-                <h5 class="modal-title fw-bold"><i class="fas fa-list-ul me-2"></i> Detalhamento dos Itens</h5>
+                <h5 class="modal-title fw-bold"><i class="fas fa-list-ul me-2"></i> Detalhes do Processo</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-0">
@@ -149,13 +94,7 @@
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0">
                         <thead class="bg-dark text-white">
-                            <tr>
-                                <th class="ps-4 py-3">Item</th>
-                                <th class="py-3">Descrição</th>
-                                <th class="py-3">Qtd</th>
-                                <th class="py-3">Unitário</th>
-                                <th class="py-3 pe-4 text-end">Total</th>
-                            </tr>
+                            <tr><th class="ps-4 py-3">Item</th><th class="py-3">Descrição</th><th class="py-3">Qtd</th><th class="py-3">Unitário</th><th class="py-3 pe-4 text-end">Total</th></tr>
                         </thead>
                         <tbody id="corpoModal"></tbody>
                     </table>
@@ -178,31 +117,20 @@
             const r = await fetch('dados.json?v=' + Date.now());
             if (!r.ok) throw new Error("Erro 404");
             dadosOriginal = await r.json();
-            
             if (!dadosOriginal || dadosOriginal.length === 0) {
-                document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><div class="alert alert-warning d-inline-block">Base de dados vazia. Execute o robô.</div></div>`;
+                document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><div class="alert alert-warning">Base vazia.</div></div>`;
                 return;
             }
             filtrar();
         } catch (e) {
-            document.getElementById('lista').innerHTML = `
-                <div class="col-12 text-center py-5">
-                    <div class="alert alert-danger d-inline-block shadow-sm">
-                        <i class="fas fa-exclamation-circle me-2"></i> Falha ao ler <b>dados.json</b>.
-                    </div>
-                </div>`;
+            document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><div class="alert alert-danger">Erro ao ler dados.json</div></div>`;
         }
     }
 
     function renderizar(lista) {
         const container = document.getElementById('lista');
-        
         if (lista.length === 0) {
-            container.innerHTML = `<div class="col-12 text-center text-muted py-5 opacity-50">
-                <i class="fas fa-search fa-3x mb-3"></i>
-                <h4>Nenhum resultado encontrado.</h4>
-                <p>Tente ajustar os filtros ou limpar a pesquisa.</p>
-            </div>`;
+            container.innerHTML = `<div class="col-12 text-center text-muted py-5"><h4>Nenhum resultado.</h4></div>`;
             return;
         }
 
@@ -210,7 +138,6 @@
 
         const html = lista.map(i => {
             let hml = 0, frc = 0, dst = 0, valorEdital = 0;
-
             if (i.Itens && Array.isArray(i.Itens)) {
                 i.Itens.forEach(it => {
                     valorEdital += parseFloat(it.Total || it.Valor || 0);
@@ -220,15 +147,10 @@
                     else hml++;
                 });
             } else if (i.Resumo) {
-                // Fallback se Resumo existir
-                hml = i.Resumo.Homologados;
-                frc = i.Resumo.Fracassados;
-                dst = i.Resumo.Desertos;
+                hml = i.Resumo.Homologados; frc = i.Resumo.Fracassados; dst = i.Resumo.Desertos;
             }
 
-            totalVolume += valorEdital;
-            tHml += hml; tFrc += frc; tDst += dst;
-
+            totalVolume += valorEdital; tHml += hml; tFrc += frc; tDst += dst;
             const totalItens = hml + frc + dst;
             const percHml = totalItens > 0 ? (hml / totalItens) * 100 : 0;
 
@@ -236,32 +158,27 @@
             <div class="col-md-6 col-lg-4">
                 <div class="res-card p-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="badge bg-light text-dark border px-2 py-1"><i class="far fa-calendar-alt me-1"></i> ${i.DataResult ? i.DataResult.split('T')[0] : '---'}</span>
+                        <span class="badge bg-light text-dark border px-2 py-1">${i.DataResult ? i.DataResult.split('T')[0] : 'S/D'}</span>
                         <div class="label-small text-end">UASG: ${i.UASG}</div>
                     </div>
-                    
                     <h6 class="fw-bold text-primary mb-1 text-truncate" title="${i.Orgao}">${i.Orgao}</h6>
-                    <p class="small text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i> ${i.Municipio || 'N/I'} - ${i.UF || ''} <span class="mx-1">|</span> Edital: <b>${i.Edital}</b></p>
+                    <p class="small text-muted mb-3">${i.Municipio || ''} - ${i.UF || ''} | Edital: <b>${i.Edital}</b></p>
 
                     <div class="d-flex justify-content-between align-items-end mb-1">
                         <span class="label-small">Aproveitamento</span>
                         <span class="fw-bold small ${percHml === 100 ? 'text-success' : 'text-muted'}">${Math.round(percHml)}%</span>
                     </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-hml" style="width: ${percHml}%"></div>
-                    </div>
+                    <div class="progress mb-3"><div class="progress-bar progress-bar-hml" style="width: ${percHml}%"></div></div>
 
                     <div class="p-3 bg-light rounded-3 mb-3 border border-light">
-                        <div class="label-small mb-1">Fornecedor Vencedor</div>
+                        <div class="label-small mb-1">Fornecedor</div>
                         <div class="fw-bold text-truncate text-dark">${i.Fornecedor}</div>
                         <div class="text-muted small font-monospace">${i.CNPJ}</div>
                     </div>
 
                     <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
                         <div class="valor-total">R$ ${valorEdital.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</div>
-                        <button class="btn btn-outline-primary btn-sm rounded-pill px-4 fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">
-                            Detalhes
-                        </button>
+                        <button class="btn btn-outline-primary btn-sm rounded-pill px-4 fw-bold" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
                     </div>
                 </div>
             </div>`;
@@ -276,10 +193,7 @@
         document.getElementById('contador').innerText = `${lista.length} Registros`;
     }
 
-    function debounceFiltrar() {
-        clearTimeout(timeoutBusca);
-        timeoutBusca = setTimeout(filtrar, 300);
-    }
+    function debounceFiltrar() { clearTimeout(timeoutBusca); timeoutBusca = setTimeout(filtrar, 300); }
 
     function filtrar() {
         const q = {
@@ -295,14 +209,11 @@
         const res = dadosOriginal.filter(i => {
             const data = i.DataResult ? i.DataResult.split('T')[0] : "";
             const matchData = (!q.di || data >= q.di) && (!q.df || data <= q.df);
-            
             const txtMuni = (i.Municipio || "").toLowerCase();
             const txtForn = (i.Fornecedor || "").toLowerCase();
-            const txtUasg = String(i.UASG || "");
-            const txtEdital = String(i.Edital || "");
             
-            return (!q.u || txtUasg.includes(q.u)) &&
-                   (!q.e || txtEdital.includes(q.e)) &&
+            return (!q.u || String(i.UASG).includes(q.u)) &&
+                   (!q.e || String(i.Edital).includes(q.e)) &&
                    (!q.uf || (i.UF || "") === q.uf) &&
                    (!q.m || txtMuni.includes(q.m)) &&
                    (!q.f || txtForn.includes(q.f) || String(i.CNPJ).includes(q.f)) &&
@@ -311,19 +222,35 @@
         renderizar(res);
     }
 
+    // --- NOVA FUNÇÃO FORMATAR DATA (ISO para BR) ---
+    function fmtData(dataISO) {
+        if (!dataISO) return '<span class="text-muted">---</span>';
+        const d = new Date(dataISO);
+        return d.toLocaleDateString('pt-BR') + ' às ' + d.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
+    }
+
     function verDetalhes(idL, cnpj) {
         const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
         if(!i) return;
 
+        // Exibe as datas capturadas pelo robô
+        const dtAbertura = fmtData(i.DataAbertura);
+        const dtFim = fmtData(i.DataEncerramento);
+
         document.getElementById('infoLicitacao').innerHTML = `
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <h5 class="fw-bold text-primary mb-1">${i.Orgao}</h5>
-                    <p class="text-muted small mb-0">UASG: ${i.UASG} | Edital: ${i.Edital}</p>
+                    <p class="text-muted small mb-2">UASG: ${i.UASG} | Edital: ${i.Edital}</p>
+                    <div class="d-flex gap-4 small mt-3">
+                        <div><i class="far fa-clock me-1 text-primary"></i> Abertura:<br><b>${dtAbertura}</b></div>
+                        <div><i class="fas fa-stopwatch me-1 text-danger"></i> Fim Propostas:<br><b>${dtFim}</b></div>
+                    </div>
                 </div>
-                <div class="col-md-4 text-end">
-                    <div class="fw-bold">${i.Fornecedor}</div>
-                    <div class="small text-muted">${i.CNPJ}</div>
+                <div class="col-md-5 text-end border-start ps-4">
+                    <div class="label-small text-muted">Vencedor</div>
+                    <div class="fw-bold text-dark">${i.Fornecedor}</div>
+                    <div class="small font-monospace">${i.CNPJ}</div>
                 </div>
             </div>`;
         
