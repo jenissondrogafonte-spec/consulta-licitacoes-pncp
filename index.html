@@ -9,72 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        :root { 
-            --primary: #004494; 
-            --success: #198754; 
-            --danger: #dc3545; 
-            --warning: #f1c40f; 
-            --bg: #f0f2f5; 
-        }
-
+        :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #f1c40f; --bg: #f0f2f5; }
         body { background: var(--bg); font-family: 'Plus Jakarta Sans', sans-serif; color: #34495e; }
-
-        /* Navbar Moderna */
-        .navbar-custom { 
-            background: linear-gradient(135deg, #004494 0%, #002a5c 100%); 
-            padding: 1.5rem 0 3.5rem; 
-            color: white; 
-            border-radius: 0 0 35px 35px; 
-        }
-
-        .hover-opacity-100:hover {
-            opacity: 1 !important;
-            text-decoration: underline !important;
-        }
-
-        /* Filtros */
-        .filter-container { 
-            background: white; 
-            margin-top: -45px; 
-            border-radius: 20px; 
-            padding: 25px; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08); 
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-
-        .form-label { font-size: 0.7rem; font-weight: 800; color: #95a5a6; text-transform: uppercase; letter-spacing: 0.5px; }
-        .form-control { border-radius: 12px; border: 1px solid #e9ecef; padding: 10px 15px; font-size: 0.9rem; }
-        .form-control:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,68,148,0.1); }
-
-        /* Cards */
-        .edital-card { 
-            background: white; 
-            border-radius: 20px; 
-            border: none; 
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
-            height: 100%; 
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #f1f3f5;
-        }
-
+        .navbar-custom { background: linear-gradient(135deg, #004494 0%, #002a5c 100%); padding: 1.5rem 0 3.5rem; color: white; border-radius: 0 0 35px 35px; }
+        .hover-opacity-100:hover { opacity: 1 !important; text-decoration: underline !important; }
+        .filter-container { background: white; margin-top: -45px; border-radius: 20px; padding: 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.3); }
+        .form-label { font-size: 0.7rem; font-weight: 800; color: #95a5a6; text-transform: uppercase; }
+        .form-control { border-radius: 12px; border: 1px solid #e9ecef; font-size: 0.9rem; }
+        .edital-card { background: white; border-radius: 20px; border: 1px solid #f1f3f5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
         .edital-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: var(--primary); }
-
-        .card-header-custom { 
-            padding: 15px 20px; 
-            border-bottom: 1px solid #f8f9fa; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-        }
-
+        .card-header-custom { padding: 15px 20px; border-bottom: 1px solid #f8f9fa; display: flex; justify-content: space-between; align-items: center; }
         .badge-data { background: #eef2f7; color: var(--primary); font-weight: 700; border-radius: 10px; padding: 6px 12px; font-size: 0.75rem; }
-        .valor-destaque { color: var(--success); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.5px; }
+        .valor-destaque { color: var(--success); font-weight: 800; font-size: 1.3rem; }
         .label-small { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: #95a5a6; }
-
-        /* Modal */
         .modal-content { border-radius: 25px; border: none; overflow: hidden; }
-        .modal-header { border: none; padding: 20px 30px; }
+        .table thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
     </style>
 </head>
 <body>
@@ -83,9 +32,7 @@
     <div class="container-fluid px-5">
         <div class="row align-items-center">
             <div class="col-md-5">
-                <h2 class="fw-bold mb-0">
-                    <i class="fas fa-chart-network me-2"></i>PNCP <span class="fw-light">Analytics</span>
-                </h2>
+                <h2 class="fw-bold mb-0"><i class="fas fa-chart-network me-2"></i>PNCP <span class="fw-light">Analytics</span></h2>
                 <div class="mt-2">
                     <a href="consulta_empresa.html" class="text-white text-decoration-none small opacity-75 hover-opacity-100">
                         <i class="fas fa-arrow-right me-1"></i> Ir para Consulta por Empresa (CNPJ 08.778.201)
@@ -106,41 +53,18 @@
 <div class="container-fluid px-5 mb-5">
     <div class="filter-container mb-5">
         <div class="row g-3 align-items-end">
-            <div class="col-md-2">
-                <label class="form-label">Órgão / UASG</label>
-                <input type="text" id="fOrgao" class="form-control" placeholder="Ex: Exercito" oninput="debounceFiltrar()">
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Fornecedor / CNPJ</label>
-                <input type="text" id="fForn" class="form-control" placeholder="Buscar empresa..." oninput="debounceFiltrar()">
-            </div>
-            <div class="col-md-1">
-                <label class="form-label">Edital</label>
-                <input type="text" id="fEdital" class="form-control" placeholder="00/2025" oninput="debounceFiltrar()">
-            </div>
-            <div class="col-md-1">
-                <label class="form-label">UF</label>
-                <input type="text" id="fUF" class="form-control" placeholder="MG" maxlength="2" oninput="debounceFiltrar()">
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Data Início</label>
-                <input type="date" id="fDataIni" class="form-control" onchange="filtrar()">
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Data Fim</label>
-                <input type="date" id="fDataFim" class="form-control" onchange="filtrar()">
-            </div>
-            <div class="col-md-2">
-                <button class="btn btn-light border w-100 py-2 fw-bold text-muted" onclick="limpar()"><i class="fas fa-sync me-2"></i>Limpar</button>
-            </div>
+            <div class="col-md-2"><label class="form-label">Órgão / UASG</label><input type="text" id="fOrgao" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-2"><label class="form-label">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control" oninput="debounceFiltrar()"></div>
+            <div class="col-md-1"><label class="form-label">UF</label><input type="text" id="fUF" class="form-control" maxlength="2" oninput="debounceFiltrar()"></div>
+            <div class="col-md-2"><label class="form-label">Data Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-2"><label class="form-label">Data Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
+            <div class="col-md-2"><button class="btn btn-light border w-100 py-2 fw-bold text-muted" onclick="limpar()"><i class="fas fa-sync me-2"></i>Limpar</button></div>
         </div>
     </div>
 
     <div id="lista" class="row g-4">
-        <div class="col-12 text-center py-5">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-2 text-muted">Carregando base de dados...</p>
-        </div>
+        <div class="col-12 text-center py-5"><div class="spinner-border text-primary"></div></div>
     </div>
 </div>
 
@@ -148,7 +72,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content shadow-lg">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold"><i class="fas fa-list-check me-2"></i>Itens e Ganhadores</h5>
+                <h5 class="modal-title fw-bold"><i class="fas fa-list-check me-2"></i>Detalhamento da Licitação</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-0 bg-light" id="corpoModal"></div>
@@ -166,7 +90,7 @@
             dadosOriginal = await r.json();
             filtrar();
         } catch(e) {
-            document.getElementById('lista').innerHTML = `<div class="alert alert-danger">Erro: Certifique-se que o dados.json existe.</div>`;
+            document.getElementById('lista').innerHTML = `<div class="alert alert-danger">Erro ao carregar dados.json</div>`;
         }
     }
 
@@ -180,24 +104,10 @@
         const grupos = {};
         let totalFinanceiro = 0;
 
-        // Agrupamento por Licitação (UASG + Edital)
         lista.forEach(item => {
             const chave = item.Licitacao;
-            if (!grupos[chave]) {
-                grupos[chave] = { 
-                    ...item, 
-                    ValorTotalEdital: 0, 
-                    Empresas: new Set() 
-                };
-            }
-            grupos[chave].Empresas.add(item.Fornecedor);
-            
-            // Soma apenas itens que venceram
-            item.Itens.forEach(it => {
-                if (it.Status === "Venceu") {
-                    grupos[chave].ValorTotalEdital += (it.Total || 0);
-                }
-            });
+            if (!grupos[chave]) { grupos[chave] = { ...item, ValorTotalEdital: 0 }; }
+            item.Itens.forEach(it => { if (it.Status === "Venceu") { grupos[chave].ValorTotalEdital += (it.Total || 0); } });
         });
 
         const html = Object.values(grupos).sort((a,b) => new Date(b.DataResult) - new Date(a.DataResult)).map(g => {
@@ -214,26 +124,15 @@
                     </div>
                     <div class="p-4 flex-grow-1">
                         <div class="label-small mb-1">${g.Municipio} - ${g.UF}</div>
-                        <h6 class="fw-bold text-primary mb-3 line-clamp-2" style="height: 2.8rem; overflow: hidden;">${g.Orgao}</h6>
-                        
-                        <div class="d-flex justify-content-between align-items-end mt-2">
-                            <div>
-                                <div class="label-small">Total do Edital</div>
-                                <div class="valor-destaque">R$ ${g.ValorTotalEdital.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
-                            </div>
-                            <div class="text-end">
-                                <div class="label-small">Edital</div>
-                                <div class="fw-bold small">${g.Edital}</div>
-                            </div>
+                        <h6 class="fw-bold text-primary mb-3 text-truncate">${g.Orgao}</h6>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div><div class="label-small">Total Edital</div><div class="valor-destaque">R$ ${g.ValorTotalEdital.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div></div>
+                            <div class="text-end"><div class="label-small">Edital</div><div class="fw-bold small">${g.Edital}</div></div>
                         </div>
                     </div>
                     <div class="px-4 pb-4 pt-0 d-flex gap-2">
-                        <button class="btn btn-primary w-100 rounded-pill fw-bold btn-sm py-2" onclick="verItens('${g.Licitacao}')">
-                            <i class="fas fa-search me-1"></i> Detalhes
-                        </button>
-                        <a href="${g.Link}" target="_blank" class="btn btn-outline-primary rounded-circle btn-sm p-2" style="width:36px; height:36px">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <button class="btn btn-primary w-100 rounded-pill fw-bold btn-sm py-2" onclick="verItens('${g.Licitacao}')">Detalhes</button>
+                        <a href="${g.Link}" target="_blank" class="btn btn-outline-primary rounded-circle btn-sm p-2"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>`;
@@ -241,48 +140,65 @@
 
         container.innerHTML = html;
         document.getElementById('dash-total').innerText = totalFinanceiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-        document.getElementById('contador').innerText = Object.keys(grupos).length + " Editais Encontrados";
+        document.getElementById('contador').innerText = Object.keys(grupos).length + " Editais";
     }
 
     function verItens(idLic) {
-        // Busca todos os registros (fornecedores) vinculados a esta licitação
         const registros = dadosOriginal.filter(x => x.Licitacao === idLic);
         const lic = registros[0];
         const corpo = document.getElementById('corpoModal');
 
-        let tabelaHtml = '';
+        let htmlFinal = '';
         registros.forEach(reg => {
-            tabelaHtml += `
-                <div class="p-3 bg-white border-bottom mt-3">
-                    <span class="badge bg-primary mb-2">${reg.CNPJ}</span>
-                    <h6 class="fw-bold mb-0">${reg.Fornecedor}</h6>
+            // Cálculo do total por fornecedor
+            const totalForn = reg.Itens.reduce((acc, cur) => acc + (cur.Status === 'Venceu' ? cur.Total : 0), 0);
+            
+            htmlFinal += `
+                <div class="p-4 bg-white border-bottom mt-3 shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div>
+                            <span class="badge bg-primary mb-1">${reg.CNPJ}</span>
+                            <h6 class="fw-bold mb-0 text-uppercase">${reg.Fornecedor}</h6>
+                        </div>
+                        <div class="text-end">
+                            <div class="label-small">Total Fornecedor</div>
+                            <div class="h5 fw-800 text-success mb-0">R$ ${totalForn.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
+                        </div>
+                    </div>
                 </div>
-                <table class="table table-sm table-hover mb-0">
-                    <thead class="table-light">
-                        <tr><th class="ps-3">Item</th><th>Descrição</th><th class="text-end pe-3">Valor Total</th></tr>
-                    </thead>
-                    <tbody>
-                        ${reg.Itens.map(it => `
+                <div class="table-responsive bg-white">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-dark">
                             <tr>
-                                <td class="ps-3 fw-bold">${it.Item}</td>
-                                <td class="small">${it.Desc}</td>
-                                <td class="text-end pe-3 fw-bold ${it.Status === 'Venceu' ? 'text-success' : 'text-muted'}">
-                                    R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits:2})}
-                                </td>
+                                <th class="ps-4" style="width: 80px">Item</th>
+                                <th>Descrição do Produto/Serviço</th>
+                                <th class="text-center">Qtd</th>
+                                <th class="text-end pe-4">Valor Total</th>
                             </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            `;
+                        </thead>
+                        <tbody>
+                            ${reg.Itens.map(it => `
+                                <tr>
+                                    <td class="ps-4 fw-bold">${it.Item}</td>
+                                    <td class="small text-muted">${it.Desc}</td>
+                                    <td class="text-center fw-bold">${it.Qtd.toLocaleString('pt-BR')}</td>
+                                    <td class="text-end pe-4 fw-bold ${it.Status === 'Venceu' ? 'text-success' : 'text-muted'}">
+                                        R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits:2})}
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>`;
         });
 
         corpo.innerHTML = `
             <div class="p-4 bg-white border-bottom shadow-sm">
                 <div class="label-small">Órgão Comprador</div>
                 <h5 class="fw-bold text-primary mb-1">${lic.Orgao}</h5>
-                <div class="small text-muted">UASG: ${lic.UASG} | Edital: ${lic.Edital}</div>
+                <div class="small text-muted">UASG: ${lic.UASG} | Edital: ${lic.Edital} | Local: ${lic.Municipio}/${lic.UF}</div>
             </div>
-            <div class="p-0">${tabelaHtml}</div>`;
+            <div class="pb-4">${htmlFinal}</div>`;
         
         new bootstrap.Modal(document.getElementById('modalDetalhes')).show();
     }
@@ -296,7 +212,6 @@
             di: document.getElementById('fDataIni').value,
             df: document.getElementById('fDataFim').value
         };
-
         const res = dadosOriginal.filter(i => {
             const d = i.DataResult.split('T')[0];
             return (!q.o || i.Orgao.toLowerCase().includes(q.o) || i.UASG.includes(q.o)) &&
@@ -310,7 +225,6 @@
 
     function debounceFiltrar() { clearTimeout(window.t); window.t = setTimeout(filtrar, 300); }
     function limpar() { document.querySelectorAll('input').forEach(i => i.value = ''); filtrar(); }
-    
     carregar();
 </script>
 </body>
