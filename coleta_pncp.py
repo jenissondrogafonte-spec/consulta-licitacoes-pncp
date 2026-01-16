@@ -10,19 +10,25 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 ARQ_DADOS = 'dados.json'
-CNPJ_ALVO = "" 
 
-# --- DATAS ---
+# --- 🎯 MODO SNIPER ---
+# Se preencher o CNPJ, ele ignora a regra de 90 dias e busca o ano todo focada na empresa
+CNPJ_ALVO = "" 
+# ---------------------
+
+# --- DEFINIÇÃO DE DATAS ---
 env_inicio = os.getenv('DATA_INICIAL', '').strip()
 env_fim = os.getenv('DATA_FINAL', '').strip()
 
 if not env_inicio:
     hoje = datetime.now()
     if CNPJ_ALVO:
+        # Busca específica (Ano todo)
         d_ini = "20250101"
         d_fim = hoje.strftime('%Y%m%d')
     else:
-        d_ini = (hoje - timedelta(days=3)).strftime('%Y%m%d')
+        # --- MUDANÇA AQUI: 90 DIAS AUTOMÁTICOS ---
+        d_ini = (hoje - timedelta(days=90)).strftime('%Y%m%d')
         d_fim = hoje.strftime('%Y%m%d')
 else:
     d_ini, d_fim = env_inicio, env_fim
@@ -31,8 +37,8 @@ dict_novos = {}
 data_atual = datetime.strptime(d_ini, '%Y%m%d')
 data_final = datetime.strptime(d_fim, '%Y%m%d')
 
-print(f"--- ROBÔ COM DATAS DE ABERTURA ({d_ini} até {d_fim}) ---")
-if CNPJ_ALVO: print(f"🎯 MODO SNIPER: {CNPJ_ALVO}")
+modo_txt = f"CNPJ {CNPJ_ALVO}" if CNPJ_ALVO else f"GERAL (90 DIAS)"
+print(f"--- ROBÔ {modo_txt}: {d_ini} até {d_fim} ---")
 
 while data_atual <= data_final:
     DATA_STR = data_atual.strftime('%Y%m%d')
@@ -45,9 +51,10 @@ while data_atual <= data_final:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR, "dataFinal": DATA_STR,
-            "codigoModalidadeContratacao": "6",
+            "codigoModalidadeContratacao": "6", # Pregão
             "pagina": pagina, "tamanhoPagina": 50
         }
+        
         if CNPJ_ALVO: params["niFornecedor"] = CNPJ_ALVO
 
         try:
@@ -68,13 +75,17 @@ while data_atual <= data_final:
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
 
-                    # --- NOVA CAPTURA DE DATAS ---
+                    # --- DADOS EXTRAS ---
                     dt_abertura = lic.get('dataAberturaLicitacao', '')
                     dt_encerra = lic.get('dataEncerramentoProposta', '')
-                    # -----------------------------
+                    # Constrói o Link do PNCP
+                    id_pncp = lic.get('id')
+                    link_pncp = f"https://pncp.gov.br/app/editais/{id_pncp}/{ano}"
+                    # --------------------
 
                     try:
                         time.sleep(0.1)
+                        # Busca Itens (Deep Search)
                         r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                         if r_it.status_code == 200:
                             itens_api = r_it.json()
@@ -100,10 +111,9 @@ while data_atual <= data_final:
                                             if chave not in forn_local:
                                                 forn_local[chave] = {
                                                     "DataResult": lic.get('dataAtualizacao') or DATA_STR,
-                                                    # NOVOS CAMPOS SALVOS AQUI
                                                     "DataAbertura": dt_abertura,
                                                     "DataEncerramento": dt_encerra,
-                                                    # ------------------------
+                                                    "Link": link_pncp, # <--- CAMPO NOVO
                                                     "UASG": uasg, "Edital": f"{str(seq).zfill(5)}/{ano}",
                                                     "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
                                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
@@ -137,7 +147,7 @@ if os.path.exists(ARQ_DADOS):
 
 print(f"\n\n📊 RESUMO:")
 print(f"   - Registros anteriores: {len(historico)}")
-print(f"   - Novos registros: {len(dict_novos)}")
+print(f"   - Novos registros (90d): {len(dict_novos)}")
 
 banco = {f"{i['Licitacao']}-{i['CNPJ']}": i for i in historico}
 banco.update(dict_novos)
@@ -146,4 +156,4 @@ lista_final = list(banco.values())
 with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
     json.dump(lista_final, f, indent=4, ensure_ascii=False)
 
-print(f"✅ FINALIZADO! Arquivo atualizado.")
+print(f"✅ SUCESSO! Base atualizada.")
