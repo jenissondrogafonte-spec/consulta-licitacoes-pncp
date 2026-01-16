@@ -1,1 +1,90 @@
-[]
+[
+    {
+        "DataResult": "2025-03-14T13:44:58",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "39",
+        "Edital": "00259/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "39002592024",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "FITA ADESIVA HOSPITALAR, MICROPOROSA, NÃO TECIDO DE VISCOSE RAYON, BRANCA, 50 MM, 10 M, C/ ADESIVO ACRÍLICO HIPO-ALERGÊNICO",
+                "Qtd": 18000.0,
+                "Unitario": 4.16,
+                "Total": 74880.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-04-03T17:04:19",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "2",
+        "Edital": "00607/2024",
+        "Orgao": "MUNICIPIO DE SAO VICENTE",
+        "UF": "SP",
+        "Municipio": "São Vicente",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "2006072024",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "AMBROXOL XAROPE PEDIÁTRICO 15MG/5ML - FRASCO 100ml",
+                "Qtd": 20000.0,
+                "Unitario": 2.1,
+                "Total": 42000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-03T09:13:35",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "SUPRIMENTOS",
+        "Edital": "00458/2024",
+        "Orgao": "MUNICIPIO DE BARUERI",
+        "UF": "SP",
+        "Municipio": "Barueri",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "SUPRIMENTOS004582024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ALBENDAZOL 40MG/ML - SUSPENSÃO ORAL 10ML",
+                "Qtd": 15000.0,
+                "Unitario": 0.99,
+                "Total": 14850.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-03T16:58:39",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "726",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE PRATA",
+        "UF": "MG",
+        "Municipio": "Prata",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "726000022025",
+        "Itens": [
+            {
+                "Item": 5143319,
+                "Desc": "ÁCIDO TRANEXÂMICO 50MG/ML AMPOLA 5ML SOLUÇÃO INJETÁVEL USO IV",
+                "Qtd": 3000.0,
+                "Unitario": 3.8,
+                "Total": 11400.0,
+                "Status": "Venceu"
+            }
+        ]
+    }
+]
