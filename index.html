@@ -2,41 +2,41 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Painel PNCP - Resultados por Pregão</title>
+    <title>Painel PNCP - Resultados Reais</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body { background: #f0f2f5; font-family: 'Inter', sans-serif; }
         .header-top { background: #004494; color: white; padding: 20px; }
-        .res-card { background: white; border-radius: 12px; border-top: 6px solid #198754; transition: 0.3s; height: 100%; }
+        .res-card { background: white; border-radius: 12px; border-top: 6px solid #198754; height: 100%; transition: 0.3s; }
         .res-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .stats-box { font-size: 0.7rem; font-weight: bold; padding: 4px; border-radius: 4px; text-align: center; color: white; }
         .bg-hml { background: #198754; } .bg-frc { background: #dc3545; } .bg-dst { background: #ffc107; color: #000; }
-        .form-label { font-size: 0.75rem; margin-bottom: 2px; }
+        .form-label { font-size: 0.75rem; font-weight: bold; margin-bottom: 2px; }
     </style>
 </head>
 <body>
 
 <div class="header-top shadow mb-4">
     <div class="container-fluid d-flex justify-content-between align-items-center">
-        <h4 class="mb-0 fw-bold"><i class="fas fa-gavel me-2"></i> Resultados Pregão Eletrônico</h4>
-        <span class="badge bg-white text-primary px-3 py-2" id="contador">Carregando...</span>
+        <h4 class="mb-0 fw-bold"><i class="fas fa-microscope me-2"></i> Resultados Detalhados PNCP</h4>
+        <span class="badge bg-white text-primary px-3 py-2" id="contador">Lendo dados...</span>
     </div>
 </div>
 
 <div class="container-fluid px-4">
     <div class="card p-3 shadow-sm mb-4 border-0">
         <div class="row g-2">
-            <div class="col-md-1"><label class="form-label fw-bold">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="form-label fw-bold">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
-            <div class="col-md-1"><label class="form-label fw-bold">UF</label><input type="text" id="fUF" class="form-control form-control-sm" maxlength="2"></div>
-            <div class="col-md-2"><label class="form-label fw-bold">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
-            <div class="col-md-2"><label class="form-label fw-bold">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
-            <div class="col-md-1.5"><label class="form-label fw-bold">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
-            <div class="col-md-1.5"><label class="form-label fw-bold">Data Fim</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label">UASG</label><input type="text" id="fUasg" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control form-control-sm"></div>
+            <div class="col-md-1"><label class="form-label">UF</label><input type="text" id="fUF" class="form-control form-control-sm" maxlength="2"></div>
+            <div class="col-md-2"><label class="form-label">Município</label><input type="text" id="fMuni" class="form-control form-control-sm"></div>
+            <div class="col-md-2"><label class="form-label">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control form-control-sm"></div>
+            <div class="col-md-1.5"><label class="form-label">Data Início</label><input type="date" id="fDataIni" class="form-control form-control-sm"></div>
+            <div class="col-md-1.5"><label class="form-label">Data Fim</label><input type="date" id="fDataFim" class="form-control form-control-sm"></div>
             <div class="col-md-1 d-flex align-items-end gap-1">
-                <button class="btn btn-primary btn-sm w-100" onclick="filtrar()">OK</button>
-                <button class="btn btn-light btn-sm w-100 border" onclick="limpar()"><i class="fas fa-eraser"></i></button>
+                <button class="btn btn-primary btn-sm w-100 fw-bold" onclick="filtrar()">BUSCAR</button>
+                <button class="btn btn-light btn-sm border" onclick="limpar()"><i class="fas fa-sync"></i></button>
             </div>
         </div>
     </div>
@@ -47,10 +47,10 @@
     <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content shadow border-0">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold">Detalhamento por Item</h5>
+                <h5 class="modal-title fw-bold">Detalhamento dos Itens Vencidos</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body p-0">
+            <div class="modal-body p-0" id="modalConteudo">
                 <div id="infoLicitacao" class="p-4 bg-light border-bottom"></div>
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0">
@@ -73,9 +73,11 @@
         try {
             const r = await fetch('dados.json?v=' + Date.now());
             dadosOriginal = await r.json();
-            document.getElementById('contador').innerText = `${dadosOriginal.length} Resultados Únicos`;
+            document.getElementById('contador').innerText = `${dadosOriginal.length} Resultados Capturados`;
             renderizar(dadosOriginal);
-        } catch (e) { console.error("Erro ao carregar"); }
+        } catch (e) { 
+            document.getElementById('lista').innerHTML = `<div class="col-12 text-center py-5"><h5>Aguardando sincronização de dados...</h5></div>`;
+        }
     }
 
     function renderizar(lista) {
@@ -89,10 +91,10 @@
                         <span class="badge bg-light text-dark border">${i.DataResult.split('T')[0]}</span>
                         <small class="text-muted fw-bold">UASG: ${i.UASG}</small>
                     </div>
-                    <h6 class="fw-bold text-primary text-truncate mb-1" title="${i.Orgao}">${i.Orgao}</h6>
-                    <p class="small text-muted mb-2">${i.Municipio || '---'} - ${i.UF} | Edital: ${i.Edital}</p>
+                    <h6 class="fw-bold text-primary text-truncate mb-1">${i.Orgao}</h6>
+                    <p class="small text-muted mb-2">${i.Municipio || ''} - ${i.UF} | Edital: ${i.Edital}</p>
                     
-                    <div class="row g-1 mb-3">
+                    <div class="row g-1 mb-3 text-center">
                         <div class="col-4"><div class="stats-box bg-hml">HML: ${res.Homologados}</div></div>
                         <div class="col-4"><div class="stats-box bg-frc">FRC: ${res.Fracassados}</div></div>
                         <div class="col-4"><div class="stats-box bg-dst">DST: ${res.Desertos}</div></div>
@@ -103,9 +105,9 @@
                         <small class="text-muted">CNPJ: ${i.CNPJ}</small>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                    <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-2">
                         <span class="fw-bold text-success">R$ ${calcTotal(i.Itens)}</span>
-                        <button class="btn btn-sm btn-primary px-3" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Detalhes</button>
+                        <button class="btn btn-sm btn-primary px-3 rounded-pill" onclick="verDetalhes('${i.Licitacao}', '${i.CNPJ}')">Ver Itens</button>
                     </div>
                 </div>
             </div>`;
@@ -114,21 +116,21 @@
 
     function calcTotal(itens) {
         if(!itens) return "0,00";
-        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total) || 0), 0);
+        const t = itens.reduce((acc, curr) => acc + (parseFloat(curr.Total || curr.Valor) || 0), 0);
         return t.toLocaleString('pt-BR', {minimumFractionDigits: 2});
     }
 
     function verDetalhes(idL, cnpj) {
         const i = dadosOriginal.find(x => x.Licitacao === idL && x.CNPJ === cnpj);
         if(!i) return;
-        document.getElementById('infoLicitacao').innerHTML = `<h6>${i.Orgao}</h6><p class="small mb-0"><b>Edital:</b> ${i.Edital} | <b>UASG:</b> ${i.UASG}</p>`;
-        document.getElementById('corpoModal').innerHTML = i.Itens.map(it => `
+        document.getElementById('infoLicitacao').innerHTML = `<h6>${i.Orgao}</h6><p class="small mb-0"><b>Edital:</b> ${i.Edital} | <b>Empresa:</b> ${i.Fornecedor}</p>`;
+        document.getElementById('corpoModal').innerHTML = (i.Itens || []).map(it => `
             <tr>
                 <td class="ps-4 fw-bold">${it.Item}</td>
-                <td class="small">${it.Desc}</td>
+                <td class="small" style="font-size:0.8rem">${it.Desc}</td>
                 <td>${it.Qtd || '--'}</td>
                 <td>R$ ${(it.Unitario || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
-                <td class="fw-bold">R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                <td class="fw-bold text-success">R$ ${ (it.Total || it.Valor || 0).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
             </tr>`).join('');
         new bootstrap.Modal(document.getElementById('modalItens')).show();
     }
@@ -150,7 +152,7 @@
                    (!query.e || i.Edital.includes(query.e)) &&
                    (!query.uf || i.UF === query.uf) &&
                    (!query.m || (i.Municipio || "").toLowerCase().includes(query.m)) &&
-                   (!query.f || i.Fornecedor.toLowerCase().includes(query.f) || i.CNPJ.includes(query.f)) &&
+                   (!query.f || (i.Fornecedor || "").toLowerCase().includes(query.f) || i.CNPJ.includes(query.f)) &&
                    matchData;
         });
         renderizar(filtrados);
