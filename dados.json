@@ -880,6 +880,8 @@
     },
     {
         "DataResult": "2025-02-05T15:27:27",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-20T09:59:00",
         "UASG": "404340",
         "Edital": "00219/2025",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
@@ -887,38 +889,51 @@
         "Municipio": "Rio de Janeiro",
         "Fornecedor": "AUTO SUTURE DO BRASIL LTDA ",
         "CNPJ": "01645409000390",
-        "InicioRec": "",
-        "FimRec": "2025-02-20T09:59:00",
         "Licitacao": "404340002192025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "ACESSORIO: DILATADOR",
-                "Status": "Venceu",
-                "Valor": 31557.96
+                "Qtd": 252.0,
+                "Unitario": 125.23,
+                "Total": 31557.96,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "ESTIMULACAO: BICAMERAL",
-                "Status": "Venceu",
-                "Valor": 533694.22
+                "Qtd": 142.0,
+                "Unitario": 3758.41,
+                "Total": 533694.22,
+                "Status": "Venceu"
             },
             {
                 "Item": 3,
                 "Desc": "MARCAPASSO: DEFINITIVO, TIPO: ENDOCARDIO ATRIAL ATIVO, MARCA: N/A, ESTIMULACAO: UNI/ BIPOLAR, EXTREMIDADE DISTAL: N/A, MATERIAL: FIO ESTIMULADOR REVESTIDO DE SILICONE, CALIBRE: 5F~7F, COMPRIMENTO: 53~60CM, ACESSORIO: N/A",
-                "Status": "Venceu",
-                "Valor": 218022.97
+                "Qtd": 239.0,
+                "Unitario": 912.23,
+                "Total": 218022.97,
+                "Status": "Venceu"
             },
             {
                 "Item": 4,
                 "Desc": "MARCAPASSO: DEFINITIVO BICAMERAL, TIPO: ENDOCARDIO VENTRICULAR ATIVO, MARCA: N/A, ESTIMULACAO: UNI/ BIPOLAR, EXTREMIDADE DISTAL: MECANISMO HELICOIDAL DE FIXACAO ATIVA, MATERIAL: FIO ESTIMULADOR REVESTIDO DE SILICONE, COMPATIVEL COM RESSONANCIA NUCLEAR MAGNETICA (RNM), CALIBRE: 5FR~7FR, COMPRIMENTO: 50CM ~ 65CM, ACESSORIO: COM CORTICOIDE E COMPATIVEL COM RESSONANCIA NUCLEAR MAGNETICA (RNM), FORMA FORNECIMENTO: UNIDADE",
-                "Status": "Venceu",
-                "Valor": 218022.97
+                "Qtd": 239.0,
+                "Unitario": 912.23,
+                "Total": 218022.97,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 4,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-31T14:07:52",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-03T08:30:00",
         "UASG": "06002",
         "Edital": "00001/2025",
         "Orgao": "MUNICIPIO DE RIO NEGRO",
@@ -926,17 +941,22 @@
         "Municipio": "Rio Negro",
         "Fornecedor": "L. CARVALHO TRANSPORTES E SERVIÇOS LTDA",
         "CNPJ": "37279287000140",
-        "InicioRec": "",
-        "FimRec": "2025-02-03T08:30:00",
         "Licitacao": "06002000012025",
         "Itens": [
             {
                 "Item": 3,
                 "Desc": "SERVIÇOS DE TRANSPORTE ESCOLAR",
-                "Status": "Venceu",
-                "Valor": 1154999.24
+                "Qtd": 89900.0,
+                "Unitario": 12.8476,
+                "Total": 1154999.24,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-05-20T13:52:51",
@@ -1877,6 +1897,8 @@
     },
     {
         "DataResult": "2025-01-31T14:07:52",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-03T08:30:00",
         "UASG": "06002",
         "Edital": "00001/2025",
         "Orgao": "MUNICIPIO DE RIO NEGRO",
@@ -1884,23 +1906,30 @@
         "Municipio": "Rio Negro",
         "Fornecedor": "CONFIANÇA - TRANSPORTE DE PASSAGEIROS LTDA",
         "CNPJ": "56969923000100",
-        "InicioRec": "",
-        "FimRec": "2025-02-03T08:30:00",
         "Licitacao": "06002000012025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "SERVIÇOS DE TRANSPORTE ESCOLAR",
-                "Status": "Venceu",
-                "Valor": 1048993.66
+                "Qtd": 96200.0,
+                "Unitario": 10.9043,
+                "Total": 1048993.66,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "SERVIÇOS DE TRANSPORTE ESCOLAR",
-                "Status": "Venceu",
-                "Valor": 867997.186
+                "Qtd": 126980.0,
+                "Unitario": 6.8357,
+                "Total": 867997.186,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 3,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-05-30T09:44:54",
@@ -1988,6 +2017,8 @@
     },
     {
         "DataResult": "2025-01-29T09:15:31",
+        "DataAbertura": "",
+        "DataEncerramento": "2025-02-11T08:00:00",
         "UASG": "343",
         "Edital": "00001/2025",
         "Orgao": "MUNICIPIO DE SAO GONCALO DO PARA",
@@ -1995,71 +2026,94 @@
         "Municipio": "São Gonçalo do Pará",
         "Fornecedor": "LUB MINAS COMERCIO DE LUBRIFICNTES LTDA",
         "CNPJ": "51011416000146",
-        "InicioRec": "",
-        "FimRec": "2025-02-11T08:00:00",
         "Licitacao": "343000012025",
         "Itens": [
             {
                 "Item": 1,
                 "Desc": "GALÃO DE 20 LITROS OLEO HIDRAULICO SAE 68 PARA RETROESCAVADEIRA CASE 580 L, COM CERTIFICADO TS 16.949.",
-                "Status": "Venceu",
-                "Valor": 7395.0
+                "Qtd": 50.0,
+                "Unitario": 147.9,
+                "Total": 7395.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 2,
                 "Desc": "GALÃO DE 20 LITROS DE ÓLEO DIFERENCIAL",
-                "Status": "Venceu",
-                "Valor": 8787.0
+                "Qtd": 30.0,
+                "Unitario": 292.9,
+                "Total": 8787.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 3,
                 "Desc": "GALÕES 20 LITROS ÓLEO LUBRIFICANTE SAE 15W40 PARA VEICULOS A DIESEL (CAMINHÕES) COM CERTIFICADO TS 16.949.",
-                "Status": "Venceu",
-                "Valor": 17600.0
+                "Qtd": 80.0,
+                "Unitario": 220.0,
+                "Total": 17600.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 4,
                 "Desc": "GALÃO DE 20 LITROS DE ÓLEO DE CAIXA SAE",
-                "Status": "Venceu",
-                "Valor": 13876.0
+                "Qtd": 40.0,
+                "Unitario": 346.9,
+                "Total": 13876.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 5,
                 "Desc": "GALÃO DE 20 LITROS DE ÓLEO DE DIREÇÃO HIDRÁULICA ATF TIPO A",
-                "Status": "Venceu",
-                "Valor": 9720.0
+                "Qtd": 30.0,
+                "Unitario": 324.0,
+                "Total": 9720.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 6,
                 "Desc": "GALÃO DE 20 LITROS DE ÓLEO PARA MOTOR A DIESEL 10W40",
-                "Status": "Venceu",
-                "Valor": 10000.0
+                "Qtd": 20.0,
+                "Unitario": 500.0,
+                "Total": 10000.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 7,
                 "Desc": "GALÃO DE 20 LITROS DE ÓLEO HIDRÁULICO ATF OH50 COM CERITICADO TS 16.949",
-                "Status": "Venceu",
-                "Valor": 9580.0
+                "Qtd": 20.0,
+                "Unitario": 479.0,
+                "Total": 9580.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 8,
                 "Desc": "OLEO MOTOR",
-                "Status": "Venceu",
-                "Valor": 6200.0
+                "Qtd": 200.0,
+                "Unitario": 31.0,
+                "Total": 6200.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 9,
                 "Desc": "GALÃO DE 20 LITROS DE GRAXA AUTOMOTIVA DE MÚLTIPLAS APLICAÇÕES NLGI 2",
-                "Status": "Venceu",
-                "Valor": 36600.0
+                "Qtd": 60.0,
+                "Unitario": 610.0,
+                "Total": 36600.0,
+                "Status": "Venceu"
             },
             {
                 "Item": 10,
                 "Desc": "ADITIVO DE RADIADOR 1 LITRO (GASOLINA)",
-                "Status": "Venceu",
-                "Valor": 1150.0
+                "Qtd": 100.0,
+                "Unitario": 11.5,
+                "Total": 1150.0,
+                "Status": "Venceu"
             }
-        ]
+        ],
+        "Resumo": {
+            "Homologados": 10,
+            "Fracassados": 0,
+            "Desertos": 0
+        }
     },
     {
         "DataResult": "2025-01-27T16:33:32",
