@@ -2,16 +2,21 @@ name: Robô Sniper Automático 2025
 
 on:
   schedule:
-    # Roda a cada 2 horas (no minuto 0)
+    # Agenda para rodar a cada 2 horas
     - cron: '0 */2 * * *'
   workflow_dispatch:
-    # Permite que você clique em "Run Workflow" para testar manualmente
+    # Permite que você inicie manualmente pelo botão "Run Workflow"
+
+# Trava de segurança para evitar que duas execuções rodem ao mesmo tempo
+concurrency:
+  group: coleta-pncp-group
+  cancel-in-progress: false
 
 jobs:
   coleta:
     runs-on: ubuntu-latest
     
-    # Permissões necessárias para o Bot salvar arquivos no seu GitHub
+    # Permissões para gravar os arquivos no repositório
     permissions:
       contents: write
 
@@ -29,21 +34,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: 4. Executar Coleta (Fatias de 10 dias)
+      - name: 4. Executar Robô Turbo-Resiliente
+        # O robô agora salva o progresso internamente
         run: python coleta_pncp.py
 
-      - name: 5. Salvar Progresso e Dados no GitHub
+      - name: 5. Salvar Dados e Checkpoint no GitHub
         run: |
           git config --global user.name "SniperBot-Drogafonte"
           git config --global user.email "actions@github.com"
           
-          # Adiciona os arquivos que mudaram
+          # Garante que o robô pegue as mudanças mais recentes antes de subir
+          git pull origin main --rebase || echo "Sem mudanças remotas para mesclar"
+          
           git add dados.json checkpoint.txt
           
-          # Verifica se há algo para commitar (evita erro se nada for encontrado)
+          # Commita apenas se houver mudanças reais nos arquivos
           if git diff --cached --quiet; then
-            echo "Nenhuma mudança relevante encontrada neste ciclo."
+            echo "Nenhuma mudança nova para salvar neste ciclo."
           else
-            git commit -m "🤖 Progresso Auto: $(cat checkpoint.txt)"
+            git commit -m "🤖 Progresso: $(cat checkpoint.txt) [Auto-Commit]"
             git push
           fi
+          
