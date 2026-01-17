@@ -13,7 +13,7 @@ ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
-DIAS_POR_CICLO = 5 # Janela menor para garantir salvamento constante
+DIAS_POR_CICLO = 5  # Reduzi para 5 dias para garantir que termine dentro das 6h do GitHub
 
 def carregar_banco():
     if os.path.exists(ARQ_DADOS):
@@ -29,7 +29,7 @@ def salvar_estado(banco, data_proxima):
         json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
     with open(ARQ_CHECKPOINT, 'w') as f:
         f.write(data_proxima.strftime('%Y%m%d'))
-    print(f"\n💾 [PROGRESSO SALVO] Checkpoint: {data_proxima.strftime('%d/%m/%Y')}")
+    print(f"\n💾 Estado salvo! Checkpoint: {data_proxima.strftime('%d/%m/%Y')}")
 
 def ler_checkpoint():
     if os.path.exists(ARQ_CHECKPOINT):
@@ -37,17 +37,17 @@ def ler_checkpoint():
             return datetime.strptime(f.read().strip(), '%Y%m%d')
     return datetime(2025, 1, 1)
 
-# --- INÍCIO ---
+# --- PROCESSAMENTO ---
 data_inicio = ler_checkpoint()
 if data_inicio > DATA_LIMITE_FINAL:
-    print("🎯 O ano de 2025 já foi processado com sucesso!")
+    print("🎯 Missão cumprida! Ano 2025 totalmente processado.")
     exit(0)
 
 data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
 if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
 
 print(f"--- 🚀 SNIPER TURBO ATIVADO ---")
-print(f"--- PROCESSANDO: {data_inicio.strftime('%d/%m')} até {data_fim.strftime('%d/%m')} ---")
+print(f"--- ALVO: {CNPJ_ALVO} | JANELA: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
 
 banco_total = carregar_banco()
 data_atual = data_inicio
@@ -65,13 +65,13 @@ while data_atual <= data_fim:
             resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
             if resp.status_code != 200: break
             
-            json_resp = resp.json()
-            lics = json_resp.get('data', [])
+            data_json = resp.json()
+            lics = data_json.get('data', [])
             if not lics: break
             print(f"[{len(lics)} editais]", end="", flush=True)
 
             for idx, lic in enumerate(lics):
-                # Salva a cada 10 editais para não perder tempo de processamento
+                # Otimização: A cada 10 editais, salva o banco para não perder progresso se o GitHub cair
                 if idx % 10 == 0 and idx > 0: salvar_estado(banco_total, data_atual)
 
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
@@ -79,15 +79,16 @@ while data_atual <= data_fim:
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                 id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                 
-                # Pula se já temos essa licitação com dados completos
-                if f"{id_lic}-{CNPJ_ALVO}" in banco_total: continue
+                # Pula se já processamos esta licitação com sucesso antes
+                if f"{id_lic}-{CNPJ_ALVO}" in banco_total and len(banco_total[f"{id_lic}-{CNPJ_ALVO}"]["Itens"]) > 0:
+                    continue
 
                 try:
-                    time.sleep(0.1)
+                    time.sleep(0.1) # Sleep reduzido para performance
                     r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                     if r_it.status_code == 200:
                         itens_api = r_it.json()
-                        # SÓ ENTRA SE TIVER RESULTADO (Leveza total!)
+                        # OTIMIZAÇÃO: Só entra no detalhe se houver itens com resultado
                         if not any(it.get('temResultado') for it in itens_api): continue
 
                         for it in itens_api:
@@ -110,20 +111,22 @@ while data_atual <= data_fim:
                                                     "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
                                                     "Fornecedor": v.get('nomeRazaoSocialFornecedor'), "CNPJ": CNPJ_ALVO, "Licitacao": id_lic, "Itens": []
                                                 }
-                                            banco_total[chave]["Itens"].append({
-                                                "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
-                                                "Qtd": v.get('quantidadeHomologada'), "Unitario": float(v.get('valorUnitarioHomologado') or 0),
-                                                "Total": float(v.get('valorTotalHomologado') or 0), "Status": "Venceu"
-                                            })
+                                            
+                                            if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
+                                                banco_total[chave]["Itens"].append({
+                                                    "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
+                                                    "Qtd": v.get('quantidadeHomologada'), "Unitario": float(v.get('valorUnitarioHomologado') or 0),
+                                                    "Total": float(v.get('valorTotalHomologado') or 0), "Status": "Venceu"
+                                                })
                                             print("🎯", end="", flush=True)
                 except: continue
             
-            if pagina >= json_resp.get('totalPaginas', 1): break
+            if pagina >= data_json.get('totalPaginas', 1): break
             pagina += 1
         except: break
     
-    # Salva ao final de cada dia processado
+    # Salva ao final de cada dia com sucesso
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
 
-print(f"\n\n✅ Ciclo concluído. O robô continuará automaticamente na próxima rodada.")
+print(f"\n\n✅ Janela concluída com sucesso!")
