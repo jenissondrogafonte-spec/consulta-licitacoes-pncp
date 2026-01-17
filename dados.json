@@ -334,5 +334,297 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-13T07:06:00",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925550",
+        "Edital": "00007/2025",
+        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925550000072025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Ácido ascórbico",
+                "Qtd": 56700.0,
+                "Unitario": 0.124,
+                "Total": 7030.8,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "Ácido Ascórbico",
+                "Qtd": 2700.0,
+                "Unitario": 0.99,
+                "Total": 2673.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Ácido fólico",
+                "Qtd": 43800.0,
+                "Unitario": 0.038,
+                "Total": 1664.4,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Folinato de cálcio",
+                "Qtd": 7200.0,
+                "Unitario": 2.2,
+                "Total": 15840.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Sulfato Ferroso",
+                "Qtd": 1700.0,
+                "Unitario": 0.98,
+                "Total": 1666.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Tiamina",
+                "Qtd": 29500.0,
+                "Unitario": 0.223,
+                "Total": 6578.5,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-13T07:12:49",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "986835",
+        "Edital": "00005/2025",
+        "Orgao": "MUNICIPIO DE PEDERNEIRAS",
+        "UF": "SP",
+        "Municipio": "Pederneiras",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "986835000052025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Carbamazepina",
+                "Qtd": 300000.0,
+                "Unitario": 0.146,
+                "Total": 43800.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-13T09:41:26",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "060",
+        "Edital": "01525/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
+        "UF": "SP",
+        "Municipio": "São José dos Campos",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "060015252024",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "VITAMINA B1 (TIAMINA) 300 MG. ",
+                "Qtd": 900000.0,
+                "Unitario": 0.216,
+                "Total": 194400.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-12T18:29:21",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "5795",
+        "Edital": "00031/2025",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Afogados da Ingazeira",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "5795000312025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Cota principal 2 - (3183521) - LOSARTANA, POTASSICA - CONCENTRACAO/DOSAGEM 50 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMNISTRACAO ORAL",
+                "Qtd": 789783.0,
+                "Unitario": 0.04,
+                "Total": 30564.6,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-13T15:17:09",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "5",
+        "Edital": "00004/2025",
+        "Orgao": "CONDERG - CONS. DE DESENV. - HOSPITAL DIVINOLÂNDIA",
+        "UF": "SP",
+        "Municipio": "Divinolândia",
+        "Fornecedor": "DROGAFONTE",
+        "CNPJ": "08778201000126",
+        "Licitacao": "5000042025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "ACETILCISTEINA FRASCO 40MG/ML FRASCO 120ML",
+                "Qtd": 10800.0,
+                "Unitario": 3.78,
+                "Total": 40824.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-04T09:22:00",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "926607",
+        "Edital": "00131/2024",
+        "Orgao": "MUNICIPIO DE GOVERNADOR VALADARES",
+        "UF": "MG",
+        "Municipio": "Governador Valadares",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "926607001312024",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Água Destilada",
+                "Qtd": 468853.0,
+                "Unitario": 0.2,
+                "Total": 93770.6,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-15T07:56:15",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "986629",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
+        "UF": "SP",
+        "Municipio": "Laranjal Paulista",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "986629000012025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Acetilcisteína",
+                "Qtd": 2500.0,
+                "Unitario": 3.465,
+                "Total": 8662.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "Acetilcisteína",
+                "Qtd": 2500.0,
+                "Unitario": 3.79,
+                "Total": 9475.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Aciclovir",
+                "Qtd": 10000.0,
+                "Unitario": 0.1568,
+                "Total": 1568.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-06-02T15:41:43",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "003",
+        "Edital": "00014/2025",
+        "Orgao": "MUNICIPIO DE LINHARES",
+        "UF": "ES",
+        "Municipio": "Linhares",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "003000142025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "CLORIDRATO DE DOBUTAMINA DE 12,5 MG/ML COM 20 ML Cloridrato  de Dobutamina de 12,5mg/ml, frasco ampola com 20 mlVia de administracao: intravenoso",
+                "Qtd": 3000.0,
+                "Unitario": 5.18,
+                "Total": 15540.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "FUROSEMIDA DE 10MG/ML SOLUCAO INJETAVEL DE 2ML Via de administracao: intravenoso/intramuscular.",
+                "Qtd": 40000.0,
+                "Unitario": 0.65,
+                "Total": 26000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-27T09:51:19",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "5769",
+        "Edital": "00004/2025",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "5769000042025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "(3068277) - BISACODIL - CONCENTRACAO/DOSAGEM 5 MG,FORMA FARMACEUTICA COMPRIMIDO OU DRAGEA,VIA DE ADMINISTRACAO ORAL",
+                "Qtd": 15600.0,
+                "Unitario": 0.16,
+                "Total": 2530.32,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "(3418529) - CLORETO DE POTASSIO - CONCENTRACAO/DOSAGEM 60 MG/ML,FORMA FARMACEUTICA XAROPE,FORMA DE APRESENTACAO FRASCO,VIA DE ADMINISTRACAO ORAL",
+                "Qtd": 1400.0,
+                "Unitario": 2.3,
+                "Total": 3219.86,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-13T15:49:31",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1405",
+        "Edital": "00197/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
+        "UF": "RJ",
+        "Municipio": "Resende",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1405001972024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "OMEPRAZOL 20MG (BLISTER) CAPSULA GELATINOSA DURAOMEPRAZOL 20MG (BLISTER) CAPSULA GELATINOSA DURA",
+                "Qtd": 2000.0,
+                "Unitario": 56.49,
+                "Total": 112980.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
