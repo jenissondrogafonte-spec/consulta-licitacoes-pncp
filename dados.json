@@ -626,5 +626,237 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-16T07:04:47",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "986411",
+        "Edital": "00138/2024",
+        "Orgao": "MUNICIPIO DE FERNANDOPOLIS",
+        "UF": "SP",
+        "Municipio": "Fernandópolis",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "986411001382024",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Valproato De Sódio",
+                "Qtd": 4000.0,
+                "Unitario": 5.4999,
+                "Total": 21999.6,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-16T07:06:33",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925550",
+        "Edital": "00012/2025",
+        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925550000122025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Biperideno",
+                "Qtd": 3600.0,
+                "Unitario": 2.72,
+                "Total": 9792.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "Carbamazepina",
+                "Qtd": 5900.0,
+                "Unitario": 7.0,
+                "Total": 41300.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Clorpromazina",
+                "Qtd": 32200.0,
+                "Unitario": 0.298,
+                "Total": 9595.6,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Fenobarbital Sódico",
+                "Qtd": 2800.0,
+                "Unitario": 3.93,
+                "Total": 11004.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Midazolam",
+                "Qtd": 187500.0,
+                "Unitario": 2.778,
+                "Total": 520875.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Morfina",
+                "Qtd": 10500.0,
+                "Unitario": 6.48,
+                "Total": 68040.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-27T08:35:09",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "02007",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE TRES PONTAS",
+        "UF": "MG",
+        "Municipio": "Três Pontas",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "02007000022025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "ACICLOVIR 200MG\r\n<p>BLISTER COM 10, 15, 20 OU 30 COMPRIMIDOS</p>",
+                "Qtd": 40000.0,
+                "Unitario": 0.159,
+                "Total": 6360.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-17T14:00:25",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1405",
+        "Edital": "00198/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
+        "UF": "RJ",
+        "Municipio": "Resende",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1405001982024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "HIDROCLORITIAZIDA 25 MG COMPRIMIDOHIDROCLORITIAZIDA 25 MG COMPRIMIDO (BPS BR0267674)",
+                "Qtd": 1500.0,
+                "Unitario": 22.59,
+                "Total": 33885.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-17T07:03:59",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "926809",
+        "Edital": "00003/2025",
+        "Orgao": "SECRETARIA DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Caruaru",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "926809000032025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Aciclovir",
+                "Qtd": 60000.0,
+                "Unitario": 0.1508,
+                "Total": 9048.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Folinato de cálcio",
+                "Qtd": 10000.0,
+                "Unitario": 2.2,
+                "Total": 22000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-17T07:11:21",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925162",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE NATAL",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925162000042025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Albendazol",
+                "Qtd": 11000.0,
+                "Unitario": 1.08,
+                "Total": 11880.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-17T15:15:19",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1336",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE CAMPOS ALTOS",
+        "UF": "MG",
+        "Municipio": "Campos Altos",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1336000022025",
+        "Itens": [
+            {
+                "Item": 5172389,
+                "Desc": "Ácido tranexâmico, 50 mg/ml, solução injetável 5ml.",
+                "Qtd": 500.0,
+                "Unitario": 3.979,
+                "Total": 1989.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5172391,
+                "Desc": "ÁCIDO VALPRÓICO 250/5 MG FRASCO 100ML.",
+                "Qtd": 700.0,
+                "Unitario": 5.999,
+                "Total": 4199.3,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-07T13:50:23",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1",
+        "Edital": "00915/2024",
+        "Orgao": "MUNICIPIO DE CATANDUVA",
+        "UF": "SP",
+        "Municipio": "Catanduva",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1009152024",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "ITRACONAZOL BROMETO 100 MG",
+                "Qtd": 60000.0,
+                "Unitario": 0.6863,
+                "Total": 41178.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
