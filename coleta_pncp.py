@@ -13,7 +13,9 @@ ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
-DIAS_POR_CICLO = 5  # Reduzi para 5 dias para garantir que termine dentro das 6h do GitHub
+
+# AJUSTE: Janela reduzida para 3 dias para maior segurança contra timeouts
+DIAS_POR_CICLO = 3 
 
 def carregar_banco():
     if os.path.exists(ARQ_DADOS):
@@ -25,11 +27,12 @@ def carregar_banco():
     return {}
 
 def salvar_estado(banco, data_proxima):
+    """Salva o progresso no JSON e o checkpoint no TXT"""
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
     with open(ARQ_CHECKPOINT, 'w') as f:
         f.write(data_proxima.strftime('%Y%m%d'))
-    print(f"\n💾 Estado salvo! Checkpoint: {data_proxima.strftime('%d/%m/%Y')}")
+    print(f"\n💾 [ESTADO SALVO] Próximo início: {data_proxima.strftime('%d/%m/%Y')}")
 
 def ler_checkpoint():
     if os.path.exists(ARQ_CHECKPOINT):
@@ -37,16 +40,16 @@ def ler_checkpoint():
             return datetime.strptime(f.read().strip(), '%Y%m%d')
     return datetime(2025, 1, 1)
 
-# --- PROCESSAMENTO ---
+# --- INÍCIO DO PROCESSAMENTO ---
 data_inicio = ler_checkpoint()
 if data_inicio > DATA_LIMITE_FINAL:
-    print("🎯 Missão cumprida! Ano 2025 totalmente processado.")
+    print("🎯 Missão 2025 concluída!")
     exit(0)
 
 data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
 if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
 
-print(f"--- 🚀 SNIPER TURBO ATIVADO ---")
+print(f"--- 🚀 SNIPER TURBO (3 DIAS) ATIVADO ---")
 print(f"--- ALVO: {CNPJ_ALVO} | JANELA: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
 
 banco_total = carregar_banco()
@@ -59,19 +62,26 @@ while data_atual <= data_fim:
     pagina = 1
     while True:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-        params = {"dataInicial": DATA_STR, "dataFinal": DATA_STR, "codigoModalidadeContratacao": "6", "pagina": pagina, "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO}
+        params = {
+            "dataInicial": DATA_STR, 
+            "dataFinal": DATA_STR, 
+            "codigoModalidadeContratacao": "6", 
+            "pagina": pagina, 
+            "tamanhoPagina": 50, 
+            "niFornecedor": CNPJ_ALVO
+        }
 
         try:
             resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
             if resp.status_code != 200: break
             
-            data_json = resp.json()
-            lics = data_json.get('data', [])
+            json_resp = resp.json()
+            lics = json_resp.get('data', [])
             if not lics: break
             print(f"[{len(lics)} editais]", end="", flush=True)
 
             for idx, lic in enumerate(lics):
-                # Otimização: A cada 10 editais, salva o banco para não perder progresso se o GitHub cair
+                # Salvamento preventivo a cada 10 editais
                 if idx % 10 == 0 and idx > 0: salvar_estado(banco_total, data_atual)
 
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
@@ -79,16 +89,17 @@ while data_atual <= data_fim:
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                 id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                 
-                # Pula se já processamos esta licitação com sucesso antes
+                # Se já temos os itens, não gasta API
                 if f"{id_lic}-{CNPJ_ALVO}" in banco_total and len(banco_total[f"{id_lic}-{CNPJ_ALVO}"]["Itens"]) > 0:
                     continue
 
                 try:
-                    time.sleep(0.1) # Sleep reduzido para performance
+                    time.sleep(0.1) # Pausa leve para estabilidade
                     r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                     if r_it.status_code == 200:
                         itens_api = r_it.json()
-                        # OTIMIZAÇÃO: Só entra no detalhe se houver itens com resultado
+                        
+                        # Filtro de leveza: pula editais sem nenhum resultado
                         if not any(it.get('temResultado') for it in itens_api): continue
 
                         for it in itens_api:
@@ -112,6 +123,7 @@ while data_atual <= data_fim:
                                                     "Fornecedor": v.get('nomeRazaoSocialFornecedor'), "CNPJ": CNPJ_ALVO, "Licitacao": id_lic, "Itens": []
                                                 }
                                             
+                                            # Adiciona o item se não estiver na lista
                                             if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
                                                 banco_total[chave]["Itens"].append({
                                                     "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
@@ -121,12 +133,13 @@ while data_atual <= data_fim:
                                             print("🎯", end="", flush=True)
                 except: continue
             
-            if pagina >= data_json.get('totalPaginas', 1): break
+            if pagina >= json_resp.get('totalPaginas', 1): break
             pagina += 1
         except: break
     
-    # Salva ao final de cada dia com sucesso
+    # Salva o dia finalizado com sucesso
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
 
-print(f"\n\n✅ Janela concluída com sucesso!")
+print(f"\n\n✅ Ciclo de 3 dias finalizado.")
+        
