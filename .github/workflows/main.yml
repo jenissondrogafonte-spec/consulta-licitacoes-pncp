@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     # Permite iniciar manualmente pelo botão "Run Workflow"
 
-# Trava de segurança para evitar execuções simultâneas
+# Trava de segurança para evitar que duas execuções se atropelem
 concurrency:
   group: coleta-pncp-group
   cancel-in-progress: false
@@ -24,7 +24,7 @@ jobs:
       - name: 1. Checkout do Código
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Baixa todo o histórico para evitar erros de git push
+          fetch-depth: 0 # Baixa o histórico completo para evitar erros de sincronização
 
       - name: 2. Configurar Python
         uses: actions/setup-python@v4
@@ -44,16 +44,27 @@ jobs:
           git config --global user.name "SniperBot-Drogafonte"
           git config --global user.email "actions@github.com"
           
-          # Sincroniza com o servidor para evitar erro de [rejected]
-          git pull origin main --rebase
-          
+          # ETAPA DE SEGURANÇA: Prepara os arquivos e limpa o ambiente para o pull
           git add dados.json checkpoint.txt
           
-          # Só faz o commit se houver mudanças reais
+          # Se houver mudanças, guarda na 'caixa temporária' (stash)
+          if ! git diff --cached --quiet; then
+            git stash
+            # Sincroniza com o que está no servidor
+            git pull origin main --rebase
+            # Traz os dados de volta para a pasta
+            git stash pop || echo "Sem conflitos para resolver"
+          else
+            git pull origin main --rebase
+          fi
+          
+          # Adiciona novamente após a sincronização
+          git add dados.json checkpoint.txt
+          
+          # Só faz o commit se realmente houver novos dados coletados
           if git diff --cached --quiet; then
-            echo "Nenhuma mudança nova detectada."
+            echo "Nenhuma mudança nova para salvar neste ciclo."
           else
             git commit -m "🤖 Progresso Auto: $(cat checkpoint.txt)"
-            # Tenta o push; se houver conflito, tenta alinhar uma última vez
-            git push origin main || (git pull origin main --rebase && git push origin main)
+            git push origin main
           fi
