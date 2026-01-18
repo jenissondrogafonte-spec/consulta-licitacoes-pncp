@@ -1270,5 +1270,139 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-27T13:02:11",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "01",
+        "Edital": "00114/2024",
+        "Orgao": "MUNICIPIO DE PATOS",
+        "UF": "PB",
+        "Municipio": "Patos",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "01001142024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Aciclovir 200mg",
+                "Qtd": 10000.0,
+                "Unitario": 0.16,
+                "Total": 1600.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Ácido Acetilsalicílico 100mg",
+                "Qtd": 103200.0,
+                "Unitario": 0.03,
+                "Total": 3096.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-28T07:01:33",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "930721",
+        "Edital": "00006/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE ANGRA DOS REIS",
+        "UF": "RJ",
+        "Municipio": "Angra dos Reis",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "930721000062025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "Brimonidina Tartarato",
+                "Qtd": 1000.0,
+                "Unitario": 3.55,
+                "Total": 3550.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-28T07:08:56",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "927761",
+        "Edital": "00029/2025",
+        "Orgao": "SERVICO AUTONOMO HOSPITALAR",
+        "UF": "RJ",
+        "Municipio": "Volta Redonda",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "927761000292025",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "Fentanila",
+                "Qtd": 15000.0,
+                "Unitario": 3.2,
+                "Total": 48000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-28T07:13:16",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "982179",
+        "Edital": "00009/2025",
+        "Orgao": "MUNICIPIO DE SAO BENTO",
+        "UF": "PB",
+        "Municipio": "São Bento",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "982179000092025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Fentanila",
+                "Qtd": 1500.0,
+                "Unitario": 3.7,
+                "Total": 5550.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Escetamina",
+                "Qtd": 200.0,
+                "Unitario": 16.6,
+                "Total": 3320.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-28T11:28:25",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "2351",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE CUITE",
+        "UF": "PB",
+        "Municipio": "Cuité",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "2351000032025",
+        "Itens": [
+            {
+                "Item": 5218435,
+                "Desc": "ACETILCISTEÍNA 600MG GRANULADO",
+                "Qtd": 500.0,
+                "Unitario": 0.61,
+                "Total": 305.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5218436,
+                "Desc": "ACICLOVIR 200MG, COMPRIMIDO.",
+                "Qtd": 5000.0,
+                "Unitario": 0.17,
+                "Total": 850.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
