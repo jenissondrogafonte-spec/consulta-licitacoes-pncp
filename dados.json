@@ -1980,5 +1980,271 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-02-04T08:04:41",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1",
+        "Edital": "00118/2024",
+        "Orgao": "MUNICIPIO DE PARAIBUNA",
+        "UF": "SP",
+        "Municipio": "Paraibuna",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1001182024",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Cetoconazol 20mg/g creme 30g Cetoconazol 20mg/g creme 30g",
+                "Qtd": 2000.0,
+                "Unitario": 2.7494,
+                "Total": 5498.8,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-04T08:25:36",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "102150",
+        "Edital": "03732/2024",
+        "Orgao": "UNIVERSIDADE DE SAO PAULO",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "102150037322024",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Epinefrina",
+                "Qtd": 9000.0,
+                "Unitario": 0.845,
+                "Total": 7605.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-04T08:41:32",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "532101",
+        "Edital": "00138/2025",
+        "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "532101001382025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Dipirona Sódica",
+                "Qtd": 39240.0,
+                "Unitario": 0.998,
+                "Total": 39161.52,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-04-24T15:46:58",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "0000",
+        "Edital": "00013/2025",
+        "Orgao": "MUNICIPIO DE GUARIBA",
+        "UF": "SP",
+        "Municipio": "Guariba",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "0000000132025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "OMEPRAZOL 20 MG",
+                "Qtd": 480000.0,
+                "Unitario": 0.05,
+                "Total": 24000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-21T14:27:28",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "266500",
+        "Edital": "00524/2025",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Fornecedor": "DROGAFONTE LTDA.",
+        "CNPJ": "08778201000126",
+        "Licitacao": "266500005242025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "GRUPO FARMACOLOGICO: ANTIVIRAIS, PRINCIPIO ATIVO: ACICLOVIR, FORMA FARMACEUTICA: COMPRIMIDO, CONCENTRACAO / DOSAGEM: 200, UNIDADE: MG, VOLUME: NAO APLICAVEL, APRESENTACAO: NAO APLICAVEL, ACESSORIO: NAO APLICAVEL",
+                "Qtd": 11800.0,
+                "Unitario": 0.1638,
+                "Total": 1932.84,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-05T07:11:22",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925550",
+        "Edital": "00041/2025",
+        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925550000412025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Atorvastatina cálcica",
+                "Qtd": 285480.0,
+                "Unitario": 0.1356,
+                "Total": 38711.088,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-05T09:04:18",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "155011",
+        "Edital": "04269/2024",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155011042692024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Ácido valpróico",
+                "Qtd": 1650.0,
+                "Unitario": 5.65,
+                "Total": 9322.5,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-05T09:06:04",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "155011",
+        "Edital": "04270/2024",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155011042702024",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "Anfotericina b",
+                "Qtd": 875.0,
+                "Unitario": 30.0,
+                "Total": 26250.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-05T09:06:40",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "160345",
+        "Edital": "22917/2024",
+        "Orgao": "COMANDO DO EXERCITO",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "160345229172024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Aciclovir",
+                "Qtd": 500.0,
+                "Unitario": 2.57,
+                "Total": 1285.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Aciclovir",
+                "Qtd": 800.0,
+                "Unitario": 0.16,
+                "Total": 128.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Albendazol",
+                "Qtd": 500.0,
+                "Unitario": 0.44,
+                "Total": 220.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-10-23T16:16:36",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "266500",
+        "Edital": "00561/2025",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Fornecedor": "DROGAFONTE LTDA.",
+        "CNPJ": "08778201000126",
+        "Licitacao": "266500005612025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "GRUPO FARMACOLOGICO: VITAMINAS E SUBSTANCIAS MINERAIS, PRINCIPIO ATIVO: ACIDO ASCORBICO ( VITAMINA C ), FORMA FARMACEUTICA: SOLUCAO INJETAVEL, CONCENTRACAO / DOSAGEM: 100mg/ml, UNIDADE: mg/ml, VOLUME: 5 ML, APRESENTACAO: AMPOLA, ACESSORIO: NAO APLICAVEL",
+                "Qtd": 6140.0,
+                "Unitario": 0.756,
+                "Total": 4641.84,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "GRUPO FARMACOLOGICO: ANTIEMETICOS E PROCINETICOS, PRINCIPIO ATIVO: BROMOPRIDA, FORMA FARMACEUTICA: SOLUCAO INJETAVEL, CONCENTRACAO / DOSAGEM: 5, UNIDADE: MG/ML, VOLUME: 2ML, APRESENTACAO: AMPOLA, ACESSORIO: NAO APLICAVEL",
+                "Qtd": 29400.0,
+                "Unitario": 1.26,
+                "Total": 37044.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-06T07:11:18",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925003",
+        "Edital": "00163/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925003001632025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Aminofilina",
+                "Qtd": 58572.0,
+                "Unitario": 2.2,
+                "Total": 128858.4,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
