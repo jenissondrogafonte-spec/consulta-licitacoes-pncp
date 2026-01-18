@@ -2246,5 +2246,217 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-02-10T08:42:09",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90009/2025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000143/2025/387",
+        "UASG": "155012",
+        "Edital": "00387/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "ES",
+        "Municipio": "Vitória",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155012003872025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Bromoprida",
+                "Qtd": 60000.0,
+                "Unitario": 1.2253,
+                "Total": 73518.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-13T09:00:41",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "2/2025",
+        "Link": "https://pncp.gov.br/app/editais/12755971000120/2025/2",
+        "UASG": "1",
+        "Edital": "00002/2025",
+        "Orgao": "MUNICIPIO DE SERRA DO MEL",
+        "UF": "RN",
+        "Municipio": "Serra do Mel",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000022025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Lote 2 - CLORIDRATO DE TRAMADOL 100MG: CAPSULAS GELATINOSAS DURAS",
+                "Qtd": 3000.0,
+                "Unitario": 3.74,
+                "Total": 11220.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Lote 2 - CLORIDRATO DE TRAMADOL 37,5MG + PARACETAMOL 325MG: COMPRIMIDO REVESTIDO",
+                "Qtd": 9000.0,
+                "Unitario": 3.65,
+                "Total": 32850.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "Lote 2 - CLORIDRATO DE TRAMADOL 50MG: COMPRIMIDO",
+                "Qtd": 8000.0,
+                "Unitario": 0.16,
+                "Total": 1280.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Lote 2 - CLORIDRATO DE TRAMADOL 50MG/ML: AMP DE 1ML",
+                "Qtd": 5000.0,
+                "Unitario": 1.17,
+                "Total": 5850.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "Lote 2 - PARACETAMOL 500MG + FOSFATO DE CODEINA 30MG: COMPRIMIDO",
+                "Qtd": 6000.0,
+                "Unitario": 0.37,
+                "Total": 2220.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Lote 2 - SULFATO DE MORFINA 0,1MG/ML: AMP DE 1ML",
+                "Qtd": 4000.0,
+                "Unitario": 3.59,
+                "Total": 14360.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Lote 2 - SULFATO DE MORFINA 0,2MG/ML: AMP DE 1ML",
+                "Qtd": 4000.0,
+                "Unitario": 3.98,
+                "Total": 15920.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Lote 2 - SULFATO DE MORFINA 10MG/ML: AMP DE 1ML",
+                "Qtd": 3000.0,
+                "Unitario": 2.6,
+                "Total": 7800.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-11T07:28:33",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90006/2025",
+        "Link": "https://pncp.gov.br/app/editais/28741080000155/2025/6",
+        "UASG": "985837",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE ITABORAI",
+        "UF": "RJ",
+        "Municipio": "Itaboraí",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "985837000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Acetilcisteína",
+                "Qtd": 11383.0,
+                "Unitario": 3.66,
+                "Total": 41661.78,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-13T10:01:11",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "010/2025",
+        "Link": "https://pncp.gov.br/app/editais/11780685000152/2025/1",
+        "UASG": "11780685000152",
+        "Edital": "00001/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "AL",
+        "Municipio": "Teotônio Vilela",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "11780685000152000012025",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "Bromidrato de citalopram. Concentração/composição 20 mg - (Catálogo). Especificação: Bromidrato de citalopram. Concentração/composição 20 mg. Forma farmacêutica: comprimido revestido",
+                "Qtd": 382500.0,
+                "Unitario": 0.08,
+                "Total": 30600.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-05-05T09:01:36",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "013/2025",
+        "Link": "https://pncp.gov.br/app/editais/11780685000152/2025/2",
+        "UASG": "11780685000152",
+        "Edital": "00002/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "AL",
+        "Municipio": "Teotônio Vilela",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "11780685000152000022025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Ácido acetilsalicílico. Concentração/composição: 100 mg. Forma farmacêutica: comprimido.. Especificação: Ácido acetilsalicílico. Concentração/composição: 100 mg. Forma farmacêutica: comprimido. Unidade.",
+                "Qtd": 450000.0,
+                "Unitario": 0.03,
+                "Total": 13500.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-19T16:32:41",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "004/2025",
+        "Link": "https://pncp.gov.br/app/editais/06554265000118/2025/5",
+        "UASG": "3112",
+        "Edital": "00005/2025",
+        "Orgao": "MUNICIPIO DE PARNAGUA",
+        "UF": "PI",
+        "Municipio": "Parnaguá",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "3112000052025",
+        "Itens": [
+            {
+                "Item": 5294030,
+                "Desc": "AMBROXOL XPE ADULTO 6MG/100ML",
+                "Qtd": 2000.0,
+                "Unitario": 2.99,
+                "Total": 5980.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
