@@ -13,8 +13,6 @@ ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
-
-# AJUSTE: Janela reduzida para 3 dias para maior segurança contra timeouts
 DIAS_POR_CICLO = 3 
 
 def carregar_banco():
@@ -27,7 +25,6 @@ def carregar_banco():
     return {}
 
 def salvar_estado(banco, data_proxima):
-    """Salva o progresso no JSON e o checkpoint no TXT"""
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
     with open(ARQ_CHECKPOINT, 'w') as f:
@@ -40,7 +37,7 @@ def ler_checkpoint():
             return datetime.strptime(f.read().strip(), '%Y%m%d')
     return datetime(2025, 1, 1)
 
-# --- INÍCIO DO PROCESSAMENTO ---
+# --- INÍCIO ---
 data_inicio = ler_checkpoint()
 if data_inicio > DATA_LIMITE_FINAL:
     print("🎯 Missão 2025 concluída!")
@@ -49,7 +46,7 @@ if data_inicio > DATA_LIMITE_FINAL:
 data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
 if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
 
-print(f"--- 🚀 SNIPER TURBO (3 DIAS) ATIVADO ---")
+print(f"--- 🚀 SNIPER TURBO (3 DIAS) ---")
 print(f"--- ALVO: {CNPJ_ALVO} | JANELA: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
 
 banco_total = carregar_banco()
@@ -63,12 +60,9 @@ while data_atual <= data_fim:
     while True:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
-            "dataInicial": DATA_STR, 
-            "dataFinal": DATA_STR, 
-            "codigoModalidadeContratacao": "6", 
-            "pagina": pagina, 
-            "tamanhoPagina": 50, 
-            "niFornecedor": CNPJ_ALVO
+            "dataInicial": DATA_STR, "dataFinal": DATA_STR, 
+            "codigoModalidadeContratacao": "6", "pagina": pagina, 
+            "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO
         }
 
         try:
@@ -81,7 +75,6 @@ while data_atual <= data_fim:
             print(f"[{len(lics)} editais]", end="", flush=True)
 
             for idx, lic in enumerate(lics):
-                # Salvamento preventivo a cada 10 editais
                 if idx % 10 == 0 and idx > 0: salvar_estado(banco_total, data_atual)
 
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
@@ -89,17 +82,20 @@ while data_atual <= data_fim:
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                 id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                 
-                # Se já temos os itens, não gasta API
+                # --- NOVO: Captura o número real do edital (ex: 90007) ---
+                num_edital_real = lic.get('numeroCompra') # Pega o 90007
+                
+                # Formata link usando dados oficiais
+                link_custom = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
+
                 if f"{id_lic}-{CNPJ_ALVO}" in banco_total and len(banco_total[f"{id_lic}-{CNPJ_ALVO}"]["Itens"]) > 0:
                     continue
 
                 try:
-                    time.sleep(0.1) # Pausa leve para estabilidade
+                    time.sleep(0.1)
                     r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
                     if r_it.status_code == 200:
                         itens_api = r_it.json()
-                        
-                        # Filtro de leveza: pula editais sem nenhum resultado
                         if not any(it.get('temResultado') for it in itens_api): continue
 
                         for it in itens_api:
@@ -115,15 +111,22 @@ while data_atual <= data_fim:
                                             if chave not in banco_total:
                                                 banco_total[chave] = {
                                                     "DataResult": lic.get('dataAtualizacao') or DATA_STR,
-                                                    "Link": f"https://pncp.gov.br/app/editais/{lic.get('id')}",
-                                                    "UASG": uasg, "Edital": f"{str(seq).zfill(5)}/{ano}",
+                                                    "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
+                                                    "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
+                                                    "IdPNCP": lic.get('idContratacaoPncp'),
+                                                    # AQUI ESTÁ O AJUSTE QUE VOCÊ PEDIU:
+                                                    "NumEdital": f"{num_edital_real}/{ano}", 
+                                                    "Link": link_custom,
+                                                    "UASG": uasg, 
+                                                    # Mantivemos 'Edital' como controle interno sequencial, 
+                                                    # mas agora você tem 'NumEdital' visual
+                                                    "Edital": f"{str(seq).zfill(5)}/{ano}",
                                                     "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
                                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
                                                     "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
                                                     "Fornecedor": v.get('nomeRazaoSocialFornecedor'), "CNPJ": CNPJ_ALVO, "Licitacao": id_lic, "Itens": []
                                                 }
                                             
-                                            # Adiciona o item se não estiver na lista
                                             if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
                                                 banco_total[chave]["Itens"].append({
                                                     "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
@@ -137,9 +140,7 @@ while data_atual <= data_fim:
             pagina += 1
         except: break
     
-    # Salva o dia finalizado com sucesso
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
 
-print(f"\n\n✅ Ciclo de 3 dias finalizado.")
-        
+print(f"\n\n✅ Ciclo concluído.")
