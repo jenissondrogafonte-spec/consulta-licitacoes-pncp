@@ -82,10 +82,7 @@ while data_atual <= data_fim:
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                 id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                 
-                # --- NOVO: Captura o número real do edital (ex: 90007) ---
-                num_edital_real = lic.get('numeroCompra') # Pega o 90007
-                
-                # Formata link usando dados oficiais
+                num_edital_real = lic.get('numeroCompra')
                 link_custom = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
 
                 if f"{id_lic}-{CNPJ_ALVO}" in banco_total and len(banco_total[f"{id_lic}-{CNPJ_ALVO}"]["Itens"]) > 0:
@@ -98,6 +95,9 @@ while data_atual <= data_fim:
                         itens_api = r_it.json()
                         if not any(it.get('temResultado') for it in itens_api): continue
 
+                        # Variáveis para armazenar detalhes do edital (cache local)
+                        detalhes_edital_cache = None
+
                         for it in itens_api:
                             if it.get('temResultado'):
                                 r_v = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados", headers=HEADERS, timeout=10)
@@ -107,19 +107,35 @@ while data_atual <= data_fim:
                                     for v in vends:
                                         cv = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                                         if CNPJ_ALVO in cv:
+                                            
+                                            # --- CORREÇÃO: Busca detalhes do edital apenas se encontrar um item ganho ---
+                                            dt_inicio_prop = None
+                                            dt_fim_prop = None
+                                            
+                                            if detalhes_edital_cache is None:
+                                                try:
+                                                    url_detalhes = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}"
+                                                    r_detalhes = requests.get(url_detalhes, headers=HEADERS, timeout=10)
+                                                    if r_detalhes.status_code == 200:
+                                                        detalhes_edital_cache = r_detalhes.json()
+                                                        dt_inicio_prop = detalhes_edital_cache.get('dataInicioRecebimentoPropostas')
+                                                        dt_fim_prop = detalhes_edital_cache.get('dataFimRecebimentoPropostas')
+                                                except: pass
+                                            else:
+                                                dt_inicio_prop = detalhes_edital_cache.get('dataInicioRecebimentoPropostas')
+                                                dt_fim_prop = detalhes_edital_cache.get('dataFimRecebimentoPropostas')
+                                            # ---------------------------------------------------------------------------
+
                                             chave = f"{id_lic}-{CNPJ_ALVO}"
                                             if chave not in banco_total:
                                                 banco_total[chave] = {
                                                     "DataResult": lic.get('dataAtualizacao') or DATA_STR,
-                                                    "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
-                                                    "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
+                                                    "DtInicioPropostas": dt_inicio_prop, # Agora vem da fonte certa
+                                                    "DtFimPropostas": dt_fim_prop,       # Agora vem da fonte certa
                                                     "IdPNCP": lic.get('idContratacaoPncp'),
-                                                    # AQUI ESTÁ O AJUSTE QUE VOCÊ PEDIU:
                                                     "NumEdital": f"{num_edital_real}/{ano}", 
                                                     "Link": link_custom,
                                                     "UASG": uasg, 
-                                                    # Mantivemos 'Edital' como controle interno sequencial, 
-                                                    # mas agora você tem 'NumEdital' visual
                                                     "Edital": f"{str(seq).zfill(5)}/{ano}",
                                                     "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
                                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
