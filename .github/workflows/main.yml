@@ -31,25 +31,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: 4. Executar Robô Turbo-Resiliente (384k)
-        run: python coleta_pncp.py
+      - name: 4. Atualizar Checkpoint e Executar
+        # O PULO DO GATO: Atualiza o código logo antes de rodar para pegar o checkpoint novo
+        run: |
+          git pull origin main --rebase || echo "Repositório já atualizado"
+          python coleta_pncp.py
 
       - name: 5. Salvar Dados com Força Bruta
         run: |
           git config --global user.name "SniperBot-Drogafonte"
           git config --global user.email "actions@github.com"
           
-          # Adiciona os arquivos modificados pelo robô
           git add dados.json checkpoint.txt
           
-          # Se não houver nada novo, encerra aqui
           if git diff --cached --quiet; then
             echo "Sem novos dados."
             exit 0
           fi
 
-          # Faz o commit local
           git commit -m "🤖 Progresso: $(cat checkpoint.txt)"
-          
-          # Tenta o push. Se falhar por desatualização, ele força a sincronização.
           git push origin main || (git pull origin main --rebase && git push origin main)
