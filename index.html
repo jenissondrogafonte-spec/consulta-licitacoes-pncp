@@ -24,6 +24,7 @@
         .info-value { font-size: 0.95rem; font-weight: 600; color: #212529; }
         .num-edital-destaque { font-size: 1.1rem; color: #0d6efd; font-weight: 700; }
         .id-pncp { font-family: monospace; color: #666; font-size: 0.85rem; }
+        .badge-uasg { background-color: #6c757d; color: white; font-size: 0.75rem; vertical-align: middle; margin-left: 8px; }
     </style>
 </head>
 <body>
@@ -58,7 +59,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por órgão, município ou número do edital...">
+                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por UASG, Órgão, Município ou Edital...">
             </div>
         </div>
 
@@ -92,7 +93,7 @@
             // Tenta converter se for string ISO
             const date = new Date(dateStr);
             if (!isNaN(date)) return date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
-            return dateStr; // Retorna original se não for data padrão
+            return dateStr;
         };
 
         let dadosGlobais = [];
@@ -162,7 +163,10 @@
                         <div class="col-md-5">
                             <div class="num-edital-destaque mb-1">${numEditalDisplay}</div>
                             <h6 class="mb-1 text-dark fw-bold">${lic.Orgao}</h6>
-                            <div class="text-muted small"><i class="fas fa-map-marker-alt me-1"></i> ${lic.Municipio} - ${lic.UF}</div>
+                            <div class="text-muted small">
+                                <i class="fas fa-map-marker-alt me-1"></i> ${lic.Municipio} - ${lic.UF}
+                                <span class="badge badge-uasg">UASG: ${lic.UASG}</span>
+                            </div>
                         </div>
                         <div class="col-md-3 text-end">
                             <div class="text-muted small text-uppercase">Total Ganho</div>
@@ -229,12 +233,13 @@
             });
         }
 
-        // Filtro de Busca
+        // Filtro de Busca (CORRIGIDO: Agora inclui UASG)
         document.getElementById('searchInput').addEventListener('keyup', function(e) {
             const termo = e.target.value.toLowerCase();
             const dadosFiltrados = dadosGlobais.filter(lic => 
                 lic.Orgao.toLowerCase().includes(termo) || 
                 lic.Municipio.toLowerCase().includes(termo) ||
+                (lic.UASG && lic.UASG.includes(termo)) || // BUSCA POR UASG ADICIONADA
                 (lic.NumEdital && lic.NumEdital.toLowerCase().includes(termo)) ||
                 (lic.Edital && lic.Edital.toLowerCase().includes(termo))
             );
