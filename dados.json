@@ -1870,5 +1870,115 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-02-24T11:10:20",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1",
+        "Edital": "00008/2025",
+        "Orgao": "MUNICIPIO DE PARAIBUNA",
+        "UF": "SP",
+        "Municipio": "Paraibuna",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000082025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "Enantato de Norestisterona + Valerato de Estradiol 50 + 5mg/ml - Enantato de Norestisterona + Valerato de Estradiol 50 + 5mg/ml",
+                "Qtd": 20000.0,
+                "Unitario": 6.9499,
+                "Total": 138998.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-03T07:14:53",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925003",
+        "Edital": "00137/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925003001372025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "Furosemida",
+                "Qtd": 829020.0,
+                "Unitario": 0.56,
+                "Total": 464251.2,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-03T10:41:51",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "060",
+        "Edital": "00017/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
+        "UF": "SP",
+        "Municipio": "São José dos Campos",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "060000172025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "DIMETICONA (SIMETICONA) 75 MG/ML (1ML =30 GOTAS) - FRASCO C/ 10 ML. ",
+                "Qtd": 150000.0,
+                "Unitario": 1.1966,
+                "Total": 179490.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-03T13:32:25",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "11.2025",
+        "Edital": "00250/2024",
+        "Orgao": "MUNICIPIO DE ITANHAEM",
+        "UF": "SP",
+        "Municipio": "Itanhaém",
+        "Fornecedor": "DROGA FONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "11.2025002502024",
+        "Itens": [
+            {
+                "Item": 8,
+                "Desc": "IBUPROFENO 100mg/mL SUSPENSÃO ORAL 20mL; FRASCO CONTA-GOTAS",
+                "Qtd": 30000.0,
+                "Unitario": 1.928,
+                "Total": 57840.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-04-25T13:31:28",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1405",
+        "Edital": "00214/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
+        "UF": "RJ",
+        "Municipio": "Resende",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1405002142024",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "CIMETIDINA 150MG/ML SOLUCAO INJETAVEL 2MLCIMETIDINA 150MG/ML SOLUCAO INJETAVEL 2ML",
+                "Qtd": 30000.0,
+                "Unitario": 1.11,
+                "Total": 33300.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
