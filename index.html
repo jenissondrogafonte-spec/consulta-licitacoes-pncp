@@ -186,15 +186,19 @@
                     <div class="collapse mt-3" id="collapse-${index}">
                         <div class="info-prazos">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
+                                    <span class="info-label"><i class="fas fa-calendar-day me-1"></i> Data Resultado</span>
+                                    <span class="info-value">${formatSimpleDate(lic.DataResult)}</span>
+                                </div>
+                                <div class="col-md-3">
                                     <span class="info-label"><i class="far fa-calendar-check me-1"></i> Início Propostas</span>
                                     <span class="info-value">${formatSimpleDate(lic.DtInicioPropostas)}</span>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <span class="info-label"><i class="far fa-calendar-times me-1"></i> Fim Propostas</span>
                                     <span class="info-value">${formatSimpleDate(lic.DtFimPropostas)}</span>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <span class="info-label"><i class="fas fa-fingerprint me-1"></i> ID PNCP</span>
                                     <span class="id-pncp text-break">${lic.IdPNCP || 'N/A'}</span>
                                 </div>
@@ -233,13 +237,13 @@
             });
         }
 
-        // Filtro de Busca (CORRIGIDO: Agora inclui UASG)
+        // Filtro de Busca (Inclui UASG e Datas)
         document.getElementById('searchInput').addEventListener('keyup', function(e) {
             const termo = e.target.value.toLowerCase();
             const dadosFiltrados = dadosGlobais.filter(lic => 
                 lic.Orgao.toLowerCase().includes(termo) || 
                 lic.Municipio.toLowerCase().includes(termo) ||
-                (lic.UASG && lic.UASG.includes(termo)) || // BUSCA POR UASG ADICIONADA
+                (lic.UASG && lic.UASG.includes(termo)) ||
                 (lic.NumEdital && lic.NumEdital.toLowerCase().includes(termo)) ||
                 (lic.Edital && lic.Edital.toLowerCase().includes(termo))
             );
