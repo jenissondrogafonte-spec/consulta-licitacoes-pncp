@@ -1404,5 +1404,471 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-29T07:00:18",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "943001",
+        "Edital": "24156/2024",
+        "Orgao": "ESTADO DO CEARA",
+        "UF": "CE",
+        "Municipio": "Fortaleza",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "943001241562024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Enalapril maleato",
+                "Qtd": 66000.0,
+                "Unitario": 0.0325,
+                "Total": 2145.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-29T07:01:54",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "532101",
+        "Edital": "00099/2025",
+        "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "532101000992025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Midazolam",
+                "Qtd": 9312.0,
+                "Unitario": 2.58,
+                "Total": 24024.96,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-29T07:11:33",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925550",
+        "Edital": "00030/2025",
+        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925550000302025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Brimonidina Tartarato",
+                "Qtd": 4321.0,
+                "Unitario": 4.1167,
+                "Total": 17788.2607,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-29T09:08:36",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "08546103000163",
+        "Edital": "00078/2024",
+        "Orgao": "MUNICIPIO DE BARAUNA",
+        "UF": "RN",
+        "Municipio": "Baraúna",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "08546103000163000782024",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "AMINOFILINA. SOLUÇÃO INJETÁVEL DE 24 MG/ML. AMPOLA DE  10 ML. USO INTRAVENOSO.",
+                "Qtd": 500.0,
+                "Unitario": 3.31,
+                "Total": 1655.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "ÁCIDO TRANEXÂMICO 250MG",
+                "Qtd": 8000.0,
+                "Unitario": 4.24,
+                "Total": 33920.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "ADENOSINA 3MG/ML- SOLUÇÃO INJETÁVEL 2 ML",
+                "Qtd": 1000.0,
+                "Unitario": 11.89,
+                "Total": 11890.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "ADRENALINA (EPINEFRINA) 0,1MG/1ML",
+                "Qtd": 5000.0,
+                "Unitario": 0.98,
+                "Total": 4900.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "ÁGUA BI-DESTILADA (ABD) 500ML- SISTEMA FECHADO",
+                "Qtd": 3000.0,
+                "Unitario": 5.1,
+                "Total": 15300.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "ÁGUA PARA INJETÁVEIS (ABD) - 10 ML",
+                "Qtd": 6000.0,
+                "Unitario": 0.23,
+                "Total": 1380.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-30T07:02:11",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "155910",
+        "Edital": "00273/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "SE",
+        "Municipio": "Lagarto",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155910002732025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Bromoprida",
+                "Qtd": 200.0,
+                "Unitario": 2.2728,
+                "Total": 454.56,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Metoclopramida Cloridrato",
+                "Qtd": 100.0,
+                "Unitario": 1.4391,
+                "Total": 143.91,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Sinvastatina",
+                "Qtd": 11500.0,
+                "Unitario": 0.0748,
+                "Total": 860.2,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Omeprazol",
+                "Qtd": 14300.0,
+                "Unitario": 0.061,
+                "Total": 872.3,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Probiótico",
+                "Qtd": 1400.0,
+                "Unitario": 1.6039,
+                "Total": 2245.46,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-30T07:02:29",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "155008",
+        "Edital": "00274/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "PI",
+        "Municipio": "Teresina",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155008002742025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Metoclopramida Cloridrato",
+                "Qtd": 4300.0,
+                "Unitario": 0.68,
+                "Total": 2924.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Neostigmina metilsulfato",
+                "Qtd": 5600.0,
+                "Unitario": 1.12,
+                "Total": 6272.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-30T07:04:38",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "155914",
+        "Edital": "00276/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "PB",
+        "Municipio": "Campina Grande",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155914002762025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Carbamazepina",
+                "Qtd": 4000.0,
+                "Unitario": 0.17,
+                "Total": 680.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Dipirona Sódica",
+                "Qtd": 50000.0,
+                "Unitario": 0.598,
+                "Total": 29900.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 7,
+                "Desc": "Ibuprofeno",
+                "Qtd": 300.0,
+                "Unitario": 2.15,
+                "Total": 645.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-30T07:08:45",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "932218",
+        "Edital": "00001/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Carpina",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "932218000012025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "Carbamazepina",
+                "Qtd": 270000.0,
+                "Unitario": 0.15,
+                "Total": 40500.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-12-04T11:23:32",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "2039",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "PB",
+        "Municipio": "Santa Luzia",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "2039000062025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Acetilcisteina adulto 40mg/ml xarope (frasco 120ml)",
+                "Qtd": 2000.0,
+                "Unitario": 4.12,
+                "Total": 8240.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Aciclovir 200mg – comprimido.",
+                "Qtd": 10000.0,
+                "Unitario": 0.17,
+                "Total": 1700.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "ACIDO ASCORBICO (VITAMINA C) 100 mg/mL solução injetável intravenosa (ampola 5 mL).",
+                "Qtd": 1200.0,
+                "Unitario": 0.78,
+                "Total": 936.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-10T09:36:01",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1",
+        "Edital": "00029/2025",
+        "Orgao": "MUNICIPIO DE BELEM",
+        "UF": "PB",
+        "Municipio": "Belém",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000292025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "ÁCIDO ACETIL SALICÍTICO 100 MG",
+                "Qtd": 80000.0,
+                "Unitario": 0.03,
+                "Total": 2400.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-30T10:11:49",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "0000",
+        "Edital": "00009/2025",
+        "Orgao": "MUNICIPIO DE REGENTE FEIJO",
+        "UF": "SP",
+        "Municipio": "Regente Feijó",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "0000000092025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "ACICLOVIR 200 MG",
+                "Qtd": 10000.0,
+                "Unitario": 0.146,
+                "Total": 1460.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "ALOPURINOL 300MG",
+                "Qtd": 15000.0,
+                "Unitario": 0.225,
+                "Total": 3375.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-27T11:41:38",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "5769",
+        "Edital": "00029/2025",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "5769000292025",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "(3069028) - CEFALEXINA - CONCENTRACAO/DOSAGEM 500 MG,FORMA FARMACEUTICA CAPSULA OU COMPRIMIDO OU DRAGEA,VIA DE ADMINISTRACAO ORAL",
+                "Qtd": 2200.0,
+                "Unitario": 0.65,
+                "Total": 1429.78,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "(3169383) - NALOXONA, CLORIDRATO - CONCENTRACAO/DOSAGEM 0,4 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
+                "Qtd": 1200.0,
+                "Unitario": 6.84,
+                "Total": 8207.04,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-07T07:40:31",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "985903",
+        "Edital": "00008/2025",
+        "Orgao": "MUNICIPIO DE SAO PEDRO DA ALDEIA",
+        "UF": "RJ",
+        "Municipio": "São Pedro da Aldeia",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "985903000082025",
+        "Itens": [
+            {
+                "Item": 3,
+                "Desc": "Aciclovir",
+                "Qtd": 11000.0,
+                "Unitario": 0.16,
+                "Total": 1760.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "Ácido acetilsalicílico",
+                "Qtd": 520000.0,
+                "Unitario": 0.03,
+                "Total": 15600.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-31T07:27:56",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "925998",
+        "Edital": "00319/2024",
+        "Orgao": "AGENCIA DE MODERNIZACAO DA GESTAO DE PROCESSOS",
+        "UF": "AL",
+        "Municipio": "Maceió",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925998003192024",
+        "Itens": [
+            {
+                "Item": 9,
+                "Desc": "Cefalexina",
+                "Qtd": 105986.0,
+                "Unitario": 0.62,
+                "Total": 65711.32,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-27T09:36:05",
+        "Link": "https://pncp.gov.br/app/editais/None",
+        "UASG": "1",
+        "Edital": "00024/2025",
+        "Orgao": "MUNICIPIO DE PETROPOLIS",
+        "UF": "RJ",
+        "Municipio": "Petrópolis",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000242025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "PARACETAMOL + CODEINA 30 MG.",
+                "Qtd": 6000.0,
+                "Unitario": 0.368,
+                "Total": 2208.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
