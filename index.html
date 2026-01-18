@@ -3,229 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PNCP Analytics - Painel Geral</title>
+    <title>Painel Sniper Drogafonte 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #004494; --success: #198754; --danger: #dc3545; --warning: #f1c40f; --bg: #f0f2f5; }
-        body { background: var(--bg); font-family: 'Plus Jakarta Sans', sans-serif; color: #34495e; }
-        .navbar-custom { background: linear-gradient(135deg, #004494 0%, #002a5c 100%); padding: 1.5rem 0 3.5rem; color: white; border-radius: 0 0 35px 35px; }
-        .hover-opacity-100:hover { opacity: 1 !important; text-decoration: underline !important; }
-        .filter-container { background: white; margin-top: -45px; border-radius: 20px; padding: 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.3); }
-        .form-label { font-size: 0.7rem; font-weight: 800; color: #95a5a6; text-transform: uppercase; }
-        .form-control { border-radius: 12px; border: 1px solid #e9ecef; font-size: 0.9rem; }
-        .edital-card { background: white; border-radius: 20px; border: 1px solid #f1f3f5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
-        .edital-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: var(--primary); }
-        .card-header-custom { padding: 15px 20px; border-bottom: 1px solid #f8f9fa; display: flex; justify-content: space-between; align-items: center; }
-        .badge-data { background: #eef2f7; color: var(--primary); font-weight: 700; border-radius: 10px; padding: 6px 12px; font-size: 0.75rem; }
-        .valor-destaque { color: var(--success); font-weight: 800; font-size: 1.3rem; }
-        .label-small { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: #95a5a6; }
-        .modal-content { border-radius: 25px; border: none; overflow: hidden; }
-        .table thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .fw-800 { font-weight: 800; }
+        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
+        .header-bg { background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: white; padding: 2rem 0; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card-licitacao { border: none; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; transition: transform 0.2s; background: white; }
+        .card-licitacao:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        .status-badge { font-size: 0.8rem; padding: 0.4em 0.8em; border-radius: 20px; font-weight: 600; }
+        .status-venceu { background-color: #d1e7dd; color: #0f5132; }
+        .valor-total { font-size: 1.1rem; font-weight: 700; color: #198754; }
+        .btn-expandir { border-radius: 20px; font-size: 0.9rem; }
+        .table-itens th { background-color: #f8f9fa; font-size: 0.85rem; text-transform: uppercase; color: #6c757d; }
+        .table-itens td { vertical-align: middle; font-size: 0.9rem; }
+        .info-prazos { background-color: #e7f1ff; border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #0d6efd; }
+        .info-label { font-size: 0.75rem; text-transform: uppercase; color: #6c757d; font-weight: 700; display: block; margin-bottom: 2px; }
+        .info-value { font-size: 0.95rem; font-weight: 600; color: #212529; }
+        .num-edital-destaque { font-size: 1.1rem; color: #0d6efd; font-weight: 700; }
+        .id-pncp { font-family: monospace; color: #666; font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
-<div class="navbar-custom shadow-sm">
-    <div class="container-fluid px-5">
-        <div class="row align-items-center">
-            <div class="col-md-5">
-                <h2 class="fw-bold mb-0"><i class="fas fa-chart-network me-2"></i>PNCP <span class="fw-light">Analytics</span></h2>
-                <div class="mt-2">
-                    <a href="consulta_empresa.html" class="text-white text-decoration-none small opacity-75 hover-opacity-100">
-                        <i class="fas fa-arrow-right me-1"></i> Ir para Consulta por Empresa (CNPJ 08.778.201)
-                    </a>
+    <div class="header-bg">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="fw-bold mb-0"><i class="fas fa-crosshairs me-2"></i>SNIPER PNCP 2025</h1>
+                    <p class="mb-0 opacity-75">Monitoramento de Contratos e Atas - Drogafonte</p>
                 </div>
-            </div>
-            <div class="col-md-7 text-end">
-                <div class="d-inline-block text-start me-4">
-                    <div class="label-small text-white opacity-75">Volume Filtrado</div>
-                    <h4 class="mb-0 fw-bold" id="dash-total">R$ 0,00</h4>
+                <div class="text-end">
+                    <span class="badge bg-light text-primary fs-6" id="total-vencido">R$ 0,00</span>
+                    <div class="small mt-1 text-white-50" id="last-update">Atualizando...</div>
                 </div>
-                <span class="badge bg-white text-primary rounded-pill px-4 py-2 fw-bold shadow-sm" id="contador">Carregando...</span>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid px-5 mb-5">
-    <div class="filter-container mb-5">
-        <div class="row g-3 align-items-end">
-            <div class="col-md-2"><label class="form-label">Órgão / UASG</label><input type="text" id="fOrgao" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="form-label">Fornecedor / CNPJ</label><input type="text" id="fForn" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="form-label">Edital</label><input type="text" id="fEdital" class="form-control" oninput="debounceFiltrar()"></div>
-            <div class="col-md-1"><label class="form-label">UF</label><input type="text" id="fUF" class="form-control" maxlength="2" oninput="debounceFiltrar()"></div>
-            <div class="col-md-2"><label class="form-label">Data Início</label><input type="date" id="fDataIni" class="form-control" onchange="filtrar()"></div>
-            <div class="col-md-2"><label class="form-label">Data Fim</label><input type="date" id="fDataFim" class="form-control" onchange="filtrar()"></div>
-            <div class="col-md-2"><button class="btn btn-light border w-100 py-2 fw-bold text-muted" onclick="limpar()"><i class="fas fa-sync me-2"></i>Limpar</button></div>
-        </div>
-    </div>
-
-    <div id="lista" class="row g-4">
-        <div class="col-12 text-center py-5"><div class="spinner-border text-primary"></div></div>
-    </div>
-</div>
-
-<div class="modal fade" id="modalDetalhes" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content shadow-lg">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold"><i class="fas fa-list-check me-2"></i>Detalhamento da Licitação</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body p-0 bg-light" id="corpoModal"></div>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    let dadosOriginal = [];
-
-    async function carregar() {
-        try {
-            const r = await fetch('dados.json?v=' + Date.now());
-            dadosOriginal = await r.json();
-            filtrar();
-        } catch(e) {
-            document.getElementById('lista').innerHTML = `<div class="alert alert-danger">Erro ao carregar dados.json</div>`;
-        }
-    }
-
-    function renderizar(lista) {
-        const container = document.getElementById('lista');
-        if (lista.length === 0) {
-            container.innerHTML = `<div class="col-12 text-center py-5 text-muted"><h5>Nenhuma licitação encontrada.</h5></div>`;
-            return;
-        }
-
-        const grupos = {};
-        let totalFinanceiro = 0;
-
-        lista.forEach(item => {
-            const chave = item.Licitacao;
-            if (!grupos[chave]) { grupos[chave] = { ...item, ValorTotalEdital: 0 }; }
-            item.Itens.forEach(it => { if (it.Status === "Venceu") { grupos[chave].ValorTotalEdital += (it.Total || 0); } });
-        });
-
-        const html = Object.values(grupos).sort((a,b) => new Date(b.DataResult) - new Date(a.DataResult)).map(g => {
-            totalFinanceiro += g.ValorTotalEdital;
-            const statusLabel = g.ValorTotalEdital > 0 ? 'HOMOLOGADO' : 'EM ABERTO';
-            const statusClass = g.ValorTotalEdital > 0 ? 'text-success' : 'text-warning';
-
-            return `
-            <div class="col-md-6 col-lg-4">
-                <div class="edital-card shadow-sm">
-                    <div class="card-header-custom">
-                        <span class="badge-data">${g.DataResult.split('T')[0]}</span>
-                        <span class="label-small fw-800 ${statusClass}">${statusLabel}</span>
-                    </div>
-                    <div class="p-4 flex-grow-1">
-                        <div class="label-small mb-1">${g.Municipio} - ${g.UF}</div>
-                        <h6 class="fw-bold text-primary mb-3 text-truncate">${g.Orgao}</h6>
-                        <div class="d-flex justify-content-between align-items-end">
-                            <div><div class="label-small">Total Edital</div><div class="valor-destaque">R$ ${g.ValorTotalEdital.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div></div>
-                            <div class="text-end"><div class="label-small">Edital</div><div class="fw-bold small">${g.Edital}</div></div>
-                        </div>
-                    </div>
-                    <div class="px-4 pb-4 pt-0">
-                        <button class="btn btn-primary w-100 rounded-pill fw-bold btn-sm py-2" onclick="verItens('${g.Licitacao}')">Ver Detalhes</button>
-                    </div>
+    <div class="container mb-5">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm p-3 text-center">
+                    <div class="text-muted small text-uppercase fw-bold">Licitações Ganhas</div>
+                    <div class="h2 mb-0 fw-bold text-primary" id="count-licitacoes">0</div>
                 </div>
-            </div>`;
-        }).join('');
-
-        container.innerHTML = html;
-        document.getElementById('dash-total').innerText = totalFinanceiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-        document.getElementById('contador').innerText = Object.keys(grupos).length + " Editais";
-    }
-
-    function verItens(idLic) {
-        const registros = dadosOriginal.filter(x => x.Licitacao === idLic);
-        const lic = registros[0];
-        const corpo = document.getElementById('corpoModal');
-
-        let htmlFinal = '';
-        registros.forEach(reg => {
-            const totalForn = reg.Itens.reduce((acc, cur) => acc + (cur.Status === 'Venceu' ? cur.Total : 0), 0);
-            
-            htmlFinal += `
-                <div class="p-4 bg-white border-bottom mt-3 shadow-sm">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <div>
-                            <span class="badge bg-primary mb-1">${reg.CNPJ}</span>
-                            <h6 class="fw-bold mb-0 text-uppercase">${reg.Fornecedor}</h6>
-                        </div>
-                        <div class="text-end">
-                            <div class="label-small">Total Ganho por Fornecedor</div>
-                            <div class="h5 fw-800 text-success mb-0">R$ ${totalForn.toLocaleString('pt-BR', {minimumFractionDigits:2})}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table-responsive bg-white">
-                    <table class="table table-hover align-middle mb-0">
-                        <thead class="table-dark">
-                            <tr>
-                                <th class="ps-4" style="width: 80px">Item</th>
-                                <th>Descrição do Produto/Serviço</th>
-                                <th class="text-center">Qtd</th>
-                                <th class="text-end pe-4">Valor Total Item</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${reg.Itens.map(it => `
-                                <tr>
-                                    <td class="ps-4 fw-bold">${it.Item}</td>
-                                    <td class="small text-muted">${it.Desc}</td>
-                                    <td class="text-center fw-bold">${it.Qtd.toLocaleString('pt-BR')}</td>
-                                    <td class="text-end pe-4 fw-bold ${it.Status === 'Venceu' ? 'text-success' : 'text-muted'}">
-                                        R$ ${it.Total.toLocaleString('pt-BR', {minimumFractionDigits:2})}
-                                    </td>
-                                </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
-                </div>`;
-        });
-
-        corpo.innerHTML = `
-            <div class="p-4 bg-white border-bottom shadow-sm">
-                <div class="label-small">Órgão Comprador</div>
-                <h5 class="fw-bold text-primary mb-1">${lic.Orgao}</h5>
-                <div class="small text-muted">UASG: ${lic.UASG} | Edital: ${lic.Edital} | Local: ${lic.Municipio}/${lic.UF}</div>
-                <div class="mt-2"><a href="${lic.Link}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill"><i class="fas fa-external-link-alt me-1"></i>Acessar PNCP Oficial</a></div>
             </div>
-            <div class="pb-4">${htmlFinal}</div>`;
-        
-        new bootstrap.Modal(document.getElementById('modalDetalhes')).show();
-    }
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm p-3 text-center">
+                    <div class="text-muted small text-uppercase fw-bold">Itens Vencidos</div>
+                    <div class="h2 mb-0 fw-bold text-success" id="count-itens">0</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por órgão, município ou número do edital...">
+            </div>
+        </div>
 
-    function filtrar() {
-        const q = {
-            o: document.getElementById('fOrgao').value.toLowerCase(),
-            f: document.getElementById('fForn').value.toLowerCase(),
-            e: document.getElementById('fEdital').value,
-            uf: document.getElementById('fUF').value.toUpperCase(),
-            di: document.getElementById('fDataIni').value,
-            df: document.getElementById('fDataFim').value
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-2 text-muted">Carregando dados do Sniper...</p>
+        </div>
+
+        <div id="container-licitacoes">
+            </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Formata Moeda
+        const formatMoney = (value) => {
+            return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         };
-        const res = dadosOriginal.filter(i => {
-            const d = i.DataResult.split('T')[0];
-            return (!q.o || i.Orgao.toLowerCase().includes(q.o) || i.UASG.includes(q.o)) &&
-                   (!q.f || i.Fornecedor.toLowerCase().includes(q.f) || i.CNPJ.includes(q.f)) &&
-                   (!q.e || i.Edital.includes(q.e)) &&
-                   (!q.uf || i.UF === q.uf) &&
-                   (!q.di || d >= q.di) && (!q.df || d <= q.df);
-        });
-        renderizar(res);
-    }
 
-    function debounceFiltrar() { clearTimeout(window.t); window.t = setTimeout(filtrar, 300); }
-    function limpar() { document.querySelectorAll('input').forEach(i => i.value = ''); filtrar(); }
-    carregar();
-</script>
+        // Formata Data (DD/MM/YYYY HH:mm)
+        const formatDate = (dateStr) => {
+            if (!dateStr) return '<span class="text-muted">-</span>';
+            const date = new Date(dateStr);
+            return isNaN(date) ? dateStr : date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
+        };
+
+        // Formata Data Simples (DD/MM/YYYY)
+        const formatSimpleDate = (dateStr) => {
+            if (!dateStr) return 'Não informado';
+            // Tenta converter se for string ISO
+            const date = new Date(dateStr);
+            if (!isNaN(date)) return date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
+            return dateStr; // Retorna original se não for data padrão
+        };
+
+        let dadosGlobais = [];
+
+        async function carregarDados() {
+            try {
+                const response = await fetch('dados.json?v=' + new Date().getTime());
+                if (!response.ok) throw new Error('Erro ao carregar JSON');
+                
+                dadosGlobais = await response.json();
+                
+                // Ordenar por data mais recente
+                dadosGlobais.sort((a, b) => new Date(b.DataResult) - new Date(a.DataResult));
+
+                atualizarDashboard(dadosGlobais);
+                renderizarLista(dadosGlobais);
+                document.getElementById('loading').style.display = 'none';
+
+            } catch (error) {
+                document.getElementById('loading').innerHTML = `<div class="alert alert-danger">Erro: ${error.message}. Verifique se o dados.json existe.</div>`;
+            }
+        }
+
+        function atualizarDashboard(dados) {
+            let totalVal = 0;
+            let totalItens = 0;
+
+            dados.forEach(lic => {
+                lic.Itens.forEach(item => {
+                    totalVal += item.Total;
+                    totalItens++;
+                });
+            });
+
+            document.getElementById('total-vencido').innerText = formatMoney(totalVal);
+            document.getElementById('count-licitacoes').innerText = dados.length;
+            document.getElementById('count-itens').innerText = totalItens;
+            
+            const hoje = new Date();
+            document.getElementById('last-update').innerText = 'Última verificação: ' + hoje.toLocaleDateString() + ' ' + hoje.toLocaleTimeString();
+        }
+
+        function renderizarLista(dados) {
+            const container = document.getElementById('container-licitacoes');
+            container.innerHTML = '';
+
+            if (dados.length === 0) {
+                container.innerHTML = '<div class="text-center text-muted py-5">Nenhuma licitação encontrada.</div>';
+                return;
+            }
+
+            dados.forEach((lic, index) => {
+                const totalLic = lic.Itens.reduce((acc, it) => acc + it.Total, 0);
+                // Usa NumEdital (novo) ou fallback para Edital (antigo)
+                const numEditalDisplay = lic.NumEdital ? `Edital ${lic.NumEdital}` : `Edital ${lic.Edital}`;
+                
+                const card = document.createElement('div');
+                card.className = 'card-licitacao p-4';
+                
+                card.innerHTML = `
+                    <div class="row align-items-center">
+                        <div class="col-md-1 text-center">
+                            <div class="bg-light rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-building text-primary fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="num-edital-destaque mb-1">${numEditalDisplay}</div>
+                            <h6 class="mb-1 text-dark fw-bold">${lic.Orgao}</h6>
+                            <div class="text-muted small"><i class="fas fa-map-marker-alt me-1"></i> ${lic.Municipio} - ${lic.UF}</div>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <div class="text-muted small text-uppercase">Total Ganho</div>
+                            <div class="valor-total">${formatMoney(totalLic)}</div>
+                            <div class="small text-muted">${lic.Itens.length} item(s)</div>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <a href="${lic.Link}" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-1">
+                                <i class="fas fa-external-link-alt"></i> PNCP
+                            </a>
+                            <button class="btn btn-primary btn-sm btn-expandir mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${index}">
+                                Ver Itens <i class="fas fa-chevron-down ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-3" id="collapse-${index}">
+                        <div class="info-prazos">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <span class="info-label"><i class="far fa-calendar-check me-1"></i> Início Propostas</span>
+                                    <span class="info-value">${formatSimpleDate(lic.DtInicioPropostas)}</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="info-label"><i class="far fa-calendar-times me-1"></i> Fim Propostas</span>
+                                    <span class="info-value">${formatSimpleDate(lic.DtFimPropostas)}</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="info-label"><i class="fas fa-fingerprint me-1"></i> ID PNCP</span>
+                                    <span class="id-pncp text-break">${lic.IdPNCP || 'N/A'}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-itens table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Descrição</th>
+                                        <th class="text-center">Qtd</th>
+                                        <th class="text-end">Unitário</th>
+                                        <th class="text-end">Total</th>
+                                        <th class="text-center">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${lic.Itens.map(item => `
+                                        <tr>
+                                            <td class="fw-bold text-center bg-light">${item.Item}</td>
+                                            <td>${item.Desc}</td>
+                                            <td class="text-center">${item.Qtd}</td>
+                                            <td class="text-end">${formatMoney(item.Unitario)}</td>
+                                            <td class="text-end fw-bold text-success">${formatMoney(item.Total)}</td>
+                                            <td class="text-center"><span class="badge status-venceu">Venceu</span></td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Filtro de Busca
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            const termo = e.target.value.toLowerCase();
+            const dadosFiltrados = dadosGlobais.filter(lic => 
+                lic.Orgao.toLowerCase().includes(termo) || 
+                lic.Municipio.toLowerCase().includes(termo) ||
+                (lic.NumEdital && lic.NumEdital.toLowerCase().includes(termo)) ||
+                (lic.Edital && lic.Edital.toLowerCase().includes(termo))
+            );
+            renderizarLista(dadosFiltrados);
+        });
+
+        // Iniciar
+        carregarDados();
+
+        // Atualização automática a cada 5 minutos
+        setInterval(carregarDados, 300000); 
+    </script>
 </body>
 </html>
