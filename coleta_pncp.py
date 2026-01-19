@@ -108,7 +108,12 @@ while data_atual <= data_fim:
                                         cv = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                                         if CNPJ_ALVO in cv:
                                             
-                                            # --- CORREÇÃO: Busca detalhes do edital apenas se encontrar um item ganho ---
+                                            # --- INÍCIO DA CORREÇÃO: DATAS ---
+                                            
+                                            # 1. Pega data de HOMOLOGAÇÃO específica deste item (Correção solicitada)
+                                            data_homologacao_item = v.get('dataResultado') 
+                                            
+                                            # 2. Pega datas do edital (Cache)
                                             dt_inicio_prop = None
                                             dt_fim_prop = None
                                             
@@ -124,14 +129,17 @@ while data_atual <= data_fim:
                                             else:
                                                 dt_inicio_prop = detalhes_edital_cache.get('dataInicioRecebimentoPropostas')
                                                 dt_fim_prop = detalhes_edital_cache.get('dataFimRecebimentoPropostas')
-                                            # ---------------------------------------------------------------------------
+                                            
+                                            # Define a data final para exibição: Homologação > Atualização > Filtro
+                                            data_final_exibicao = data_homologacao_item if data_homologacao_item else (lic.get('dataAtualizacao') or DATA_STR)
+                                            # ---------------------------------
 
                                             chave = f"{id_lic}-{CNPJ_ALVO}"
                                             if chave not in banco_total:
                                                 banco_total[chave] = {
-                                                    "DataResult": lic.get('dataAtualizacao') or DATA_STR,
-                                                    "DtInicioPropostas": dt_inicio_prop, # Agora vem da fonte certa
-                                                    "DtFimPropostas": dt_fim_prop,       # Agora vem da fonte certa
+                                                    "DataResult": data_final_exibicao, # Campo corrigido
+                                                    "DtInicioPropostas": dt_inicio_prop,
+                                                    "DtFimPropostas": dt_fim_prop,
                                                     "IdPNCP": lic.get('idContratacaoPncp'),
                                                     "NumEdital": f"{num_edital_real}/{ano}", 
                                                     "Link": link_custom,
