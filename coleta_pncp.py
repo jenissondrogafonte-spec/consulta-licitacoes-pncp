@@ -19,18 +19,17 @@ CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
 
 def carregar_banco():
-    """ Carrega o banco de dados existente para evitar duplicados """
+    """Carrega o banco de dados existente para evitar duplicados"""
     if os.path.exists(ARQ_DADOS):
         try:
             with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-                # Cria um índice baseado em Licitacao + CNPJ
                 return {f"{i['Licitacao']}-{i['CNPJ']}": i for i in dados}
         except: pass
     return {}
 
 def salvar_estado(banco, data_proxima):
-    """ Salva o JSON e o ponto de paragem (checkpoint) """
+    """Salva o JSON e o ponto de paragem (checkpoint)"""
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
     with open(ARQ_CHECKPOINT, 'w') as f:
@@ -38,9 +37,9 @@ def salvar_estado(banco, data_proxima):
     print(f"\n💾 Checkpoint salvo: {data_proxima.strftime('%d/%m/%Y')}")
 
 def buscar_detalhes_compra(cnpj, ano, sequencial):
-    """ 
-    Consulta o endpoint de detalhes para obter as datas de proposta e o ID PNCP formatado.
-    Resolve o problema dos campos voltarem 'null'.
+    """
+    Consulta o endpoint de detalhes para obter as datas e o ID PNCP formatado.
+    Essencial para evitar que os campos fiquem 'null'.
     """
     seq_formatado = str(sequencial).zfill(6)
     url = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq_formatado}"
@@ -59,15 +58,13 @@ def buscar_detalhes_compra(cnpj, ano, sequencial):
 
 # --- INÍCIO DO PROCESSO ---
 banco_total = carregar_banco()
-data_atual = datetime(2025, 1, 1) # Padrão inicial
+data_atual = datetime(2025, 1, 1)
 
 if os.path.exists(ARQ_CHECKPOINT):
     with open(ARQ_CHECKPOINT, 'r') as f:
         data_atual = datetime.strptime(f.read().strip(), '%Y%m%d')
 
-print(f"🚀 Iniciando coleta para o CNPJ {CNPJ_ALVO}...")
-
-
+print(f"🚀 Iniciando coleta limpa para o CNPJ {CNPJ_ALVO}...")
 
 while data_atual <= DATA_LIMITE_FINAL:
     data_str = data_atual.strftime('%Y%m%d')
@@ -75,6 +72,7 @@ while data_atual <= DATA_LIMITE_FINAL:
     
     pagina = 1
     while True:
+        # Endpoint focado especificamente em RESULTADOS por fornecedor
         url_res = f"https://pncp.gov.br/api/pncp/v1/resultados/fornecedor/{CNPJ_ALVO}?dataSfi={data_str}&dataSff={data_str}&pagina={pagina}&tamanhoPagina=50"
         
         try:
@@ -91,12 +89,12 @@ while data_atual <= DATA_LIMITE_FINAL:
                     ano_compra = it.get('anoCompra')
                     seq_compra = it.get('sequencialCompra')
                     
-                    # Identificador único para evitar duplicados no JSON
+                    # Criação da chave única para controle interno
                     id_lic = f"{cnpj_orgao}{it.get('numeroCompra').replace('/','')}{ano_compra}"
                     chave = f"{id_lic}-{CNPJ_ALVO}"
 
                     if chave not in banco_total:
-                        # Chamada secundária para preencher Datas e ID que faltam no resultado
+                        # SEGUNDA CONSULTA: Busca datas e link oficial que não existem no endpoint de fornecedor
                         detalhes = buscar_detalhes_compra(cnpj_orgao, ano_compra, seq_compra)
                         
                         banco_total[chave] = {
@@ -104,7 +102,7 @@ while data_atual <= DATA_LIMITE_FINAL:
                             "DtInicioPropostas": detalhes['inicio'] if detalhes else None,
                             "DtFimPropostas": detalhes['fim'] if detalhes else None,
                             "IdPNCP": detalhes['id_pncp'] if detalhes else None,
-                            "Link": detalhes['link'] if detalhes else f"https://pncp.gov.br/app/editais/{cnpj_orgao}/{ano_compra}/{seq_compra}",
+                            "Link": detalhes['link'] if detalhes else f"https://pncp.gov.br/app/editais/{cnpj_orgao}/{ano_compra}/{str(seq_compra).zfill(6)}",
                             "UASG": str(it.get('unidadeCompradora', {}).get('codigoUnidade', '')),
                             "Edital": it.get('numeroCompra'),
                             "Orgao": it.get('orgaoRazaoSocial'),
@@ -116,7 +114,7 @@ while data_atual <= DATA_LIMITE_FINAL:
                             "Itens": []
                         }
 
-                    # Adiciona itens vencedores à lista daquela licitação
+                    # Evita duplicar itens dentro da mesma licitação
                     if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
                         banco_total[chave]["Itens"].append({
                             "Item": it.get('numeroItem'),
@@ -133,9 +131,9 @@ while data_atual <= DATA_LIMITE_FINAL:
             pagina += 1
         except: break
     
-    # Salva progresso diário
+    # Salva o progresso diário
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
-    time.sleep(1) # Pausa amigável para evitar bloqueio de IP
+    time.sleep(1) # Pausa amigável para o servidor
 
-print(f"\n\n✅ Coleta concluída com sucesso!")
+print(f"\n\n✅ Coleta concluída!")
