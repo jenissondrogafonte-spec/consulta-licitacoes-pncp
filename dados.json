@@ -952,5 +952,141 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-02-07T13:50:23",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "000002-2025/2024",
+        "Link": "https://pncp.gov.br/app/editais/45122603000102/2024/915",
+        "UASG": "1",
+        "Edital": "00915/2024",
+        "Orgao": "MUNICIPIO DE CATANDUVA",
+        "UF": "SP",
+        "Municipio": "Catanduva",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1009152024",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "ITRACONAZOL BROMETO 100 MG",
+                "Qtd": 60000.0,
+                "Unitario": 0.6863,
+                "Total": 41178.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-21T07:22:00",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90204/2024",
+        "Link": "https://pncp.gov.br/app/editais/08761140000194/2024/236",
+        "UASG": "925302",
+        "Edital": "00236/2024",
+        "Orgao": "SECRETARIA DE ESTADO DA ADMINISTRACAO",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925302002362024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Anlodipino besilato",
+                "Qtd": 144100.0,
+                "Unitario": 0.023,
+                "Total": 3314.3,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Atenolol",
+                "Qtd": 94300.0,
+                "Unitario": 0.049,
+                "Total": 4620.7,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Captopril",
+                "Qtd": 540200.0,
+                "Unitario": 0.02,
+                "Total": 10804.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-07-22T09:28:04",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "19000-204/2024",
+        "Link": "https://pncp.gov.br/app/editais/08761140000194/2024/239",
+        "UASG": "19101",
+        "Edital": "00239/2024",
+        "Orgao": "SECRETARIA DE ESTADO DA ADMINISTRACAO",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "19101002392024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "ANLODIPINO 5 mg comprimido em blíster.",
+                "Qtd": 144100.0,
+                "Unitario": 0.023,
+                "Total": 3314.3,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "ATENOLOL 50 mg comprimido em blíster.",
+                "Qtd": 94300.0,
+                "Unitario": 0.049,
+                "Total": 4620.7,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "CAPTOPRIL 25 mg comprimido em blíster.",
+                "Qtd": 540200.0,
+                "Unitario": 0.02,
+                "Total": 10804.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-06-02T15:52:44",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "000009/2025",
+        "Link": "https://pncp.gov.br/app/editais/27167410000188/2025/48",
+        "UASG": "003",
+        "Edital": "00048/2025",
+        "Orgao": "MUNICIPIO DE LINHARES",
+        "UF": "ES",
+        "Municipio": "Linhares",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "003000482025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "ACIDO FOLINICO DE 15 MG USO ORAL..",
+                "Qtd": 5000.0,
+                "Unitario": 2.3367,
+                "Total": 11683.5,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
