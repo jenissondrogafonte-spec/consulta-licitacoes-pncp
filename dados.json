@@ -2458,5 +2458,273 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-02-13T07:05:55",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90754/2025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/109",
+        "UASG": "926150",
+        "Edital": "00109/2025",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "926150001092025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Luva De Proteção",
+                "Qtd": 14666.0,
+                "Unitario": 18.14,
+                "Total": 266041.24,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 2,
+                "Desc": "Luva De Proteção",
+                "Qtd": 52149.0,
+                "Unitario": 18.14,
+                "Total": 945982.86,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Luva De Proteção",
+                "Qtd": 52149.0,
+                "Unitario": 18.14,
+                "Total": 945982.86,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Luva De Proteção",
+                "Qtd": 52149.0,
+                "Unitario": 18.14,
+                "Total": 945982.86,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "Luva De Proteção",
+                "Qtd": 52149.0,
+                "Unitario": 18.14,
+                "Total": 945982.86,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Luva De Proteção",
+                "Qtd": 8422.0,
+                "Unitario": 18.14,
+                "Total": 152775.08,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-13T07:19:07",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "93054/2025",
+        "Link": "https://pncp.gov.br/app/editais/46137410000180/2025/45",
+        "UASG": "986219",
+        "Edital": "00045/2025",
+        "Orgao": "MUNICIPIO DE BAURU",
+        "UF": "SP",
+        "Municipio": "Bauru",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "986219000452025",
+        "Itens": [
+            {
+                "Item": 10,
+                "Desc": "Sulfato De Magnésio",
+                "Qtd": 3000.0,
+                "Unitario": 5.5057,
+                "Total": 16517.1,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-05-05T14:10:54",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "3/2025",
+        "Link": "https://pncp.gov.br/app/editais/08868515000110/2025/3",
+        "UASG": "01",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE SAO MIGUEL DE TAIPU",
+        "UF": "PB",
+        "Municipio": "São Miguel de Taipu",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "01000032025",
+        "Itens": [
+            {
+                "Item": 7,
+                "Desc": "Carbamazepina 200mg",
+                "Qtd": 10000.0,
+                "Unitario": 0.16,
+                "Total": 1600.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Carbamazepina 20mg/ml",
+                "Qtd": 3000.0,
+                "Unitario": 7.57,
+                "Total": 22710.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-13T11:42:43",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "12/2024",
+        "Link": "https://pncp.gov.br/app/editais/08349102000129/2024/67",
+        "UASG": "08349102000129",
+        "Edital": "00067/2024",
+        "Orgao": "MUNICIPIO DE CARAUBAS",
+        "UF": "RN",
+        "Municipio": "Caraúbas",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "08349102000129000672024",
+        "Itens": [
+            {
+                "Item": 2,
+                "Desc": "Acetato de medroxiprogesterona 150mg/ml c/1 ampola",
+                "Qtd": 2000.0,
+                "Unitario": 8.82,
+                "Total": 17640.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 3,
+                "Desc": "Acetilcisteína xarope 20mg/ml c/120ml",
+                "Qtd": 3000.0,
+                "Unitario": 3.98,
+                "Total": 11940.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 4,
+                "Desc": "Acetilcisteína xarope 40mg/ml c/120ml",
+                "Qtd": 3000.0,
+                "Unitario": 4.11,
+                "Total": 12330.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5,
+                "Desc": "Aciclovir 200mg comp.",
+                "Qtd": 3000.0,
+                "Unitario": 0.16,
+                "Total": 480.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 6,
+                "Desc": "Ácido Acetilsalicílico 100 mg comp.",
+                "Qtd": 400000.0,
+                "Unitario": 0.03,
+                "Total": 12000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 9,
+                "Desc": "Albendazol 400mg comp.",
+                "Qtd": 2000.0,
+                "Unitario": 0.42,
+                "Total": 840.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "Albendazol 40mg/ml suspenção c/10ml",
+                "Qtd": 3000.0,
+                "Unitario": 1.1,
+                "Total": 3300.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-14T09:37:59",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "01/2025",
+        "Link": "https://pncp.gov.br/app/editais/10769869000159/2025/1",
+        "UASG": "2624",
+        "Edital": "00001/2025",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SANTA CRUZ DA BAIXA VERDE",
+        "UF": "PE",
+        "Municipio": "Santa Cruz da Baixa Verde",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "2624000012025",
+        "Itens": [
+            {
+                "Item": 5309422,
+                "Desc": "CARBAMAZEPINA 200 MG ",
+                "Qtd": 20000.0,
+                "Unitario": 0.16,
+                "Total": 3200.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5309425,
+                "Desc": "CLONAZEPAM 0,5 MG",
+                "Qtd": 50000.0,
+                "Unitario": 0.06,
+                "Total": 3000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-17T11:16:27",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "17/2024",
+        "Link": "https://pncp.gov.br/app/editais/59045351000161/2024/42",
+        "UASG": "3",
+        "Edital": "00042/2024",
+        "Orgao": "SAME/FM-SERVICO DE ASSISTENCIA MEDICA DE FCO MORATO",
+        "UF": "SP",
+        "Municipio": "Francisco Morato",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "3000422024",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "ALBENDAZOL 400 MG",
+                "Qtd": 20000.0,
+                "Unitario": 0.388,
+                "Total": 7760.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 8,
+                "Desc": "Cloreto de Sódio 0,9% - 10ml",
+                "Qtd": 15000.0,
+                "Unitario": 0.219,
+                "Total": 3285.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
