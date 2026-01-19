@@ -2726,5 +2726,143 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-04-04",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90001/2025",
+        "Link": "https://pncp.gov.br/app/editais/35501733000194/2025/2",
+        "UASG": "462314",
+        "Edital": "00002/2025",
+        "Orgao": "INSTITUTO CANDIDA VARGAS",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "462314000022025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "Aciclovir",
+                "Qtd": 600.0,
+                "Unitario": 0.23,
+                "Total": 138.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-31",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90003/2025",
+        "Link": "https://pncp.gov.br/app/editais/01612355000102/2025/3",
+        "UASG": "980780",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE PORTO REAL",
+        "UF": "RJ",
+        "Municipio": "Porto Real",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "980780000032025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Ácido acetilsalicílico",
+                "Qtd": 614250.0,
+                "Unitario": 0.0258,
+                "Total": 15847.65,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-05",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "000063/2024",
+        "Link": "https://pncp.gov.br/app/editais/13932227000117/2024/25",
+        "UASG": "13932227000117-006",
+        "Edital": "00025/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO GABRIEL DA PALHA",
+        "UF": "ES",
+        "Municipio": "São Gabriel da Palha",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "13932227000117-006000252024",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "AMBROXOL 15MG/5ML - FRASCO CONTENDO 100ML + COPO DOSADOR - XAROPE PEDIÁTRICO",
+                "Qtd": 5500.0,
+                "Unitario": 2.19,
+                "Total": 12045.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-13",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "00016/25/2025",
+        "Link": "https://pncp.gov.br/app/editais/18671271000134/2025/25",
+        "UASG": "1806",
+        "Edital": "00025/2025",
+        "Orgao": "MUNICIPIO DE OURO FINO",
+        "UF": "MG",
+        "Municipio": "Ouro Fino",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1806000252025",
+        "Itens": [
+            {
+                "Item": 1,
+                "Desc": "ACIDO VALPROICO 250MG/5ML",
+                "Qtd": 1500.0,
+                "Unitario": 6.0,
+                "Total": 9000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 10,
+                "Desc": "OMEPRAZOL 20 MG",
+                "Qtd": 400000.0,
+                "Unitario": 0.058,
+                "Total": 23200.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-03-28",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "00009/2025",
+        "Link": "https://pncp.gov.br/app/editais/46523015000135/2025/13",
+        "UASG": "SUPRIMENTOS",
+        "Edital": "00013/2025",
+        "Orgao": "MUNICIPIO DE BARUERI",
+        "UF": "SP",
+        "Municipio": "Barueri",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "SUPRIMENTOS000132025",
+        "Itens": [
+            {
+                "Item": 4,
+                "Desc": "AMIODARONA, CLORIDRATO 50MG/ML - SOLUÇÃO INJETÁVEL 3 ML",
+                "Qtd": 2000.0,
+                "Unitario": 2.99,
+                "Total": 5980.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
