@@ -3,6 +3,10 @@ import json
 from datetime import datetime, timedelta
 import os
 import time
+import urllib3
+
+# Desativa avisos de SSL (comum em ambientes de automação)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- CONFIGURAÇÃO ---
 HEADERS = {
@@ -29,7 +33,7 @@ def salvar_estado(banco, data_proxima):
         json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
     with open(ARQ_CHECKPOINT, 'w') as f:
         f.write(data_proxima.strftime('%Y%m%d'))
-    print(f"\n💾 [ESTADO SALVO] Próximo início: {data_proxima.strftime('%d/%m/%Y')}")
+    print(f"\n💾 [ESTADO SALVO] Próximo início: {data_proxima.strftime('%d/%m/%Y')} | Banco: {len(banco)} registros")
 
 def ler_checkpoint():
     if os.path.exists(ARQ_CHECKPOINT):
@@ -46,15 +50,17 @@ if data_inicio > DATA_LIMITE_FINAL:
 data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
 if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
 
-print(f"--- 🚀 SNIPER TURBO (3 DIAS) ---")
+print(f"--- 🚀 SNIPER TURBO (CAPACIDADE: 5000 ITENS) ---")
 print(f"--- ALVO: {CNPJ_ALVO} | JANELA: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
 
 banco_total = carregar_banco()
 data_atual = data_inicio
 
+
+
 while data_atual <= data_fim:
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n📅 {data_atual.strftime('%d/%m/%Y')}:", end=" ")
+    print(f"\n📅 {data_atual.strftime('%d/%m/%Y')}:", end=" ", flush=True)
     
     pagina = 1
     while True:
@@ -66,7 +72,7 @@ while data_atual <= data_fim:
         }
 
         try:
-            resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
+            resp = requests.get(url, params=params, headers=HEADERS, timeout=30, verify=False)
             if resp.status_code != 200: break
             
             json_resp = resp.json()
@@ -75,72 +81,79 @@ while data_atual <= data_fim:
             print(f"[{len(lics)} editais]", end="", flush=True)
 
             for idx, lic in enumerate(lics):
+                # Salva a cada 10 editais processados para não perder progresso
                 if idx % 10 == 0 and idx > 0: salvar_estado(banco_total, data_atual)
 
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
                 ano, seq = lic.get('anoCompra'), lic.get('sequencialCompra')
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                 id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
-                
-                # --- NOVO: Captura o número real do edital (ex: 90007) ---
-                num_edital_real = lic.get('numeroCompra') # Pega o 90007
-                
-                # Formata link usando dados oficiais
+                num_edital_real = lic.get('numeroCompra')
                 link_custom = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
-
-                if f"{id_lic}-{CNPJ_ALVO}" in banco_total and len(banco_total[f"{id_lic}-{CNPJ_ALVO}"]["Itens"]) > 0:
-                    continue
+                chave = f"{id_lic}-{CNPJ_ALVO}"
 
                 try:
-                    time.sleep(0.1)
-                    r_it = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens", headers=HEADERS, timeout=15)
+                    time.sleep(0.1) # Pausa curta para evitar bloqueio (Rate Limit)
+                    
+                    # AJUSTE PRINCIPAL: tamanhoPagina=5000 para capturar a lista completa de itens
+                    url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina=1&tamanhoPagina=5000"
+                    r_it = requests.get(url_itens, headers=HEADERS, timeout=20, verify=False)
+                    
                     if r_it.status_code == 200:
                         itens_api = r_it.json()
-                        if not any(it.get('temResultado') for it in itens_api): continue
-
+                        
                         for it in itens_api:
                             if it.get('temResultado'):
-                                r_v = requests.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados", headers=HEADERS, timeout=10)
+                                # Busca o vencedor de cada item que já foi finalizado
+                                url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados"
+                                r_v = requests.get(url_res, headers=HEADERS, timeout=10, verify=False)
+                                
                                 if r_v.status_code == 200:
                                     vends = r_v.json()
                                     if isinstance(vends, dict): vends = [vends]
+                                    
                                     for v in vends:
-                                        cv = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
-                                        if CNPJ_ALVO in cv:
-                                            chave = f"{id_lic}-{CNPJ_ALVO}"
+                                        ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
+                                        if CNPJ_ALVO in ni:
                                             if chave not in banco_total:
                                                 banco_total[chave] = {
                                                     "DataResult": lic.get('dataAtualizacao') or DATA_STR,
                                                     "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
                                                     "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
                                                     "IdPNCP": lic.get('idContratacaoPncp'),
-                                                    # AQUI ESTÁ O AJUSTE QUE VOCÊ PEDIU:
                                                     "NumEdital": f"{num_edital_real}/{ano}", 
                                                     "Link": link_custom,
                                                     "UASG": uasg, 
-                                                    # Mantivemos 'Edital' como controle interno sequencial, 
-                                                    # mas agora você tem 'NumEdital' visual
                                                     "Edital": f"{str(seq).zfill(5)}/{ano}",
                                                     "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
                                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
                                                     "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
-                                                    "Fornecedor": v.get('nomeRazaoSocialFornecedor'), "CNPJ": CNPJ_ALVO, "Licitacao": id_lic, "Itens": []
+                                                    "Fornecedor": v.get('nomeRazaoSocialFornecedor'), 
+                                                    "CNPJ": CNPJ_ALVO, 
+                                                    "Licitacao": id_lic, 
+                                                    "Itens": []
                                                 }
                                             
+                                            # Adiciona o item se ele ainda não estiver na lista daquela licitação
                                             if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
                                                 banco_total[chave]["Itens"].append({
-                                                    "Item": it.get('numeroItem'), "Desc": it.get('descricao'),
-                                                    "Qtd": v.get('quantidadeHomologada'), "Unitario": float(v.get('valorUnitarioHomologado') or 0),
-                                                    "Total": float(v.get('valorTotalHomologado') or 0), "Status": "Venceu"
+                                                    "Item": it.get('numeroItem'), 
+                                                    "Desc": it.get('descricao'),
+                                                    "Qtd": v.get('quantidadeHomologada'), 
+                                                    "Unitario": float(v.get('valorUnitarioHomologado') or 0),
+                                                    "Total": float(v.get('valorTotalHomologado') or 0), 
+                                                    "Status": "Venceu"
                                                 })
-                                            print("🎯", end="", flush=True)
-                except: continue
+                                                print("🎯", end="", flush=True)
+                except: 
+                    continue
             
             if pagina >= json_resp.get('totalPaginas', 1): break
             pagina += 1
-        except: break
+        except: 
+            break
     
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
 
-print(f"\n\n✅ Ciclo concluído.")
+print(f"\n\n✅ Ciclo concluído com sucesso.")
