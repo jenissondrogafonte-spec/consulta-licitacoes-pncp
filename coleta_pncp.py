@@ -5,7 +5,7 @@ import os
 import time
 import urllib3
 
-# Desativa avisos de SSL para evitar erros no Windows/Ambiente local
+# Desativa avisos de SSL para evitar erros de certificado no ambiente local
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- CONFIGURAÇÃO ---
@@ -19,15 +19,18 @@ CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
 
 def carregar_banco():
+    """ Carrega o banco de dados existente para evitar duplicados """
     if os.path.exists(ARQ_DADOS):
         try:
             with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
+                # Cria um índice baseado em Licitacao + CNPJ
                 return {f"{i['Licitacao']}-{i['CNPJ']}": i for i in dados}
         except: pass
     return {}
 
 def salvar_estado(banco, data_proxima):
+    """ Salva o JSON e o ponto de paragem (checkpoint) """
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(list(banco.values()), f, indent=4, ensure_ascii=False)
     with open(ARQ_CHECKPOINT, 'w') as f:
@@ -35,7 +38,10 @@ def salvar_estado(banco, data_proxima):
     print(f"\n💾 Checkpoint salvo: {data_proxima.strftime('%d/%m/%Y')}")
 
 def buscar_detalhes_compra(cnpj, ano, sequencial):
-    """ Busca datas de início/fim e o ID oficial no cabeçalho da compra """
+    """ 
+    Consulta o endpoint de detalhes para obter as datas de proposta e o ID PNCP formatado.
+    Resolve o problema dos campos voltarem 'null'.
+    """
     seq_formatado = str(sequencial).zfill(6)
     url = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq_formatado}"
     try:
@@ -53,13 +59,15 @@ def buscar_detalhes_compra(cnpj, ano, sequencial):
 
 # --- INÍCIO DO PROCESSO ---
 banco_total = carregar_banco()
-data_atual = datetime.now() - timedelta(days=1) # Começa de ontem por padrão
+data_atual = datetime(2025, 1, 1) # Padrão inicial
 
 if os.path.exists(ARQ_CHECKPOINT):
     with open(ARQ_CHECKPOINT, 'r') as f:
         data_atual = datetime.strptime(f.read().strip(), '%Y%m%d')
 
-print(f"🚀 Iniciando coleta de resultados para o CNPJ {CNPJ_ALVO}...")
+print(f"🚀 Iniciando coleta para o CNPJ {CNPJ_ALVO}...")
+
+
 
 while data_atual <= DATA_LIMITE_FINAL:
     data_str = data_atual.strftime('%Y%m%d')
@@ -79,15 +87,16 @@ while data_atual <= DATA_LIMITE_FINAL:
 
             for it in itens:
                 try:
-                    # Dados básicos do item
                     cnpj_orgao = it.get('orgaoCnpj')
                     ano_compra = it.get('anoCompra')
                     seq_compra = it.get('sequencialCompra')
-                    id_lic = f"{cnpj_orgao}{it.get('numeroCompra')}{ano_compra}"
+                    
+                    # Identificador único para evitar duplicados no JSON
+                    id_lic = f"{cnpj_orgao}{it.get('numeroCompra').replace('/','')}{ano_compra}"
                     chave = f"{id_lic}-{CNPJ_ALVO}"
 
-                    # Se a licitação ainda não está no banco, buscamos os detalhes (Datas e ID)
                     if chave not in banco_total:
+                        # Chamada secundária para preencher Datas e ID que faltam no resultado
                         detalhes = buscar_detalhes_compra(cnpj_orgao, ano_compra, seq_compra)
                         
                         banco_total[chave] = {
@@ -107,11 +116,11 @@ while data_atual <= DATA_LIMITE_FINAL:
                             "Itens": []
                         }
 
-                    # Adiciona o item específico vencido
+                    # Adiciona itens vencedores à lista daquela licitação
                     if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
                         banco_total[chave]["Itens"].append({
                             "Item": it.get('numeroItem'),
-                            "Desc": it.get('descricaoItem'),
+                            "Desc": it.get('descricaoItem') or it.get('descricao'),
                             "Qtd": it.get('quantidadeHomologada'),
                             "Unitario": float(it.get('valorUnitarioHomologado') or 0),
                             "Total": float(it.get('valorTotalHomologado') or 0),
@@ -124,9 +133,9 @@ while data_atual <= DATA_LIMITE_FINAL:
             pagina += 1
         except: break
     
-    # Salva o estado ao fim de cada dia processado
+    # Salva progresso diário
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
-    time.sleep(0.5) # Pausa amigável para o servidor
+    time.sleep(1) # Pausa amigável para evitar bloqueio de IP
 
-print(f"\n\n✅ Ciclo concluído. Verifique o arquivo {ARQ_DADOS}")
+print(f"\n\n✅ Coleta concluída com sucesso!")
