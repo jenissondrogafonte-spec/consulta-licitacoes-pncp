@@ -17,14 +17,15 @@ ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
-DIAS_POR_CICLO = 3 
+DIAS_POR_CICLO = 1  # ALTERADO: Processa 1 dia por execução
 
 def carregar_banco():
     if os.path.exists(ARQ_DADOS):
         try:
             with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-                return {f"{i['Licitacao']}-{i['CNPJ']}": i for i in dados}
+                # Garante chaves únicas combinando Licitação e CNPJ
+                return {f"{i.get('Licitacao')}-{i.get('CNPJ')}": i for i in dados}
         except: pass
     return {}
 
@@ -55,8 +56,6 @@ print(f"--- ALVO: {CNPJ_ALVO} | JANELA: {data_inicio.strftime('%d/%m')} a {data_
 
 banco_total = carregar_banco()
 data_atual = data_inicio
-
-
 
 while data_atual <= data_fim:
     DATA_STR = data_atual.strftime('%Y%m%d')
@@ -91,6 +90,10 @@ while data_atual <= data_fim:
                 num_edital_real = lic.get('numeroCompra')
                 link_custom = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
                 chave = f"{id_lic}-{CNPJ_ALVO}"
+                
+                # Se já processamos e tem itens, pula para economizar tempo
+                if chave in banco_total and len(banco_total[chave]["Itens"]) > 0:
+                     continue
 
                 try:
                     time.sleep(0.1) # Pausa curta para evitar bloqueio (Rate Limit)
