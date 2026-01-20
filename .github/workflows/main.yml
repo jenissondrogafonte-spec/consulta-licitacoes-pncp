@@ -1,53 +1,39 @@
-name: Robô Sniper Automático 2025
+name: PNCP Sniper Turbo
 
 on:
   schedule:
+    # Roda a cada 2 horas (00:00, 02:00, 04:00, etc.)
     - cron: '0 */2 * * *'
-  workflow_dispatch:
-
-concurrency:
-  group: coleta-pncp-group
-  cancel-in-progress: false
+  workflow_dispatch:      # Permite rodar manualmente no botão
 
 jobs:
-  coleta:
+  build:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
-      - name: 1. Checkout do Código
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    - name: Checkout do repositório
+      uses: actions/checkout@v3
 
-      - name: 2. Configurar Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
 
-      - name: 3. Instalar Dependências
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+    - name: Instalar dependências
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
 
-      - name: 4. Atualizar Checkpoint e Executar
-        # O PULO DO GATO: Atualiza o código logo antes de rodar para pegar o checkpoint novo
-        run: |
-          git pull origin main --rebase || echo "Repositório já atualizado"
-          python coleta_pncp.py
+    - name: Executar script de coleta
+      run: python coleta_pncp.py
 
-      - name: 5. Salvar Dados com Força Bruta
-        run: |
-          git config --global user.name "SniperBot-Drogafonte"
-          git config --global user.email "actions@github.com"
-          
-          git add dados.json checkpoint.txt
-          
-          if git diff --cached --quiet; then
-            echo "Sem novos dados."
-            exit 0
-          fi
-
-          git commit -m "🤖 Progresso: $(cat checkpoint.txt)"
-          git push origin main || (git pull origin main --rebase && git push origin main)
+    - name: Commit e Push das atualizações
+      run: |
+        git config --global user.name "jenissonb88-bot"
+        git config --global user.email "bot@github.com"
+        git add dados.json checkpoint.txt
+        git commit -m "Auto Update: $(date +'%d/%m/%Y %H:%M')" || echo "Sem mudanças"
+        git push
