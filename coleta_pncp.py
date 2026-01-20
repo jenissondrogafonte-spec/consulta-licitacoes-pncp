@@ -5,7 +5,7 @@ import os
 import time
 import urllib3
 
-# Desativa avisos de SSL (comum em ambientes de automação)
+# Desativa avisos de SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- CONFIGURAÇÃO ---
@@ -17,15 +17,14 @@ ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 CNPJ_ALVO = "08778201000126"
 DATA_LIMITE_FINAL = datetime(2025, 12, 31)
-DIAS_POR_CICLO = 1  # ALTERADO: Processa 1 dia por execução
+DIAS_POR_CICLO = 1  # ALTERADO: Processa 1 dia por vez
 
 def carregar_banco():
     if os.path.exists(ARQ_DADOS):
         try:
             with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-                # Garante chaves únicas combinando Licitação e CNPJ
-                return {f"{i.get('Licitacao')}-{i.get('CNPJ')}": i for i in dados}
+                return {f"{i['Licitacao']}-{i['CNPJ']}": i for i in dados}
         except: pass
     return {}
 
@@ -64,6 +63,7 @@ while data_atual <= data_fim:
     pagina = 1
     while True:
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+        # Busca editais onde o fornecedor participou
         params = {
             "dataInicial": DATA_STR, "dataFinal": DATA_STR, 
             "codigoModalidadeContratacao": "6", "pagina": pagina, 
@@ -80,7 +80,6 @@ while data_atual <= data_fim:
             print(f"[{len(lics)} editais]", end="", flush=True)
 
             for idx, lic in enumerate(lics):
-                # Salva a cada 10 editais processados para não perder progresso
                 if idx % 10 == 0 and idx > 0: salvar_estado(banco_total, data_atual)
 
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
@@ -90,15 +89,15 @@ while data_atual <= data_fim:
                 num_edital_real = lic.get('numeroCompra')
                 link_custom = f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}"
                 chave = f"{id_lic}-{CNPJ_ALVO}"
-                
-                # Se já processamos e tem itens, pula para economizar tempo
+
+                # Se já processou e tem itens, pula (Otimização)
                 if chave in banco_total and len(banco_total[chave]["Itens"]) > 0:
-                     continue
+                    continue
 
                 try:
-                    time.sleep(0.1) # Pausa curta para evitar bloqueio (Rate Limit)
+                    time.sleep(0.1)
                     
-                    # AJUSTE PRINCIPAL: tamanhoPagina=5000 para capturar a lista completa de itens
+                    # AJUSTE: tamanhoPagina=5000 na busca de itens
                     url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina=1&tamanhoPagina=5000"
                     r_it = requests.get(url_itens, headers=HEADERS, timeout=20, verify=False)
                     
@@ -107,7 +106,6 @@ while data_atual <= data_fim:
                         
                         for it in itens_api:
                             if it.get('temResultado'):
-                                # Busca o vencedor de cada item que já foi finalizado
                                 url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{it.get('numeroItem')}/resultados"
                                 r_v = requests.get(url_res, headers=HEADERS, timeout=10, verify=False)
                                 
@@ -137,7 +135,6 @@ while data_atual <= data_fim:
                                                     "Itens": []
                                                 }
                                             
-                                            # Adiciona o item se ele ainda não estiver na lista daquela licitação
                                             if not any(x['Item'] == it.get('numeroItem') for x in banco_total[chave]["Itens"]):
                                                 banco_total[chave]["Itens"].append({
                                                     "Item": it.get('numeroItem'), 
@@ -148,15 +145,13 @@ while data_atual <= data_fim:
                                                     "Status": "Venceu"
                                                 })
                                                 print("🎯", end="", flush=True)
-                except: 
-                    continue
+                except: continue
             
             if pagina >= json_resp.get('totalPaginas', 1): break
             pagina += 1
-        except: 
-            break
+        except: break
     
     salvar_estado(banco_total, data_atual + timedelta(days=1))
     data_atual += timedelta(days=1)
 
-print(f"\n\n✅ Ciclo concluído com sucesso.")
+print(f"\n\n✅ Ciclo concluído.")
