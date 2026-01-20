@@ -1386,5 +1386,57 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-07T07:04:12",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90001/2025",
+        "Link": "https://pncp.gov.br/app/editais/27165554000103/2025/1",
+        "UASG": "985703",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE VILA VELHA",
+        "UF": "ES",
+        "Municipio": "Vila Velha",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "985703000012025",
+        "Itens": [
+            {
+                "Item": 18,
+                "Desc": "Diclofenaco",
+                "Qtd": 19000.0,
+                "Unitario": 0.73,
+                "Total": 13870.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-17T07:46:35",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90001/2025",
+        "Link": "https://pncp.gov.br/app/editais/09073628000191/2025/1",
+        "UASG": "982095",
+        "Edital": "00001/2025",
+        "Orgao": "MUNICIPIO DE MONTEIRO",
+        "UF": "PB",
+        "Municipio": "Monteiro",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "982095000012025",
+        "Itens": [
+            {
+                "Item": 275,
+                "Desc": "Sinvastatina",
+                "Qtd": 120000.0,
+                "Unitario": 0.11,
+                "Total": 13200.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
