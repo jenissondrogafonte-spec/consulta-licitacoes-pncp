@@ -1088,5 +1088,303 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-22T07:05:40",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90173/2024",
+        "Link": "https://pncp.gov.br/app/editais/08761140000194/2024/240",
+        "UASG": "925302",
+        "Edital": "00240/2024",
+        "Orgao": "SECRETARIA DE ESTADO DA ADMINISTRACAO",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925302002402024",
+        "Itens": [
+            {
+                "Item": 23,
+                "Desc": "Clindamicina",
+                "Qtd": 490800.0,
+                "Unitario": 2.67,
+                "Total": 1310436.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 27,
+                "Desc": "Levofloxacino",
+                "Qtd": 88300.0,
+                "Unitario": 7.2,
+                "Total": 635760.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 32,
+                "Desc": "Oxacilina",
+                "Qtd": 404000.0,
+                "Unitario": 3.96,
+                "Total": 1599840.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-22T07:08:29",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90006/2025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000143/2025/188",
+        "UASG": "155012",
+        "Edital": "00188/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "ES",
+        "Municipio": "Vitória",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155012001882025",
+        "Itens": [
+            {
+                "Item": 5,
+                "Desc": "Valproato De Sódio",
+                "Qtd": 400.0,
+                "Unitario": 6.2,
+                "Total": 2480.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 76,
+                "Desc": "Epinefrina",
+                "Qtd": 10000.0,
+                "Unitario": 0.8739,
+                "Total": 8739.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 110,
+                "Desc": "Omeprazol",
+                "Qtd": 72000.0,
+                "Unitario": 0.0575,
+                "Total": 4140.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 114,
+                "Desc": "Prednisona",
+                "Qtd": 22000.0,
+                "Unitario": 0.148,
+                "Total": 3256.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 118,
+                "Desc": "Simeticona",
+                "Qtd": 120000.0,
+                "Unitario": 0.1082,
+                "Total": 12984.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-22T10:52:10",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "PMJ-2025-4-14/2025",
+        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/66",
+        "UASG": "14",
+        "Edital": "00066/2025",
+        "Orgao": "MUNICIPIO DE JUNDIAI",
+        "UF": "SP",
+        "Municipio": "Jundiaí",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "14000662025",
+        "Itens": [
+            {
+                "Item": 15,
+                "Desc": "Cota Principal    - TOBRAMICINA, SULFATO 3 MG/ML - 0,3%, COLIRIO, FRASCO 5 ML                       ",
+                "Qtd": 1.0,
+                "Unitario": 4.0,
+                "Total": 4.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 16,
+                "Desc": "Cota Reservada - TOBRAMICINA, SULFATO 3 MG/ML - 0,3%, COLIRIO, FRASCO 5 ML                          ",
+                "Qtd": 1.0,
+                "Unitario": 4.0,
+                "Total": 4.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 27,
+                "Desc": "Cota Principal    - ASCORBICO ACIDO 200 MG/ML, GOTAS, FRASCO 20 ML                                  ",
+                "Qtd": 1.0,
+                "Unitario": 1.1,
+                "Total": 1.1,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 28,
+                "Desc": "Cota Reservada - ASCORBICO ACIDO 200 MG/ML, GOTAS, FRASCO 20 ML                                     ",
+                "Qtd": 1.0,
+                "Unitario": 1.1,
+                "Total": 1.1,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-22T13:50:30",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "00001/2025",
+        "Link": "https://pncp.gov.br/app/editais/45318466000178/2025/6",
+        "UASG": "020900",
+        "Edital": "00006/2025",
+        "Orgao": "MUNICIPIO DE PEDREGULHO",
+        "UF": "SP",
+        "Municipio": "Pedregulho",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "020900000062025",
+        "Itens": [
+            {
+                "Item": 6,
+                "Desc": "ALOPURINOL 300MG",
+                "Qtd": 15000.0,
+                "Unitario": 0.14,
+                "Total": 2100.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 50,
+                "Desc": "Enoxaparina, Concentração: 100mg/ml, forma farmacêutica: solução injetável, características adicionais 1: seringa preenchida, seringa 0,40ml",
+                "Qtd": 1500.0,
+                "Unitario": 13.19,
+                "Total": 19785.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 54,
+                "Desc": "FENOBARBITAL 100 MG",
+                "Qtd": 15000.0,
+                "Unitario": 0.13,
+                "Total": 1950.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 69,
+                "Desc": "Levotiroxina Sódica Dosagem: 100 Mcg,",
+                "Qtd": 45000.0,
+                "Unitario": 0.12,
+                "Total": 5400.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 70,
+                "Desc": "Levotiroxina Sódica Dosagem: 25 Mcg,",
+                "Qtd": 75000.0,
+                "Unitario": 0.14,
+                "Total": 10500.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 71,
+                "Desc": "Levotiroxina Sódica Dosagem: 50 Mcg,",
+                "Qtd": 90000.0,
+                "Unitario": 0.1,
+                "Total": 9000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 84,
+                "Desc": "Omeprazol Concentração: 20 MG, Característica Adicional: Liberação Prolongada,",
+                "Qtd": 270000.0,
+                "Unitario": 0.05,
+                "Total": 13500.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 233,
+                "Desc": "DICLOFENACO SODICO 25MG/ML INJETÁVEL 3ML",
+                "Qtd": 3000.0,
+                "Unitario": 0.68,
+                "Total": 2040.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 239,
+                "Desc": "ESCITALOPRAM, OXALATO-20MG",
+                "Qtd": 15000.0,
+                "Unitario": 0.16,
+                "Total": 2400.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 272,
+                "Desc": "CLONAZEPAM 2 MG",
+                "Qtd": 150000.0,
+                "Unitario": 0.04,
+                "Total": 6000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 307,
+                "Desc": "NIMESULIDA 100 MG",
+                "Qtd": 25000.0,
+                "Unitario": 0.06,
+                "Total": 1500.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-06-16T09:50:21",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "19000-173/2024",
+        "Link": "https://pncp.gov.br/app/editais/08761140000194/2024/243",
+        "UASG": "19101",
+        "Edital": "00243/2024",
+        "Orgao": "SECRETARIA DE ESTADO DA ADMINISTRACAO",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "19101002432024",
+        "Itens": [
+            {
+                "Item": 23,
+                "Desc": "CLINDAMICINA 150 mg/mL solução injetável (ampola 4 mL).",
+                "Qtd": 490800.0,
+                "Unitario": 2.67,
+                "Total": 1310436.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 27,
+                "Desc": "LEVOFLOXACINO 5 mg/mL solução injetável (frasco/bolsa 100 mL).",
+                "Qtd": 88300.0,
+                "Unitario": 7.2,
+                "Total": 635760.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 32,
+                "Desc": "OXACILINA 500 mg pó liofílico para solução injetável (frasco ampola).",
+                "Qtd": 404000.0,
+                "Unitario": 3.96,
+                "Total": 1599840.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
