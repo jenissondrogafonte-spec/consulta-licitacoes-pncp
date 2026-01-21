@@ -2,11 +2,13 @@ name: PNCP Sniper Turbo
 
 on:
   schedule:
-    # Backup: se o loop falhar, ele tenta reiniciar a cada 30 min
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+    # Roda a cada 2 horas como backup
+    - cron: '0 */2 * * *'
+  workflow_dispatch:      # Permite rodar manualmente
 
-# Impede que dois robôs rodem ao mesmo tempo e estraguem o JSON
+# --- CORREÇÃO DO ERRO ---
+# Isso garante que apenas 1 robô rode por vez, mas NÃO cancela o anterior.
+# O novo fica na fila esperando o velho terminar (fila indiana).
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
@@ -17,7 +19,7 @@ jobs:
 
     permissions:
       contents: write
-      actions: write  # Necessário para reiniciar o workflow
+      actions: write  # Necessário para o robô se auto-reiniciar
 
     steps:
     - name: Checkout do repositório
@@ -41,13 +43,16 @@ jobs:
         git config --global user.name "jenissonb88-bot"
         git config --global user.email "bot@github.com"
         git add dados.json checkpoint.txt
-        # Se não houver mudança, não falha
-        git commit -m "Auto Update: $(date +'%d/%m/%Y %H:%M')" || echo "Sem mudanças"
+        # Se não houver mudança, ele avisa e segue sem erro
+        git commit -m "Auto Update: $(date +'%d/%m/%Y %H:%M')" || echo "Sem mudanças no banco de dados"
         git push
 
+    # Pequena pausa de segurança antes de reiniciar
     - name: 🔄 Reiniciar Loop (Auto-Trigger)
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        echo "Aguardando 10 segundos para limpar processos..."
+        sleep 10
         echo "Reiniciando o workflow para o próximo dia..."
         gh workflow run main.yml
