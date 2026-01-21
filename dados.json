@@ -1438,5 +1438,65 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-02-27T12:11:41",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "3232/2025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/26",
+        "UASG": "5795",
+        "Edital": "00026/2025",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Afogados da Ingazeira",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "5795000262025",
+        "Itens": [
+            {
+                "Item": 14,
+                "Desc": "Cota principal 3 - (3116360) - CLORETO DE SODIO - CONCENTRACAO/DOSAGEM 9 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO BOLSA OU FRASCO (SISTEMA FECHADO),VIA DE ADMINISTRACAO PARENTERAL",
+                "Qtd": 18000.0,
+                "Unitario": 4.47,
+                "Total": 80460.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-02-19T13:53:39",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "004/2025",
+        "Link": "https://pncp.gov.br/app/editais/08883951000168/2025/4",
+        "UASG": "1",
+        "Edital": "00004/2025",
+        "Orgao": "MUNICIPIO DE TEIXEIRA",
+        "UF": "PB",
+        "Municipio": "Teixeira",
+        "Fornecedor": "Drogafonte Ltda",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000042025",
+        "Itens": [
+            {
+                "Item": 83,
+                "Desc": "Permetrina 5% (50mg/ml) – loção 100ml",
+                "Qtd": 100.0,
+                "Unitario": 3.74,
+                "Total": 374.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 132,
+                "Desc": "Valproato de sódio 250 mg – comprimido",
+                "Qtd": 4800.0,
+                "Unitario": 0.38,
+                "Total": 1824.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
