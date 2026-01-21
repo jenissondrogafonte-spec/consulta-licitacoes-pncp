@@ -1826,5 +1826,65 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-15T08:06:32",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90034/2024",
+        "Link": "https://pncp.gov.br/app/editais/08778318000100/2024/46",
+        "UASG": "981911",
+        "Edital": "00046/2024",
+        "Orgao": "MUNICIPIO DE ALHANDRA",
+        "UF": "PB",
+        "Municipio": "Alhandra",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "981911000462024",
+        "Itens": [
+            {
+                "Item": 61,
+                "Desc": "Brimonidina Tartarato",
+                "Qtd": 1500.0,
+                "Unitario": 5.4049,
+                "Total": 8107.35,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-20T08:49:16",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "64/2024",
+        "Link": "https://pncp.gov.br/app/editais/18715508000131/2024/244",
+        "UASG": "000000003",
+        "Edital": "00244/2024",
+        "Orgao": "MUNICIPIO DE CONTAGEM",
+        "UF": "MG",
+        "Municipio": "Contagem",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "000000003002442024",
+        "Itens": [
+            {
+                "Item": 38,
+                "Desc": "LEVOMEPROMAZINA 100 MG COMPRMIDO",
+                "Qtd": 285000.0,
+                "Unitario": 0.55,
+                "Total": 156750.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 67,
+                "Desc": "TIAMINA 300MG - DRÁGEA",
+                "Qtd": 190000.0,
+                "Unitario": 0.2,
+                "Total": 38000.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
