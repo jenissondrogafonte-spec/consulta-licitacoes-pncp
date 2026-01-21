@@ -1912,5 +1912,113 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-22T08:04:11",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90008/2025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000143/2025/152",
+        "UASG": "155019",
+        "Edital": "00152/2025",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVIÇOS HOSPITALARES",
+        "UF": "MT",
+        "Municipio": "Cuiabá",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "155019001522025",
+        "Itens": [
+            {
+                "Item": 16,
+                "Desc": "Escopolamina butilbrometo",
+                "Qtd": 4800.0,
+                "Unitario": 1.2443,
+                "Total": 5972.64,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 34,
+                "Desc": "Lidocaína cloridrato",
+                "Qtd": 9600.0,
+                "Unitario": 3.861,
+                "Total": 37065.6,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 45,
+                "Desc": "Dipirona sódica",
+                "Qtd": 145600.0,
+                "Unitario": 0.5957,
+                "Total": 86733.92,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 49,
+                "Desc": "Epinefrina",
+                "Qtd": 15900.0,
+                "Unitario": 0.8739,
+                "Total": 13895.01,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 54,
+                "Desc": "Furosemida",
+                "Qtd": 35000.0,
+                "Unitario": 0.6459,
+                "Total": 22606.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 78,
+                "Desc": "Atropina sulfato",
+                "Qtd": 13550.0,
+                "Unitario": 0.6554,
+                "Total": 8880.67,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-17T07:10:28",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90008/2025",
+        "Link": "https://pncp.gov.br/app/editais/07424905000138/2025/9",
+        "UASG": "925998",
+        "Edital": "00009/2025",
+        "Orgao": "AGENCIA DE MODERNIZACAO DA GESTAO DE PROCESSOS",
+        "UF": "AL",
+        "Municipio": "Maceió",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "925998000092025",
+        "Itens": [
+            {
+                "Item": 16,
+                "Desc": "Ipratrópio Brometo",
+                "Qtd": 12045.0,
+                "Unitario": 0.95,
+                "Total": 11442.75,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 12,
+                "Desc": "Lactulose",
+                "Qtd": 13434.0,
+                "Unitario": 4.26,
+                "Total": 57228.84,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 14,
+                "Desc": "Escopolamina Butilbrometo",
+                "Qtd": 8138.0,
+                "Unitario": 6.27,
+                "Total": 51025.26,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
