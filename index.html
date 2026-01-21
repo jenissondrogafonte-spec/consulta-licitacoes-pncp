@@ -10,10 +10,12 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
         .header-bg { background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: white; padding: 2rem 0; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .card-licitacao { border: none; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; background: white; }
+        .card-licitacao { border: none; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; background: white; transition: 0.3s; }
+        .card-licitacao:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .valor-total { font-size: 1.1rem; font-weight: 700; color: #198754; }
-        .info-prazos { background-color: #e7f1ff; border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #0d6efd; }
-        .badge-uasg { background-color: #6c757d; color: white; font-size: 0.75rem; }
+        .badge-uasg { background-color: #6c757d; color: white; font-size: 0.75rem; padding: 5px 10px; border-radius: 5px; }
+        .data-homologacao-destaque { color: #dc3545; font-weight: 600; font-size: 0.85rem; }
+        .btn-load-more { padding: 12px 30px; border-radius: 30px; font-weight: 600; }
     </style>
 </head>
 <body>
@@ -21,7 +23,7 @@
         <div class="container d-flex justify-content-between align-items-center">
             <div>
                 <h1 class="fw-bold mb-0"><i class="fas fa-crosshairs me-2"></i>SNIPER PNCP 2025</h1>
-                <p class="mb-0 opacity-75">Monitoramento Drogafonte</p>
+                <p class="mb-0 opacity-75">Monitoramento de Vitórias - Drogafonte</p>
             </div>
             <div class="text-end">
                 <span class="badge bg-light text-primary fs-5" id="total-geral">R$ 0,00</span>
@@ -32,7 +34,7 @@
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-6">
-                <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="🔍 Buscar órgão, município ou edital...">
+                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por Órgão, Município, Edital ou UASG...">
             </div>
             <div class="col-md-3 text-center">
                 <div class="p-2 bg-white rounded shadow-sm">
@@ -42,7 +44,7 @@
             </div>
             <div class="col-md-3 text-center">
                 <div class="p-2 bg-white rounded shadow-sm">
-                    <small class="text-muted d-block">ITENS Ganhos</small>
+                    <small class="text-muted d-block">ITENS VENCIDOS</small>
                     <strong id="count-itens" class="h4">0</strong>
                 </div>
             </div>
@@ -53,81 +55,154 @@
         </div>
 
         <div id="container-licitacoes"></div>
+        
+        <div id="pagination-container" class="text-center my-5 d-none">
+            <button id="btnLoadMore" class="btn btn-primary btn-load-more shadow">
+                <i class="fas fa-plus me-2"></i> Carregar mais 25 processos
+            </button>
+        </div>
     </div>
 
     <script>
-        const formatMoney = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        const formatMoney = (v) => (v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        const formatDate = (dateStr) => {
+            if (!dateStr) return 'N/I';
+            const date = new Date(dateStr);
+            return isNaN(date) ? dateStr : date.toLocaleDateString('pt-BR');
+        };
+
+        let allData = [];
+        let filteredData = [];
+        let currentPage = 1;
+        const perPage = 25;
 
         async function carregar() {
             try {
                 const r = await fetch('dados.json?v=' + Date.now());
                 const rawData = await r.json();
                 
-                // --- AGRUPADOR ---
-                const listaAgrupada = {};
+                // Agrupamento por Licitação
+                const agrupado = {};
                 let valorGeral = 0;
                 let itensGeral = 0;
 
                 rawData.forEach(item => {
-                    if (!listaAgrupada[item.Licitacao]) {
-                        listaAgrupada[item.Licitacao] = { ...item, Itens: [] };
+                    const chave = item.Licitacao;
+                    if (!agrupado[chave]) {
+                        agrupado[chave] = { ...item, Itens: [] };
                     }
-                    listaAgrupada[item.Licitacao].Itens.push(item);
-                    valorGeral += item.Total;
+                    agrupado[chave].Itens.push(item);
+                    valorGeral += (item.Total || 0);
                     itensGeral++;
                 });
 
-                const dados = Object.values(listaAgrupada);
-                dados.sort((a,b) => b.DataPublicacao.localeCompare(a.DataPublicacao));
-
+                allData = Object.values(agrupado);
+                // Ordena por Data de Homologação/Resultado (mais recente primeiro)
+                allData.sort((a,b) => new Date(b.DataResult || 0) - new Date(a.DataResult || 0));
+                
+                filteredData = [...allData];
+                
                 document.getElementById('total-geral').innerText = formatMoney(valorGeral);
-                document.getElementById('count-lic').innerText = dados.length;
+                document.getElementById('count-lic').innerText = allData.length;
                 document.getElementById('count-itens').innerText = itensGeral;
                 
-                render(dados);
                 document.getElementById('loading').style.display = 'none';
+                renderPage();
             } catch (e) {
                 document.getElementById('loading').innerHTML = "Erro ao carregar dados.";
             }
         }
 
-        function render(dados) {
+        function renderPage() {
             const container = document.getElementById('container-licitacoes');
-            container.innerHTML = '';
+            if (currentPage === 1) container.innerHTML = '';
 
-            dados.forEach((lic, i) => {
-                const totalLic = lic.Itens.reduce((a, b) => a + b.Total, 0);
+            const start = (currentPage - 1) * perPage;
+            const end = start + perPage;
+            const pageData = filteredData.slice(start, end);
+
+            pageData.forEach((lic, i) => {
+                const totalLic = lic.Itens.reduce((a, b) => a + (b.Total || 0), 0);
                 const card = document.createElement('div');
                 card.className = 'card-licitacao p-4 mb-3 shadow-sm';
                 card.innerHTML = `
                     <div class="row align-items-center">
                         <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge-uasg me-2">UASG ${lic.UASG || '---'}</span>
+                                <span class="data-homologacao-destaque"><i class="fas fa-calendar-check me-1"></i> Homologado em: ${formatDate(lic.DataResult)}</span>
+                            </div>
                             <h5 class="fw-bold mb-1">${lic.Orgao}</h5>
-                            <small class="text-muted">${lic.Municipio} - ${lic.UF} | Edital: ${lic.Edital} | UASG: ${lic.UASG}</small>
+                            <small class="text-muted">${lic.Municipio} - ${lic.UF} | Edital: ${lic.Edital}</small>
                         </div>
                         <div class="col-md-3 text-end">
-                            <small class="text-muted d-block">GANHO NO EDITAL</small>
+                            <small class="text-muted d-block text-uppercase" style="font-size: 0.7rem;">Valor Total Ganho</small>
                             <span class="valor-total">${formatMoney(totalLic)}</span>
+                            <small class="d-block text-muted">${lic.Itens.length} itens vencidos</small>
                         </div>
                         <div class="col-md-3 text-end">
-                            <button class="btn btn-primary btn-sm" onclick="this.parentElement.parentElement.nextElementSibling.classList.toggle('d-none')">
-                                Detalhes (${lic.Itens.length} itens)
+                            <button class="btn btn-primary btn-sm rounded-pill px-3" onclick="this.parentElement.parentElement.nextElementSibling.classList.toggle('d-none')">
+                                <i class="fas fa-list me-1"></i> Detalhes
                             </button>
-                            <a href="${lic.Link}" target="_blank" class="btn btn-outline-secondary btn-sm">Link</a>
+                            <a href="${lic.Link}" target="_blank" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                                <i class="fas fa-external-link-alt"></i> PNCP
+                            </a>
                         </div>
                     </div>
                     <div class="mt-3 d-none border-top pt-3">
-                        <table class="table table-sm">
-                            <thead><tr><th>Item</th><th>Descrição</th><th>Qtd</th><th>Unit.</th><th>Total</th></tr></thead>
+                        <table class="table table-sm table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Descrição</th>
+                                    <th class="text-center">Qtd</th>
+                                    <th class="text-end">Unit.</th>
+                                    <th class="text-end">Total</th>
+                                </tr>
+                            </thead>
                             <tbody>
-                                ${lic.Itens.map(it => `<tr><td>${it.Item}</td><td>${it.Descricao}</td><td>${it.Qtd}</td><td>${formatMoney(it.Unitario)}</td><td>${formatMoney(it.Total)}</td></tr>`).join('')}
+                                ${lic.Itens.map(it => `
+                                    <tr>
+                                        <td class="fw-bold">${it.Item}</td>
+                                        <td><small>${it.Descricao}</small></td>
+                                        <td class="text-center">${it.Qtd}</td>
+                                        <td class="text-end">${formatMoney(it.Unitario)}</td>
+                                        <td class="text-end fw-bold text-success">${formatMoney(it.Total)}</td>
+                                    </tr>`).join('')}
                             </tbody>
                         </table>
                     </div>
                 `;
                 container.appendChild(card);
             });
+
+            // Gerencia botão "Carregar Mais"
+            const paginationBtn = document.getElementById('pagination-container');
+            if (filteredData.length > end) {
+                paginationBtn.classList.remove('d-none');
+            } else {
+                paginationBtn.classList.add('d-none');
+            }
         }
+
+        // Busca Inteligente (Inclui UASG)
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const termo = e.target.value.toLowerCase();
+            filteredData = allData.filter(lic => 
+                lic.Orgao.toLowerCase().includes(termo) || 
+                lic.Municipio.toLowerCase().includes(termo) || 
+                lic.Edital.toLowerCase().includes(termo) ||
+                (lic.UASG && lic.UASG.toString().includes(termo))
+            );
+            currentPage = 1;
+            renderPage();
+        });
+
+        document.getElementById('btnLoadMore').addEventListener('click', () => {
+            currentPage++;
+            renderPage();
+        });
+
         carregar();
     </script>
 </body>
