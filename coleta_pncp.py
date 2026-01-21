@@ -10,7 +10,7 @@ from urllib3.util.retry import Retry
 
 # --- CONFIGURAÇÕES GERAIS ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
-DIAS_POR_CICLO = 1             # Processa 1 dia por vez (ajuste para 30 se quiser buscar o passado)
+DIAS_POR_CICLO = 1             # Processa 1 dia por vez (mude para 30 se quiser buscar o passado)
 MAX_WORKERS = 20               # Velocidade turbo (processos simultâneos)
 ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
@@ -46,24 +46,24 @@ def carregar_banco():
                 conteudo = f.read().strip()
                 if not conteudo: return {}
                 dados = json.loads(conteudo)
-                # Cria índice único [Licitação-Item] para evitar duplicatas ao mesclar
+                # Chave única por item para evitar duplicatas
                 return {f"{i['Licitacao']}-{i['Item']}": i for i in dados}
         except Exception as e:
-            print(f"⚠️ Aviso: Erro ao ler banco existente ({e}). Iniciando novo.")
+            print(f"⚠️ Aviso: Erro ao ler banco ({e}). Iniciando novo.")
     return {}
 
 def salvar_estado(banco, data_proxima):
     """Salva a lista completa (antigos + novos) e avança o checkpoint."""
     lista_final = list(banco.values())
-    # Ordena por data (mais recentes primeiro) para facilitar a leitura no JSON
-    lista_final.sort(key=lambda x: x.get('DataPublicacao', ''), reverse=True)
+    # Ordena por data (mais recentes primeiro)
+    lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
     
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
     
     with open(ARQ_CHECKPOINT, 'w') as f:
         f.write(data_proxima.strftime('%Y%m%d'))
-    print(f" 💾 [Total no Banco: {len(lista_final)} registros]", end="", flush=True)
+    print(f" 💾 [Banco: {len(lista_final)} registros]", end="", flush=True)
 
 def ler_checkpoint():
     if os.path.exists(ARQ_CHECKPOINT):
@@ -111,17 +111,17 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
 def main():
     data_inicio = ler_checkpoint()
     
-    if data_inicio.date() > DATA_LIMITE_FINAL.date():
+    if data_inicio.date() > DATA_LIMIT_FINAL.date():
         print("🎯 Checkpoint atualizado. Nada a processar hoje.")
         return
 
     data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
-    if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
+    if data_fim > DATA_LIMIT_FINAL: data_fim = DATA_LIMIT_FINAL
 
-    print(f"--- 🚀 SNIPER ACUMULATIVO: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
+    print(f"--- 🚀 SNIPER TURBO V3: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
     
     session = criar_sessao()
-    banco_total = carregar_banco() # Carrega os dados antigos aqui
+    banco_total = carregar_banco()
     data_atual = data_inicio
 
     while data_atual <= data_fim:
@@ -130,7 +130,7 @@ def main():
         
         pagina_edital = 1
         while True:
-            url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+            url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
             params = {
                 "dataInicial": DATA_STR, "dataFinal": DATA_STR, 
                 "codigoModalidadeContratacao": "6", "pagina": pagina_edital, 
@@ -138,7 +138,7 @@ def main():
             }
 
             try:
-                resp = session.get(url, params=params, timeout=30)
+                resp = session.get(url_base, params=params, timeout=30)
                 if resp.status_code != 200: break
                 
                 json_resp = resp.json()
@@ -151,7 +151,10 @@ def main():
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                     
-                    # 1. Busca Todos os Itens do Edital (Paginação Segura)
+                    # Nome do Edital oficial (Ex: 133/2024)
+                    edital_oficial = f"{lic.get('numeroCompra')}/{ano}"
+                    
+                    # 1. Paginação Infinita de Itens
                     todos_itens_api = []
                     pag_item = 1
                     while True:
@@ -169,14 +172,13 @@ def main():
                     
                     if not todos_itens_api: continue
 
-                    # 2. Processamento Paralelo de Resultados
+                    # 2. Processamento Paralelo (Turbo)
                     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
                         futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in todos_itens_api]
                         
                         for future in concurrent.futures.as_completed(futures):
                             res = future.result()
                             if res:
-                                # Adiciona ou Atualiza no banco (A Chave evita duplicar se rodar o mesmo dia 2x)
                                 chave_unica = f"{id_lic}-{res['Item']}"
                                 banco_total[chave_unica] = {
                                     "DataPublicacao": DATA_STR,
@@ -185,13 +187,13 @@ def main():
                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
                                     "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
                                     "UASG": uasg,
-                                    "Edital": f"{str(seq).zfill(5)}/{ano}",
+                                    "Edital": edital_oficial, # <--- Corrigido aqui
                                     "Licitacao": id_lic,
                                     "IdPNCP": lic.get('idContratacaoPncp'),
                                     "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
                                     "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
                                     "Link": f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}",
-                                    **res # Acopla Item, Descricao, Qtd, Unitario, Total, Status
+                                    **res 
                                 }
                                 print("✅", end="", flush=True)
 
@@ -200,7 +202,7 @@ def main():
                 salvar_estado(banco_total, data_atual)
 
             except Exception as e:
-                print(f"Erro na página {pagina_edital}: {e}")
+                print(f"Erro: {e}")
                 break
         
         data_atual += timedelta(days=1)
