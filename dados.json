@@ -1886,5 +1886,31 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-16T11:49:24",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "017/2024",
+        "Link": "https://pncp.gov.br/app/editais/08887732000157/2024/5",
+        "UASG": "1",
+        "Edital": "00005/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE LAGOA GRANDE",
+        "UF": "PE",
+        "Municipio": "Lagoa Grande",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "1000052024",
+        "Itens": [
+            {
+                "Item": 207,
+                "Desc": "(COTA PRINCIPAL) 125,\"271091\",\"Amoxicilina Concentração: 25mg/Ml , Apresentação: Pó Para Suspensão Oral\",\"MATERIAL\",\"Frasco 60 ML\"",
+                "Qtd": 12750.0,
+                "Unitario": 3.0776,
+                "Total": 39239.4,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
