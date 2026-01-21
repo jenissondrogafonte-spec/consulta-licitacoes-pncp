@@ -2106,5 +2106,65 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-05-07T09:28:21",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "PE0043/2025",
+        "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/45",
+        "UASG": "13128798001094",
+        "Edital": "00045/2025",
+        "Orgao": "ESTADO DE SERGIPE",
+        "UF": "SE",
+        "Municipio": "Aracaju",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "13128798001094000452025",
+        "Itens": [
+            {
+                "Item": 13,
+                "Desc": "PARACETAMOL + CODEINA, FOSFATO - CONCENTRACAO/DOSAGEM 500 MG + 30 MG RESPECTIVAMENTE,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
+                "Qtd": 131250.0,
+                "Unitario": 0.33,
+                "Total": 43312.5,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 25,
+                "Desc": "ETOMIDATO - CONCENTRACAO/DOSAGEM 2 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA 10ML,VIA DE ADMINISTRACAO INTRAVENOSA",
+                "Qtd": 9000.0,
+                "Unitario": 9.89,
+                "Total": 89010.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-21T09:36:56",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "86 | Processo 978/2024",
+        "Link": "https://pncp.gov.br/app/editais/11892520000172/2024/140",
+        "UASG": "0002",
+        "Edital": "00140/2024",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BASTOS",
+        "UF": "SP",
+        "Municipio": "Bastos",
+        "Fornecedor": "N/A",
+        "CNPJ": "08778201000126",
+        "Licitacao": "0002001402024",
+        "Itens": [
+            {
+                "Item": 12,
+                "Desc": "CLONAZEPAM 2 5 MG ML SOLUCAO ORAL EM FRASCO CONTAGOTAS COM 20 ML EMBALADO INDIVIDUALMENTE.",
+                "Qtd": 2000.0,
+                "Unitario": 1.8,
+                "Total": 3600.0,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
