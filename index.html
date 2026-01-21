@@ -68,29 +68,18 @@
             <p class="mt-2 text-muted">Carregando dados do Sniper...</p>
         </div>
 
-        <div id="container-licitacoes">
-            </div>
+        <div id="container-licitacoes"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Formata Moeda
         const formatMoney = (value) => {
-            return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            return (value || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         };
 
-        // Formata Data (DD/MM/YYYY HH:mm)
-        const formatDate = (dateStr) => {
-            if (!dateStr) return '<span class="text-muted">-</span>';
-            const date = new Date(dateStr);
-            return isNaN(date) ? dateStr : date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
-        };
-
-        // Formata Data Simples (DD/MM/YYYY)
         const formatSimpleDate = (dateStr) => {
             if (!dateStr) return 'Não informado';
-            // Tenta converter se for string ISO
             const date = new Date(dateStr);
             if (!isNaN(date)) return date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
             return dateStr;
@@ -101,19 +90,32 @@
         async function carregarDados() {
             try {
                 const response = await fetch('dados.json?v=' + new Date().getTime());
-                if (!response.ok) throw new Error('Erro ao carregar JSON');
+                if (!response.ok) throw new Error('Arquivo dados.json não encontrado');
                 
-                dadosGlobais = await response.json();
+                let data = await response.json();
+                
+                // CORREÇÃO: Se os dados vierem como Objeto {}, converte para Lista []
+                if (!Array.isArray(data)) {
+                    dadosGlobais = Object.values(data);
+                } else {
+                    dadosGlobais = data;
+                }
                 
                 // Ordenar por data mais recente
-                dadosGlobais.sort((a, b) => new Date(b.DataResult) - new Date(a.DataResult));
+                dadosGlobais.sort((a, b) => new Date(b.DataResult || 0) - new Date(a.DataResult || 0));
 
                 atualizarDashboard(dadosGlobais);
                 renderizarLista(dadosGlobais);
                 document.getElementById('loading').style.display = 'none';
 
             } catch (error) {
-                document.getElementById('loading').innerHTML = `<div class="alert alert-danger">Erro: ${error.message}. Verifique se o dados.json existe.</div>`;
+                console.error(error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        Ainda não há dados para exibir ou o robô ainda não gerou o arquivo. <br>
+                        <small class="text-muted">Erro técnico: ${error.message}</small>
+                    </div>`;
             }
         }
 
@@ -122,10 +124,13 @@
             let totalItens = 0;
 
             dados.forEach(lic => {
-                lic.Itens.forEach(item => {
-                    totalVal += item.Total;
-                    totalItens++;
-                });
+                // Proteção: verifica se lic.Itens existe antes de rodar forEach
+                if (lic.Itens && Array.isArray(lic.Itens)) {
+                    lic.Itens.forEach(item => {
+                        totalVal += (item.Total || 0);
+                        totalItens++;
+                    });
+                }
             });
 
             document.getElementById('total-vencido').innerText = formatMoney(totalVal);
@@ -146,9 +151,9 @@
             }
 
             dados.forEach((lic, index) => {
-                const totalLic = lic.Itens.reduce((acc, it) => acc + it.Total, 0);
-                // Usa NumEdital (novo) ou fallback para Edital (antigo)
-                const numEditalDisplay = lic.NumEdital ? `Edital ${lic.NumEdital}` : `Edital ${lic.Edital}`;
+                const itens = lic.Itens || [];
+                const totalLic = itens.reduce((acc, it) => acc + (it.Total || 0), 0);
+                const numEditalDisplay = lic.NumEdital ? `Edital ${lic.NumEdital}` : `Edital ${lic.Edital || 'N/A'}`;
                 
                 const card = document.createElement('div');
                 card.className = 'card-licitacao p-4';
@@ -162,16 +167,16 @@
                         </div>
                         <div class="col-md-5">
                             <div class="num-edital-destaque mb-1">${numEditalDisplay}</div>
-                            <h6 class="mb-1 text-dark fw-bold">${lic.Orgao}</h6>
+                            <h6 class="mb-1 text-dark fw-bold">${lic.Orgao || 'Órgão não identificado'}</h6>
                             <div class="text-muted small">
-                                <i class="fas fa-map-marker-alt me-1"></i> ${lic.Municipio} - ${lic.UF}
-                                <span class="badge badge-uasg">UASG: ${lic.UASG}</span>
+                                <i class="fas fa-map-marker-alt me-1"></i> ${lic.Municipio || '-'} - ${lic.UF || '-'}
+                                <span class="badge badge-uasg">UASG: ${lic.UASG || 'N/A'}</span>
                             </div>
                         </div>
                         <div class="col-md-3 text-end">
                             <div class="text-muted small text-uppercase">Total Ganho</div>
                             <div class="valor-total">${formatMoney(totalLic)}</div>
-                            <div class="small text-muted">${lic.Itens.length} item(s)</div>
+                            <div class="small text-muted">${itens.length} item(s)</div>
                         </div>
                         <div class="col-md-3 text-end">
                             <a href="${lic.Link}" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-1">
@@ -218,16 +223,16 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${lic.Itens.map(item => `
+                                    ${itens.length > 0 ? itens.map(item => `
                                         <tr>
                                             <td class="fw-bold text-center bg-light">${item.Item}</td>
-                                            <td>${item.Desc}</td>
-                                            <td class="text-center">${item.Qtd}</td>
+                                            <td>${item.Desc || 'Sem descrição'}</td>
+                                            <td class="text-center">${item.Qtd || 0}</td>
                                             <td class="text-end">${formatMoney(item.Unitario)}</td>
                                             <td class="text-end fw-bold text-success">${formatMoney(item.Total)}</td>
                                             <td class="text-center"><span class="badge status-venceu">Venceu</span></td>
                                         </tr>
-                                    `).join('')}
+                                    `).join('') : '<tr><td colspan="6" class="text-center p-3">Nenhum detalhe de item disponível.</td></tr>'}
                                 </tbody>
                             </table>
                         </div>
@@ -237,12 +242,11 @@
             });
         }
 
-        // Filtro de Busca (Inclui UASG e Datas)
         document.getElementById('searchInput').addEventListener('keyup', function(e) {
             const termo = e.target.value.toLowerCase();
             const dadosFiltrados = dadosGlobais.filter(lic => 
-                lic.Orgao.toLowerCase().includes(termo) || 
-                lic.Municipio.toLowerCase().includes(termo) ||
+                (lic.Orgao && lic.Orgao.toLowerCase().includes(termo)) || 
+                (lic.Municipio && lic.Municipio.toLowerCase().includes(termo)) ||
                 (lic.UASG && lic.UASG.includes(termo)) ||
                 (lic.NumEdital && lic.NumEdital.toLowerCase().includes(termo)) ||
                 (lic.Edital && lic.Edital.toLowerCase().includes(termo))
@@ -250,10 +254,7 @@
             renderizarLista(dadosFiltrados);
         });
 
-        // Iniciar
         carregarDados();
-
-        // Atualização automática a cada 5 minutos
         setInterval(carregarDados, 300000); 
     </script>
 </body>
