@@ -14,7 +14,9 @@ DIAS_POR_CICLO = 1             # Processa 1 dia por vez (mude para 30 se quiser 
 MAX_WORKERS = 20               # Velocidade turbo (processos simultâneos)
 ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
-DATA_LIMITE_FINAL = datetime.now() # Coleta até o dia de hoje
+
+# CORREÇÃO DO NOME DA VARIÁVEL AQUI:
+DATA_LIMITE_FINAL = datetime.now() 
 
 # Desativa avisos de SSL (necessário para o site do governo)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -46,7 +48,6 @@ def carregar_banco():
                 conteudo = f.read().strip()
                 if not conteudo: return {}
                 dados = json.loads(conteudo)
-                # Chave única por item para evitar duplicatas
                 return {f"{i['Licitacao']}-{i['Item']}": i for i in dados}
         except Exception as e:
             print(f"⚠️ Aviso: Erro ao ler banco ({e}). Iniciando novo.")
@@ -55,7 +56,6 @@ def carregar_banco():
 def salvar_estado(banco, data_proxima):
     """Salva a lista completa (antigos + novos) e avança o checkpoint."""
     lista_final = list(banco.values())
-    # Ordena por data (mais recentes primeiro)
     lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
     
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
@@ -77,7 +77,6 @@ def ler_checkpoint():
 # WORKER: PROCESSAMENTO DE ITEM
 # -------------------------------------------------
 def processar_item_individual(session, it, cnpj_org, ano, seq):
-    """Verifica se a DROGAFONTE ganhou este item específico."""
     if not it.get('temResultado'):
         return None
 
@@ -111,12 +110,13 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
 def main():
     data_inicio = ler_checkpoint()
     
-    if data_inicio.date() > DATA_LIMIT_FINAL.date():
+    # LINHA CORRIGIDA ABAIXO PARA USAR 'DATA_LIMITE_FINAL':
+    if data_inicio.date() > DATA_LIMITE_FINAL.date():
         print("🎯 Checkpoint atualizado. Nada a processar hoje.")
         return
 
     data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
-    if data_fim > DATA_LIMIT_FINAL: data_fim = DATA_LIMIT_FINAL
+    if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
 
     print(f"--- 🚀 SNIPER TURBO V3: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
     
@@ -151,10 +151,9 @@ def main():
                     uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
                     id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                     
-                    # Nome do Edital oficial (Ex: 133/2024)
+                    # NOME DO EDITAL OFICIAL CORRIGIDO
                     edital_oficial = f"{lic.get('numeroCompra')}/{ano}"
                     
-                    # 1. Paginação Infinita de Itens
                     todos_itens_api = []
                     pag_item = 1
                     while True:
@@ -172,7 +171,6 @@ def main():
                     
                     if not todos_itens_api: continue
 
-                    # 2. Processamento Paralelo (Turbo)
                     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
                         futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in todos_itens_api]
                         
@@ -187,7 +185,7 @@ def main():
                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
                                     "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
                                     "UASG": uasg,
-                                    "Edital": edital_oficial, # <--- Corrigido aqui
+                                    "Edital": edital_oficial,
                                     "Licitacao": id_lic,
                                     "IdPNCP": lic.get('idContratacaoPncp'),
                                     "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
