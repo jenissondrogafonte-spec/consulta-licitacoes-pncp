@@ -1498,5 +1498,333 @@
                 "Status": "Venceu"
             }
         ]
+    },
+    {
+        "DataResult": "2025-01-16T07:41:24",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "90079/2024",
+        "Link": "https://pncp.gov.br/app/editais/00394452000103/2024/22748",
+        "UASG": "160495",
+        "Edital": "22748/2024",
+        "Orgao": "COMANDO DO EXERCITO",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "160495227482024",
+        "Itens": [
+            {
+                "Item": 274,
+                "Desc": "Ácido tranexâmico",
+                "Qtd": 2100.0,
+                "Unitario": 3.79,
+                "Total": 7959.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 275,
+                "Desc": "Adenosina",
+                "Qtd": 300.0,
+                "Unitario": 10.07,
+                "Total": 3021.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 276,
+                "Desc": "Albendazol",
+                "Qtd": 18600.0,
+                "Unitario": 0.4,
+                "Total": 7440.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 284,
+                "Desc": "Aminofilina",
+                "Qtd": 600.0,
+                "Unitario": 2.65,
+                "Total": 1590.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 285,
+                "Desc": "Amiodarona",
+                "Qtd": 1500.0,
+                "Unitario": 2.79,
+                "Total": 4185.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 313,
+                "Desc": "Cetoconazol",
+                "Qtd": 7477.0,
+                "Unitario": 2.7,
+                "Total": 20187.9,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 314,
+                "Desc": "Cetoprofeno",
+                "Qtd": 13277.0,
+                "Unitario": 3.3,
+                "Total": 43814.1,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 319,
+                "Desc": "Ciprofloxacino cloridrato",
+                "Qtd": 8201.0,
+                "Unitario": 0.19,
+                "Total": 1558.19,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 321,
+                "Desc": "Ciprofloxacino Cloridrato",
+                "Qtd": 560.0,
+                "Unitario": 13.38,
+                "Total": 7492.8,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 325,
+                "Desc": "Clindamicina",
+                "Qtd": 2000.0,
+                "Unitario": 2.62,
+                "Total": 5240.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 347,
+                "Desc": "Diclofenaco",
+                "Qtd": 80600.0,
+                "Unitario": 0.05,
+                "Total": 4030.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 357,
+                "Desc": "Epinefrina",
+                "Qtd": 2910.0,
+                "Unitario": 0.89,
+                "Total": 2589.9,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 371,
+                "Desc": "Fentanila",
+                "Qtd": 8000.0,
+                "Unitario": 2.78,
+                "Total": 22240.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 375,
+                "Desc": "Fluconazol",
+                "Qtd": 300.0,
+                "Unitario": 6.47,
+                "Total": 1941.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 403,
+                "Desc": "Levofloxacino",
+                "Qtd": 300.0,
+                "Unitario": 7.58,
+                "Total": 2274.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 408,
+                "Desc": "Lidocaína Cloridrato",
+                "Qtd": 1428.0,
+                "Unitario": 4.36,
+                "Total": 6226.08,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 435,
+                "Desc": "Morfina",
+                "Qtd": 3000.0,
+                "Unitario": 2.57,
+                "Total": 7710.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 478,
+                "Desc": "Quetiapina",
+                "Qtd": 12000.0,
+                "Unitario": 0.11,
+                "Total": 1320.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 490,
+                "Desc": "Sevoflurano",
+                "Qtd": 100.0,
+                "Unitario": 358.0,
+                "Total": 35800.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 561,
+                "Desc": "Dipirona Sódica",
+                "Qtd": 1000.0,
+                "Unitario": 1.12,
+                "Total": 1120.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 562,
+                "Desc": "Enoxaparina",
+                "Qtd": 5000.0,
+                "Unitario": 13.09,
+                "Total": 65450.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 564,
+                "Desc": "Etomidato",
+                "Qtd": 300.0,
+                "Unitario": 9.99,
+                "Total": 2997.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 571,
+                "Desc": "Ipratrópio Brometo",
+                "Qtd": 2947.0,
+                "Unitario": 0.88,
+                "Total": 2593.36,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 577,
+                "Desc": "Meropenem",
+                "Qtd": 8000.0,
+                "Unitario": 15.28,
+                "Total": 122240.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 597,
+                "Desc": "Atropina Sulfato",
+                "Qtd": 6273.0,
+                "Unitario": 0.71,
+                "Total": 4453.83,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 606,
+                "Desc": "Lidocaína Cloridrato",
+                "Qtd": 3000.0,
+                "Unitario": 1.0,
+                "Total": 3000.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-14T11:37:54",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "000027/2024",
+        "Link": "https://pncp.gov.br/app/editais/10414835000141/2024/51",
+        "UASG": "10414835000141-003",
+        "Edital": "00051/2024",
+        "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
+        "UF": "ES",
+        "Municipio": "Linhares",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "10414835000141-003000512024",
+        "Itens": [
+            {
+                "Item": 27,
+                "Desc": "DIAZEPAM DE 5 MG/ML SOLUCAO INJETAVEL DE 2 ML",
+                "Qtd": 6000.0,
+                "Unitario": 0.93,
+                "Total": 5580.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-14T12:39:05",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "52/2024",
+        "Link": "https://pncp.gov.br/app/editais/08162687000173/2024/255",
+        "UASG": "08162687000173",
+        "Edital": "00255/2024",
+        "Orgao": "MUNICIPIO DE GOIANINHA",
+        "UF": "RN",
+        "Municipio": "Goianinha",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "08162687000173002552024",
+        "Itens": [
+            {
+                "Item": 14,
+                "Desc": "CARBONATO DE LITIO 300MG",
+                "Qtd": 300000.0,
+                "Unitario": 0.21,
+                "Total": 63000.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 15,
+                "Desc": "LEVOMEPROMAZINA 100MG ",
+                "Qtd": 105000.0,
+                "Unitario": 0.59,
+                "Total": 61950.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 16,
+                "Desc": "LEVOMEPROMAZINA 25MG ",
+                "Qtd": 105000.0,
+                "Unitario": 0.51,
+                "Total": 53550.0,
+                "Status": "Venceu"
+            }
+        ]
+    },
+    {
+        "DataResult": "2025-01-14T19:35:38",
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "IdPNCP": null,
+        "NumEdital": "003/2025",
+        "Link": "https://pncp.gov.br/app/editais/06184253000149/2025/3",
+        "UASG": "702",
+        "Edital": "00003/2025",
+        "Orgao": "MUNICIPIO DE PEDREIRAS",
+        "UF": "MA",
+        "Municipio": "Pedreiras",
+        "Fornecedor": "DROGAFONTE LTDA",
+        "CNPJ": "08778201000126",
+        "Licitacao": "702000032025",
+        "Itens": [
+            {
+                "Item": 5169444,
+                "Desc": "CEFTRIAXONA 1G S/DILUENTE INJ.",
+                "Qtd": 15000.0,
+                "Unitario": 4.47,
+                "Total": 67050.0,
+                "Status": "Venceu"
+            },
+            {
+                "Item": 5169445,
+                "Desc": "CLORETO DE SÓDIO 0,9 100ML SISTEMA FECHADO",
+                "Qtd": 11250.0,
+                "Unitario": 4.01,
+                "Total": 45112.5,
+                "Status": "Venceu"
+            }
+        ]
     }
 ]
