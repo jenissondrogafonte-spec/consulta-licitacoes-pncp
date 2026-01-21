@@ -940,6 +940,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250127",
+        "DataResult": "2025-03-28T17:01:30",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "UASG": "39",
+        "Edital": "GC-SEPLAG-002-PL 0005/2025",
+        "Licitacao": "39000282025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/28",
+        "Item": 11,
+        "Descricao": "ALCOOL ETILICO 70%, SOLUCAO ANTISSEPTICA DE USO EXTERNO, ADULTO E PEDIATRICO. ALMOTOLIA CONTENDO 100ML, OBSERVADAS AS CONDICOES ESTABELECIDAS NA LEGISLACAO VIGENTE.",
+        "Qtd": 12000.0,
+        "Unitario": 1.57,
+        "Total": 18840.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250115",
         "DataResult": "2025-03-27T09:51:19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -1237,6 +1257,26 @@
         "Qtd": 22700.0,
         "Unitario": 0.84,
         "Total": 19068.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20250127",
+        "DataResult": "2025-03-10T18:21:30",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Afogados da Ingazeira",
+        "UASG": "5759",
+        "Edital": "3382/2025",
+        "Licitacao": "5759000592025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/59",
+        "Item": 11,
+        "Descricao": "(3200418) - RISPERIDONA - CONCENTRACAO/DOSAGEM 2 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
+        "Qtd": 12240.0,
+        "Unitario": 0.12,
+        "Total": 1495.73,
         "Status": "Venceu"
     },
     {
