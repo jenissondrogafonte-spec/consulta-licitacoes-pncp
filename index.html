@@ -7,255 +7,128 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
         .header-bg { background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: white; padding: 2rem 0; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .card-licitacao { border: none; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; transition: transform 0.2s; background: white; }
-        .card-licitacao:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
-        .status-badge { font-size: 0.8rem; padding: 0.4em 0.8em; border-radius: 20px; font-weight: 600; }
-        .status-venceu { background-color: #d1e7dd; color: #0f5132; }
+        .card-licitacao { border: none; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; background: white; }
         .valor-total { font-size: 1.1rem; font-weight: 700; color: #198754; }
-        .btn-expandir { border-radius: 20px; font-size: 0.9rem; }
-        .table-itens th { background-color: #f8f9fa; font-size: 0.85rem; text-transform: uppercase; color: #6c757d; }
-        .table-itens td { vertical-align: middle; font-size: 0.9rem; }
         .info-prazos { background-color: #e7f1ff; border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #0d6efd; }
-        .info-label { font-size: 0.75rem; text-transform: uppercase; color: #6c757d; font-weight: 700; display: block; margin-bottom: 2px; }
-        .info-value { font-size: 0.95rem; font-weight: 600; color: #212529; }
-        .num-edital-destaque { font-size: 1.1rem; color: #0d6efd; font-weight: 700; }
-        .id-pncp { font-family: monospace; color: #666; font-size: 0.85rem; }
-        .badge-uasg { background-color: #6c757d; color: white; font-size: 0.75rem; vertical-align: middle; margin-left: 8px; }
+        .badge-uasg { background-color: #6c757d; color: white; font-size: 0.75rem; }
     </style>
 </head>
 <body>
-
     <div class="header-bg">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h1 class="fw-bold mb-0"><i class="fas fa-crosshairs me-2"></i>SNIPER PNCP 2025</h1>
-                    <p class="mb-0 opacity-75">Monitoramento de Contratos e Atas - Drogafonte</p>
-                </div>
-                <div class="text-end">
-                    <span class="badge bg-light text-primary fs-6" id="total-vencido">R$ 0,00</span>
-                    <div class="small mt-1 text-white-50" id="last-update">Atualizando...</div>
-                </div>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="fw-bold mb-0"><i class="fas fa-crosshairs me-2"></i>SNIPER PNCP 2025</h1>
+                <p class="mb-0 opacity-75">Monitoramento Drogafonte</p>
+            </div>
+            <div class="text-end">
+                <span class="badge bg-light text-primary fs-5" id="total-geral">R$ 0,00</span>
             </div>
         </div>
     </div>
 
-    <div class="container mb-5">
+    <div class="container">
         <div class="row mb-4">
-            <div class="col-md-3">
-                <div class="card border-0 shadow-sm p-3 text-center">
-                    <div class="text-muted small text-uppercase fw-bold">Licitações Ganhas</div>
-                    <div class="h2 mb-0 fw-bold text-primary" id="count-licitacoes">0</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 shadow-sm p-3 text-center">
-                    <div class="text-muted small text-uppercase fw-bold">Itens Vencidos</div>
-                    <div class="h2 mb-0 fw-bold text-success" id="count-itens">0</div>
-                </div>
-            </div>
             <div class="col-md-6">
-                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por UASG, Órgão, Município ou Edital...">
+                <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="🔍 Buscar órgão, município ou edital...">
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="p-2 bg-white rounded shadow-sm">
+                    <small class="text-muted d-block">LICITAÇÕES</small>
+                    <strong id="count-lic" class="h4">0</strong>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="p-2 bg-white rounded shadow-sm">
+                    <small class="text-muted d-block">ITENS Ganhos</small>
+                    <strong id="count-itens" class="h4">0</strong>
+                </div>
             </div>
         </div>
 
         <div id="loading" class="text-center py-5">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-2 text-muted">Carregando dados do Sniper...</p>
+            <div class="spinner-border text-primary"></div>
         </div>
 
         <div id="container-licitacoes"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
-        const formatMoney = (value) => {
-            return (value || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-        };
+        const formatMoney = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-        const formatSimpleDate = (dateStr) => {
-            if (!dateStr) return 'Não informado';
-            const date = new Date(dateStr);
-            if (!isNaN(date)) return date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
-            return dateStr;
-        };
-
-        let dadosGlobais = [];
-
-        async function carregarDados() {
+        async function carregar() {
             try {
-                const response = await fetch('dados.json?v=' + new Date().getTime());
-                if (!response.ok) throw new Error('Arquivo dados.json não encontrado');
+                const r = await fetch('dados.json?v=' + Date.now());
+                const rawData = await r.json();
                 
-                let data = await response.json();
-                
-                // CORREÇÃO: Se os dados vierem como Objeto {}, converte para Lista []
-                if (!Array.isArray(data)) {
-                    dadosGlobais = Object.values(data);
-                } else {
-                    dadosGlobais = data;
-                }
-                
-                // Ordenar por data mais recente
-                dadosGlobais.sort((a, b) => new Date(b.DataResult || 0) - new Date(a.DataResult || 0));
+                // --- AGRUPADOR ---
+                const listaAgrupada = {};
+                let valorGeral = 0;
+                let itensGeral = 0;
 
-                atualizarDashboard(dadosGlobais);
-                renderizarLista(dadosGlobais);
+                rawData.forEach(item => {
+                    if (!listaAgrupada[item.Licitacao]) {
+                        listaAgrupada[item.Licitacao] = { ...item, Itens: [] };
+                    }
+                    listaAgrupada[item.Licitacao].Itens.push(item);
+                    valorGeral += item.Total;
+                    itensGeral++;
+                });
+
+                const dados = Object.values(listaAgrupada);
+                dados.sort((a,b) => b.DataPublicacao.localeCompare(a.DataPublicacao));
+
+                document.getElementById('total-geral').innerText = formatMoney(valorGeral);
+                document.getElementById('count-lic').innerText = dados.length;
+                document.getElementById('count-itens').innerText = itensGeral;
+                
+                render(dados);
                 document.getElementById('loading').style.display = 'none';
-
-            } catch (error) {
-                console.error(error);
-                document.getElementById('loading').innerHTML = `
-                    <div class="alert alert-warning">
-                        <i class="fas fa-exclamation-triangle me-2"></i>
-                        Ainda não há dados para exibir ou o robô ainda não gerou o arquivo. <br>
-                        <small class="text-muted">Erro técnico: ${error.message}</small>
-                    </div>`;
+            } catch (e) {
+                document.getElementById('loading').innerHTML = "Erro ao carregar dados.";
             }
         }
 
-        function atualizarDashboard(dados) {
-            let totalVal = 0;
-            let totalItens = 0;
-
-            dados.forEach(lic => {
-                // Proteção: verifica se lic.Itens existe antes de rodar forEach
-                if (lic.Itens && Array.isArray(lic.Itens)) {
-                    lic.Itens.forEach(item => {
-                        totalVal += (item.Total || 0);
-                        totalItens++;
-                    });
-                }
-            });
-
-            document.getElementById('total-vencido').innerText = formatMoney(totalVal);
-            document.getElementById('count-licitacoes').innerText = dados.length;
-            document.getElementById('count-itens').innerText = totalItens;
-            
-            const hoje = new Date();
-            document.getElementById('last-update').innerText = 'Última verificação: ' + hoje.toLocaleDateString() + ' ' + hoje.toLocaleTimeString();
-        }
-
-        function renderizarLista(dados) {
+        function render(dados) {
             const container = document.getElementById('container-licitacoes');
             container.innerHTML = '';
 
-            if (dados.length === 0) {
-                container.innerHTML = '<div class="text-center text-muted py-5">Nenhuma licitação encontrada.</div>';
-                return;
-            }
-
-            dados.forEach((lic, index) => {
-                const itens = lic.Itens || [];
-                const totalLic = itens.reduce((acc, it) => acc + (it.Total || 0), 0);
-                const numEditalDisplay = lic.NumEdital ? `Edital ${lic.NumEdital}` : `Edital ${lic.Edital || 'N/A'}`;
-                
+            dados.forEach((lic, i) => {
+                const totalLic = lic.Itens.reduce((a, b) => a + b.Total, 0);
                 const card = document.createElement('div');
-                card.className = 'card-licitacao p-4';
-                
+                card.className = 'card-licitacao p-4 mb-3 shadow-sm';
                 card.innerHTML = `
                     <div class="row align-items-center">
-                        <div class="col-md-1 text-center">
-                            <div class="bg-light rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
-                                <i class="fas fa-building text-primary fs-4"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="num-edital-destaque mb-1">${numEditalDisplay}</div>
-                            <h6 class="mb-1 text-dark fw-bold">${lic.Orgao || 'Órgão não identificado'}</h6>
-                            <div class="text-muted small">
-                                <i class="fas fa-map-marker-alt me-1"></i> ${lic.Municipio || '-'} - ${lic.UF || '-'}
-                                <span class="badge badge-uasg">UASG: ${lic.UASG || 'N/A'}</span>
-                            </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold mb-1">${lic.Orgao}</h5>
+                            <small class="text-muted">${lic.Municipio} - ${lic.UF} | Edital: ${lic.Edital} | UASG: ${lic.UASG}</small>
                         </div>
                         <div class="col-md-3 text-end">
-                            <div class="text-muted small text-uppercase">Total Ganho</div>
-                            <div class="valor-total">${formatMoney(totalLic)}</div>
-                            <div class="small text-muted">${itens.length} item(s)</div>
+                            <small class="text-muted d-block">GANHO NO EDITAL</small>
+                            <span class="valor-total">${formatMoney(totalLic)}</span>
                         </div>
                         <div class="col-md-3 text-end">
-                            <a href="${lic.Link}" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-1">
-                                <i class="fas fa-external-link-alt"></i> PNCP
-                            </a>
-                            <button class="btn btn-primary btn-sm btn-expandir mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${index}">
-                                Ver Itens <i class="fas fa-chevron-down ms-1"></i>
+                            <button class="btn btn-primary btn-sm" onclick="this.parentElement.parentElement.nextElementSibling.classList.toggle('d-none')">
+                                Detalhes (${lic.Itens.length} itens)
                             </button>
+                            <a href="${lic.Link}" target="_blank" class="btn btn-outline-secondary btn-sm">Link</a>
                         </div>
                     </div>
-
-                    <div class="collapse mt-3" id="collapse-${index}">
-                        <div class="info-prazos">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <span class="info-label"><i class="fas fa-calendar-day me-1"></i> Data Resultado</span>
-                                    <span class="info-value">${formatSimpleDate(lic.DataResult)}</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="info-label"><i class="far fa-calendar-check me-1"></i> Início Propostas</span>
-                                    <span class="info-value">${formatSimpleDate(lic.DtInicioPropostas)}</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="info-label"><i class="far fa-calendar-times me-1"></i> Fim Propostas</span>
-                                    <span class="info-value">${formatSimpleDate(lic.DtFimPropostas)}</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="info-label"><i class="fas fa-fingerprint me-1"></i> ID PNCP</span>
-                                    <span class="id-pncp text-break">${lic.IdPNCP || 'N/A'}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="table-responsive">
-                            <table class="table table-itens table-hover mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Descrição</th>
-                                        <th class="text-center">Qtd</th>
-                                        <th class="text-end">Unitário</th>
-                                        <th class="text-end">Total</th>
-                                        <th class="text-center">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${itens.length > 0 ? itens.map(item => `
-                                        <tr>
-                                            <td class="fw-bold text-center bg-light">${item.Item}</td>
-                                            <td>${item.Desc || 'Sem descrição'}</td>
-                                            <td class="text-center">${item.Qtd || 0}</td>
-                                            <td class="text-end">${formatMoney(item.Unitario)}</td>
-                                            <td class="text-end fw-bold text-success">${formatMoney(item.Total)}</td>
-                                            <td class="text-center"><span class="badge status-venceu">Venceu</span></td>
-                                        </tr>
-                                    `).join('') : '<tr><td colspan="6" class="text-center p-3">Nenhum detalhe de item disponível.</td></tr>'}
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="mt-3 d-none border-top pt-3">
+                        <table class="table table-sm">
+                            <thead><tr><th>Item</th><th>Descrição</th><th>Qtd</th><th>Unit.</th><th>Total</th></tr></thead>
+                            <tbody>
+                                ${lic.Itens.map(it => `<tr><td>${it.Item}</td><td>${it.Descricao}</td><td>${it.Qtd}</td><td>${formatMoney(it.Unitario)}</td><td>${formatMoney(it.Total)}</td></tr>`).join('')}
+                            </tbody>
+                        </table>
                     </div>
                 `;
                 container.appendChild(card);
             });
         }
-
-        document.getElementById('searchInput').addEventListener('keyup', function(e) {
-            const termo = e.target.value.toLowerCase();
-            const dadosFiltrados = dadosGlobais.filter(lic => 
-                (lic.Orgao && lic.Orgao.toLowerCase().includes(termo)) || 
-                (lic.Municipio && lic.Municipio.toLowerCase().includes(termo)) ||
-                (lic.UASG && lic.UASG.includes(termo)) ||
-                (lic.NumEdital && lic.NumEdital.toLowerCase().includes(termo)) ||
-                (lic.Edital && lic.Edital.toLowerCase().includes(termo))
-            );
-            renderizarLista(dadosFiltrados);
-        });
-
-        carregarDados();
-        setInterval(carregarDados, 300000); 
+        carregar();
     </script>
 </body>
 </html>
