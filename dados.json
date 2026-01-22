@@ -1560,6 +1560,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250207",
+        "DataResult": "2025-03-18T14:41:44",
+        "Orgao": "MUNICIPIO DE PORTO FERREIRA",
+        "UF": "SP",
+        "Municipio": "Porto Ferreira",
+        "UASG": "1",
+        "Edital": "2/2025",
+        "Licitacao": "1000032025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/45339363000194/2025/3",
+        "Item": 7,
+        "Descricao": "ESCITALOPRAM 20MG",
+        "Qtd": 80000.0,
+        "Unitario": 0.17,
+        "Total": 13600.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250116",
         "DataResult": "2025-03-17T14:00:25",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
