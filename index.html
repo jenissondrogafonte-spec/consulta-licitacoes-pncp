@@ -64,7 +64,19 @@
     </div>
 
     <script>
+        // Formatação padrão para valores totais (2 casas)
         const formatMoney = (v) => (v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        
+        // NOVO: Formatação específica para Unitário (4 casas decimais)
+        const formatUnitario = (v) => {
+            return (v || 0).toLocaleString('pt-BR', { 
+                style: 'currency', 
+                currency: 'BRL', 
+                minimumFractionDigits: 4, 
+                maximumFractionDigits: 4 
+            });
+        };
+
         const formatDate = (dateStr) => {
             if (!dateStr) return 'N/I';
             const date = new Date(dateStr);
@@ -81,7 +93,6 @@
                 const r = await fetch('dados.json?v=' + Date.now());
                 const rawData = await r.json();
                 
-                // Agrupamento por Licitação
                 const agrupado = {};
                 let valorGeral = 0;
                 let itensGeral = 0;
@@ -97,7 +108,6 @@
                 });
 
                 allData = Object.values(agrupado);
-                // Ordena por Data de Homologação/Resultado (mais recente primeiro)
                 allData.sort((a,b) => new Date(b.DataResult || 0) - new Date(a.DataResult || 0));
                 
                 filteredData = [...allData];
@@ -156,7 +166,7 @@
                                     <th>Item</th>
                                     <th>Descrição</th>
                                     <th class="text-center">Qtd</th>
-                                    <th class="text-end">Unit.</th>
+                                    <th class="text-end">Unit. (4 casas)</th>
                                     <th class="text-end">Total</th>
                                 </tr>
                             </thead>
@@ -164,9 +174,9 @@
                                 ${lic.Itens.map(it => `
                                     <tr>
                                         <td class="fw-bold">${it.Item}</td>
-                                        <td><small>${it.Descricao}</small></td>
+                                        <td><small>${it.Desc || it.Descricao}</small></td>
                                         <td class="text-center">${it.Qtd}</td>
-                                        <td class="text-end">${formatMoney(it.Unitario)}</td>
+                                        <td class="text-end">${formatUnitario(it.Unitario)}</td>
                                         <td class="text-end fw-bold text-success">${formatMoney(it.Total)}</td>
                                     </tr>`).join('')}
                             </tbody>
@@ -176,7 +186,6 @@
                 container.appendChild(card);
             });
 
-            // Gerencia botão "Carregar Mais"
             const paginationBtn = document.getElementById('pagination-container');
             if (filteredData.length > end) {
                 paginationBtn.classList.remove('d-none');
@@ -185,7 +194,6 @@
             }
         }
 
-        // Busca Inteligente (Inclui UASG)
         document.getElementById('searchInput').addEventListener('input', function(e) {
             const termo = e.target.value.toLowerCase();
             filteredData = allData.filter(lic => 
