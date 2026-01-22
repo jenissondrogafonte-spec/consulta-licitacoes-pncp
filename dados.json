@@ -3900,6 +3900,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250331",
+        "DataResult": "2025-03-31T07:09:31",
+        "Orgao": "SECRETARIA DA SAUDE",
+        "UF": "TO",
+        "Municipio": "Palmas",
+        "UASG": "925958",
+        "Edital": "90043/2025",
+        "Licitacao": "925958000622025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/25053117000164/2025/62",
+        "Item": 13,
+        "Descricao": "Losartana potássica",
+        "Qtd": 164661.0,
+        "Unitario": 0.04,
+        "Total": 6586.44,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250127",
         "DataResult": "2025-03-28T17:01:30",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
