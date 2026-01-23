@@ -7440,6 +7440,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250904",
+        "DataResult": "2025-09-04T08:37:27",
+        "Orgao": "MUNICIPIO DE REGISTRO",
+        "UF": "SP",
+        "Municipio": "Registro",
+        "UASG": "35.2025",
+        "Edital": "68/2025",
+        "Licitacao": "35.2025002362025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/45685872000179/2025/236",
+        "Item": 22,
+        "Descricao": "Folinato de Cálcio (Ácido folínico) 15 mg comprimido",
+        "Qtd": 3000.0,
+        "Unitario": 2.19,
+        "Total": 6570.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250520",
         "DataResult": "2025-09-04T08:12:35",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
