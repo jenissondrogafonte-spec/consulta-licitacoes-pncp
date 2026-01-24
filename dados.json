@@ -43380,6 +43380,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250108",
+        "DataResult": "2025-07-17T09:28:54",
+        "Orgao": "ESTADO DE SERGIPE",
+        "UF": "SE",
+        "Municipio": "Aracaju",
+        "UASG": "13128798001094",
+        "Edital": "PE0006/2025",
+        "Licitacao": "13128798001094000042025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/4",
+        "Item": 7,
+        "Descricao": "BROMOPRIDA - CONCENTRACAO/DOSAGEM 5 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETÁVEL,FORMA DE APRESENTACAO AMPOLA COM 2ML,VIA DE ADMINISTRACAO INTRAVENOSO OU INTRAMUSCULAR",
+        "Qtd": 72750.0,
+        "Unitario": 1.23,
+        "Total": 89482.5,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250716",
         "DataResult": "2025-07-16T15:49:12",
         "Orgao": "MUNICIPIO DE RIBEIRA DO AMPARO",
