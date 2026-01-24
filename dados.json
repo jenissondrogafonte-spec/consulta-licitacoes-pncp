@@ -1860,6 +1860,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251219",
+        "DataResult": "2025-12-19T16:09:27",
+        "Orgao": "MUNICIPIO DE ITANHAEM",
+        "UF": "SP",
+        "Municipio": "Itanhaém",
+        "UASG": "11.2025",
+        "Edital": "132/2025",
+        "Licitacao": "11.2025004042025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/46578498000175/2025/404",
+        "Item": 19,
+        "Descricao": "NORETISTERONA 50mg+ESTRADIOL 5mg/mL 1mL INJETÁVEL",
+        "Qtd": 12000.0,
+        "Unitario": 6.25,
+        "Total": 75000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251030",
         "DataResult": "2025-12-19T11:13:27",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
