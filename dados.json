@@ -1260,6 +1260,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251104",
+        "DataResult": "2025-12-03T10:44:06",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "UASG": "9261",
+        "Edital": "4414/2025",
+        "Licitacao": "9261006062025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/606",
+        "Item": 8,
+        "Descricao": "(3079465) - SULFAMETOXAZOL + TRIMETOPRIMA - CONCENTRACAO/DOSAGEM 80 MG/ML + 16 MG/ML RESPECTIVAMENTE,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
+        "Qtd": 4500.0,
+        "Unitario": 3.73,
+        "Total": 16770.15,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251024",
         "DataResult": "2025-12-02T09:53:49",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -3097,6 +3117,26 @@
         "Qtd": 900000.0,
         "Unitario": 0.038,
         "Total": 34200.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251104",
+        "DataResult": "2025-11-04T10:56:13",
+        "Orgao": "ESTADO DO RIO DE JANEIRO",
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "UASG": "294200",
+        "Edital": "PE 189/25/2025",
+        "Licitacao": "294200056822025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/42498600000171/2025/5682",
+        "Item": 2,
+        "Descricao": "GRUPO FARMACOLOGICO: DIURETICOS, PRINCIPIO ATIVO: FUROSEMIDA, FORMA FARMACEUTICA: COMPRIMIDO, CONCENTRACAO / DOSAGEM: 40, UNIDADE: MG, VOLUME: NAO APLICAVEL, APRESENTACAO: NAO APLICAVEL, ACESSORIO: NAO APLICAVEL",
+        "Qtd": 566440.0,
+        "Unitario": 0.0487,
+        "Total": 27585.628,
         "Status": "Venceu"
     },
     {
