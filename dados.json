@@ -96720,6 +96720,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250116",
+        "DataResult": "2025-01-27T08:35:09",
+        "Orgao": "MUNICIPIO DE TRES PONTAS",
+        "UF": "MG",
+        "Municipio": "Três Pontas",
+        "UASG": "02007",
+        "Edital": "PRE 1/2025",
+        "Licitacao": "02007000022025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/18245167000188/2025/2",
+        "Item": 77,
+        "Descricao": "FENOBARBITAL 100MG\r\n<p>BLISTER COM 10,15 OU 30 COMPRIMIDOS</p>",
+        "Qtd": 360000.0,
+        "Unitario": 0.123,
+        "Total": 44280.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250124",
         "DataResult": "2025-01-24T10:25:22",
         "Orgao": "MUNICIPIO DE COSMOPOLIS",
@@ -98797,6 +98817,26 @@
         "Qtd": 600.0,
         "Unitario": 1.5093,
         "Total": 905.58,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20250116",
+        "DataResult": "2025-01-16T11:49:24",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE LAGOA GRANDE",
+        "UF": "PE",
+        "Municipio": "Lagoa Grande",
+        "UASG": "1",
+        "Edital": "017/2024",
+        "Licitacao": "1000052024",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/08887732000157/2024/5",
+        "Item": 207,
+        "Descricao": "(COTA PRINCIPAL) 125,\"271091\",\"Amoxicilina Concentração: 25mg/Ml , Apresentação: Pó Para Suspensão Oral\",\"MATERIAL\",\"Frasco 60 ML\"",
+        "Qtd": 12750.0,
+        "Unitario": 3.0776,
+        "Total": 39239.4,
         "Status": "Venceu"
     },
     {
