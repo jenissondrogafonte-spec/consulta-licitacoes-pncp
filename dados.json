@@ -89620,6 +89620,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250220",
+        "DataResult": "2025-02-27T17:06:52",
+        "Orgao": "MUNICIPIO DE NEOPOLIS",
+        "UF": "SE",
+        "Municipio": "Neópolis",
+        "UASG": "671",
+        "Edital": "09/2025",
+        "Licitacao": "671000082025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/13111679000138/2025/8",
+        "Item": 5338015,
+        "Descricao": "Butilbrometo de escopolamina 20 mg/ml injetável",
+        "Qtd": 1000.0,
+        "Unitario": 1.14,
+        "Total": 1140.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250110",
         "DataResult": "2025-02-27T12:11:41",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
