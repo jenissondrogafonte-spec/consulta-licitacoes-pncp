@@ -98900,6 +98900,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250114",
+        "DataResult": "2025-01-16T07:41:24",
+        "Orgao": "COMANDO DO EXERCITO",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "UASG": "160495",
+        "Edital": "90079/2024",
+        "Licitacao": "160495227482024",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/00394452000103/2024/22748",
+        "Item": 371,
+        "Descricao": "Fentanila",
+        "Qtd": 8000.0,
+        "Unitario": 2.78,
+        "Total": 22240.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250116",
         "DataResult": "2025-01-16T07:06:33",
         "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
