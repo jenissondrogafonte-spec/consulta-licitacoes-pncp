@@ -1960,6 +1960,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251121",
+        "DataResult": "2025-12-04T07:27:25",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "DF",
+        "Municipio": "Brasília",
+        "UASG": "155007",
+        "Edital": "90130/2025",
+        "Licitacao": "155007039502025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3950",
+        "Item": 88,
+        "Descricao": "Sulfametoxazol",
+        "Qtd": 25440.0,
+        "Unitario": 3.97,
+        "Total": 100996.8,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251104",
         "DataResult": "2025-12-03T10:44:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
