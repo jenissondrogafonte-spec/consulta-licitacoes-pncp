@@ -67240,6 +67240,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250228",
+        "DataResult": "2025-05-05T12:28:27",
+        "Orgao": "MUNICIPIO DO CABO DE SANTO AGOSTINHO",
+        "UF": "PE",
+        "Municipio": "Cabo de Santo Agostinho",
+        "UASG": "982357",
+        "Edital": "00005/2025",
+        "Licitacao": "982357000132025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/11294402000162/2025/13",
+        "Item": 122,
+        "Descricao": "[COTA AMPLA CONCORRÊNCIA] - CARBONATO DE LITIO 300MG",
+        "Qtd": 300000.0,
+        "Unitario": 0.193,
+        "Total": 57900.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250109",
         "DataResult": "2025-05-05T10:49:45",
         "Orgao": "MUNICIPIO DE FRANCA",
