@@ -2820,6 +2820,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251118",
+        "DataResult": "2025-11-18T07:04:09",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "UASG": "926150",
+        "Edital": "90837/2025",
+        "Licitacao": "926150011542025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1154",
+        "Item": 1,
+        "Descricao": "Nitroglicerina",
+        "Qtd": 5020.0,
+        "Unitario": 34.9965,
+        "Total": 175682.43,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251024",
         "DataResult": "2025-11-17T15:40:48",
         "Orgao": "MUNICIPIO DE PAULINIA",
