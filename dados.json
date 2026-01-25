@@ -5780,6 +5780,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250523",
+        "DataResult": "2025-11-18T12:16:12",
+        "Orgao": "FUNDO ESTADUAL DE SAUDE DO ESTADO DA BAHIA",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "UASG": "19146",
+        "Edital": "19146PE0022025/2025",
+        "Licitacao": "19146036592025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/05816630000152/2025/3659",
+        "Item": 1145860,
+        "Descricao": "AMIODARONA, cloridrato, 50mg/mL, solucao injetavel, ampola, 3 mL",
+        "Qtd": 6000.0,
+        "Unitario": 3.2675,
+        "Total": 19605.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251118",
         "DataResult": "2025-11-18T07:04:09",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
