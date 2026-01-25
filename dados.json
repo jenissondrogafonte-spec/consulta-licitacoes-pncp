@@ -46720,6 +46720,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250516",
+        "DataResult": "2025-07-11T13:38:37",
+        "Orgao": "MUNICIPIO DE SANTA BRANCA",
+        "UF": "SP",
+        "Municipio": "Santa Branca",
+        "UASG": "1",
+        "Edital": "16/2025",
+        "Licitacao": "1000792025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/79",
+        "Item": 65,
+        "Descricao": "FLUCONAZOL 150 MG",
+        "Qtd": 1500.0,
+        "Unitario": 0.38,
+        "Total": 570.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250711",
         "DataResult": "2025-07-11T12:18:51",
         "Orgao": "MUNICIPIO DE SAO JOSE DE MIPIBU",
