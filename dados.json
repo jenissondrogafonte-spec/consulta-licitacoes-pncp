@@ -47480,6 +47480,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250711",
+        "DataResult": "2025-07-11T16:23:18",
+        "Orgao": "MUNICIPIO DE PINHEIROS",
+        "UF": "ES",
+        "Municipio": "Pinheiros",
+        "UASG": "02",
+        "Edital": "000034/2025",
+        "Licitacao": "02000972025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/27174085000180/2025/97",
+        "Item": 265,
+        "Descricao": "Ambroxol 15mg/5ml  Xarope infantil    Frascos com 100ml + copo dosador Ambroxol 15mg/5ml  Xarope infantil  Frascos com 100ml + copo dosador",
+        "Qtd": 2000.0,
+        "Unitario": 2.19,
+        "Total": 4380.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250516",
         "DataResult": "2025-07-11T13:38:37",
         "Orgao": "MUNICIPIO DE SANTA BRANCA",
