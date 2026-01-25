@@ -41460,6 +41460,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250730",
+        "DataResult": "2025-07-30T14:47:00",
+        "Orgao": "MUNICIPIO DE PAULINIA",
+        "UF": "SP",
+        "Municipio": "Paulínia",
+        "UASG": "1",
+        "Edital": "130/2025",
+        "Licitacao": "1002632025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/45751435000106/2025/263",
+        "Item": 79,
+        "Descricao": "MORFINA, SULFATO 1 MG/ML SOLUÇÃO INJETÁVEL AMPOLA DE 2 ML",
+        "Qtd": 3000.0,
+        "Unitario": 5.93,
+        "Total": 17790.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250314",
         "DataResult": "2025-07-30T12:51:34",
         "Orgao": "ESTADO DO CEARA",
@@ -41937,6 +41957,26 @@
         "Qtd": 561100.0,
         "Unitario": 0.4588,
         "Total": 257432.68,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20250730",
+        "DataResult": "2025-07-30T07:32:20",
+        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "UASG": "925550",
+        "Edital": "90117/2025",
+        "Licitacao": "925550002212025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/08241754000145/2025/221",
+        "Item": 14,
+        "Descricao": "Compressa Campo Operatório",
+        "Qtd": 4455800.0,
+        "Unitario": 0.4977,
+        "Total": 2217651.66,
         "Status": "Venceu"
     },
     {
