@@ -33100,6 +33100,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250724",
+        "DataResult": "2025-08-25T15:17:13",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "UASG": "39",
+        "Edital": "GC-SEPLAG-003-PL 0020/2025",
+        "Licitacao": "39001922025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/192",
+        "Item": 7,
+        "Descricao": "PARACETAMOL GOTAS 200 MG/ML, FRASCO COM 15ML",
+        "Qtd": 54000.0,
+        "Unitario": 1.2481,
+        "Total": 67397.4,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250825",
         "DataResult": "2025-08-25T07:08:34",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
