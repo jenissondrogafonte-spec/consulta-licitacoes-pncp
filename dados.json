@@ -23280,6 +23280,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250701",
+        "DataResult": "2025-09-19T10:57:04",
+        "Orgao": "FUNDACAO ESTATAL SAUDE DA FAMILIA - FESF",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "UASG": "000000002",
+        "Edital": "029/2025/2025",
+        "Licitacao": "000000002000422025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/11020634000122/2025/42",
+        "Item": 100001,
+        "Descricao": "OXACILINA, sodica, 500mg, po para solucao injetavel, frasco-ampola. A embalagem deve apresentar a frase: venda proibida pelo comercio. O fornecedor deve apresentar bula, registro do produto na ANVISA e certificado de boas praticas de fabricacao - CBPF em conformidade com as resolucoes da ANVISA em vigencia. Em caso de fabricante fora do MERCOSUL, apresentar documento do pais de origem traduzido por tradutor oficial. Unidade de fornecimento: frasco-ampola.",
+        "Qtd": 20000.0,
+        "Unitario": 4.2,
+        "Total": 84000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250507",
         "DataResult": "2025-09-19T10:55:32",
         "Orgao": "FUNDACAO ESTATAL SAUDE DA FAMILIA - FESF",
@@ -51217,6 +51237,26 @@
         "Qtd": 640.0,
         "Unitario": 0.4,
         "Total": 256.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20250701",
+        "DataResult": "2025-07-02T14:55:47",
+        "Orgao": "MUNICIPIO DE CAAPORA",
+        "UF": "PB",
+        "Municipio": "Caaporã",
+        "UASG": "2190",
+        "Edital": "17/2025",
+        "Licitacao": "2190000332025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/08865644000154/2025/33",
+        "Item": 108,
+        "Descricao": "RISPERIDONA 2MG C/30 COMPRIMIDOS",
+        "Qtd": 1600.0,
+        "Unitario": 3.3,
+        "Total": 5280.0,
         "Status": "Venceu"
     },
     {
