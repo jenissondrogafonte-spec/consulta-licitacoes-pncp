@@ -64260,6 +64260,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250405",
+        "DataResult": "2025-05-14T14:24:06",
+        "Orgao": "MUNICIPIO DE PIRACAIA",
+        "UF": "SP",
+        "Municipio": "Piracaia",
+        "UASG": "7308",
+        "Edital": "PE 016/2025",
+        "Licitacao": "7308000272025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/45279627000161/2025/27",
+        "Item": 84,
+        "Descricao": "FENOBARBITAL 100MG BLÍSTER",
+        "Qtd": 45000.0,
+        "Unitario": 0.1265,
+        "Total": 5692.5,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250514",
         "DataResult": "2025-05-14T13:13:32",
         "Orgao": "MUNICIPIO DE CARMO DO PARANAIBA",
