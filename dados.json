@@ -66620,6 +66620,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250509",
+        "DataResult": "2025-05-09T07:21:51",
+        "Orgao": "MUNICIPIO DE MONTE ALTO",
+        "UF": "SP",
+        "Municipio": "Monte Alto",
+        "UASG": "986727",
+        "Edital": "90040/2025",
+        "Licitacao": "986727002662025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/51816247000111/2025/266",
+        "Item": 81,
+        "Descricao": "Midazolam",
+        "Qtd": 8000.0,
+        "Unitario": 1.57,
+        "Total": 12560.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250312",
         "DataResult": "2025-05-08T11:40:37",
         "Orgao": "MUNICIPIO DE CRAIBAS",
