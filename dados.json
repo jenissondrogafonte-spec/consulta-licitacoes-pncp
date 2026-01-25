@@ -6120,6 +6120,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250317",
+        "DataResult": "2025-11-14T17:55:46",
+        "Orgao": "MUNICIPIO DE PILAO ARCADO",
+        "UF": "BA",
+        "Municipio": "Pilão Arcado",
+        "UASG": "1",
+        "Edital": "PE 011/2025",
+        "Licitacao": "1000342025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/13692033000191/2025/34",
+        "Item": 64,
+        "Descricao": "SINVASTATINA 20MG COMPRIMIDO",
+        "Qtd": 50000.0,
+        "Unitario": 0.06,
+        "Total": 3000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T10:43:41",
         "Orgao": "MUNICIPIO DE ITABIRA",
