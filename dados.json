@@ -45900,6 +45900,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250602",
+        "DataResult": "2025-07-14T11:11:36",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SACRAMENTO",
+        "UF": "MG",
+        "Municipio": "Sacramento",
+        "UASG": "11",
+        "Edital": "PE 16/2025",
+        "Licitacao": "11000092025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/10547985000123/2025/9",
+        "Item": 99,
+        "Descricao": "CARBAMAZEPINA 200 MG COMPRIMIDO",
+        "Qtd": 90000.0,
+        "Unitario": 0.1538,
+        "Total": 13842.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250714",
         "DataResult": "2025-07-14T10:02:26",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
