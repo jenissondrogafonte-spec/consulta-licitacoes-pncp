@@ -84480,6 +84480,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250319",
+        "DataResult": "2025-03-19T10:40:01",
+        "Orgao": "MUNICIPIO DE CARANGOLA",
+        "UF": "MG",
+        "Municipio": "Carangola",
+        "UASG": "19279827000104-001",
+        "Edital": "000028/2025",
+        "Licitacao": "19279827000104-001000492025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/19279827000104/2025/49",
+        "Item": 173,
+        "Descricao": "TIAMINACLORIDRATO",
+        "Qtd": 40000.0,
+        "Unitario": 0.2,
+        "Total": 8000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250120",
         "DataResult": "2025-03-19T10:27:32",
         "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
