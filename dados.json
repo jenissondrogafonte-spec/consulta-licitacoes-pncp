@@ -80660,6 +80660,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250401",
+        "DataResult": "2025-04-01T09:44:34",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE ITABUNA - SMS",
+        "UF": "BA",
+        "Municipio": "Itabuna",
+        "UASG": "3219",
+        "Edital": "001/2025",
+        "Licitacao": "3219000012025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/08218991000195/2025/1",
+        "Item": 5523109,
+        "Descricao": "METRONIDAZOL 5mg/mL, solução injetável, frasco-ampola ou bolsa em sistema fechado, 100mL(500mg). A embalagem deve apresentar a frase: venda proibida pelo comercio. O fornecedor deve apresentar bula, registro do produto na ANVISA e certificado de boas praticas de fabricação - CBPF em conformidade com as resoluções da ANVISA em vigência. ",
+        "Qtd": 500.0,
+        "Unitario": 4.37,
+        "Total": 2185.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250227",
         "DataResult": "2025-03-31T09:02:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
