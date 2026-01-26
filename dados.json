@@ -3240,6 +3240,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251210",
+        "DataResult": "2025-12-10T16:11:07",
+        "Orgao": "MUNICIPIO DE BARRA DE SANTANA",
+        "UF": "PB",
+        "Municipio": "Barra de Santana",
+        "UASG": "3364",
+        "Edital": "047/2025",
+        "Licitacao": "3364000882025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/01612535000186/2025/88",
+        "Item": 6866808,
+        "Descricao": "AGUA PARA INJEÇÃO",
+        "Qtd": 8000.0,
+        "Unitario": 0.17,
+        "Total": 1360.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250624",
         "DataResult": "2025-12-10T15:44:19",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
