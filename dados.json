@@ -2380,6 +2380,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251217",
+        "DataResult": "2025-12-17T09:36:40",
+        "Orgao": "MUNICIPIO DE CUNHA",
+        "UF": "SP",
+        "Municipio": "Cunha",
+        "UASG": "1699",
+        "Edital": "048/2025",
+        "Licitacao": "1699001362025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/45704053000121/2025/136",
+        "Item": 198,
+        "Descricao": "HIDROCORTISONA, SUCCINATO  SODICO 500MG PO PARA SOLUCAO  INJETAVEL IV/IM.HIDROCORTISONA, SUCCINATO  SODICO 500MG PO PARA SOLUCAO  INJETAVEL IV/IM.",
+        "Qtd": 300.0,
+        "Unitario": 4.5571,
+        "Total": 1367.13,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251216",
         "DataResult": "2025-12-16T08:28:16",
         "Orgao": "MUNICIPIO DE ANGICOS",
