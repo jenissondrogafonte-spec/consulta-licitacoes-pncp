@@ -21940,6 +21940,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250922",
+        "DataResult": "2025-09-24T12:21:59",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "SE",
+        "Municipio": "São Cristóvão",
+        "UASG": "574",
+        "Edital": "21/2025",
+        "Licitacao": "574001042025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/11370658000101/2025/104",
+        "Item": 6522662,
+        "Descricao": "HIDROCLOROTIAZIDA, DOSAGEM:25 MG",
+        "Qtd": 412500.0,
+        "Unitario": 0.02,
+        "Total": 8250.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250924",
         "DataResult": "2025-09-24T09:02:15",
         "Orgao": "MUNICIPIO DE PICUI",
