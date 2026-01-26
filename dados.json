@@ -9220,6 +9220,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251105",
+        "DataResult": "2025-11-05T10:59:46",
+        "Orgao": "MUNICIPIO DE NISIA FLORESTA",
+        "UF": "RN",
+        "Municipio": "Nísia Floresta",
+        "UASG": "08167306000149",
+        "Edital": "22/2025",
+        "Licitacao": "08167306000149001732025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Item": 95,
+        "Descricao": "RISPERIDONA  1 MG/ML ",
+        "Qtd": 1500.0,
+        "Unitario": 9.35,
+        "Total": 14025.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250924",
         "DataResult": "2025-11-05T10:18:01",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE ITABAIANA SERGIPE",
