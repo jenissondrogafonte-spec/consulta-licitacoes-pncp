@@ -38720,6 +38720,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250806",
+        "DataResult": "2025-08-08T10:52:11",
+        "Orgao": "MUNICIPIO DE SANTA FE DO SUL",
+        "UF": "SP",
+        "Municipio": "Santa Fé do Sul",
+        "UASG": "987033",
+        "Edital": "90028/2025",
+        "Licitacao": "987033012512025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/45138070000149/2025/1251",
+        "Item": 135,
+        "Descricao": "Prednisona",
+        "Qtd": 30000.0,
+        "Unitario": 0.1593,
+        "Total": 4779.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250808",
         "DataResult": "2025-08-08T08:23:37",
         "Orgao": "FUNDACAO PUBLICA ESTADUAL HOSPITAL DE CLNICAS GASPAR VIANNA - FHCGV",
@@ -39637,6 +39657,26 @@
         "Qtd": 8000.0,
         "Unitario": 0.16,
         "Total": 1280.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20250806",
+        "DataResult": "2025-08-06T08:05:09",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "UASG": "926150",
+        "Edital": "90357/2025",
+        "Licitacao": "926150006282025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/628",
+        "Item": 9,
+        "Descricao": "Gabapentina",
+        "Qtd": 1834596.0,
+        "Unitario": 0.2359,
+        "Total": 432781.1964,
         "Status": "Venceu"
     },
     {
