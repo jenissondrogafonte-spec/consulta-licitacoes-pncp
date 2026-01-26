@@ -31080,6 +31080,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250813",
+        "DataResult": "2025-09-01T09:02:51",
+        "Orgao": "MUNICIPIO DE BRASOPOLIS",
+        "UF": "MG",
+        "Municipio": "Brazópolis",
+        "UASG": "480",
+        "Edital": "028/2025",
+        "Licitacao": "480000352025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/18025890000151/2025/35",
+        "Item": 1909947,
+        "Descricao": "Folinato de calcio 15mg",
+        "Qtd": 10000.0,
+        "Unitario": 2.16,
+        "Total": 21600.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20250807",
         "DataResult": "2025-09-01T08:47:42",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
