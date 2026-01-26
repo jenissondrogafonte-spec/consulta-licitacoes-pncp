@@ -7960,6 +7960,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251001",
+        "DataResult": "2025-11-10T15:26:38",
+        "Orgao": "HOSPITAL MUNICIPAL DR. TABAJARA RAMOS",
+        "UF": "SP",
+        "Municipio": "Mogi Guaçu",
+        "UASG": "220",
+        "Edital": "035/2025",
+        "Licitacao": "220001612025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/59015438000196/2025/161",
+        "Item": 97,
+        "Descricao": "TERBUTALINA 0,5 MG/ML - 1 ML         ",
+        "Qtd": 5000.0,
+        "Unitario": 1.1055,
+        "Total": 5527.5,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251014",
         "DataResult": "2025-11-10T12:56:10",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
