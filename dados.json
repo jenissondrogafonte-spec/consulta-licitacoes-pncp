@@ -4500,6 +4500,26 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20250919",
+        "DataResult": "2025-11-27T19:39:05",
+        "Orgao": "MUNICIPIO DE ITAPEVA",
+        "UF": "SP",
+        "Municipio": "Itapeva",
+        "UASG": "909",
+        "Edital": "32/2025/2025",
+        "Licitacao": "909000992025",
+        "IdPNCP": null,
+        "DtInicioPropostas": null,
+        "DtFimPropostas": null,
+        "Link": "https://pncp.gov.br/app/editais/46634358000177/2025/99",
+        "Item": 75,
+        "Descricao": "Clorpromazina, cloridrato - Comprimido 100 mg",
+        "Qtd": 200000.0,
+        "Unitario": 0.3,
+        "Total": 60000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-26T21:01:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
