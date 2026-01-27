@@ -2,20 +2,16 @@ import requests
 import json
 from datetime import datetime, timedelta
 import os
-import time
-import urllib3
 import concurrent.futures
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import urllib3
 
-# --- CONFIGURAÇÕES GERAIS ---
+# --- CONFIGURAÇÕES ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
-MAX_WORKERS = 20               # Velocidade turbo (processos simultâneos)
+MAX_WORKERS = 20               # Processamento paralelo (Turbo)
 ARQ_DADOS = 'dados.json'
-
-# Configuração do ciclo do BOT
-INTERVALO_REPETICAO_DIAS = 15  # O bot vai rodar a cada 15 dias
-JANELA_BUSCA_DIAS = 365        # O bot vai olhar os últimos 365 dias
+DIAS_RETROATIVOS = 365         # Quantos dias para trás ele vai buscar
 
 # Desativa avisos de SSL (necessário para o site do governo)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -26,13 +22,14 @@ HEADERS = {
 }
 
 # -------------------------------------------------
-# MOTOR DE CONEXÃO E BANCO DE DADOS
+# 1. MOTOR DE CONEXÃO E ARQUIVOS
 # -------------------------------------------------
 def criar_sessao():
     """Cria uma sessão HTTP robusta com reconexão automática."""
     session = requests.Session()
     session.headers.update(HEADERS)
     session.verify = False
+    # Configura retries para casos de falha momentânea do site
     retry = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS)
     session.mount('https://', adapter)
@@ -40,37 +37,40 @@ def criar_sessao():
     return session
 
 def carregar_banco():
-    """Carrega os dados existentes para ACUMULAR resultados em vez de sobrescrever."""
+    """Lê o arquivo JSON atual para não perder o histórico antigo."""
     if os.path.exists(ARQ_DADOS):
         try:
             with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
                 conteudo = f.read().strip()
                 if not conteudo: return {}
                 dados = json.loads(conteudo)
-                # Usa chave composta para evitar duplicatas
+                # Cria um dicionário usando ID único para evitar duplicidade
                 return {f"{i['Licitacao']}-{i['Item']}": i for i in dados}
         except Exception as e:
             print(f"⚠️ Aviso: Erro ao ler banco ({e}). Iniciando novo.")
     return {}
 
 def salvar_estado(banco):
-    """Salva a lista completa no JSON."""
+    """Grava os dados no disco."""
     lista_final = list(banco.values())
+    # Ordena por data (mais recente primeiro)
     lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
     
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
     
-    print(f" 💾 [Banco: {len(lista_final)} registros]", end="", flush=True)
+    print(f" 💾 [Total salvo: {len(lista_final)} registros]", end="", flush=True)
 
 # -------------------------------------------------
-# WORKER: PROCESSAMENTO DE ITEM
+# 2. WORKER: PROCESSA UM ÚNICO ITEM
 # -------------------------------------------------
 def processar_item_individual(session, it, cnpj_org, ano, seq):
+    """Verifica se a DROGAFONTE ganhou este item específico."""
     if not it.get('temResultado'):
         return None
 
     numero_item = it.get('numeroItem')
+    # URL para pegar o resultado específico do item
     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{numero_item}/resultados"
     
     try:
@@ -80,7 +80,9 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
             if isinstance(vends, dict): vends = [vends]
             
             for v in vends:
+                # Limpa formatação do CNPJ para comparar
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
+                
                 if CNPJ_ALVO in ni:
                     return {
                         "Item": numero_item,
@@ -95,19 +97,23 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
     return None
 
 # -------------------------------------------------
-# LÓGICA DE VARREDURA (UM DIA)
+# 3. LÓGICA DE VARREDURA (LOOP DIÁRIO)
 # -------------------------------------------------
-def varrer_dia(session, banco_total, data_alvo):
-    DATA_STR = data_alvo.strftime('%Y%m%d')
-    print(f"\n📅 Processando dia {data_alvo.strftime('%d/%m/%Y')}:", end=" ", flush=True)
+def processar_dia(session, banco_total, data_atual):
+    DATA_STR = data_atual.strftime('%Y%m%d')
+    print(f"\n📅 Dia {data_atual.strftime('%d/%m/%Y')}:", end=" ", flush=True)
     
     pagina_edital = 1
+    
     while True:
+        # Busca todas as licitações onde o CNPJ participou naquele dia
         url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {
             "dataInicial": DATA_STR, "dataFinal": DATA_STR, 
-            "codigoModalidadeContratacao": "6", "pagina": pagina_edital, 
-            "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO
+            "codigoModalidadeContratacao": "6", # Pregão
+            "pagina": pagina_edital, 
+            "tamanhoPagina": 50, 
+            "niFornecedor": CNPJ_ALVO
         }
 
         try:
@@ -116,8 +122,13 @@ def varrer_dia(session, banco_total, data_alvo):
             
             json_resp = resp.json()
             lics = json_resp.get('data', [])
-            if not lics: break
+            
+            # Se não tem nada nesta página, sai do loop de paginação
+            if not lics: 
+                if pagina_edital == 1: print("Sem registros.", end="")
+                break
 
+            # Itera sobre cada licitação encontrada
             for lic in lics:
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
                 ano, seq = lic.get('anoCompra'), lic.get('sequencialCompra')
@@ -125,7 +136,7 @@ def varrer_dia(session, banco_total, data_alvo):
                 id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                 edital_oficial = f"{lic.get('numeroCompra')}/{ano}"
                 
-                # Busca itens (Paginação interna dos itens)
+                # --- PAGINAÇÃO INTERNA DOS ITENS DA LICITAÇÃO ---
                 todos_itens_api = []
                 pag_item = 1
                 while True:
@@ -143,7 +154,7 @@ def varrer_dia(session, banco_total, data_alvo):
                 
                 if not todos_itens_api: continue
 
-                # Processamento paralelo dos itens
+                # --- PROCESSAMENTO PARALELO (SPEED TURBO) ---
                 with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
                     futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in todos_itens_api]
                     
@@ -151,6 +162,7 @@ def varrer_dia(session, banco_total, data_alvo):
                         res = future.result()
                         if res:
                             chave_unica = f"{id_lic}-{res['Item']}"
+                            # Salva/Atualiza no dicionário
                             banco_total[chave_unica] = {
                                 "DataPublicacao": DATA_STR,
                                 "DataResult": lic.get('dataAtualizacao') or DATA_STR,
@@ -160,57 +172,43 @@ def varrer_dia(session, banco_total, data_alvo):
                                 "UASG": uasg,
                                 "Edital": edital_oficial,
                                 "Licitacao": id_lic,
-                                "IdPNCP": lic.get('idContratacaoPncp'),
-                                "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
-                                "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
                                 "Link": f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}",
                                 **res 
                             }
                             print("✅", end="", flush=True)
 
+            # Verifica se tem mais páginas de editais no mesmo dia
             if pagina_edital >= json_resp.get('totalPaginas', 1): break
             pagina_edital += 1
-            salvar_estado(banco_total)
 
         except Exception as e:
-            print(f"Erro no dia {DATA_STR}: {e}")
+            print(f" (Erro: {e})", end="")
             break
 
 # -------------------------------------------------
-# LOOP PRINCIPAL (BOT)
+# 4. EXECUÇÃO PRINCIPAL
 # -------------------------------------------------
 def main():
-    session = criar_sessao()
+    print(f"--- 🚀 INICIANDO VARREDURA (Últimos {DIAS_RETROATIVOS} dias) ---")
     
-    while True:
-        # Define o intervalo: Hoje - 365 dias até Hoje
-        hoje = datetime.now()
-        data_inicio = hoje - timedelta(days=JANELA_BUSCA_DIAS)
+    session = criar_sessao()
+    banco_total = carregar_banco()
+    
+    data_final = datetime.now()
+    data_inicial = data_final - timedelta(days=DIAS_RETROATIVOS)
+    
+    data_atual = data_inicial
+
+    # Loop dia a dia até chegar em hoje
+    while data_atual <= data_final:
+        processar_dia(session, banco_total, data_atual)
         
-        print(f"\n{'='*60}")
-        print(f"🤖 INICIANDO CICLO DO BOT")
-        print(f"🔍 Janela de busca: {data_inicio.strftime('%d/%m/%Y')} até {hoje.strftime('%d/%m/%Y')}")
-        print(f"{'='*60}")
-
-        banco_total = carregar_banco()
-        data_atual = data_inicio
-
-        # Varredura dia a dia
-        while data_atual.date() <= hoje.date():
-            varrer_dia(session, banco_total, data_atual)
-            data_atual += timedelta(days=1)
-            # Salva ao final de cada dia processado
-            salvar_estado(banco_total)
-
-        print(f"\n\n🏁 Ciclo finalizado com sucesso!")
-        print(f"💤 O Bot entrará em espera por {INTERVALO_REPETICAO_DIAS} dias...")
+        # Salva a cada dia processado (segurança contra falhas)
+        salvar_estado(banco_total)
         
-        # Converte dias para segundos para o sleep (1 dia = 86400 seg)
-        segundos_espera = INTERVALO_REPETICAO_DIAS * 86400
-        time.sleep(segundos_espera)
+        data_atual += timedelta(days=1)
+
+    print("\n\n🏁 Varredura completa! Script finalizado para salvamento.")
 
 if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("\n🛑 Bot interrompido manualmente.")
+    main()
