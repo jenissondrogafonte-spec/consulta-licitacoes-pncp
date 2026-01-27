@@ -10,13 +10,12 @@ from urllib3.util.retry import Retry
 
 # --- CONFIGURAÇÕES GERAIS ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
-DIAS_POR_CICLO = 1             # Processa 1 dia por vez (mude para 30 se quiser buscar o passado)
 MAX_WORKERS = 20               # Velocidade turbo (processos simultâneos)
 ARQ_DADOS = 'dados.json'
-ARQ_CHECKPOINT = 'checkpoint.txt'
 
-# CORREÇÃO DO NOME DA VARIÁVEL AQUI:
-DATA_LIMITE_FINAL = datetime.now() 
+# Configuração do ciclo do BOT
+INTERVALO_REPETICAO_DIAS = 15  # O bot vai rodar a cada 15 dias
+JANELA_BUSCA_DIAS = 365        # O bot vai olhar os últimos 365 dias
 
 # Desativa avisos de SSL (necessário para o site do governo)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -48,30 +47,21 @@ def carregar_banco():
                 conteudo = f.read().strip()
                 if not conteudo: return {}
                 dados = json.loads(conteudo)
+                # Usa chave composta para evitar duplicatas
                 return {f"{i['Licitacao']}-{i['Item']}": i for i in dados}
         except Exception as e:
             print(f"⚠️ Aviso: Erro ao ler banco ({e}). Iniciando novo.")
     return {}
 
-def salvar_estado(banco, data_proxima):
-    """Salva a lista completa (antigos + novos) e avança o checkpoint."""
+def salvar_estado(banco):
+    """Salva a lista completa no JSON."""
     lista_final = list(banco.values())
     lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
     
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
     
-    with open(ARQ_CHECKPOINT, 'w') as f:
-        f.write(data_proxima.strftime('%Y%m%d'))
     print(f" 💾 [Banco: {len(lista_final)} registros]", end="", flush=True)
-
-def ler_checkpoint():
-    if os.path.exists(ARQ_CHECKPOINT):
-        try:
-            with open(ARQ_CHECKPOINT, 'r') as f:
-                return datetime.strptime(f.read().strip(), '%Y%m%d')
-        except: pass
-    return datetime(2025, 1, 1)
 
 # -------------------------------------------------
 # WORKER: PROCESSAMENTO DE ITEM
@@ -105,106 +95,122 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
     return None
 
 # -------------------------------------------------
-# LOOP PRINCIPAL
+# LÓGICA DE VARREDURA (UM DIA)
+# -------------------------------------------------
+def varrer_dia(session, banco_total, data_alvo):
+    DATA_STR = data_alvo.strftime('%Y%m%d')
+    print(f"\n📅 Processando dia {data_alvo.strftime('%d/%m/%Y')}:", end=" ", flush=True)
+    
+    pagina_edital = 1
+    while True:
+        url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+        params = {
+            "dataInicial": DATA_STR, "dataFinal": DATA_STR, 
+            "codigoModalidadeContratacao": "6", "pagina": pagina_edital, 
+            "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO
+        }
+
+        try:
+            resp = session.get(url_base, params=params, timeout=30)
+            if resp.status_code != 200: break
+            
+            json_resp = resp.json()
+            lics = json_resp.get('data', [])
+            if not lics: break
+
+            for lic in lics:
+                cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
+                ano, seq = lic.get('anoCompra'), lic.get('sequencialCompra')
+                uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
+                id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
+                edital_oficial = f"{lic.get('numeroCompra')}/{ano}"
+                
+                # Busca itens (Paginação interna dos itens)
+                todos_itens_api = []
+                pag_item = 1
+                while True:
+                    url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina={pag_item}&tamanhoPagina=1000"
+                    try:
+                        r_it = session.get(url_itens, timeout=20)
+                        if r_it.status_code == 200:
+                            lote = r_it.json()
+                            if not lote: break
+                            todos_itens_api.extend(lote)
+                            if len(lote) < 1000: break
+                            pag_item += 1
+                        else: break
+                    except: break
+                
+                if not todos_itens_api: continue
+
+                # Processamento paralelo dos itens
+                with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+                    futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in todos_itens_api]
+                    
+                    for future in concurrent.futures.as_completed(futures):
+                        res = future.result()
+                        if res:
+                            chave_unica = f"{id_lic}-{res['Item']}"
+                            banco_total[chave_unica] = {
+                                "DataPublicacao": DATA_STR,
+                                "DataResult": lic.get('dataAtualizacao') or DATA_STR,
+                                "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
+                                "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
+                                "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
+                                "UASG": uasg,
+                                "Edital": edital_oficial,
+                                "Licitacao": id_lic,
+                                "IdPNCP": lic.get('idContratacaoPncp'),
+                                "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
+                                "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
+                                "Link": f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}",
+                                **res 
+                            }
+                            print("✅", end="", flush=True)
+
+            if pagina_edital >= json_resp.get('totalPaginas', 1): break
+            pagina_edital += 1
+            salvar_estado(banco_total)
+
+        except Exception as e:
+            print(f"Erro no dia {DATA_STR}: {e}")
+            break
+
+# -------------------------------------------------
+# LOOP PRINCIPAL (BOT)
 # -------------------------------------------------
 def main():
-    data_inicio = ler_checkpoint()
-    
-    # LINHA CORRIGIDA ABAIXO PARA USAR 'DATA_LIMITE_FINAL':
-    if data_inicio.date() > DATA_LIMITE_FINAL.date():
-        print("🎯 Checkpoint atualizado. Nada a processar hoje.")
-        return
-
-    data_fim = data_inicio + timedelta(days=DIAS_POR_CICLO - 1)
-    if data_fim > DATA_LIMITE_FINAL: data_fim = DATA_LIMITE_FINAL
-
-    print(f"--- 🚀 SNIPER TURBO V3: {data_inicio.strftime('%d/%m')} a {data_fim.strftime('%d/%m')} ---")
-    
     session = criar_sessao()
-    banco_total = carregar_banco()
-    data_atual = data_inicio
-
-    while data_atual <= data_fim:
-        DATA_STR = data_atual.strftime('%Y%m%d')
-        print(f"\n📅 Dia {data_atual.strftime('%d/%m/%Y')}:", end=" ", flush=True)
+    
+    while True:
+        # Define o intervalo: Hoje - 365 dias até Hoje
+        hoje = datetime.now()
+        data_inicio = hoje - timedelta(days=JANELA_BUSCA_DIAS)
         
-        pagina_edital = 1
-        while True:
-            url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-            params = {
-                "dataInicial": DATA_STR, "dataFinal": DATA_STR, 
-                "codigoModalidadeContratacao": "6", "pagina": pagina_edital, 
-                "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO
-            }
+        print(f"\n{'='*60}")
+        print(f"🤖 INICIANDO CICLO DO BOT")
+        print(f"🔍 Janela de busca: {data_inicio.strftime('%d/%m/%Y')} até {hoje.strftime('%d/%m/%Y')}")
+        print(f"{'='*60}")
 
-            try:
-                resp = session.get(url_base, params=params, timeout=30)
-                if resp.status_code != 200: break
-                
-                json_resp = resp.json()
-                lics = json_resp.get('data', [])
-                if not lics: break
+        banco_total = carregar_banco()
+        data_atual = data_inicio
 
-                for lic in lics:
-                    cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
-                    ano, seq = lic.get('anoCompra'), lic.get('sequencialCompra')
-                    uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
-                    id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
-                    
-                    # NOME DO EDITAL OFICIAL CORRIGIDO
-                    edital_oficial = f"{lic.get('numeroCompra')}/{ano}"
-                    
-                    todos_itens_api = []
-                    pag_item = 1
-                    while True:
-                        url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina={pag_item}&tamanhoPagina=1000"
-                        try:
-                            r_it = session.get(url_itens, timeout=20)
-                            if r_it.status_code == 200:
-                                lote = r_it.json()
-                                if not lote: break
-                                todos_itens_api.extend(lote)
-                                if len(lote) < 1000: break
-                                pag_item += 1
-                            else: break
-                        except: break
-                    
-                    if not todos_itens_api: continue
+        # Varredura dia a dia
+        while data_atual.date() <= hoje.date():
+            varrer_dia(session, banco_total, data_atual)
+            data_atual += timedelta(days=1)
+            # Salva ao final de cada dia processado
+            salvar_estado(banco_total)
 
-                    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-                        futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in todos_itens_api]
-                        
-                        for future in concurrent.futures.as_completed(futures):
-                            res = future.result()
-                            if res:
-                                chave_unica = f"{id_lic}-{res['Item']}"
-                                banco_total[chave_unica] = {
-                                    "DataPublicacao": DATA_STR,
-                                    "DataResult": lic.get('dataAtualizacao') or DATA_STR,
-                                    "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
-                                    "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
-                                    "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
-                                    "UASG": uasg,
-                                    "Edital": edital_oficial,
-                                    "Licitacao": id_lic,
-                                    "IdPNCP": lic.get('idContratacaoPncp'),
-                                    "DtInicioPropostas": lic.get('dataInicioRecebimentoPropostas'),
-                                    "DtFimPropostas": lic.get('dataFimRecebimentoPropostas'),
-                                    "Link": f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}",
-                                    **res 
-                                }
-                                print("✅", end="", flush=True)
-
-                if pagina_edital >= json_resp.get('totalPaginas', 1): break
-                pagina_edital += 1
-                salvar_estado(banco_total, data_atual)
-
-            except Exception as e:
-                print(f"Erro: {e}")
-                break
+        print(f"\n\n🏁 Ciclo finalizado com sucesso!")
+        print(f"💤 O Bot entrará em espera por {INTERVALO_REPETICAO_DIAS} dias...")
         
-        data_atual += timedelta(days=1)
-        salvar_estado(banco_total, data_atual)
+        # Converte dias para segundos para o sleep (1 dia = 86400 seg)
+        segundos_espera = INTERVALO_REPETICAO_DIAS * 86400
+        time.sleep(segundos_espera)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n🛑 Bot interrompido manualmente.")
