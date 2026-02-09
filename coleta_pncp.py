@@ -7,17 +7,15 @@ import concurrent.futures
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib3
+import re
 
 # --- CONFIGURAÇÕES ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
-MAX_WORKERS = 20               # Processamento paralelo
+MAX_WORKERS = 20               
 ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 DIAS_RETROATIVOS = 365
-
-# LIMITE DE SEGURANÇA (5 Horas e 30 Minutos)
-# O GitHub derruba com 6h. Paramos antes para garantir o salvamento.
-TEMPO_LIMITE_SEGURO = 19800 
+TEMPO_LIMITE_SEGURO = 19800  
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -29,8 +27,63 @@ HEADERS = {
 INICIO_EXECUCAO = time.time()
 
 # -------------------------------------------------
-# 1. FUNÇÕES DE BANCO DE DADOS E ESTADO
+# 1. FUNÇÕES DE MANUTENÇÃO E BANCO
 # -------------------------------------------------
+
+def migrar_e_limpar_banco(dados_lista):
+    """
+    Corrige dados antigos onde licitações de órgãos diferentes colidiram.
+    Usa o CNPJ contido no link para reconstruir a identidade única.
+    """
+    novo_banco = {}
+    print("🔧 Verificando integridade dos dados existentes...")
+    
+    for item in dados_lista:
+        link = item.get('Link', '')
+        # Extrai CNPJ, Ano e Sequencial do link: .../editais/{cnpj}/{ano}/{seq}
+        match = re.search(r'editais/(\d+)/(\d+)/(\d+)', link)
+        if match:
+            cnpj_real = match.group(1)
+            ano_real = match.group(2)
+            seq_real = match.group(3)
+            
+            # Reconstrói o ID único indestrutível
+            novo_id_lic = f"{cnpj_real}{str(seq_real).zfill(5)}{ano_real}"
+            item['Licitacao'] = novo_id_lic
+            
+            # Nova chave para o dicionário (ID + Item)
+            nova_chave = f"{novo_id_lic}-{item['Item']}"
+            novo_banco[nova_chave] = item
+    
+    if len(novo_banco) != len(dados_lista):
+        print(f"✨ Migração concluída: {len(novo_banco)} itens únicos identificados.")
+    return novo_banco
+
+def carregar_banco():
+    if os.path.exists(ARQ_DADOS):
+        try:
+            with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
+                conteudo = json.loads(f.read())
+                # Aplica a migração para corrigir IDs antigos
+                return migrar_e_limpar_banco(conteudo)
+        except Exception as e:
+            print(f"Erro ao carregar banco: {e}")
+    return {}
+
+def salvar_estado(banco, proximo_dia):
+    lista_final = list(banco.values())
+    lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
+    with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
+        json.dump(lista_final, f, indent=4, ensure_ascii=False)
+    
+    with open(ARQ_CHECKPOINT, 'w') as f:
+        f.write(proximo_dia.strftime('%Y%m%d'))
+    print(f" 💾 [Salvo! Próximo: {proximo_dia.strftime('%d/%m/%Y')}]", end="", flush=True)
+
+# -------------------------------------------------
+# 2. CORE DO PROCESSO
+# -------------------------------------------------
+
 def criar_sessao():
     session = requests.Session()
     session.headers.update(HEADERS)
@@ -38,79 +91,22 @@ def criar_sessao():
     retry = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS)
     session.mount('https://', adapter)
-    session.mount('http://', adapter)
     return session
 
-def carregar_banco():
-    if os.path.exists(ARQ_DADOS):
-        try:
-            with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
-                return {f"{i['Licitacao']}-{i['Item']}": i for i in json.loads(f.read())}
-        except: pass
-    return {}
-
-def salvar_estado(banco, proximo_dia_para_processar):
-    """
-    Salva o progresso.
-    IMPORTANTE: 'proximo_dia_para_processar' é a data de onde o robô deve COMEÇAR na próxima vez.
-    """
-    # 1. Salva os dados das licitações
-    lista_final = list(banco.values())
-    lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
-    with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
-        json.dump(lista_final, f, indent=4, ensure_ascii=False)
-    
-    # 2. Atualiza o checkpoint
-    # Se o robô parar agora, ele sabe que deve começar deste dia na próxima vez
-    with open(ARQ_CHECKPOINT, 'w') as f:
-        f.write(proximo_dia_para_processar.strftime('%Y%m%d'))
-        
-    print(f" 💾 [Salvo! Próximo dia na fila: {proximo_dia_para_processar.strftime('%d/%m/%Y')}]", end="", flush=True)
-
-def ler_checkpoint():
-    """Define o ponto de partida."""
-    hoje = datetime.now()
-    inicio_padrao = hoje - timedelta(days=DIAS_RETROATIVOS)
-
-    if os.path.exists(ARQ_CHECKPOINT):
-        try:
-            with open(ARQ_CHECKPOINT, 'r') as f:
-                data_lida = datetime.strptime(f.read().strip(), '%Y%m%d')
-            
-            # LÓGICA DE RESET QUINZENAL (Dias 1 e 16)
-            if data_lida.date() >= hoje.date():
-                if hoje.day in [1, 16]: 
-                    print(f"🔄 Reset Quinzenal (Dia {hoje.day}): Iniciando nova varredura de 365 dias.")
-                    return inicio_padrao
-                else:
-                    return data_lida # Já terminou, mantém no futuro
-            
-            if data_lida < inicio_padrao: return inicio_padrao
-            return data_lida
-        except: pass
-    return inicio_padrao
-
-def tempo_acabando():
-    """Verifica se já passamos de 5h30m de execução."""
-    return (time.time() - INICIO_EXECUCAO) > TEMPO_LIMITE_SEGURO
-
-# -------------------------------------------------
-# 2. WORKER INDIVIDUAL (Processa 1 Item)
-# -------------------------------------------------
 def processar_item_individual(session, it, cnpj_org, ano, seq):
     if not it.get('temResultado'): return None
-    numero_item = it.get('numeroItem')
-    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{numero_item}/resultados"
+    num_item = it.get('numeroItem')
+    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
     try:
-        r_v = session.get(url_res, timeout=20)
-        if r_v.status_code == 200:
-            vends = r_v.json()
+        r = session.get(url_res, timeout=20)
+        if r.status_code == 200:
+            vends = r.json()
             if isinstance(vends, dict): vends = [vends]
             for v in vends:
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 if CNPJ_ALVO in ni:
                     return {
-                        "Item": numero_item,
+                        "Item": num_item,
                         "Descricao": it.get('descricao', ''),
                         "Qtd": v.get('quantidadeHomologada'),
                         "Unitario": float(v.get('valorUnitarioHomologado') or 0),
@@ -120,57 +116,63 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
     except: pass
     return None
 
-# -------------------------------------------------
-# 3. PROCESSAR UM DIA INTEIRO
-# -------------------------------------------------
 def processar_dia_completo(session, banco_total, data_atual):
-    """
-    Lógica blindada: Entrou aqui, vai até o fim do dia.
-    Não verifica tempo aqui dentro para não parar licitação pela metade.
-    """
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n📅 Iniciando dia {data_atual.strftime('%d/%m/%Y')}...", end=" ", flush=True)
+    print(f"\n📅 Dia {data_atual.strftime('%d/%m/%Y')}...", end=" ", flush=True)
     
-    pagina_edital = 1
-    encontrou_algo = False
+    pagina = 1
+    encontrou = False
 
     while True:
-        url_base = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
-        params = {"dataInicial": DATA_STR, "dataFinal": DATA_STR, "codigoModalidadeContratacao": "6", "pagina": pagina_edital, "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO}
+        url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
+        params = {
+            "dataInicial": DATA_STR, 
+            "dataFinal": DATA_STR, 
+            "codigoModalidadeContratacao": "6", 
+            "pagina": pagina, 
+            "tamanhoPagina": 50, 
+            "niFornecedor": CNPJ_ALVO
+        }
 
         try:
-            resp = session.get(url_base, params=params, timeout=30)
+            resp = session.get(url, params=params, timeout=30)
             if resp.status_code != 200: break
-            lics = resp.json().get('data', [])
+            dados = resp.json()
+            lics = dados.get('data', [])
             if not lics: break
 
             for lic in lics:
+                # DADOS DO ÓRGÃO (A chave mestra)
                 cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
-                ano, seq = lic.get('anoCompra'), lic.get('sequencialCompra')
+                ano = lic.get('anoCompra')
+                seq = lic.get('sequencialCompra')
                 uasg = str(lic.get('unidadeOrgao', {}).get('codigoUnidade', '')).strip()
-                id_lic = f"{uasg}{str(seq).zfill(5)}{ano}"
                 
-                # Paginação de itens
-                todos_itens = []
+                # NOVO ID IDENTIFICADOR: CNPJ + SEQUENCIAL + ANO
+                id_lic_unico = f"{cnpj_org}{str(seq).zfill(5)}{ano}"
+                
+                # Coleta de itens
+                itens_lic = []
                 p_it = 1
                 while True:
                     r_it = session.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina={p_it}&tamanhoPagina=1000", timeout=20)
                     if r_it.status_code == 200:
-                        l = r_it.json()
-                        if not l: break
-                        todos_itens.extend(l)
-                        if len(l) < 1000: break
+                        lista = r_it.json()
+                        if not lista: break
+                        itens_lic.extend(lista)
+                        if len(lista) < 1000: break
                         p_it += 1
                     else: break
                 
-                if not todos_itens: continue
+                if not itens_lic: continue
 
                 with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-                    futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in todos_itens]
-                    for future in concurrent.futures.as_completed(futures):
-                        res = future.result()
+                    futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in itens_lic]
+                    for fut in concurrent.futures.as_completed(futures):
+                        res = fut.result()
                         if res:
-                            chave = f"{id_lic}-{res['Item']}"
+                            # Chave do dicionário agora usa o ID ÚNICO baseado no CNPJ
+                            chave = f"{id_lic_unico}-{res['Item']}"
                             banco_total[chave] = {
                                 "DataPublicacao": DATA_STR,
                                 "DataResult": lic.get('dataAtualizacao') or DATA_STR,
@@ -179,59 +181,58 @@ def processar_dia_completo(session, banco_total, data_atual):
                                 "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
                                 "UASG": uasg,
                                 "Edital": f"{lic.get('numeroCompra')}/{ano}",
-                                "Licitacao": id_lic,
+                                "Licitacao": id_lic_unico,
                                 "Link": f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}",
                                 **res
                             }
                             print("✅", end="", flush=True)
-                            encontrou_algo = True
+                            encontrou = True
 
-            if pagina_edital >= resp.json().get('totalPaginas', 1): break
-            pagina_edital += 1
+            if pagina >= dados.get('totalPaginas', 1): break
+            pagina += 1
         except Exception as e:
             print(f"[Erro: {e}]", end="")
             break
     
-    if not encontrou_algo:
-        print("(Sem vitórias)", end="", flush=True)
+    if not encontrou: print("(vazio)", end="", flush=True)
 
 # -------------------------------------------------
-# 4. LOOP PRINCIPAL (CONTROLADO)
+# 3. LOOP PRINCIPAL
 # -------------------------------------------------
+
+def ler_checkpoint():
+    hoje = datetime.now()
+    padrao = hoje - timedelta(days=DIAS_RETROATIVOS)
+    if os.path.exists(ARQ_CHECKPOINT):
+        try:
+            with open(ARQ_CHECKPOINT, 'r') as f:
+                dt = datetime.strptime(f.read().strip(), '%Y%m%d')
+                if dt.date() >= hoje.date() and hoje.day in [1, 16]: return padrao
+                return dt
+        except: pass
+    return padrao
+
 def main():
     session = criar_sessao()
     banco_total = carregar_banco()
-    
     data_atual = ler_checkpoint()
     data_final = datetime.now()
     
-    print(f"--- 🚀 INICIANDO (Fila: {data_atual.strftime('%d/%m/%Y')} até {data_final.strftime('%d/%m/%Y')}) ---")
+    print(f"--- 🚀 INICIANDO COLETA (Fila: {data_atual.strftime('%d/%m/%Y')}) ---")
     
-    if data_atual.date() > data_final.date():
-        print("💤 Nada a fazer. Aguardando reset quinzenal (Dia 1 ou 16).")
-        return
-
     while data_atual.date() <= data_final.date():
-        
-        # 1. Processa o dia inteiro (sem interrupção no meio)
         processar_dia_completo(session, banco_total, data_atual)
         
-        # 2. Prepara o checkpoint para o DIA SEGUINTE
         data_proxima = data_atual + timedelta(days=1)
-        
-        # 3. Salva tudo (Dados + Checkpoint apontando para amanhã)
         salvar_estado(banco_total, data_proxima)
         
-        # 4. Verifica o relógio APÓS salvar
-        if tempo_acabando():
-            print("\n\n⚠️ TEMPO LIMITE DE SEGURANÇA ATINGIDO (5h30m).")
-            print(f"⏸️ Parando no dia {data_atual.strftime('%d/%m')}. O próximo ciclo continuará do dia {data_proxima.strftime('%d/%m')}.")
-            break # Sai do loop, o script termina, GitHub salva o commit.
-            
-        # Se tem tempo, o loop continua e pega o 'data_proxima' (que agora é o data_atual atualizado na linha 164)
+        if (time.time() - INICIO_EXECUCAO) > TEMPO_LIMITE_SEGURO:
+            print(f"\n\n⚠️ TEMPO LIMITE. Parando em {data_atual.strftime('%d/%m')}.")
+            break
+        
         data_atual = data_proxima
 
-    print("\n\n🏁 Script finalizado.")
+    print("\n\n🏁 Finalizado.")
 
 if __name__ == "__main__":
     main()
