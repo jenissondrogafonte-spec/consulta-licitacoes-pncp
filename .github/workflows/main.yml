@@ -2,41 +2,52 @@ name: PNCP Sniper Continuo
 
 on:
   schedule:
-    # Roda a cada 6 horas para garantir que complete os 365 dias
+    # Executa a cada 6 horas
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+# Trava de concorrência: Garante que apenas UM robô processe o banco por vez
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  group: pncp-sniper-exclusivo
+  cancel-in-progress: false 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 355 # 5h 55min (dá tempo do script parar com 5h30 e salvar)
+    timeout-minutes: 355 # 5h 55min de limite total
 
     permissions:
       contents: write
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+    - name: 📥 Checkout do Repositório
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Necessário para o rebase funcionar corretamente
 
-    - name: Configurar Python
+    - name: 🐍 Configurar Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
 
-    - name: Instalar dependências
+    - name: 📦 Instalar dependências
       run: pip install requests urllib3
 
-    - name: Executar Coleta Segura
-      run: python coleta_pncp.py
-
-    - name: Commit e Push (Salva Checkpoint e Dados)
+    - name: 🔄 Sincronizar Dados da Fila (Anti-Conflito)
       run: |
         git config --global user.name "jenissonb88-bot"
         git config --global user.email "bot@github.com"
+        # Puxa as alterações que o robô anterior salvou enquanto este estava na fila
+        git pull origin main --rebase || echo "Sem conflitos iniciais"
+
+    - name: 🚀 Executar Coleta Segura
+      run: python coleta_pncp.py
+
+    - name: 💾 Commit e Push (Salva Progresso)
+      run: |
         git add dados.json checkpoint.txt
-        git commit -m "Progresso salvo: $(date +'%d/%m/%Y %H:%M')" || echo "Sem alterações"
-        git push
+        # Tenta commitar. Se não houver novos dados, o script segue sem erro.
+        git commit -m "Progresso salvo: $(date +'%d/%m/%Y %H:%M')" || echo "Nenhuma alteração para salvar"
+        # Rebase final para garantir que o push não falhe se o banco mudou no meio do processo
+        git pull origin main --rebase
+        git push origin main
