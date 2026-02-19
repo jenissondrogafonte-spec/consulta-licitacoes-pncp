@@ -1,0 +1,55 @@
+name: Atualizador Base PNCP
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Roda todos os dias de madrugada (Start do ciclo)
+  workflow_dispatch: # Permite iniciar manualmente
+
+# TRAVA DE SEGURANÇA: Garante que apenas 1 robô acesse os dados por vez
+concurrency:
+  group: pncp-robots
+  cancel-in-progress: false
+
+jobs:
+  sincronizacao:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar Dependências
+        run: pip install requests urllib3
+
+      - name: Executar Atualizador (Janela 15 dias)
+        id: run_script
+        run: |
+          python atualizador.py
+          # Salva o código de saída para o próximo step
+          echo "exit_code=$?" >> $GITHUB_ENV
+        continue-on-error: true
+
+      - name: Commit e Push dos Dados Atualizados
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dados.json checkpoint_atualizador.txt
+          git commit -m "Atualização de status e itens das licitações capturadas" || echo "Nenhuma alteração para commitar"
+          git push
+
+      - name: Auto-disparo em Cascata (Se houver mais janelas)
+        if: env.exit_code == '2'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Ainda há janelas temporais até hoje. Acionando a próxima tarefa em seguida..."
+          sleep 10 # Pausa leve antes de re-acionar
+          gh workflow run atualizador.yml
