@@ -320,22 +320,12 @@
         "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
     },
     {
-        "DataPublicacao": "20260120",
-        "DataResult": "2026-02-10T07:42:04",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "8/2026",
-        "Licitacao": "11022597001244000072026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7",
         "Item": 2,
         "Descricao": "(3087212) - ROPIVACAINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 10 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA OU FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 200.0,
         "Unitario": 12.92,
         "Total": 2584.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260120",
         "DataResult": "2026-02-10T07:42:04",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -343,13 +333,23 @@
         "Municipio": "Recife",
         "Edital": "8/2026",
         "Licitacao": "11022597001244000072026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7"
+    },
+    {
         "Item": 4,
         "Descricao": "(3196119) - TOBRAMICINA - CONCENTRACAO/DOSAGEM 3 MG/ML,FORMA FARMACEUTICA SOLUCAO OFTALMICA,FORMA DE APRESENTACAO FRASCO,VIA DE ADMINISTRACAO OFTALMICA",
         "Qtd": 81.0,
         "Unitario": 7.66,
         "Total": 620.25,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260120",
+        "DataResult": "2026-02-10T07:42:04",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "8/2026",
+        "Licitacao": "11022597001244000072026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7"
     },
     {
         "Item": 1,
@@ -496,22 +496,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/451"
     },
     {
-        "DataPublicacao": "20260109",
-        "DataResult": "2026-02-06T09:22:16",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4318/2026",
-        "Licitacao": "11022597001597000022026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2",
         "Item": 5,
         "Descricao": "(3067211) - AMIODARONA, CLORIDRATO - CONCENTRACAO/DOSAGEM 200 MG,FORMA FARMACEUTICA COMPRIMIDO,FORMA DE APRESENTACAO COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 10240.0,
         "Unitario": 0.36,
         "Total": 3712.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-02-06T09:22:16",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -519,15 +509,15 @@
         "Municipio": "Recife",
         "Edital": "4318/2026",
         "Licitacao": "11022597001597000022026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2"
+    },
+    {
         "Item": 3,
         "Descricao": "(3183491) - SULFATO DE MAGNESIO - CONCENTRACAO/DOSAGEM 100 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 898.0,
         "Unitario": 0.97,
         "Total": 870.88,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-02-06T09:22:16",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -535,15 +525,15 @@
         "Municipio": "Recife",
         "Edital": "4318/2026",
         "Licitacao": "11022597001597000022026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2"
+    },
+    {
         "Item": 6,
         "Descricao": "(3097390) - ATENOLOL - CONCENTRACAO/DOSAGEM 25 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 4997.0,
         "Unitario": 0.04,
         "Total": 209.87,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-02-06T09:22:16",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -551,31 +541,31 @@
         "Municipio": "Recife",
         "Edital": "4318/2026",
         "Licitacao": "11022597001597000022026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2"
+    },
+    {
         "Item": 10,
         "Descricao": "(483400) - CLOREXIDINA, DIGLUCONATO - CONCENTRACAO DE 4 %, FORMA FARMACEUTICA SOLUCAO DEGERMANTE, FORMA DE APRESENTACAO EM FRASCO, USO DEGERMANTE ANTI-SEPTICO",
         "Qtd": 2447.0,
         "Unitario": 25.0,
         "Total": 61175.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
-        "DataResult": "2026-02-05T13:17:12",
+        "DataResult": "2026-02-06T09:22:16",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
         "UF": "PE",
         "Municipio": "Recife",
-        "Edital": "4365/2026",
-        "Licitacao": "11022597001597000032026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/3",
+        "Edital": "4318/2026",
+        "Licitacao": "11022597001597000022026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/2"
+    },
+    {
         "Item": 4,
         "Descricao": "(3196690) - PROMETAZINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 25 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 550.0,
         "Unitario": 3.66,
         "Total": 2013.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-02-05T13:17:12",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -583,15 +573,15 @@
         "Municipio": "Recife",
         "Edital": "4365/2026",
         "Licitacao": "11022597001597000032026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/3",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/3"
+    },
+    {
         "Item": 1,
         "Descricao": "(3068560) - BUPIVACAINA, CLORIDRATO + GLICOSE - CONCENTRACAO/DOSAGEM 5 MG/ML + 80 MG/ML RESPECTIVAMENTE,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 10.0,
         "Unitario": 4.56,
         "Total": 45.58,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-02-05T13:17:12",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -599,13 +589,23 @@
         "Municipio": "Recife",
         "Edital": "4365/2026",
         "Licitacao": "11022597001597000032026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/3",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/3"
+    },
+    {
         "Item": 2,
         "Descricao": "(3080714) - DEXTROCETAMINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 50 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 187.0,
         "Unitario": 51.94,
         "Total": 9713.7,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260109",
+        "DataResult": "2026-02-05T13:17:12",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4365/2026",
+        "Licitacao": "11022597001597000032026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/3"
     },
     {
         "Item": 114,
@@ -672,6 +672,12 @@
         "Link": "https://pncp.gov.br/app/editais/11800731000138/2025/202"
     },
     {
+        "Item": 3,
+        "Descricao": "ATROPINA (SULFATO), 0,25MG/ML, AMPOLA DE 1 ML",
+        "Qtd": 7000.0,
+        "Unitario": 0.75,
+        "Total": 5250.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260108",
         "DataResult": "2026-01-30T16:41:18",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -679,13 +685,7 @@
         "Municipio": "Recife",
         "Edital": "GC-SEPLAG-002-PL 0002/2026",
         "Licitacao": "41090291000133000022026",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2026/2",
-        "Item": 3,
-        "Descricao": "ATROPINA (SULFATO), 0,25MG/ML, AMPOLA DE 1 ML",
-        "Qtd": 7000.0,
-        "Unitario": 0.75,
-        "Total": 5250.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2026/2"
     },
     {
         "Item": 12,
@@ -1156,22 +1156,12 @@
         "Link": "https://pncp.gov.br/app/editais/11254840000105/2025/10"
     },
     {
-        "DataPublicacao": "20260116",
-        "DataResult": "2026-01-16T16:52:00",
-        "Orgao": "MUNICIPIO DE PATROCINIO",
-        "UF": "MG",
-        "Municipio": "Patrocínio",
-        "Edital": "177/2025",
-        "Licitacao": "18468033000126004192025",
-        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419",
         "Item": 14,
         "Descricao": "CARVEDILOL - APRESENTACAO: COMPRIMIDO, DOSAGEM: 12,5 MG",
         "Qtd": 200000.0,
         "Unitario": 0.075,
         "Total": 15000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20260116",
         "DataResult": "2026-01-16T16:52:00",
         "Orgao": "MUNICIPIO DE PATROCINIO",
@@ -1179,15 +1169,15 @@
         "Municipio": "Patrocínio",
         "Edital": "177/2025",
         "Licitacao": "18468033000126004192025",
-        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419",
+        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419"
+    },
+    {
         "Item": 19,
         "Descricao": "COLAGENASE - DOSAGEM: 0,6 UI/G, FORMA FARMACEUTICA: POMADA DERMATOLOGICA, TUBO COM 30 GR. NA EMBALAGEM DEVERA CONSTAR A DATA DA FABRICACAO, DA VALIDADE E NUMERO DO LOTE.",
         "Qtd": 5000.0,
         "Unitario": 14.0,
         "Total": 70000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20260116",
         "DataResult": "2026-01-16T16:52:00",
         "Orgao": "MUNICIPIO DE PATROCINIO",
@@ -1195,15 +1185,15 @@
         "Municipio": "Patrocínio",
         "Edital": "177/2025",
         "Licitacao": "18468033000126004192025",
-        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419",
+        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419"
+    },
+    {
         "Item": 44,
         "Descricao": "LIDOCAINA CLORIDRATO DOSAGEM 2 POR CENTO SEM VASO.",
         "Qtd": 15000.0,
         "Unitario": 3.63,
         "Total": 54450.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20260116",
         "DataResult": "2026-01-16T16:52:00",
         "Orgao": "MUNICIPIO DE PATROCINIO",
@@ -1211,15 +1201,15 @@
         "Municipio": "Patrocínio",
         "Edital": "177/2025",
         "Licitacao": "18468033000126004192025",
-        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419",
+        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419"
+    },
+    {
         "Item": 59,
         "Descricao": "PREDNISOLONA - APRESENTACAO: SOLUCAO ORAL,  DOSAGEM: 3 MG/ML    60ML",
         "Qtd": 10000.0,
         "Unitario": 4.096,
         "Total": 40960.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20260116",
         "DataResult": "2026-01-16T16:52:00",
         "Orgao": "MUNICIPIO DE PATROCINIO",
@@ -1227,15 +1217,31 @@
         "Municipio": "Patrocínio",
         "Edital": "177/2025",
         "Licitacao": "18468033000126004192025",
-        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419",
+        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419"
+    },
+    {
         "Item": 65,
         "Descricao": "SULFATO DE MORFINA APRESENTACAO SOLUCAO INJETAVEL DOSAGEM 10 MG ML. AMPOLA DE 1 ML",
         "Qtd": 4000.0,
         "Unitario": 1.505,
         "Total": 6020.0,
-        "Status": "Venceu"
+        "Status": "Perdeu/Anulado",
+        "DataPublicacao": "20260116",
+        "DataResult": "2026-01-16T16:52:00",
+        "Orgao": "MUNICIPIO DE PATROCINIO",
+        "UF": "MG",
+        "Municipio": "Patrocínio",
+        "Edital": "177/2025",
+        "Licitacao": "18468033000126004192025",
+        "Link": "https://pncp.gov.br/app/editais/18468033000126/2025/419"
     },
     {
+        "Item": 1,
+        "Descricao": "Ácido folínico",
+        "Qtd": 100284.0,
+        "Unitario": 2.16,
+        "Total": 216613.44,
+        "Status": "Venceu",
         "DataPublicacao": "20260116",
         "DataResult": "2026-01-16T07:00:25",
         "Orgao": "ESTADO DO CEARA",
@@ -1243,15 +1249,15 @@
         "Municipio": "Fortaleza",
         "Edital": "91718/2025",
         "Licitacao": "07954480000179254532025",
-        "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25453",
-        "Item": 1,
-        "Descricao": "Ácido folínico",
-        "Qtd": 100284.0,
-        "Unitario": 2.16,
-        "Total": 216613.44,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25453"
     },
     {
+        "Item": 1,
+        "Descricao": "Fitomenadiona",
+        "Qtd": 15600.0,
+        "Unitario": 1.7325,
+        "Total": 27027.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260115",
         "DataResult": "2026-01-15T07:02:02",
         "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
@@ -1259,13 +1265,7 @@
         "Municipio": "São Paulo",
         "Edital": "91681/2025",
         "Licitacao": "60747318000162019572025",
-        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1957",
-        "Item": 1,
-        "Descricao": "Fitomenadiona",
-        "Qtd": 15600.0,
-        "Unitario": 1.7325,
-        "Total": 27027.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1957"
     },
     {
         "Item": 6,
@@ -1540,6 +1540,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659"
     },
     {
+        "Item": 3,
+        "Descricao": "Alopurinol",
+        "Qtd": 21240.0,
+        "Unitario": 0.25,
+        "Total": 5310.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260114",
         "DataResult": "2026-01-14T07:02:48",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -1547,13 +1553,7 @@
         "Municipio": "Recife",
         "Edital": "90950/2025",
         "Licitacao": "10572022000180013802025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1380",
-        "Item": 3,
-        "Descricao": "Alopurinol",
-        "Qtd": 21240.0,
-        "Unitario": 0.25,
-        "Total": 5310.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1380"
     },
     {
         "Item": 4,
@@ -2324,6 +2324,12 @@
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/318"
     },
     {
+        "Item": 9,
+        "Descricao": "CARBONATO DE LITIO 300 MG",
+        "Qtd": 120000.0,
+        "Unitario": 0.2099,
+        "Total": 25188.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260112",
         "DataResult": "2026-01-12T13:01:46",
         "Orgao": "MUNICIPIO DE TIETE",
@@ -2331,31 +2337,15 @@
         "Municipio": "Tietê",
         "Edital": "109/2025",
         "Licitacao": "46634598000171007322025",
-        "Link": "https://pncp.gov.br/app/editais/46634598000171/2025/732",
-        "Item": 9,
-        "Descricao": "CARBONATO DE LITIO 300 MG",
-        "Qtd": 120000.0,
-        "Unitario": 0.2099,
-        "Total": 25188.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/46634598000171/2025/732"
     },
     {
-        "DataPublicacao": "20260109",
-        "DataResult": "2026-01-09T16:41:04",
-        "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
-        "UF": "SP",
-        "Municipio": "Artur Nogueira",
-        "Edital": "PE 001/2026/2026",
-        "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
         "Item": 15,
         "Descricao": "2 CLORIDRATO DE ONDANSETRONA ",
         "Qtd": 10000.0,
         "Unitario": 0.77,
         "Total": 7700.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T16:41:04",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -2363,15 +2353,15 @@
         "Municipio": "Artur Nogueira",
         "Edital": "PE 001/2026/2026",
         "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
+    },
+    {
         "Item": 22,
         "Descricao": "2 DOPAMINA 5MG/ML  ",
         "Qtd": 500.0,
         "Unitario": 2.93,
         "Total": 1465.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T16:41:04",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -2379,15 +2369,15 @@
         "Municipio": "Artur Nogueira",
         "Edital": "PE 001/2026/2026",
         "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
+    },
+    {
         "Item": 30,
         "Descricao": "2 FITOMENADIONA 10 MG/ML, VITAMINA K / IM  ",
         "Qtd": 4000.0,
         "Unitario": 1.68,
         "Total": 6720.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T16:41:04",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -2395,15 +2385,15 @@
         "Municipio": "Artur Nogueira",
         "Edital": "PE 001/2026/2026",
         "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
+    },
+    {
         "Item": 32,
         "Descricao": "2 FUROSEMIDA 10 MG/ML",
         "Qtd": 7000.0,
         "Unitario": 0.56,
         "Total": 3920.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T16:41:04",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -2411,15 +2401,15 @@
         "Municipio": "Artur Nogueira",
         "Edital": "PE 001/2026/2026",
         "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
+    },
+    {
         "Item": 28,
         "Descricao": "2 FENITOÍNA 50MG/ML  ",
         "Qtd": 2000.0,
         "Unitario": 1.58,
         "Total": 3160.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T16:41:04",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -2427,15 +2417,15 @@
         "Municipio": "Artur Nogueira",
         "Edital": "PE 001/2026/2026",
         "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
+    },
+    {
         "Item": 45,
         "Descricao": "2 OMEPRAZOL 40MG",
         "Qtd": 8000.0,
         "Unitario": 7.3,
         "Total": 58400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T16:41:04",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -2443,15 +2433,31 @@
         "Municipio": "Artur Nogueira",
         "Edital": "PE 001/2026/2026",
         "Licitacao": "45735552000186000072026",
-        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
+    },
+    {
         "Item": 41,
         "Descricao": "2 MIDAZOLAM 5 MG/ML - AMP 10 ML   ",
         "Qtd": 1000.0,
         "Unitario": 1.62,
         "Total": 1620.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260109",
+        "DataResult": "2026-01-09T16:41:04",
+        "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
+        "UF": "SP",
+        "Municipio": "Artur Nogueira",
+        "Edital": "PE 001/2026/2026",
+        "Licitacao": "45735552000186000072026",
+        "Link": "https://pncp.gov.br/app/editais/45735552000186/2026/7"
     },
     {
+        "Item": 1,
+        "Descricao": "ACIDO FOLINICO, FOLINATO DE CALCIO, 15 MG, COMPRIMIDO, UNIDADE 1.0 COMPRIMIDO",
+        "Qtd": 100284.0,
+        "Unitario": 2.16,
+        "Total": 216613.44,
+        "Status": "Venceu",
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-09T11:04:26",
         "Orgao": "ESTADO DO CEARA",
@@ -2459,13 +2465,7 @@
         "Municipio": "Fortaleza",
         "Edital": "202524671/2025",
         "Licitacao": "07954480000179254002025",
-        "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25400",
-        "Item": 1,
-        "Descricao": "ACIDO FOLINICO, FOLINATO DE CALCIO, 15 MG, COMPRIMIDO, UNIDADE 1.0 COMPRIMIDO",
-        "Qtd": 100284.0,
-        "Unitario": 2.16,
-        "Total": 216613.44,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25400"
     },
     {
         "Item": 59,
@@ -2484,6 +2484,12 @@
         "Link": "https://pncp.gov.br/app/editais/11380216000146/2025/22"
     },
     {
+        "Item": 3,
+        "Descricao": "Lidocaína Cloridrato",
+        "Qtd": 22104.0,
+        "Unitario": 0.9603,
+        "Total": 21226.4712,
+        "Status": "Venceu",
         "DataPublicacao": "20260108",
         "DataResult": "2026-01-08T07:12:25",
         "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
@@ -2491,31 +2497,15 @@
         "Municipio": "São Paulo",
         "Edital": "91586/2025",
         "Licitacao": "60747318000162019362025",
-        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1936",
-        "Item": 3,
-        "Descricao": "Lidocaína Cloridrato",
-        "Qtd": 22104.0,
-        "Unitario": 0.9603,
-        "Total": 21226.4712,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1936"
     },
     {
-        "DataPublicacao": "20260107",
-        "DataResult": "2026-01-07T13:45:51",
-        "Orgao": "MUNICIPIO DE SANTA BRANCA",
-        "UF": "SP",
-        "Municipio": "Santa Branca",
-        "Edital": "55/2025",
-        "Licitacao": "46694121000181002492025",
-        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/249",
         "Item": 27,
         "Descricao": "BROMOPRIDA 5 MG/ML\nEspecificação: BROMOPRIDA 5MG/ML",
         "Qtd": 6000.0,
         "Unitario": 1.03,
         "Total": 6180.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260107",
         "DataResult": "2026-01-07T13:45:51",
         "Orgao": "MUNICIPIO DE SANTA BRANCA",
@@ -2523,15 +2513,15 @@
         "Municipio": "Santa Branca",
         "Edital": "55/2025",
         "Licitacao": "46694121000181002492025",
-        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/249",
+        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/249"
+    },
+    {
         "Item": 36,
         "Descricao": "OMEPRAZOL 40MG\nEspecificação: OMEPRAZOL 40MG",
         "Qtd": 2000.0,
         "Unitario": 7.66,
         "Total": 15320.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260107",
         "DataResult": "2026-01-07T13:45:51",
         "Orgao": "MUNICIPIO DE SANTA BRANCA",
@@ -2539,13 +2529,23 @@
         "Municipio": "Santa Branca",
         "Edital": "55/2025",
         "Licitacao": "46694121000181002492025",
-        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/249",
+        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/249"
+    },
+    {
         "Item": 34,
         "Descricao": "SUCCINATO SÓDICO DE HIDROCORTISONA 500 MG\nEspecificação: SUCCINATO SÓDICO DE HIDROCORTISONA 500MG",
         "Qtd": 9000.0,
         "Unitario": 4.49,
         "Total": 40410.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260107",
+        "DataResult": "2026-01-07T13:45:51",
+        "Orgao": "MUNICIPIO DE SANTA BRANCA",
+        "UF": "SP",
+        "Municipio": "Santa Branca",
+        "Edital": "55/2025",
+        "Licitacao": "46694121000181002492025",
+        "Link": "https://pncp.gov.br/app/editais/46694121000181/2025/249"
     },
     {
         "Item": 1,
