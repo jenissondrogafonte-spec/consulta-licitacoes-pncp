@@ -2,10 +2,10 @@ name: Atualizador Base PNCP
 
 on:
   schedule:
-    - cron: '0 2 * * *' # Roda todos os dias de madrugada (Start do ciclo)
-  workflow_dispatch: # Permite iniciar manualmente
+    - cron: '0 2 * * *' # Roda todos os dias de madrugada (Início do ciclo)
+  workflow_dispatch: # Permite iniciar manualmente no painel do GitHub
 
-# TRAVA DE SEGURANÇA: Garante que apenas 1 robô acesse os dados por vez
+# TRAVA DE SEGURANÇA: Garante que apenas 1 robô (coleta ou atualizador) aceda aos dados por vez
 concurrency:
   group: pncp-robots
   cancel-in-progress: false
@@ -32,9 +32,11 @@ jobs:
       - name: Executar Atualizador (Janela 15 dias)
         id: run_script
         run: |
+          set +e  # Desliga a interrupção automática por erro do GitHub Actions
           python atualizador.py
-          # Salva o código de saída para o próximo step
+          # Guarda o código de saída na variável de ambiente do GitHub
           echo "exit_code=$?" >> $GITHUB_ENV
+          exit 0  # Força o GitHub a entender que o passo foi concluído com sucesso
         continue-on-error: true
 
       - name: Commit e Push dos Dados Atualizados
@@ -42,14 +44,14 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add dados.json checkpoint_atualizador.txt
-          git commit -m "Atualização de status e itens das licitações capturadas" || echo "Nenhuma alteração para commitar"
+          git commit -m "⚙️ Atualização autónoma de status e itens das licitações (Janela de 15 dias)" || echo "Nenhuma alteração detetada para commit"
           git push
 
-      - name: Auto-disparo em Cascata (Se houver mais janelas)
+      - name: Auto-disparo em Cascata (Se existirem mais janelas pendentes)
         if: env.exit_code == '2'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Ainda há janelas temporais até hoje. Acionando a próxima tarefa em seguida..."
-          sleep 10 # Pausa leve antes de re-acionar
+          echo "Ainda existem janelas temporais até à data de hoje. A acionar a próxima tarefa..."
+          sleep 10 # Pausa estratégica para os servidores do GitHub assimilarem o push anterior
           gh workflow run atualizador.yml
