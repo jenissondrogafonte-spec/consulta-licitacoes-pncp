@@ -818,6 +818,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 4,
+        "Descricao": "ACIDO VALPROICO 50 MG/ML ACIDO VALPROICO 50 MG/ML - INDICACAO: anticonvulsivante e estabilizador de humor muito usado no tratamento de epilepsia, convulsoes, transtorno bipolar e enxaqueca.- FORMA FARMACEUTICA: suspensao oral.- APRESENTACAO: frasco de100 ml, com dosador.- No R.M.S. / lote.- Data de fabricacao / validade.-REFERENCIA: Depakene (Abbott) ou similar.",
+        "Qtd": 7200.0,
+        "Unitario": 5.34,
+        "Total": 38503.44,
+        "Status": "Venceu",
         "DataPublicacao": "20260130",
         "DataResult": "2026-01-30T09:55:02",
         "Orgao": "MUNICIPIO DE SOROCABA",
@@ -825,13 +831,7 @@
         "Municipio": "Sorocaba",
         "Edital": "00105/2025",
         "Licitacao": "46634044000174004852025",
-        "Link": "https://pncp.gov.br/app/editais/46634044000174/2025/485",
-        "Item": 4,
-        "Descricao": "ACIDO VALPROICO 50 MG/ML ACIDO VALPROICO 50 MG/ML - INDICACAO: anticonvulsivante e estabilizador de humor muito usado no tratamento de epilepsia, convulsoes, transtorno bipolar e enxaqueca.- FORMA FARMACEUTICA: suspensao oral.- APRESENTACAO: frasco de100 ml, com dosador.- No R.M.S. / lote.- Data de fabricacao / validade.-REFERENCIA: Depakene (Abbott) ou similar.",
-        "Qtd": 7200.0,
-        "Unitario": 5.34,
-        "Total": 38503.44,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/46634044000174/2025/485"
     },
     {
         "Item": 43,
