@@ -1,21 +1,11 @@
 [
     {
-        "DataPublicacao": "20251125",
-        "DataResult": "2026-02-12T11:43:58",
-        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
-        "UF": "BA",
-        "Municipio": "Luís Eduardo Magalhães",
-        "Edital": "060/2025",
-        "Licitacao": "04214419000105001892025",
-        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189",
         "Item": 116,
         "Descricao": "Azitromicina 40 mg/mL, Pó para suspensão oral + diluente. Frasco com 15 mL (após reconstituição)",
         "Qtd": 5000.0,
         "Unitario": 8.81,
         "Total": 44050.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2026-02-12T11:43:58",
         "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
@@ -23,15 +13,15 @@
         "Municipio": "Luís Eduardo Magalhães",
         "Edital": "060/2025",
         "Licitacao": "04214419000105001892025",
-        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
         "Item": 118,
         "Descricao": "Cefalexina 500mg",
         "Qtd": 100000.0,
         "Unitario": 0.63,
         "Total": 63000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2026-02-12T11:43:58",
         "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
@@ -39,15 +29,15 @@
         "Municipio": "Luís Eduardo Magalhães",
         "Edital": "060/2025",
         "Licitacao": "04214419000105001892025",
-        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
         "Item": 119,
         "Descricao": "Cefalexina 250mg/5mL, pó para suspensão oral, frasco com 60mL",
         "Qtd": 3000.0,
         "Unitario": 11.33,
         "Total": 33990.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2026-02-12T11:43:58",
         "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
@@ -55,15 +45,15 @@
         "Municipio": "Luís Eduardo Magalhães",
         "Edital": "060/2025",
         "Licitacao": "04214419000105001892025",
-        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
         "Item": 117,
         "Descricao": "Azitromicina 500mg comprimido",
         "Qtd": 50000.0,
         "Unitario": 0.87,
         "Total": 43500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2026-02-12T11:43:58",
         "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
@@ -71,13 +61,263 @@
         "Municipio": "Luís Eduardo Magalhães",
         "Edital": "060/2025",
         "Licitacao": "04214419000105001892025",
-        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
         "Item": 120,
         "Descricao": "Aciclovir 200 mg",
         "Qtd": 37500.0,
         "Unitario": 0.15,
         "Total": 5625.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 113,
+        "Descricao": "Fluconazol Cápsula 150 mg",
+        "Qtd": 20000.0,
+        "Unitario": 0.44,
+        "Total": 8800.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 114,
+        "Descricao": "Nistatina 100.000 UI/mL, suspensão oral, frasco com 50 mL",
+        "Qtd": 1000.0,
+        "Unitario": 5.55,
+        "Total": 5550.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 115,
+        "Descricao": "Ciprofloxacino, cloridrato 500mg",
+        "Qtd": 30000.0,
+        "Unitario": 0.22,
+        "Total": 6600.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 121,
+        "Descricao": "Amoxicilina 500 mg + Clavulanato de Potássio 125 mg",
+        "Qtd": 50000.0,
+        "Unitario": 1.01,
+        "Total": 50500.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 122,
+        "Descricao": "Claritromicina 500 mg",
+        "Qtd": 10000.0,
+        "Unitario": 2.04,
+        "Total": 20400.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 123,
+        "Descricao": "Levofloxacino 750 mg",
+        "Qtd": 1000.0,
+        "Unitario": 8.38,
+        "Total": 8380.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 124,
+        "Descricao": "Metronidazol 250mg",
+        "Qtd": 30000.0,
+        "Unitario": 0.19,
+        "Total": 5700.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 125,
+        "Descricao": "Sulfametoxazol 400mg + Trimetroprima 80mg comprimido",
+        "Qtd": 15000.0,
+        "Unitario": 0.2,
+        "Total": 3000.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 126,
+        "Descricao": "Amoxicilina + Clavulanato de Potássio, Suspensão Oral 50 mg/12,5 mg, Pó para suspensão Oral, Frasco com 75 mL",
+        "Qtd": 3000.0,
+        "Unitario": 16.26,
+        "Total": 48780.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 127,
+        "Descricao": "Amoxicilina 500 mg",
+        "Qtd": 200000.0,
+        "Unitario": 0.23,
+        "Total": 46000.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 128,
+        "Descricao": "Amoxicilina 50mg/mL pó para suspensão oral. Frasco com 60 mL",
+        "Qtd": 10000.0,
+        "Unitario": 3.78,
+        "Total": 37800.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 129,
+        "Descricao": "Metronidazol, benzoil 40mg/mL, suspensão oral. Frasco com 100mL",
+        "Qtd": 3000.0,
+        "Unitario": 4.52,
+        "Total": 13560.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 130,
+        "Descricao": "Metronidazol 10% (100mg/g), gel vaginal, bisnaga com 50g",
+        "Qtd": 12000.0,
+        "Unitario": 6.17,
+        "Total": 74040.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 131,
+        "Descricao": "Nitrofurantoina 100 mg Cápsula",
+        "Qtd": 50000.0,
+        "Unitario": 0.5,
+        "Total": 25000.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
+    },
+    {
+        "Item": 132,
+        "Descricao": "Sulfametoxazol 40mg/ml + Trimetoprima 8 mg/mL, suspensão oral. Frasco com 50mL",
+        "Qtd": 1500.0,
+        "Unitario": 3.78,
+        "Total": 5670.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-02-12T11:43:58",
+        "Orgao": "MUNICIPIO DE LUIS EDUARDO MAGALHAES",
+        "UF": "BA",
+        "Municipio": "Luís Eduardo Magalhães",
+        "Edital": "060/2025",
+        "Licitacao": "04214419000105001892025",
+        "Link": "https://pncp.gov.br/app/editais/04214419000105/2025/189"
     },
     {
         "DataPublicacao": "20260120",
@@ -112,22 +352,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251127",
-        "DataResult": "2026-02-09T14:57:06",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4448/2025",
-        "Licitacao": "11022597001325006692025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669",
         "Item": 1,
         "Descricao": "(3067173) - AMIODARONA, CLORIDRATO - CONCENTRACAO/DOSAGEM 150 MG/3 ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 1560.0,
         "Unitario": 3.09,
         "Total": 4820.24,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251127",
         "DataResult": "2026-02-09T14:57:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -135,15 +365,15 @@
         "Municipio": "Recife",
         "Edital": "4448/2025",
         "Licitacao": "11022597001325006692025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669"
+    },
+    {
         "Item": 10,
         "Descricao": "(3169596) - NIFEDIPINO - CONCENTRACAO/DOSAGEM 10 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 2420.0,
         "Unitario": 0.14,
         "Total": 338.8,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251127",
         "DataResult": "2026-02-09T14:57:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -151,15 +381,15 @@
         "Municipio": "Recife",
         "Edital": "4448/2025",
         "Licitacao": "11022597001325006692025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669"
+    },
+    {
         "Item": 2,
         "Descricao": "(3067211) - AMIODARONA, CLORIDRATO - CONCENTRACAO/DOSAGEM 200 MG,FORMA FARMACEUTICA COMPRIMIDO,FORMA DE APRESENTACAO COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 7800.0,
         "Unitario": 0.32,
         "Total": 2535.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251127",
         "DataResult": "2026-02-09T14:57:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -167,15 +397,15 @@
         "Municipio": "Recife",
         "Edital": "4448/2025",
         "Licitacao": "11022597001325006692025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669"
+    },
+    {
         "Item": 9,
         "Descricao": "(3183289) - LEVOTIROXINA SODICA - CONCENTRACAO/DOSAGEM 25 MCG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 7730.0,
         "Unitario": 0.15,
         "Total": 1186.56,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251127",
         "DataResult": "2026-02-09T14:57:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -183,15 +413,15 @@
         "Municipio": "Recife",
         "Edital": "4448/2025",
         "Licitacao": "11022597001325006692025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669"
+    },
+    {
         "Item": 8,
         "Descricao": "(3097447) - EPINEFRINA - CONCENTRACAO/DOSAGEM 1 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 15910.0,
         "Unitario": 0.8,
         "Total": 12726.41,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251127",
         "DataResult": "2026-02-09T14:57:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -199,13 +429,23 @@
         "Municipio": "Recife",
         "Edital": "4448/2025",
         "Licitacao": "11022597001325006692025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669"
+    },
+    {
         "Item": 14,
         "Descricao": "(3085562) - NOREPINEFRINA - CONCENTRACAO/DOSAGEM 2 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 21520.0,
         "Unitario": 1.0,
         "Total": 21507.09,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251127",
+        "DataResult": "2026-02-09T14:57:06",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4448/2025",
+        "Licitacao": "11022597001325006692025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/669"
     },
     {
         "Item": 2,
@@ -594,6 +834,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 43,
+        "Descricao": "284106 - RISPERIDONA SOLUÇÃO ORAL 1MG/ML FRASCOS 30ML DE ENBALAGEM CONTENDO DADOS DE IDENTIFICAÇÃO, Nº DO LOTE E ANO DE FABRICAÇÃO E VALIDADE.",
+        "Qtd": 23400.0,
+        "Unitario": 7.28,
+        "Total": 170352.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251118",
         "DataResult": "2026-01-29T10:36:55",
         "Orgao": "MUNICIPIO DE GRAVATA",
@@ -601,13 +847,7 @@
         "Municipio": "Gravatá",
         "Edital": "073/2025",
         "Licitacao": "11049830000120003872025",
-        "Link": "https://pncp.gov.br/app/editais/11049830000120/2025/387",
-        "Item": 43,
-        "Descricao": "284106 - RISPERIDONA SOLUÇÃO ORAL 1MG/ML FRASCOS 30ML DE ENBALAGEM CONTENDO DADOS DE IDENTIFICAÇÃO, Nº DO LOTE E ANO DE FABRICAÇÃO E VALIDADE.",
-        "Qtd": 23400.0,
-        "Unitario": 7.28,
-        "Total": 170352.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/11049830000120/2025/387"
     },
     {
         "DataPublicacao": "20250122",
@@ -868,22 +1108,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/345"
     },
     {
-        "DataPublicacao": "20251125",
-        "DataResult": "2026-01-19T15:02:19",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "GC-SEPLAG-002-PL 0039/2025",
-        "Licitacao": "41090291000133002992025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/299",
         "Item": 5,
         "Descricao": "ATADURA CREPOM, TECIDO MISTO, ATE 10% DE ELASTANO, 30 CM 180 CM EM REPOUSO 13 FIOS/CM2, EMBALAGEM INDIVIDUAL. MARCAS DE REFERENCIA: CREMER E ANAPOLIS.",
         "Qtd": 111600.0,
         "Unitario": 1.07,
         "Total": 119412.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2026-01-19T15:02:19",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -891,13 +1121,23 @@
         "Municipio": "Recife",
         "Edital": "GC-SEPLAG-002-PL 0039/2025",
         "Licitacao": "41090291000133002992025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/299",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/299"
+    },
+    {
         "Item": 15,
         "Descricao": "FITA ADESIVA HOSPITALAR, MICROPOROSA, NÃO TECIDO DE VISCOSE RAYON, BRANCA, 50 MM, 10 M, C/ ADESIVO ACRÍLICO HIPO-ALERGÊNICO",
         "Qtd": 12800.0,
         "Unitario": 3.82,
         "Total": 48896.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2026-01-19T15:02:19",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "GC-SEPLAG-002-PL 0039/2025",
+        "Licitacao": "41090291000133002992025",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/299"
     },
     {
         "Item": 10,
@@ -1028,22 +1268,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251126",
-        "DataResult": "2026-01-14T14:47:43",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4442/2025",
-        "Licitacao": "11022597001325006602025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660",
         "Item": 6,
         "Descricao": "(3099059) - ANFOTERICINA B - CONCENTRACAO/DOSAGEM 50 MG,FORMA FARMACEUTICA PO LIOFILIZADO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 810.0,
         "Unitario": 28.7,
         "Total": 23246.92,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2026-01-14T14:47:43",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -1051,15 +1281,15 @@
         "Municipio": "Recife",
         "Edital": "4442/2025",
         "Licitacao": "11022597001325006602025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660"
+    },
+    {
         "Item": 11,
         "Descricao": "(3069214) - CEFTRIAXONA DISSODICA - CONCENTRACAO/DOSAGEM 1 G,FORMA FARMACEUTICA PO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 14700.0,
         "Unitario": 3.61,
         "Total": 53106.69,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2026-01-14T14:47:43",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -1067,15 +1297,15 @@
         "Municipio": "Recife",
         "Edital": "4442/2025",
         "Licitacao": "11022597001325006602025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660"
+    },
+    {
         "Item": 12,
         "Descricao": "(3168948) - GLIBENCLAMIDA - CONCENTRACAO/DOSAGEM 5 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 7500.0,
         "Unitario": 0.05,
         "Total": 374.25,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2026-01-14T14:47:43",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -1083,13 +1313,23 @@
         "Municipio": "Recife",
         "Edital": "4442/2025",
         "Licitacao": "11022597001325006602025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660"
+    },
+    {
         "Item": 15,
         "Descricao": "(3086283) - VANCOMICINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 500 MG,FORMA FARMACEUTICA PO LIOFILIZADO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 16120.0,
         "Unitario": 4.65,
         "Total": 74956.39,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251126",
+        "DataResult": "2026-01-14T14:47:43",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4442/2025",
+        "Licitacao": "11022597001325006602025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/660"
     },
     {
         "Item": 220,
@@ -1252,22 +1492,12 @@
         "Link": "https://pncp.gov.br/app/editais/09251115000123/2025/23"
     },
     {
-        "DataPublicacao": "20251126",
-        "DataResult": "2026-01-14T10:12:42",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4446/2025",
-        "Licitacao": "11022597001325006592025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659",
         "Item": 3,
         "Descricao": "(3081907) - ADENOSINA - CONCENTRACAO/DOSAGEM 3 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 620.0,
         "Unitario": 10.31,
         "Total": 6392.14,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2026-01-14T10:12:42",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -1275,15 +1505,15 @@
         "Municipio": "Recife",
         "Edital": "4446/2025",
         "Licitacao": "11022597001325006592025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659"
+    },
+    {
         "Item": 5,
         "Descricao": "(3097463) - ALOPURINOL - CONCENTRACAO/DOSAGEM 100 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 7380.0,
         "Unitario": 0.15,
         "Total": 1106.26,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2026-01-14T10:12:42",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -1291,13 +1521,23 @@
         "Municipio": "Recife",
         "Edital": "4446/2025",
         "Licitacao": "11022597001325006592025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659"
+    },
+    {
         "Item": 6,
         "Descricao": "(3240215) - ALOPURINOL - CONCENTRACAO/DOSAGEM 300 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 5330.0,
         "Unitario": 0.24,
         "Total": 1278.67,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251126",
+        "DataResult": "2026-01-14T10:12:42",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4446/2025",
+        "Licitacao": "11022597001325006592025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/659"
     },
     {
         "DataPublicacao": "20260114",
@@ -2228,6 +2468,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 59,
+        "Descricao": "METRONIDAZOL Creme ou geleia vaginal 100mg/g. Especificação: METRONIDAZOL Creme ou geleia vaginal 100mg/g",
+        "Qtd": 3000.0,
+        "Unitario": 5.98,
+        "Total": 17940.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2026-01-08T10:36:04",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -2235,13 +2481,7 @@
         "Municipio": "Poço Verde",
         "Edital": "08/2025",
         "Licitacao": "11380216000146000222025",
-        "Link": "https://pncp.gov.br/app/editais/11380216000146/2025/22",
-        "Item": 59,
-        "Descricao": "METRONIDAZOL Creme ou geleia vaginal 100mg/g. Especificação: METRONIDAZOL Creme ou geleia vaginal 100mg/g",
-        "Qtd": 3000.0,
-        "Unitario": 5.98,
-        "Total": 17940.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/11380216000146/2025/22"
     },
     {
         "DataPublicacao": "20260108",
@@ -2948,6 +3188,12 @@
         "Link": "https://pncp.gov.br/app/editais/11926843000130/2025/51"
     },
     {
+        "Item": 141,
+        "Descricao": "GAZE - COMPRESSA GAZE, TECIDO 100% ALGODÃO:13 FIOS/CM2, COR BRANCA, ISENTA DE IMPUREZAS, 8 CAMADAS, 7,50 CM, X7,50 CM, 5 DOBRAS, C/ FIO RADIOPACOESCARTÁVEL PACOTE COM 10 UNIDADES (COTA PRINCIPAL DE 75% COM AMPLA CONCORRÊNCIA)",
+        "Qtd": 106500.0,
+        "Unitario": 0.48,
+        "Total": 51120.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251118",
         "DataResult": "2025-12-29T08:55:06",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE CANHOTINHO",
@@ -2955,13 +3201,7 @@
         "Municipio": "Canhotinho",
         "Edital": "015/2025",
         "Licitacao": "09154486000197000162025",
-        "Link": "https://pncp.gov.br/app/editais/09154486000197/2025/16",
-        "Item": 141,
-        "Descricao": "GAZE - COMPRESSA GAZE, TECIDO 100% ALGODÃO:13 FIOS/CM2, COR BRANCA, ISENTA DE IMPUREZAS, 8 CAMADAS, 7,50 CM, X7,50 CM, 5 DOBRAS, C/ FIO RADIOPACOESCARTÁVEL PACOTE COM 10 UNIDADES (COTA PRINCIPAL DE 75% COM AMPLA CONCORRÊNCIA)",
-        "Qtd": 106500.0,
-        "Unitario": 0.48,
-        "Total": 51120.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/09154486000197/2025/16"
     },
     {
         "Item": 30001,
@@ -4123,22 +4363,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251128",
-        "DataResult": "2025-12-22T16:03:18",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4447/2025",
-        "Licitacao": "11022597001325006712025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671",
         "Item": 3,
         "Descricao": "(3166473) - METRONIDAZOL - CONCENTRACAO/DOSAGEM 250 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 4250.0,
         "Unitario": 0.18,
         "Total": 745.88,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251128",
         "DataResult": "2025-12-22T16:03:18",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4146,15 +4376,15 @@
         "Municipio": "Recife",
         "Edital": "4447/2025",
         "Licitacao": "11022597001325006712025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671"
+    },
+    {
         "Item": 2,
         "Descricao": "(3293734) - METRONIDAZOL - CONCENTRACAO/DOSAGEM 100 MG/G,FORMA FARMACEUTICA GELEIA,FORMA DE APRESENTACAO BISNAGA,VIA DE ADMINISTRACAO VAGINAL",
         "Qtd": 80.0,
         "Unitario": 5.9,
         "Total": 472.4,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251128",
         "DataResult": "2025-12-22T16:03:18",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4162,15 +4392,15 @@
         "Municipio": "Recife",
         "Edital": "4447/2025",
         "Licitacao": "11022597001325006712025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671"
+    },
+    {
         "Item": 5,
         "Descricao": "(3084027) - METRONIDAZOL - CONCENTRACAO/DOSAGEM 5 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO BOLSA OU FRASCO,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 5100.0,
         "Unitario": 3.8,
         "Total": 19379.49,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251128",
         "DataResult": "2025-12-22T16:03:18",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4178,15 +4408,15 @@
         "Municipio": "Recife",
         "Edital": "4447/2025",
         "Licitacao": "11022597001325006712025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671"
+    },
+    {
         "Item": 7,
         "Descricao": "(3183203) - NISTATINA - CONCENTRACAO/DOSAGEM 25.000 UI/G,FORMA FARMACEUTICA CREME VAGINAL,FORMA DE APRESENTACAO BISNAGA + APLICADOR,VIA DE ADMINISTRACAO VAGINAL",
         "Qtd": 380.0,
         "Unitario": 7.3,
         "Total": 2773.58,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251128",
         "DataResult": "2025-12-22T16:03:18",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4194,15 +4424,15 @@
         "Municipio": "Recife",
         "Edital": "4447/2025",
         "Licitacao": "11022597001325006712025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671"
+    },
+    {
         "Item": 11,
         "Descricao": "(3078396) - SULFADIAZINA DE PRATA - CONCENTRACAO/DOSAGEM 10 MG/G,FORMA FARMACEUTICA CREME,FORMA DE APRESENTACAO POTE,VIA DE ADMINISTRACAO TOPICA",
         "Qtd": 12.0,
         "Unitario": 35.74,
         "Total": 428.88,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251128",
         "DataResult": "2025-12-22T16:03:18",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4210,31 +4440,31 @@
         "Municipio": "Recife",
         "Edital": "4447/2025",
         "Licitacao": "11022597001325006712025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671"
+    },
+    {
         "Item": 10,
         "Descricao": "(3088340) - SULFADIAZINA DE PRATA - CONCENTRACAO/DOSAGEM 10 MG/G,FORMA FARMACEUTICA CREME,FORMA DE APRESENTACAO BISNAGA,VIA DE ADMINISTRACAO TOPICA",
         "Qtd": 2240.0,
         "Unitario": 4.69,
         "Total": 10505.38,
-        "Status": "Venceu"
-    },
-    {
-        "DataPublicacao": "20251203",
-        "DataResult": "2025-12-22T12:13:14",
+        "Status": "Venceu",
+        "DataPublicacao": "20251128",
+        "DataResult": "2025-12-22T16:03:18",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
         "UF": "PE",
         "Municipio": "Recife",
-        "Edital": "3769/2025",
-        "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Edital": "4447/2025",
+        "Licitacao": "11022597001325006712025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/671"
+    },
+    {
         "Item": 1,
         "Descricao": "(3065146) - ACICLOVIR - CONCENTRACAO/DOSAGEM 250 MG,FORMA FARMACEUTICA PO LIOFILIZADO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 300.0,
         "Unitario": 6.84,
         "Total": 2051.97,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-22T12:13:14",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4242,15 +4472,15 @@
         "Municipio": "Recife",
         "Edital": "3769/2025",
         "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
+    },
+    {
         "Item": 4,
         "Descricao": "(3204472) - BUPIVACAINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 5 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA OU PERIDURAL",
         "Qtd": 329.0,
         "Unitario": 5.8,
         "Total": 1908.17,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-22T12:13:14",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4258,15 +4488,15 @@
         "Municipio": "Recife",
         "Edital": "3769/2025",
         "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
+    },
+    {
         "Item": 5,
         "Descricao": "(3068560) - BUPIVACAINA, CLORIDRATO + GLICOSE - CONCENTRACAO/DOSAGEM 5 MG/ML + 80 MG/ML RESPECTIVAMENTE,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 4321.0,
         "Unitario": 2.83,
         "Total": 12228.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-22T12:13:14",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4274,15 +4504,15 @@
         "Municipio": "Recife",
         "Edital": "3769/2025",
         "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
+    },
+    {
         "Item": 6,
         "Descricao": "(3069079) - CEFALOTINA SODICA - CONCENTRACAO/DOSAGEM 1 G,FORMA FARMACEUTICA PO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 3263.0,
         "Unitario": 4.56,
         "Total": 14878.95,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-22T12:13:14",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4290,15 +4520,15 @@
         "Municipio": "Recife",
         "Edital": "3769/2025",
         "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
+    },
+    {
         "Item": 12,
         "Descricao": "(3080714) - DEXTROCETAMINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 50 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 190.0,
         "Unitario": 61.45,
         "Total": 11675.48,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-22T12:13:14",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4306,15 +4536,15 @@
         "Municipio": "Recife",
         "Edital": "3769/2025",
         "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
+    },
+    {
         "Item": 11,
         "Descricao": "(3087751) - DEXMEDETOMIDINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 0,1 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 850.0,
         "Unitario": 6.0,
         "Total": 5099.92,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-22T12:13:14",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -4322,13 +4552,23 @@
         "Municipio": "Recife",
         "Edital": "3769/2025",
         "Licitacao": "11022597001244001392025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
+    },
+    {
         "Item": 14,
         "Descricao": "(3163920) - DIMENIDRINATO + PIRIDOXINA + GLICOSE + FRUTOSE - CONCENTRACAO/DOSAGEM 3 MG/ML + 5 MG/ML + 100 MG/ML + 100 MG/ML RESPECTIVAMENTE,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 450.0,
         "Unitario": 8.83,
         "Total": 3973.5,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251203",
+        "DataResult": "2025-12-22T12:13:14",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "3769/2025",
+        "Licitacao": "11022597001244001392025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/139"
     },
     {
         "DataPublicacao": "20251222",
@@ -4411,22 +4651,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/604"
     },
     {
-        "DataPublicacao": "20251124",
-        "DataResult": "2025-12-18T10:32:58",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "GC-SEPLAG-002-PL 0038/2025",
-        "Licitacao": "41090291000133002982025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298",
         "Item": 2,
         "Descricao": "ADENOSINA, DOSAGEM:3 MG/ML, INDICAÇÃO:SOLUÇÃO INJETÁVEL, AMPOLA 2ML.",
         "Qtd": 1000.0,
         "Unitario": 9.279,
         "Total": 9279.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-12-18T10:32:58",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -4434,15 +4664,15 @@
         "Municipio": "Recife",
         "Edital": "GC-SEPLAG-002-PL 0038/2025",
         "Licitacao": "41090291000133002982025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298"
+    },
+    {
         "Item": 12,
         "Descricao": "FUROSEMIDA 10 MG/ML. AMPOLA COM 2 ML.",
         "Qtd": 24000.0,
         "Unitario": 0.6158,
         "Total": 14779.2,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-12-18T10:32:58",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -4450,15 +4680,15 @@
         "Municipio": "Recife",
         "Edital": "GC-SEPLAG-002-PL 0038/2025",
         "Licitacao": "41090291000133002982025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298"
+    },
+    {
         "Item": 9,
         "Descricao": "CLORETO DE SÓDIO 200MG/ML, SOLUÇÃO INJETÁVEL, AMPOLA COM 10ML.",
         "Qtd": 200.0,
         "Unitario": 0.635,
         "Total": 127.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-12-18T10:32:58",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -4466,15 +4696,15 @@
         "Municipio": "Recife",
         "Edital": "GC-SEPLAG-002-PL 0038/2025",
         "Licitacao": "41090291000133002982025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298"
+    },
+    {
         "Item": 15,
         "Descricao": "LIDOCAÍNA 2% SEM VASO. AMPOLA COM 5 ML.",
         "Qtd": 27000.0,
         "Unitario": 1.0529,
         "Total": 28428.3,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-12-18T10:32:58",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -4482,13 +4712,23 @@
         "Municipio": "Recife",
         "Edital": "GC-SEPLAG-002-PL 0038/2025",
         "Licitacao": "41090291000133002982025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298"
+    },
+    {
         "Item": 17,
         "Descricao": "PROMETAZINA 25 MG/ML, AMPOLA COM 2 ML",
         "Qtd": 10000.0,
         "Unitario": 2.89,
         "Total": 28900.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251124",
+        "DataResult": "2025-12-18T10:32:58",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "GC-SEPLAG-002-PL 0038/2025",
+        "Licitacao": "41090291000133002982025",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/298"
     },
     {
         "DataPublicacao": "20251217",
@@ -6866,6 +7106,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 88,
+        "Descricao": "Sulfametoxazol",
+        "Qtd": 25440.0,
+        "Unitario": 3.97,
+        "Total": 100996.8,
+        "Status": "Venceu",
         "DataPublicacao": "20251121",
         "DataResult": "2025-12-04T07:27:25",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -6873,13 +7119,7 @@
         "Municipio": "Brasília",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305039502025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3950",
-        "Item": 88,
-        "Descricao": "Sulfametoxazol",
-        "Qtd": 25440.0,
-        "Unitario": 3.97,
-        "Total": 100996.8,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3950"
     },
     {
         "DataPublicacao": "20251204",
@@ -7406,6 +7646,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/606"
     },
     {
+        "Item": 1,
+        "Descricao": "Nitroglicerina",
+        "Qtd": 13695.0,
+        "Unitario": 33.9966,
+        "Total": 465583.437,
+        "Status": "Venceu",
         "DataPublicacao": "20251203",
         "DataResult": "2025-12-03T07:14:41",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -7413,13 +7659,7 @@
         "Municipio": "Recife",
         "Edital": "90814/2025",
         "Licitacao": "10572022000180012372025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1237",
-        "Item": 1,
-        "Descricao": "Nitroglicerina",
-        "Qtd": 13695.0,
-        "Unitario": 33.9966,
-        "Total": 465583.437,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1237"
     },
     {
         "Item": 131,
@@ -7518,22 +7758,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/588"
     },
     {
-        "DataPublicacao": "20251202",
-        "DataResult": "2025-12-02T07:18:28",
-        "Orgao": "MUNICIPIO DE SANTA ROSA DE VITERBO",
-        "UF": "SP",
-        "Municipio": "Santa Rosa de Viterbo",
-        "Edital": "90057/2025",
-        "Licitacao": "45368545000193001302025",
-        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130",
         "Item": 29,
         "Descricao": "Carbamazepina",
         "Qtd": 800.0,
         "Unitario": 5.75,
         "Total": 4600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251202",
         "DataResult": "2025-12-02T07:18:28",
         "Orgao": "MUNICIPIO DE SANTA ROSA DE VITERBO",
@@ -7541,15 +7771,15 @@
         "Municipio": "Santa Rosa de Viterbo",
         "Edital": "90057/2025",
         "Licitacao": "45368545000193001302025",
-        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130",
+        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130"
+    },
+    {
         "Item": 47,
         "Descricao": "Ambroxol",
         "Qtd": 5000.0,
         "Unitario": 2.06,
         "Total": 10300.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251202",
         "DataResult": "2025-12-02T07:18:28",
         "Orgao": "MUNICIPIO DE SANTA ROSA DE VITERBO",
@@ -7557,15 +7787,15 @@
         "Municipio": "Santa Rosa de Viterbo",
         "Edital": "90057/2025",
         "Licitacao": "45368545000193001302025",
-        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130",
+        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130"
+    },
+    {
         "Item": 54,
         "Descricao": "Clorpromazina",
         "Qtd": 60000.0,
         "Unitario": 0.24,
         "Total": 14400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251202",
         "DataResult": "2025-12-02T07:18:28",
         "Orgao": "MUNICIPIO DE SANTA ROSA DE VITERBO",
@@ -7573,31 +7803,47 @@
         "Municipio": "Santa Rosa de Viterbo",
         "Edital": "90057/2025",
         "Licitacao": "45368545000193001302025",
-        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130",
+        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130"
+    },
+    {
         "Item": 77,
         "Descricao": "Estradiol",
         "Qtd": 1200.0,
         "Unitario": 6.79,
         "Total": 8148.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251202",
+        "DataResult": "2025-12-02T07:18:28",
+        "Orgao": "MUNICIPIO DE SANTA ROSA DE VITERBO",
+        "UF": "SP",
+        "Municipio": "Santa Rosa de Viterbo",
+        "Edital": "90057/2025",
+        "Licitacao": "45368545000193001302025",
+        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130"
     },
     {
+        "Item": 317,
+        "Descricao": "Heparina Sódica",
+        "Qtd": 3000.0,
+        "Unitario": 7.06,
+        "Total": 21180.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251202",
-        "DataResult": "2025-12-02T07:07:42",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "90854/2025",
-        "Licitacao": "10572022000180012282025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1228",
+        "DataResult": "2025-12-02T07:18:28",
+        "Orgao": "MUNICIPIO DE SANTA ROSA DE VITERBO",
+        "UF": "SP",
+        "Municipio": "Santa Rosa de Viterbo",
+        "Edital": "90057/2025",
+        "Licitacao": "45368545000193001302025",
+        "Link": "https://pncp.gov.br/app/editais/45368545000193/2025/130"
+    },
+    {
         "Item": 7,
         "Descricao": "Fentanila",
         "Qtd": 30141.0,
         "Unitario": 1.9298,
         "Total": 58166.1018,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251202",
         "DataResult": "2025-12-02T07:07:42",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -7605,13 +7851,23 @@
         "Municipio": "Recife",
         "Edital": "90854/2025",
         "Licitacao": "10572022000180012282025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1228",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1228"
+    },
+    {
         "Item": 13,
         "Descricao": "Morfina",
         "Qtd": 138360.0,
         "Unitario": 1.4498,
         "Total": 200594.328,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251202",
+        "DataResult": "2025-12-02T07:07:42",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90854/2025",
+        "Licitacao": "10572022000180012282025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1228"
     },
     {
         "Item": 308,
@@ -7630,22 +7886,12 @@
         "Link": "https://pncp.gov.br/app/editais/11417922000115/2025/30"
     },
     {
-        "DataPublicacao": "20251201",
-        "DataResult": "2025-12-01T12:57:05",
-        "Orgao": "MUNICIPIO DE CAXAMBU",
-        "UF": "MG",
-        "Municipio": "Caxambu",
-        "Edital": "086/2025",
-        "Licitacao": "18008870000172002442025",
-        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
         "Item": 11,
         "Descricao": "AZITROMICINA 500 MG COMP",
         "Qtd": 1500.0,
         "Unitario": 0.78,
         "Total": 1170.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251201",
         "DataResult": "2025-12-01T12:57:05",
         "Orgao": "MUNICIPIO DE CAXAMBU",
@@ -7653,15 +7899,15 @@
         "Municipio": "Caxambu",
         "Edital": "086/2025",
         "Licitacao": "18008870000172002442025",
-        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
+        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244"
+    },
+    {
         "Item": 20,
         "Descricao": "CARBONATO DE LÍTIO 300 MG COMP",
         "Qtd": 10000.0,
         "Unitario": 0.21,
         "Total": 2100.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251201",
         "DataResult": "2025-12-01T12:57:05",
         "Orgao": "MUNICIPIO DE CAXAMBU",
@@ -7669,15 +7915,15 @@
         "Municipio": "Caxambu",
         "Edital": "086/2025",
         "Licitacao": "18008870000172002442025",
-        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
+        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244"
+    },
+    {
         "Item": 34,
         "Descricao": "FOLINATO DE CÁLCIO 15 MG COMPRIMIDO",
         "Qtd": 500.0,
         "Unitario": 2.42,
         "Total": 1210.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251201",
         "DataResult": "2025-12-01T12:57:05",
         "Orgao": "MUNICIPIO DE CAXAMBU",
@@ -7685,13 +7931,23 @@
         "Municipio": "Caxambu",
         "Edital": "086/2025",
         "Licitacao": "18008870000172002442025",
-        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
+        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244"
+    },
+    {
         "Item": 56,
         "Descricao": "VALPROATO DE SÓDIO 50 MG/ML XAROPE 100 ML",
         "Qtd": 350.0,
         "Unitario": 5.08,
         "Total": 1778.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251201",
+        "DataResult": "2025-12-01T12:57:05",
+        "Orgao": "MUNICIPIO DE CAXAMBU",
+        "UF": "MG",
+        "Municipio": "Caxambu",
+        "Edital": "086/2025",
+        "Licitacao": "18008870000172002442025",
+        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244"
     },
     {
         "Item": 3,
@@ -7902,22 +8158,12 @@
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1126"
     },
     {
-        "DataPublicacao": "20251128",
-        "DataResult": "2025-11-28T12:06:36",
-        "Orgao": "MUNICIPIO DE SENADOR GEORGINO AVELINO",
-        "UF": "RN",
-        "Municipio": "Senador Georgino Avelino",
-        "Edital": "50001/2025",
-        "Licitacao": "08168478000137000542025",
-        "Link": "https://pncp.gov.br/app/editais/08168478000137/2025/54",
         "Item": 98,
         "Descricao": "SORO GLICOSADO 5% 10ML",
         "Qtd": 1000.0,
         "Unitario": 6.34,
         "Total": 6340.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251128",
         "DataResult": "2025-11-28T12:06:36",
         "Orgao": "MUNICIPIO DE SENADOR GEORGINO AVELINO",
@@ -7925,13 +8171,23 @@
         "Municipio": "Senador Georgino Avelino",
         "Edital": "50001/2025",
         "Licitacao": "08168478000137000542025",
-        "Link": "https://pncp.gov.br/app/editais/08168478000137/2025/54",
+        "Link": "https://pncp.gov.br/app/editais/08168478000137/2025/54"
+    },
+    {
         "Item": 100,
         "Descricao": "SORO RINGER COM LACTATO 500ML",
         "Qtd": 500.0,
         "Unitario": 6.29,
         "Total": 3145.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251128",
+        "DataResult": "2025-11-28T12:06:36",
+        "Orgao": "MUNICIPIO DE SENADOR GEORGINO AVELINO",
+        "UF": "RN",
+        "Municipio": "Senador Georgino Avelino",
+        "Edital": "50001/2025",
+        "Licitacao": "08168478000137000542025",
+        "Link": "https://pncp.gov.br/app/editais/08168478000137/2025/54"
     },
     {
         "Item": 75,
@@ -8126,22 +8382,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/357"
     },
     {
-        "DataPublicacao": "20251126",
-        "DataResult": "2025-11-26T16:17:33",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "RN",
-        "Municipio": "São Gonçalo do Amarante",
-        "Edital": "PE0192025/2025",
-        "Licitacao": "14026965000168000012025",
-        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1",
         "Item": 26,
         "Descricao": "AMOXICILINA 250MG",
         "Qtd": 5000.0,
         "Unitario": 3.08,
         "Total": 15400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T16:17:33",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -8149,15 +8395,15 @@
         "Municipio": "São Gonçalo do Amarante",
         "Edital": "PE0192025/2025",
         "Licitacao": "14026965000168000012025",
-        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1",
+        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1"
+    },
+    {
         "Item": 149,
         "Descricao": "HIDROCLOROTIAZIDA 25MG",
         "Qtd": 3000000.0,
         "Unitario": 0.0187,
         "Total": 56100.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T16:17:33",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -8165,48 +8411,47 @@
         "Municipio": "São Gonçalo do Amarante",
         "Edital": "PE0192025/2025",
         "Licitacao": "14026965000168000012025",
-        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1",
+        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1"
+    },
+    {
         "Item": 106,
         "Descricao": "ENALAPRIL 10MG",
         "Qtd": 800000.0,
         "Unitario": 0.0286,
         "Total": 22880.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T16:17:33",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
         "UF": "RN",
         "Municipio": "São Gonçalo do Amarante",
-        "UASG": "30",
         "Edital": "PE0192025/2025",
         "Licitacao": "14026965000168000012025",
-        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1",
+        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1"
+    },
+    {
         "Item": 235,
         "Descricao": "SINVASTATINA 20MG",
         "Qtd": 400000.0,
         "Unitario": 0.055,
         "Total": 22000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251126",
+        "DataResult": "2025-11-26T16:17:33",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "RN",
+        "Municipio": "São Gonçalo do Amarante",
+        "Edital": "PE0192025/2025",
+        "Licitacao": "14026965000168000012025",
+        "Link": "https://pncp.gov.br/app/editais/14026965000168/2025/1"
     },
     {
-        "DataPublicacao": "20251126",
-        "DataResult": "2025-11-26T15:50:57",
-        "Orgao": "MUNICIPIO DE BEBEDOURO",
-        "UF": "SP",
-        "Municipio": "Bebedouro",
-        "Edital": "00081/2025",
-        "Licitacao": "45709920000111030902025",
-        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3090",
         "Item": 11,
         "Descricao": "FITOMENADIONA 10MG/ML INJETAVEL - AMP 1 ML ",
         "Qtd": 5000.0,
         "Unitario": 1.68,
         "Total": 8400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:50:57",
         "Orgao": "MUNICIPIO DE BEBEDOURO",
@@ -8214,15 +8459,15 @@
         "Municipio": "Bebedouro",
         "Edital": "00081/2025",
         "Licitacao": "45709920000111030902025",
-        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3090",
+        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3090"
+    },
+    {
         "Item": 12,
         "Descricao": "HEMITARTARATO NOREPINEFRINA MON.2MG/ML INJ-AMP 4ML ",
         "Qtd": 3000.0,
         "Unitario": 0.88,
         "Total": 2640.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:50:57",
         "Orgao": "MUNICIPIO DE BEBEDOURO",
@@ -8230,13 +8475,23 @@
         "Municipio": "Bebedouro",
         "Edital": "00081/2025",
         "Licitacao": "45709920000111030902025",
-        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3090",
+        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3090"
+    },
+    {
         "Item": 24,
         "Descricao": "FOSFATO DIS. BETAMET.+ ACET. BETAMETASONA INJ. ",
         "Qtd": 10000.0,
         "Unitario": 4.32,
         "Total": 43200.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251126",
+        "DataResult": "2025-11-26T15:50:57",
+        "Orgao": "MUNICIPIO DE BEBEDOURO",
+        "UF": "SP",
+        "Municipio": "Bebedouro",
+        "Edital": "00081/2025",
+        "Licitacao": "45709920000111030902025",
+        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3090"
     },
     {
         "Item": 5,
@@ -8255,22 +8510,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/358"
     },
     {
-        "DataPublicacao": "20251126",
-        "DataResult": "2025-11-26T15:11:32",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
-        "UF": "RJ",
-        "Municipio": "Pinheiral",
-        "Edital": "PE 54/2025",
-        "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
         "Item": 4,
         "Descricao": "Aciclovir 250mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8278,15 +8523,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 8,
         "Descricao": "Ácido Tranexâmico 50 mg/mL 5mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8294,15 +8539,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 5,
         "Descricao": "Ácido Acetil Salicílico 100mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8310,15 +8555,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 12,
         "Descricao": "Água destilada 10mL ampola estéril",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8326,15 +8571,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 20,
         "Descricao": "Ambroxol, cloridrato 6mg/mL 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8342,15 +8587,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 29,
         "Descricao": "Amoxicilina 250 mg/5mL pó p/suspensão oral Frasco c/ 60mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8358,15 +8603,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 19,
         "Descricao": "Ambroxol, cloridrato 3mg/mL 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8374,15 +8619,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 25,
         "Descricao": "Amiodarona, cloridrato 50mg/mL 3mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8390,15 +8635,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 35,
         "Descricao": "Anlodipino, besilato 5mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8406,15 +8651,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 51,
         "Descricao": "Betametasona, Dipropionato 5mg + Betametasona, Fosfato Dissódico 2mg 1mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8422,15 +8667,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 54,
         "Descricao": "Biperideno, cloridrato 2mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8438,15 +8683,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 41,
         "Descricao": "Azitromicina 500mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8454,15 +8699,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 60,
         "Descricao": "Bromoprida 5mg/mL 2mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8470,15 +8715,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 63,
         "Descricao": "Bupivacaína, cloridrato 0,5% + Glicose 8% 4mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8486,15 +8731,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 65,
         "Descricao": "Carbamazepina 200mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8502,15 +8747,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 69,
         "Descricao": "Carbonato de lítio 300mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8518,15 +8763,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 70,
         "Descricao": "Carvedilol 12,5mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8534,15 +8779,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 72,
         "Descricao": "Carvedilol 6,25mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8550,15 +8795,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 77,
         "Descricao": "Cefepima 1g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8566,15 +8811,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 75,
         "Descricao": "Cefalotina 1g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8582,15 +8827,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 76,
         "Descricao": "Cefazolina 1g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8598,15 +8843,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 78,
         "Descricao": "Ceftriaxona 1g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8614,35 +8859,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 85,
         "Descricao": "Clindamicina, fosfato 600mg 4mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 86,
         "Descricao": "Clonazepam 2,5mg/mL solução oral – 20mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8650,15 +8891,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 87,
         "Descricao": "Clonazepam 2mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8666,15 +8907,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 94,
         "Descricao": "Cloreto de Sódio 0,9% 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8682,49 +8923,47 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 99,
         "Descricao": "Clorpromazina, cloridrato 25mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 104,
         "Descricao": "Complexo B 2mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 106,
         "Descricao": "Dexametasona Creme 0,1% c/10g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8732,15 +8971,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 109,
         "Descricao": "Dexclorfeniramina, maleato solução oral 0,4mg/mL 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8748,15 +8987,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 115,
         "Descricao": "Diclofenaco Sódico 75mg/3mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8764,49 +9003,47 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 122,
         "Descricao": "Dipirona 500mg/mL solução oral Frasco c/10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 127,
         "Descricao": "Efedrina, sulfato 50mg/mL 1mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 128,
         "Descricao": "Enalapril, maleato 10mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8814,15 +9051,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 130,
         "Descricao": "Enoxaparina Sódica 40mg/0,4mL seringa preenchida com dispositivo de segurança",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8830,32 +9067,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 133,
         "Descricao": "Escetamina, cloridrato 50mg/mL 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 136,
         "Descricao": "Escopolamina, butilbrometo 4mg/mL + dipirona 500mg/mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8863,103 +9099,95 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 145,
         "Descricao": "Fenobarbital 40mg/mL solução oral",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 152,
         "Descricao": "Fluconazol 2mg/mL 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 155,
         "Descricao": "Fosfato de sódio monobásico 160mg/mL + Fosfato de sódio dibásico 60 mg/mL frasco 130mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 154,
         "Descricao": "Fluoxetina, cloridrato 20mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 151,
         "Descricao": "Fluconazol 150mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 157,
         "Descricao": "Furosemida 40mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -8967,49 +9195,47 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 169,
         "Descricao": "Glicose 50% 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 180,
         "Descricao": "Hidrocortisona, succinato 100mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 196,
         "Descricao": "Itraconazol 100mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9017,32 +9243,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 207,
         "Descricao": "Levomepromazina 40mg/mL solução oral",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 206,
         "Descricao": "Levomepromazina 25mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9050,69 +9275,63 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 204,
         "Descricao": "Levofloxacino 5mg/mL 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 214,
         "Descricao": "Lidocaína 2% gel 30g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 215,
         "Descricao": "Lidocaina 2% sem vaso constrictor 20mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 220,
         "Descricao": "Manitol 20% frasco 250 mL Sistema fechado",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9120,49 +9339,47 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 223,
         "Descricao": "Metformina, cloridrato 850mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 235,
         "Descricao": "Metronidazol 5mg/mL 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 237,
         "Descricao": "Midazolam 1mg/mL 5mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9170,52 +9387,47 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 240,
         "Descricao": "Morfina 0,2mg/mL 1mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 244,
         "Descricao": "Neomicina, sulfato + Bacitracina Zincica pomada 10g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 252,
         "Descricao": "Nitroprussiato de Sódio 25 mg/mL 2mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9223,15 +9435,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 251,
         "Descricao": "Nitroglicerina 5mg/mL 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9239,32 +9451,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 255,
         "Descricao": "Óleo cicatrizante à base AGE e TCM 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 124,
         "Descricao": "Dobutamina 250mg 20mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9272,15 +9483,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 148,
         "Descricao": "Fentanila, citrato 50mcg/mL 2mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9288,15 +9499,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 170,
         "Descricao": "Haloperidol 1mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9304,66 +9515,63 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 260,
         "Descricao": "Oxacilina 500mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 263,
         "Descricao": "Paracetamol 500mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 268,
         "Descricao": "Prednisolona, fosfato sódico 3mg/mL - solução oral –  60mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 290,
         "Descricao": "Sertralina, cloridrato 50mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9371,15 +9579,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 303,
         "Descricao": "Tenoxicam 20mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9387,15 +9595,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 81,
         "Descricao": "Ciprofloxacino, cloridrato 200mg/mL 100 mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9403,15 +9611,15 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 100,
         "Descricao": "Clorpromazina, cloridrato 40mg/mL - solução oral 20mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9419,32 +9627,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 102,
         "Descricao": "Colagenase + cloranfenicol 0,6 U + 0,01g/g 30g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 108,
         "Descricao": "Dexclorfeniramina, maleato 2mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9452,49 +9659,47 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 119,
         "Descricao": "Diosmina + Hesperidina 450mg + 50mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 142,
         "Descricao": "Fenitoína sódica 50mg/mL 5mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 147,
         "Descricao": "Fentanila, citrato 50mcg/mL 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9502,32 +9707,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 159,
         "Descricao": "Glibenclamida 5mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 181,
         "Descricao": "Hidrocortisona, succinato 500mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9535,32 +9739,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 187,
         "Descricao": "Imipramina, cloridrato 25mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 222,
         "Descricao": "Meropenem 1g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9568,100 +9771,95 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 232,
         "Descricao": "Metoclopramida, cloridrato 5 mg/mL 2mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 238,
         "Descricao": "Midazolam 5mg/mL 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 241,
         "Descricao": "Morfina 10mg/mL 1mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 258,
         "Descricao": "Omeprazol sódico 40mg + diluente",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 264,
         "Descricao": "Paracetamol solução oral 200mg/mL frasco 10mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 272,
         "Descricao": "Prometazina, cloridrato  25mg/mL 2mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9669,32 +9867,31 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 273,
         "Descricao": "Prometazina, cloridrato 25mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 276,
         "Descricao": "Propranolol, cloridrato 40mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9702,100 +9899,95 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 279,
         "Descricao": "Risperidona 1mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 287,
         "Descricao": "Sais para Reidratação oral pó- envelope 27,9g",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 304,
         "Descricao": "Tenoxicam 40mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 310,
         "Descricao": "Tramadol, cloridrato  50mg/mL 1mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 317,
         "Descricao": "Vancomicina, cloridrato 500mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
         "UF": "RJ",
         "Municipio": "Pinheiral",
-        "UASG": "5268",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 316,
         "Descricao": "Valproato de sódio 50mg/mL xarope 100mL",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Perdeu/Anulado",
         "DataPublicacao": "20251126",
         "DataResult": "2025-11-26T15:11:32",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
@@ -9803,31 +9995,79 @@
         "Municipio": "Pinheiral",
         "Edital": "PE 54/2025",
         "Licitacao": "01648573000199001572025",
-        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 114,
         "Descricao": "Diclofenaco sódico 50mg",
         "Qtd": 0.0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Venceu"
+        "Status": "Perdeu/Anulado",
+        "DataPublicacao": "20251126",
+        "DataResult": "2025-11-26T15:11:32",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
+        "UF": "RJ",
+        "Municipio": "Pinheiral",
+        "Edital": "PE 54/2025",
+        "Licitacao": "01648573000199001572025",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
     },
     {
-        "DataPublicacao": "20251125",
-        "DataResult": "2025-11-25T17:04:56",
-        "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
-        "UF": "RN",
-        "Municipio": "São Paulo do Potengi",
-        "Edital": "24/2025",
-        "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Item": 153,
+        "Descricao": "Flumazenil 0,5mg/5mL 5mL",
+        "Qtd": 0.0,
+        "Unitario": 0.0,
+        "Total": 0.0,
+        "Status": "Perdeu/Anulado",
+        "DataPublicacao": "20251126",
+        "DataResult": "2025-11-26T15:11:32",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
+        "UF": "RJ",
+        "Municipio": "Pinheiral",
+        "Edital": "PE 54/2025",
+        "Licitacao": "01648573000199001572025",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
+        "Item": 172,
+        "Descricao": "Haloperidol 5mg",
+        "Qtd": 0.0,
+        "Unitario": 0.0,
+        "Total": 0.0,
+        "Status": "Perdeu/Anulado",
+        "DataPublicacao": "20251126",
+        "DataResult": "2025-11-26T15:11:32",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
+        "UF": "RJ",
+        "Municipio": "Pinheiral",
+        "Edital": "PE 54/2025",
+        "Licitacao": "01648573000199001572025",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
+        "Item": 270,
+        "Descricao": "Prednisona 5mg",
+        "Qtd": 0.0,
+        "Unitario": 0.0,
+        "Total": 0.0,
+        "Status": "Perdeu/Anulado",
+        "DataPublicacao": "20251126",
+        "DataResult": "2025-11-26T15:11:32",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE PINHEIRAL",
+        "UF": "RJ",
+        "Municipio": "Pinheiral",
+        "Edital": "PE 54/2025",
+        "Licitacao": "01648573000199001572025",
+        "Link": "https://pncp.gov.br/app/editais/01648573000199/2025/157"
+    },
+    {
         "Item": 10,
         "Descricao": "ALOPURINOL 300 MG",
         "Qtd": 10000.0,
         "Unitario": 0.25,
         "Total": 2500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -9835,15 +10075,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 44,
         "Descricao": "DOXAZOSINA, MESILATO 4 MG",
         "Qtd": 20000.0,
         "Unitario": 0.16,
         "Total": 3200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -9851,15 +10091,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 60,
         "Descricao": "LEVOTIROXINA SÓDICA 100 MCG",
         "Qtd": 10000.0,
         "Unitario": 0.25,
         "Total": 2500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -9867,15 +10107,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 62,
         "Descricao": "LEVOTIROXINA SÓDICA 25 MCG",
         "Qtd": 10000.0,
         "Unitario": 0.3,
         "Total": 3000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -9883,32 +10123,31 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 64,
         "Descricao": "LEVOTIROXINA SÓDICA 50 MCG",
         "Qtd": 3000.0,
         "Unitario": 0.34,
         "Total": 1020.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
         "UF": "RN",
         "Municipio": "São Paulo do Potengi",
-        "UASG": "08079774000161",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 70,
         "Descricao": "METOPROLOL, SUCCINATO 100 MG",
         "Qtd": 20000.0,
         "Unitario": 0.64,
         "Total": 12800.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -9916,15 +10155,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 97,
         "Descricao": "TIAMINA, CLORIDRATO 300 MG",
         "Qtd": 6000.0,
         "Unitario": 0.23,
         "Total": 1380.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T17:04:56",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -9932,31 +10171,31 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "24/2025",
         "Licitacao": "08079774000161001352025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
+    },
+    {
         "Item": 72,
         "Descricao": "METOPROLOL, SUCCINATO 50 MG",
         "Qtd": 20000.0,
         "Unitario": 0.49,
         "Total": 9800.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2025-11-25T17:04:56",
+        "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
+        "UF": "RN",
+        "Municipio": "São Paulo do Potengi",
+        "Edital": "24/2025",
+        "Licitacao": "08079774000161001352025",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/135"
     },
     {
-        "DataPublicacao": "20251125",
-        "DataResult": "2025-11-25T16:44:09",
-        "Orgao": "MUNICIPIO DE BEBEDOURO",
-        "UF": "SP",
-        "Municipio": "Bebedouro",
-        "Edital": "90/2025-PE81/2025",
-        "Licitacao": "45709920000111030612025",
-        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3061",
         "Item": 11,
         "Descricao": "FITOMENADIONA 10MG/ML INJETAVEL - AMP 1 ML",
         "Qtd": 5000.0,
         "Unitario": 1.68,
         "Total": 8400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T16:44:09",
         "Orgao": "MUNICIPIO DE BEBEDOURO",
@@ -9964,15 +10203,15 @@
         "Municipio": "Bebedouro",
         "Edital": "90/2025-PE81/2025",
         "Licitacao": "45709920000111030612025",
-        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3061",
+        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3061"
+    },
+    {
         "Item": 12,
         "Descricao": "HEMITARTARATO NOREPINEFRINA MON.2MG/ML INJ-AMP 4ML",
         "Qtd": 3000.0,
         "Unitario": 0.88,
         "Total": 2640.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251125",
         "DataResult": "2025-11-25T16:44:09",
         "Orgao": "MUNICIPIO DE BEBEDOURO",
@@ -9980,13 +10219,23 @@
         "Municipio": "Bebedouro",
         "Edital": "90/2025-PE81/2025",
         "Licitacao": "45709920000111030612025",
-        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3061",
+        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3061"
+    },
+    {
         "Item": 24,
         "Descricao": "FOSFATO DIS. BETAMET.+ ACET. BETAMETASONA INJ.",
         "Qtd": 10000.0,
         "Unitario": 4.32,
         "Total": 43200.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251125",
+        "DataResult": "2025-11-25T16:44:09",
+        "Orgao": "MUNICIPIO DE BEBEDOURO",
+        "UF": "SP",
+        "Municipio": "Bebedouro",
+        "Edital": "90/2025-PE81/2025",
+        "Licitacao": "45709920000111030612025",
+        "Link": "https://pncp.gov.br/app/editais/45709920000111/2025/3061"
     },
     {
         "Item": 1,
@@ -10277,22 +10526,12 @@
         "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
     },
     {
-        "DataPublicacao": "20251124",
-        "DataResult": "2025-11-24T16:29:48",
-        "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
-        "UF": "RN",
-        "Municipio": "São Paulo do Potengi",
-        "Edital": "23/2025",
-        "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
         "Item": 2,
         "Descricao": "ÁCIDO VALPRÓICO (VALPROATO DE SÓDIO) 50 MG/ML XAROPE  100 ML",
         "Qtd": 600.0,
         "Unitario": 6.11,
         "Total": 3666.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10300,15 +10539,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 7,
         "Descricao": "AMITRIPTILINA, CLORIDRATO 25 MG COMPRIMIDO ",
         "Qtd": 300000.0,
         "Unitario": 0.04,
         "Total": 12000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10316,15 +10555,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 8,
         "Descricao": "BIPERIDENO, CLORIDRATO 2 MG COMPRIMIDO ",
         "Qtd": 86000.0,
         "Unitario": 0.32,
         "Total": 27520.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10332,15 +10571,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 15,
         "Descricao": "CARBAMAZEPINA  200 MG COMPRIMIDO",
         "Qtd": 138000.0,
         "Unitario": 0.16,
         "Total": 22080.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10348,15 +10587,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 21,
         "Descricao": "CLONAZEPAM 0,5 MG COMPRIMIDO",
         "Qtd": 70000.0,
         "Unitario": 0.06,
         "Total": 4200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10364,15 +10603,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 14,
         "Descricao": "CARBAMAZEPINA  20 MG/ML SUSPENSÃO ORAL  100 ML",
         "Qtd": 1000.0,
         "Unitario": 6.99,
         "Total": 6990.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10380,15 +10619,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 18,
         "Descricao": "CITALOPRAM 20 MG COMPRIMIDO",
         "Qtd": 52000.0,
         "Unitario": 0.12,
         "Total": 6240.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10396,15 +10635,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 19,
         "Descricao": "CITRATO DE FENTANILA 0,0785 mg/ml (equivalente a 0,05 mg de fentanila) SOLUÇÃO INJETÁVEL 10 ml",
         "Qtd": 900.0,
         "Unitario": 2.99,
         "Total": 2691.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10412,15 +10651,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 24,
         "Descricao": "CLORPROMAZINA, CLORIDRATO 100 MG COMPRIMIDO",
         "Qtd": 52000.0,
         "Unitario": 0.3,
         "Total": 15600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10428,15 +10667,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 26,
         "Descricao": "CLORPROMAZINA, CLORIDRATO 40 MG/ML SOLUÇÃO ORAL",
         "Qtd": 600.0,
         "Unitario": 8.1,
         "Total": 4860.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10444,15 +10683,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 25,
         "Descricao": "CLORPROMAZINA, CLORIDRATO 25 MG COMPRIMIDO",
         "Qtd": 50000.0,
         "Unitario": 0.33,
         "Total": 16500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10460,15 +10699,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 30,
         "Descricao": "DIAZEPAM 10 MG/ML SOLUÇÃO INJETÁVEL 2 ML",
         "Qtd": 2000.0,
         "Unitario": 0.87,
         "Total": 1740.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10476,15 +10715,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 38,
         "Descricao": "OXACARBAMEZEPINA 600 MG",
         "Qtd": 8000.0,
         "Unitario": 1.23,
         "Total": 9840.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10492,15 +10731,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 35,
         "Descricao": "OXALATO DE ESCITALOPRAM 10 MG",
         "Qtd": 70000.0,
         "Unitario": 0.09,
         "Total": 6300.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10508,15 +10747,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 37,
         "Descricao": "OXALATO DE ESCITALOPRAM 20MG/ML",
         "Qtd": 500.0,
         "Unitario": 17.63,
         "Total": 8815.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10524,15 +10763,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 39,
         "Descricao": "OXACARBAMAZEPINA 300 MG",
         "Qtd": 16000.0,
         "Unitario": 0.91,
         "Total": 14560.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10540,15 +10779,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 48,
         "Descricao": "FLUMAZENIL 0,1 MG/ML SOLUÇÃO INJ 5ML",
         "Qtd": 300.0,
         "Unitario": 5.73,
         "Total": 1719.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10556,15 +10795,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 49,
         "Descricao": "GABAPENTINA 300 MG CÁPSULA",
         "Qtd": 7200.0,
         "Unitario": 0.27,
         "Total": 1944.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10572,15 +10811,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 52,
         "Descricao": "HALOPERIDOL 5 MG COMPRIMIDO",
         "Qtd": 90000.0,
         "Unitario": 0.1,
         "Total": 9000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10588,15 +10827,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 56,
         "Descricao": "LAMOTRIGINA 100 MG",
         "Qtd": 24000.0,
         "Unitario": 0.17,
         "Total": 4080.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10604,15 +10843,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 55,
         "Descricao": "LAMOTRIGINA 50 MG",
         "Qtd": 24000.0,
         "Unitario": 0.16,
         "Total": 3840.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10620,15 +10859,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 58,
         "Descricao": "MALEATO DE LEVOMEPROMAZINA 100 mg",
         "Qtd": 26000.0,
         "Unitario": 0.62,
         "Total": 16120.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10636,15 +10875,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 59,
         "Descricao": "MALEATO DE LEVOMEPROMAZINA 25 mg",
         "Qtd": 35000.0,
         "Unitario": 0.57,
         "Total": 19950.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10652,15 +10891,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 62,
         "Descricao": "CLORIDRATO DE MIDAZOLAM 5 mg/ml SOLUÇÃO INJETÁVEL 10 ml",
         "Qtd": 2000.0,
         "Unitario": 3.21,
         "Total": 6420.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10668,15 +10907,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 66,
         "Descricao": "NORTRIPTILINA, CLORIDRATO 50 MG CÁPSULA",
         "Qtd": 10000.0,
         "Unitario": 0.44,
         "Total": 4400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10684,15 +10923,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 68,
         "Descricao": "PAROXETINA, CLORIDRATO 20 MG COMPRIMIDO",
         "Qtd": 80000.0,
         "Unitario": 0.17,
         "Total": 13600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10700,15 +10939,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 69,
         "Descricao": "PREGABALINA 150 MG CÁPSULA",
         "Qtd": 3000.0,
         "Unitario": 0.36,
         "Total": 1080.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10716,15 +10955,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 73,
         "Descricao": "VENLAFAXINA 75 MG",
         "Qtd": 1000.0,
         "Unitario": 0.53,
         "Total": 530.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10732,15 +10971,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 76,
         "Descricao": "RISPERIDONA 1 MG COMPRIMIDO",
         "Qtd": 35000.0,
         "Unitario": 0.09,
         "Total": 3150.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10748,15 +10987,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 77,
         "Descricao": "RISPERIDONA 1 MG/ML SOLUÇÃO ORAL 30 ML",
         "Qtd": 30000.0,
         "Unitario": 11.89,
         "Total": 356700.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10764,15 +11003,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 75,
         "Descricao": "QUETIAPINA, FUMARATO 25 MG COMPRIMIDO",
         "Qtd": 9000.0,
         "Unitario": 0.12,
         "Total": 1080.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10780,15 +11019,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 78,
         "Descricao": "RISPERIDONA 2 MG COMPRIMIDO",
         "Qtd": 60000.0,
         "Unitario": 0.1,
         "Total": 6000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10796,15 +11035,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 80,
         "Descricao": "SERTRALINA, CLORIDRATO 50 MG COMPRIMIDO",
         "Qtd": 60000.0,
         "Unitario": 0.12,
         "Total": 7200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10812,32 +11051,31 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 60,
         "Descricao": "LEVOMEPROMAZINA 40 MG/ML SOLUÇÃO ORAL 20 ML",
         "Qtd": 1100.0,
         "Unitario": 12.68,
         "Total": 13948.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
         "UF": "RN",
         "Municipio": "São Paulo do Potengi",
-        "UASG": "08079774000161",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 65,
         "Descricao": "NORTRIPTILINA, CLORIDRATO 25 MG CÁPSULA",
         "Qtd": 12000.0,
         "Unitario": 0.27,
         "Total": 3240.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10845,15 +11083,15 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 67,
         "Descricao": "PARACETAMOL + CODEÍNA, FOSFATO 500 MG + 30 MG COMPRIMIDO",
         "Qtd": 90000.0,
         "Unitario": 0.44,
         "Total": 39600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
@@ -10861,30 +11099,39 @@
         "Municipio": "São Paulo do Potengi",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 70,
         "Descricao": "PREGABALINA 75 MG",
         "Qtd": 30000.0,
         "Unitario": 0.21,
         "Total": 6300.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251124",
         "DataResult": "2025-11-24T16:29:48",
         "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
         "UF": "RN",
         "Municipio": "São Paulo do Potengi",
-        "UASG": "08079774000161",
         "Edital": "23/2025",
         "Licitacao": "08079774000161001332025",
-        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
+    },
+    {
         "Item": 85,
         "Descricao": "TRAMADOL, CLORIDRATO 50 MG",
         "Qtd": 35000.0,
         "Unitario": 0.13,
         "Total": 4550.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251124",
+        "DataResult": "2025-11-24T16:29:48",
+        "Orgao": "MUNICIPIO DE SAO PAULO DO POTENGI",
+        "UF": "RN",
+        "Municipio": "São Paulo do Potengi",
+        "Edital": "23/2025",
+        "Licitacao": "08079774000161001332025",
+        "Link": "https://pncp.gov.br/app/editais/08079774000161/2025/133"
     },
     {
         "Item": 87,
@@ -10903,22 +11150,12 @@
         "Link": "https://pncp.gov.br/app/editais/00394429000100/2025/3331"
     },
     {
-        "DataPublicacao": "20251118",
-        "DataResult": "2025-11-18T15:04:28",
-        "Orgao": "MUNICIPIO DE VITORIA",
-        "UF": "ES",
-        "Municipio": "Vitória",
-        "Edital": "202/2025",
-        "Licitacao": "27142058000126006452025",
-        "Link": "https://pncp.gov.br/app/editais/27142058000126/2025/645",
         "Item": 5,
         "Descricao": "CLORPROMAZINA. CLORIDRATO, Concentração [mg]: 25, Forma farmacêutica: Comprimido",
         "Qtd": 309000.0,
         "Unitario": 0.255,
         "Total": 78795.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251118",
         "DataResult": "2025-11-18T15:04:28",
         "Orgao": "MUNICIPIO DE VITORIA",
@@ -10926,15 +11163,15 @@
         "Municipio": "Vitória",
         "Edital": "202/2025",
         "Licitacao": "27142058000126006452025",
-        "Link": "https://pncp.gov.br/app/editais/27142058000126/2025/645",
+        "Link": "https://pncp.gov.br/app/editais/27142058000126/2025/645"
+    },
+    {
         "Item": 1,
         "Descricao": "CARBAMAZEPINA, Concentração [mg/ml]: 20, Forma farmacêutica: Suspensão Oral, Conteúdo [ml]: 100, Acompanha: Dosador graduado",
         "Qtd": 2900.0,
         "Unitario": 6.175,
         "Total": 17907.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251118",
         "DataResult": "2025-11-18T15:04:28",
         "Orgao": "MUNICIPIO DE VITORIA",
@@ -10942,13 +11179,23 @@
         "Municipio": "Vitória",
         "Edital": "202/2025",
         "Licitacao": "27142058000126006452025",
-        "Link": "https://pncp.gov.br/app/editais/27142058000126/2025/645",
+        "Link": "https://pncp.gov.br/app/editais/27142058000126/2025/645"
+    },
+    {
         "Item": 4,
         "Descricao": "CLORPROMAZINA. CLORIDRATO, Concentração [mg]: 100, Forma farmacêutica: Comprimido",
         "Qtd": 300000.0,
         "Unitario": 0.298,
         "Total": 89400.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251118",
+        "DataResult": "2025-11-18T15:04:28",
+        "Orgao": "MUNICIPIO DE VITORIA",
+        "UF": "ES",
+        "Municipio": "Vitória",
+        "Edital": "202/2025",
+        "Licitacao": "27142058000126006452025",
+        "Link": "https://pncp.gov.br/app/editais/27142058000126/2025/645"
     },
     {
         "Item": 1,
@@ -10999,6 +11246,12 @@
         "Link": "https://pncp.gov.br/app/editais/05816630000152/2025/3659"
     },
     {
+        "Item": 1,
+        "Descricao": "Nitroglicerina",
+        "Qtd": 5020.0,
+        "Unitario": 34.9965,
+        "Total": 175682.43,
+        "Status": "Venceu",
         "DataPublicacao": "20251118",
         "DataResult": "2025-11-18T07:04:09",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -11006,13 +11259,7 @@
         "Municipio": "Recife",
         "Edital": "90837/2025",
         "Licitacao": "10572022000180011542025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1154",
-        "Item": 1,
-        "Descricao": "Nitroglicerina",
-        "Qtd": 5020.0,
-        "Unitario": 34.9965,
-        "Total": 175682.43,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1154"
     },
     {
         "Item": 14,
