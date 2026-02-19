@@ -400,6 +400,12 @@
         "Link": "https://pncp.gov.br/app/editais/09251115000123/2025/26"
     },
     {
+        "Item": 9,
+        "Descricao": "CARBAMAZEPINA 200 MG",
+        "Qtd": 88000.0,
+        "Unitario": 0.147,
+        "Total": 12936.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2026-02-04T09:08:19",
         "Orgao": "MUNICIPIO DE TAGUAI",
@@ -407,13 +413,7 @@
         "Municipio": "Taguaí",
         "Edital": "PE 21/2025",
         "Licitacao": "46223723000150000852025",
-        "Link": "https://pncp.gov.br/app/editais/46223723000150/2025/85",
-        "Item": 9,
-        "Descricao": "CARBAMAZEPINA 200 MG",
-        "Qtd": 88000.0,
-        "Unitario": 0.147,
-        "Total": 12936.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/46223723000150/2025/85"
     },
     {
         "Item": 8,
@@ -464,22 +464,12 @@
         "Link": "https://pncp.gov.br/app/editais/11800731000138/2025/163"
     },
     {
-        "DataPublicacao": "20251110",
-        "DataResult": "2026-01-30T13:03:10",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Arcoverde",
-        "Edital": "073/2025",
-        "Licitacao": "10339635000171000222025",
-        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22",
         "Item": 7,
         "Descricao": "Carbonato De Lítio: Dosagem: 300 MG. Comprimido (cota principal)",
         "Qtd": 262500.0,
         "Unitario": 0.22,
         "Total": 57750.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2026-01-30T13:03:10",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -487,15 +477,15 @@
         "Municipio": "Arcoverde",
         "Edital": "073/2025",
         "Licitacao": "10339635000171000222025",
-        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22",
+        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22"
+    },
+    {
         "Item": 11,
         "Descricao": "Clorpromazina: Dosagem: 25 MG. Comprimido (cota principal)",
         "Qtd": 150000.0,
         "Unitario": 0.23,
         "Total": 34500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2026-01-30T13:03:10",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -503,15 +493,15 @@
         "Municipio": "Arcoverde",
         "Edital": "073/2025",
         "Licitacao": "10339635000171000222025",
-        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22",
+        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22"
+    },
+    {
         "Item": 18,
         "Descricao": "Risperidona: Dosagem: 1 MG/ML, Uso: Solução Oral, Com Pipeta Dosadora. Frasco 30ml (cota principal)",
         "Qtd": 3750.0,
         "Unitario": 8.79,
         "Total": 32962.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2026-01-30T13:03:10",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -519,15 +509,15 @@
         "Municipio": "Arcoverde",
         "Edital": "073/2025",
         "Licitacao": "10339635000171000222025",
-        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22",
+        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22"
+    },
+    {
         "Item": 20,
         "Descricao": "Risperidona: Dosagem: 2 MG. Comprimido (cota principal)",
         "Qtd": 270000.0,
         "Unitario": 0.09,
         "Total": 24300.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2026-01-30T13:03:10",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -535,13 +525,23 @@
         "Municipio": "Arcoverde",
         "Edital": "073/2025",
         "Licitacao": "10339635000171000222025",
-        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22",
+        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22"
+    },
+    {
         "Item": 9,
         "Descricao": "Clorpromazina: Dosagem: 100 MG. Comprimido (cota principal)",
         "Qtd": 225000.0,
         "Unitario": 0.28,
         "Total": 63000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251110",
+        "DataResult": "2026-01-30T13:03:10",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Arcoverde",
+        "Edital": "073/2025",
+        "Licitacao": "10339635000171000222025",
+        "Link": "https://pncp.gov.br/app/editais/10339635000171/2025/22"
     },
     {
         "DataPublicacao": "20250121",
@@ -660,22 +660,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251114",
-        "DataResult": "2026-01-23T13:21:10",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4320/2025",
-        "Licitacao": "11022597001597004092025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/409",
         "Item": 3,
         "Descricao": "(3097412) - ANLODIPINO, BESILATO - CONCENTRACAO/DOSAGEM 10 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 14943.0,
         "Unitario": 0.05,
         "Total": 805.43,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2026-01-23T13:21:10",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -683,15 +673,15 @@
         "Municipio": "Recife",
         "Edital": "4320/2025",
         "Licitacao": "11022597001597004092025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/409",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/409"
+    },
+    {
         "Item": 4,
         "Descricao": "(3183521) - LOSARTANA, POTASSICA - CONCENTRACAO/DOSAGEM 50 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMNISTRACAO ORAL",
         "Qtd": 32322.0,
         "Unitario": 0.04,
         "Total": 1289.65,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2026-01-23T13:21:10",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -699,13 +689,23 @@
         "Municipio": "Recife",
         "Edital": "4320/2025",
         "Licitacao": "11022597001597004092025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/409",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/409"
+    },
+    {
         "Item": 7,
         "Descricao": "(3081907) - ADENOSINA - CONCENTRACAO/DOSAGEM 3 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 25487.0,
         "Unitario": 8.37,
         "Total": 213323.64,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251114",
+        "DataResult": "2026-01-23T13:21:10",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4320/2025",
+        "Licitacao": "11022597001597004092025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/409"
     },
     {
         "DataPublicacao": "20251222",
@@ -1316,22 +1316,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251113",
-        "DataResult": "2026-01-13T14:11:00",
-        "Orgao": "MUNICIPIO DE CONDADO",
-        "UF": "PB",
-        "Municipio": "Condado",
-        "Edital": "00034/2025",
-        "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
         "Item": 4,
         "Descricao": "Acebrofilina 5 mg/mL - Xarope",
         "Qtd": 800.0,
         "Unitario": 3.64,
         "Total": 2912.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1339,15 +1329,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 12,
         "Descricao": "Ácido valpróico 250 mg - Comprimido",
         "Qtd": 10000.0,
         "Unitario": 0.32,
         "Total": 3200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1355,15 +1345,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 15,
         "Descricao": "Água para injetáveis - Solução injetável",
         "Qtd": 20000.0,
         "Unitario": 0.16,
         "Total": 3200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1371,15 +1361,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 13,
         "Descricao": "Ácido valpróico 50 mg/mL - Solução oral",
         "Qtd": 500.0,
         "Unitario": 5.31,
         "Total": 2655.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1387,15 +1377,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 14,
         "Descricao": "Ácido valpróico 500 mg - Comprimido",
         "Qtd": 10000.0,
         "Unitario": 0.65,
         "Total": 6500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1403,15 +1393,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 19,
         "Descricao": "Amiodarona 50mg/mL - ampola",
         "Qtd": 500.0,
         "Unitario": 2.95,
         "Total": 1475.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1419,15 +1409,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 37,
         "Descricao": "Bultibrometo de escopolamina 20 mg/mL - Solução injetável",
         "Qtd": 5000.0,
         "Unitario": 0.94,
         "Total": 4700.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1435,15 +1425,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 35,
         "Descricao": "Bromoprida 5 mg/mL - Solução injetável",
         "Qtd": 6000.0,
         "Unitario": 1.19,
         "Total": 7140.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1451,15 +1441,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 38,
         "Descricao": "Bultibrometo de escopolamina; dipirona 10 MG + 250 MG - Comprimido",
         "Qtd": 7000.0,
         "Unitario": 0.22,
         "Total": 1540.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1467,15 +1457,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 52,
         "Descricao": "Ceftriaxona 1g  - Frasco-ampola",
         "Qtd": 2000.0,
         "Unitario": 4.09,
         "Total": 8180.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1483,15 +1473,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 59,
         "Descricao": "Ciprofloxacino 500 mg - Comprimido",
         "Qtd": 10000.0,
         "Unitario": 0.19,
         "Total": 1900.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1499,15 +1489,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 65,
         "Descricao": "Cloridrato de ambroxol 6 mg/mL - Xarope",
         "Qtd": 1000.0,
         "Unitario": 2.6,
         "Total": 2600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1515,15 +1505,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 64,
         "Descricao": "Cloridrato de ambroxol 3 mg/mL - Xarope",
         "Qtd": 1000.0,
         "Unitario": 2.13,
         "Total": 2130.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1531,15 +1521,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 68,
         "Descricao": "Cloridrato de Biperideno 2 mg - Comprimido",
         "Qtd": 10000.0,
         "Unitario": 0.24,
         "Total": 2400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1547,32 +1537,31 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 69,
         "Descricao": "Cloridrato de clorpromazina 100 mg - Comprimido",
         "Qtd": 12000.0,
         "Unitario": 0.29,
         "Total": 3480.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
         "UF": "PB",
         "Municipio": "Condado",
-        "UASG": "4093",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 72,
         "Descricao": "Cloridrato de metformina 850 mg - Comprimido",
         "Qtd": 80000.0,
         "Unitario": 0.11,
         "Total": 8800.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1580,52 +1569,47 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 80,
         "Descricao": "Dexametasona  1 mg/g (0,1%) - Creme",
         "Qtd": 3000.0,
         "Unitario": 1.54,
         "Total": 4620.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
         "UF": "PB",
         "Municipio": "Condado",
-        "UASG": "4093",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 85,
         "Descricao": "Diazepam 5 mg - Comprimido",
         "Qtd": 15000.0,
         "Unitario": 0.04,
         "Total": 600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
         "UF": "PB",
         "Municipio": "Condado",
-        "UASG": "4093",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 88,
         "Descricao": "Diclofenaco sódico 25 mg/3mL - Solução injetável",
         "Qtd": 1500.0,
         "Unitario": 0.71,
         "Total": 1065.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1633,15 +1617,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 96,
         "Descricao": "Ecsitalopram 10 mg - Comprimido",
         "Qtd": 15000.0,
         "Unitario": 0.09,
         "Total": 1350.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1649,15 +1633,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 93,
         "Descricao": "Dipirona sódica 500 mg/mL - Solução injetável",
         "Qtd": 12000.0,
         "Unitario": 0.49,
         "Total": 5880.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1665,15 +1649,15 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 70,
         "Descricao": "Cloridrato de clorpromazina 25 mg - Comprimido",
         "Qtd": 10000.0,
         "Unitario": 0.25,
         "Total": 2500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
@@ -1681,49 +1665,63 @@
         "Municipio": "Condado",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 84,
         "Descricao": "Diazepam 10 mg/2mL - Solução injetável",
         "Qtd": 300.0,
         "Unitario": 0.71,
         "Total": 213.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
         "UF": "PB",
         "Municipio": "Condado",
-        "UASG": "4093",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 101,
         "Descricao": "Etinilestradiol + levonorgestrel 0,03 mg + 0,15 mg - Comprimido",
         "Qtd": 1000.0,
         "Unitario": 0.11,
         "Total": 110.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2026-01-13T14:11:00",
         "Orgao": "MUNICIPIO DE CONDADO",
         "UF": "PB",
         "Municipio": "Condado",
-        "UASG": "4093",
         "Edital": "00034/2025",
         "Licitacao": "09151473000164000612025",
-        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
+    },
+    {
         "Item": 103,
         "Descricao": "Fenitoína 50 mg/Ml - Solução injetável",
         "Qtd": 500.0,
         "Unitario": 2.13,
         "Total": 1065.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251113",
+        "DataResult": "2026-01-13T14:11:00",
+        "Orgao": "MUNICIPIO DE CONDADO",
+        "UF": "PB",
+        "Municipio": "Condado",
+        "Edital": "00034/2025",
+        "Licitacao": "09151473000164000612025",
+        "Link": "https://pncp.gov.br/app/editais/09151473000164/2025/61"
     },
     {
+        "Item": 5,
+        "Descricao": "FRALDA DESCARTÁVEL GERIÁTRICA, USO ADULTO, TAMANHO G (PESO DE 70 A 90KG). A FRALDA DEVERÁ POSSUIR FORMATO ANATÔMICO:. Especificação: ALTO GRAU DE ABSORVÊNCIA, CAMADA INTERNA DE GEL RETENTOR DE UMIDADE, BARREIRA CONTRA VAZAMENTOS E NO MÍNIMO 03FIOS DE ELÁSTICO E 02 FITAS ADESIVAS DE CADA LADO, DEVERÁ SER COMPOSTA DE FIBRASDA CELULOSE ANTIALÉRGICA E ATÓXICA. O PRODUTO DEVERÁ SER ACONDICIONADO EM EMBALAGEM IMPERMEÁVEL, NA EMBALAGEM DEVERÁ CONSTAR EXTERNAMENTE A IDENTIFICAÇÃO, FABRICAÇÃO, VALIDADE, LOTE E PROCEDÊNCIA.  UNIDADE  ME/EPP",
+        "Qtd": 50000.0,
+        "Unitario": 1.23,
+        "Total": 61500.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2026-01-13T12:09:24",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE JAPARATUBA",
@@ -1731,13 +1729,7 @@
         "Municipio": "Japaratuba",
         "Edital": "18/2025",
         "Licitacao": "11750074000161000762025",
-        "Link": "https://pncp.gov.br/app/editais/11750074000161/2025/76",
-        "Item": 5,
-        "Descricao": "FRALDA DESCARTÁVEL GERIÁTRICA, USO ADULTO, TAMANHO G (PESO DE 70 A 90KG). A FRALDA DEVERÁ POSSUIR FORMATO ANATÔMICO:. Especificação: ALTO GRAU DE ABSORVÊNCIA, CAMADA INTERNA DE GEL RETENTOR DE UMIDADE, BARREIRA CONTRA VAZAMENTOS E NO MÍNIMO 03FIOS DE ELÁSTICO E 02 FITAS ADESIVAS DE CADA LADO, DEVERÁ SER COMPOSTA DE FIBRASDA CELULOSE ANTIALÉRGICA E ATÓXICA. O PRODUTO DEVERÁ SER ACONDICIONADO EM EMBALAGEM IMPERMEÁVEL, NA EMBALAGEM DEVERÁ CONSTAR EXTERNAMENTE A IDENTIFICAÇÃO, FABRICAÇÃO, VALIDADE, LOTE E PROCEDÊNCIA.  UNIDADE  ME/EPP",
-        "Qtd": 50000.0,
-        "Unitario": 1.23,
-        "Total": 61500.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/11750074000161/2025/76"
     },
     {
         "Item": 10,
@@ -2418,22 +2410,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251112",
-        "DataResult": "2026-01-06T12:10:52",
-        "Orgao": "MUNICIPIO DE SOBRADINHO",
-        "UF": "BA",
-        "Municipio": "Sobradinho",
-        "Edital": "041/2025",
-        "Licitacao": "16444804000110001182025",
-        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118",
         "Item": 1,
         "Descricao": "ÁCIDO ACETILSALICÍLICO 100MG",
         "Qtd": 252000.0,
         "Unitario": 0.03,
         "Total": 7560.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2026-01-06T12:10:52",
         "Orgao": "MUNICIPIO DE SOBRADINHO",
@@ -2441,15 +2423,15 @@
         "Municipio": "Sobradinho",
         "Edital": "041/2025",
         "Licitacao": "16444804000110001182025",
-        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118",
+        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118"
+    },
+    {
         "Item": 20,
         "Descricao": "CEFTRIAXONA 1G I.V. INJETÁVEL",
         "Qtd": 9000.0,
         "Unitario": 4.07,
         "Total": 36630.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2026-01-06T12:10:52",
         "Orgao": "MUNICIPIO DE SOBRADINHO",
@@ -2457,15 +2439,15 @@
         "Municipio": "Sobradinho",
         "Edital": "041/2025",
         "Licitacao": "16444804000110001182025",
-        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118",
+        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118"
+    },
+    {
         "Item": 48,
         "Descricao": "METFORMINA 850MG",
         "Qtd": 450000.0,
         "Unitario": 0.11,
         "Total": 49500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2026-01-06T12:10:52",
         "Orgao": "MUNICIPIO DE SOBRADINHO",
@@ -2473,13 +2455,23 @@
         "Municipio": "Sobradinho",
         "Edital": "041/2025",
         "Licitacao": "16444804000110001182025",
-        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118",
+        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118"
+    },
+    {
         "Item": 60,
         "Descricao": "OXACILINA 500MG INJETÁVEL",
         "Qtd": 7500.0,
         "Unitario": 4.18,
         "Total": 31350.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2026-01-06T12:10:52",
+        "Orgao": "MUNICIPIO DE SOBRADINHO",
+        "UF": "BA",
+        "Municipio": "Sobradinho",
+        "Edital": "041/2025",
+        "Licitacao": "16444804000110001182025",
+        "Link": "https://pncp.gov.br/app/editais/16444804000110/2025/118"
     },
     {
         "DataPublicacao": "20251230",
@@ -5060,22 +5052,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251114",
-        "DataResult": "2025-12-15T10:47:23",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4299/2025",
-        "Licitacao": "11022597001597004102025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410",
         "Item": 1,
         "Descricao": "(3250644) - ACIDO TRANEXAMICO - CONCENTRACAO/DOSAGEM 50 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 5249.0,
         "Unitario": 3.96,
         "Total": 20785.52,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-12-15T10:47:23",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -5083,15 +5065,15 @@
         "Municipio": "Recife",
         "Edital": "4299/2025",
         "Licitacao": "11022597001597004102025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410"
+    },
+    {
         "Item": 2,
         "Descricao": "(3088251) - FUROSEMIDA - CONCENTRACAO/DOSAGEM 10 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 93614.0,
         "Unitario": 0.64,
         "Total": 59903.6,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-12-15T10:47:23",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -5099,15 +5081,15 @@
         "Municipio": "Recife",
         "Edital": "4299/2025",
         "Licitacao": "11022597001597004102025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410"
+    },
+    {
         "Item": 3,
         "Descricao": "(5542022) - HEPARINA SODICA - SUINA, CONCENTRACAO/DOSAGEM 5000 UI/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 7557.0,
         "Unitario": 14.8,
         "Total": 111842.84,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-12-15T10:47:23",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -5115,13 +5097,23 @@
         "Municipio": "Recife",
         "Edital": "4299/2025",
         "Licitacao": "11022597001597004102025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410"
+    },
+    {
         "Item": 9,
         "Descricao": "(3076040) - PIPERACILINA SODICA + TAZOBACTAM SODICO - CONCENTRACAO/DOSAGEM 4 G + 500 MG RESPECTIVAMENTE,FORMA FARMACEUTICA PO LIOFILIZADO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 23613.0,
         "Unitario": 12.22,
         "Total": 288548.5,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251114",
+        "DataResult": "2025-12-15T10:47:23",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4299/2025",
+        "Licitacao": "11022597001597004102025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/410"
     },
     {
         "DataPublicacao": "20251215",
@@ -5462,6 +5454,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 7,
+        "Descricao": "(3196690) - PROMETAZINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 25 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
+        "Qtd": 10770.0,
+        "Unitario": 2.77,
+        "Total": 29831.82,
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-12-11T11:24:35",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -5469,13 +5467,7 @@
         "Municipio": "Recife",
         "Edital": "3759/2025",
         "Licitacao": "11022597001244001302025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/130",
-        "Item": 7,
-        "Descricao": "(3196690) - PROMETAZINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 25 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
-        "Qtd": 10770.0,
-        "Unitario": 2.77,
-        "Total": 29831.82,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/130"
     },
     {
         "Item": 5,
@@ -7398,6 +7390,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 8,
+        "Descricao": "(3079465) - SULFAMETOXAZOL + TRIMETOPRIMA - CONCENTRACAO/DOSAGEM 80 MG/ML + 16 MG/ML RESPECTIVAMENTE,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
+        "Qtd": 4500.0,
+        "Unitario": 3.73,
+        "Total": 16770.15,
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-12-03T10:44:06",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7405,13 +7403,7 @@
         "Municipio": "Recife",
         "Edital": "4414/2025",
         "Licitacao": "11022597001325006062025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/606",
-        "Item": 8,
-        "Descricao": "(3079465) - SULFAMETOXAZOL + TRIMETOPRIMA - CONCENTRACAO/DOSAGEM 80 MG/ML + 16 MG/ML RESPECTIVAMENTE,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
-        "Qtd": 4500.0,
-        "Unitario": 3.73,
-        "Total": 16770.15,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/606"
     },
     {
         "DataPublicacao": "20251203",
@@ -7702,22 +7694,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20251106",
-        "DataResult": "2025-12-01T11:38:26",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "3753/2025",
-        "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
         "Item": 3,
         "Descricao": "(3075931) - ENOXAPARINA SODICA - CONCENTRACAO/DOSAGEM 40 MG,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO SERINGA PREENCHIDA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 2186.0,
         "Unitario": 12.97,
         "Total": 28352.42,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7725,15 +7707,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 4,
         "Descricao": "(3097447) - EPINEFRINA - CONCENTRACAO/DOSAGEM 1 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 1445.0,
         "Unitario": 0.91,
         "Total": 1318.27,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7741,15 +7723,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 1,
         "Descricao": "(3109763) - DOBUTAMINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 12,5 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 277.0,
         "Unitario": 6.73,
         "Total": 1864.21,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7757,15 +7739,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 5,
         "Descricao": "(3082881) - ESCOPOLAMINA, BUTILBROMETO - CONCENTRACAO/DOSAGEM 20 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 2681.0,
         "Unitario": 1.11,
         "Total": 2979.13,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7773,15 +7755,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 8,
         "Descricao": "(3165965) - FENOBARBITAL - CONCENTRACAO/DOSAGEM 40 MG/ML,FORMA FARMACEUTICA SOLUCAO ORAL,FORMA DE APRESENTACAO FRASCO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 72.0,
         "Unitario": 4.5,
         "Total": 323.89,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7789,15 +7771,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 10,
         "Descricao": "(3210669) - FLUMAZENIL - CONCENTRACAO/DOSAGEM 0,1 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 127.0,
         "Unitario": 5.2,
         "Total": 660.4,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7805,15 +7787,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 15,
         "Descricao": "(3081060) - HIDROCORTISONA, SUCCINATO SODICO - CONCENTRACAO/DOSAGEM 500 MG,FORMA FARMACEUTICA PO LIOFILIZADO PARA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO FRASCO-AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 723.0,
         "Unitario": 4.31,
         "Total": 3116.56,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7821,15 +7803,15 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 13,
         "Descricao": "(3161943) - GLUCONATO DE CALCIO - CONCENTRACAO/DOSAGEM 100 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 2500.0,
         "Unitario": 1.86,
         "Total": 4660.75,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-12-01T11:38:26",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -7837,13 +7819,23 @@
         "Municipio": "Recife",
         "Edital": "3753/2025",
         "Licitacao": "11022597001244001222025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
+    },
+    {
         "Item": 18,
         "Descricao": "(3078450) - LIDOCAINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 20 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PERCUTANEA OU PARENTERAL",
         "Qtd": 4737.0,
         "Unitario": 1.16,
         "Total": 5516.24,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251106",
+        "DataResult": "2025-12-01T11:38:26",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "3753/2025",
+        "Licitacao": "11022597001244001222025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/122"
     },
     {
         "Item": 4,
@@ -7878,22 +7870,12 @@
         "Link": "https://pncp.gov.br/app/editais/08109126000100/2025/123"
     },
     {
-        "DataPublicacao": "20251113",
-        "DataResult": "2025-12-01T07:27:04",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "90802/2025",
-        "Licitacao": "10572022000180011262025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1126",
         "Item": 5,
         "Descricao": "Fralda Descartável",
         "Qtd": 571009.0,
         "Unitario": 0.325,
         "Total": 185577.925,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-12-01T07:27:04",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -7901,13 +7883,23 @@
         "Municipio": "Recife",
         "Edital": "90802/2025",
         "Licitacao": "10572022000180011262025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1126",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1126"
+    },
+    {
         "Item": 7,
         "Descricao": "Fralda Descartável",
         "Qtd": 503807.0,
         "Unitario": 0.9899,
         "Total": 498718.5493,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251113",
+        "DataResult": "2025-12-01T07:27:04",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90802/2025",
+        "Licitacao": "10572022000180011262025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1126"
     },
     {
         "DataPublicacao": "20251128",
@@ -7974,6 +7966,12 @@
         "Link": "https://pncp.gov.br/app/editais/46634358000177/2025/99"
     },
     {
+        "Item": 57,
+        "Descricao": "COMPRESSA DE GAZES 13 FIOS/ CM FIOS 100% ALGODÃO. Especificação: ESTERIL/ 7,5M X 7,5CM PCT 10 UND",
+        "Qtd": 200000.0,
+        "Unitario": 0.48,
+        "Total": 96000.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-27T12:49:08",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE JAPARATUBA",
@@ -7981,55 +7979,31 @@
         "Municipio": "Japaratuba",
         "Edital": "19/2025",
         "Licitacao": "11750074000161000772025",
-        "Link": "https://pncp.gov.br/app/editais/11750074000161/2025/77",
-        "Item": 57,
-        "Descricao": "COMPRESSA DE GAZES 13 FIOS/ CM FIOS 100% ALGODÃO. Especificação: ESTERIL/ 7,5M X 7,5CM PCT 10 UND",
-        "Qtd": 200000.0,
-        "Unitario": 0.48,
-        "Total": 96000.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/11750074000161/2025/77"
     },
     {
-        "DataPublicacao": "20251105",
-        "DataResult": "2025-11-26T21:01:24",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "UASG": "5719",
-        "Edital": "3752/2025",
-        "Licitacao": "11022597001244001212025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121",
         "Item": 4,
         "Descricao": "(3168212) - FENOBARBITAL - CONCENTRACAO/DOSAGEM 100 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 390.0,
         "Unitario": 2.68,
         "Total": 1045.16,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-26T21:01:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
         "UF": "PE",
         "Municipio": "Recife",
-        "UASG": "5719",
         "Edital": "3752/2025",
         "Licitacao": "11022597001244001212025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121"
+    },
+    {
         "Item": 3,
         "Descricao": "(3071200) - DIPIRONA SODICA - CONCENTRACAO/DOSAGEM 500 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 68175.0,
         "Unitario": 0.12,
         "Total": 8174.18,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-26T21:01:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -8037,55 +8011,47 @@
         "Municipio": "Recife",
         "Edital": "3752/2025",
         "Licitacao": "11022597001244001212025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121"
+    },
+    {
         "Item": 9,
         "Descricao": "(3082989) - LIDOCAINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 20 MG/G,FORMA FARMACEUTICA GELEIA,FORMA DE APRESENTACAO BISNAGA + APLICADOR,VIA DE ADMINISTRACAO TOPICA",
         "Qtd": 661.0,
         "Unitario": 4.58,
         "Total": 3027.31,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-26T21:01:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
         "UF": "PE",
         "Municipio": "Recife",
-        "UASG": "5719",
         "Edital": "3752/2025",
         "Licitacao": "11022597001244001212025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121"
+    },
+    {
         "Item": 12,
         "Descricao": "(3196178) - NITROPRUSSIATO DE SODIO - CONCENTRACAO/DOSAGEM 25 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 101.0,
         "Unitario": 15.46,
         "Total": 1561.45,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-26T21:01:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
         "UF": "PE",
         "Municipio": "Recife",
-        "UASG": "5719",
         "Edital": "3752/2025",
         "Licitacao": "11022597001244001212025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121"
+    },
+    {
         "Item": 10,
         "Descricao": "(3085317) - MANITOL - CONCENTRACAO/DOSAGEM 200 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO BOLSA OU FRASCO (SISTEMA FECHADO),VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 292.0,
         "Unitario": 8.05,
         "Total": 2350.57,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-26T21:01:24",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -8093,13 +8059,23 @@
         "Municipio": "Recife",
         "Edital": "3752/2025",
         "Licitacao": "11022597001244001212025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121"
+    },
+    {
         "Item": 13,
         "Descricao": "(3197042) - PARACETAMOL - CONCENTRACAO/DOSAGEM 200 MG/ML,FORMA FARMACEUTICA SOLUCAO,FORMA DE APRESENTACAO FRASCO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 145.0,
         "Unitario": 1.82,
         "Total": 264.36,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251105",
+        "DataResult": "2025-11-26T21:01:24",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "3752/2025",
+        "Licitacao": "11022597001244001212025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2025/121"
     },
     {
         "Item": 1,
@@ -10205,22 +10181,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/342"
     },
     {
-        "DataPublicacao": "20251117",
-        "DataResult": "2025-11-25T07:24:07",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PB",
-        "Municipio": "João Pessoa",
-        "Edital": "90065/2025",
-        "Licitacao": "08715618000140001472025",
-        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147",
         "Item": 72,
         "Descricao": "Enalapril maleato",
         "Qtd": 789564.0,
         "Unitario": 0.05,
         "Total": 39478.2,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251117",
         "DataResult": "2025-11-25T07:24:07",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -10228,15 +10194,15 @@
         "Municipio": "João Pessoa",
         "Edital": "90065/2025",
         "Licitacao": "08715618000140001472025",
-        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147",
+        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
+    },
+    {
         "Item": 115,
         "Descricao": "Metildopa",
         "Qtd": 259024.0,
         "Unitario": 0.37,
         "Total": 95838.88,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251117",
         "DataResult": "2025-11-25T07:24:07",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -10244,32 +10210,31 @@
         "Municipio": "João Pessoa",
         "Edital": "90065/2025",
         "Licitacao": "08715618000140001472025",
-        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147",
+        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
+    },
+    {
         "Item": 93,
         "Descricao": "Ibuprofeno",
         "Qtd": 24286.0,
         "Unitario": 2.11,
         "Total": 51243.46,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251117",
         "DataResult": "2025-11-25T07:24:07",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
         "UF": "PB",
         "Municipio": "João Pessoa",
-        "UASG": "930213",
         "Edital": "90065/2025",
         "Licitacao": "08715618000140001472025",
-        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147",
+        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
+    },
+    {
         "Item": 143,
         "Descricao": "Prednisona",
         "Qtd": 291082.0,
         "Unitario": 0.14,
         "Total": 40751.48,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251117",
         "DataResult": "2025-11-25T07:24:07",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -10277,13 +10242,39 @@
         "Municipio": "João Pessoa",
         "Edital": "90065/2025",
         "Licitacao": "08715618000140001472025",
-        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147",
+        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
+    },
+    {
         "Item": 155,
         "Descricao": "Sinvastatina",
         "Qtd": 490092.0,
         "Unitario": 0.11,
         "Total": 53910.12,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251117",
+        "DataResult": "2025-11-25T07:24:07",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Edital": "90065/2025",
+        "Licitacao": "08715618000140001472025",
+        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
+    },
+    {
+        "Item": 153,
+        "Descricao": "Sinvastatina",
+        "Qtd": 1161267.0,
+        "Unitario": 0.06,
+        "Total": 69676.02,
+        "Status": "Venceu",
+        "DataPublicacao": "20251117",
+        "DataResult": "2025-11-25T07:24:07",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Edital": "90065/2025",
+        "Licitacao": "08715618000140001472025",
+        "Link": "https://pncp.gov.br/app/editais/08715618000140/2025/147"
     },
     {
         "DataPublicacao": "20251124",
@@ -10896,6 +10887,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 87,
+        "Descricao": "COMPRESSA CAMPO OPERATÓRIO",
+        "Qtd": 2000.0,
+        "Unitario": 57.9,
+        "Total": 115800.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-19T07:25:00",
         "Orgao": "COMANDO DA AERONAUTICA",
@@ -10903,13 +10900,7 @@
         "Municipio": "Recife",
         "Edital": "90063/2025",
         "Licitacao": "00394429000100033312025",
-        "Link": "https://pncp.gov.br/app/editais/00394429000100/2025/3331",
-        "Item": 87,
-        "Descricao": "COMPRESSA CAMPO OPERATÓRIO",
-        "Qtd": 2000.0,
-        "Unitario": 57.9,
-        "Total": 115800.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/00394429000100/2025/3331"
     },
     {
         "DataPublicacao": "20251118",
@@ -11092,109 +11083,100 @@
         "Link": "https://pncp.gov.br/app/editais/45751435000106/2025/416"
     },
     {
-        "DataPublicacao": "20251114",
-        "DataResult": "2025-11-14T20:26:36",
-        "Orgao": "MUNICIPIO DE SEABRA",
-        "UF": "BA",
-        "Municipio": "Seabra",
-        "UASG": "3324",
-        "Edital": "051/2025",
-        "Licitacao": "13922604000137000712025",
-        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71",
         "Item": 6769266,
         "Descricao": "MIDAZOLAM 15MG/ML 3ML",
         "Qtd": 1000.0,
         "Unitario": 1.94,
         "Total": 1940.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T20:26:36",
         "Orgao": "MUNICIPIO DE SEABRA",
         "UF": "BA",
         "Municipio": "Seabra",
-        "UASG": "3324",
         "Edital": "051/2025",
         "Licitacao": "13922604000137000712025",
-        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71",
+        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71"
+    },
+    {
         "Item": 6769268,
         "Descricao": "LORATADINA - 1 MG/ML XAROPE 100 ML ",
         "Qtd": 2000.0,
         "Unitario": 2.77,
         "Total": 5540.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T20:26:36",
         "Orgao": "MUNICIPIO DE SEABRA",
         "UF": "BA",
         "Municipio": "Seabra",
-        "UASG": "3324",
         "Edital": "051/2025",
         "Licitacao": "13922604000137000712025",
-        "IdPNCP": null,
-        "DtInicioPropostas": null,
-        "DtFimPropostas": null,
-        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71",
+        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71"
+    },
+    {
         "Item": 6769269,
         "Descricao": "LORATADINA - 10 MG COMPRIMIDO",
         "Qtd": 40000.0,
         "Unitario": 0.06,
         "Total": 2400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T20:26:36",
         "Orgao": "MUNICIPIO DE SEABRA",
         "UF": "BA",
         "Municipio": "Seabra",
-        "UASG": "3324",
         "Edital": "051/2025",
         "Licitacao": "13922604000137000712025",
-        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71",
+        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71"
+    },
+    {
         "Item": 6769267,
         "Descricao": "MIDAZOLAM 5MG/ML - 10ML",
         "Qtd": 1000.0,
         "Unitario": 3.75,
         "Total": 3750.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T20:26:36",
         "Orgao": "MUNICIPIO DE SEABRA",
         "UF": "BA",
         "Municipio": "Seabra",
-        "UASG": "3324",
         "Edital": "051/2025",
         "Licitacao": "13922604000137000712025",
-        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71",
+        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71"
+    },
+    {
         "Item": 6769271,
         "Descricao": "MALEATO DE DEXCLORFENIRAMINA - 2,0 MG COMPRIMIDO CT BL AL PLAS INC ",
         "Qtd": 40000.0,
         "Unitario": 0.05,
         "Total": 2000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T20:26:36",
         "Orgao": "MUNICIPIO DE SEABRA",
         "UF": "BA",
         "Municipio": "Seabra",
-        "UASG": "3324",
         "Edital": "051/2025",
         "Licitacao": "13922604000137000712025",
-        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71",
+        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71"
+    },
+    {
         "Item": 6769270,
         "Descricao": "MALEATO DE DEXCLORFENIRAMINA - 0,4 MG/ML XPE FR PLAS AMB X 100 ML ",
         "Qtd": 3000.0,
         "Unitario": 1.78,
         "Total": 5340.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251114",
+        "DataResult": "2025-11-14T20:26:36",
+        "Orgao": "MUNICIPIO DE SEABRA",
+        "UF": "BA",
+        "Municipio": "Seabra",
+        "Edital": "051/2025",
+        "Licitacao": "13922604000137000712025",
+        "Link": "https://pncp.gov.br/app/editais/13922604000137/2025/71"
     },
     {
         "Item": 1,
@@ -11389,6 +11371,12 @@
         "Link": "https://pncp.gov.br/app/editais/13692033000191/2025/34"
     },
     {
+        "Item": 68,
+        "Descricao": "MALEATO DE LEVOMEPROMAZINA 100MG",
+        "Qtd": 14000.0,
+        "Unitario": 0.564,
+        "Total": 7896.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T17:32:32",
         "Orgao": "MUNICIPIO DE ITAPOLIS",
@@ -11396,31 +11384,15 @@
         "Municipio": "Itápolis",
         "Edital": "63/2025",
         "Licitacao": "49979255000137001402025",
-        "Link": "https://pncp.gov.br/app/editais/49979255000137/2025/140",
-        "Item": 68,
-        "Descricao": "MALEATO DE LEVOMEPROMAZINA 100MG",
-        "Qtd": 14000.0,
-        "Unitario": 0.564,
-        "Total": 7896.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/49979255000137/2025/140"
     },
     {
-        "DataPublicacao": "20251114",
-        "DataResult": "2025-11-14T10:43:41",
-        "Orgao": "MUNICIPIO DE ITABIRA",
-        "UF": "MG",
-        "Municipio": "Itabira",
-        "Edital": "83 | Processo 148/2025",
-        "Licitacao": "18299446000124001392025",
-        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139",
         "Item": 1,
         "Descricao": "ACIDO ACETIL SALICILICO 100MG  COMPRIMIDO.",
         "Qtd": 800000.0,
         "Unitario": 0.028,
         "Total": 22400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T10:43:41",
         "Orgao": "MUNICIPIO DE ITABIRA",
@@ -11428,15 +11400,15 @@
         "Municipio": "Itabira",
         "Edital": "83 | Processo 148/2025",
         "Licitacao": "18299446000124001392025",
-        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139"
+    },
+    {
         "Item": 13,
         "Descricao": "CARBONATO DE LITIO  300MG  COMPRIMIDO.",
         "Qtd": 213000.0,
         "Unitario": 0.23,
         "Total": 48990.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T10:43:41",
         "Orgao": "MUNICIPIO DE ITABIRA",
@@ -11444,15 +11416,15 @@
         "Municipio": "Itabira",
         "Edital": "83 | Processo 148/2025",
         "Licitacao": "18299446000124001392025",
-        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139"
+    },
+    {
         "Item": 12,
         "Descricao": "CARBAMAZEPINA  200MG  COMPRMIDO",
         "Qtd": 414000.0,
         "Unitario": 0.147,
         "Total": 60858.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T10:43:41",
         "Orgao": "MUNICIPIO DE ITABIRA",
@@ -11460,15 +11432,15 @@
         "Municipio": "Itabira",
         "Edital": "83 | Processo 148/2025",
         "Licitacao": "18299446000124001392025",
-        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139"
+    },
+    {
         "Item": 26,
         "Descricao": "HEPARINA SODICA 5000 U.I 0 25ML  PARA APLICACAO SUBCUTANEA  FRASCO   AMPOLA 0 25ML.",
         "Qtd": 3000.0,
         "Unitario": 6.6667,
         "Total": 20000.1,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T10:43:41",
         "Orgao": "MUNICIPIO DE ITABIRA",
@@ -11476,15 +11448,15 @@
         "Municipio": "Itabira",
         "Edital": "83 | Processo 148/2025",
         "Licitacao": "18299446000124001392025",
-        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139"
+    },
+    {
         "Item": 30,
         "Descricao": "LEVOMEPROMAZINA 25MG  COMPRIMIDO.",
         "Qtd": 100000.0,
         "Unitario": 0.37,
         "Total": 37000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T10:43:41",
         "Orgao": "MUNICIPIO DE ITABIRA",
@@ -11492,13 +11464,23 @@
         "Municipio": "Itabira",
         "Edital": "83 | Processo 148/2025",
         "Licitacao": "18299446000124001392025",
-        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139",
+        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139"
+    },
+    {
         "Item": 47,
         "Descricao": "SAIS P  REIDRATACAO ORAL  CLORETO DE SODIO 3 5G   CLORETO DEPOTASSIO 1 5G MAIS CITRATO DE SODIO 2 9G   GLICOSE ANIDRA 20GPO P  SOLUC ORAL BRANCO  ENVELOPE C 27 9G.",
         "Qtd": 21000.0,
         "Unitario": 0.66,
         "Total": 13860.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251114",
+        "DataResult": "2025-11-14T10:43:41",
+        "Orgao": "MUNICIPIO DE ITABIRA",
+        "UF": "MG",
+        "Municipio": "Itabira",
+        "Edital": "83 | Processo 148/2025",
+        "Licitacao": "18299446000124001392025",
+        "Link": "https://pncp.gov.br/app/editais/18299446000124/2025/139"
     },
     {
         "Item": 2,
@@ -11517,22 +11499,12 @@
         "Link": "https://pncp.gov.br/app/editais/06113056000139/2025/48"
     },
     {
-        "DataPublicacao": "20251114",
-        "DataResult": "2025-11-14T07:12:03",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "90842/2025",
-        "Licitacao": "10572022000180011282025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1128",
         "Item": 16,
         "Descricao": "Propranolol cloridrato",
         "Qtd": 5600.0,
         "Unitario": 0.0492,
         "Total": 275.52,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T07:12:03",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -11540,15 +11512,15 @@
         "Municipio": "Recife",
         "Edital": "90842/2025",
         "Licitacao": "10572022000180011282025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1128",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1128"
+    },
+    {
         "Item": 3,
         "Descricao": "Atenolol",
         "Qtd": 4000.0,
         "Unitario": 0.05,
         "Total": 200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T07:12:03",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -11556,31 +11528,31 @@
         "Municipio": "Recife",
         "Edital": "90842/2025",
         "Licitacao": "10572022000180011282025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1128",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1128"
+    },
+    {
         "Item": 17,
         "Descricao": "Sulfametoxazol",
         "Qtd": 1900.0,
         "Unitario": 4.08,
         "Total": 7752.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
-        "DataResult": "2025-11-14T07:04:20",
+        "DataResult": "2025-11-14T07:12:03",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
         "UF": "PE",
         "Municipio": "Recife",
-        "Edital": "90741/2025",
-        "Licitacao": "10572022000180011272025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1127",
+        "Edital": "90842/2025",
+        "Licitacao": "10572022000180011282025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1128"
+    },
+    {
         "Item": 7,
         "Descricao": "Ondansetrona cloridrato",
         "Qtd": 205186.0,
         "Unitario": 0.7999,
         "Total": 164128.2814,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T07:04:20",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -11588,15 +11560,15 @@
         "Municipio": "Recife",
         "Edital": "90741/2025",
         "Licitacao": "10572022000180011272025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1127",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1127"
+    },
+    {
         "Item": 11,
         "Descricao": "Dipirona sódica",
         "Qtd": 510953.0,
         "Unitario": 0.1198,
         "Total": 61212.1694,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T07:04:20",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -11604,31 +11576,31 @@
         "Municipio": "Recife",
         "Edital": "90741/2025",
         "Licitacao": "10572022000180011272025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1127",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1127"
+    },
+    {
         "Item": 9,
         "Descricao": "Sulfadiazina",
         "Qtd": 2838.0,
         "Unitario": 29.68,
         "Total": 84231.84,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251114",
+        "DataResult": "2025-11-14T07:04:20",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90741/2025",
+        "Licitacao": "10572022000180011272025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1127"
     },
     {
-        "DataPublicacao": "20251114",
-        "DataResult": "2025-11-14T07:04:12",
-        "Orgao": "UNIVERSIDADE FEDERAL DA BAHIA",
-        "UF": "BA",
-        "Municipio": "Salvador",
-        "Edital": "90114/2025",
-        "Licitacao": "15180714000104002492025",
-        "Link": "https://pncp.gov.br/app/editais/15180714000104/2025/249",
         "Item": 3,
         "Descricao": "Furosemida",
         "Qtd": 30000.0,
         "Unitario": 0.05,
         "Total": 1500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T07:04:12",
         "Orgao": "UNIVERSIDADE FEDERAL DA BAHIA",
@@ -11636,15 +11608,15 @@
         "Municipio": "Salvador",
         "Edital": "90114/2025",
         "Licitacao": "15180714000104002492025",
-        "Link": "https://pncp.gov.br/app/editais/15180714000104/2025/249",
+        "Link": "https://pncp.gov.br/app/editais/15180714000104/2025/249"
+    },
+    {
         "Item": 1,
         "Descricao": "Propranolol cloridrato",
         "Qtd": 3600.0,
         "Unitario": 0.05,
         "Total": 180.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251114",
         "DataResult": "2025-11-14T07:04:12",
         "Orgao": "UNIVERSIDADE FEDERAL DA BAHIA",
@@ -11652,31 +11624,31 @@
         "Municipio": "Salvador",
         "Edital": "90114/2025",
         "Licitacao": "15180714000104002492025",
-        "Link": "https://pncp.gov.br/app/editais/15180714000104/2025/249",
+        "Link": "https://pncp.gov.br/app/editais/15180714000104/2025/249"
+    },
+    {
         "Item": 23,
         "Descricao": "Dexametasona",
         "Qtd": 350.0,
         "Unitario": 1.68,
         "Total": 588.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251114",
+        "DataResult": "2025-11-14T07:04:12",
+        "Orgao": "UNIVERSIDADE FEDERAL DA BAHIA",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "Edital": "90114/2025",
+        "Licitacao": "15180714000104002492025",
+        "Link": "https://pncp.gov.br/app/editais/15180714000104/2025/249"
     },
     {
-        "DataPublicacao": "20251113",
-        "DataResult": "2025-11-13T11:43:28",
-        "Orgao": "MUNICIPIO DE FLORESTAL",
-        "UF": "MG",
-        "Municipio": "Florestal",
-        "Edital": "Adesão - 95/2025",
-        "Licitacao": "18313833000178001432025",
-        "Link": "https://pncp.gov.br/app/editais/18313833000178/2025/143",
         "Item": 31,
         "Descricao": "CARBAMAZEPINA 200 MG",
         "Qtd": 30000.0,
         "Unitario": 0.1469,
         "Total": 4407.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-11-13T11:43:28",
         "Orgao": "MUNICIPIO DE FLORESTAL",
@@ -11684,13 +11656,23 @@
         "Municipio": "Florestal",
         "Edital": "Adesão - 95/2025",
         "Licitacao": "18313833000178001432025",
-        "Link": "https://pncp.gov.br/app/editais/18313833000178/2025/143",
+        "Link": "https://pncp.gov.br/app/editais/18313833000178/2025/143"
+    },
+    {
         "Item": 33,
         "Descricao": "CARBAMAZEPINA 20MG/ML - SUSPENSÃO ORAL - 100 ML + RECIPIENTE DOSADOR",
         "Qtd": 200.0,
         "Unitario": 5.6,
         "Total": 1120.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251113",
+        "DataResult": "2025-11-13T11:43:28",
+        "Orgao": "MUNICIPIO DE FLORESTAL",
+        "UF": "MG",
+        "Municipio": "Florestal",
+        "Edital": "Adesão - 95/2025",
+        "Licitacao": "18313833000178001432025",
+        "Link": "https://pncp.gov.br/app/editais/18313833000178/2025/143"
     },
     {
         "Item": 2,
@@ -11789,22 +11771,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/347"
     },
     {
-        "DataPublicacao": "20251113",
-        "DataResult": "2025-11-13T08:56:54",
-        "Orgao": "MUNICIPIO DE PRAIA GRANDE",
-        "UF": "SP",
-        "Municipio": "Praia Grande",
-        "Edital": "90222/2025",
-        "Licitacao": "46177531000155005422025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542",
         "Item": 9,
         "Descricao": "Hidrocortisona",
         "Qtd": 6000.0,
         "Unitario": 2.62,
         "Total": 15720.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-11-13T08:56:54",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -11812,15 +11784,15 @@
         "Municipio": "Praia Grande",
         "Edital": "90222/2025",
         "Licitacao": "46177531000155005422025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542",
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542"
+    },
+    {
         "Item": 16,
         "Descricao": "Ipratrópio Brometo",
         "Qtd": 3600.0,
         "Unitario": 0.891,
         "Total": 3207.6,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-11-13T08:56:54",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -11828,15 +11800,15 @@
         "Municipio": "Praia Grande",
         "Edital": "90222/2025",
         "Licitacao": "46177531000155005422025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542",
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542"
+    },
+    {
         "Item": 25,
         "Descricao": "Levomepromazina",
         "Qtd": 430000.0,
         "Unitario": 0.36,
         "Total": 154800.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-11-13T08:56:54",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -11844,15 +11816,15 @@
         "Municipio": "Praia Grande",
         "Edital": "90222/2025",
         "Licitacao": "46177531000155005422025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542",
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542"
+    },
+    {
         "Item": 33,
         "Descricao": "Lidocaína Cloridrato",
         "Qtd": 6000.0,
         "Unitario": 1.007,
         "Total": 6042.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-11-13T08:56:54",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -11860,15 +11832,15 @@
         "Municipio": "Praia Grande",
         "Edital": "90222/2025",
         "Licitacao": "46177531000155005422025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542",
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542"
+    },
+    {
         "Item": 53,
         "Descricao": "Miconazol Nitrato",
         "Qtd": 32000.0,
         "Unitario": 2.349,
         "Total": 75168.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251113",
         "DataResult": "2025-11-13T08:56:54",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -11876,13 +11848,23 @@
         "Municipio": "Praia Grande",
         "Edital": "90222/2025",
         "Licitacao": "46177531000155005422025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542",
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542"
+    },
+    {
         "Item": 73,
         "Descricao": "Norepinefrina",
         "Qtd": 5000.0,
         "Unitario": 0.901,
         "Total": 4505.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251113",
+        "DataResult": "2025-11-13T08:56:54",
+        "Orgao": "MUNICIPIO DE PRAIA GRANDE",
+        "UF": "SP",
+        "Municipio": "Praia Grande",
+        "Edital": "90222/2025",
+        "Licitacao": "46177531000155005422025",
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/542"
     },
     {
         "Item": 3,
@@ -12045,22 +12027,12 @@
         "Link": "https://pncp.gov.br/app/editais/09090689000167/2025/99"
     },
     {
-        "DataPublicacao": "20251112",
-        "DataResult": "2025-11-12T11:22:12",
-        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
-        "UF": "MG",
-        "Municipio": "Ponte Nova",
-        "Edital": "000035/2025",
-        "Licitacao": "01095667000188000562025",
-        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56",
         "Item": 39,
         "Descricao": "BRIMONIDINA 0,2% SOLUÇÃO OFTÁLMICA FRASCO 5ML",
         "Qtd": 14050.0,
         "Unitario": 3.48,
         "Total": 48894.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T11:22:12",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
@@ -12068,15 +12040,15 @@
         "Municipio": "Ponte Nova",
         "Edital": "000035/2025",
         "Licitacao": "01095667000188000562025",
-        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
         "Item": 70,
         "Descricao": "CLONAZEPAM 0,5 MG COMPRIMIDO",
         "Qtd": 196500.0,
         "Unitario": 0.054,
         "Total": 10611.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T11:22:12",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
@@ -12084,15 +12056,15 @@
         "Municipio": "Ponte Nova",
         "Edital": "000035/2025",
         "Licitacao": "01095667000188000562025",
-        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
         "Item": 173,
         "Descricao": "ITRACONAZOL 100 MG CAPSULA",
         "Qtd": 45500.0,
         "Unitario": 0.73,
         "Total": 33215.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T11:22:12",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
@@ -12100,32 +12072,31 @@
         "Municipio": "Ponte Nova",
         "Edital": "000035/2025",
         "Licitacao": "01095667000188000562025",
-        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
         "Item": 281,
         "Descricao": "TRAMADOL 50 MG CÁPSULA",
         "Qtd": 370100.0,
         "Unitario": 0.115,
         "Total": 42561.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T11:22:12",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
         "UF": "MG",
         "Municipio": "Ponte Nova",
-        "UASG": "01",
         "Edital": "000035/2025",
         "Licitacao": "01095667000188000562025",
-        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
         "Item": 283,
         "Descricao": "TRAVOPROSTA 0,04 MG/ML SOLUÇÃO OFTÁLMICA FRASCO 2,5 ML",
         "Qtd": 28650.0,
         "Unitario": 9.17,
         "Total": 262720.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T11:22:12",
         "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
@@ -12133,13 +12104,55 @@
         "Municipio": "Ponte Nova",
         "Edital": "000035/2025",
         "Licitacao": "01095667000188000562025",
-        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
         "Item": 94,
         "Descricao": "DEXAMETASONA 1 MG/G CREME DERMATOLÓGICO BISNAGA 10 G",
         "Qtd": 14800.0,
         "Unitario": 1.52,
         "Total": 22496.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T11:22:12",
+        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
+        "UF": "MG",
+        "Municipio": "Ponte Nova",
+        "Edital": "000035/2025",
+        "Licitacao": "01095667000188000562025",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
+        "Item": 134,
+        "Descricao": "FENTANILA, APRESENTAÇÃO:SAL CITRATO, DOSAGEM:0,05 MG/ML, INDICAÇÃO:SOLUÇÃO INJETÁVEL - AMPOLA 10 ML",
+        "Qtd": 2800.0,
+        "Unitario": 2.75,
+        "Total": 7700.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T11:22:12",
+        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
+        "UF": "MG",
+        "Municipio": "Ponte Nova",
+        "Edital": "000035/2025",
+        "Licitacao": "01095667000188000562025",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
+    },
+    {
+        "Item": 252,
+        "Descricao": "QUETIAPINA 25 MG COMPRIMIDO REVESTIDO",
+        "Qtd": 740000.0,
+        "Unitario": 0.097,
+        "Total": 71780.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T11:22:12",
+        "Orgao": "CONSORCIO INTERMUNICIPAL DE SAUDE DA MICROREGIAO DO VALE DO PIRANGA",
+        "UF": "MG",
+        "Municipio": "Ponte Nova",
+        "Edital": "000035/2025",
+        "Licitacao": "01095667000188000562025",
+        "Link": "https://pncp.gov.br/app/editais/01095667000188/2025/56"
     },
     {
         "Item": 7,
@@ -12158,22 +12171,12 @@
         "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/19042"
     },
     {
-        "DataPublicacao": "20251104",
-        "DataResult": "2025-11-12T08:18:22",
-        "Orgao": "MUNICIPIO DE SAO TIAGO",
-        "UF": "MG",
-        "Municipio": "São Tiago",
-        "Edital": "0041/2025",
-        "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
         "Item": 3,
         "Descricao": "Cloridrato de Clorpromazina 100 mG",
         "Qtd": 8000.0,
         "Unitario": 0.3,
         "Total": 2400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-12T08:18:22",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
@@ -12181,15 +12184,15 @@
         "Municipio": "São Tiago",
         "Edital": "0041/2025",
         "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
+    },
+    {
         "Item": 4,
         "Descricao": "Cloridrato de Clorpromazina 25 mG",
         "Qtd": 50000.0,
         "Unitario": 0.33,
         "Total": 16500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-12T08:18:22",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
@@ -12197,15 +12200,15 @@
         "Municipio": "São Tiago",
         "Edital": "0041/2025",
         "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
+    },
+    {
         "Item": 12,
         "Descricao": "Maleato de Levomepromazina 25 mG",
         "Qtd": 15000.0,
         "Unitario": 0.48,
         "Total": 7200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-12T08:18:22",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
@@ -12213,15 +12216,15 @@
         "Municipio": "São Tiago",
         "Edital": "0041/2025",
         "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
+    },
+    {
         "Item": 17,
         "Descricao": "Risperidona 01 mG/mL Gotas 30 mL",
         "Qtd": 200.0,
         "Unitario": 10.39,
         "Total": 2078.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-12T08:18:22",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
@@ -12229,15 +12232,15 @@
         "Municipio": "São Tiago",
         "Edital": "0041/2025",
         "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
+    },
+    {
         "Item": 11,
         "Descricao": "Haloperidol 05 mG",
         "Qtd": 12000.0,
         "Unitario": 0.092,
         "Total": 1104.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-12T08:18:22",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
@@ -12245,15 +12248,15 @@
         "Municipio": "São Tiago",
         "Edital": "0041/2025",
         "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
+    },
+    {
         "Item": 5,
         "Descricao": "Cloridrato de Clorpromazina 40 mG/mL Gotas 20 mL",
         "Qtd": 200.0,
         "Unitario": 7.29,
         "Total": 1458.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-12T08:18:22",
         "Orgao": "MUNICIPIO DE SAO TIAGO",
@@ -12261,15 +12264,31 @@
         "Municipio": "São Tiago",
         "Edital": "0041/2025",
         "Licitacao": "17749904000117001882025",
-        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
+    },
+    {
         "Item": 45,
         "Descricao": "Enoxarapina Sódica Injetável 40 mG/0,4 mL Preenchida",
         "Qtd": 3000.0,
         "Unitario": 13.95,
         "Total": 41850.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251104",
+        "DataResult": "2025-11-12T08:18:22",
+        "Orgao": "MUNICIPIO DE SAO TIAGO",
+        "UF": "MG",
+        "Municipio": "São Tiago",
+        "Edital": "0041/2025",
+        "Licitacao": "17749904000117001882025",
+        "Link": "https://pncp.gov.br/app/editais/17749904000117/2025/188"
     },
     {
+        "Item": 5,
+        "Descricao": "Fralda descartável",
+        "Qtd": 404496.0,
+        "Unitario": 0.972,
+        "Total": 393170.112,
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:17:48",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -12277,31 +12296,15 @@
         "Municipio": "Recife",
         "Edital": "90647/2025",
         "Licitacao": "10572022000180011222025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1122",
-        "Item": 5,
-        "Descricao": "Fralda descartável",
-        "Qtd": 404496.0,
-        "Unitario": 0.972,
-        "Total": 393170.112,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1122"
     },
     {
-        "DataPublicacao": "20251112",
-        "DataResult": "2025-11-12T07:16:35",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "90148/2025",
-        "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
         "Item": 7,
         "Descricao": "Carbamazepina",
         "Qtd": 10000.0,
         "Unitario": 0.17,
         "Total": 1700.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12309,15 +12312,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 6,
         "Descricao": "Carbamazepina",
         "Qtd": 500.0,
         "Unitario": 7.11,
         "Total": 3555.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12325,15 +12328,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 16,
         "Descricao": "Suxametônio cloreto",
         "Qtd": 1500.0,
         "Unitario": 17.0,
         "Total": 25500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12341,15 +12344,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 8,
         "Descricao": "Carbonato de lítio",
         "Qtd": 3000.0,
         "Unitario": 0.23,
         "Total": 690.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12357,15 +12360,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 18,
         "Descricao": "Amitriptilina cloridrato",
         "Qtd": 3000.0,
         "Unitario": 0.04,
         "Total": 120.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12373,15 +12376,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 15,
         "Descricao": "Clonazepam",
         "Qtd": 350.0,
         "Unitario": 2.56,
         "Total": 896.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12389,15 +12392,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 14,
         "Descricao": "Clonazepam",
         "Qtd": 2500.0,
         "Unitario": 0.06,
         "Total": 150.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12405,15 +12408,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 13,
         "Descricao": "Clonazepam",
         "Qtd": 2500.0,
         "Unitario": 0.06,
         "Total": 150.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12421,15 +12424,15 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 27,
         "Descricao": "Fluoxetina",
         "Qtd": 3000.0,
         "Unitario": 0.07,
         "Total": 210.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:35",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12437,31 +12440,31 @@
         "Municipio": "Natal",
         "Edital": "90148/2025",
         "Licitacao": "15126437000305037982025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
+    },
+    {
         "Item": 71,
         "Descricao": "Quetiapina",
         "Qtd": 10000.0,
         "Unitario": 0.1,
         "Total": 1000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:16:35",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90148/2025",
+        "Licitacao": "15126437000305037982025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3798"
     },
     {
-        "DataPublicacao": "20251112",
-        "DataResult": "2025-11-12T07:16:13",
-        "Orgao": "MUNICIPIO DE FERNANDOPOLIS",
-        "UF": "SP",
-        "Municipio": "Fernandópolis",
-        "Edital": "90090/2025",
-        "Licitacao": "47842836000105002022025",
-        "Link": "https://pncp.gov.br/app/editais/47842836000105/2025/202",
         "Item": 4,
         "Descricao": "Carbonato de lítio",
         "Qtd": 500000.0,
         "Unitario": 0.23,
         "Total": 115000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:13",
         "Orgao": "MUNICIPIO DE FERNANDOPOLIS",
@@ -12469,15 +12472,15 @@
         "Municipio": "Fernandópolis",
         "Edital": "90090/2025",
         "Licitacao": "47842836000105002022025",
-        "Link": "https://pncp.gov.br/app/editais/47842836000105/2025/202",
+        "Link": "https://pncp.gov.br/app/editais/47842836000105/2025/202"
+    },
+    {
         "Item": 9,
         "Descricao": "Estriol",
         "Qtd": 2000.0,
         "Unitario": 13.49,
         "Total": 26980.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:16:13",
         "Orgao": "MUNICIPIO DE FERNANDOPOLIS",
@@ -12485,31 +12488,31 @@
         "Municipio": "Fernandópolis",
         "Edital": "90090/2025",
         "Licitacao": "47842836000105002022025",
-        "Link": "https://pncp.gov.br/app/editais/47842836000105/2025/202",
+        "Link": "https://pncp.gov.br/app/editais/47842836000105/2025/202"
+    },
+    {
         "Item": 20,
         "Descricao": "Propranolol cloridrato",
         "Qtd": 500000.0,
         "Unitario": 0.03,
         "Total": 15000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:16:13",
+        "Orgao": "MUNICIPIO DE FERNANDOPOLIS",
+        "UF": "SP",
+        "Municipio": "Fernandópolis",
+        "Edital": "90090/2025",
+        "Licitacao": "47842836000105002022025",
+        "Link": "https://pncp.gov.br/app/editais/47842836000105/2025/202"
     },
     {
-        "DataPublicacao": "20251112",
-        "DataResult": "2025-11-12T07:13:06",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "90090/2025",
-        "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
         "Item": 8,
         "Descricao": "Ácido ursodesoxicólico",
         "Qtd": 16450.0,
         "Unitario": 0.64,
         "Total": 10528.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12517,15 +12520,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 4,
         "Descricao": "Aciclovir",
         "Qtd": 46250.0,
         "Unitario": 0.15,
         "Total": 6937.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12533,15 +12536,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 17,
         "Descricao": "Anlodipino besilato",
         "Qtd": 13500.0,
         "Unitario": 0.0496,
         "Total": 669.6,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12549,15 +12552,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 20,
         "Descricao": "Clopidogrel",
         "Qtd": 8200.0,
         "Unitario": 0.3,
         "Total": 2460.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12565,15 +12568,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 28,
         "Descricao": "Escopolamina butilbrometo",
         "Qtd": 3000.0,
         "Unitario": 0.2169,
         "Total": 650.7,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12581,15 +12584,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 18,
         "Descricao": "Anlodipino besilato",
         "Qtd": 49400.0,
         "Unitario": 0.03,
         "Total": 1482.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12597,15 +12600,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 29,
         "Descricao": "Cabergolina",
         "Qtd": 900.0,
         "Unitario": 2.84,
         "Total": 2556.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12613,15 +12616,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 38,
         "Descricao": "Amiodarona",
         "Qtd": 5800.0,
         "Unitario": 0.3,
         "Total": 1740.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12629,15 +12632,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 50,
         "Descricao": "Ondansetrona cloridrato",
         "Qtd": 19200.0,
         "Unitario": 0.27,
         "Total": 5184.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12645,15 +12648,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 61,
         "Descricao": "Dimenidrinato",
         "Qtd": 18600.0,
         "Unitario": 8.147,
         "Total": 151534.2,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12661,15 +12664,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 84,
         "Descricao": "Losartana potássica",
         "Qtd": 63400.0,
         "Unitario": 0.0352,
         "Total": 2231.68,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12677,15 +12680,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 108,
         "Descricao": "Prednisona",
         "Qtd": 33310.0,
         "Unitario": 0.0583,
         "Total": 1941.973,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12693,15 +12696,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 115,
         "Descricao": "Metoprolol",
         "Qtd": 15000.0,
         "Unitario": 0.3879,
         "Total": 5818.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12709,15 +12712,15 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 93,
         "Descricao": "Nifedipino",
         "Qtd": 15200.0,
         "Unitario": 0.1,
         "Total": 1520.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:13:06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -12725,31 +12728,31 @@
         "Municipio": "Recife",
         "Edital": "90090/2025",
         "Licitacao": "15126437000305037922025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
+    },
+    {
         "Item": 107,
         "Descricao": "Prednisona",
         "Qtd": 69600.0,
         "Unitario": 0.1428,
         "Total": 9938.88,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:13:06",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90090/2025",
+        "Licitacao": "15126437000305037922025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3792"
     },
     {
-        "DataPublicacao": "20251112",
-        "DataResult": "2025-11-12T07:06:15",
-        "Orgao": "MUNICIPIO DE SANTA LUZIA",
-        "UF": "MG",
-        "Municipio": "Santa Luzia",
-        "Edital": "90029/2025",
-        "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
         "Item": 3,
         "Descricao": "Ácido acetilsalicílico",
         "Qtd": 1200000.0,
         "Unitario": 0.028,
         "Total": 33600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:06:15",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -12757,15 +12760,15 @@
         "Municipio": "Santa Luzia",
         "Edital": "90029/2025",
         "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 33,
         "Descricao": "Biperideno",
         "Qtd": 700000.0,
         "Unitario": 0.22,
         "Total": 154000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:06:15",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -12773,15 +12776,15 @@
         "Municipio": "Santa Luzia",
         "Edital": "90029/2025",
         "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 42,
         "Descricao": "Carbonato de lítio",
         "Qtd": 600000.0,
         "Unitario": 0.23,
         "Total": 138000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:06:15",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -12789,15 +12792,15 @@
         "Municipio": "Santa Luzia",
         "Edital": "90029/2025",
         "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 62,
         "Descricao": "Clorpromazina",
         "Qtd": 600000.0,
         "Unitario": 0.29,
         "Total": 174000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:06:15",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -12805,15 +12808,15 @@
         "Municipio": "Santa Luzia",
         "Edital": "90029/2025",
         "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 104,
         "Descricao": "Heparina sódica",
         "Qtd": 10000.0,
         "Unitario": 6.99,
         "Total": 69900.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:06:15",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -12821,15 +12824,15 @@
         "Municipio": "Santa Luzia",
         "Edital": "90029/2025",
         "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 131,
         "Descricao": "Midazolam",
         "Qtd": 25000.0,
         "Unitario": 2.72,
         "Total": 68000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251112",
         "DataResult": "2025-11-12T07:06:15",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -12837,31 +12840,95 @@
         "Municipio": "Santa Luzia",
         "Edital": "90029/2025",
         "Licitacao": "18715409000150001272025",
-        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 155,
         "Descricao": "Propranolol cloridrato",
         "Qtd": 800000.0,
         "Unitario": 0.03,
         "Total": 24000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:06:15",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "MG",
+        "Municipio": "Santa Luzia",
+        "Edital": "90029/2025",
+        "Licitacao": "18715409000150001272025",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
     },
     {
-        "DataPublicacao": "20251111",
-        "DataResult": "2025-11-11T13:35:31",
-        "Orgao": "MUNICIPIO DE RIO VERDE",
-        "UF": "GO",
-        "Municipio": "Rio Verde",
-        "Edital": "81/2025",
-        "Licitacao": "02056729000105013412025",
-        "Link": "https://pncp.gov.br/app/editais/02056729000105/2025/1341",
+        "Item": 69,
+        "Descricao": "Dexclorfeniramina maleato",
+        "Qtd": 40000.0,
+        "Unitario": 1.54,
+        "Total": 61600.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:06:15",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "MG",
+        "Municipio": "Santa Luzia",
+        "Edital": "90029/2025",
+        "Licitacao": "18715409000150001272025",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
+        "Item": 141,
+        "Descricao": "Omeprazol",
+        "Qtd": 40000.0,
+        "Unitario": 7.09,
+        "Total": 283600.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:06:15",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "MG",
+        "Municipio": "Santa Luzia",
+        "Edital": "90029/2025",
+        "Licitacao": "18715409000150001272025",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
+        "Item": 143,
+        "Descricao": "Oxacilina",
+        "Qtd": 20000.0,
+        "Unitario": 4.27,
+        "Total": 85400.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:06:15",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "MG",
+        "Municipio": "Santa Luzia",
+        "Edital": "90029/2025",
+        "Licitacao": "18715409000150001272025",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
+        "Item": 158,
+        "Descricao": "Risperidona",
+        "Qtd": 50000.0,
+        "Unitario": 6.99,
+        "Total": 349500.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251112",
+        "DataResult": "2025-11-12T07:06:15",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "MG",
+        "Municipio": "Santa Luzia",
+        "Edital": "90029/2025",
+        "Licitacao": "18715409000150001272025",
+        "Link": "https://pncp.gov.br/app/editais/18715409000150/2025/127"
+    },
+    {
         "Item": 43,
         "Descricao": "COLECALCIFEROL (VITAMINA D3) 50.000UI CÁPSULA",
         "Qtd": 19200.0,
         "Unitario": 0.32,
         "Total": 6144.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251111",
         "DataResult": "2025-11-11T13:35:31",
         "Orgao": "MUNICIPIO DE RIO VERDE",
@@ -12869,15 +12936,15 @@
         "Municipio": "Rio Verde",
         "Edital": "81/2025",
         "Licitacao": "02056729000105013412025",
-        "Link": "https://pncp.gov.br/app/editais/02056729000105/2025/1341",
+        "Link": "https://pncp.gov.br/app/editais/02056729000105/2025/1341"
+    },
+    {
         "Item": 64,
         "Descricao": "FLUOXETINA 20MG. COMPRIMIDO",
         "Qtd": 50000.0,
         "Unitario": 0.06,
         "Total": 3000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251111",
         "DataResult": "2025-11-11T13:35:31",
         "Orgao": "MUNICIPIO DE RIO VERDE",
@@ -12885,13 +12952,23 @@
         "Municipio": "Rio Verde",
         "Edital": "81/2025",
         "Licitacao": "02056729000105013412025",
-        "Link": "https://pncp.gov.br/app/editais/02056729000105/2025/1341",
+        "Link": "https://pncp.gov.br/app/editais/02056729000105/2025/1341"
+    },
+    {
         "Item": 81,
         "Descricao": "LIDOCAÍNA 2% SEM VASOCONSTRITOR AMPOLA 5 ML",
         "Qtd": 20000.0,
         "Unitario": 1.03,
         "Total": 20600.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251111",
+        "DataResult": "2025-11-11T13:35:31",
+        "Orgao": "MUNICIPIO DE RIO VERDE",
+        "UF": "GO",
+        "Municipio": "Rio Verde",
+        "Edital": "81/2025",
+        "Licitacao": "02056729000105013412025",
+        "Link": "https://pncp.gov.br/app/editais/02056729000105/2025/1341"
     },
     {
         "Item": 2,
@@ -12958,23 +13035,28 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/352"
     },
     {
-        "DataPublicacao": "20251111",
-        "DataResult": "2025-11-11T08:39:38",
-        "Orgao": "SAME/FM-SERVICO DE ASSISTENCIA MEDICA DE FCO MORATO",
-        "UF": "SP",
-        "Municipio": "Francisco Morato",
-        "UASG": "1378",
-        "Edital": "19/2025-RETIFICADO/2025",
-        "Licitacao": "59045351000161000802025",
-        "Link": "https://pncp.gov.br/app/editais/59045351000161/2025/80",
         "Item": 30,
         "Descricao": "Carbamazepina 200 mg",
         "Qtd": 500000.0,
         "Unitario": 0.147,
         "Total": 73500.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251111",
+        "DataResult": "2025-11-11T08:39:38",
+        "Orgao": "SAME/FM-SERVICO DE ASSISTENCIA MEDICA DE FCO MORATO",
+        "UF": "SP",
+        "Municipio": "Francisco Morato",
+        "Edital": "19/2025-RETIFICADO/2025",
+        "Licitacao": "59045351000161000802025",
+        "Link": "https://pncp.gov.br/app/editais/59045351000161/2025/80"
     },
     {
+        "Item": 3,
+        "Descricao": "Capecitabina",
+        "Qtd": 45954.0,
+        "Unitario": 1.8,
+        "Total": 82717.2,
+        "Status": "Venceu",
         "DataPublicacao": "20251111",
         "DataResult": "2025-11-11T07:12:51",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -12982,31 +13064,15 @@
         "Municipio": "Recife",
         "Edital": "90778/2025",
         "Licitacao": "10572022000180011122025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1112",
-        "Item": 3,
-        "Descricao": "Capecitabina",
-        "Qtd": 45954.0,
-        "Unitario": 1.8,
-        "Total": 82717.2,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1112"
     },
     {
-        "DataPublicacao": "20251111",
-        "DataResult": "2025-11-11T07:04:14",
-        "Orgao": "COMANDO DO EXERCITO",
-        "UF": "MS",
-        "Municipio": "Campo Grande",
-        "Edital": "90029/2025",
-        "Licitacao": "00394452000103225952025",
-        "Link": "https://pncp.gov.br/app/editais/00394452000103/2025/22595",
         "Item": 76,
         "Descricao": "Sulfato De Magnésio",
         "Qtd": 1800.0,
         "Unitario": 0.95,
         "Total": 1710.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251111",
         "DataResult": "2025-11-11T07:04:14",
         "Orgao": "COMANDO DO EXERCITO",
@@ -13014,13 +13080,23 @@
         "Municipio": "Campo Grande",
         "Edital": "90029/2025",
         "Licitacao": "00394452000103225952025",
-        "Link": "https://pncp.gov.br/app/editais/00394452000103/2025/22595",
+        "Link": "https://pncp.gov.br/app/editais/00394452000103/2025/22595"
+    },
+    {
         "Item": 94,
         "Descricao": "Salbutamol",
         "Qtd": 500.0,
         "Unitario": 13.43,
         "Total": 6715.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251111",
+        "DataResult": "2025-11-11T07:04:14",
+        "Orgao": "COMANDO DO EXERCITO",
+        "UF": "MS",
+        "Municipio": "Campo Grande",
+        "Edital": "90029/2025",
+        "Licitacao": "00394452000103225952025",
+        "Link": "https://pncp.gov.br/app/editais/00394452000103/2025/22595"
     },
     {
         "Item": 6,
@@ -13535,6 +13611,12 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/321"
     },
     {
+        "Item": 55,
+        "Descricao": "Tramadol Cloridrato",
+        "Qtd": 1200000.0,
+        "Unitario": 0.113,
+        "Total": 135600.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:12:30",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -13542,167 +13624,143 @@
         "Municipio": "Praia Grande",
         "Edital": "90221/2025",
         "Licitacao": "46177531000155005342025",
-        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/534",
-        "Item": 55,
-        "Descricao": "Tramadol Cloridrato",
-        "Qtd": 1200000.0,
-        "Unitario": 0.113,
-        "Total": 135600.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/46177531000155/2025/534"
     },
     {
-        "DataPublicacao": "20251110",
-        "DataResult": "2025-11-10T07:10:43",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "SE",
-        "Municipio": "Aracaju",
-        "UASG": "155017",
-        "Edital": "90072/2025",
-        "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
         "Item": 9,
         "Descricao": "Dimenidrinato",
         "Qtd": 14000.0,
         "Unitario": 8.29,
         "Total": 116060.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 4,
         "Descricao": "Bromoprida",
         "Qtd": 73700.0,
         "Unitario": 1.1,
         "Total": 81070.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 34,
         "Descricao": "Sais Para Reidratação Oral",
         "Qtd": 1000.0,
         "Unitario": 0.67,
         "Total": 670.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 35,
         "Descricao": "Simeticona",
         "Qtd": 20400.0,
         "Unitario": 1.22,
         "Total": 24888.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 37,
         "Descricao": "Tiamina",
         "Qtd": 4900.0,
         "Unitario": 0.22,
         "Total": 1078.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 51,
         "Descricao": "Folinato de cálcio",
         "Qtd": 4000.0,
         "Unitario": 2.31,
         "Total": 9240.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 68,
         "Descricao": "Terbutalina sulfato",
         "Qtd": 5300.0,
         "Unitario": 1.09,
         "Total": 5777.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "UASG": "155017",
         "Edital": "90072/2025",
         "Licitacao": "15126437000305037222025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 66,
         "Descricao": "Levotiroxina sódica",
         "Qtd": 11400.0,
         "Unitario": 0.08,
         "Total": 912.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
-        "DataResult": "2025-11-10T07:08:31",
+        "DataResult": "2025-11-10T07:10:43",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "SE",
         "Municipio": "Aracaju",
-        "Edital": "90071/2025",
-        "Licitacao": "15126437000305037192025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3719",
+        "Edital": "90072/2025",
+        "Licitacao": "15126437000305037222025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3722"
+    },
+    {
         "Item": 33,
         "Descricao": "Ciprofloxacino cloridrato",
         "Qtd": 6800.0,
         "Unitario": 0.19,
         "Total": 1292.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:08:31",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -13710,15 +13768,15 @@
         "Municipio": "Aracaju",
         "Edital": "90071/2025",
         "Licitacao": "15126437000305037192025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3719",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3719"
+    },
+    {
         "Item": 46,
         "Descricao": "Levofloxacino",
         "Qtd": 3080.0,
         "Unitario": 0.73,
         "Total": 2248.4,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:08:31",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -13726,15 +13784,31 @@
         "Municipio": "Aracaju",
         "Edital": "90071/2025",
         "Licitacao": "15126437000305037192025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3719",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3719"
+    },
+    {
         "Item": 54,
         "Descricao": "Nistatina",
         "Qtd": 160.0,
         "Unitario": 8.28,
         "Total": 1324.8,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251110",
+        "DataResult": "2025-11-10T07:08:31",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "SE",
+        "Municipio": "Aracaju",
+        "Edital": "90071/2025",
+        "Licitacao": "15126437000305037192025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3719"
     },
     {
+        "Item": 17,
+        "Descricao": "Bromoprida",
+        "Qtd": 137712.0,
+        "Unitario": 1.0998,
+        "Total": 151455.6576,
+        "Status": "Venceu",
         "DataPublicacao": "20251110",
         "DataResult": "2025-11-10T07:07:37",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -13742,31 +13816,15 @@
         "Municipio": "Recife",
         "Edital": "90762/2025",
         "Licitacao": "10572022000180011002025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1100",
-        "Item": 17,
-        "Descricao": "Bromoprida",
-        "Qtd": 137712.0,
-        "Unitario": 1.0998,
-        "Total": 151455.6576,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1100"
     },
     {
-        "DataPublicacao": "20251107",
-        "DataResult": "2025-11-07T16:54:55",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Afogados da Ingazeira",
-        "Edital": "1407/2024",
-        "Licitacao": "10572022000180009782024",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2024/978",
         "Item": 3,
         "Descricao": "Cota reservada 1 - 3080803 - COLAGENASE - CONCENTRACAODOSAGEM 06 UGFORMA FARMACEUTICA POMADAFORMA DE APRESENTACAO BISNAGAVIA DE ADMINISTRACAO TOPICA",
         "Qtd": 1165.0,
         "Unitario": 11.95,
         "Total": 13921.75,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:54:55",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -13774,15 +13832,15 @@
         "Municipio": "Afogados da Ingazeira",
         "Edital": "1407/2024",
         "Licitacao": "10572022000180009782024",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2024/978",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2024/978"
+    },
+    {
         "Item": 2,
         "Descricao": "Cota principal 1 - 3080803 - COLAGENASE - CONCENTRACAODOSAGEM 06 UGFORMA FARMACEUTICA POMADAFORMA DE APRESENTACAO BISNAGAVIA DE ADMINISTRACAO TOPICA",
         "Qtd": 11067.0,
         "Unitario": 11.95,
         "Total": 132250.65,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:54:55",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -13790,48 +13848,47 @@
         "Municipio": "Afogados da Ingazeira",
         "Edital": "1407/2024",
         "Licitacao": "10572022000180009782024",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2024/978",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2024/978"
+    },
+    {
         "Item": 1,
         "Descricao": "Cota principal 1 - 3080803 - COLAGENASE - CONCENTRACAODOSAGEM 06 UGFORMA FARMACEUTICA POMADAFORMA DE APRESENTACAO BISNAGAVIA DE ADMINISTRACAO TOPICA",
         "Qtd": 11068.0,
         "Unitario": 11.95,
         "Total": 132262.6,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T16:54:55",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Afogados da Ingazeira",
+        "Edital": "1407/2024",
+        "Licitacao": "10572022000180009782024",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2024/978"
     },
     {
-        "DataPublicacao": "20251107",
-        "DataResult": "2025-11-07T16:20:04",
-        "Orgao": "MUNICIPIO DE TANABI",
-        "UF": "SP",
-        "Municipio": "Tanabi",
-        "Edital": "89/2025",
-        "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
         "Item": 54,
         "Descricao": "ANLODIPINO, BESILATO 05 MG COMPRIMIDO BLISTER (NORVASC).",
         "Qtd": 187500.0,
         "Unitario": 0.024,
         "Total": 4500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
         "UF": "SP",
         "Municipio": "Tanabi",
-        "UASG": "1",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 83,
         "Descricao": "BIPERIDENO 02 MG (AKINETON).",
         "Qtd": 72000.0,
         "Unitario": 0.231,
         "Total": 16632.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
@@ -13839,32 +13896,31 @@
         "Municipio": "Tanabi",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 157,
         "Descricao": "CLORPROMAZINA 25 MG COMPRIMIDO (AMPLICTIL).",
         "Qtd": 90000.0,
         "Unitario": 0.24,
         "Total": 21600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
         "UF": "SP",
         "Municipio": "Tanabi",
-        "UASG": "1",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 187,
         "Descricao": "DEXAMETASONA 04MG/ML SOLUÇÃO INJETÁVEL IM - IV (DECADRON).",
         "Qtd": 3000.0,
         "Unitario": 0.68,
         "Total": 2040.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
@@ -13872,32 +13928,31 @@
         "Municipio": "Tanabi",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 184,
         "Descricao": "DEXAMETASONA 0,5 MG / 05 ML SOLUÇÃO ORAL, FRASCO COM 100 ML E COPO DOSADOR (DECADRON).",
         "Qtd": 3750.0,
         "Unitario": 2.2,
         "Total": 8250.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
         "UF": "SP",
         "Municipio": "Tanabi",
-        "UASG": "1",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 183,
         "Descricao": "DEXAMETASONA 0,1% - 01 MG/G CREME BISNAGA COM 10 GRAMAS.",
         "Qtd": 9000.0,
         "Unitario": 1.5,
         "Total": 13500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
@@ -13905,15 +13960,15 @@
         "Municipio": "Tanabi",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 270,
         "Descricao": "FUROSEMIDA 40 MG COMPRIMIDO BLISTER (LASIX).",
         "Qtd": 187500.0,
         "Unitario": 0.043,
         "Total": 8062.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
@@ -13921,15 +13976,15 @@
         "Municipio": "Tanabi",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 289,
         "Descricao": "HIDROCORTISONA, SUCCINATO SÓDICO 134 MG - 100 MG DA BASE, PÓ PARA SOLUÇÃO INJETÁVEL IM/EV FRASCO AMPOLA (SOLU–CORTEF).",
         "Qtd": 375.0,
         "Unitario": 2.62,
         "Total": 982.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T16:20:04",
         "Orgao": "MUNICIPIO DE TANABI",
@@ -13937,31 +13992,95 @@
         "Municipio": "Tanabi",
         "Edital": "89/2025",
         "Licitacao": "45157104000142001212025",
-        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 290,
         "Descricao": "HIDROCORTISONA, SUCCINATO SÓDICO 670 MG - 500 MG DA BASE, PÓ PARA SOLUÇÃO INJETÁVEL IM/EV FRASCO AMPOLA (SOLU–CORTEF).",
         "Qtd": 750.0,
         "Unitario": 4.316,
         "Total": 3237.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T16:20:04",
+        "Orgao": "MUNICIPIO DE TANABI",
+        "UF": "SP",
+        "Municipio": "Tanabi",
+        "Edital": "89/2025",
+        "Licitacao": "45157104000142001212025",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
     },
     {
+        "Item": 97,
+        "Descricao": "BROMOPRIDA 05 MG/ML SUSPENSÃO INJETÁVEL (PLAMET/DIGESAN)",
+        "Qtd": 1500.0,
+        "Unitario": 1.069,
+        "Total": 1603.5,
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
-        "DataResult": "2025-11-07T11:59:16",
-        "Orgao": "MUNICIPIO DE JUNDIAI",
+        "DataResult": "2025-11-07T16:20:04",
+        "Orgao": "MUNICIPIO DE TANABI",
         "UF": "SP",
-        "Municipio": "Jundiaí",
-        "Edital": "PMJ-2025-198-14/2025",
-        "Licitacao": "45780103000150013732025",
-        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373",
+        "Municipio": "Tanabi",
+        "Edital": "89/2025",
+        "Licitacao": "45157104000142001212025",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
+        "Item": 110,
+        "Descricao": "CARBAMAZEPINA SUSPENSÃO ORAL 02% = 20 MG/ML FRASCO COM 100 ML E COPO DOSADOR (TEGRETOL).",
+        "Qtd": 1500.0,
+        "Unitario": 5.94,
+        "Total": 8910.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T16:20:04",
+        "Orgao": "MUNICIPIO DE TANABI",
+        "UF": "SP",
+        "Municipio": "Tanabi",
+        "Edital": "89/2025",
+        "Licitacao": "45157104000142001212025",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
+        "Item": 352,
+        "Descricao": "LORATADINA 10 MG COMPRIMIDO BLISTER (CLARITN)",
+        "Qtd": 135000.0,
+        "Unitario": 0.057,
+        "Total": 7695.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T16:20:04",
+        "Orgao": "MUNICIPIO DE TANABI",
+        "UF": "SP",
+        "Municipio": "Tanabi",
+        "Edital": "89/2025",
+        "Licitacao": "45157104000142001212025",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
+        "Item": 428,
+        "Descricao": "PARACETAMOL SOLUÇÃO ORAL 200 MG/ML FRASCO C/ 15 ML (TYLENOL).",
+        "Qtd": 6750.0,
+        "Unitario": 1.0,
+        "Total": 6750.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T16:20:04",
+        "Orgao": "MUNICIPIO DE TANABI",
+        "UF": "SP",
+        "Municipio": "Tanabi",
+        "Edital": "89/2025",
+        "Licitacao": "45157104000142001212025",
+        "Link": "https://pncp.gov.br/app/editais/45157104000142/2025/121"
+    },
+    {
         "Item": 3,
         "Descricao": "Cota Principal    - FUROSEMIDA 10 MG/ML, INJETAVEL 2 ML",
         "Qtd": 1.0,
         "Unitario": 0.6,
         "Total": 0.6,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T11:59:16",
         "Orgao": "MUNICIPIO DE JUNDIAI",
@@ -13969,15 +14088,15 @@
         "Municipio": "Jundiaí",
         "Edital": "PMJ-2025-198-14/2025",
         "Licitacao": "45780103000150013732025",
-        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373",
+        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373"
+    },
+    {
         "Item": 4,
         "Descricao": "Cota Reservada - FUROSEMIDA 10 MG/ML, INJETAVEL 2 ML",
         "Qtd": 1.0,
         "Unitario": 0.6,
         "Total": 0.6,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T11:59:16",
         "Orgao": "MUNICIPIO DE JUNDIAI",
@@ -13985,15 +14104,15 @@
         "Municipio": "Jundiaí",
         "Edital": "PMJ-2025-198-14/2025",
         "Licitacao": "45780103000150013732025",
-        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373",
+        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373"
+    },
+    {
         "Item": 2,
         "Descricao": "Cota Reservada - PROPRANOLOL, CLORIDRATO 40 MG",
         "Qtd": 1.0,
         "Unitario": 0.03,
         "Total": 0.03,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T11:59:16",
         "Orgao": "MUNICIPIO DE JUNDIAI",
@@ -14001,31 +14120,31 @@
         "Municipio": "Jundiaí",
         "Edital": "PMJ-2025-198-14/2025",
         "Licitacao": "45780103000150013732025",
-        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373",
+        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373"
+    },
+    {
         "Item": 1,
         "Descricao": "Cota Principal    - PROPRANOLOL, CLORIDRATO 40 MG",
         "Qtd": 1.0,
         "Unitario": 0.03,
         "Total": 0.03,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T11:59:16",
+        "Orgao": "MUNICIPIO DE JUNDIAI",
+        "UF": "SP",
+        "Municipio": "Jundiaí",
+        "Edital": "PMJ-2025-198-14/2025",
+        "Licitacao": "45780103000150013732025",
+        "Link": "https://pncp.gov.br/app/editais/45780103000150/2025/1373"
     },
     {
-        "DataPublicacao": "20251107",
-        "DataResult": "2025-11-07T09:46:49",
-        "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
-        "UF": "MG",
-        "Municipio": "Montes Claros",
-        "Edital": "751/2025",
-        "Licitacao": "22675359000100001142025",
-        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114",
         "Item": 25,
         "Descricao": "LIDOCAINA - PRINCIPIO ATIVO: LIDOCAINA, CLORIDRATO; CONCENTRACAO/DOSAGEM: 100 MG/ML (10%); FORMA FARMACEUTICA: SOLUCAO TOPICA; APRESENTACAO: FRASCO 50 ",
         "Qtd": 50.0,
         "Unitario": 33.9,
         "Total": 1695.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T09:46:49",
         "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
@@ -14033,15 +14152,15 @@
         "Municipio": "Montes Claros",
         "Edital": "751/2025",
         "Licitacao": "22675359000100001142025",
-        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114"
+    },
+    {
         "Item": 42,
         "Descricao": "HEPARINA SODICA - PRINCIPIO ATIVO: HEPARINA SODICA; CONCENTRACAO/DOSAGEM: 5000 UI/ML; FORMA FARMACEUTICA: SOLUCAO INJETAVEL INTRAVENOSA; APRESENTACAO: ",
         "Qtd": 600.0,
         "Unitario": 14.4,
         "Total": 8640.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T09:46:49",
         "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
@@ -14049,15 +14168,15 @@
         "Municipio": "Montes Claros",
         "Edital": "751/2025",
         "Licitacao": "22675359000100001142025",
-        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114"
+    },
+    {
         "Item": 59,
         "Descricao": "LEVOFLOXACINO - PRINCIPIO ATIVO: LEVOFLOXACINO HEMI-HIDRATADO; CONCENTRACAO/DOSAGEM: 5 MG/ML; FORMA FARMACEUTICA: SOLUCAO INJETAVEL; APRESENTACAO: BOLS",
         "Qtd": 250.0,
         "Unitario": 6.72,
         "Total": 1680.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T09:46:49",
         "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
@@ -14065,15 +14184,15 @@
         "Municipio": "Montes Claros",
         "Edital": "751/2025",
         "Licitacao": "22675359000100001142025",
-        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114"
+    },
+    {
         "Item": 92,
         "Descricao": "DEXAMETASONA - PRINCIPIO ATIVO: DEXAMETASONA, FOSFATO DISSODICO; CONCENTRACAO/DOSAGEM: 4 MG/ML; FORMA FARMACEUTICA: SOLUCAO INJETAVEL; APRESENTACAO: AM",
         "Qtd": 2500.0,
         "Unitario": 0.67,
         "Total": 1675.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T09:46:49",
         "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
@@ -14081,15 +14200,15 @@
         "Municipio": "Montes Claros",
         "Edital": "751/2025",
         "Licitacao": "22675359000100001142025",
-        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114"
+    },
+    {
         "Item": 129,
         "Descricao": "CLINDAMICINA - PRINCIPIO ATIVO: CLINDAMICINA, FOSFATO; CONCENTRACAO/DOSAGEM: 600 MG/4ML; FORMA FARMACEUTICA: SOLUCAO INJETAVEL; APRESENTACAO: AMPOLA 4 ",
         "Qtd": 12000.0,
         "Unitario": 2.37,
         "Total": 28440.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251107",
         "DataResult": "2025-11-07T09:46:49",
         "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
@@ -14097,15 +14216,31 @@
         "Municipio": "Montes Claros",
         "Edital": "751/2025",
         "Licitacao": "22675359000100001142025",
-        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114"
+    },
+    {
         "Item": 172,
         "Descricao": "SULFATO DE MAGNESIO - PRINCIPIO ATIVO: SULFATO DE MAGNESIO; CONCENTRACAO/DOSAGEM: 500 MG/ML (50%); FORMA FARMACEUTICA: SOLUCAO INJETAVEL; APRESENTACAO:",
         "Qtd": 2500.0,
         "Unitario": 5.28,
         "Total": 13200.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251107",
+        "DataResult": "2025-11-07T09:46:49",
+        "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
+        "UF": "MG",
+        "Municipio": "Montes Claros",
+        "Edital": "751/2025",
+        "Licitacao": "22675359000100001142025",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2025/114"
     },
     {
+        "Item": 43,
+        "Descricao": "Oxacilina",
+        "Qtd": 10000.0,
+        "Unitario": 4.1356,
+        "Total": 41356.0,
+        "Status": "Venceu",
         "DataPublicacao": "20251106",
         "DataResult": "2025-11-06T07:09:51",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14113,31 +14248,15 @@
         "Municipio": "Juiz de Fora",
         "Edital": "90078/2025",
         "Licitacao": "15126437000305036622025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3662",
-        "Item": 43,
-        "Descricao": "Oxacilina",
-        "Qtd": 10000.0,
-        "Unitario": 4.1356,
-        "Total": 41356.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3662"
     },
     {
-        "DataPublicacao": "20251105",
-        "DataResult": "2025-11-05T10:59:46",
-        "Orgao": "MUNICIPIO DE NISIA FLORESTA",
-        "UF": "RN",
-        "Municipio": "Nísia Floresta",
-        "Edital": "22/2025",
-        "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
         "Item": 7,
         "Descricao": "CLORIDRATO DE NALOXONA 0,4 MG/ ML SOL AMP INJ",
         "Qtd": 2000.0,
         "Unitario": 6.2,
         "Total": 12400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14145,15 +14264,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 3,
         "Descricao": " KETAMIN ((C. ESCETAMINA) 50 MG/ML SOL INJ IM/IV  AMP VD AMB X 2 ML",
         "Qtd": 5000.0,
         "Unitario": 18.2,
         "Total": 91000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14161,15 +14280,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 6,
         "Descricao": "DIAZEPAM 10 MG SOL INJ",
         "Qtd": 20000.0,
         "Unitario": 0.75,
         "Total": 15000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14177,15 +14296,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 10,
         "Descricao": "CITRATO DE FENTANILA 0,05 MG/ML SOL INJ IM/IV FA VD AMB X 10\n ML",
         "Qtd": 6000.0,
         "Unitario": 2.98,
         "Total": 17880.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14193,15 +14312,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 15,
         "Descricao": "SULFATO DE MORFINA 0,2 MG/ML SOL INJ AMP VD AMB X 1 ML",
         "Qtd": 10000.0,
         "Unitario": 6.15,
         "Total": 61500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14209,15 +14328,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 12,
         "Descricao": "FLUMAZENIL  0,1 MG/ML SOL INJ AMP VD TRANS  X 5 ML",
         "Qtd": 2000.0,
         "Unitario": 5.59,
         "Total": 11180.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14225,15 +14344,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 11,
         "Descricao": "FENOBARBITAL 100 MG/ML",
         "Qtd": 6000.0,
         "Unitario": 2.67,
         "Total": 16020.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14241,15 +14360,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 13,
         "Descricao": "SULFATO DE MORFINA 10,0 MG/ML SOL INJ AMP VD AMB X 1ML",
         "Qtd": 15000.0,
         "Unitario": 1.75,
         "Total": 26250.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14257,15 +14376,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 19,
         "Descricao": "BROMETO DE ROCURONIO  10 MG/ML SOL INJ IV  FA VD TRANS X 5 ML",
         "Qtd": 500.0,
         "Unitario": 12.8,
         "Total": 6400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14273,15 +14392,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 33,
         "Descricao": "CLORIDRATO DE BUPROPIONA 150 MG",
         "Qtd": 21600.0,
         "Unitario": 0.31,
         "Total": 6696.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14289,15 +14408,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 34,
         "Descricao": "CARBAMAZEPINA 20 MG/ML ",
         "Qtd": 5000.0,
         "Unitario": 6.6,
         "Total": 33000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14305,15 +14424,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 35,
         "Descricao": "CARBAMAZEPINA 200 MG",
         "Qtd": 90000.0,
         "Unitario": 0.16,
         "Total": 14400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14321,15 +14440,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 39,
         "Descricao": "CITALOPRAM 20 MG",
         "Qtd": 90000.0,
         "Unitario": 0.11,
         "Total": 9900.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14337,15 +14456,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 43,
         "Descricao": "CLONAZEPAM 2,5 MG/ML ",
         "Qtd": 6000.0,
         "Unitario": 2.23,
         "Total": 13380.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14353,15 +14472,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 48,
         "Descricao": "CLORIDRATO DE CLORPROMAZINA 40,00 MG/ML ",
         "Qtd": 720.0,
         "Unitario": 8.2,
         "Total": 5904.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14369,15 +14488,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 52,
         "Descricao": "DIAZEPAM 5 MG",
         "Qtd": 36000.0,
         "Unitario": 0.04,
         "Total": 1440.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14385,15 +14504,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 56,
         "Descricao": "ESCITALOPRAM 10 MG",
         "Qtd": 95000.0,
         "Unitario": 0.09,
         "Total": 8550.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14401,15 +14520,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 59,
         "Descricao": "ESCITALOPRAM 20 MG/ML ",
         "Qtd": 800.0,
         "Unitario": 17.4,
         "Total": 13920.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14417,15 +14536,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 70,
         "Descricao": "LEVOMEPROMAZINA 25 MG ",
         "Qtd": 55000.0,
         "Unitario": 0.57,
         "Total": 31350.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14433,15 +14552,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 69,
         "Descricao": "HALOPERIDOL 5 MG",
         "Qtd": 55000.0,
         "Unitario": 0.1,
         "Total": 5500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14449,15 +14568,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 67,
         "Descricao": "HALOPERIDOL 1 MG",
         "Qtd": 55000.0,
         "Unitario": 0.18,
         "Total": 9900.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14465,15 +14584,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 71,
         "Descricao": " LEVOMEPROMAZINA 40 MG/ ML ",
         "Qtd": 850.0,
         "Unitario": 13.0,
         "Total": 11050.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14481,15 +14600,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 72,
         "Descricao": " LEVOMEPROMAZINA 100 MG ",
         "Qtd": 60000.0,
         "Unitario": 0.7,
         "Total": 42000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14497,15 +14616,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 88,
         "Descricao": "QUETIAPINA 25 MG",
         "Qtd": 55000.0,
         "Unitario": 0.1,
         "Total": 5500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14513,15 +14632,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 92,
         "Descricao": "RISPERIDONA 1 MG",
         "Qtd": 75000.0,
         "Unitario": 0.09,
         "Total": 6750.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14529,15 +14648,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 93,
         "Descricao": "RISPERIDONA  2 MG ",
         "Qtd": 75000.0,
         "Unitario": 0.1,
         "Total": 7500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14545,15 +14664,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 104,
         "Descricao": "TRAMADOL 50 MG",
         "Qtd": 9000.0,
         "Unitario": 0.13,
         "Total": 1170.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14561,15 +14680,15 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 106,
         "Descricao": "VALPROATO DE SODIO 50 MG/ML XPE",
         "Qtd": 3000.0,
         "Unitario": 5.9,
         "Total": 17700.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T10:59:46",
         "Orgao": "MUNICIPIO DE NISIA FLORESTA",
@@ -14577,13 +14696,23 @@
         "Municipio": "Nísia Floresta",
         "Edital": "22/2025",
         "Licitacao": "08167306000149001732025",
-        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
+    },
+    {
         "Item": 95,
         "Descricao": "RISPERIDONA  1 MG/ML ",
         "Qtd": 1500.0,
         "Unitario": 9.35,
         "Total": 14025.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251105",
+        "DataResult": "2025-11-05T10:59:46",
+        "Orgao": "MUNICIPIO DE NISIA FLORESTA",
+        "UF": "RN",
+        "Municipio": "Nísia Floresta",
+        "Edital": "22/2025",
+        "Licitacao": "08167306000149001732025",
+        "Link": "https://pncp.gov.br/app/editais/08167306000149/2025/173"
     },
     {
         "Item": 12,
@@ -14794,22 +14923,12 @@
         "Link": "https://pncp.gov.br/app/editais/12219015000124/2025/28"
     },
     {
-        "DataPublicacao": "20251105",
-        "DataResult": "2025-11-05T07:24:10",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "90130/2025",
-        "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
         "Item": 9,
         "Descricao": "Amoxicilina",
         "Qtd": 9225.0,
         "Unitario": 0.23,
         "Total": 2121.75,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:24:10",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14817,15 +14936,15 @@
         "Municipio": "Natal",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
+    },
+    {
         "Item": 8,
         "Descricao": "Amoxicilina",
         "Qtd": 124.0,
         "Unitario": 6.86,
         "Total": 850.64,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:24:10",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14833,15 +14952,15 @@
         "Municipio": "Natal",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
+    },
+    {
         "Item": 16,
         "Descricao": "Azitromicina",
         "Qtd": 4550.0,
         "Unitario": 0.88,
         "Total": 4004.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:24:10",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14849,15 +14968,15 @@
         "Municipio": "Natal",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
+    },
+    {
         "Item": 3,
         "Descricao": "Álcool Etílico",
         "Qtd": 13400.0,
         "Unitario": 5.77,
         "Total": 77318.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:24:10",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14865,15 +14984,15 @@
         "Municipio": "Natal",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
+    },
+    {
         "Item": 62,
         "Descricao": "Nistatina",
         "Qtd": 1100.0,
         "Unitario": 7.22,
         "Total": 7942.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:24:10",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14881,15 +15000,15 @@
         "Municipio": "Natal",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
+    },
+    {
         "Item": 2,
         "Descricao": "Aciclovir",
         "Qtd": 36000.0,
         "Unitario": 0.22,
         "Total": 7920.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:24:10",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -14897,31 +15016,31 @@
         "Municipio": "Natal",
         "Edital": "90130/2025",
         "Licitacao": "15126437000305036352025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
+    },
+    {
         "Item": 30,
         "Descricao": "Cefuroxima",
         "Qtd": 1800.0,
         "Unitario": 5.89,
         "Total": 10602.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251105",
+        "DataResult": "2025-11-05T07:24:10",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90130/2025",
+        "Licitacao": "15126437000305036352025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3635"
     },
     {
-        "DataPublicacao": "20251105",
-        "DataResult": "2025-11-05T07:08:04",
-        "Orgao": "AGENCIA MUNICIPAL DE REGULACAO DE SERVICOS DELEGADOS- ARSER",
-        "UF": "AL",
-        "Municipio": "Maceió",
-        "Edital": "90185/2025",
-        "Licitacao": "26981455000129002062025",
-        "Link": "https://pncp.gov.br/app/editais/26981455000129/2025/206",
         "Item": 12,
         "Descricao": "Carvedilol",
         "Qtd": 727500.0,
         "Unitario": 0.0212,
         "Total": 15423.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:08:04",
         "Orgao": "AGENCIA MUNICIPAL DE REGULACAO DE SERVICOS DELEGADOS- ARSER",
@@ -14929,15 +15048,31 @@
         "Municipio": "Maceió",
         "Edital": "90185/2025",
         "Licitacao": "26981455000129002062025",
-        "Link": "https://pncp.gov.br/app/editais/26981455000129/2025/206",
+        "Link": "https://pncp.gov.br/app/editais/26981455000129/2025/206"
+    },
+    {
         "Item": 36,
         "Descricao": "Metildopa",
         "Qtd": 341250.0,
         "Unitario": 0.39,
         "Total": 133087.5,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251105",
+        "DataResult": "2025-11-05T07:08:04",
+        "Orgao": "AGENCIA MUNICIPAL DE REGULACAO DE SERVICOS DELEGADOS- ARSER",
+        "UF": "AL",
+        "Municipio": "Maceió",
+        "Edital": "90185/2025",
+        "Licitacao": "26981455000129002062025",
+        "Link": "https://pncp.gov.br/app/editais/26981455000129/2025/206"
     },
     {
+        "Item": 1,
+        "Descricao": "Carbamazepina",
+        "Qtd": 421200.0,
+        "Unitario": 0.1476,
+        "Total": 62169.12,
+        "Status": "Venceu",
         "DataPublicacao": "20251105",
         "DataResult": "2025-11-05T07:01:26",
         "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
@@ -14945,13 +15080,7 @@
         "Municipio": "São Paulo",
         "Edital": "91410/2025",
         "Licitacao": "60747318000162015832025",
-        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1583",
-        "Item": 1,
-        "Descricao": "Carbamazepina",
-        "Qtd": 421200.0,
-        "Unitario": 0.1476,
-        "Total": 62169.12,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1583"
     },
     {
         "Item": 41,
@@ -15050,6 +15179,12 @@
         "Link": "https://pncp.gov.br/app/editais/46522942000130/2025/243"
     },
     {
+        "Item": 2,
+        "Descricao": "GRUPO FARMACOLOGICO: DIURETICOS, PRINCIPIO ATIVO: FUROSEMIDA, FORMA FARMACEUTICA: COMPRIMIDO, CONCENTRACAO / DOSAGEM: 40, UNIDADE: MG, VOLUME: NAO APLICAVEL, APRESENTACAO: NAO APLICAVEL, ACESSORIO: NAO APLICAVEL",
+        "Qtd": 566440.0,
+        "Unitario": 0.0487,
+        "Total": 27585.628,
+        "Status": "Venceu",
         "DataPublicacao": "20251104",
         "DataResult": "2025-11-04T10:56:13",
         "Orgao": "ESTADO DO RIO DE JANEIRO",
@@ -15057,13 +15192,7 @@
         "Municipio": "Rio de Janeiro",
         "Edital": "PE 189/25/2025",
         "Licitacao": "42498600000171056822025",
-        "Link": "https://pncp.gov.br/app/editais/42498600000171/2025/5682",
-        "Item": 2,
-        "Descricao": "GRUPO FARMACOLOGICO: DIURETICOS, PRINCIPIO ATIVO: FUROSEMIDA, FORMA FARMACEUTICA: COMPRIMIDO, CONCENTRACAO / DOSAGEM: 40, UNIDADE: MG, VOLUME: NAO APLICAVEL, APRESENTACAO: NAO APLICAVEL, ACESSORIO: NAO APLICAVEL",
-        "Qtd": 566440.0,
-        "Unitario": 0.0487,
-        "Total": 27585.628,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/42498600000171/2025/5682"
     },
     {
         "Item": 52,
@@ -15098,22 +15227,12 @@
         "Link": "https://pncp.gov.br/app/editais/56024581000156/2025/395"
     },
     {
-        "DataPublicacao": "20251103",
-        "DataResult": "2025-11-03T12:02:01",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "90126/2025",
-        "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
         "Item": 12,
         "Descricao": "Atenolol",
         "Qtd": 5000.0,
         "Unitario": 0.05,
         "Total": 250.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15121,15 +15240,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 15,
         "Descricao": "Clopidogrel",
         "Qtd": 12500.0,
         "Unitario": 0.53,
         "Total": 6625.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15137,15 +15256,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 16,
         "Descricao": "Captopril",
         "Qtd": 6000.0,
         "Unitario": 0.04,
         "Total": 240.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15153,15 +15272,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 11,
         "Descricao": "Atenolol",
         "Qtd": 7000.0,
         "Unitario": 0.04,
         "Total": 280.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15169,15 +15288,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 14,
         "Descricao": "Anlodipino besilato",
         "Qtd": 45500.0,
         "Unitario": 0.03,
         "Total": 1365.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15185,15 +15304,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 20,
         "Descricao": "Amiodarona",
         "Qtd": 6000.0,
         "Unitario": 0.42,
         "Total": 2520.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15201,15 +15320,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 17,
         "Descricao": "Carvedilol",
         "Qtd": 23000.0,
         "Unitario": 0.08,
         "Total": 1840.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15217,15 +15336,15 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 64,
         "Descricao": "Enalapril maleato",
         "Qtd": 33250.0,
         "Unitario": 0.04,
         "Total": 1330.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15233,31 +15352,31 @@
         "Municipio": "Natal",
         "Edital": "90126/2025",
         "Licitacao": "15126437000305035902025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 63,
         "Descricao": "Losartana potássica",
         "Qtd": 43000.0,
         "Unitario": 0.04,
         "Total": 1720.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
-        "DataResult": "2025-11-03T11:59:11",
+        "DataResult": "2025-11-03T12:02:01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
         "UF": "RN",
         "Municipio": "Natal",
-        "Edital": "90141/2025",
-        "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Edital": "90126/2025",
+        "Licitacao": "15126437000305035902025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3590"
+    },
+    {
         "Item": 1,
         "Descricao": "Dexametasona",
         "Qtd": 180.0,
         "Unitario": 2.08,
         "Total": 374.4,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15265,15 +15384,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 4,
         "Descricao": "Ácido acetilsalicílico",
         "Qtd": 13000.0,
         "Unitario": 0.03,
         "Total": 390.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15281,15 +15400,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 8,
         "Descricao": "Alopurinol",
         "Qtd": 600.0,
         "Unitario": 0.27,
         "Total": 162.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15297,15 +15416,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 5,
         "Descricao": "Albendazol",
         "Qtd": 200.0,
         "Unitario": 1.55,
         "Total": 310.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15313,15 +15432,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 7,
         "Descricao": "Alopurinol",
         "Qtd": 1300.0,
         "Unitario": 0.15,
         "Total": 195.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15329,15 +15448,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 16,
         "Descricao": "Carmelose Sódica",
         "Qtd": 220.0,
         "Unitario": 8.8,
         "Total": 1936.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15345,15 +15464,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 36,
         "Descricao": "Dipirona sódica",
         "Qtd": 11000.0,
         "Unitario": 0.13,
         "Total": 1430.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15361,15 +15480,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 69,
         "Descricao": "Hidrocortisona",
         "Qtd": 4500.0,
         "Unitario": 2.88,
         "Total": 12960.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15377,15 +15496,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 57,
         "Descricao": "Paracetamol",
         "Qtd": 6000.0,
         "Unitario": 0.07,
         "Total": 420.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15393,15 +15512,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 62,
         "Descricao": "Prednisona",
         "Qtd": 20000.0,
         "Unitario": 0.15,
         "Total": 3000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15409,15 +15528,15 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 63,
         "Descricao": "Prednisona",
         "Qtd": 7500.0,
         "Unitario": 0.06,
         "Total": 450.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20251103",
         "DataResult": "2025-11-03T11:59:11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -15425,13 +15544,23 @@
         "Municipio": "Natal",
         "Edital": "90141/2025",
         "Licitacao": "15126437000305035842025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
+    },
+    {
         "Item": 70,
         "Descricao": "Hidrocortisona",
         "Qtd": 1500.0,
         "Unitario": 4.69,
         "Total": 7035.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20251103",
+        "DataResult": "2025-11-03T11:59:11",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90141/2025",
+        "Licitacao": "15126437000305035842025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/3584"
     },
     {
         "Item": 2,
