@@ -7812,6 +7812,48 @@
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430"
     },
     {
+        "DataPublicacao": "20250115",
+        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
+        "UF": "SP",
+        "Municipio": "Laranjal Paulista",
+        "Edital": "00001/2025",
+        "Licitacao": "46634606000180000012025",
+        "Item": 209,
+        "Descricao": "Ibuprofeno",
+        "Qtd": 2000.0,
+        "Unitario": 1.9035,
+        "Total": 3807.0,
+        "Link": "https://pncp.gov.br/app/editais/46634606000180/2025/1"
+    },
+    {
+        "DataPublicacao": "20250115",
+        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
+        "UF": "SP",
+        "Municipio": "Laranjal Paulista",
+        "Edital": "00001/2025",
+        "Licitacao": "46634606000180000012025",
+        "Item": 281,
+        "Descricao": "Omeprazol",
+        "Qtd": 400000.0,
+        "Unitario": 0.0516,
+        "Total": 20640.0,
+        "Link": "https://pncp.gov.br/app/editais/46634606000180/2025/1"
+    },
+    {
+        "DataPublicacao": "20250115",
+        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
+        "UF": "SP",
+        "Municipio": "Laranjal Paulista",
+        "Edital": "00001/2025",
+        "Licitacao": "46634606000180000012025",
+        "Item": 293,
+        "Descricao": "Paracetamol",
+        "Qtd": 50000.0,
+        "Unitario": 0.316,
+        "Total": 15800.0,
+        "Link": "https://pncp.gov.br/app/editais/46634606000180/2025/1"
+    },
+    {
         "Item": 3,
         "Descricao": "Domperidona",
         "Qtd": 23000.0,
@@ -129102,47 +129144,5 @@
         "Unitario": 0.0516,
         "Total": 206400.0,
         "Status": "Venceu"
-    },
-    {
-        "DataPublicacao": "20250115",
-        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
-        "UF": "SP",
-        "Municipio": "Laranjal Paulista",
-        "Edital": "00001/2025",
-        "Licitacao": "46634606000180000012025",
-        "Item": 209,
-        "Descricao": "Ibuprofeno",
-        "Qtd": 2000.0,
-        "Unitario": 1.9035,
-        "Total": 3807.0,
-        "Link": "https://pncp.gov.br/app/editais/46634606000180/2025/1"
-    },
-    {
-        "DataPublicacao": "20250115",
-        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
-        "UF": "SP",
-        "Municipio": "Laranjal Paulista",
-        "Edital": "00001/2025",
-        "Licitacao": "46634606000180000012025",
-        "Item": 281,
-        "Descricao": "Omeprazol",
-        "Qtd": 400000.0,
-        "Unitario": 0.0516,
-        "Total": 20640.0,
-        "Link": "https://pncp.gov.br/app/editais/46634606000180/2025/1"
-    },
-    {
-        "DataPublicacao": "20250115",
-        "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
-        "UF": "SP",
-        "Municipio": "Laranjal Paulista",
-        "Edital": "00001/2025",
-        "Licitacao": "46634606000180000012025",
-        "Item": 293,
-        "Descricao": "Paracetamol",
-        "Qtd": 50000.0,
-        "Unitario": 0.316,
-        "Total": 15800.0,
-        "Link": "https://pncp.gov.br/app/editais/46634606000180/2025/1"
     }
 ]
