@@ -2640,6 +2640,12 @@
         "Status": "Venceu"
     },
     {
+        "Item": 3,
+        "Descricao": "PARACETAMOL - 2.32.02.0151-8 - PARACETAMOL, Concentracao [mg/ml]: 200, Forma farmaceutica: Solucao oral, Apresentacao: Gotas, Embalagem: Frasco, Conteudo [ml]: 15",
+        "Qtd": 30500.0,
+        "Unitario": 1.07,
+        "Total": 32635.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260324",
         "DataResult": "2026-03-24T09:05:48",
         "Orgao": "MUNICIPIO DE VITORIA",
@@ -2647,13 +2653,7 @@
         "Municipio": "Vitória",
         "Edital": "28/2026",
         "Licitacao": "27142058000550000032026",
-        "Link": "https://pncp.gov.br/app/editais/27142058000550/2026/3",
-        "Item": 3,
-        "Descricao": "PARACETAMOL - 2.32.02.0151-8 - PARACETAMOL, Concentracao [mg/ml]: 200, Forma farmaceutica: Solucao oral, Apresentacao: Gotas, Embalagem: Frasco, Conteudo [ml]: 15",
-        "Qtd": 30500.0,
-        "Unitario": 1.07,
-        "Total": 32635.0,
-        "Status": "Venceu"
+        "Link": "https://pncp.gov.br/app/editais/27142058000550/2026/3"
     },
     {
         "Item": 2072351,
