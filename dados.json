@@ -2384,22 +2384,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20260330",
-        "DataResult": "2026-03-30T09:19:13",
-        "Orgao": "MUNICIPIO DE MARATAIZES",
-        "UF": "ES",
-        "Municipio": "Marataízes",
-        "Edital": "000036/2025",
-        "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
         "Item": 42,
         "Descricao": "CARBAMAZEPINA CARBAMAZEPINACOMPRIMIDO200 MG",
         "Qtd": 260000.0,
         "Unitario": 0.158,
         "Total": 41080.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2407,15 +2397,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 43,
         "Descricao": "CARBAMAZEPINA CARBAMAZEPINASUSPENSAO ORAL 20 MG/ MLFRASCO 100ML",
         "Qtd": 1300.0,
         "Unitario": 6.64,
         "Total": 8632.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2423,15 +2413,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 46,
         "Descricao": "CARBONATO DE LITIO CARBONATO DE LITIOCOMPRIMIDO300 MG",
         "Qtd": 150000.0,
         "Unitario": 0.22,
         "Total": 33000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2439,15 +2429,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 59,
         "Descricao": "CIPROFLOXACINO CIPROFLOXACINO, CLORIDRATO + DEXAMETASONASOLUCAO OFTALMICA3,0 MG/ML + 1,0 MG/ML - FRASCO COM 5ML",
         "Qtd": 260.0,
         "Unitario": 8.495,
         "Total": 2208.7,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2455,15 +2445,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 69,
         "Descricao": "CLORPROMAZINA, CLORIDRATO CLORPROMAZINA, CLORIDRATOCOMPRIMIDO25 MG",
         "Qtd": 48000.0,
         "Unitario": 0.28,
         "Total": 13440.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2471,15 +2461,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 91,
         "Descricao": "DIPIRONA SODICA DIPIRONA SODICASOLUCAO ORAL500 MG/ML -  FRASCO COM 10ML",
         "Qtd": 4500.0,
         "Unitario": 1.11,
         "Total": 4995.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2487,15 +2477,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 114,
         "Descricao": "FLUCONAZOL FLUCONAZOLCAPSULA150MG",
         "Qtd": 5000.0,
         "Unitario": 0.404,
         "Total": 2020.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2503,15 +2493,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 117,
         "Descricao": "FOLINATO DE CALCIO FOLINATO DE CALCIOCOMPRIMIDO 15MG",
         "Qtd": 500.0,
         "Unitario": 2.29,
         "Total": 1145.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2519,15 +2509,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 172,
         "Descricao": "MICONAZOL NITRATO CREME VAGINAL 2% MICONAZOL, NITRATOCREME VAGINAL 2,00%BISNAGA COM 80GR",
         "Qtd": 800.0,
         "Unitario": 7.99,
         "Total": 6392.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2535,15 +2525,15 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 197,
         "Descricao": "PROMETAZINA PROMETAZINA, CLORIDRATOCOMPRIMIDO25MG",
         "Qtd": 100000.0,
         "Unitario": 0.13,
         "Total": 13000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T09:19:13",
         "Orgao": "MUNICIPIO DE MARATAIZES",
@@ -2551,31 +2541,31 @@
         "Municipio": "Marataízes",
         "Edital": "000036/2025",
         "Licitacao": "01609408000128001682025",
-        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
+    },
+    {
         "Item": 200,
         "Descricao": "RISPERIDONA RISPERIDONASOLUCAO 1MG/MLFRASCO COM 30ML",
         "Qtd": 6000.0,
         "Unitario": 8.99,
         "Total": 53940.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260330",
+        "DataResult": "2026-03-30T09:19:13",
+        "Orgao": "MUNICIPIO DE MARATAIZES",
+        "UF": "ES",
+        "Municipio": "Marataízes",
+        "Edital": "000036/2025",
+        "Licitacao": "01609408000128001682025",
+        "Link": "https://pncp.gov.br/app/editais/01609408000128/2025/168"
     },
     {
-        "DataPublicacao": "20260330",
-        "DataResult": "2026-03-30T07:43:46",
-        "Orgao": "MUNICIPIO DE GURUPI",
-        "UF": "TO",
-        "Municipio": "Gurupi",
-        "Edital": "2025.056/2025",
-        "Licitacao": "01803618000152000512025",
-        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51",
         "Item": 50,
         "Descricao": "CARBAMAZEPINA 200 MG COMPRIMIDO  CARBAMAZEPINA 200 MG COMPRIMIDO",
         "Qtd": 371250.0,
         "Unitario": 0.16,
         "Total": 59400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T07:43:46",
         "Orgao": "MUNICIPIO DE GURUPI",
@@ -2583,15 +2573,15 @@
         "Municipio": "Gurupi",
         "Edital": "2025.056/2025",
         "Licitacao": "01803618000152000512025",
-        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
+    },
+    {
         "Item": 74,
         "Descricao": "CLONAZEPAM 2,5 MG/ML GOTAS 20ML",
         "Qtd": 676500.0,
         "Unitario": 2.21,
         "Total": 1495065.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T07:43:46",
         "Orgao": "MUNICIPIO DE GURUPI",
@@ -2599,15 +2589,15 @@
         "Municipio": "Gurupi",
         "Edital": "2025.056/2025",
         "Licitacao": "01803618000152000512025",
-        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
+    },
+    {
         "Item": 86,
         "Descricao": "CLORIDRATO DE  CLORPROMAZINA 100 MG USO ORAL - 1CP CLORIDRATO DE  CLORPROMAZINA 100 MG USO ORAL - 1CP",
         "Qtd": 225000.0,
         "Unitario": 0.3,
         "Total": 67500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T07:43:46",
         "Orgao": "MUNICIPIO DE GURUPI",
@@ -2615,15 +2605,15 @@
         "Municipio": "Gurupi",
         "Edital": "2025.056/2025",
         "Licitacao": "01803618000152000512025",
-        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
+    },
+    {
         "Item": 121,
         "Descricao": "CLORIDRATO DE TIAMINA 300MG  CLORIDRATO DE TIAMINA 300MG",
         "Qtd": 150375.0,
         "Unitario": 0.23,
         "Total": 34586.25,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260330",
         "DataResult": "2026-03-30T07:43:46",
         "Orgao": "MUNICIPIO DE GURUPI",
@@ -2631,13 +2621,55 @@
         "Municipio": "Gurupi",
         "Edital": "2025.056/2025",
         "Licitacao": "01803618000152000512025",
-        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
+    },
+    {
         "Item": 283,
         "Descricao": "VALPROATO DE SODIO 250MG/5ML VALPROATO DE SODIO 250MG/5ML",
         "Qtd": 22500.0,
         "Unitario": 6.5,
         "Total": 146250.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260330",
+        "DataResult": "2026-03-30T07:43:46",
+        "Orgao": "MUNICIPIO DE GURUPI",
+        "UF": "TO",
+        "Municipio": "Gurupi",
+        "Edital": "2025.056/2025",
+        "Licitacao": "01803618000152000512025",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
+    },
+    {
+        "Item": 227,
+        "Descricao": "NITRATO DE MICONAZOL 2% (20MG/G) 80GR-CREME VAGINAL COM APLICADOR NITRATO DE MICONAZOL 2% (20MG/G) 80GR-CREME VAGINAL COM APLICADOR",
+        "Qtd": 6750.0,
+        "Unitario": 8.17,
+        "Total": 55147.5,
+        "Status": "Venceu",
+        "DataPublicacao": "20260330",
+        "DataResult": "2026-03-30T07:43:46",
+        "Orgao": "MUNICIPIO DE GURUPI",
+        "UF": "TO",
+        "Municipio": "Gurupi",
+        "Edital": "2025.056/2025",
+        "Licitacao": "01803618000152000512025",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
+    },
+    {
+        "Item": 237,
+        "Descricao": "PARACETAMOL 500 MG - COMPRIMIDO. - 1CP PARACETAMOL 500 MG - COMPRIMIDO. - 1CP",
+        "Qtd": 281250.0,
+        "Unitario": 0.06,
+        "Total": 16875.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20260330",
+        "DataResult": "2026-03-30T07:43:46",
+        "Orgao": "MUNICIPIO DE GURUPI",
+        "UF": "TO",
+        "Municipio": "Gurupi",
+        "Edital": "2025.056/2025",
+        "Licitacao": "01803618000152000512025",
+        "Link": "https://pncp.gov.br/app/editais/01803618000152/2025/51"
     },
     {
         "Item": 3,
