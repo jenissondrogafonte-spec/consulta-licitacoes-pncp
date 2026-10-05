@@ -1,0 +1,34 @@
+name: Reparo Cirurgico
+
+on:
+  workflow_dispatch:
+
+jobs:
+  reparo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.MEU_TOKEN_SECRETO }}
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: pip install requests urllib3
+
+      - name: Executar Script de Reparo
+        run: python reparo.py
+
+      - name: Guardar Correções no Banco de Dados
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "jenissonb88-bot"
+          git add dados.json
+          git commit -m "🛠️ Reparo cirúrgico: Adicionadas informações em falta (UASG e Data Fim)" || echo "Nada a alterar"
+          git push origin main
