@@ -34,7 +34,7 @@
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-6">
-                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por Órgão, Município, Edital ou UASG...">
+                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por Órgão, Município, Edital ou UASG/CNPJ...">
             </div>
             <div class="col-md-3 text-center">
                 <div class="p-2 bg-white rounded shadow-sm">
@@ -67,7 +67,7 @@
         // Formatação padrão para valores totais (2 casas)
         const formatMoney = (v) => (v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         
-        // NOVO: Formatação específica para Unitário (4 casas decimais)
+        // Formatação específica para Unitário (4 casas decimais)
         const formatUnitario = (v) => {
             return (v || 0).toLocaleString('pt-BR', { 
                 style: 'currency', 
@@ -79,6 +79,10 @@
 
         const formatDate = (dateStr) => {
             if (!dateStr) return 'N/I';
+            // Adequação para o formato de contingência AAAAMMDD oriundo da API do PNCP
+            if (typeof dateStr === 'string' && /^\d{8}$/.test(dateStr)) {
+                return `${dateStr.substring(6,8)}/${dateStr.substring(4,6)}/${dateStr.substring(0,4)}`;
+            }
             const date = new Date(dateStr);
             return isNaN(date) ? dateStr : date.toLocaleDateString('pt-BR');
         };
@@ -133,13 +137,16 @@
 
             pageData.forEach((lic, i) => {
                 const totalLic = lic.Itens.reduce((a, b) => a + (b.Total || 0), 0);
+                // Extração inteligente do CNPJ via ID do PNCP como fallback para a UASG
+                const identificadorOrgao = lic.UASG || lic.Licitacao.substring(0, 14);
+
                 const card = document.createElement('div');
                 card.className = 'card-licitacao p-4 mb-3 shadow-sm';
                 card.innerHTML = `
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="d-flex align-items-center mb-2">
-                                <span class="badge-uasg me-2">UASG ${lic.UASG || '---'}</span>
+                                <span class="badge-uasg me-2">ID/CNPJ: ${identificadorOrgao}</span>
                                 <span class="data-homologacao-destaque"><i class="fas fa-calendar-check me-1"></i> Homologado em: ${formatDate(lic.DataResult)}</span>
                             </div>
                             <h5 class="fw-bold mb-1">${lic.Orgao}</h5>
@@ -200,7 +207,8 @@
                 lic.Orgao.toLowerCase().includes(termo) || 
                 lic.Municipio.toLowerCase().includes(termo) || 
                 lic.Edital.toLowerCase().includes(termo) ||
-                (lic.UASG && lic.UASG.toString().includes(termo))
+                (lic.UASG && lic.UASG.toString().includes(termo)) ||
+                (lic.Licitacao && lic.Licitacao.includes(termo)) // Incluído na busca geral
             );
             currentPage = 1;
             renderPage();
