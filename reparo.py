@@ -1,51 +1,18 @@
 import json
 import os
-import concurrent.futures
 import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 import urllib3
-import time
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ARQ_DADOS = 'dados.json'
-MAX_WORKERS = 10 # Reduzido ligeiramente para evitar bloqueios por excesso de velocidade
 
 HEADERS = {
     'Accept': 'application/json',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
-def criar_sessao():
-    session = requests.Session()
-    session.headers.update(HEADERS) # <-- A camuflagem que faltava!
-    session.verify = False
-    retry = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
-    adapter = HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS)
-    session.mount('https://', adapter)
-    return session
-
-def buscar_info_licitacao(session, lic_id):
-    cnpj_org = lic_id[:14]
-    seq = int(lic_id[14:-4])
-    ano = lic_id[-4:]
-    
-    url = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}"
-    
-    try:
-        r = session.get(url, timeout=20)
-        if r.status_code == 200:
-            dados = r.json()
-            uasg = dados.get('unidadeOrgao', {}).get('codigoUnidade', '')
-            data_fim = dados.get('dataEncerramentoProposta', '')
-            return (lic_id, uasg, data_fim)
-    except Exception:
-        pass
-    return (lic_id, None, None)
-
 def main():
-    print("🔍 A iniciar o script de reparo cirúrgico...")
     if not os.path.exists(ARQ_DADOS):
         print("❌ Ficheiro dados.json não encontrado.")
         return
@@ -53,51 +20,53 @@ def main():
     with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
         banco = json.load(f)
 
-    licitacoes_pendentes = set()
+    pendentes = []
     for item in banco:
-        if 'UASG' not in item or 'DataFimPropostas' not in item or item.get('UASG') == '' or item.get('DataFimPropostas') == '':
-            lic_id = item.get('Licitacao')
-            if lic_id:
-                licitacoes_pendentes.add(lic_id)
+        if not item.get('UASG') or not item.get('DataFimPropostas'):
+            pendentes.append(item.get('Licitacao'))
+            if len(pendentes) == 2:  # Vamos testar só com 2 para debugar rápido
+                break
 
-    total_pendentes = len(licitacoes_pendentes)
-    if total_pendentes == 0:
-        print("✅ O banco de dados já está 100% atualizado.")
-        return
+    print(f"🕵️ INICIANDO ESPIÃO PARA OS IDs: {pendentes}\n")
 
-    print(f"📦 Foram encontrados {total_pendentes} processos com informações em falta. A transferir dados do PNCP...")
-    session = criar_sessao()
-    resultados_reparo = {}
-    processados = 0
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    session.verify = False
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = [executor.submit(buscar_info_licitacao, session, lic_id) for lic_id in licitacoes_pendentes]
-        for fut in concurrent.futures.as_completed(futures):
-            lic_id, uasg, data_fim = fut.result()
-            
-            if uasg is not None or data_fim is not None:
-                resultados_reparo[lic_id] = {
-                    "UASG": uasg if uasg else '', 
-                    "DataFimPropostas": data_fim if data_fim else ''
-                }
-            processados += 1
-            print(f"\r⏳ Progresso: {processados}/{total_pendentes}", end="", flush=True)
+    for lic_id in pendentes:
+        cnpj_org = lic_id[:14]
+        seq = int(lic_id[14:-4])
+        ano = lic_id[-4:]
 
-    print("\n\n🛠️ A aplicar as correções no banco de dados...")
-    itens_corrigidos = 0
-    for item in banco:
-        lic_id = item.get('Licitacao')
-        if lic_id in resultados_reparo:
-            if 'UASG' not in item or item.get('UASG') == '':
-                item['UASG'] = resultados_reparo[lic_id]['UASG']
-            if 'DataFimPropostas' not in item or item.get('DataFimPropostas') == '':
-                item['DataFimPropostas'] = resultados_reparo[lic_id]['DataFimPropostas']
-            itens_corrigidos += 1
+        print(f"\n{'='*50}")
+        print(f"🔎 TESTANDO PROCESSO: {lic_id}")
+        print(f"{'='*50}")
+        
+        # Teste 1: Rota de Consulta (Nova Arquitetura)
+        url_nova = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}"
+        print(f"\n🌐 TENTATIVA 1 (Rota Nova):\n{url_nova}")
+        try:
+            r_nova = session.get(url_nova, timeout=10)
+            print(f"Status Code: {r_nova.status_code}")
+            if r_nova.status_code == 200:
+                print("Resposta JSON:", json.dumps(r_nova.json(), indent=2, ensure_ascii=False)[:1000], "\n...[cortado]")
+            else:
+                print("Texto de Erro:", r_nova.text[:500])
+        except Exception as e:
+            print(f"Erro de Conexão: {e}")
 
-    with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
-        json.dump(banco, f, indent=4, ensure_ascii=False)
-
-    print(f"✅ Reparo concluído com sucesso! {itens_corrigidos} itens de edital foram atualizados.")
+        # Teste 2: Rota Interna PNCP (Antiga Arquitetura)
+        url_antiga = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}"
+        print(f"\n🌐 TENTATIVA 2 (Rota Antiga):\n{url_antiga}")
+        try:
+            r_antiga = session.get(url_antiga, timeout=10)
+            print(f"Status Code: {r_antiga.status_code}")
+            if r_antiga.status_code == 200:
+                print("Resposta JSON:", json.dumps(r_antiga.json(), indent=2, ensure_ascii=False)[:1000], "\n...[cortado]")
+            else:
+                print("Texto de Erro:", r_antiga.text[:500])
+        except Exception as e:
+            print(f"Erro de Conexão: {e}")
 
 if __name__ == "__main__":
     main()
