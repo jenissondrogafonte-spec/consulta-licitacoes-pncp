@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <!-- Linha 2: Filtros Estratégicos (Novidade) -->
+        <!-- Linha 2: Filtros Estratégicos -->
         <div class="row mb-4">
             <div class="col-md-3">
                 <select id="filterAno" class="form-select border-0 shadow-sm filter-select">
@@ -122,6 +122,16 @@
             return isNaN(date) ? dateStr : date.toLocaleDateString('pt-BR');
         };
 
+        // Formatador de Data/Hora específico para encerramento das propostas
+        const formatDateTime = (dateStr) => {
+            if (!dateStr) return 'Data não informada';
+            const date = new Date(dateStr);
+            if (isNaN(date)) return dateStr;
+            
+            const pad = (n) => String(n).padStart(2, '0');
+            return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())} (horário de Brasília)`;
+        };
+
         // Função auxiliar para extrair Ano e Mês da string de data
         const extractYearMonth = (dateStr) => {
             if (!dateStr) return { year: '', month: '' };
@@ -184,7 +194,7 @@
             }
         }
 
-        // Nova lógica centralizada de filtros
+        // Lógica centralizada de filtros
         function applyFilters() {
             const termo = document.getElementById('searchInput').value.toLowerCase();
             const anoFilter = document.getElementById('filterAno').value;
@@ -243,7 +253,14 @@
 
             pageData.forEach((lic, i) => {
                 const totalLic = lic.Itens.reduce((a, b) => a + (b.Total || 0), 0);
-                const identificadorOrgao = lic.UASG || lic.Licitacao.substring(0, 14);
+                
+                // Montagem da estrutura UASG/CNPJ requisitada
+                const cnpjOrgao = lic.Licitacao ? lic.Licitacao.substring(0, 14) : '---';
+                const codUnidade = lic.UASG || '---';
+                const identificadorOrgao = `${codUnidade}/${cnpjOrgao}`;
+                
+                // Formatação da data final de propostas
+                const dataFimStr = formatDateTime(lic.DataFimPropostas);
 
                 const card = document.createElement('div');
                 card.className = 'card-licitacao p-4 mb-3 shadow-sm';
@@ -255,7 +272,8 @@
                                 <span class="data-homologacao-destaque"><i class="fas fa-calendar-check me-1"></i> Homologado em: ${formatDate(lic.DataResult)}</span>
                             </div>
                             <h5 class="fw-bold mb-1">${lic.Orgao}</h5>
-                            <small class="text-muted">${lic.Municipio} - ${lic.UF} | Edital: ${lic.Edital}</small>
+                            <small class="text-muted">${lic.Municipio} - ${lic.UF} | Edital: ${lic.Edital}</small><br>
+                            <small class="text-muted d-block mt-1"><i class="fas fa-clock me-1"></i> Data fim de recebimento de propostas: ${dataFimStr}</small>
                         </div>
                         <div class="col-md-3 text-end">
                             <small class="text-muted d-block text-uppercase" style="font-size: 0.7rem;">Valor Total Ganho</small>
@@ -306,7 +324,7 @@
             }
         }
 
-        // Associa os gatilhos aos novos inputs
+        // Associa os gatilhos aos inputs
         document.getElementById('searchInput').addEventListener('input', applyFilters);
         document.getElementById('filterAno').addEventListener('change', applyFilters);
         document.getElementById('filterMes').addEventListener('change', applyFilters);
