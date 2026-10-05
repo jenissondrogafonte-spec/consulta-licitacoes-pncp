@@ -78,13 +78,18 @@ def criar_sessao():
 def processar_item_individual(session, it, cnpj_org, ano, seq):
     if not it.get('temResultado'): return None
     num_item = it.get('numeroItem')
-    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
+    # URL atualizada para o novo padrão da API
+    url_res = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens/{num_item}/resultados"
     try:
         r = session.get(url_res, timeout=20)
         if r.status_code == 200:
-            vends = r.json()
+            json_resp = r.json()
+            # Extração compatível com vetor padronizado 'data'
+            vends = json_resp.get('data') if isinstance(json_resp, dict) and 'data' in json_resp else json_resp
+            
             if isinstance(vends, dict): vends = [vends]
-            for v in vends:
+            
+            for v in (vends or []):
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 if CNPJ_ALVO in ni:
                     return {
@@ -105,6 +110,7 @@ def processar_dia_completo(session, banco_total, data_atual):
     encontrou = False
 
     while True:
+        # A URL de publicações já utilizava a rota correta do manual
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {"dataInicial": DATA_STR, "dataFinal": DATA_STR, "codigoModalidadeContratacao": "6", "pagina": pagina, "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO}
 
@@ -123,12 +129,15 @@ def processar_dia_completo(session, banco_total, data_atual):
                 itens_lic = []
                 p_it = 1
                 while True:
-                    r_it = session.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina={p_it}&tamanhoPagina=1000", timeout=20)
+                    # Rota atualizada e limite reduzido para 500 (teto documentado)
+                    r_it = session.get(f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens?pagina={p_it}&tamanhoPagina=500", timeout=20)
                     if r_it.status_code == 200:
-                        lista = r_it.json()
+                        json_resp = r_it.json()
+                        lista = json_resp.get('data') if isinstance(json_resp, dict) and 'data' in json_resp else json_resp
+                        
                         if not lista: break
                         itens_lic.extend(lista)
-                        if len(lista) < 1000: break
+                        if len(lista) < 500: break
                         p_it += 1
                     else: break
                 
@@ -190,7 +199,7 @@ def main():
         
         # Verifica tempo de execução para evitar corte brusco do GitHub
         if (time.time() - INICIO_EXECUCAO) > TEMPO_LIMITE_SEGURO:
-            print(f"\n\n⚠️ TEMPO LIMITE SEGURO ATINGIDO. Parando em {data_atual.strftime('%d/%m')}.")
+            print(f"\n\n⚠️️ TEMPO LIMITE SEGURO ATINGIDO. Parando em {data_atual.strftime('%d/%m')}.")
             break
         
         data_atual = data_proxima
