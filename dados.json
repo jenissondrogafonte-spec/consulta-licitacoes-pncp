@@ -8020,6 +8020,38 @@
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430"
     },
     {
+        "Item": 8,
+        "Descricao": "Azitromicina",
+        "Qtd": 550.0,
+        "Unitario": 0.89,
+        "Total": 489.5,
+        "Status": "Venceu",
+        "DataPublicacao": "20251230",
+        "DataResult": "2026-01-02T07:03:46",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90042/2025",
+        "Licitacao": "15126437000305044302025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430"
+    },
+    {
+        "Item": 49,
+        "Descricao": "Fenitoína sódica",
+        "Qtd": 600.0,
+        "Unitario": 0.27,
+        "Total": 162.0,
+        "Status": "Venceu",
+        "DataPublicacao": "20251230",
+        "DataResult": "2026-01-02T07:03:46",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90042/2025",
+        "Licitacao": "15126437000305044302025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430"
+    },
+    {
         "DataPublicacao": "20250115",
         "Orgao": "MUNICIPIO DE LARANJAL PAULISTA",
         "UF": "SP",
