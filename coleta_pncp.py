@@ -73,9 +73,12 @@ def criar_sessao():
     return session
 
 def processar_item_individual(session, it, cnpj_org, ano, seq):
-    if not it.get('temResultado'): return None
     num_item = it.get('numeroItem')
-    url_res = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens/{num_item}/resultados"
+    if not num_item: return None
+
+    # Rota oficial (pncp/v1) para buscar os vencedores (resultados)
+    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
+    
     try:
         r = session.get(url_res, timeout=20)
         if r.status_code == 200:
@@ -86,12 +89,17 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
             for v in (vends or []):
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 if CNPJ_ALVO in ni:
+                    # Fallback para as chaves (algumas licitações usam a chave sem o sufixo "Homologado")
+                    qtd = v.get('quantidadeHomologada') or v.get('quantidade') or 0
+                    unitario = float(v.get('valorUnitarioHomologado') or v.get('valorUnitario') or 0)
+                    total = float(v.get('valorTotalHomologado') or v.get('valorTotal') or 0)
+                    
                     return {
                         "Item": num_item,
                         "Descricao": it.get('descricao', ''),
-                        "Qtd": v.get('quantidadeHomologada'),
-                        "Unitario": float(v.get('valorUnitarioHomologado') or 0),
-                        "Total": float(v.get('valorTotalHomologado') or 0),
+                        "Qtd": qtd,
+                        "Unitario": unitario,
+                        "Total": total,
                         "Status": "Venceu"
                     }
     except: pass
@@ -105,6 +113,7 @@ def processar_dia_completo(session, banco_total, data_atual):
         pagina = 1
         
         while True:
+            # A busca diária continua na consulta/v1 porque é a que permite filtrar por data
             url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
             params = {"dataInicial": DATA_STR, "dataFinal": DATA_STR, "codigoModalidadeContratacao": str(modalidade), "pagina": pagina, "tamanhoPagina": 50}
 
@@ -114,7 +123,6 @@ def processar_dia_completo(session, banco_total, data_atual):
                 dados = resp.json(); lics = dados.get('data', [])
                 if not lics: break
 
-                # Contadores para o console
                 qtd_processos_pagina = len(lics)
                 qtd_itens_pagina = 0
                 qtd_processos_capturados = 0
@@ -128,7 +136,9 @@ def processar_dia_completo(session, banco_total, data_atual):
                     itens_lic = []
                     p_it = 1
                     while True:
-                        r_it = session.get(f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens?pagina={p_it}&tamanhoPagina=500", timeout=20)
+                        # Rota oficial (pncp/v1) descoberta pelo espião para listar os itens
+                        r_it = session.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina={p_it}&tamanhoPagina=500", timeout=20)
+                        
                         if r_it.status_code == 200:
                             json_resp = r_it.json()
                             lista = json_resp.get('data') if isinstance(json_resp, dict) and 'data' in json_resp else json_resp
@@ -168,7 +178,6 @@ def processar_dia_completo(session, banco_total, data_atual):
                         qtd_processos_capturados += 1
                         qtd_itens_capturados += itens_ganhos_neste_processo
 
-                # Log formatado exatamente como solicitado
                 print(f"  Página {pagina} - {qtd_processos_pagina} processos - {qtd_itens_pagina} itens - {qtd_processos_capturados} processos e {qtd_itens_capturados} itens capturados.")
 
                 if pagina >= dados.get('totalPaginas', 1): break
