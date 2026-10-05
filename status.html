@@ -1,234 +1,324 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitor de Editais - PNCP</title>
-    
+    <title>Painel Sniper Drogafonte 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Open Sans', sans-serif; color: #333; }
-        
-        /* Header Minimalista */
-        .header-mini { background: #fff; border-bottom: 1px solid #dee2e6; padding: 15px 0; margin-bottom: 20px; }
-        .btn-outline-custom { color: #004494; border-color: #004494; }
-        .btn-outline-custom:hover { background: #004494; color: white; }
-
-        /* Filtros Compactos */
-        .filter-bar { background: white; padding: 20px; border-radius: 6px; border: 1px solid #e9ecef; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .form-label { font-size: 0.7rem; font-weight: 700; color: #6c757d; text-transform: uppercase; margin-bottom: 4px; }
-        .form-control, .form-select { font-size: 0.85rem; border-radius: 4px; }
-        
-        /* Tabela Clean */
-        .table-custom { font-size: 0.85rem; background: white; }
-        .table-custom thead { background-color: #f1f3f5; color: #495057; }
-        .table-custom th { font-weight: 700; padding: 10px; border-bottom: 2px solid #dee2e6; white-space: nowrap; }
-        .table-custom td { vertical-align: middle; padding: 8px 10px; border-bottom: 1px solid #f1f1f1; }
-        
-        /* Badges e Textos */
-        .badge-status { font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
-        
-        /* Cores Atualizadas */
-        .st-verde { background-color: #d1e7dd; color: #0f5132; } 
-        .st-azul { background-color: #cfe2ff; color: #084298; }  
-        .st-amarelo { background-color: #fff3cd; color: #664d03; } 
-        .st-vermelho { background-color: #f8d7da; color: #842029; } 
-        .st-cinza { background-color: #e2e3e5; color: #41464b; }   
-        
-        .objeto-desc { max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
-        .objeto-desc:hover { white-space: normal; position: relative; background: #fff; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 5px; border-radius: 4px; }
+        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
+        .header-bg { background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: white; padding: 2rem 0; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card-licitacao { border: none; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; background: white; transition: 0.3s; }
+        .card-licitacao:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .valor-total { font-size: 1.1rem; font-weight: 700; color: #198754; }
+        .badge-uasg { background-color: #6c757d; color: white; font-size: 0.75rem; padding: 5px 10px; border-radius: 5px; }
+        .data-homologacao-destaque { color: #dc3545; font-weight: 600; font-size: 0.85rem; }
+        .btn-load-more { padding: 12px 30px; border-radius: 30px; font-weight: 600; }
+        .filter-select { font-size: 0.9rem; color: #495057; }
     </style>
 </head>
 <body>
-
-<header class="header-mini">
-    <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
-        <h5 class="mb-0 fw-bold text-primary"><i class="fas fa-list-ul me-2"></i>Status de Editais</h5>
-        <div class="d-flex align-items-center gap-3">
-            <span class="badge bg-secondary" id="contadorBadge">0 registros</span>
-            <a href="index.html" class="btn btn-sm btn-outline-custom">Ir para Vencedores</a>
-        </div>
-    </div>
-</header>
-
-<div class="container-fluid px-4 pb-5">
-    
-    <div class="filter-bar mb-3">
-        <div class="row g-2 align-items-end">
-            <div class="col-md-1">
-                <label class="form-label">UASG</label>
-                <input type="text" id="inUasg" class="form-control" placeholder="98765">
+    <div class="header-bg">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="fw-bold mb-0"><i class="fas fa-crosshairs me-2"></i>SNIPER PNCP</h1>
+                <p class="mb-0 opacity-75">Monitoramento de Vitórias - Drogafonte</p>
             </div>
-            <div class="col-md-1">
-                <label class="form-label">UF</label>
-                <select id="inUF" class="form-select">
-                    <option value="">Todas</option>
-                    <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option>
-                    <option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option>
-                    <option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option>
-                    <option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
-                    <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option>
-                    <option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option>
-                    <option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option>
-                    <option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
-                    <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Cidade</label>
-                <input type="text" id="inCidade" class="form-control" placeholder="Ex: Caruaru">
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Nº Licitação</label>
-                <input type="text" id="inNum" class="form-control" placeholder="Ex: 90000">
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Objeto</label>
-                <input type="text" id="inObj" class="form-control" placeholder="Palavra-chave...">
-            </div>
-            <div class="col-md-2">
-                <label class="form-label">Situação</label>
-                <select id="inStatus" class="form-select">
-                    <option value="">Todas</option>
-                    <option value="Recebendo">Recebendo Propostas</option>
-                    <option value="Aguardando">Aguardando Resultado</option>
-                    <option value="Homologad">Homologadas</option>
-                    <option value="Fracassa">Fracassadas/Desertas</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <button onclick="buscar()" class="btn btn-primary w-100 fw-bold"><i class="fas fa-search"></i> Filtrar</button>
+            <div class="text-end">
+                <span class="badge bg-light text-primary fs-5" id="total-geral">R$ 0,00</span>
             </div>
         </div>
     </div>
 
-    <div class="table-responsive">
-        <table class="table table-custom table-hover border">
-            <thead>
-                <tr>
-                    <th width="10%">Abertura / Fim</th>
-                    <th width="6%">UASG</th>
-                    <th width="8%">Nº Edital</th>
-                    <th width="15%">Local</th>
-                    <th width="20%">Órgão</th>
-                    <th width="30%">Objeto</th>
-                    <th width="11%" class="text-center">Status</th>
-                </tr>
-            </thead>
-            <tbody id="corpoTabela"></tbody>
-        </table>
+    <div class="container">
+        <!-- Linha 1: Pesquisa e Contadores -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" id="searchInput" class="form-control form-control-lg border-0 shadow-sm" placeholder="🔍 Buscar por Órgão, Edital ou UASG/CNPJ...">
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="p-2 bg-white rounded shadow-sm">
+                    <small class="text-muted d-block">LICITAÇÕES</small>
+                    <strong id="count-lic" class="h4">0</strong>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="p-2 bg-white rounded shadow-sm">
+                    <small class="text-muted d-block">ITENS VENCIDOS</small>
+                    <strong id="count-itens" class="h4">0</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linha 2: Filtros Estratégicos (Novidade) -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <select id="filterAno" class="form-select border-0 shadow-sm filter-select">
+                    <option value="">📅 Todos os Anos</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="filterMes" class="form-select border-0 shadow-sm filter-select">
+                    <option value="">🗓️ Todos os Meses</option>
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="filterUF" class="form-select border-0 shadow-sm filter-select">
+                    <option value="">📍 Todas as UFs</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="filterCidade" class="form-select border-0 shadow-sm filter-select">
+                    <option value="">🏢 Todas as Cidades</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border text-primary"></div>
+        </div>
+
+        <div id="container-licitacoes"></div>
+        
+        <div id="pagination-container" class="text-center my-5 d-none">
+            <button id="btnLoadMore" class="btn btn-primary btn-load-more shadow">
+                <i class="fas fa-plus me-2"></i> Carregar mais 25 processos
+            </button>
+        </div>
     </div>
 
-    <div id="loading" class="text-center py-5 text-muted">
-        <div class="spinner-border spinner-border-sm" role="status"></div> Carregando...
-    </div>
-    <div id="emptyState" class="text-center py-5 d-none text-muted">
-        Nenhum edital encontrado com esses filtros.
-    </div>
-</div>
+    <script>
+        const formatMoney = (v) => (v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        
+        const formatUnitario = (v) => {
+            return (v || 0).toLocaleString('pt-BR', { 
+                style: 'currency', 
+                currency: 'BRL', 
+                minimumFractionDigits: 4, 
+                maximumFractionDigits: 4 
+            });
+        };
 
-<script>
-    let dadosStatus = [];
+        const formatDate = (dateStr) => {
+            if (!dateStr) return 'N/I';
+            if (typeof dateStr === 'string' && /^\d{8}$/.test(dateStr)) {
+                return `${dateStr.substring(6,8)}/${dateStr.substring(4,6)}/${dateStr.substring(0,4)}`;
+            }
+            const date = new Date(dateStr);
+            return isNaN(date) ? dateStr : date.toLocaleDateString('pt-BR');
+        };
 
-    fetch('status.json?v=' + Date.now())
-        .then(res => res.json())
-        .then(data => {
-            dadosStatus = data;
-            dadosStatus.sort((a, b) => (b.DataAbertura || '').localeCompare(a.DataAbertura || ''));
-            document.getElementById('loading').classList.add('d-none');
-            buscar();
-        })
-        .catch(err => {
-            document.getElementById('loading').innerHTML = "<span class='text-danger'>Erro ao carregar status.json</span>";
-        });
+        // Função auxiliar para extrair Ano e Mês da string de data
+        const extractYearMonth = (dateStr) => {
+            if (!dateStr) return { year: '', month: '' };
+            if (typeof dateStr === 'string' && /^\d{8}$/.test(dateStr)) {
+                return { year: dateStr.substring(0,4), month: dateStr.substring(4,6) };
+            }
+            const date = new Date(dateStr);
+            if (isNaN(date)) return { year: '', month: '' };
+            return { year: date.getFullYear().toString(), month: String(date.getMonth() + 1).padStart(2, '0') };
+        };
 
-    function buscar() {
-        const fUasg = document.getElementById('inUasg').value.trim();
-        const fUF   = document.getElementById('inUF').value.trim();
-        const fCid  = document.getElementById('inCidade').value.toLowerCase().trim();
-        const fNum  = document.getElementById('inNum').value.trim();
-        const fObj  = document.getElementById('inObj').value.toLowerCase().trim();
-        const fSts  = document.getElementById('inStatus').value.toLowerCase();
+        let allData = [];
+        let filteredData = [];
+        let currentPage = 1;
+        const perPage = 25;
 
-        const filtrados = dadosStatus.filter(i => {
-            const matchUasg = (i.UASG || '').includes(fUasg);
-            const matchUF   = fUF === '' || (i.UF || '').includes(fUF);
-            const matchCid  = fCid === '' || (i.Cidade || '').toLowerCase().includes(fCid);
-            const matchNum  = (i.Numero || '').includes(fNum) || (i.Licitacao || '').includes(fNum);
-            const matchObj  = (i.Objeto || '').toLowerCase().includes(fObj) || (i.Orgao || '').toLowerCase().includes(fObj);
-            const matchSts  = (i.Status || '').toLowerCase().includes(fSts);
-            
-            return matchUasg && matchUF && matchCid && matchNum && matchObj && matchSts;
-        });
+        async function carregar() {
+            try {
+                const r = await fetch('dados.json?v=' + Date.now());
+                const rawData = await r.json();
+                
+                const agrupado = {};
+                const anosSet = new Set();
+                const ufsSet = new Set();
+                const cidadesSet = new Set();
 
-        renderizarTabela(filtrados);
-    }
+                rawData.forEach(item => {
+                    const chave = item.Licitacao;
+                    if (!agrupado[chave]) {
+                        agrupado[chave] = { ...item, Itens: [] };
+                    }
+                    agrupado[chave].Itens.push(item);
+                    
+                    // Coleta dados para os filtros dinâmicos
+                    const ym = extractYearMonth(item.DataResult || item.DataPublicacao);
+                    if (ym.year) anosSet.add(ym.year);
+                    if (item.UF) ufsSet.add(item.UF);
+                    if (item.Municipio) cidadesSet.add(item.Municipio);
+                });
 
-    function renderizarTabela(lista) {
-        const tbody = document.getElementById('corpoTabela');
-        const emptyState = document.getElementById('emptyState');
-        document.getElementById('contadorBadge').innerText = lista.length + " registros";
+                allData = Object.values(agrupado);
+                allData.sort((a,b) => new Date(b.DataResult || 0) - new Date(a.DataResult || 0));
+                
+                // Preenche os selects com os valores únicos encontrados na base
+                const selectAno = document.getElementById('filterAno');
+                [...anosSet].sort().reverse().forEach(ano => selectAno.add(new Option(ano, ano)));
+                
+                const selectUF = document.getElementById('filterUF');
+                [...ufsSet].sort().forEach(uf => selectUF.add(new Option(uf, uf)));
 
-        tbody.innerHTML = '';
+                const selectCidade = document.getElementById('filterCidade');
+                [...cidadesSet].sort().forEach(cidade => selectCidade.add(new Option(cidade, cidade)));
 
-        if (lista.length === 0) {
-            emptyState.classList.remove('d-none');
-            return;
-        } else {
-            emptyState.classList.add('d-none');
+                document.getElementById('loading').style.display = 'none';
+                
+                // Aplica a primeira renderização (com todos os dados)
+                applyFilters();
+            } catch (e) {
+                document.getElementById('loading').innerHTML = "Erro ao carregar dados.";
+            }
         }
 
-        const listaLimitada = lista.slice(0, 200);
+        // Nova lógica centralizada de filtros
+        function applyFilters() {
+            const termo = document.getElementById('searchInput').value.toLowerCase();
+            const anoFilter = document.getElementById('filterAno').value;
+            const mesFilter = document.getElementById('filterMes').value;
+            const ufFilter = document.getElementById('filterUF').value;
+            const cidadeFilter = document.getElementById('filterCidade').value;
 
-        tbody.innerHTML = listaLimitada.map(i => {
-            return `
-                <tr>
-                    <td><span class="fw-bold text-dark">${formatarDataHora(i.DataAbertura)}</span></td>
-                    <td class="text-secondary">${i.UASG}</td>
-                    <td class="fw-bold text-primary">${i.Numero}</td>
-                    <td><small class="fw-bold text-dark">${i.Cidade || '-'} / ${i.UF || ''}</small></td>
-                    <td><small class="text-secondary" style="font-size:0.75rem">${i.Orgao}</small></td>
-                    <td><div class="objeto-desc" title="${i.Objeto}">${i.Objeto}</div></td>
-                    <td class="text-center">${criarBadge(i.Status)}</td>
-                </tr>
-            `;
-        }).join('');
-    }
+            let valorFiltrado = 0;
+            let itensFiltrados = 0;
 
-    function criarBadge(status) {
-        let classe = 'st-cinza';
-        let texto = status || 'Desconhecido';
-        const st = texto.toLowerCase();
+            filteredData = allData.filter(lic => {
+                const ym = extractYearMonth(lic.DataResult || lic.DataPublicacao);
+                
+                const matchBusca = termo === '' || (
+                    lic.Orgao.toLowerCase().includes(termo) || 
+                    lic.Municipio.toLowerCase().includes(termo) || 
+                    lic.Edital.toLowerCase().includes(termo) ||
+                    (lic.UASG && lic.UASG.toString().includes(termo)) ||
+                    (lic.Licitacao && lic.Licitacao.includes(termo))
+                );
 
-        if (st.includes('homolog') || st.includes('adjudica')) classe = 'st-azul';
-        else if (st.includes('recebendo') || st.includes('aberto')) classe = 'st-verde';
-        else if (st.includes('aguardando')) classe = 'st-amarelo';
-        else if (st.includes('susp') || st.includes('revog') || st.includes('fracas') || st.includes('anula')) classe = 'st-vermelho';
+                const matchAno = anoFilter === '' || ym.year === anoFilter;
+                const matchMes = mesFilter === '' || ym.month === mesFilter;
+                const matchUF = ufFilter === '' || lic.UF === ufFilter;
+                const matchCidade = cidadeFilter === '' || lic.Municipio === cidadeFilter;
 
-        return `<span class="badge-status ${classe}">${texto}</span>`;
-    }
+                const isMatch = matchBusca && matchAno && matchMes && matchUF && matchCidade;
 
-    // AQUI ESTÁ A FUNÇÃO AJUSTADA PARA DD/MM/AA
-    function formatarDataHora(dataISO) {
-        if (!dataISO || dataISO.length < 10) return "-";
-        
-        const dia = dataISO.slice(8,10);
-        const mes = dataISO.slice(5,7);
-        const ano = dataISO.slice(2,4); // Pega apenas '25' de '2025'
-        const hora = dataISO.slice(11,16);
-        
-        return `${dia}/${mes}/${ano} <small class="text-muted">${hora}</small>`;
-    }
+                // Se passou no filtro, acumula os valores totais para atualizar os painéis do topo
+                if (isMatch) {
+                    lic.Itens.forEach(it => {
+                        valorFiltrado += (it.Total || 0);
+                        itensFiltrados++;
+                    });
+                }
 
-    document.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter' && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT')) {
-            buscar();
+                return isMatch;
+            });
+
+            // Atualiza o painel superior dinamicamente
+            document.getElementById('total-geral').innerText = formatMoney(valorFiltrado);
+            document.getElementById('count-lic').innerText = filteredData.length;
+            document.getElementById('count-itens').innerText = itensFiltrados;
+
+            currentPage = 1;
+            renderPage();
         }
-    });
-</script>
 
+        function renderPage() {
+            const container = document.getElementById('container-licitacoes');
+            if (currentPage === 1) container.innerHTML = '';
+
+            const start = (currentPage - 1) * perPage;
+            const end = start + perPage;
+            const pageData = filteredData.slice(start, end);
+
+            pageData.forEach((lic, i) => {
+                const totalLic = lic.Itens.reduce((a, b) => a + (b.Total || 0), 0);
+                const identificadorOrgao = lic.UASG || lic.Licitacao.substring(0, 14);
+
+                const card = document.createElement('div');
+                card.className = 'card-licitacao p-4 mb-3 shadow-sm';
+                card.innerHTML = `
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge-uasg me-2">ID/CNPJ: ${identificadorOrgao}</span>
+                                <span class="data-homologacao-destaque"><i class="fas fa-calendar-check me-1"></i> Homologado em: ${formatDate(lic.DataResult)}</span>
+                            </div>
+                            <h5 class="fw-bold mb-1">${lic.Orgao}</h5>
+                            <small class="text-muted">${lic.Municipio} - ${lic.UF} | Edital: ${lic.Edital}</small>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <small class="text-muted d-block text-uppercase" style="font-size: 0.7rem;">Valor Total Ganho</small>
+                            <span class="valor-total">${formatMoney(totalLic)}</span>
+                            <small class="d-block text-muted">${lic.Itens.length} itens vencidos</small>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <button class="btn btn-primary btn-sm rounded-pill px-3" onclick="this.parentElement.parentElement.nextElementSibling.classList.toggle('d-none')">
+                                <i class="fas fa-list me-1"></i> Detalhes
+                            </button>
+                            <a href="${lic.Link}" target="_blank" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                                <i class="fas fa-external-link-alt"></i> PNCP
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-none border-top pt-3">
+                        <table class="table table-sm table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Descrição</th>
+                                    <th class="text-center">Qtd</th>
+                                    <th class="text-end">Unit. (4 casas)</th>
+                                    <th class="text-end">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${lic.Itens.map(it => `
+                                    <tr>
+                                        <td class="fw-bold">${it.Item}</td>
+                                        <td><small>${it.Desc || it.Descricao}</small></td>
+                                        <td class="text-center">${it.Qtd}</td>
+                                        <td class="text-end">${formatUnitario(it.Unitario)}</td>
+                                        <td class="text-end fw-bold text-success">${formatMoney(it.Total)}</td>
+                                    </tr>`).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            const paginationBtn = document.getElementById('pagination-container');
+            if (filteredData.length > end) {
+                paginationBtn.classList.remove('d-none');
+            } else {
+                paginationBtn.classList.add('d-none');
+            }
+        }
+
+        // Associa os gatilhos aos novos inputs
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('filterAno').addEventListener('change', applyFilters);
+        document.getElementById('filterMes').addEventListener('change', applyFilters);
+        document.getElementById('filterUF').addEventListener('change', applyFilters);
+        document.getElementById('filterCidade').addEventListener('change', applyFilters);
+
+        document.getElementById('btnLoadMore').addEventListener('click', () => {
+            currentPage++;
+            renderPage();
+        });
+
+        carregar();
+    </script>
 </body>
 </html>
