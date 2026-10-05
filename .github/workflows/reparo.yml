@@ -31,4 +31,8 @@ jobs:
           git config --local user.name "jenissonb88-bot"
           git add dados.json
           git commit -m "🛠️ Reparo cirúrgico: Adicionadas informações em falta (UASG e Data Fim)" || echo "Nada a alterar"
+          
+          # NOVO: Puxa as alterações dos outros robôs antes de enviar, evitando o bloqueio
+          git pull origin main --rebase 
+          
           git push origin main
