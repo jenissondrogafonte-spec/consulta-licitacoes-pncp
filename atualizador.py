@@ -52,15 +52,11 @@ def salvar_banco(banco):
 
 def obter_resultados_item(session, cnpj_org, ano, seq, num_item):
     """Busca o resultado minucioso de um item específico no PNCP"""
-    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
+    url_res = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens/{num_item}/resultados"
     try:
         r = session.get(url_res, timeout=20)
         if r.status_code == 200:
-            dados = r.json()
-            # Ajuste: A API pode encapsular o resultado no atributo 'data' padronizado
-            if isinstance(dados, dict) and 'data' in dados:
-                return dados['data']
-            return dados
+            return r.json()
     except:
         pass
     return None
@@ -74,30 +70,20 @@ def processar_licitacao(session, lic_id, lic_base_data, banco_total):
     p_it = 1
     itens_completos = []
     
-    # Paginação minuciosa de itens adaptada ao novo padrão do PNCP
+    # Paginação minuciosa de itens
     while True:
-        url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{int(seq)}/itens?pagina={p_it}&tamanhoPagina=500"
+        url_itens = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{int(seq)}/itens?pagina={p_it}&tamanhoPagina=500"
         try:
             r_it = session.get(url_itens, timeout=20)
             if r_it.status_code == 200:
-                resposta = r_it.json()
+                json_resp = r_it.json()
                 
-                # Verifica o formato de retorno padronizado do PNCP (vetor 'data' e 'paginasRestantes')[cite: 6]
-                if isinstance(resposta, dict) and 'data' in resposta:
-                    lista = resposta.get('data', [])
-                    paginas_restantes = resposta.get('paginasRestantes', 0)
-                else:
-                    # Fallback para manter compatibilidade caso a rota antiga retorne lista direta
-                    lista = resposta if isinstance(resposta, list) else []
-                    paginas_restantes = 0 if len(lista) < 500 else 1
+                # Extrai a lista do vetor "data", conforme o padrão de retorno do PNCP
+                lista = json_resp.get('data') if isinstance(json_resp, dict) and 'data' in json_resp else json_resp
                 
                 if not lista: break
                 itens_completos.extend(lista)
-                
-                # Condição de parada baseada no total de páginas restantes do servidor[cite: 6]
-                if paginas_restantes <= 0: 
-                    break
-                    
+                if len(lista) < 500: break
                 p_it += 1
             else:
                 break
@@ -111,7 +97,12 @@ def processar_licitacao(session, lic_id, lic_base_data, banco_total):
         resultados = obter_resultados_item(session, cnpj_org, ano, int(seq), num_item)
         
         if resultados:
-            if isinstance(resultados, dict): resultados = [resultados]
+            # Garante a extração correta caso o endpoint de resultados também utilize o vetor padronizado "data"
+            if isinstance(resultados, dict) and 'data' in resultados:
+                resultados = resultados.get('data')
+            elif isinstance(resultados, dict):
+                resultados = [resultados]
+                
             for v in resultados:
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 chave = f"{lic_base_data['Licitacao']}-{num_item}"
@@ -132,7 +123,10 @@ def processar_licitacao(session, lic_id, lic_base_data, banco_total):
                         "Municipio": lic_base_data.get('Municipio'),
                         "Edital": lic_base_data.get('Edital'),
                         "Licitacao": lic_base_data.get('Licitacao'),
-                        "Link": lic_base_data.get('Link')
+                        "Link": lic_base_data.get('Link'),
+                        # Repasse dos novos dados para não se perderem na atualização
+                        "UASG": lic_base_data.get('UASG', ''),
+                        "DataFimPropostas": lic_base_data.get('DataFimPropostas', '')
                     }
                     banco_total[chave] = novo_dado
                 # Se o item existia na base do alvo, mas ele perdeu (mudança de status)
