@@ -17,7 +17,7 @@ ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 DIAS_RETROATIVOS = 365
 TEMPO_LIMITE_SEGURO = 19800  # 5h 30min para salvar antes do timeout
-JANELA_DIAS = 1  # NOVO: Define quantos dias processar por ciclo de Action
+JANELA_DIAS = 1  # Define quantos dias processar por ciclo de Action
 
 DATA_INICIO_FORCADA = os.environ.get("DATA_INICIO_FORCADA", "") 
 MODALIDADES_BUSCA = [6] 
@@ -61,7 +61,7 @@ def salvar_estado(banco, proximo_dia):
     
     with open(ARQ_CHECKPOINT, 'w') as f:
         f.write(proximo_dia.strftime('%Y%m%d'))
-    print(f" 💾 [Salvo! Checkpoint atualizado para: {proximo_dia.strftime('%d/%m/%Y')}]", flush=True)
+    print(f"\n 💾 [Salvo! Checkpoint atualizado para: {proximo_dia.strftime('%d/%m/%Y')}]", flush=True)
 
 def criar_sessao():
     session = requests.Session()
@@ -99,8 +99,7 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
 
 def processar_dia_completo(session, banco_total, data_atual):
     DATA_STR = data_atual.strftime('%Y%m%d')
-    print(f"\n📅 Dia {data_atual.strftime('%d/%m/%Y')}:", end=" ", flush=True)
-    encontrou_no_dia = False
+    print(f"\n📅 Dia {data_atual.strftime('%d/%m/%Y')}:")
 
     for modalidade in MODALIDADES_BUSCA:
         pagina = 1
@@ -114,6 +113,12 @@ def processar_dia_completo(session, banco_total, data_atual):
                 if resp.status_code != 200: break
                 dados = resp.json(); lics = dados.get('data', [])
                 if not lics: break
+
+                # Contadores para o console
+                qtd_processos_pagina = len(lics)
+                qtd_itens_pagina = 0
+                qtd_processos_capturados = 0
+                qtd_itens_capturados = 0
 
                 for lic in lics:
                     cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
@@ -133,7 +138,10 @@ def processar_dia_completo(session, banco_total, data_atual):
                             p_it += 1
                         else: break
                     
+                    qtd_itens_pagina += len(itens_lic)
                     if not itens_lic: continue
+
+                    itens_ganhos_neste_processo = 0
 
                     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
                         futures = [executor.submit(processar_item_individual, session, it, cnpj_org, ano, seq) for it in itens_lic]
@@ -154,13 +162,18 @@ def processar_dia_completo(session, banco_total, data_atual):
                                     "DataFimPropostas": lic.get('dataEncerramentoProposta', ''),
                                     **res
                                 }
-                                print(f"✅", end="", flush=True); encontrou_no_dia = True
+                                itens_ganhos_neste_processo += 1
+                    
+                    if itens_ganhos_neste_processo > 0:
+                        qtd_processos_capturados += 1
+                        qtd_itens_capturados += itens_ganhos_neste_processo
+
+                # Log formatado exatamente como solicitado
+                print(f"  Página {pagina} - {qtd_processos_pagina} processos - {qtd_itens_pagina} itens - {qtd_processos_capturados} processos e {qtd_itens_capturados} itens capturados.")
 
                 if pagina >= dados.get('totalPaginas', 1): break
                 pagina += 1
             except: break
-            
-    if not encontrou_no_dia: print("(vazio)", end="", flush=True)
 
 def main():
     session = criar_sessao()
@@ -198,10 +211,8 @@ def main():
             print(f"\n⚠️ TEMPO LIMITE. Interrompendo a janela de coleta.")
             break
 
-    # Salva obrigatoriamente o checkpoint para passar o bastão para a próxima run
     salvar_estado(banco_total, data_atual)
 
-    # Se a data salva ainda for menor que hoje, emite o código 2 para acionar a cascata
     if data_atual.date() < hoje.date():
         print(f"\n⏳ Lote processado. Faltam mais dias até hoje. Acionando próxima rotina...")
         sys.exit(2)
