@@ -8,6 +8,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib3
 import re
+import sys
 
 # --- CONFIGURAÇÕES ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
@@ -15,13 +16,10 @@ MAX_WORKERS = 20
 ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 DIAS_RETROATIVOS = 365
-TEMPO_LIMITE_SEGURO = 19800  # 5h 30min para salvar antes do timeout do GitHub
+TEMPO_LIMITE_SEGURO = 19800  # 5h 30min para salvar antes do timeout
+JANELA_DIAS = 1  # NOVO: Define quantos dias processar por ciclo de Action
 
-# Para forçar a varredura a partir de uma data específica, preencha abaixo (Ex: "2026-01-01").
-# Para usar o ciclo contínuo automático do checkpoint, deixe vazio "".
-DATA_INICIO_FORCADA = os.environ.get("DATA_INICIO_FORCADA", "")
-
-# Configurado exclusivamente para Pregão Eletrônico (Código 6)
+DATA_INICIO_FORCADA = os.environ.get("DATA_INICIO_FORCADA", "") 
 MODALIDADES_BUSCA = [6] 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -32,10 +30,6 @@ HEADERS = {
 }
 
 INICIO_EXECUCAO = time.time()
-
-# -------------------------------------------------
-# 1. FUNÇÕES DE SUPORTE
-# -------------------------------------------------
 
 def migrar_e_limpar_banco(dados_lista):
     novo_banco = {}
@@ -59,18 +53,15 @@ def carregar_banco():
         except: pass
     return {}
 
-def salvar_estado(banco, proximo_dia=None):
+def salvar_estado(banco, proximo_dia):
     lista_final = list(banco.values())
     lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
     
-    if proximo_dia:
-        with open(ARQ_CHECKPOINT, 'w') as f:
-            f.write(proximo_dia.strftime('%Y%m%d'))
-        print(f" 💾 [Salvo! Checkpoint atualizado para: {proximo_dia.strftime('%d/%m/%Y')}]", flush=True)
-    else:
-        print(" 💾 [Banco de dados salvo pelo modo manual]", flush=True)
+    with open(ARQ_CHECKPOINT, 'w') as f:
+        f.write(proximo_dia.strftime('%Y%m%d'))
+    print(f" 💾 [Salvo! Checkpoint atualizado para: {proximo_dia.strftime('%d/%m/%Y')}]", flush=True)
 
 def criar_sessao():
     session = requests.Session()
@@ -80,10 +71,6 @@ def criar_sessao():
     adapter = HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS)
     session.mount('https://', adapter)
     return session
-
-# -------------------------------------------------
-# 2. CAPTURA DE ITENS
-# -------------------------------------------------
 
 def processar_item_individual(session, it, cnpj_org, ano, seq):
     if not it.get('temResultado'): return None
@@ -175,25 +162,18 @@ def processar_dia_completo(session, banco_total, data_atual):
             
     if not encontrou_no_dia: print("(vazio)", end="", flush=True)
 
-# -------------------------------------------------
-# 3. CONTROLE DE EXECUÇÃO
-# -------------------------------------------------
-
 def main():
     session = criar_sessao()
     banco_total = carregar_banco()
     hoje = datetime.now()
     
-    # Define a data inicial baseada na configuração manual ou no checkpoint
-    modo_manual = False
     if DATA_INICIO_FORCADA.strip():
         try:
             data_atual = datetime.strptime(DATA_INICIO_FORCADA.strip(), "%Y-%m-%d")
-            modo_manual = True
-            print(f"--- ⚠️ MODO MANUAL ATIVADO: Ignorando checkpoint e iniciando em {data_atual.strftime('%d/%m/%Y')} ---")
+            print(f"--- ⚠️ MODO MANUAL: Iniciando a partir de {data_atual.strftime('%d/%m/%Y')} ---")
         except ValueError:
-            print("❌ Erro: O formato de DATA_INICIO_FORCADA deve ser YYYY-MM-DD. A abortar.")
-            return
+            print("❌ Erro no formato da data. Use YYYY-MM-DD.")
+            sys.exit(1)
     else:
         data_atual = hoje - timedelta(days=DIAS_RETROATIVOS)
         if os.path.exists(ARQ_CHECKPOINT):
@@ -202,27 +182,32 @@ def main():
                     data_atual = datetime.strptime(f.read().strip(), '%Y%m%d')
             except: pass
 
-        if data_atual.date() >= hoje.date():
-            print(f"🏁 O robô já completou a fila até hoje ({data_atual.strftime('%d/%m/%Y')}).")
-            return
-        print(f"--- 🚀 INICIANDO COLETA CONTÍNUA (De: {data_atual.strftime('%d/%m/%Y')}) ---")
+    if data_atual.date() >= hoje.date():
+        print(f"🏁 Fila 100% concluída até o dia de hoje ({data_atual.strftime('%d/%m/%Y')}).")
+        sys.exit(0)
 
-    while data_atual.date() <= hoje.date():
+    print(f"--- 🚀 INICIANDO COLETA (Janela de {JANELA_DIAS} dia(s) a partir de {data_atual.strftime('%d/%m/%Y')}) ---")
+
+    dias_processados = 0
+    while dias_processados < JANELA_DIAS and data_atual.date() <= hoje.date():
         processar_dia_completo(session, banco_total, data_atual)
-        data_proxima = data_atual + timedelta(days=1)
+        data_atual += timedelta(days=1)
+        dias_processados += 1
         
-        # Salva o progresso no final do dia. Se for modo manual, não atualiza o checkpoint para não atrapalhar o ciclo do Actions.
-        if modo_manual:
-            salvar_estado(banco_total, None)
-        else:
-            salvar_estado(banco_total, data_proxima)
-        
-        # Verifica tempo de execução para evitar corte brusco
         if (time.time() - INICIO_EXECUCAO) > TEMPO_LIMITE_SEGURO:
-            print(f"\n\n⚠️ TEMPO LIMITE SEGURO ATINGIDO. A parar em {data_atual.strftime('%d/%m')}.")
+            print(f"\n⚠️ TEMPO LIMITE. Interrompendo a janela de coleta.")
             break
-        
-        data_atual = data_proxima
+
+    # Salva obrigatoriamente o checkpoint para passar o bastão para a próxima run
+    salvar_estado(banco_total, data_atual)
+
+    # Se a data salva ainda for menor que hoje, emite o código 2 para acionar a cascata
+    if data_atual.date() < hoje.date():
+        print(f"\n⏳ Lote processado. Faltam mais dias até hoje. Acionando próxima rotina...")
+        sys.exit(2)
+    else:
+        print("\n✅ Coleta atualizada com sucesso até o dia atual.")
+        sys.exit(0)
 
 if __name__ == "__main__":
     main()
