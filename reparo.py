@@ -5,14 +5,21 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib3
+import time
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ARQ_DADOS = 'dados.json'
-MAX_WORKERS = 15
+MAX_WORKERS = 10 # Reduzido ligeiramente para evitar bloqueios por excesso de velocidade
+
+HEADERS = {
+    'Accept': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+}
 
 def criar_sessao():
     session = requests.Session()
+    session.headers.update(HEADERS) # <-- A camuflagem que faltava!
     session.verify = False
     retry = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS)
@@ -24,7 +31,6 @@ def buscar_info_licitacao(session, lic_id):
     seq = int(lic_id[14:-4])
     ano = lic_id[-4:]
     
-    # URL atualizada para o novo padrão de consultas do PNCP
     url = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}"
     
     try:
