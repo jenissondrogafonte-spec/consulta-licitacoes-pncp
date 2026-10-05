@@ -5,6 +5,11 @@ on:
     # Executa a cada 6 horas
     - cron: '0 */6 * * *'
   workflow_dispatch:
+    inputs:
+      data_inicio:
+        description: 'Data inicial forçada (YYYY-MM-DD). Deixe em branco para ciclo normal.'
+        required: false
+        default: ''
 
 # Trava de concorrência: O NOME DEVE SER IDÊNTICO NO ATUALIZADOR
 concurrency:
@@ -24,11 +29,12 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0 # Necessário para o rebase funcionar corretamente
+        token: ${{ secrets.MEU_TOKEN_SECRETO }} # Seu token para não travar o Pages
 
     - name: 🐍 Configurar Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10' # Mantido na versão 3.10 para alinhar com o outro robô
+        python-version: '3.10'
 
     - name: 📦 Instalar dependências
       run: pip install requests urllib3
@@ -40,10 +46,13 @@ jobs:
         git pull origin main --rebase || echo "Sem conflitos iniciais"
 
     - name: 🚀 Executar Coleta Segura
+      # Aqui injetamos o que você digitou no botão Run Workflow para dentro do Python
+      env:
+        DATA_INICIO_FORCADA: ${{ github.event.inputs.data_inicio }}
       run: python coleta_pncp.py
 
     - name: 💾 Commit e Push (Salva Progresso)
-      if: always() # Garante o salvamento da base mesmo se o script Python falhar na linha acima
+      if: always()
       run: |
         git add dados.json checkpoint.txt
         git commit -m "Progresso salvo: $(date +'%d/%m/%Y %H:%M')" || echo "Nenhuma alteração para salvar"
