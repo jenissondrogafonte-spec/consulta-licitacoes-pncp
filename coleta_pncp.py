@@ -110,7 +110,6 @@ def processar_dia_completo(session, banco_total, data_atual):
     encontrou = False
 
     while True:
-        # A URL de publicações já utilizava a rota correta do manual
         url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
         params = {"dataInicial": DATA_STR, "dataFinal": DATA_STR, "codigoModalidadeContratacao": "6", "pagina": pagina, "tamanhoPagina": 50, "niFornecedor": CNPJ_ALVO}
 
@@ -158,6 +157,9 @@ def processar_dia_completo(session, banco_total, data_atual):
                                 "Edital": f"{lic.get('numeroCompra')}/{ano}",
                                 "Licitacao": id_lic_unico,
                                 "Link": f"https://pncp.gov.br/app/editais/{cnpj_org}/{ano}/{seq}",
+                                # Novos campos capturados diretamente do PNCP
+                                "UASG": lic.get('unidadeOrgao', {}).get('codigoUnidade', ''),
+                                "DataFimPropostas": lic.get('dataEncerramentoProposta', ''),
                                 **res
                             }
                             print("✅", end="", flush=True); encontrou = True
@@ -199,7 +201,7 @@ def main():
         
         # Verifica tempo de execução para evitar corte brusco do GitHub
         if (time.time() - INICIO_EXECUCAO) > TEMPO_LIMITE_SEGURO:
-            print(f"\n\n⚠️️ TEMPO LIMITE SEGURO ATINGIDO. Parando em {data_atual.strftime('%d/%m')}.")
+            print(f"\n\n⚠ TEMPO LIMITE SEGURO ATINGIDO. Parando em {data_atual.strftime('%d/%m')}.")
             break
         
         data_atual = data_proxima
