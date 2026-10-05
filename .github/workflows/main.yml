@@ -2,16 +2,14 @@ name: PNCP Sniper Continuo
 
 on:
   schedule:
-    # Executa a cada 6 horas
     - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       data_inicio:
-        description: 'Data inicial forçada (YYYY-MM-DD). Deixe em branco para ciclo normal.'
+        description: 'Data inicial (YYYY-MM-DD). Deixe em branco para seguir de onde parou.'
         required: false
         default: ''
 
-# Trava de concorrência: O NOME DEVE SER IDÊNTICO NO ATUALIZADOR
 concurrency:
   group: pncp-robots
   cancel-in-progress: false 
@@ -19,17 +17,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 355 # 5h 55min de limite total
+    timeout-minutes: 355 
 
     permissions:
       contents: write
+      actions: write # Necessário para o robô conseguir chamar o próximo robô
 
     steps:
     - name: 📥 Checkout do Repositório
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # Necessário para o rebase funcionar corretamente
-        token: ${{ secrets.MEU_TOKEN_SECRETO }} # Seu token para não travar o Pages
+        fetch-depth: 0
+        token: ${{ secrets.MEU_TOKEN_SECRETO }} 
 
     - name: 🐍 Configurar Python
       uses: actions/setup-python@v4
@@ -39,22 +38,35 @@ jobs:
     - name: 📦 Instalar dependências
       run: pip install requests urllib3
 
-    - name: 🔄 Sincronizar Dados da Fila (Anti-Conflito)
+    - name: 🔄 Sincronizar Dados
       run: |
         git config --global user.name "jenissonb88-bot"
         git config --global user.email "bot@github.com"
         git pull origin main --rebase || echo "Sem conflitos iniciais"
 
-    - name: 🚀 Executar Coleta Segura
-      # Aqui injetamos o que você digitou no botão Run Workflow para dentro do Python
+    - name: 🚀 Executar Coleta Segura em Lotes (1 Dia por vez)
+      id: run_script
       env:
         DATA_INICIO_FORCADA: ${{ github.event.inputs.data_inicio }}
-      run: python coleta_pncp.py
+      run: |
+        set +e
+        python coleta_pncp.py
+        echo "exit_code=$?" >> $GITHUB_ENV
+        exit 0
+      continue-on-error: true
 
     - name: 💾 Commit e Push (Salva Progresso)
-      if: always()
       run: |
         git add dados.json checkpoint.txt
-        git commit -m "Progresso salvo: $(date +'%d/%m/%Y %H:%M')" || echo "Nenhuma alteração para salvar"
+        git commit -m "⚙️ Coleta 1 dia concluída: $(date +'%d/%m/%Y %H:%M')" || echo "Nenhuma alteração para salvar"
         git pull origin main --rebase
         git push origin main
+
+    - name: 🔁 Auto-disparo em Cascata (Se existirem mais dias pendentes)
+      if: env.exit_code == '2'
+      env:
+        GH_TOKEN: ${{ secrets.MEU_TOKEN_SECRETO }}
+      run: |
+        echo "Ainda existem dias até chegar na data atual. Acionando a próxima varredura..."
+        sleep 10
+        gh workflow run main.yml
