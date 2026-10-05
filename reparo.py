@@ -1,0 +1,107 @@
+import json
+import os
+import concurrent.futures
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+ARQ_DADOS = 'dados.json'
+MAX_WORKERS = 15
+
+def criar_sessao():
+    session = requests.Session()
+    session.verify = False
+    retry = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+    adapter = HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS)
+    session.mount('https://', adapter)
+    return session
+
+def buscar_info_licitacao(session, lic_id):
+    # Quebra o ID da Licitacao para remontar a URL de consulta direta
+    cnpj_org = lic_id[:14]
+    seq = int(lic_id[14:-4])
+    ano = lic_id[-4:]
+
+    # Consulta direta aos metadados do processo específico
+    url = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}"
+    
+    try:
+        r = session.get(url, timeout=20)
+        if r.status_code == 200:
+            dados = r.json()
+            uasg = dados.get('unidadeOrgao', {}).get('codigoUnidade', '')
+            data_fim = dados.get('dataEncerramentoProposta', '')
+            return (lic_id, uasg, data_fim)
+    except Exception:
+        pass
+    return (lic_id, None, None)
+
+def main():
+    print("🔍 A iniciar o script de reparo cirúrgico...")
+    
+    if not os.path.exists(ARQ_DADOS):
+        print("❌ Arquivo dados.json não encontrado no diretório atual.")
+        return
+
+    with open(ARQ_DADOS, 'r', encoding='utf-8') as f:
+        banco = json.load(f)
+
+    # 1. Identificar quais processos exatos necessitam de reparo
+    licitacoes_pendentes = set()
+    for item in banco:
+        if 'UASG' not in item or 'DataFimPropostas' not in item or item.get('UASG') == '' or item.get('DataFimPropostas') == '':
+            lic_id = item.get('Licitacao')
+            if lic_id:
+                licitacoes_pendentes.add(lic_id)
+
+    total_pendentes = len(licitacoes_pendentes)
+    if total_pendentes == 0:
+        print("✅ O banco de dados já está 100% atualizado. Nenhuma lacuna encontrada.")
+        return
+
+    print(f"📦 Foram encontrados {total_pendentes} processos com informações em falta. A transferir dados do PNCP...")
+
+    session = criar_sessao()
+    resultados_reparo = {}
+
+    # 2. Buscar os dados em paralelo para agilizar a transferência
+    processados = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(buscar_info_licitacao, session, lic_id) for lic_id in licitacoes_pendentes]
+        for fut in concurrent.futures.as_completed(futures):
+            lic_id, uasg, data_fim = fut.result()
+            
+            # Mesmo que venha vazio da API, guardamos para parar de tentar
+            if uasg is not None or data_fim is not None:
+                resultados_reparo[lic_id] = {
+                    "UASG": uasg if uasg else '', 
+                    "DataFimPropostas": data_fim if data_fim else ''
+                }
+            
+            processados += 1
+            print(f"\r⏳ Progresso: {processados}/{total_pendentes}", end="", flush=True)
+
+    # 3. Aplicar as correções aos itens em memória
+    print("\n\n🛠️ A aplicar as correções no banco de dados...")
+    itens_corrigidos = 0
+    for item in banco:
+        lic_id = item.get('Licitacao')
+        if lic_id in resultados_reparo:
+            # Atualiza apenas se a chave não existir ou estiver vazia
+            if 'UASG' not in item or item.get('UASG') == '':
+                item['UASG'] = resultados_reparo[lic_id]['UASG']
+            if 'DataFimPropostas' not in item or item.get('DataFimPropostas') == '':
+                item['DataFimPropostas'] = resultados_reparo[lic_id]['DataFimPropostas']
+            itens_corrigidos += 1
+
+    # 4. Guardar o ficheiro estruturado
+    with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
+        json.dump(banco, f, indent=4, ensure_ascii=False)
+
+    print(f"✅ Reparo concluído com sucesso! {itens_corrigidos} itens de edital foram atualizados.")
+
+if __name__ == "__main__":
+    main()
