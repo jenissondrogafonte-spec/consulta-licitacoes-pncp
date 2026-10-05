@@ -133,7 +133,9 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
                         "Qtd": qtd,
                         "Unitario": unitario,
                         "Total": total,
-                        "Status": "Venceu"
+                        "Status": "Venceu",
+                        # Extrai a data verdadeira do resultado
+                        "DataRealHomologacao": v.get('dataResultado') or v.get('dataAtualizacao') or v.get('dataHomologacao')
                     }
     except: pass
     return None
@@ -189,10 +191,13 @@ def processar_dia_completo(session, banco_total, data_atual):
                         for fut in concurrent.futures.as_completed(futures):
                             res = fut.result()
                             if res:
+                                # Remove a chave temporária para não poluir o JSON final, e usa como prioridade
+                                data_real = res.pop("DataRealHomologacao", None)
+                                
                                 chave = f"{id_lic_unico}-{res['Item']}"
                                 banco_total[chave] = {
                                     "DataPublicacao": DATA_STR,
-                                    "DataResult": lic.get('dataAtualizacao') or DATA_STR,
+                                    "DataResult": data_real or lic.get('dataAtualizacao') or DATA_STR,
                                     "Orgao": lic.get('orgaoEntidade', {}).get('razaoSocial'),
                                     "UF": lic.get('unidadeOrgao', {}).get('ufSigla'),
                                     "Municipio": lic.get('unidadeOrgao', {}).get('municipioNome'),
