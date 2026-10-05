@@ -56,7 +56,11 @@ def obter_resultados_item(session, cnpj_org, ano, seq, num_item):
     try:
         r = session.get(url_res, timeout=20)
         if r.status_code == 200:
-            return r.json()
+            dados = r.json()
+            # Ajuste: A API pode encapsular o resultado no atributo 'data' padronizado
+            if isinstance(dados, dict) and 'data' in dados:
+                return dados['data']
+            return dados
     except:
         pass
     return None
@@ -70,16 +74,30 @@ def processar_licitacao(session, lic_id, lic_base_data, banco_total):
     p_it = 1
     itens_completos = []
     
-    # Paginação minuciosa de itens
+    # Paginação minuciosa de itens adaptada ao novo padrão do PNCP
     while True:
         url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{int(seq)}/itens?pagina={p_it}&tamanhoPagina=500"
         try:
             r_it = session.get(url_itens, timeout=20)
             if r_it.status_code == 200:
-                lista = r_it.json()
+                resposta = r_it.json()
+                
+                # Verifica o formato de retorno padronizado do PNCP (vetor 'data' e 'paginasRestantes')[cite: 6]
+                if isinstance(resposta, dict) and 'data' in resposta:
+                    lista = resposta.get('data', [])
+                    paginas_restantes = resposta.get('paginasRestantes', 0)
+                else:
+                    # Fallback para manter compatibilidade caso a rota antiga retorne lista direta
+                    lista = resposta if isinstance(resposta, list) else []
+                    paginas_restantes = 0 if len(lista) < 500 else 1
+                
                 if not lista: break
                 itens_completos.extend(lista)
-                if len(lista) < 500: break
+                
+                # Condição de parada baseada no total de páginas restantes do servidor[cite: 6]
+                if paginas_restantes <= 0: 
+                    break
+                    
                 p_it += 1
             else:
                 break
