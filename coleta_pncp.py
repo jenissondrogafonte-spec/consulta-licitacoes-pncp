@@ -53,8 +53,43 @@ def carregar_banco():
         except: pass
     return {}
 
+def remover_duplicidades(banco):
+    banco_unico = {}
+    rastreio_similaridade = {} 
+
+    for chave_original, dados in banco.items():
+        # Extrai CNPJ base (14 dígitos), data final YYYY-MM-DD, item e valor
+        cnpj_base = dados.get('Licitacao', '')[:14]
+        data_fim = str(dados.get('DataFimPropostas', ''))[:10]
+        item_num = dados.get('Item', '')
+        valor_unit = dados.get('Unitario', 0)
+
+        # Chave de similaridade para detectar duplicatas estruturais
+        chave_sim = f"{cnpj_base}-{item_num}-{data_fim}-{valor_unit}"
+
+        if chave_sim in rastreio_similaridade:
+            chave_antiga = rastreio_similaridade[chave_sim]
+            item_existente = banco_unico[chave_antiga]
+
+            # Fica com a homologação/atualização mais recente
+            data_nova = dados.get('DataResult', '')
+            data_velha = item_existente.get('DataResult', '')
+
+            if data_nova > data_velha:
+                del banco_unico[chave_antiga]
+                banco_unico[chave_original] = dados
+                rastreio_similaridade[chave_sim] = chave_original
+        else:
+            banco_unico[chave_original] = dados
+            rastreio_similaridade[chave_sim] = chave_original
+
+    return banco_unico
+
 def salvar_estado(banco, proximo_dia):
-    lista_final = list(banco.values())
+    # Aplica a limpeza de duplicidades antes de salvar
+    banco_limpo = remover_duplicidades(banco)
+    
+    lista_final = list(banco_limpo.values())
     lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
@@ -76,7 +111,6 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
     num_item = it.get('numeroItem')
     if not num_item: return None
 
-    # Rota oficial (pncp/v1) para buscar os vencedores (resultados)
     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
     
     try:
@@ -89,7 +123,6 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
             for v in (vends or []):
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 if CNPJ_ALVO in ni:
-                    # Fallback para as chaves (algumas licitações usam a chave sem o sufixo "Homologado")
                     qtd = v.get('quantidadeHomologada') or v.get('quantidade') or 0
                     unitario = float(v.get('valorUnitarioHomologado') or v.get('valorUnitario') or 0)
                     total = float(v.get('valorTotalHomologado') or v.get('valorTotal') or 0)
@@ -113,7 +146,6 @@ def processar_dia_completo(session, banco_total, data_atual):
         pagina = 1
         
         while True:
-            # A busca diária continua na consulta/v1 porque é a que permite filtrar por data
             url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
             params = {"dataInicial": DATA_STR, "dataFinal": DATA_STR, "codigoModalidadeContratacao": str(modalidade), "pagina": pagina, "tamanhoPagina": 50}
 
@@ -136,7 +168,6 @@ def processar_dia_completo(session, banco_total, data_atual):
                     itens_lic = []
                     p_it = 1
                     while True:
-                        # Rota oficial (pncp/v1) descoberta pelo espião para listar os itens
                         r_it = session.get(f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina={p_it}&tamanhoPagina=500", timeout=20)
                         
                         if r_it.status_code == 200:
