@@ -19,7 +19,7 @@ TEMPO_LIMITE_SEGURO = 19800  # 5h 30min para salvar antes do timeout do GitHub
 
 # Para forçar a varredura a partir de uma data específica, preencha abaixo (Ex: "2026-01-01").
 # Para usar o ciclo contínuo automático do checkpoint, deixe vazio "".
-DATA_INICIO_FORCADA = "" 
+DATA_INICIO_FORCADA = os.environ.get("DATA_INICIO_FORCADA", "")
 
 # Configurado exclusivamente para Pregão Eletrônico (Código 6)
 MODALIDADES_BUSCA = [6] 
