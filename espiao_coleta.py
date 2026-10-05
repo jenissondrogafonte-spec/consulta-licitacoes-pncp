@@ -14,48 +14,23 @@ def main():
     session.headers.update(HEADERS)
     session.verify = False
 
-    data_teste = "20260701"
-    print(f"🕵️ ESPIÃO DE COLETA - Testando o dia {data_teste}\n")
+    # Usando o mesmo processo que descobrimos na sua última execução
+    cnpj_org = "80881915000192"
+    ano = "2026"
+    seq = "44"
 
-    # 1. Buscar processos com tamanhoPagina=10 (Mínimo exigido pela API)
-    url_busca = f"https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial={data_teste}&dataFinal={data_teste}&codigoModalidadeContratacao=6&pagina=1&tamanhoPagina=10"
+    print(f"🕵️ ESPIÃO 3 - Forçando o servidor a revelar a nova rota de itens\n")
+
+    # Batendo na rota ANTIGA para ver a mensagem de redirecionamento (301)
+    url_itens_antiga = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina=1&tamanhoPagina=50"
     
+    print(f"🌐 ROTA ANTIGA:\n{url_itens_antiga}")
     try:
-        r_busca = session.get(url_busca, timeout=10)
-        if r_busca.status_code != 200:
-            print(f"❌ Erro na busca inicial: {r_busca.status_code} - {r_busca.text}")
-            return
-            
-        dados = r_busca.json()
-        lics = dados.get('data', [])
-        if not lics:
-            print("Nenhum processo encontrado neste dia.")
-            return
-            
-        lic = lics[0]
-        cnpj_org = lic.get('orgaoEntidade', {}).get('cnpj')
-        ano = lic.get('anoCompra')
-        seq = lic.get('sequencialCompra')
-        
-        print(f"✅ Processo encontrado para teste: CNPJ {cnpj_org} | Ano {ano} | Seq {seq}")
-        print("="*60)
-
-        # 2. Testar Endpoint de Itens (A rota que está HOJE no coleta_pncp.py)
-        url_itens_atual = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens?pagina=1&tamanhoPagina=50"
-        print(f"\n🌐 TENTATIVA 1 (Como o robô está fazendo hoje):\n{url_itens_atual}")
-        r1 = session.get(url_itens_atual, timeout=10)
-        print(f"Status Code: {r1.status_code}")
-        print(f"Resposta: {r1.text[:300]}")
-
-        # 3. Testar Endpoint de Itens (A rota corrigida, baseada no que aprendemos no reparo)
-        url_itens_nova = f"https://pncp.gov.br/api/consulta/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens?pagina=1&tamanhoPagina=50"
-        print(f"\n🌐 TENTATIVA 2 (Nova rota provável):\n{url_itens_nova}")
-        r2 = session.get(url_itens_nova, timeout=10)
-        print(f"Status Code: {r2.status_code}")
-        print(f"Resposta: {r2.text[:300]}")
-
+        r = session.get(url_itens_antiga, timeout=10)
+        print(f"Status Code: {r.status_code}")
+        print(f"Resposta JSON:\n{r.text[:600]}")
     except Exception as e:
-        print(f"Erro de execução: {e}")
+        print(f"Erro: {e}")
 
 if __name__ == "__main__":
     main()
