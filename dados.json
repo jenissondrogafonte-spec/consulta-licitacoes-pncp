@@ -10674,6 +10674,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260115",
+        "DataResult": "2026-02-10",
+        "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
+        "UF": "SP",
+        "Municipio": "São Paulo",
+        "Edital": "91681/2025",
+        "Licitacao": "60747318000162019572025",
+        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1957",
+        "UASG": "532101",
+        "DataFimPropostas": "2026-01-27T09:00:00",
+        "Item": 1,
+        "Descricao": "Fitomenadiona",
+        "Qtd": 15600.0,
+        "Unitario": 1.7325,
+        "Total": 27027.0,
+        "Status": "Venceu"
+    },
+    {
         "Item": 1,
         "Descricao": "(3067173) - AMIODARONA, CLORIDRATO - CONCENTRACAO/DOSAGEM 150 MG/3 ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 1560.0,
@@ -12580,24 +12598,6 @@
         "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25453",
         "UASG": "943001",
         "DataFimPropostas": "2026-01-29T09:00:00"
-    },
-    {
-        "Item": 1,
-        "Descricao": "Fitomenadiona",
-        "Qtd": 15600.0,
-        "Unitario": 1.7325,
-        "Total": 27027.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260115",
-        "DataResult": "2026-01-15T07:02:02",
-        "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
-        "UF": "SP",
-        "Municipio": "São Paulo",
-        "Edital": "91681/2025",
-        "Licitacao": "60747318000162019572025",
-        "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1957",
-        "UASG": "532101",
-        "DataFimPropostas": "2026-01-27T09:00:00"
     },
     {
         "Item": 6,
