@@ -12,7 +12,7 @@ import sys
 
 # --- CONFIGURAÇÕES ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
-MAX_WORKERS = 20                
+MAX_WORKERS = 30               # Aumentado para mais paralelismo 
 ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 DIAS_RETROATIVOS = 365
@@ -58,20 +58,17 @@ def remover_duplicidades(banco):
     rastreio_similaridade = {} 
 
     for chave_original, dados in banco.items():
-        # Extrai CNPJ base (14 dígitos), data final YYYY-MM-DD, item e valor
         cnpj_base = dados.get('Licitacao', '')[:14]
         data_fim = str(dados.get('DataFimPropostas', ''))[:10]
         item_num = dados.get('Item', '')
         valor_unit = dados.get('Unitario', 0)
 
-        # Chave de similaridade para detectar duplicatas estruturais
         chave_sim = f"{cnpj_base}-{item_num}-{data_fim}-{valor_unit}"
 
         if chave_sim in rastreio_similaridade:
             chave_antiga = rastreio_similaridade[chave_sim]
             item_existente = banco_unico[chave_antiga]
 
-            # Fica com a homologação/atualização mais recente
             data_nova = dados.get('DataResult', '')
             data_velha = item_existente.get('DataResult', '')
 
@@ -86,7 +83,6 @@ def remover_duplicidades(banco):
     return banco_unico
 
 def salvar_estado(banco, proximo_dia):
-    # Aplica a limpeza de duplicidades antes de salvar
     banco_limpo = remover_duplicidades(banco)
     
     lista_final = list(banco_limpo.values())
@@ -111,6 +107,18 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
     num_item = it.get('numeroItem')
     if not num_item: return None
 
+    # --- 🚀 O GRANDE FILTRO DE OTIMIZAÇÃO ---
+    # Ignora requisições pesadas para itens que sabidamente não têm vencedor.
+    situacao_nome = str(it.get('situacaoCompraItemNome', '')).upper()
+    status_sem_vencedor = ['ANDAMENTO', 'DESERTO', 'FRACASSADO', 'CANCELADO', 'ANULADO', 'REVOGADO', 'SUSPENSO']
+    
+    if any(s in situacao_nome for s in status_sem_vencedor):
+        return None
+        
+    if it.get('temResultado') is False:
+        return None
+    # ----------------------------------------
+
     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
     
     try:
@@ -134,7 +142,6 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
                         "Unitario": unitario,
                         "Total": total,
                         "Status": "Venceu",
-                        # Extrai a data verdadeira do resultado
                         "DataRealHomologacao": v.get('dataResultado') or v.get('dataAtualizacao') or v.get('dataHomologacao')
                     }
     except: pass
@@ -191,7 +198,6 @@ def processar_dia_completo(session, banco_total, data_atual):
                         for fut in concurrent.futures.as_completed(futures):
                             res = fut.result()
                             if res:
-                                # Remove a chave temporária para não poluir o JSON final, e usa como prioridade
                                 data_real = res.pop("DataRealHomologacao", None)
                                 
                                 chave = f"{id_lic_unico}-{res['Item']}"
