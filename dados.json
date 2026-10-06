@@ -5868,6 +5868,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260130",
+        "DataResult": "2026-04-28",
+        "Orgao": "MUNICIPIO DE UBERLANDIA",
+        "UF": "MG",
+        "Municipio": "Uberlândia",
+        "Edital": "90642/2025",
+        "Licitacao": "18431312000620003042025",
+        "Link": "https://pncp.gov.br/app/editais/18431312000620/2025/304",
+        "UASG": "926922",
+        "DataFimPropostas": "2026-02-13T09:00:00",
+        "Item": 11,
+        "Descricao": "Loratadina",
+        "Qtd": 1500000.0,
+        "Unitario": 0.0565,
+        "Total": 84750.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260120",
         "DataResult": "2026-04-17",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BARREIRAS",
@@ -16848,24 +16866,6 @@
         "DataFimPropostas": "2025-03-24T09:00:00"
     },
     {
-        "Item": 4,
-        "Descricao": "ACIDO VALPROICO 50 MG/ML ACIDO VALPROICO 50 MG/ML - INDICACAO: anticonvulsivante e estabilizador de humor muito usado no tratamento de epilepsia, convulsoes, transtorno bipolar e enxaqueca.- FORMA FARMACEUTICA: suspensao oral.- APRESENTACAO: frasco de100 ml, com dosador.- No R.M.S. / lote.- Data de fabricacao / validade.-REFERENCIA: Depakene (Abbott) ou similar.",
-        "Qtd": 7200.0,
-        "Unitario": 5.34,
-        "Total": 38503.44,
-        "Status": "Venceu",
-        "DataPublicacao": "20260130",
-        "DataResult": "2026-01-30T09:55:02",
-        "Orgao": "MUNICIPIO DE SOROCABA",
-        "UF": "SP",
-        "Municipio": "Sorocaba",
-        "Edital": "00105/2025",
-        "Licitacao": "46634044000174004852025",
-        "Link": "https://pncp.gov.br/app/editais/46634044000174/2025/485",
-        "UASG": "1",
-        "DataFimPropostas": "2025-11-05T09:00:00"
-    },
-    {
         "DataPublicacao": "20260109",
         "DataResult": "2026-01-30",
         "Orgao": "MUNICIPIO DE ARTUR NOGUEIRA",
@@ -17512,6 +17512,24 @@
         "Link": "https://pncp.gov.br/app/editais/11022597001597/2025/345",
         "UASG": "8331",
         "DataFimPropostas": "2025-11-06T08:00:00"
+    },
+    {
+        "DataPublicacao": "20260130",
+        "DataResult": "2026-01-22",
+        "Orgao": "MUNICIPIO DE SOROCABA",
+        "UF": "SP",
+        "Municipio": "Sorocaba",
+        "Edital": "00105/2025",
+        "Licitacao": "46634044000174004852025",
+        "Link": "https://pncp.gov.br/app/editais/46634044000174/2025/485",
+        "UASG": "1",
+        "DataFimPropostas": "2025-11-05T09:00:00",
+        "Item": 4,
+        "Descricao": "ACIDO VALPROICO 50 MG/ML ACIDO VALPROICO 50 MG/ML - INDICACAO: anticonvulsivante e estabilizador de humor muito usado no tratamento de epilepsia, convulsoes, transtorno bipolar e enxaqueca.- FORMA FARMACEUTICA: suspensao oral.- APRESENTACAO: frasco de100 ml, com dosador.- No R.M.S. / lote.- Data de fabricacao / validade.-REFERENCIA: Depakene (Abbott) ou similar.",
+        "Qtd": 7200.0,
+        "Unitario": 5.34,
+        "Total": 38503.44,
+        "Status": "Venceu"
     },
     {
         "Item": 5,
