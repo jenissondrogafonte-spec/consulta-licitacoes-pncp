@@ -51,8 +51,8 @@ def salvar_banco(banco):
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
 
 def obter_resultados_item(session, cnpj_org, ano, seq, num_item):
-    """Busca o resultado minucioso de um item específico no PNCP"""
-    url_res = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{seq}/itens/{num_item}/resultados"
+    """Busca o resultado minucioso usando a rota oficial do PNCP"""
+    url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
     try:
         r = session.get(url_res, timeout=20)
         if r.status_code == 200:
@@ -70,15 +70,13 @@ def processar_licitacao(session, lic_id, lic_base_data, banco_total):
     p_it = 1
     itens_completos = []
     
-    # Paginação minuciosa de itens
+    # Paginação minuciosa de itens usando a rota validada
     while True:
-        url_itens = f"https://pncp.gov.br/api/consulta/v1/contratacoes/{cnpj_org}/{ano}/{int(seq)}/itens?pagina={p_it}&tamanhoPagina=500"
+        url_itens = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{int(seq)}/itens?pagina={p_it}&tamanhoPagina=500"
         try:
             r_it = session.get(url_itens, timeout=20)
             if r_it.status_code == 200:
                 json_resp = r_it.json()
-                
-                # Extrai a lista do vetor "data", conforme o padrão de retorno do PNCP
                 lista = json_resp.get('data') if isinstance(json_resp, dict) and 'data' in json_resp else json_resp
                 
                 if not lista: break
@@ -91,40 +89,43 @@ def processar_licitacao(session, lic_id, lic_base_data, banco_total):
             break
 
     for it in itens_completos:
-        if not it.get('temResultado'): continue
-        
         num_item = it.get('numeroItem')
+        if not num_item: continue
+
         resultados = obter_resultados_item(session, cnpj_org, ano, int(seq), num_item)
         
         if resultados:
-            # Garante a extração correta caso o endpoint de resultados também utilize o vetor padronizado "data"
             if isinstance(resultados, dict) and 'data' in resultados:
                 resultados = resultados.get('data')
             elif isinstance(resultados, dict):
                 resultados = [resultados]
                 
-            for v in resultados:
+            for v in (resultados or []):
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 chave = f"{lic_base_data['Licitacao']}-{num_item}"
                 
                 # Se o alvo venceu, atualizamos/inserimos
                 if CNPJ_ALVO in ni:
+                    qtd = v.get('quantidadeHomologada') or v.get('quantidade') or 0
+                    unitario = float(v.get('valorUnitarioHomologado') or v.get('valorUnitario') or 0)
+                    total = float(v.get('valorTotalHomologado') or v.get('valorTotal') or 0)
+                    data_real = v.get('dataResultado') or v.get('dataAtualizacao') or v.get('dataHomologacao')
+
                     novo_dado = {
                         "Item": num_item,
                         "Descricao": it.get('descricao', ''),
-                        "Qtd": v.get('quantidadeHomologada'),
-                        "Unitario": float(v.get('valorUnitarioHomologado') or 0),
-                        "Total": float(v.get('valorTotalHomologado') or 0),
+                        "Qtd": qtd,
+                        "Unitario": unitario,
+                        "Total": total,
                         "Status": "Venceu",
                         "DataPublicacao": lic_base_data.get('DataPublicacao'),
-                        "DataResult": lic_base_data.get('DataResult'),
+                        "DataResult": data_real or lic_base_data.get('DataResult'),
                         "Orgao": lic_base_data.get('Orgao'),
                         "UF": lic_base_data.get('UF'),
                         "Municipio": lic_base_data.get('Municipio'),
                         "Edital": lic_base_data.get('Edital'),
                         "Licitacao": lic_base_data.get('Licitacao'),
                         "Link": lic_base_data.get('Link'),
-                        # Repasse dos novos dados para não se perderem na atualização
                         "UASG": lic_base_data.get('UASG', ''),
                         "DataFimPropostas": lic_base_data.get('DataFimPropostas', '')
                     }
@@ -137,7 +138,6 @@ def main():
     hoje = datetime.now()
     limite_retroativo = hoje - timedelta(days=DIAS_RETROATIVOS)
     
-    # Define a data de início da janela atual
     data_inicio_janela = limite_retroativo
     if os.path.exists(ARQ_CHECKPOINT_ATUALIZADOR):
         try:
@@ -145,7 +145,6 @@ def main():
                 data_inicio_janela = datetime.strptime(f.read().strip(), '%Y%m%d')
         except: pass
 
-    # Se a janela passou de hoje, reseta para o fim da fila (reinicia o ciclo de 365 dias)
     if data_inicio_janela >= hoje:
         print("🔄 Ciclo completo atingido. Reiniciando a varredura a partir de 365 dias atrás.")
         data_inicio_janela = limite_retroativo
@@ -159,7 +158,6 @@ def main():
     banco_total = carregar_banco()
     session = criar_sessao()
 
-    # Mapear licitações únicas que caem nesta janela de tempo
     licitacoes_na_janela = {}
     for chave, dados in banco_total.items():
         data_pub_str = dados.get('DataPublicacao')
@@ -174,8 +172,7 @@ def main():
 
     print(f"📦 Encontradas {len(licitacoes_na_janela)} licitações únicas nesta janela para escrutínio.")
 
-    # Processamento paralelo das licitações
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = [executor.submit(processar_licitacao, session, lic_id, dados, banco_total) 
                    for lic_id, dados in licitacoes_na_janela.items()]
         for _ in concurrent.futures.as_completed(futures):
@@ -184,18 +181,16 @@ def main():
     print("\n💾 Salvando banco de dados...")
     salvar_banco(banco_total)
 
-    # Atualiza o checkpoint
     nova_data_checkpoint = data_fim_janela + timedelta(days=1)
     with open(ARQ_CHECKPOINT_ATUALIZADOR, 'w') as f:
         f.write(nova_data_checkpoint.strftime('%Y%m%d'))
 
-    # Sinaliza para o GitHub Actions se o ciclo acabou ou se deve continuar
     if nova_data_checkpoint >= hoje:
         print("✅ Ciclo atualizado 100%. Aguardando próximo acionamento agendado.")
-        sys.exit(0) # Sucesso, não precisa de re-execução imediata
+        sys.exit(0)
     else:
         print(f"⏳ Janela concluída. Próxima janela iniciará em {nova_data_checkpoint.strftime('%d/%m/%Y')}.")
-        sys.exit(2) # Código 2 indica que há mais dados e o GH Actions deve acionar a próxima tarefa imediatamente
+        sys.exit(2)
 
 if __name__ == "__main__":
     main()
