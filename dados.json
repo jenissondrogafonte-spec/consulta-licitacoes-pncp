@@ -16038,6 +16038,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260227",
+        "DataResult": "2026-03-18",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "37/2026",
+        "Licitacao": "11022597001597000412026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001597/2026/41",
+        "UASG": "8331",
+        "DataFimPropostas": "2026-03-18T08:00:00",
+        "Item": 4,
+        "Descricao": "(3169383) - NALOXONA, CLORIDRATO - CONCENTRACAO/DOSAGEM 0,4 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO PARENTERAL",
+        "Qtd": 86.0,
+        "Unitario": 7.27,
+        "Total": 625.22,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260209",
         "DataResult": "2026-03-17",
         "Orgao": "MUNICIPIO DE ITAPETININGA",
