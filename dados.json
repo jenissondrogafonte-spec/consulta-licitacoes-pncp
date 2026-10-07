@@ -3960,6 +3960,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260507",
+        "DataResult": "2026-07-22",
+        "Orgao": "ESTADO DO CEARA",
+        "UF": "CE",
+        "Municipio": "Fortaleza",
+        "Edital": "90359/2026",
+        "Licitacao": "07954480000179122612026",
+        "Link": "https://pncp.gov.br/app/editais/07954480000179/2026/12261",
+        "UASG": "943001",
+        "DataFimPropostas": "2026-05-20T08:30:00",
+        "Item": 3,
+        "Descricao": "Amiodarona",
+        "Qtd": 67900.0,
+        "Unitario": 2.48,
+        "Total": 168392.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260312",
         "DataResult": "2026-07-21",
         "Orgao": "SECRETARIA DA SAUDE",
