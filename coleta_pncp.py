@@ -19,7 +19,9 @@ DIAS_RETROATIVOS = 365
 TEMPO_LIMITE_SEGURO = 19800  # 5h 30min para salvar antes do timeout
 JANELA_DIAS = 1  # Define quantos dias processar por ciclo de Action
 
+# NOVAS VARIÁVEIS DE AMBIENTE:
 DATA_INICIO_FORCADA = os.environ.get("DATA_INICIO_FORCADA", "") 
+SINGLE_RUN = os.environ.get("SINGLE_RUN", "false").lower() == "true"
 MODALIDADES_BUSCA = [6] 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -86,7 +88,17 @@ def salvar_estado(banco, proximo_dia):
     banco_limpo = remover_duplicidades(banco)
     
     lista_final = list(banco_limpo.values())
-    lista_final.sort(key=lambda x: x.get('DataResult', ''), reverse=True)
+    
+    # Nova ordenação inteligente: Data (Mais recente), Licitação (Agrupada), Item (Crescente)
+    lista_final.sort(
+        key=lambda x: (
+            x.get('DataResult', ''), 
+            x.get('Licitacao', ''), 
+            -int(x.get('Item', 0)) if str(x.get('Item', 0)).isdigit() else 0
+        ), 
+        reverse=True
+    )
+    
     with open(ARQ_DADOS, 'w', encoding='utf-8') as f:
         json.dump(lista_final, f, indent=4, ensure_ascii=False)
     
@@ -263,6 +275,12 @@ def main():
             break
 
     salvar_estado(banco_total, data_atual)
+
+    # --- TRAVA DO SINGLE RUN ---
+    if SINGLE_RUN:
+        print("\n🛑 [SINGLE RUN ATIVADO] Execução de 1 ciclo concluída. O script não acionará a próxima rotina.")
+        sys.exit(0)
+    # ---------------------------
 
     if data_atual.date() < hoje.date():
         print(f"\n⏳ Lote processado. Faltam mais dias até hoje. Acionando próxima rotina...")
