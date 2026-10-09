@@ -110754,12 +110754,24 @@
         "DataFimPropostas": "2025-11-27T08:30:00"
     },
     {
+        "DataPublicacao": "20251201",
+        "DataResult": "2025-12-01",
+        "Orgao": "MUNICIPIO DE CAXAMBU",
+        "UF": "MG",
+        "Municipio": "Caxambu",
+        "Edital": "086/2025",
+        "Licitacao": "18008870000172002442025",
+        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
+        "UASG": "1",
+        "DataFimPropostas": "2025-11-27T09:00:00",
         "Item": 11,
         "Descricao": "AZITROMICINA 500 MG COMP",
         "Qtd": 1500.0,
         "Unitario": 0.78,
         "Total": 1170.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251201",
         "DataResult": "2025-12-01",
         "Orgao": "MUNICIPIO DE CAXAMBU",
@@ -110769,15 +110781,15 @@
         "Licitacao": "18008870000172002442025",
         "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
         "UASG": "1",
-        "DataFimPropostas": "2025-11-27T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-27T09:00:00",
         "Item": 20,
         "Descricao": "CARBONATO DE LÍTIO 300 MG COMP",
         "Qtd": 10000.0,
         "Unitario": 0.21,
         "Total": 2100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251201",
         "DataResult": "2025-12-01",
         "Orgao": "MUNICIPIO DE CAXAMBU",
@@ -110787,15 +110799,15 @@
         "Licitacao": "18008870000172002442025",
         "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
         "UASG": "1",
-        "DataFimPropostas": "2025-11-27T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-27T09:00:00",
         "Item": 34,
         "Descricao": "FOLINATO DE CÁLCIO 15 MG COMPRIMIDO",
         "Qtd": 500.0,
         "Unitario": 2.42,
         "Total": 1210.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251201",
         "DataResult": "2025-12-01",
         "Orgao": "MUNICIPIO DE CAXAMBU",
@@ -110805,25 +110817,13 @@
         "Licitacao": "18008870000172002442025",
         "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
         "UASG": "1",
-        "DataFimPropostas": "2025-11-27T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-27T09:00:00",
         "Item": 56,
         "Descricao": "VALPROATO DE SÓDIO 50 MG/ML XAROPE 100 ML",
         "Qtd": 350.0,
         "Unitario": 5.08,
         "Total": 1778.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251201",
-        "DataResult": "2025-12-01",
-        "Orgao": "MUNICIPIO DE CAXAMBU",
-        "UF": "MG",
-        "Municipio": "Caxambu",
-        "Edital": "086/2025",
-        "Licitacao": "18008870000172002442025",
-        "Link": "https://pncp.gov.br/app/editais/18008870000172/2025/244",
-        "UASG": "1",
-        "DataFimPropostas": "2025-11-27T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 10,
