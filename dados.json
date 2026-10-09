@@ -72,6 +72,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260918",
+        "DataResult": "2026-10-08",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "166/2026",
+        "Licitacao": "10572022000180006052026",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/605",
+        "UASG": "926150",
+        "DataFimPropostas": "2026-10-05T09:00:00",
+        "Item": 1,
+        "Descricao": "Prednisona dosagem: 5 mg",
+        "Qtd": 1187824.0,
+        "Unitario": 0.0599,
+        "Total": 71150.6576,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260820",
         "DataResult": "2026-10-07",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
