@@ -252,6 +252,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260910",
+        "DataResult": "2026-10-05",
+        "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
+        "UF": "MG",
+        "Municipio": "Montes Claros",
+        "Edital": "339/2026",
+        "Licitacao": "22675359000100000682026",
+        "Link": "https://pncp.gov.br/app/editais/22675359000100/2026/68",
+        "UASG": "2311076",
+        "DataFimPropostas": "2026-09-24T09:00:00",
+        "Item": 125,
+        "Descricao": "CEFTRIAXONA - PRINCIPIO ATIVO: CEFTRIAXONA; CONCENTRACAO/DOSAGEM: 1 G; FORMA FARMACEUTICA: PO PARA SOLUCAO INJETAVEL; APRESENTACAO: FRASCO-AMPOLA; COMP",
+        "Qtd": 25000.0,
+        "Unitario": 3.36,
+        "Total": 84000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260904",
         "DataResult": "2026-10-05",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
