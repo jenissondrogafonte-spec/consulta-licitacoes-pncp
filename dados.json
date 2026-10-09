@@ -90,6 +90,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20261008",
+        "DataResult": "2026-10-08",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Palmares",
+        "Edital": "011/2026",
+        "Licitacao": "00562279000105000372026",
+        "Link": "https://pncp.gov.br/app/editais/00562279000105/2026/37",
+        "UASG": "1",
+        "DataFimPropostas": "2026-09-28T09:00:00",
+        "Item": 27,
+        "Descricao": "SULFAMETOXAZOL, COMPOSIÇÃO:ASSOCIADO À TRIMETOPRIMA, CONCENTRAÇÃO:400MG + 80MG",
+        "Qtd": 45000.0,
+        "Unitario": 0.15,
+        "Total": 6750.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260820",
         "DataResult": "2026-10-07",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
