@@ -101592,12 +101592,6 @@
         "DataFimPropostas": "2026-01-28T08:30:00"
     },
     {
-        "Item": 1,
-        "Descricao": "Oxcarbazepina",
-        "Qtd": 147744.0,
-        "Unitario": 0.73,
-        "Total": 107853.12,
-        "Status": "Venceu",
         "DataPublicacao": "20251205",
         "DataResult": "2026-01-28",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -101607,7 +101601,13 @@
         "Licitacao": "10572022000180012552025",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1255",
         "UASG": "926150",
-        "DataFimPropostas": "2025-12-19T09:00:00"
+        "DataFimPropostas": "2025-12-19T09:00:00",
+        "Item": 1,
+        "Descricao": "Oxcarbazepina",
+        "Qtd": 147744.0,
+        "Unitario": 0.73,
+        "Total": 107853.12,
+        "Status": "Venceu"
     },
     {
         "Item": 17,
@@ -101826,12 +101826,6 @@
         "DataFimPropostas": "2025-12-09T12:59:00"
     },
     {
-        "Item": 60,
-        "Descricao": "MALEATO DE LEVOMEPROMAZINA EM COMPRIMIDO COM 100 MG:",
-        "Qtd": 467500.0,
-        "Unitario": 0.61,
-        "Total": 285175.0,
-        "Status": "Venceu",
         "DataPublicacao": "20251205",
         "DataResult": "2026-01-26",
         "Orgao": "MUNICIPIO DE ARACAJU",
@@ -101841,7 +101835,13 @@
         "Licitacao": "13128780004431001492025",
         "Link": "https://pncp.gov.br/app/editais/13128780004431/2025/149",
         "UASG": "1929",
-        "DataFimPropostas": "2025-12-29T09:00:00"
+        "DataFimPropostas": "2025-12-29T09:00:00",
+        "Item": 60,
+        "Descricao": "MALEATO DE LEVOMEPROMAZINA EM COMPRIMIDO COM 100 MG:",
+        "Qtd": 467500.0,
+        "Unitario": 0.61,
+        "Total": 285175.0,
+        "Status": "Venceu"
     },
     {
         "Item": 1,
