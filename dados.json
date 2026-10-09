@@ -98010,12 +98010,24 @@
         "DataFimPropostas": "2025-11-10T09:00:00"
     },
     {
+        "DataPublicacao": "20251209",
+        "DataResult": "2026-02-10",
+        "Orgao": "MUNICIPIO DE RIO DE JANEIRO",
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Edital": "90803/2025",
+        "Licitacao": "42498733000148024922025",
+        "Link": "https://pncp.gov.br/app/editais/42498733000148/2025/2492",
+        "UASG": "986001",
+        "DataFimPropostas": "2025-12-22T11:00:00",
         "Item": 2,
         "Descricao": "Diazepam",
         "Qtd": 59703.0,
         "Unitario": 0.7572,
         "Total": 45207.1116,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-10",
         "Orgao": "MUNICIPIO DE RIO DE JANEIRO",
@@ -98025,25 +98037,13 @@
         "Licitacao": "42498733000148024922025",
         "Link": "https://pncp.gov.br/app/editais/42498733000148/2025/2492",
         "UASG": "986001",
-        "DataFimPropostas": "2025-12-22T11:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T11:00:00",
         "Item": 29,
         "Descricao": "Levofloxacino",
         "Qtd": 111099.0,
         "Unitario": 0.631,
         "Total": 70103.469,
-        "Status": "Venceu",
-        "DataPublicacao": "20251209",
-        "DataResult": "2026-02-10",
-        "Orgao": "MUNICIPIO DE RIO DE JANEIRO",
-        "UF": "RJ",
-        "Municipio": "Rio de Janeiro",
-        "Edital": "90803/2025",
-        "Licitacao": "42498733000148024922025",
-        "Link": "https://pncp.gov.br/app/editais/42498733000148/2025/2492",
-        "UASG": "986001",
-        "DataFimPropostas": "2025-12-22T11:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251203",
@@ -98856,12 +98856,24 @@
         "DataFimPropostas": "2025-12-22T08:00:00"
     },
     {
+        "DataPublicacao": "20251209",
+        "DataResult": "2026-02-05",
+        "Orgao": "ESTADO DE SERGIPE",
+        "UF": "SE",
+        "Municipio": "Aracaju",
+        "Edital": "PE0467/2025",
+        "Licitacao": "13128798001094005002025",
+        "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
+        "UASG": "13128798001094",
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 27,
         "Descricao": "ENALAPRIL - CONCENTRACAO/DOSAGEM 10 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DEADMINISTRACAO ORAL",
         "Qtd": 2000.0,
         "Unitario": 0.04,
         "Total": 80.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98871,15 +98883,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 28,
         "Descricao": "ENALAPRIL - CONCENTRACAO/DOSAGEM 5 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DEADMINISTRACAO ORAL",
         "Qtd": 2000.0,
         "Unitario": 0.05,
         "Total": 100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98889,15 +98901,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 29,
         "Descricao": "EPINEFRINA - CONCENTRACAO/DOSAGEM 1 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA COM 1ML,VIA DE ADMINISTRACAO INTRAMUSCULAR, INTRAVENOSO E SUBCUTANEA",
         "Qtd": 2000.0,
         "Unitario": 0.92,
         "Total": 1840.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98907,15 +98919,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 31,
         "Descricao": "ESPIRONOLACTONA - CONCENTRACAO/DOSAGEM 100 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 2000.0,
         "Unitario": 0.61,
         "Total": 1220.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98925,15 +98937,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 34,
         "Descricao": "FUROSEMIDA - CONCENTRACAO/DOSAGEM 40 MG,FORMA FARMACEUTICA COMPRIMIDO,FORMADE APRESENTACAO COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 5000.0,
         "Unitario": 0.05,
         "Total": 250.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98943,15 +98955,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 35,
         "Descricao": "FUROSEMIDA - CONCENTRACAO/DOSAGEM 20 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA COM 2ML,VIA DE ADMINISTRACAO INTRAVENOSOE INTRAMUSCULAR",
         "Qtd": 6000.0,
         "Unitario": 0.61,
         "Total": 3660.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98961,15 +98973,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 38,
         "Descricao": "HIDROCLOROTIAZIDA - CONCENTRACAO/DOSAGEM 25 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 5000.0,
         "Unitario": 0.03,
         "Total": 150.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98979,15 +98991,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 41,
         "Descricao": "LOSARTANA, POTASSICA - CONCENTRACAO/DOSAGEM 50 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMNISTRACAO ORAL",
         "Qtd": 5000.0,
         "Unitario": 0.04,
         "Total": 200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -98997,15 +99009,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 45,
         "Descricao": "METOPROLOL, SUCCINATO - CONCENTRACAO/DOSAGEM 50 MG,FORMA FARMACEUTICA COMPRIMIDO,FORMA DE APRESENTAÇÃO BLISTER OU STRIP,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 3000.0,
         "Unitario": 0.41,
         "Total": 1230.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -99015,15 +99027,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 46,
         "Descricao": "METOPROLOL, SUCCINATO - CONCENTRACAO/DOSAGEM 25 MG,FORMA FARMACEUTICA COMPRIMIDO DE LIBERACAO CONTROLADA,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 3000.0,
         "Unitario": 0.29,
         "Total": 870.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -99033,25 +99045,13 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 48,
         "Descricao": "NIFEDIPINO - CONCENTRACAO/DOSAGEM 20 MG,FORMA FARMACEUTICA COMPRIMIDO DE LIBERACAO PROLONGADA,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 1200.0,
         "Unitario": 0.16,
         "Total": 192.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251209",
-        "DataResult": "2026-02-05",
-        "Orgao": "ESTADO DE SERGIPE",
-        "UF": "SE",
-        "Municipio": "Aracaju",
-        "Edital": "PE0467/2025",
-        "Licitacao": "13128798001094005002025",
-        "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
-        "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 51,
@@ -99072,12 +99072,24 @@
         "DataFimPropostas": "2025-12-22T08:00:00"
     },
     {
+        "DataPublicacao": "20251209",
+        "DataResult": "2026-02-05",
+        "Orgao": "ESTADO DE SERGIPE",
+        "UF": "SE",
+        "Municipio": "Aracaju",
+        "Edital": "PE0467/2025",
+        "Licitacao": "13128798001094005002025",
+        "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
+        "UASG": "13128798001094",
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 52,
         "Descricao": "NOREPINEFRINA - CONCENTRACAO/DOSAGEM 2 MG/4ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLACOM 4ML,VIA DE ADMINISTRACAO INTRAVENOSO",
         "Qtd": 4000.0,
         "Unitario": 1.1,
         "Total": 4400.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -99087,15 +99099,15 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 55,
         "Descricao": "SINVASTATINA - CONCENTRACAO/DOSAGEM 40 MG,FORMA FARMACEUTICA COMPRIMIDO,VIADE ADMINISTRACAO ORAL",
         "Qtd": 5000.0,
         "Unitario": 0.11,
         "Total": 550.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-02-05",
         "Orgao": "ESTADO DE SERGIPE",
@@ -99105,25 +99117,13 @@
         "Licitacao": "13128798001094005002025",
         "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
         "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-22T08:00:00",
         "Item": 56,
         "Descricao": "SINVASTATINA - CONCENTRACAO/DOSAGEM 20 MG,FORMA FARMACEUTICA COMPRIMIDO,VIADE ADMINISTRACAO ORAL",
         "Qtd": 5000.0,
         "Unitario": 0.06,
         "Total": 300.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251209",
-        "DataResult": "2026-02-05",
-        "Orgao": "ESTADO DE SERGIPE",
-        "UF": "SE",
-        "Municipio": "Aracaju",
-        "Edital": "PE0467/2025",
-        "Licitacao": "13128798001094005002025",
-        "Link": "https://pncp.gov.br/app/editais/13128798001094/2025/500",
-        "UASG": "13128798001094",
-        "DataFimPropostas": "2025-12-22T08:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251202",
@@ -104634,12 +104634,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251209",
+        "DataResult": "2026-01-08",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "GC-SEPLAG-003-PL 0038/2025",
+        "Licitacao": "41090291000133003182025",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/318",
+        "UASG": "39",
+        "DataFimPropostas": "2025-12-19T08:30:00",
         "Item": 4,
         "Descricao": "CLOPIDOGREL 75 MG, COMPRIMIDO.",
         "Qtd": 5000.0,
         "Unitario": 0.35,
         "Total": 1750.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2026-01-08",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -104649,25 +104661,13 @@
         "Licitacao": "41090291000133003182025",
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/318",
         "UASG": "39",
-        "DataFimPropostas": "2025-12-19T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-19T08:30:00",
         "Item": 6,
         "Descricao": "FENTANILA 50 MCG/ML. AMPOLA DE 2ML.",
         "Qtd": 4000.0,
         "Unitario": 1.91,
         "Total": 7640.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251209",
-        "DataResult": "2026-01-08",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "GC-SEPLAG-003-PL 0038/2025",
-        "Licitacao": "41090291000133003182025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/318",
-        "UASG": "39",
-        "DataFimPropostas": "2025-12-19T08:30:00"
+        "Status": "Venceu"
     },
     {
         "Item": 1,
@@ -107820,12 +107820,24 @@
         "DataFimPropostas": "2025-11-04T09:59:00"
     },
     {
+        "DataPublicacao": "20251209",
+        "DataResult": "2025-12-19",
+        "Orgao": "MUNICIPIO DE SANTA BARBARA D'OESTE",
+        "UF": "SP",
+        "Municipio": "Santa Bárbara d'Oeste",
+        "Edital": "123/2025",
+        "Licitacao": "46422408000152005832025",
+        "Link": "https://pncp.gov.br/app/editais/46422408000152/2025/583",
+        "UASG": "1",
+        "DataFimPropostas": "2025-12-18T09:00:00",
         "Item": 6,
         "Descricao": "BIPERIDENO 2MG - COMPRIMIDO",
         "Qtd": 180000.0,
         "Unitario": 0.24,
         "Total": 43200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251209",
         "DataResult": "2025-12-19",
         "Orgao": "MUNICIPIO DE SANTA BARBARA D'OESTE",
@@ -107835,25 +107847,13 @@
         "Licitacao": "46422408000152005832025",
         "Link": "https://pncp.gov.br/app/editais/46422408000152/2025/583",
         "UASG": "1",
-        "DataFimPropostas": "2025-12-18T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-18T09:00:00",
         "Item": 10,
         "Descricao": "CARBONATO DE LÍTIO 300MG - COMPRIMIDO",
         "Qtd": 150000.0,
         "Unitario": 0.229,
         "Total": 34350.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251209",
-        "DataResult": "2025-12-19",
-        "Orgao": "MUNICIPIO DE SANTA BARBARA D'OESTE",
-        "UF": "SP",
-        "Municipio": "Santa Bárbara d'Oeste",
-        "Edital": "123/2025",
-        "Licitacao": "46422408000152005832025",
-        "Link": "https://pncp.gov.br/app/editais/46422408000152/2025/583",
-        "UASG": "1",
-        "DataFimPropostas": "2025-12-18T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 1,
