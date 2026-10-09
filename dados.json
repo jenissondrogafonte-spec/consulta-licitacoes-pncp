@@ -102258,12 +102258,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251204",
+        "DataResult": "2026-01-22",
+        "Orgao": "MUNICIPIO DE CORIBE",
+        "UF": "BA",
+        "Municipio": "Coribe",
+        "Edital": "90033/2025",
+        "Licitacao": "13912084000181000292025",
+        "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
+        "UASG": "926606",
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 35,
         "Descricao": "Furosemida",
         "Qtd": 105000.0,
         "Unitario": 0.05,
         "Total": 5250.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102273,15 +102285,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 46,
         "Descricao": "Losartana potássica",
         "Qtd": 375000.0,
         "Unitario": 0.04,
         "Total": 15000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102291,15 +102303,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 54,
         "Descricao": "Metoprolol",
         "Qtd": 6000.0,
         "Unitario": 0.46,
         "Total": 2760.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102309,15 +102321,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 61,
         "Descricao": "Estradiol",
         "Qtd": 4500.0,
         "Unitario": 8.26,
         "Total": 37170.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102327,15 +102339,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 62,
         "Descricao": "Glicerol",
         "Qtd": 750.0,
         "Unitario": 3.24,
         "Total": 2430.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102345,15 +102357,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 87,
         "Descricao": "Simeticona",
         "Qtd": 4500.0,
         "Unitario": 1.31,
         "Total": 5895.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102363,15 +102375,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 107,
         "Descricao": "Fenobarbital Sódico",
         "Qtd": 450.0,
         "Unitario": 4.79,
         "Total": 2155.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102381,15 +102393,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 114,
         "Descricao": "Risperidona",
         "Qtd": 60000.0,
         "Unitario": 0.08,
         "Total": 4800.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102399,15 +102411,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 116,
         "Descricao": "Risperidona",
         "Qtd": 300.0,
         "Unitario": 8.2,
         "Total": 2460.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102417,15 +102429,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 136,
         "Descricao": "Atropina Sulfato",
         "Qtd": 3000.0,
         "Unitario": 0.83,
         "Total": 2490.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102435,15 +102447,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 146,
         "Descricao": "Clonidina Cloridrato",
         "Qtd": 50.0,
         "Unitario": 5.84,
         "Total": 292.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102453,15 +102465,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 162,
         "Descricao": "Cloreto De Potássio",
         "Qtd": 1000.0,
         "Unitario": 0.51,
         "Total": 510.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102471,15 +102483,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 186,
         "Descricao": "Epinefrina",
         "Qtd": 1500.0,
         "Unitario": 0.93,
         "Total": 1395.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102489,15 +102501,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 187,
         "Descricao": "Furosemida",
         "Qtd": 3000.0,
         "Unitario": 0.63,
         "Total": 1890.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102507,15 +102519,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 190,
         "Descricao": "Ipratrópio Brometo",
         "Qtd": 1000.0,
         "Unitario": 1.1,
         "Total": 1100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102525,15 +102537,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 195,
         "Descricao": "Glicose",
         "Qtd": 2000.0,
         "Unitario": 0.5,
         "Total": 1000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102543,15 +102555,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 210,
         "Descricao": "Lidocaína Cloridrato",
         "Qtd": 10.0,
         "Unitario": 49.1,
         "Total": 491.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102561,15 +102573,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 214,
         "Descricao": "Lidocaína Cloridrato",
         "Qtd": 200.0,
         "Unitario": 5.31,
         "Total": 1062.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102579,15 +102591,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 241,
         "Descricao": "Alfentanila Cloridrato",
         "Qtd": 100.0,
         "Unitario": 28.12,
         "Total": 2812.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102597,15 +102609,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 243,
         "Descricao": "Cetamina",
         "Qtd": 200.0,
         "Unitario": 64.15,
         "Total": 12830.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102615,15 +102627,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 246,
         "Descricao": "Diazepam",
         "Qtd": 2000.0,
         "Unitario": 0.84,
         "Total": 1680.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102633,15 +102645,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 251,
         "Descricao": "Fentanila",
         "Qtd": 500.0,
         "Unitario": 2.28,
         "Total": 1140.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102651,15 +102663,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 252,
         "Descricao": "Fentanila",
         "Qtd": 500.0,
         "Unitario": 3.38,
         "Total": 1690.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102669,15 +102681,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 253,
         "Descricao": "Flumazenil",
         "Qtd": 500.0,
         "Unitario": 6.44,
         "Total": 3220.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102687,15 +102699,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 254,
         "Descricao": "Haloperidol",
         "Qtd": 2000.0,
         "Unitario": 2.05,
         "Total": 4100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102705,15 +102717,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 255,
         "Descricao": "Midazolam",
         "Qtd": 600.0,
         "Unitario": 2.15,
         "Total": 1290.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102723,15 +102735,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 256,
         "Descricao": "Midazolam",
         "Qtd": 500.0,
         "Unitario": 2.42,
         "Total": 1210.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102741,15 +102753,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 262,
         "Descricao": "Naloxona Cloridrato",
         "Qtd": 100.0,
         "Unitario": 6.32,
         "Total": 632.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102759,15 +102771,15 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 266,
         "Descricao": "Tramadol Cloridrato",
         "Qtd": 3000.0,
         "Unitario": 1.0,
         "Total": 3000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-22",
         "Orgao": "MUNICIPIO DE CORIBE",
@@ -102777,25 +102789,13 @@
         "Licitacao": "13912084000181000292025",
         "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
         "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-16T09:00:00",
         "Item": 304,
         "Descricao": "Quetiapina",
         "Qtd": 4500.0,
         "Unitario": 0.1,
         "Total": 450.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251204",
-        "DataResult": "2026-01-22",
-        "Orgao": "MUNICIPIO DE CORIBE",
-        "UF": "BA",
-        "Municipio": "Coribe",
-        "Edital": "90033/2025",
-        "Licitacao": "13912084000181000292025",
-        "Link": "https://pncp.gov.br/app/editais/13912084000181/2025/29",
-        "UASG": "926606",
-        "DataFimPropostas": "2025-12-16T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 9,
@@ -104562,12 +104562,24 @@
         "DataFimPropostas": "2025-10-29T09:00:00"
     },
     {
+        "DataPublicacao": "20251204",
+        "DataResult": "2026-01-09",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RJ",
+        "Municipio": "Rio de Janeiro",
+        "Edital": "90064/2025",
+        "Licitacao": "15126437000305041392025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4139",
+        "UASG": "157243",
+        "DataFimPropostas": "2025-12-17T09:00:00",
         "Item": 38,
         "Descricao": "Fentanila",
         "Qtd": 7600.0,
         "Unitario": 2.04,
         "Total": 15504.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-09",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -104577,15 +104589,15 @@
         "Licitacao": "15126437000305041392025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4139",
         "UASG": "157243",
-        "DataFimPropostas": "2025-12-17T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-17T09:00:00",
         "Item": 68,
         "Descricao": "Midazolam",
         "Qtd": 48200.0,
         "Unitario": 2.85,
         "Total": 137370.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-09",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -104595,15 +104607,15 @@
         "Licitacao": "15126437000305041392025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4139",
         "UASG": "157243",
-        "DataFimPropostas": "2025-12-17T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-17T09:00:00",
         "Item": 101,
         "Descricao": "Tramadol Cloridrato",
         "Qtd": 1200.0,
         "Unitario": 0.89,
         "Total": 1068.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2026-01-09",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -104613,25 +104625,13 @@
         "Licitacao": "15126437000305041392025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4139",
         "UASG": "157243",
-        "DataFimPropostas": "2025-12-17T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-17T09:00:00",
         "Item": 102,
         "Descricao": "Tramadol Cloridrato",
         "Qtd": 26400.0,
         "Unitario": 0.88,
         "Total": 23232.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251204",
-        "DataResult": "2026-01-09",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RJ",
-        "Municipio": "Rio de Janeiro",
-        "Edital": "90064/2025",
-        "Licitacao": "15126437000305041392025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4139",
-        "UASG": "157243",
-        "DataFimPropostas": "2025-12-17T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 4,
@@ -108396,12 +108396,24 @@
         "DataFimPropostas": "2025-11-03T08:00:00"
     },
     {
+        "DataPublicacao": "20251204",
+        "DataResult": "2025-12-19",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "4491/2025",
+        "Licitacao": "11022597001325006982025",
+        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
+        "UASG": "9261",
+        "DataFimPropostas": "2025-12-19T13:30:00",
         "Item": 1,
         "Descricao": "(3183505) - SULFATO DE MAGNESIO - CONCENTRACAO/DOSAGEM 500 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 5400.0,
         "Unitario": 5.79,
         "Total": 31266.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-12-19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -108411,15 +108423,15 @@
         "Licitacao": "11022597001325006982025",
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
         "UASG": "9261",
-        "DataFimPropostas": "2025-12-19T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-19T13:30:00",
         "Item": 3,
         "Descricao": "(3200442) - SULFATO FERROSO - CONCENTRACAO/DOSAGEM 40 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 3700.0,
         "Unitario": 0.03,
         "Total": 122.1,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-12-19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -108429,15 +108441,15 @@
         "Licitacao": "11022597001325006982025",
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
         "UASG": "9261",
-        "DataFimPropostas": "2025-12-19T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-19T13:30:00",
         "Item": 9,
         "Descricao": "(3079694) - CLOPIDOGREL, BISSULFATO - CONCENTRACAO/DOSAGEM 75 MG,FORMA FARMACEUTICA COMPRIMIDO REVESTIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 5350.0,
         "Unitario": 0.33,
         "Total": 1765.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-12-19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -108447,15 +108459,15 @@
         "Licitacao": "11022597001325006982025",
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
         "UASG": "9261",
-        "DataFimPropostas": "2025-12-19T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-19T13:30:00",
         "Item": 13,
         "Descricao": "(3196216) - TROPICAMIDA - CONCENTRACAO/DOSAGEM 10 MG/ML,FORMA FARMACEUTICA SOLUCAO OFTALMICA,FORMA DE APRESENTACAO FRASCO,VIA DE ADMINISTRACAO OFTALMICA",
         "Qtd": 60.0,
         "Unitario": 13.56,
         "Total": 813.54,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-12-19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -108465,15 +108477,15 @@
         "Licitacao": "11022597001325006982025",
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
         "UASG": "9261",
-        "DataFimPropostas": "2025-12-19T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-19T13:30:00",
         "Item": 14,
         "Descricao": "(3198448) - PROPRANOLOL, CLORIDRATO - CONCENTRACAO/DOSAGEM 40 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 6250.0,
         "Unitario": 0.04,
         "Total": 218.75,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-12-19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -108483,25 +108495,13 @@
         "Licitacao": "11022597001325006982025",
         "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
         "UASG": "9261",
-        "DataFimPropostas": "2025-12-19T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2025-12-19T13:30:00",
         "Item": 15,
         "Descricao": "(3206220) - SINVASTATINA - CONCENTRACAO/DOSAGEM 20 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 9000.0,
         "Unitario": 0.06,
         "Total": 540.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251204",
-        "DataResult": "2025-12-19",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "4491/2025",
-        "Licitacao": "11022597001325006982025",
-        "Link": "https://pncp.gov.br/app/editais/11022597001325/2025/698",
-        "UASG": "9261",
-        "DataFimPropostas": "2025-12-19T13:30:00"
+        "Status": "Venceu"
     },
     {
         "Item": 1,
@@ -112014,12 +112014,24 @@
         "DataFimPropostas": "2025-10-29T08:59:00"
     },
     {
+        "DataPublicacao": "20251204",
+        "DataResult": "2025-11-28",
+        "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
+        "UF": "SP",
+        "Municipio": "São Miguel Arcanjo",
+        "Edital": "126/2025",
+        "Licitacao": "46634333000173011802025",
+        "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
+        "UASG": "7.2025",
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 41,
         "Descricao": "Carbamazepina 2%, suspensão oral, 100ml\r\n",
         "Qtd": 225.0,
         "Unitario": 5.99,
         "Total": 1347.75,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112029,15 +112041,15 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 42,
         "Descricao": "Carbamazepina 200mg\r\n",
         "Qtd": 45000.0,
         "Unitario": 0.152,
         "Total": 6840.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112047,15 +112059,15 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 162,
         "Descricao": "Ibuprofeno 100mg/ml, suspensão oral, gotas, 20ml\r\n",
         "Qtd": 1800.0,
         "Unitario": 1.78,
         "Total": 3204.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112065,15 +112077,15 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 164,
         "Descricao": "Imipramina, cloridrato, 25mg\r\n",
         "Qtd": 18750.0,
         "Unitario": 0.398,
         "Total": 7462.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112083,15 +112095,15 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 235,
         "Descricao": "Paracetamol 500mg\r\n",
         "Qtd": 25500.0,
         "Unitario": 0.056,
         "Total": 1428.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112101,15 +112113,15 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 256,
         "Descricao": "Risperidona 1mg/ml solução oral, 30ml\r\n",
         "Qtd": 225.0,
         "Unitario": 8.8,
         "Total": 1980.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112119,15 +112131,15 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 278,
         "Descricao": "Tramadol Cloridrato, 50mg\r\n\r\n",
         "Qtd": 45000.0,
         "Unitario": 0.113,
         "Total": 5085.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251204",
         "DataResult": "2025-11-28",
         "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
@@ -112137,25 +112149,13 @@
         "Licitacao": "46634333000173011802025",
         "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
         "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-11-11T09:00:00",
         "Item": 280,
         "Descricao": "Valproato de Sódio 50mg/ml, xarope, 100ml\r\n\r\n",
         "Qtd": 375.0,
         "Unitario": 5.1998,
         "Total": 1949.96,
-        "Status": "Venceu",
-        "DataPublicacao": "20251204",
-        "DataResult": "2025-11-28",
-        "Orgao": "MUNICIPIO DE SAO MIGUEL ARCANJO",
-        "UF": "SP",
-        "Municipio": "São Miguel Arcanjo",
-        "Edital": "126/2025",
-        "Licitacao": "46634333000173011802025",
-        "Link": "https://pncp.gov.br/app/editais/46634333000173/2025/1180",
-        "UASG": "7.2025",
-        "DataFimPropostas": "2025-11-11T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 33,
