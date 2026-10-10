@@ -96498,6 +96498,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251219",
+        "DataResult": "2026-02-23",
+        "Orgao": "MUNICIPIO DE UBERLANDIA",
+        "UF": "MG",
+        "Municipio": "Uberlândia",
+        "Edital": "90571/2025",
+        "Licitacao": "18431312000620002642025",
+        "Link": "https://pncp.gov.br/app/editais/18431312000620/2025/264",
+        "UASG": "926922",
+        "DataFimPropostas": "2026-01-09T09:00:00",
+        "Item": 7,
+        "Descricao": "Miconazol Nitrato",
+        "Qtd": 4000.0,
+        "Unitario": 2.3158,
+        "Total": 9263.2,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251212",
         "DataResult": "2026-02-23",
         "Orgao": "MUNICIPIO DE UBERLANDIA",
@@ -121053,12 +121071,6 @@
         "DataFimPropostas": "2025-02-21T09:31:00"
     },
     {
-        "Item": 19,
-        "Descricao": "NORETISTERONA 50mg+ESTRADIOL 5mg/mL 1mL INJETÁVEL",
-        "Qtd": 12000.0,
-        "Unitario": 6.25,
-        "Total": 75000.0,
-        "Status": "Venceu",
         "DataPublicacao": "20251219",
         "DataResult": "2025-10-23",
         "Orgao": "MUNICIPIO DE ITANHAEM",
@@ -121068,7 +121080,13 @@
         "Licitacao": "46578498000175004042025",
         "Link": "https://pncp.gov.br/app/editais/46578498000175/2025/404",
         "UASG": "11.2025",
-        "DataFimPropostas": "2025-09-25T10:00:00"
+        "DataFimPropostas": "2025-09-25T10:00:00",
+        "Item": 19,
+        "Descricao": "NORETISTERONA 50mg+ESTRADIOL 5mg/mL 1mL INJETÁVEL",
+        "Qtd": 12000.0,
+        "Unitario": 6.25,
+        "Total": 75000.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251217",
