@@ -1,23 +1,11 @@
 [
     {
-        "DataPublicacao": "20260901",
-        "DataResult": "2026-10-09",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "129/2026",
-        "Licitacao": "10572022000180005642026",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/564",
-        "UASG": "926150",
-        "DataFimPropostas": "2026-09-15T10:00:00",
         "Item": 9,
         "Descricao": "Omeprazol concentração: 20",
         "Qtd": 695336.0,
         "Unitario": 0.0693,
         "Total": 48186.7848,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260901",
         "DataResult": "2026-10-09",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -27,13 +15,25 @@
         "Licitacao": "10572022000180005642026",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/564",
         "UASG": "926150",
-        "DataFimPropostas": "2026-09-15T10:00:00",
+        "DataFimPropostas": "2026-09-15T10:00:00"
+    },
+    {
         "Item": 22,
         "Descricao": "Loratadina concentração: 1mg/ml, tipo medicamento: xarope",
         "Qtd": 6888.0,
         "Unitario": 2.6622,
         "Total": 18337.2336,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260901",
+        "DataResult": "2026-10-09",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "129/2026",
+        "Licitacao": "10572022000180005642026",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/564",
+        "UASG": "926150",
+        "DataFimPropostas": "2026-09-15T10:00:00"
     },
     {
         "Item": 28,
@@ -270,24 +270,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20260827",
-        "DataResult": "2026-10-06",
-        "Orgao": "MUNICIPIO DE FORTALEZA",
-        "UF": "CE",
-        "Municipio": "Fortaleza",
-        "Edital": "43/2026/2026",
-        "Licitacao": "07954605000160008872026",
-        "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/887",
-        "UASG": "25101",
-        "DataFimPropostas": "2026-09-11T09:00:00",
         "Item": 42967,
         "Descricao": "NITROGLICERINA 5MG/ML, SOLUÇÃO INJETÁVEL, AMPOLA 10ML. ()",
         "Qtd": 625.0,
         "Unitario": 41.0,
         "Total": 25625.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260827",
         "DataResult": "2026-10-06",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -297,15 +285,15 @@
         "Licitacao": "07954605000160008872026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/887",
         "UASG": "25101",
-        "DataFimPropostas": "2026-09-11T09:00:00",
+        "DataFimPropostas": "2026-09-11T09:00:00"
+    },
+    {
         "Item": 42968,
         "Descricao": "NITROGLICERINA 5MG/ML, SOLUÇÃO INJETÁVEL, AMPOLA 10ML. ()",
         "Qtd": 1875.0,
         "Unitario": 41.0,
         "Total": 76875.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260827",
         "DataResult": "2026-10-06",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -315,15 +303,15 @@
         "Licitacao": "07954605000160008872026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/887",
         "UASG": "25101",
-        "DataFimPropostas": "2026-09-11T09:00:00",
+        "DataFimPropostas": "2026-09-11T09:00:00"
+    },
+    {
         "Item": 42970,
         "Descricao": "SEVOFLURANO 100%, SOLUÇÃO PARA INALAÇÃO, FRASCO 250ML. ()",
         "Qtd": 250.0,
         "Unitario": 336.0,
         "Total": 84000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260827",
         "DataResult": "2026-10-06",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -333,13 +321,25 @@
         "Licitacao": "07954605000160008872026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/887",
         "UASG": "25101",
-        "DataFimPropostas": "2026-09-11T09:00:00",
+        "DataFimPropostas": "2026-09-11T09:00:00"
+    },
+    {
         "Item": 42971,
         "Descricao": "SEVOFLURANO 100%, SOLUÇÃO PARA INALAÇÃO, FRASCO 250ML. ()",
         "Qtd": 750.0,
         "Unitario": 336.0,
         "Total": 252000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260827",
+        "DataResult": "2026-10-06",
+        "Orgao": "MUNICIPIO DE FORTALEZA",
+        "UF": "CE",
+        "Municipio": "Fortaleza",
+        "Edital": "43/2026/2026",
+        "Licitacao": "07954605000160008872026",
+        "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/887",
+        "UASG": "25101",
+        "DataFimPropostas": "2026-09-11T09:00:00"
     },
     {
         "DataPublicacao": "20260910",
@@ -360,24 +360,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20260904",
-        "DataResult": "2026-10-05",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "DF",
-        "Municipio": "Brasília",
-        "Edital": "91/2026",
-        "Licitacao": "15126437000305035732026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3573",
-        "UASG": "155007",
-        "DataFimPropostas": "2026-09-17T09:30:00",
         "Item": 14,
         "Descricao": "Escopolamina Butilbrometo dosagem: 10, indicação: solução oral",
         "Qtd": 288.0,
         "Unitario": 5.7993,
         "Total": 1670.1984,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260904",
         "DataResult": "2026-10-05",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -387,15 +375,15 @@
         "Licitacao": "15126437000305035732026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3573",
         "UASG": "155007",
-        "DataFimPropostas": "2026-09-17T09:30:00",
+        "DataFimPropostas": "2026-09-17T09:30:00"
+    },
+    {
         "Item": 42,
         "Descricao": "Ibuprofeno dosagem: 600 IBUPROFENO; 600 MG; COMPRIMIDO OU CÁPSULA.. - REGISTRADO NA ANVISA COMO MEDICAMENTO.\n",
         "Qtd": 28800.0,
         "Unitario": 0.143,
         "Total": 4118.4,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260904",
         "DataResult": "2026-10-05",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -405,15 +393,15 @@
         "Licitacao": "15126437000305035732026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3573",
         "UASG": "155007",
-        "DataFimPropostas": "2026-09-17T09:30:00",
+        "DataFimPropostas": "2026-09-17T09:30:00"
+    },
+    {
         "Item": 50,
         "Descricao": "Metronidazol concentraçao: 100, forma farmaceutica: gel vaginal, característica adicional: com aplicador",
         "Qtd": 691.0,
         "Unitario": 6.3347,
         "Total": 4377.2777,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260904",
         "DataResult": "2026-10-05",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -423,13 +411,25 @@
         "Licitacao": "15126437000305035732026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3573",
         "UASG": "155007",
-        "DataFimPropostas": "2026-09-17T09:30:00",
+        "DataFimPropostas": "2026-09-17T09:30:00"
+    },
+    {
         "Item": 65,
         "Descricao": "Metoprolol princípio ativo: sal succinato, dosagem: 50, apresentação: liberação controlada",
         "Qtd": 8640.0,
         "Unitario": 0.5,
         "Total": 4320.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260904",
+        "DataResult": "2026-10-05",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "DF",
+        "Municipio": "Brasília",
+        "Edital": "91/2026",
+        "Licitacao": "15126437000305035732026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3573",
+        "UASG": "155007",
+        "DataFimPropostas": "2026-09-17T09:30:00"
     },
     {
         "DataPublicacao": "20260914",
@@ -558,24 +558,12 @@
         "DataFimPropostas": "2026-08-13T09:00:00"
     },
     {
-        "DataPublicacao": "20260909",
-        "DataResult": "2026-10-02",
-        "Orgao": "MUNICIPIO DE EXTREMA",
-        "UF": "MG",
-        "Municipio": "Extrema",
-        "Edital": "000116/2026",
-        "Licitacao": "18677591000100004572026",
-        "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
-        "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
         "Item": 3,
         "Descricao": "ADENOSINA, 3 MG/ML, SOLUÇÃO INJETÁVEL Apresentação: Ampola com 2mL. Unidade de fornecimento: Ampola.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 600.0,
         "Unitario": 7.45,
         "Total": 4470.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -585,15 +573,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 9,
         "Descricao": "AMIODARONA, 50 MG/ML, INJETÁVEL Apresentação: Ampola com 3mL. Unidade de fornecimento: Ampola.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 2000.0,
         "Unitario": 2.301,
         "Total": 4602.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -603,15 +591,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 28,
         "Descricao": "CIPROFLOXACINO CLORIDRATO, 2 MG/ML, SOLUÇÃO INJETÁVEL Apresentação: Bolsa ou Frasco com 100mL. Unidade de fornecimento: unidade.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 5000.0,
         "Unitario": 4.99,
         "Total": 24950.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -621,15 +609,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 41,
         "Descricao": "DEXAMETASONA, 4 MG/ML, SOLUÇÃO INJETÁVEL Apresentação: Ampola com 2,5mL. Unidade de fornecimento: Ampola.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 104000.0,
         "Unitario": 0.69,
         "Total": 71760.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -639,15 +627,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 49,
         "Descricao": "DOPAMINA, 5 MG/ML, SOLUÇÃO INJETÁVEL Apresentação: Ampola com 10mL. Unidade de fornecimento: Ampola.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 1000.0,
         "Unitario": 2.2999,
         "Total": 2299.9,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -657,15 +645,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 63,
         "Descricao": "FLUCONAZOL, 2 MG/ML, INJETÁVEL Apresentação: Bolsa ou Frasco com 100mL. Unidade de fornecimento: Unidade.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 300.0,
         "Unitario": 5.4999,
         "Total": 1649.97,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -675,15 +663,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 75,
         "Descricao": "HIDROCORTISONA, SAL SUCCINATO SÓDICO, 100 MG, PÓ LIÓFILO PARA INJETÁVEL Apresentação: Frasco - ampola. Unidade de fornecimento: Frasco - ampola.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 10000.0,
         "Unitario": 2.2999,
         "Total": 22999.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -693,15 +681,15 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 82,
         "Descricao": "LEVOFLOXACINO, 5 MG/ML, SOLUÇÃO INJETÁVEL - 100 ML Apresentação: Bolsa com 100mL. Unidade de fornecimento: Bolsa.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 480.0,
         "Unitario": 6.78,
         "Total": 3254.4,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260909",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE EXTREMA",
@@ -711,33 +699,33 @@
         "Licitacao": "18677591000100004572026",
         "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
         "UASG": "1114",
-        "DataFimPropostas": "2026-09-22T09:00:00",
+        "DataFimPropostas": "2026-09-22T09:00:00"
+    },
+    {
         "Item": 111,
         "Descricao": "SULFATO DE MAGNÉSIO, 50%, SOLUÇÃO INJETÁVEL Apresentação: Ampola com 10mL. Unidade de fornecimento: Ampola.  A embalagem deve apresentar a frase: venda proibida ao comércio. O fornecedor deve apresentar bula, registro do produto na ANVISA e Certificado de Boas Práticas de Fabricação (CBPF), em conformidade com as resoluções da ANVISA em vigência.",
         "Qtd": 1000.0,
         "Unitario": 5.3699,
         "Total": 5369.9,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260909",
+        "DataResult": "2026-10-02",
+        "Orgao": "MUNICIPIO DE EXTREMA",
+        "UF": "MG",
+        "Municipio": "Extrema",
+        "Edital": "000116/2026",
+        "Licitacao": "18677591000100004572026",
+        "Link": "https://pncp.gov.br/app/editais/18677591000100/2026/457",
+        "UASG": "1114",
+        "DataFimPropostas": "2026-09-22T09:00:00"
     },
     {
-        "DataPublicacao": "20260827",
-        "DataResult": "2026-10-02",
-        "Orgao": "MUNICIPIO DE FORTALEZA",
-        "UF": "CE",
-        "Municipio": "Fortaleza",
-        "Edital": "43/2026",
-        "Licitacao": "07954605000160008922026",
-        "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/892",
-        "UASG": "927744",
-        "DataFimPropostas": "2026-09-11T09:00:00",
         "Item": 2,
         "Descricao": "Nitroglicerina dosagem: 5, aplicação: injetável",
         "Qtd": 1875.0,
         "Unitario": 41.0,
         "Total": 76875.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260827",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -747,15 +735,15 @@
         "Licitacao": "07954605000160008922026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/892",
         "UASG": "927744",
-        "DataFimPropostas": "2026-09-11T09:00:00",
+        "DataFimPropostas": "2026-09-11T09:00:00"
+    },
+    {
         "Item": 3,
         "Descricao": "Nitroglicerina dosagem: 5, aplicação: injetável",
         "Qtd": 625.0,
         "Unitario": 41.0,
         "Total": 25625.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260827",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -765,15 +753,15 @@
         "Licitacao": "07954605000160008922026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/892",
         "UASG": "927744",
-        "DataFimPropostas": "2026-09-11T09:00:00",
+        "DataFimPropostas": "2026-09-11T09:00:00"
+    },
+    {
         "Item": 5,
         "Descricao": "Sevoflurano forma farmacêutica: líquido inalante",
         "Qtd": 750.0,
         "Unitario": 336.0,
         "Total": 252000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260827",
         "DataResult": "2026-10-02",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -783,33 +771,33 @@
         "Licitacao": "07954605000160008922026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/892",
         "UASG": "927744",
-        "DataFimPropostas": "2026-09-11T09:00:00",
+        "DataFimPropostas": "2026-09-11T09:00:00"
+    },
+    {
         "Item": 6,
         "Descricao": "Sevoflurano forma farmacêutica: líquido inalante",
         "Qtd": 250.0,
         "Unitario": 336.0,
         "Total": 84000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260827",
+        "DataResult": "2026-10-02",
+        "Orgao": "MUNICIPIO DE FORTALEZA",
+        "UF": "CE",
+        "Municipio": "Fortaleza",
+        "Edital": "43/2026",
+        "Licitacao": "07954605000160008922026",
+        "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/892",
+        "UASG": "927744",
+        "DataFimPropostas": "2026-09-11T09:00:00"
     },
     {
-        "DataPublicacao": "20260903",
-        "DataResult": "2026-10-01",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "47/2026",
-        "Licitacao": "15126437000305035492026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
-        "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 7,
         "Descricao": "Alopurinol Alopurinol, Dosagem:100 Mg ALOPURINOL; 100 MG; COMPRIMIDO. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 1620.0,
         "Unitario": 0.13,
         "Total": 210.6,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260903",
         "DataResult": "2026-10-01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -819,15 +807,33 @@
         "Licitacao": "15126437000305035492026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
         "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00",
+        "DataFimPropostas": "2026-09-16T10:00:00"
+    },
+    {
         "Item": 13,
         "Descricao": "Ipratrópio Brometo Ipratrópio Brometo, Dosagem:0,25 MG/ML, Uso:Solução Para Inalação BROMETO DE IPRATRÓPIO; 0,25 MG/ML; SOLUÇÃO INALATÓRIA. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 1660.0,
         "Unitario": 1.59,
         "Total": 2639.4,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260903",
+        "DataResult": "2026-10-01",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "47/2026",
+        "Licitacao": "15126437000305035492026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
+        "UASG": "155013",
+        "DataFimPropostas": "2026-09-16T10:00:00"
     },
     {
+        "Item": 21,
+        "Descricao": "Loratadina concentração: 1mg/ml, tipo medicamento: xarope",
+        "Qtd": 20667.0,
+        "Unitario": 2.6622,
+        "Total": 55019.6874,
+        "Status": "Venceu",
         "DataPublicacao": "20260901",
         "DataResult": "2026-10-01",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -837,13 +843,7 @@
         "Licitacao": "10572022000180005642026",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/564",
         "UASG": "926150",
-        "DataFimPropostas": "2026-09-15T10:00:00",
-        "Item": 21,
-        "Descricao": "Loratadina concentração: 1mg/ml, tipo medicamento: xarope",
-        "Qtd": 20667.0,
-        "Unitario": 2.6622,
-        "Total": 55019.6874,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-15T10:00:00"
     },
     {
         "Item": 14,
@@ -1134,24 +1134,12 @@
         "DataFimPropostas": "2026-08-21T09:00:00"
     },
     {
-        "DataPublicacao": "20260902",
-        "DataResult": "2026-09-29",
-        "Orgao": "MUNICIPIO DE OURO FINO",
-        "UF": "MG",
-        "Municipio": "Ouro Fino",
-        "Edital": "00197/26/2026",
-        "Licitacao": "18671271000134002042026",
-        "Link": "https://pncp.gov.br/app/editais/18671271000134/2026/204",
-        "UASG": "1806",
-        "DataFimPropostas": "2026-09-15T08:00:00",
         "Item": 51,
         "Descricao": "CETOCONAZOL CREME 30GR.",
         "Qtd": 1500.0,
         "Unitario": 2.24,
         "Total": 3360.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE OURO FINO",
@@ -1161,15 +1149,15 @@
         "Licitacao": "18671271000134002042026",
         "Link": "https://pncp.gov.br/app/editais/18671271000134/2026/204",
         "UASG": "1806",
-        "DataFimPropostas": "2026-09-15T08:00:00",
+        "DataFimPropostas": "2026-09-15T08:00:00"
+    },
+    {
         "Item": 70,
         "Descricao": "DEXAMETASONA 1% CREME 10GR",
         "Qtd": 6000.0,
         "Unitario": 1.47,
         "Total": 8820.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE OURO FINO",
@@ -1179,15 +1167,15 @@
         "Licitacao": "18671271000134002042026",
         "Link": "https://pncp.gov.br/app/editais/18671271000134/2026/204",
         "UASG": "1806",
-        "DataFimPropostas": "2026-09-15T08:00:00",
+        "DataFimPropostas": "2026-09-15T08:00:00"
+    },
+    {
         "Item": 78,
         "Descricao": "DIPIRONA 500MG/10ML GOTAS",
         "Qtd": 10000.0,
         "Unitario": 1.02,
         "Total": 10200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE OURO FINO",
@@ -1197,15 +1185,15 @@
         "Licitacao": "18671271000134002042026",
         "Link": "https://pncp.gov.br/app/editais/18671271000134/2026/204",
         "UASG": "1806",
-        "DataFimPropostas": "2026-09-15T08:00:00",
+        "DataFimPropostas": "2026-09-15T08:00:00"
+    },
+    {
         "Item": 138,
         "Descricao": "MICONAZOL CREME DERMATOLODICO 20MG",
         "Qtd": 2000.0,
         "Unitario": 2.26,
         "Total": 4520.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE OURO FINO",
@@ -1215,33 +1203,33 @@
         "Licitacao": "18671271000134002042026",
         "Link": "https://pncp.gov.br/app/editais/18671271000134/2026/204",
         "UASG": "1806",
-        "DataFimPropostas": "2026-09-15T08:00:00",
+        "DataFimPropostas": "2026-09-15T08:00:00"
+    },
+    {
         "Item": 173,
         "Descricao": "SIMETICONA 75 MG/ML",
         "Qtd": 2000.0,
         "Unitario": 1.148,
         "Total": 2296.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260902",
+        "DataResult": "2026-09-29",
+        "Orgao": "MUNICIPIO DE OURO FINO",
+        "UF": "MG",
+        "Municipio": "Ouro Fino",
+        "Edital": "00197/26/2026",
+        "Licitacao": "18671271000134002042026",
+        "Link": "https://pncp.gov.br/app/editais/18671271000134/2026/204",
+        "UASG": "1806",
+        "DataFimPropostas": "2026-09-15T08:00:00"
     },
     {
-        "DataPublicacao": "20260908",
-        "DataResult": "2026-09-29",
-        "Orgao": "MUNICIPIO DE JANAUBA",
-        "UF": "MG",
-        "Municipio": "Janaúba",
-        "Edital": "25/2026",
-        "Licitacao": "18017392000167001362026",
-        "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
-        "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
         "Item": 42,
         "Descricao": "Butilbrometo de escopolamina 20 mgml injetável. Butilbrometo de escopolamina 20 mgmL solução injetável ampola com 1 ml.",
         "Qtd": 2000.0,
         "Unitario": 0.68,
         "Total": 1360.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1251,15 +1239,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 56,
         "Descricao": "Cefalexina 500 mg. Princípio Ativo; Cefalexina  mg; Concentração: 500 MG; Forma Farmacêutica: Comprimido",
         "Qtd": 60000.0,
         "Unitario": 0.47,
         "Total": 28200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1269,15 +1257,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 72,
         "Descricao": "Cloridrato de tiamina 100 mgmL. Solução injetável de cloridrato de tiamina 100 mgmL – Ampola 1 ml",
         "Qtd": 500.0,
         "Unitario": 4.64,
         "Total": 2320.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1287,15 +1275,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 78,
         "Descricao": "Clorpromazina, cloridrato 100 mg. Princípio ativo: Clorpromazina  ; Concentração: 100 MG; Forma Farmacêutica: Comprimido",
         "Qtd": 10000.0,
         "Unitario": 0.29,
         "Total": 2900.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1305,15 +1293,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 81,
         "Descricao": "Dexametasona 1mgg 0,1%. DEXAMETASONA 1 MGG 0,1%; CREME DERMATOLOGICO BISNAGA 10 G;",
         "Qtd": 15000.0,
         "Unitario": 1.48,
         "Total": 22200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1323,15 +1311,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 83,
         "Descricao": "Dexclorfeniramina maleato 0,4  mgml. Princípio Ativo; Dexclorfeniramina Maleato ; Concentração: 0,4 MGML Forma Farmacêutica: Solução oral, frasco 100 a 120 ml",
         "Qtd": 500.0,
         "Unitario": 1.6,
         "Total": 800.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1341,15 +1329,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 85,
         "Descricao": "Diclofenaco de sódio 75 mg3 ml. Princípio Ativo; Diclofenaco de Sódio; Concentração: 75 MG Forma Farmacêutica: Ampola 3 ml.",
         "Qtd": 2000.0,
         "Unitario": 0.7,
         "Total": 1400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1359,15 +1347,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 115,
         "Descricao": "Escopolamina 20 mgml  Buscopam Injetável . Princípio ativo: Escopolamina; Concentração: 20 mgml; Forma Farmacêutica: Frasco – Ampola 1 ml",
         "Qtd": 5000.0,
         "Unitario": 0.68,
         "Total": 3400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1377,15 +1365,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 147,
         "Descricao": "Levomepromazina 100 mg. Princípio ativo: Levomepromazina; Concentração: 100 MG; Forma Farmacêutica: Comprimido;",
         "Qtd": 40000.0,
         "Unitario": 0.56,
         "Total": 22400.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1395,15 +1383,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 150,
         "Descricao": "Levotiroxina sodica 25 mcg. Princípio ativo: Levotiroxina; Concentração: 25 MG; Forma Farmacêutica: Comprimido;",
         "Qtd": 15000.0,
         "Unitario": 0.08,
         "Total": 1200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1413,15 +1401,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 151,
         "Descricao": "Levotiroxina sodica 50 mcg. Princípio ativo: Levotiroxina; Concentração: 50 MG; Forma Farmacêutica: Comprimido;",
         "Qtd": 15000.0,
         "Unitario": 0.08,
         "Total": 1200.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1431,15 +1419,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 152,
         "Descricao": "Levotiroxina sodica 100 mcg. Princípio ativo: Levotiroxina; Concentração: 100 MG; Forma Farmacêutica: Comprimido;",
         "Qtd": 15000.0,
         "Unitario": 0.13,
         "Total": 1950.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1449,15 +1437,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 178,
         "Descricao": "Nitrato de Miconazol 20 mgg – Creme dermatológico. Princípio ativo: Nitrato de Miconazol; Concentração: 20 MG; Forma Farmacêutica: Creme, Bisnaga com 28 gr;",
         "Qtd": 1000.0,
         "Unitario": 2.34,
         "Total": 2340.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1467,15 +1455,15 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 229,
         "Descricao": "Succinato sódico de hidrocortisona 500 mg pó liófilo para solução injetável. Succinato sódico de hidrocortisona 500 mg Pó liófilo para solução injetável Frasco-Ampola.",
         "Qtd": 2000.0,
         "Unitario": 4.41,
         "Total": 8820.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -1485,13 +1473,25 @@
         "Licitacao": "18017392000167001362026",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
         "UASG": "001",
-        "DataFimPropostas": "2026-09-14T09:30:00",
+        "DataFimPropostas": "2026-09-14T09:30:00"
+    },
+    {
         "Item": 245,
         "Descricao": "Tramadol 50 mgml cloridrato solução injetável . Tramadol 50 mgml Cloridrato Solução Injetável Ampola com 1 ml.",
         "Qtd": 9000.0,
         "Unitario": 0.93,
         "Total": 8370.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260908",
+        "DataResult": "2026-09-29",
+        "Orgao": "MUNICIPIO DE JANAUBA",
+        "UF": "MG",
+        "Municipio": "Janaúba",
+        "Edital": "25/2026",
+        "Licitacao": "18017392000167001362026",
+        "Link": "https://pncp.gov.br/app/editais/18017392000167/2026/136",
+        "UASG": "001",
+        "DataFimPropostas": "2026-09-14T09:30:00"
     },
     {
         "Item": 3,
@@ -1638,6 +1638,12 @@
         "DataFimPropostas": "2026-08-10T09:00:00"
     },
     {
+        "Item": 26,
+        "Descricao": "Dimenidrinato apresentação: associado com piridoxina + glicose + frutose, dosagem: 3mg + 5mg + 100mg + 100mg/ml, tipo medicamento: solução injetável",
+        "Qtd": 1000.0,
+        "Unitario": 8.9,
+        "Total": 8900.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "COMANDO DO EXERCITO",
@@ -1647,13 +1653,7 @@
         "Licitacao": "00394452000103194142026",
         "Link": "https://pncp.gov.br/app/editais/00394452000103/2026/19414",
         "UASG": "160199",
-        "DataFimPropostas": "2026-09-18T08:59:00",
-        "Item": 26,
-        "Descricao": "Dimenidrinato apresentação: associado com piridoxina + glicose + frutose, dosagem: 3mg + 5mg + 100mg + 100mg/ml, tipo medicamento: solução injetável",
-        "Qtd": 1000.0,
-        "Unitario": 8.9,
-        "Total": 8900.0,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-18T08:59:00"
     },
     {
         "Item": 4,
@@ -1746,24 +1746,12 @@
         "DataFimPropostas": "2026-08-21T10:00:00"
     },
     {
-        "DataPublicacao": "20260902",
-        "DataResult": "2026-09-24",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "TO",
-        "Municipio": "Araguaína",
-        "Edital": "14/2026",
-        "Licitacao": "15126437000305035282026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
-        "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
         "Item": 31,
         "Descricao": "Cloreto De Potássio dosagem: 6%, apresentação: solução oral",
         "Qtd": 500.0,
         "Unitario": 2.72,
         "Total": 1360.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1773,15 +1761,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 38,
         "Descricao": "Bupivacaína Cloridrato Bupivacaína Cloridrato, Apresentação:Associada À Glicose, Dosagem:0,5% + 8%, Tipo:Solução Injetável",
         "Qtd": 500.0,
         "Unitario": 3.53,
         "Total": 1765.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1791,15 +1779,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 48,
         "Descricao": "Lidocaína Cloridrato Lidocaína Cloridrato, Dosagem:2%, Apresentação:Geléia",
         "Qtd": 300.0,
         "Unitario": 4.17,
         "Total": 1251.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1809,15 +1797,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 49,
         "Descricao": "Lidocaína Cloridrato dosagem: 2%, apresentação: injetável",
         "Qtd": 500.0,
         "Unitario": 8.27,
         "Total": 4135.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1827,15 +1815,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 51,
         "Descricao": "Oxibuprocaína Oxibuprocaína, Concentração:4 MG/ML, Forma Farmacêutica:Solução Oftálmica",
         "Qtd": 50.0,
         "Unitario": 20.06,
         "Total": 1003.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1845,15 +1833,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 66,
         "Descricao": "Epinefrina dosagem: 1mg/ml, uso: solução injetável",
         "Qtd": 1000.0,
         "Unitario": 1.13,
         "Total": 1130.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1863,15 +1851,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 77,
         "Descricao": "Norepinefrina Norepinefrina, Concentração:2 MG/ML, Forma Farmacêutica:Solução Injetável",
         "Qtd": 800.0,
         "Unitario": 2.1,
         "Total": 1680.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1881,15 +1869,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 116,
         "Descricao": "Simeticona concentração: 75, forma farmacêutica: emulsão oral - gotas",
         "Qtd": 1500.0,
         "Unitario": 1.57,
         "Total": 2355.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1899,15 +1887,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 122,
         "Descricao": "Sulfato De Magnésio Sulfato De Magnésio, Concentração:50%, Uso:Solução Injetável",
         "Qtd": 1000.0,
         "Unitario": 5.75,
         "Total": 5750.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1917,15 +1905,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 147,
         "Descricao": "Bromoprida Bromoprida, Dosagem:5 MG/ML, Apresentação:Injetável",
         "Qtd": 6500.0,
         "Unitario": 1.21,
         "Total": 7865.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1935,15 +1923,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 148,
         "Descricao": "Escopolamina Butilbrometo Escopolamina Butilbrometo, Dosagem:20 MG/ML, Indicação:Solução Injetável",
         "Qtd": 2000.0,
         "Unitario": 0.99,
         "Total": 1980.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1953,15 +1941,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 161,
         "Descricao": "Tramadol Cloridrato dosagem: 50, forma farmacêutica: solução injetável",
         "Qtd": 5000.0,
         "Unitario": 1.16,
         "Total": 5800.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1971,15 +1959,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 168,
         "Descricao": "Fluconazol Fluconazol, Dosagem:2 MG/ML, Uso:Injetável",
         "Qtd": 3000.0,
         "Unitario": 6.52,
         "Total": 19560.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -1989,15 +1977,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 169,
         "Descricao": "Dexametasona Dexametasona, Concentração:2 Mg/Ml, Forma Farmacêutica:Solução Injetável",
         "Qtd": 3000.0,
         "Unitario": 0.74,
         "Total": 2220.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2007,15 +1995,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 171,
         "Descricao": "Furosemida Furosemida, Composição:10 Mg/Ml, Apresentação:Solução Injetável",
         "Qtd": 6000.0,
         "Unitario": 0.69,
         "Total": 4140.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2025,15 +2013,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 178,
         "Descricao": "Itraconazol dosagem: 100",
         "Qtd": 1600.0,
         "Unitario": 1.0,
         "Total": 1600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2043,15 +2031,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 180,
         "Descricao": "Levofloxacino Levofloxacino, Dosagem:5 MG/ML, Forma Farmacêutica:Solução Injetável",
         "Qtd": 1000.0,
         "Unitario": 9.99,
         "Total": 9990.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2061,15 +2049,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 182,
         "Descricao": "Metronidazol Metronidazol, Dosagem:5mg/Ml, Apresentação:Solução Injetável",
         "Qtd": 1500.0,
         "Unitario": 4.26,
         "Total": 6390.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2079,15 +2067,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 185,
         "Descricao": "Oxacilina dosagem: 500, composição: injetável",
         "Qtd": 10000.0,
         "Unitario": 4.26,
         "Total": 42600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2097,15 +2085,15 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 188,
         "Descricao": "Hidrocortisona princípio ativo: 100mg, apresentação: injetável",
         "Qtd": 5000.0,
         "Unitario": 2.9,
         "Total": 14500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-24",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2115,13 +2103,25 @@
         "Licitacao": "15126437000305035282026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
         "UASG": "155905",
-        "DataFimPropostas": "2026-09-16T08:00:00",
+        "DataFimPropostas": "2026-09-16T08:00:00"
+    },
+    {
         "Item": 189,
         "Descricao": "Hidrocortisona princípio ativo: 500mg, apresentação: injetável",
         "Qtd": 1000.0,
         "Unitario": 4.96,
         "Total": 4960.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260902",
+        "DataResult": "2026-09-24",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "TO",
+        "Municipio": "Araguaína",
+        "Edital": "14/2026",
+        "Licitacao": "15126437000305035282026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3528",
+        "UASG": "155905",
+        "DataFimPropostas": "2026-09-16T08:00:00"
     },
     {
         "Item": 32,
@@ -2376,24 +2376,12 @@
         "DataFimPropostas": "2026-08-18T08:00:00"
     },
     {
-        "DataPublicacao": "20260903",
-        "DataResult": "2026-09-23",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "47/2026",
-        "Licitacao": "15126437000305035492026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
-        "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 1,
         "Descricao": "Dexametasona Dexametasona, Dosagem:0,1%, Apresentação:Creme ACETATO DE DEXAMETASONA; 1 MG/G (0,1%); CREME DERMATOLÓGICO. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 650.0,
         "Unitario": 2.21,
         "Total": 1436.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260903",
         "DataResult": "2026-09-23",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2403,15 +2391,15 @@
         "Licitacao": "15126437000305035492026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
         "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00",
+        "DataFimPropostas": "2026-09-16T10:00:00"
+    },
+    {
         "Item": 3,
         "Descricao": "Acetilcisteína Acetilcisteína, Dosagem:100 MG/ML, Forma Farmacêutica:Solução Injetável ACETILCISTEÍNA; 100 MG/ML; SOLUÇÃO INJETÁVEL. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 2035.0,
         "Unitario": 5.07,
         "Total": 10317.45,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260903",
         "DataResult": "2026-09-23",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2421,13 +2409,25 @@
         "Licitacao": "15126437000305035492026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
         "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00",
+        "DataFimPropostas": "2026-09-16T10:00:00"
+    },
+    {
         "Item": 8,
         "Descricao": "Alopurinol Alopurinol, Dosagem:300 Mg ALOPURINOL; 300 MG; COMPRIMIDO. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 1890.0,
         "Unitario": 0.28,
         "Total": 529.2,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260903",
+        "DataResult": "2026-09-23",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "47/2026",
+        "Licitacao": "15126437000305035492026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
+        "UASG": "155013",
+        "DataFimPropostas": "2026-09-16T10:00:00"
     },
     {
         "Item": 14,
@@ -3168,6 +3168,12 @@
         "DataFimPropostas": "2026-09-09T09:30:00"
     },
     {
+        "Item": 2,
+        "Descricao": "Fentanila apresentação: sal citrato, dosagem: 0,05, indicação: solução injetável",
+        "Qtd": 27000.0,
+        "Unitario": 1.71,
+        "Total": 46170.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260826",
         "DataResult": "2026-09-18",
         "Orgao": "HOSPITAL DAS CLINICAS DA FACULDADE DE MEDICINA DE RPUSP",
@@ -3177,13 +3183,7 @@
         "Licitacao": "56023443000152005492026",
         "Link": "https://pncp.gov.br/app/editais/56023443000152/2026/549",
         "UASG": "092201",
-        "DataFimPropostas": "2026-09-11T09:00:00",
-        "Item": 2,
-        "Descricao": "Fentanila apresentação: sal citrato, dosagem: 0,05, indicação: solução injetável",
-        "Qtd": 27000.0,
-        "Unitario": 1.71,
-        "Total": 46170.0,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-11T09:00:00"
     },
     {
         "Item": 12,
@@ -3456,6 +3456,12 @@
         "DataFimPropostas": "2026-07-22T09:30:00"
     },
     {
+        "Item": 33,
+        "Descricao": "Sevoflurano forma farmacêutica: líquido inalante",
+        "Qtd": 350.0,
+        "Unitario": 160.0,
+        "Total": 56000.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260902",
         "DataResult": "2026-09-18",
         "Orgao": "UNIVERSIDADE FEDERAL DA BAHIA",
@@ -3465,13 +3471,7 @@
         "Licitacao": "15180714000104001922026",
         "Link": "https://pncp.gov.br/app/editais/15180714000104/2026/192",
         "UASG": "150247",
-        "DataFimPropostas": "2026-09-15T09:00:00",
-        "Item": 33,
-        "Descricao": "Sevoflurano forma farmacêutica: líquido inalante",
-        "Qtd": 350.0,
-        "Unitario": 160.0,
-        "Total": 56000.0,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-15T09:00:00"
     },
     {
         "DataPublicacao": "20260108",
@@ -4014,24 +4014,12 @@
         "Status": "Venceu"
     },
     {
-        "DataPublicacao": "20260831",
-        "DataResult": "2026-09-18",
-        "Orgao": "MUNICIPIO DE SANTA LUZIA",
-        "UF": "PB",
-        "Municipio": "Santa Luzia",
-        "Edital": "00025/2026",
-        "Licitacao": "09090689000167000852026",
-        "Link": "https://pncp.gov.br/app/editais/09090689000167/2026/85",
-        "UASG": "2039",
-        "DataFimPropostas": "2026-09-15T07:59:00",
         "Item": 20,
         "Descricao": "CARMELOSE SÓDICA SOLUCAO OFTALMICA 5MG frasco 10mL",
         "Qtd": 6000.0,
         "Unitario": 8.54,
         "Total": 51240.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260831",
         "DataResult": "2026-09-18",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -4041,15 +4029,15 @@
         "Licitacao": "09090689000167000852026",
         "Link": "https://pncp.gov.br/app/editais/09090689000167/2026/85",
         "UASG": "2039",
-        "DataFimPropostas": "2026-09-15T07:59:00",
+        "DataFimPropostas": "2026-09-15T07:59:00"
+    },
+    {
         "Item": 24,
         "Descricao": "MORFINA, Sulfato de 30 mg - comprimido",
         "Qtd": 3000.0,
         "Unitario": 2.46,
         "Total": 7380.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260831",
         "DataResult": "2026-09-18",
         "Orgao": "MUNICIPIO DE SANTA LUZIA",
@@ -4059,13 +4047,25 @@
         "Licitacao": "09090689000167000852026",
         "Link": "https://pncp.gov.br/app/editais/09090689000167/2026/85",
         "UASG": "2039",
-        "DataFimPropostas": "2026-09-15T07:59:00",
+        "DataFimPropostas": "2026-09-15T07:59:00"
+    },
+    {
         "Item": 34,
         "Descricao": "TRAVOPROSTA 0,04 mg/mL (0,004%) solução oftálmica frasco 2,5mL",
         "Qtd": 3000.0,
         "Unitario": 9.49,
         "Total": 28470.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260831",
+        "DataResult": "2026-09-18",
+        "Orgao": "MUNICIPIO DE SANTA LUZIA",
+        "UF": "PB",
+        "Municipio": "Santa Luzia",
+        "Edital": "00025/2026",
+        "Licitacao": "09090689000167000852026",
+        "Link": "https://pncp.gov.br/app/editais/09090689000167/2026/85",
+        "UASG": "2039",
+        "DataFimPropostas": "2026-09-15T07:59:00"
     },
     {
         "Item": 4,
@@ -4518,24 +4518,12 @@
         "DataFimPropostas": "2026-08-24T09:00:00"
     },
     {
-        "DataPublicacao": "20260901",
-        "DataResult": "2026-09-17",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "GC-SEPLAG-002-PL 0025/2026",
-        "Licitacao": "41090291000133001942026",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2026/194",
-        "UASG": "39",
-        "DataFimPropostas": "2026-09-14T09:00:00",
         "Item": 8,
         "Descricao": "INSULINA HUMANA REGULAR 100 UI/ML. FRASCO AMPOLA COM 10 ML.",
         "Qtd": 210.0,
         "Unitario": 50.0,
         "Total": 10500.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260901",
         "DataResult": "2026-09-17",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -4545,33 +4533,33 @@
         "Licitacao": "41090291000133001942026",
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2026/194",
         "UASG": "39",
-        "DataFimPropostas": "2026-09-14T09:00:00",
+        "DataFimPropostas": "2026-09-14T09:00:00"
+    },
+    {
         "Item": 13,
         "Descricao": "ONDANSETRONA SOLUCAO INJETAVEL 2 MG/ML, AMPOLA 2ML.",
         "Qtd": 21600.0,
         "Unitario": 1.01,
         "Total": 21816.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260901",
+        "DataResult": "2026-09-17",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "GC-SEPLAG-002-PL 0025/2026",
+        "Licitacao": "41090291000133001942026",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2026/194",
+        "UASG": "39",
+        "DataFimPropostas": "2026-09-14T09:00:00"
     },
     {
-        "DataPublicacao": "20260831",
-        "DataResult": "2026-09-17",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "ES",
-        "Municipio": "Vitória",
-        "Edital": "46/2026",
-        "Licitacao": "15126437000305034772026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3477",
-        "UASG": "155012",
-        "DataFimPropostas": "2026-09-14T09:00:00",
         "Item": 46,
         "Descricao": "Metoclopramida Cloridrato dosagem: 5 mg/ml, apresentação: solução injetável",
         "Qtd": 5000.0,
         "Unitario": 0.6054,
         "Total": 3027.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260831",
         "DataResult": "2026-09-17",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -4581,13 +4569,25 @@
         "Licitacao": "15126437000305034772026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3477",
         "UASG": "155012",
-        "DataFimPropostas": "2026-09-14T09:00:00",
+        "DataFimPropostas": "2026-09-14T09:00:00"
+    },
+    {
         "Item": 47,
         "Descricao": "Hidrocortisona composição: sal succinato sódico, concentração: 100, forma farmacêutica: pó liófilo p/ injetável",
         "Qtd": 9000.0,
         "Unitario": 2.6896,
         "Total": 24206.4,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260831",
+        "DataResult": "2026-09-17",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "ES",
+        "Municipio": "Vitória",
+        "Edital": "46/2026",
+        "Licitacao": "15126437000305034772026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3477",
+        "UASG": "155012",
+        "DataFimPropostas": "2026-09-14T09:00:00"
     },
     {
         "Item": 30,
@@ -8586,24 +8586,12 @@
         "DataFimPropostas": "2026-09-03T11:00:00"
     },
     {
-        "DataPublicacao": "20260826",
-        "DataResult": "2026-09-10",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "100/2026",
-        "Licitacao": "11022597001244000912026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/91",
-        "UASG": "5719",
-        "DataFimPropostas": "2026-09-10T09:30:00",
         "Item": 1,
         "Descricao": "Cota principal 1 - (3116387) - CLORETO DE SODIO - CONCENTRACAO/DOSAGEM 9 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO BOLSA OU FRASCO ISENTO DE PVC (SISTEMA FECHADO),VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 32544.0,
         "Unitario": 3.87,
         "Total": 125909.48,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260826",
         "DataResult": "2026-09-10",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -8613,13 +8601,25 @@
         "Licitacao": "11022597001244000912026",
         "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/91",
         "UASG": "5719",
-        "DataFimPropostas": "2026-09-10T09:30:00",
+        "DataFimPropostas": "2026-09-10T09:30:00"
+    },
+    {
         "Item": 2,
         "Descricao": "Cota principal 1 - (3116387) - CLORETO DE SODIO - CONCENTRACAO/DOSAGEM 9 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO BOLSA OU FRASCO ISENTO DE PVC (SISTEMA FECHADO),VIA DE ADMINISTRACAO PARENTERAL",
         "Qtd": 27038.0,
         "Unitario": 3.0,
         "Total": 81111.3,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260826",
+        "DataResult": "2026-09-10",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "100/2026",
+        "Licitacao": "11022597001244000912026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/91",
+        "UASG": "5719",
+        "DataFimPropostas": "2026-09-10T09:30:00"
     },
     {
         "Item": 1,
@@ -15102,24 +15102,12 @@
         "DataFimPropostas": "2026-08-18T08:30:00"
     },
     {
-        "DataPublicacao": "20260903",
-        "DataResult": "2026-08-25",
-        "Orgao": "MUNICIPIO DE CASTRO",
-        "UF": "PR",
-        "Municipio": "Castro",
-        "Edital": "109/2026",
-        "Licitacao": "77001311000108005252026",
-        "Link": "https://pncp.gov.br/app/editais/77001311000108/2026/525",
-        "UASG": "1",
-        "DataFimPropostas": "2026-08-14T08:30:00",
         "Item": 4,
         "Descricao": "ACETATO DE RETINOL 10.000UI + AMINOACIDOS 2,5% + METIONINA 0,5% + CLORANFENICOL 0,5% POMADA OFTÁLMICA TUBO COM 3,5 GR.",
         "Qtd": 150.0,
         "Unitario": 12.99,
         "Total": 1948.5,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260903",
         "DataResult": "2026-08-25",
         "Orgao": "MUNICIPIO DE CASTRO",
@@ -15129,13 +15117,25 @@
         "Licitacao": "77001311000108005252026",
         "Link": "https://pncp.gov.br/app/editais/77001311000108/2026/525",
         "UASG": "1",
-        "DataFimPropostas": "2026-08-14T08:30:00",
+        "DataFimPropostas": "2026-08-14T08:30:00"
+    },
+    {
         "Item": 12,
         "Descricao": "ADENOSINA 3MG/ML AMPOLAS COM 2ML PARA USO EV - A EMBALAGEM DEVERA TRAZER EXTERNAMENTE OS DADOS DE IDENTIFICAÇÃO, Nº DE LOTE, DATA DE FABRICAÇÃO E DATA DE VALIDADE.",
         "Qtd": 600.0,
         "Unitario": 7.67,
         "Total": 4602.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260903",
+        "DataResult": "2026-08-25",
+        "Orgao": "MUNICIPIO DE CASTRO",
+        "UF": "PR",
+        "Municipio": "Castro",
+        "Edital": "109/2026",
+        "Licitacao": "77001311000108005252026",
+        "Link": "https://pncp.gov.br/app/editais/77001311000108/2026/525",
+        "UASG": "1",
+        "DataFimPropostas": "2026-08-14T08:30:00"
     },
     {
         "Item": 1,
@@ -53316,6 +53316,12 @@
         "DataFimPropostas": "2026-04-20T08:59:00"
     },
     {
+        "Item": 19,
+        "Descricao": "SULFATO DE MAGNESIO 50% - 10ML ",
+        "Qtd": 1500.0,
+        "Unitario": 5.2,
+        "Total": 7800.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260901",
         "DataResult": "2026-05-29",
         "Orgao": "MUNICIPIO DE PRAIA GRANDE",
@@ -53325,13 +53331,7 @@
         "Licitacao": "46177531000155003052026",
         "Link": "https://pncp.gov.br/app/editais/46177531000155/2026/305",
         "UASG": "986921",
-        "DataFimPropostas": "2026-04-17T09:30:00",
-        "Item": 19,
-        "Descricao": "SULFATO DE MAGNESIO 50% - 10ML ",
-        "Qtd": 1500.0,
-        "Unitario": 5.2,
-        "Total": 7800.0,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-04-17T09:30:00"
     },
     {
         "Item": 7,
@@ -97164,24 +97164,12 @@
         "DataFimPropostas": "2025-11-06T09:30:00"
     },
     {
-        "DataPublicacao": "20260826",
-        "DataResult": "2026-02-24",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Glória do Goitá",
-        "Edital": "026/2025",
-        "Licitacao": "11393101000196000182025",
-        "Link": "https://pncp.gov.br/app/editais/11393101000196/2025/18",
-        "UASG": "1",
-        "DataFimPropostas": "2025-09-02T09:00:00",
         "Item": 190,
         "Descricao": "Risperidona 1mg/ml, solução oral com pipeta dosadora - frasco 30ml. (Cota Principal 75% - Ampla Participação) ",
         "Qtd": 9000.0,
         "Unitario": 9.75,
         "Total": 87750.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260826",
         "DataResult": "2026-02-24",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -97191,13 +97179,25 @@
         "Licitacao": "11393101000196000182025",
         "Link": "https://pncp.gov.br/app/editais/11393101000196/2025/18",
         "UASG": "1",
-        "DataFimPropostas": "2025-09-02T09:00:00",
+        "DataFimPropostas": "2025-09-02T09:00:00"
+    },
+    {
         "Item": 252,
         "Descricao": "Cloreto de sódio 0,9% solução injetável, sistema fechado - 100ml (Cota Principal 75% - Ampla Participação)",
         "Qtd": 22500.0,
         "Unitario": 3.09,
         "Total": 69525.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260826",
+        "DataResult": "2026-02-24",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Glória do Goitá",
+        "Edital": "026/2025",
+        "Licitacao": "11393101000196000182025",
+        "Link": "https://pncp.gov.br/app/editais/11393101000196/2025/18",
+        "UASG": "1",
+        "DataFimPropostas": "2025-09-02T09:00:00"
     },
     {
         "Item": 1,
