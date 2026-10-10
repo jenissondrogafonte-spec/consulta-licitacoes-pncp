@@ -93762,12 +93762,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260127",
+        "DataResult": "2026-03-06",
+        "Orgao": "MUNICIPIO DE MUTUIPE",
+        "UF": "BA",
+        "Municipio": "Mutuípe",
+        "Edital": "004/2026",
+        "Licitacao": "13827035000140000102026",
+        "Link": "https://pncp.gov.br/app/editais/13827035000140/2026/10",
+        "UASG": "000000001",
+        "DataFimPropostas": "2026-02-11T08:30:00",
         "Item": 2,
         "Descricao": "Dexametasona 0,1% (10g)",
         "Qtd": 2000.0,
         "Unitario": 1.61,
         "Total": 3220.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260127",
         "DataResult": "2026-03-06",
         "Orgao": "MUNICIPIO DE MUTUIPE",
@@ -93777,15 +93789,15 @@
         "Licitacao": "13827035000140000102026",
         "Link": "https://pncp.gov.br/app/editais/13827035000140/2026/10",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-11T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-11T08:30:00",
         "Item": 16,
         "Descricao": "Fenobarbital 100mg",
         "Qtd": 40000.0,
         "Unitario": 0.18,
         "Total": 7200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260127",
         "DataResult": "2026-03-06",
         "Orgao": "MUNICIPIO DE MUTUIPE",
@@ -93795,15 +93807,15 @@
         "Licitacao": "13827035000140000102026",
         "Link": "https://pncp.gov.br/app/editais/13827035000140/2026/10",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-11T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-11T08:30:00",
         "Item": 17,
         "Descricao": "Ácido Valpróico 250mg/5ml (100ml)",
         "Qtd": 400.0,
         "Unitario": 5.85,
         "Total": 2340.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260127",
         "DataResult": "2026-03-06",
         "Orgao": "MUNICIPIO DE MUTUIPE",
@@ -93813,15 +93825,15 @@
         "Licitacao": "13827035000140000102026",
         "Link": "https://pncp.gov.br/app/editais/13827035000140/2026/10",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-11T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-11T08:30:00",
         "Item": 19,
         "Descricao": "Biperideno 5mg/ml IM EV (1ml)",
         "Qtd": 100.0,
         "Unitario": 2.67,
         "Total": 267.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260127",
         "DataResult": "2026-03-06",
         "Orgao": "MUNICIPIO DE MUTUIPE",
@@ -93831,25 +93843,13 @@
         "Licitacao": "13827035000140000102026",
         "Link": "https://pncp.gov.br/app/editais/13827035000140/2026/10",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-11T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-11T08:30:00",
         "Item": 25,
         "Descricao": "Vitamina K (fitomenadiona) 1ml",
         "Qtd": 200.0,
         "Unitario": 2.06,
         "Total": 412.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260127",
-        "DataResult": "2026-03-06",
-        "Orgao": "MUNICIPIO DE MUTUIPE",
-        "UF": "BA",
-        "Municipio": "Mutuípe",
-        "Edital": "004/2026",
-        "Licitacao": "13827035000140000102026",
-        "Link": "https://pncp.gov.br/app/editais/13827035000140/2026/10",
-        "UASG": "000000001",
-        "DataFimPropostas": "2026-02-11T08:30:00"
+        "Status": "Venceu"
     },
     {
         "Item": 30,
