@@ -70470,12 +70470,24 @@
         "DataFimPropostas": "2026-03-17T09:00:00"
     },
     {
+        "DataPublicacao": "20260123",
+        "DataResult": "2026-04-29",
+        "Orgao": "MUNICIPIO DE MARABA",
+        "UF": "PA",
+        "Municipio": "Marabá",
+        "Edital": "90003/2026",
+        "Licitacao": "05853163000130000142026",
+        "Link": "https://pncp.gov.br/app/editais/05853163000130/2026/14",
+        "UASG": "927495",
+        "DataFimPropostas": "2026-02-05T09:00:00",
         "Item": 152,
         "Descricao": "Dexclorfeniramina Maleato",
         "Qtd": 18750.0,
         "Unitario": 1.6,
         "Total": 30000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-04-29",
         "Orgao": "MUNICIPIO DE MARABA",
@@ -70485,25 +70497,13 @@
         "Licitacao": "05853163000130000142026",
         "Link": "https://pncp.gov.br/app/editais/05853163000130/2026/14",
         "UASG": "927495",
-        "DataFimPropostas": "2026-02-05T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-05T09:00:00",
         "Item": 402,
         "Descricao": "Sinvastatina",
         "Qtd": 412500.0,
         "Unitario": 0.07,
         "Total": 28875.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260123",
-        "DataResult": "2026-04-29",
-        "Orgao": "MUNICIPIO DE MARABA",
-        "UF": "PA",
-        "Municipio": "Marabá",
-        "Edital": "90003/2026",
-        "Licitacao": "05853163000130000142026",
-        "Link": "https://pncp.gov.br/app/editais/05853163000130/2026/14",
-        "UASG": "927495",
-        "DataFimPropostas": "2026-02-05T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 15,
@@ -79920,12 +79920,24 @@
         "DataFimPropostas": "2026-04-10T09:00:00"
     },
     {
+        "DataPublicacao": "20260123",
+        "DataResult": "2026-04-09",
+        "Orgao": "MUNICIPIO DE MONTES CLAROS",
+        "UF": "MG",
+        "Municipio": "Montes Claros",
+        "Edital": "90186/2025",
+        "Licitacao": "22678874000135005682025",
+        "Link": "https://pncp.gov.br/app/editais/22678874000135/2025/568",
+        "UASG": "984865",
+        "DataFimPropostas": "2026-02-19T09:00:00",
         "Item": 18,
         "Descricao": "Sulfato De Magnésio",
         "Qtd": 800.0,
         "Unitario": 5.39,
         "Total": 4312.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-04-09",
         "Orgao": "MUNICIPIO DE MONTES CLAROS",
@@ -79935,25 +79947,13 @@
         "Licitacao": "22678874000135005682025",
         "Link": "https://pncp.gov.br/app/editais/22678874000135/2025/568",
         "UASG": "984865",
-        "DataFimPropostas": "2026-02-19T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-19T09:00:00",
         "Item": 22,
         "Descricao": "Antibiograma.",
         "Qtd": 420.0,
         "Unitario": 13.17,
         "Total": 5531.4,
-        "Status": "Venceu",
-        "DataPublicacao": "20260123",
-        "DataResult": "2026-04-09",
-        "Orgao": "MUNICIPIO DE MONTES CLAROS",
-        "UF": "MG",
-        "Municipio": "Montes Claros",
-        "Edital": "90186/2025",
-        "Licitacao": "22678874000135005682025",
-        "Link": "https://pncp.gov.br/app/editais/22678874000135/2025/568",
-        "UASG": "984865",
-        "DataFimPropostas": "2026-02-19T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 2,
@@ -85968,12 +85968,24 @@
         "DataFimPropostas": "2026-03-09T07:59:00"
     },
     {
+        "DataPublicacao": "20260123",
+        "DataResult": "2026-03-23",
+        "Orgao": "MUNICIPIO DE CAJAZEIRAS",
+        "UF": "PB",
+        "Municipio": "Cajazeiras",
+        "Edital": "96002/2026",
+        "Licitacao": "08923971000115000082026",
+        "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
+        "UASG": "981975",
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 2,
         "Descricao": "Acebrofilina",
         "Qtd": 300.0,
         "Unitario": 3.69,
         "Total": 1107.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -85983,15 +85995,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 37,
         "Descricao": "Anlodipino besilato",
         "Qtd": 30000.0,
         "Unitario": 0.03,
         "Total": 900.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86001,15 +86013,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 114,
         "Descricao": "Diclofenaco",
         "Qtd": 9000.0,
         "Unitario": 0.06,
         "Total": 540.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86019,15 +86031,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 123,
         "Descricao": "Divalproato de sódio",
         "Qtd": 6000.0,
         "Unitario": 0.58,
         "Total": 3480.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86037,15 +86049,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 164,
         "Descricao": "Furosemida",
         "Qtd": 40000.0,
         "Unitario": 0.05,
         "Total": 2000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86055,15 +86067,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 211,
         "Descricao": "Levonorgestrel",
         "Qtd": 30000.0,
         "Unitario": 0.11,
         "Total": 3300.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86073,15 +86085,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 212,
         "Descricao": "Levotiroxina sódica",
         "Qtd": 9000.0,
         "Unitario": 0.15,
         "Total": 1350.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86091,15 +86103,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 214,
         "Descricao": "Levotiroxina sódica",
         "Qtd": 9000.0,
         "Unitario": 0.15,
         "Total": 1350.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86109,15 +86121,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 215,
         "Descricao": "Levotiroxina sódica",
         "Qtd": 12000.0,
         "Unitario": 0.16,
         "Total": 1920.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86127,15 +86139,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 252,
         "Descricao": "Nifedipino",
         "Qtd": 15000.0,
         "Unitario": 0.08,
         "Total": 1200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86145,15 +86157,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 253,
         "Descricao": "Nifedipino",
         "Qtd": 15000.0,
         "Unitario": 0.08,
         "Total": 1200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86163,15 +86175,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 263,
         "Descricao": "Nortriptilina cloridrato",
         "Qtd": 6000.0,
         "Unitario": 0.34,
         "Total": 2040.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86181,15 +86193,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 264,
         "Descricao": "Nortriptilina cloridrato",
         "Qtd": 6000.0,
         "Unitario": 0.38,
         "Total": 2280.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86199,15 +86211,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 265,
         "Descricao": "Nortriptilina cloridrato",
         "Qtd": 6000.0,
         "Unitario": 0.87,
         "Total": 5220.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86217,15 +86229,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 275,
         "Descricao": "Oxcarbazepina",
         "Qtd": 8000.0,
         "Unitario": 0.56,
         "Total": 4480.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86235,15 +86247,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 291,
         "Descricao": "Pregabalina",
         "Qtd": 8000.0,
         "Unitario": 0.17,
         "Total": 1360.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86253,15 +86265,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 292,
         "Descricao": "Pregabalina",
         "Qtd": 8000.0,
         "Unitario": 0.28,
         "Total": 2240.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86271,15 +86283,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 298,
         "Descricao": "Propranolol cloridrato",
         "Qtd": 10000.0,
         "Unitario": 0.04,
         "Total": 400.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86289,15 +86301,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 310,
         "Descricao": "Risperidona",
         "Qtd": 10000.0,
         "Unitario": 0.09,
         "Total": 900.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86307,15 +86319,15 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 311,
         "Descricao": "Risperidona",
         "Qtd": 54500.0,
         "Unitario": 0.11,
         "Total": 5995.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE CAJAZEIRAS",
@@ -86325,25 +86337,13 @@
         "Licitacao": "08923971000115000082026",
         "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
         "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T10:00:00",
         "Item": 312,
         "Descricao": "Risperidona",
         "Qtd": 10000.0,
         "Unitario": 0.13,
         "Total": 1300.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260123",
-        "DataResult": "2026-03-23",
-        "Orgao": "MUNICIPIO DE CAJAZEIRAS",
-        "UF": "PB",
-        "Municipio": "Cajazeiras",
-        "Edital": "96002/2026",
-        "Licitacao": "08923971000115000082026",
-        "Link": "https://pncp.gov.br/app/editais/08923971000115/2026/8",
-        "UASG": "981975",
-        "DataFimPropostas": "2026-02-10T10:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 3,
@@ -86814,12 +86814,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 6,
-        "Descricao": "Hidrocortisona",
-        "Qtd": 180000.0,
-        "Unitario": 2.6334,
-        "Total": 474012.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-19",
         "Orgao": "MUNICIPIO DE UBERLANDIA",
@@ -86829,7 +86823,13 @@
         "Licitacao": "18431312000620002932025",
         "Link": "https://pncp.gov.br/app/editais/18431312000620/2025/293",
         "UASG": "926922",
-        "DataFimPropostas": "2026-02-10T09:00:00"
+        "DataFimPropostas": "2026-02-10T09:00:00",
+        "Item": 6,
+        "Descricao": "Hidrocortisona",
+        "Qtd": 180000.0,
+        "Unitario": 2.6334,
+        "Total": 474012.0,
+        "Status": "Venceu"
     },
     {
         "Item": 5,
@@ -95598,12 +95598,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 7,
-        "Descricao": "Gaze Uso Em Saúde",
-        "Qtd": 450000.0,
-        "Unitario": 0.43,
-        "Total": 193500.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260123",
         "DataResult": "2026-03-03",
         "Orgao": "MUNICIPIO DE FORTALEZA",
@@ -95613,7 +95607,13 @@
         "Licitacao": "07954605000160000852026",
         "Link": "https://pncp.gov.br/app/editais/07954605000160/2026/85",
         "UASG": "927744",
-        "DataFimPropostas": "2026-02-05T10:00:00"
+        "DataFimPropostas": "2026-02-05T10:00:00",
+        "Item": 7,
+        "Descricao": "Gaze Uso Em Saúde",
+        "Qtd": 450000.0,
+        "Unitario": 0.43,
+        "Total": 193500.0,
+        "Status": "Venceu"
     },
     {
         "Item": 75,
