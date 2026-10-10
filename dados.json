@@ -59436,12 +59436,24 @@
         "DataFimPropostas": "2026-05-12T08:00:00"
     },
     {
+        "DataPublicacao": "20251230",
+        "DataResult": "2026-05-18",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90042/2025",
+        "Licitacao": "15126437000305044302025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
+        "UASG": "155015",
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 8,
         "Descricao": "Azitromicina",
         "Qtd": 550.0,
         "Unitario": 0.89,
         "Total": 489.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-05-18",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -59451,25 +59463,13 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 49,
         "Descricao": "Fenitoína sódica",
         "Qtd": 600.0,
         "Unitario": 0.27,
         "Total": 162.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251230",
-        "DataResult": "2026-05-18",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "90042/2025",
-        "Licitacao": "15126437000305044302025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
-        "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 66,
@@ -96426,6 +96426,24 @@
         "DataFimPropostas": "2026-03-02T08:08:38"
     },
     {
+        "DataPublicacao": "20251230",
+        "DataResult": "2026-02-26",
+        "Orgao": "MUNICIPIO DE FRANCA",
+        "UF": "SP",
+        "Municipio": "Franca",
+        "Edital": "296/2025",
+        "Licitacao": "47970769000104005932025",
+        "Link": "https://pncp.gov.br/app/editais/47970769000104/2025/593",
+        "UASG": "7195",
+        "DataFimPropostas": "2026-01-23T09:30:00",
+        "Item": 17,
+        "Descricao": "Item 9 - Lote 9: HEPARINA 0,25ML 5000UI SUBCUTÂNEA",
+        "Qtd": 2520.0,
+        "Unitario": 7.43,
+        "Total": 18723.6,
+        "Status": "Venceu"
+    },
+    {
         "Item": 8,
         "Descricao": "Escetamina",
         "Qtd": 1000.0,
@@ -97324,6 +97342,24 @@
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2026/10",
         "UASG": "39",
         "DataFimPropostas": "2026-02-03T08:30:00"
+    },
+    {
+        "DataPublicacao": "20251230",
+        "DataResult": "2026-02-20",
+        "Orgao": "AGENCIA MUNICIPAL DE REGULACAO DE SERVICOS DELEGADOS- ARSER",
+        "UF": "AL",
+        "Municipio": "Maceió",
+        "Edital": "90012/2026",
+        "Licitacao": "26981455000129000122026",
+        "Link": "https://pncp.gov.br/app/editais/26981455000129/2026/12",
+        "UASG": "926703",
+        "DataFimPropostas": "2026-01-14T09:00:00",
+        "Item": 1,
+        "Descricao": "Fluconazol",
+        "Qtd": 77450.0,
+        "Unitario": 0.428,
+        "Total": 33148.6,
+        "Status": "Venceu"
     },
     {
         "Item": 10,
@@ -99126,12 +99162,24 @@
         "DataFimPropostas": "2026-01-29T08:59:00"
     },
     {
+        "DataPublicacao": "20251230",
+        "DataResult": "2026-02-11",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90042/2025",
+        "Licitacao": "15126437000305044302025",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
+        "UASG": "155015",
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 2,
         "Descricao": "Aciclovir",
         "Qtd": 500.0,
         "Unitario": 0.17,
         "Total": 85.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99141,15 +99189,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 11,
         "Descricao": "Anlodipino besilato",
         "Qtd": 4000.0,
         "Unitario": 0.03,
         "Total": 120.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99159,15 +99207,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 30,
         "Descricao": "Amiodarona",
         "Qtd": 200.0,
         "Unitario": 3.5,
         "Total": 700.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99177,15 +99225,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 31,
         "Descricao": "Ciprofloxacino cloridrato",
         "Qtd": 700.0,
         "Unitario": 0.21,
         "Total": 147.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99195,15 +99243,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 41,
         "Descricao": "Dantroleno sódico",
         "Qtd": 10.0,
         "Unitario": 321.17,
         "Total": 3211.7,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99213,15 +99261,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 45,
         "Descricao": "Dimenidrinato",
         "Qtd": 800.0,
         "Unitario": 8.7,
         "Total": 6960.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99231,15 +99279,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 64,
         "Descricao": "Enalapril maleato",
         "Qtd": 2000.0,
         "Unitario": 0.036,
         "Total": 72.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99249,15 +99297,15 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 71,
         "Descricao": "Nifedipino",
         "Qtd": 3000.0,
         "Unitario": 0.1,
         "Total": 300.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251230",
         "DataResult": "2026-02-11",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -99267,25 +99315,13 @@
         "Licitacao": "15126437000305044302025",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
         "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 76,
         "Descricao": "Oxacilina",
         "Qtd": 6000.0,
         "Unitario": 4.27,
         "Total": 25620.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251230",
-        "DataResult": "2026-02-11",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "90042/2025",
-        "Licitacao": "15126437000305044302025",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2025/4430",
-        "UASG": "155015",
-        "DataFimPropostas": "2026-01-16T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 1,
