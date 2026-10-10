@@ -49626,12 +49626,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260129",
+        "DataResult": "2026-06-08",
+        "Orgao": "SECRETARIA DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Caruaru",
+        "Edital": "90019/2026",
+        "Licitacao": "10572048001523000162026",
+        "Link": "https://pncp.gov.br/app/editais/10572048001523/2026/16",
+        "UASG": "926809",
+        "DataFimPropostas": "2026-03-18T09:00:00",
         "Item": 1,
         "Descricao": "Álcool Etílico Limpeza De Ambientes",
         "Qtd": 14933.0,
         "Unitario": 5.841,
         "Total": 87223.653,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260129",
         "DataResult": "2026-06-08",
         "Orgao": "SECRETARIA DE SAUDE",
@@ -49641,15 +49653,15 @@
         "Licitacao": "10572048001523000162026",
         "Link": "https://pncp.gov.br/app/editais/10572048001523/2026/16",
         "UASG": "926809",
-        "DataFimPropostas": "2026-03-18T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-18T09:00:00",
         "Item": 2,
         "Descricao": "Algodão Uso Em Saúde",
         "Qtd": 4726.0,
         "Unitario": 10.8999,
         "Total": 51512.9274,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260129",
         "DataResult": "2026-06-08",
         "Orgao": "SECRETARIA DE SAUDE",
@@ -49659,25 +49671,13 @@
         "Licitacao": "10572048001523000162026",
         "Link": "https://pncp.gov.br/app/editais/10572048001523/2026/16",
         "UASG": "926809",
-        "DataFimPropostas": "2026-03-18T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-18T09:00:00",
         "Item": 4,
         "Descricao": "Compressa campo operatório",
         "Qtd": 42000.0,
         "Unitario": 2.97,
         "Total": 124740.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260129",
-        "DataResult": "2026-06-08",
-        "Orgao": "SECRETARIA DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Caruaru",
-        "Edital": "90019/2026",
-        "Licitacao": "10572048001523000162026",
-        "Link": "https://pncp.gov.br/app/editais/10572048001523/2026/16",
-        "UASG": "926809",
-        "DataFimPropostas": "2026-03-18T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 4,
@@ -94950,12 +94950,6 @@
         "DataFimPropostas": "2026-02-19T09:00:00"
     },
     {
-        "Item": 7027090,
-        "Descricao": "Carbamazepina 200 mg -COMPRIMIDO",
-        "Qtd": 225000.0,
-        "Unitario": 0.147,
-        "Total": 33075.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260129",
         "DataResult": "2026-03-03",
         "Orgao": "MUNICIPIO DE IBIA",
@@ -94965,7 +94959,13 @@
         "Licitacao": "18584961000156000062026",
         "Link": "https://pncp.gov.br/app/editais/18584961000156/2026/6",
         "UASG": "831",
-        "DataFimPropostas": "2026-02-11T09:00:00"
+        "DataFimPropostas": "2026-02-11T09:00:00",
+        "Item": 7027090,
+        "Descricao": "Carbamazepina 200 mg -COMPRIMIDO",
+        "Qtd": 225000.0,
+        "Unitario": 0.147,
+        "Total": 33075.0,
+        "Status": "Venceu"
     },
     {
         "Item": 45,
@@ -97920,12 +97920,24 @@
         "DataFimPropostas": "2026-02-19T09:30:00"
     },
     {
+        "DataPublicacao": "20260129",
+        "DataResult": "2026-02-19",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "18/2026",
+        "Licitacao": "11022597001244000212026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/21",
+        "UASG": "8312",
+        "DataFimPropostas": "2026-02-19T08:00:00",
         "Item": 3,
         "Descricao": "(3166570) - HIDROCLOROTIAZIDA - CONCENTRACAO/DOSAGEM 25 MG,FORMA FARMACEUTICA COMPRIMIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 4450.0,
         "Unitario": 0.03,
         "Total": 133.06,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260129",
         "DataResult": "2026-02-19",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -97935,25 +97947,13 @@
         "Licitacao": "11022597001244000212026",
         "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/21",
         "UASG": "8312",
-        "DataFimPropostas": "2026-02-19T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-19T08:00:00",
         "Item": 4,
         "Descricao": "(3167500) - METFORMINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 850 MG,FORMA FARMACEUTICA COMPRIMIDO REVESTIDO,VIA DE ADMINISTRACAO ORAL",
         "Qtd": 3800.0,
         "Unitario": 0.12,
         "Total": 471.58,
-        "Status": "Venceu",
-        "DataPublicacao": "20260129",
-        "DataResult": "2026-02-19",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "18/2026",
-        "Licitacao": "11022597001244000212026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/21",
-        "UASG": "8312",
-        "DataFimPropostas": "2026-02-19T08:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260122",
