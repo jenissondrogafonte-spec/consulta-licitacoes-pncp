@@ -99324,12 +99324,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 1,
-        "Descricao": "Fitomenadiona",
-        "Qtd": 15600.0,
-        "Unitario": 1.7325,
-        "Total": 27027.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260115",
         "DataResult": "2026-02-10",
         "Orgao": "INSTITUTO DE ASSISTENCIA MEDICA AO SERVIDOR PUBLICO ESTADUAL",
@@ -99339,7 +99333,13 @@
         "Licitacao": "60747318000162019572025",
         "Link": "https://pncp.gov.br/app/editais/60747318000162/2025/1957",
         "UASG": "532101",
-        "DataFimPropostas": "2026-01-27T09:00:00"
+        "DataFimPropostas": "2026-01-27T09:00:00",
+        "Item": 1,
+        "Descricao": "Fitomenadiona",
+        "Qtd": 15600.0,
+        "Unitario": 1.7325,
+        "Total": 27027.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260108",
