@@ -82764,12 +82764,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260206",
+        "DataResult": "2026-03-31",
+        "Orgao": "MUNICIPIO DE UBERLANDIA",
+        "UF": "MG",
+        "Municipio": "Uberlândia",
+        "Edital": "90631/2025",
+        "Licitacao": "18431312000620003122025",
+        "Link": "https://pncp.gov.br/app/editais/18431312000620/2025/312",
+        "UASG": "926922",
+        "DataFimPropostas": "2026-02-26T09:00:00",
         "Item": 8,
         "Descricao": "Paroxetina cloridrato",
         "Qtd": 12000.0,
         "Unitario": 0.18,
         "Total": 2160.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260206",
         "DataResult": "2026-03-31",
         "Orgao": "MUNICIPIO DE UBERLANDIA",
@@ -82779,25 +82791,13 @@
         "Licitacao": "18431312000620003122025",
         "Link": "https://pncp.gov.br/app/editais/18431312000620/2025/312",
         "UASG": "926922",
-        "DataFimPropostas": "2026-02-26T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T09:00:00",
         "Item": 11,
         "Descricao": "Tenoxicam",
         "Qtd": 30000.0,
         "Unitario": 5.64,
         "Total": 169200.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260206",
-        "DataResult": "2026-03-31",
-        "Orgao": "MUNICIPIO DE UBERLANDIA",
-        "UF": "MG",
-        "Municipio": "Uberlândia",
-        "Edital": "90631/2025",
-        "Licitacao": "18431312000620003122025",
-        "Link": "https://pncp.gov.br/app/editais/18431312000620/2025/312",
-        "UASG": "926922",
-        "DataFimPropostas": "2026-02-26T09:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260203",
@@ -89694,12 +89694,24 @@
         "DataFimPropostas": "2026-04-23T08:00:00"
     },
     {
+        "DataPublicacao": "20260206",
+        "DataResult": "2026-03-16",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "MG",
+        "Municipio": "Uberaba",
+        "Edital": "90012/2026",
+        "Licitacao": "15126437000305004482026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/448",
+        "UASG": "155011",
+        "DataFimPropostas": "2026-02-23T09:00:00",
         "Item": 75,
         "Descricao": "Hidróxido de alumínio",
         "Qtd": 720.0,
         "Unitario": 2.49,
         "Total": 1792.8,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260206",
         "DataResult": "2026-03-16",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -89709,15 +89721,15 @@
         "Licitacao": "15126437000305004482026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/448",
         "UASG": "155011",
-        "DataFimPropostas": "2026-02-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-23T09:00:00",
         "Item": 77,
         "Descricao": "Ipratrópio Brometo",
         "Qtd": 4500.0,
         "Unitario": 1.21,
         "Total": 5445.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260206",
         "DataResult": "2026-03-16",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -89727,15 +89739,15 @@
         "Licitacao": "15126437000305004482026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/448",
         "UASG": "155011",
-        "DataFimPropostas": "2026-02-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-23T09:00:00",
         "Item": 80,
         "Descricao": "Itraconazol",
         "Qtd": 2700.0,
         "Unitario": 0.83,
         "Total": 2241.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260206",
         "DataResult": "2026-03-16",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -89745,15 +89757,15 @@
         "Licitacao": "15126437000305004482026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/448",
         "UASG": "155011",
-        "DataFimPropostas": "2026-02-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-23T09:00:00",
         "Item": 129,
         "Descricao": "Simeticona",
         "Qtd": 10000.0,
         "Unitario": 1.13,
         "Total": 11300.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260206",
         "DataResult": "2026-03-16",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -89763,25 +89775,13 @@
         "Licitacao": "15126437000305004482026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/448",
         "UASG": "155011",
-        "DataFimPropostas": "2026-02-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-23T09:00:00",
         "Item": 134,
         "Descricao": "Sulfato ferroso",
         "Qtd": 45000.0,
         "Unitario": 0.04,
         "Total": 1800.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260206",
-        "DataResult": "2026-03-16",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "MG",
-        "Municipio": "Uberaba",
-        "Edital": "90012/2026",
-        "Licitacao": "15126437000305004482026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/448",
-        "UASG": "155011",
-        "DataFimPropostas": "2026-02-23T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 15,
@@ -93960,12 +93960,6 @@
         "DataFimPropostas": "2026-03-05T13:30:00"
     },
     {
-        "Item": 37,
-        "Descricao": "ENANTATO DE NORETISTERONA +",
-        "Qtd": 1560.0,
-        "Unitario": 6.89,
-        "Total": 10748.4,
-        "Status": "Venceu",
         "DataPublicacao": "20260206",
         "DataResult": "2026-03-04",
         "Orgao": "MUNICIPIO DE SAO SEBASTIAO DO PARAISO",
@@ -93975,7 +93969,13 @@
         "Licitacao": "18241349000180000102026",
         "Link": "https://pncp.gov.br/app/editais/18241349000180/2026/10",
         "UASG": "18241349000180-001",
-        "DataFimPropostas": "2026-02-25T09:00:00"
+        "DataFimPropostas": "2026-02-25T09:00:00",
+        "Item": 37,
+        "Descricao": "ENANTATO DE NORETISTERONA +",
+        "Qtd": 1560.0,
+        "Unitario": 6.89,
+        "Total": 10748.4,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251203",
