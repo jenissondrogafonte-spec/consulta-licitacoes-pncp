@@ -41832,12 +41832,24 @@
         "DataFimPropostas": "2026-05-21T11:00:00"
     },
     {
+        "DataPublicacao": "20260126",
+        "DataResult": "2026-06-18",
+        "Orgao": "MUNICIPIO DE AMARGOSA",
+        "UF": "BA",
+        "Municipio": "Amargosa",
+        "Edital": "PE-044-SRP/2025",
+        "Licitacao": "13825484000150004382025",
+        "Link": "https://pncp.gov.br/app/editais/13825484000150/2025/438",
+        "UASG": "3571",
+        "DataFimPropostas": "2026-02-10T08:00:00",
         "Item": 5,
         "Descricao": "ANTI-HIPERTENSIVOS E CARDIOVASCULARES - A descrição dos itens encontra-se no Termo de Referência - Anexo I do Edital.",
         "Qtd": 1.0,
         "Unitario": 417000.0,
         "Total": 481255.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260126",
         "DataResult": "2026-06-18",
         "Orgao": "MUNICIPIO DE AMARGOSA",
@@ -41847,15 +41859,15 @@
         "Licitacao": "13825484000150004382025",
         "Link": "https://pncp.gov.br/app/editais/13825484000150/2025/438",
         "UASG": "3571",
-        "DataFimPropostas": "2026-02-10T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T08:00:00",
         "Item": 9,
         "Descricao": "ANTIPSICÓTICOS E ESTABILIZADORES DE HUMOR - A descrição dos itens encontra-se no Termo de Referência - Anexo I do Edital.",
         "Qtd": 1.0,
         "Unitario": 146000.0,
         "Total": 281750.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260126",
         "DataResult": "2026-06-18",
         "Orgao": "MUNICIPIO DE AMARGOSA",
@@ -41865,15 +41877,15 @@
         "Licitacao": "13825484000150004382025",
         "Link": "https://pncp.gov.br/app/editais/13825484000150/2025/438",
         "UASG": "3571",
-        "DataFimPropostas": "2026-02-10T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T08:00:00",
         "Item": 10,
         "Descricao": "MEDICAMENTOS DE USO PARENTERAL - A descrição dos itens encontra-se no Termo de Referência - Anexo I do Edital.",
         "Qtd": 1.0,
         "Unitario": 10000.0,
         "Total": 15181.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260126",
         "DataResult": "2026-06-18",
         "Orgao": "MUNICIPIO DE AMARGOSA",
@@ -41883,25 +41895,13 @@
         "Licitacao": "13825484000150004382025",
         "Link": "https://pncp.gov.br/app/editais/13825484000150/2025/438",
         "UASG": "3571",
-        "DataFimPropostas": "2026-02-10T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-10T08:00:00",
         "Item": 12,
         "Descricao": "INJETÁVEIS PSICOTRÓPICOS E ANTICONVULSIVANTES - A descrição dos itens encontra-se no Termo de Referência - Anexo I do Edital.",
         "Qtd": 1.0,
         "Unitario": 37000.0,
         "Total": 40756.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260126",
-        "DataResult": "2026-06-18",
-        "Orgao": "MUNICIPIO DE AMARGOSA",
-        "UF": "BA",
-        "Municipio": "Amargosa",
-        "Edital": "PE-044-SRP/2025",
-        "Licitacao": "13825484000150004382025",
-        "Link": "https://pncp.gov.br/app/editais/13825484000150/2025/438",
-        "UASG": "3571",
-        "DataFimPropostas": "2026-02-10T08:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260529",
@@ -83448,12 +83448,6 @@
         "DataFimPropostas": "2025-09-11T09:00:00"
     },
     {
-        "Item": 121,
-        "Descricao": "CETUXIMABE 5MG/ML ",
-        "Qtd": 104.0,
-        "Unitario": 4171.28,
-        "Total": 433813.12,
-        "Status": "Venceu",
         "DataPublicacao": "20260126",
         "DataResult": "2026-03-27",
         "Orgao": "MUNICIPIO DE APARECIDA",
@@ -83463,7 +83457,13 @@
         "Licitacao": "46680518000114000142026",
         "Link": "https://pncp.gov.br/app/editais/46680518000114/2026/14",
         "UASG": "1",
-        "DataFimPropostas": "2026-02-10T08:59:00"
+        "DataFimPropostas": "2026-02-10T08:59:00",
+        "Item": 121,
+        "Descricao": "CETUXIMABE 5MG/ML ",
+        "Qtd": 104.0,
+        "Unitario": 4171.28,
+        "Total": 433813.12,
+        "Status": "Venceu"
     },
     {
         "Item": 44,
@@ -86598,12 +86598,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 65,
-        "Descricao": "Norepinefrina",
-        "Qtd": 108068.0,
-        "Unitario": 0.95,
-        "Total": 102664.6,
-        "Status": "Venceu",
         "DataPublicacao": "20260126",
         "DataResult": "2026-03-19",
         "Orgao": "FUNDACAO PARAIBANA DE GESTAO EM SAUDE -PB  SAUDE",
@@ -86613,7 +86607,13 @@
         "Licitacao": "38111778000140002602025",
         "Link": "https://pncp.gov.br/app/editais/38111778000140/2025/260",
         "UASG": "930404",
-        "DataFimPropostas": "2026-02-09T09:00:00"
+        "DataFimPropostas": "2026-02-09T09:00:00",
+        "Item": 65,
+        "Descricao": "Norepinefrina",
+        "Qtd": 108068.0,
+        "Unitario": 0.95,
+        "Total": 102664.6,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260114",
@@ -92610,12 +92610,24 @@
         "DataFimPropostas": "2026-03-02T09:00:00"
     },
     {
+        "DataPublicacao": "20260126",
+        "DataResult": "2026-03-12",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90022/2026",
+        "Licitacao": "10572022000180000102026",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/10",
+        "UASG": "926150",
+        "DataFimPropostas": "2026-02-09T09:00:00",
         "Item": 8,
         "Descricao": "Etomidato",
         "Qtd": 500.0,
         "Unitario": 10.7213,
         "Total": 5360.65,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260126",
         "DataResult": "2026-03-12",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -92625,25 +92637,13 @@
         "Licitacao": "10572022000180000102026",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/10",
         "UASG": "926150",
-        "DataFimPropostas": "2026-02-09T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-09T09:00:00",
         "Item": 13,
         "Descricao": "Omeprazol",
         "Qtd": 41000.0,
         "Unitario": 0.0799,
         "Total": 3275.9,
-        "Status": "Venceu",
-        "DataPublicacao": "20260126",
-        "DataResult": "2026-03-12",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "90022/2026",
-        "Licitacao": "10572022000180000102026",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/10",
-        "UASG": "926150",
-        "DataFimPropostas": "2026-02-09T09:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251226",
@@ -93618,12 +93618,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260126",
+        "DataResult": "2026-03-09",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "PB",
+        "Municipio": "João Pessoa",
+        "Edital": "90011/2026",
+        "Licitacao": "15126437000305003082026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/308",
+        "UASG": "155023",
+        "DataFimPropostas": "2026-02-05T09:00:00",
         "Item": 14,
         "Descricao": "Sulfato De Magnésio",
         "Qtd": 800.0,
         "Unitario": 6.36,
         "Total": 5088.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260126",
         "DataResult": "2026-03-09",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -93633,25 +93645,13 @@
         "Licitacao": "15126437000305003082026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/308",
         "UASG": "155023",
-        "DataFimPropostas": "2026-02-05T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-05T09:00:00",
         "Item": 18,
         "Descricao": "Ampicilina",
         "Qtd": 500.0,
         "Unitario": 4.81,
         "Total": 2405.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260126",
-        "DataResult": "2026-03-09",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "PB",
-        "Municipio": "João Pessoa",
-        "Edital": "90011/2026",
-        "Licitacao": "15126437000305003082026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/308",
-        "UASG": "155023",
-        "DataFimPropostas": "2026-02-05T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 146,
@@ -94176,12 +94176,24 @@
         "DataFimPropostas": "2026-02-13T09:00:00"
     },
     {
+        "DataPublicacao": "20260126",
+        "DataResult": "2026-03-04",
+        "Orgao": "ESTADO DO CEARA",
+        "UF": "CE",
+        "Municipio": "Fortaleza",
+        "Edital": "202525128/2025",
+        "Licitacao": "07954480000179255642025",
+        "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25564",
+        "UASG": "240001",
+        "DataFimPropostas": "2026-03-04T16:07:35",
         "Item": 3,
         "Descricao": "LIDOCAINA CLORIDRATO, 10% (100MG/ML), SOLUCAO TOPICA, SPRAY, FRASCO 50ML, UNIDADE 1.0 FRASCO",
         "Qtd": 1961.0,
         "Unitario": 37.0,
         "Total": 72557.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260126",
         "DataResult": "2026-03-04",
         "Orgao": "ESTADO DO CEARA",
@@ -94191,25 +94203,13 @@
         "Licitacao": "07954480000179255642025",
         "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25564",
         "UASG": "240001",
-        "DataFimPropostas": "2026-03-04T16:07:35"
-    },
-    {
+        "DataFimPropostas": "2026-03-04T16:07:35",
         "Item": 7,
         "Descricao": "TRAVOPROSTA, 0,04MG/ML, SOLUCAO OFTALMICA, FRASCO 2,5ML, UNIDADE 1.0 FRASCO",
         "Qtd": 18054.0,
         "Unitario": 8.64,
         "Total": 155986.56,
-        "Status": "Venceu",
-        "DataPublicacao": "20260126",
-        "DataResult": "2026-03-04",
-        "Orgao": "ESTADO DO CEARA",
-        "UF": "CE",
-        "Municipio": "Fortaleza",
-        "Edital": "202525128/2025",
-        "Licitacao": "07954480000179255642025",
-        "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25564",
-        "UASG": "240001",
-        "DataFimPropostas": "2026-03-04T16:07:35"
+        "Status": "Venceu"
     },
     {
         "Item": 17,
