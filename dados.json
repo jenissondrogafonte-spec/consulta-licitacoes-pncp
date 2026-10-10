@@ -31968,12 +31968,24 @@
         "DataFimPropostas": "2026-06-11T08:30:00"
     },
     {
+        "DataPublicacao": "20260310",
+        "DataResult": "2026-07-14",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
+        "UF": "ES",
+        "Municipio": "São Mateus",
+        "Edital": "000004/2026",
+        "Licitacao": "11356696000100000182026",
+        "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
+        "UASG": "11356696000100-002",
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 37,
         "Descricao": "CARBAMAZEPINA, DOSAGEM:20 MG/ML,APRESENTAÇÃO:SUSPENSÃO ORAL 100ML",
         "Qtd": 12500.0,
         "Unitario": 6.339,
         "Total": 79237.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -31983,15 +31995,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 57,
         "Descricao": "CLORPROMAZINA, CONCENTRAÇÃO:40 MG/ML, FORMAFARMACEUTICA:SOLUÇÃO ORAL - GOTAS 20ML",
         "Qtd": 240.0,
         "Unitario": 7.4999,
         "Total": 1799.98,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32001,15 +32013,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 64,
         "Descricao": "DEXCLORFENIRAMINA 0,4MG",
         "Qtd": 3600.0,
         "Unitario": 1.7499,
         "Total": 6299.64,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32019,15 +32031,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 76,
         "Descricao": "CIMED ENALAPRIL MALEATO 20MG",
         "Qtd": 840000.0,
         "Unitario": 0.05,
         "Total": 42000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32037,15 +32049,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 77,
         "Descricao": "ENALAPRIL MALEATO, DOSAGEM:5 MG",
         "Qtd": 180000.0,
         "Unitario": 0.0399,
         "Total": 7182.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32055,15 +32067,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 87,
         "Descricao": "FOLINATO",
         "Qtd": 6000.0,
         "Unitario": 2.2,
         "Total": 13200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32073,15 +32085,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 97,
         "Descricao": "HIDROXIDO DE ALUMINIO",
         "Qtd": 6000.0,
         "Unitario": 2.3879,
         "Total": 14327.4,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32091,15 +32103,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 118,
         "Descricao": "LORATADINA, CONCENTRAÇÃO:1MG/ML, TIPOMEDICAMENTO:XAROPE 100ML",
         "Qtd": 12000.0,
         "Unitario": 2.7399,
         "Total": 32878.8,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32109,15 +32121,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 145,
         "Descricao": "PARACETAMOL, DOSAGEM SOLUÇÃO ORAL:200 MG/ML,APRESENTAÇÃO:SOLUÇÃO ORAL 10ML",
         "Qtd": 7200.0,
         "Unitario": 0.9999,
         "Total": 7199.28,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32127,15 +32139,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 149,
         "Descricao": "PREDNISOLONA 20MG 30X20 - MEDICAMENTO",
         "Qtd": 108000.0,
         "Unitario": 0.1569,
         "Total": 16945.2,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32145,15 +32157,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 161,
         "Descricao": "SIMETICONA, CONCENTRAÇÃO:75 MG/ML, FORMAFARMACÊUTICA:SOLUÇÃO ORAL - GOTAS 15ML",
         "Qtd": 6000.0,
         "Unitario": 1.2999,
         "Total": 7799.4,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32163,15 +32175,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 206,
         "Descricao": "HEPARINA SODICA 5000UI/0,25ML",
         "Qtd": 480.0,
         "Unitario": 8.0,
         "Total": 3840.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32181,15 +32193,15 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 211,
         "Descricao": "LIDOCAÍNA CLORIDRATO, COMPOSIÇÃO:ASSOCIADA COM EPINEFRINA, DOSAGEM:2% + 1:100.000, APRESENTAÇÃO:INJE",
         "Qtd": 360.0,
         "Unitario": 5.25,
         "Total": 1890.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260310",
         "DataResult": "2026-07-14",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
@@ -32199,25 +32211,13 @@
         "Licitacao": "11356696000100000182026",
         "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
         "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T09:00:00",
         "Item": 221,
         "Descricao": "TRAMADOL CLORIDRATO, DOSAGEM:50 MG/ML,FORMA FARMACÊUTICA:SOLUÇÃO INJETÁVEL 2ML",
         "Qtd": 12000.0,
         "Unitario": 0.8899,
         "Total": 10678.8,
-        "Status": "Venceu",
-        "DataPublicacao": "20260310",
-        "DataResult": "2026-07-14",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO MATEUS",
-        "UF": "ES",
-        "Municipio": "São Mateus",
-        "Edital": "000004/2026",
-        "Licitacao": "11356696000100000182026",
-        "Link": "https://pncp.gov.br/app/editais/11356696000100/2026/18",
-        "UASG": "11356696000100-002",
-        "DataFimPropostas": "2026-03-23T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 9,
@@ -84258,12 +84258,6 @@
         "DataFimPropostas": "2025-11-26T09:00:00"
     },
     {
-        "Item": 5,
-        "Descricao": "Latanoprosta",
-        "Qtd": 2000.0,
-        "Unitario": 12.7,
-        "Total": 25400.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260310",
         "DataResult": "2026-03-24",
         "Orgao": "MUNICIPIO DE MONTEIRO",
@@ -84273,7 +84267,13 @@
         "Licitacao": "09073628000191000162026",
         "Link": "https://pncp.gov.br/app/editais/09073628000191/2026/16",
         "UASG": "982095",
-        "DataFimPropostas": "2026-03-23T10:00:00"
+        "DataFimPropostas": "2026-03-23T10:00:00",
+        "Item": 5,
+        "Descricao": "Latanoprosta",
+        "Qtd": 2000.0,
+        "Unitario": 12.7,
+        "Total": 25400.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260128",
