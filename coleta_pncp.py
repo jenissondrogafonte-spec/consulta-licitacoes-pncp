@@ -12,14 +12,14 @@ import sys
 
 # --- CONFIGURAÇÕES ---
 CNPJ_ALVO = "08778201000126"   # DROGAFONTE
-MAX_WORKERS = 30               # Aumentado para mais paralelismo 
+MAX_WORKERS = 30               
 ARQ_DADOS = 'dados.json'
 ARQ_CHECKPOINT = 'checkpoint.txt'
 DIAS_RETROATIVOS = 365
 TEMPO_LIMITE_SEGURO = 19800  # 5h 30min para salvar antes do timeout
-JANELA_DIAS = 1  # Define quantos dias processar por ciclo de Action
+JANELA_DIAS = 1  
 
-# NOVAS VARIÁVEIS DE AMBIENTE:
+# VARIÁVEIS DE AMBIENTE:
 DATA_INICIO_FORCADA = os.environ.get("DATA_INICIO_FORCADA", "") 
 SINGLE_RUN = os.environ.get("SINGLE_RUN", "false").lower() == "true"
 MODALIDADES_BUSCA = [6] 
@@ -89,7 +89,7 @@ def salvar_estado(banco, proximo_dia):
     
     lista_final = list(banco_limpo.values())
     
-    # Nova ordenação inteligente: Data (Mais recente), Licitação (Agrupada), Item (Crescente)
+    # Ordenação estável: Data (Mais recente), Licitação (Agrupada), Item (Crescente)
     lista_final.sort(
         key=lambda x: (
             x.get('DataResult', ''), 
@@ -119,8 +119,7 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
     num_item = it.get('numeroItem')
     if not num_item: return None
 
-    # --- 🚀 O GRANDE FILTRO DE OTIMIZAÇÃO ---
-    # Ignora requisições pesadas para itens que sabidamente não têm vencedor.
+    # O GRANDE FILTRO: Ignora requisições para itens que não têm vencedor
     situacao_nome = str(it.get('situacaoCompraItemNome', '')).upper()
     status_sem_vencedor = ['ANDAMENTO', 'DESERTO', 'FRACASSADO', 'CANCELADO', 'ANULADO', 'REVOGADO', 'SUSPENSO']
     
@@ -129,7 +128,6 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
         
     if it.get('temResultado') is False:
         return None
-    # ----------------------------------------
 
     url_res = f"https://pncp.gov.br/api/pncp/v1/orgaos/{cnpj_org}/compras/{ano}/{seq}/itens/{num_item}/resultados"
     
@@ -143,7 +141,13 @@ def processar_item_individual(session, it, cnpj_org, ano, seq):
             for v in (vends or []):
                 ni = (v.get('niFornecedor') or "").replace(".", "").replace("/", "").replace("-", "")
                 if CNPJ_ALVO in ni:
-                    qtd = v.get('quantidadeHomologada') or v.get('quantidade') or 0
+                    qtd = float(v.get('quantidadeHomologada') or v.get('quantidade') or 0)
+                    ordem = str(v.get('ordemClassificacao', ''))
+                    
+                    # Ignora a captura se a empresa não for a 1ª colocada ou se a quantidade for zero
+                    if ordem != '1' and qtd <= 0:
+                        continue
+                        
                     unitario = float(v.get('valorUnitarioHomologado') or v.get('valorUnitario') or 0)
                     total = float(v.get('valorTotalHomologado') or v.get('valorTotal') or 0)
                     
@@ -280,7 +284,6 @@ def main():
     if SINGLE_RUN:
         print("\n🛑 [SINGLE RUN ATIVADO] Execução de 1 ciclo concluída. O script não acionará a próxima rotina.")
         sys.exit(0)
-    # ---------------------------
 
     if data_atual.date() < hoje.date():
         print(f"\n⏳ Lote processado. Faltam mais dias até hoje. Acionando próxima rotina...")
