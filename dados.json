@@ -55674,12 +55674,6 @@
         "DataFimPropostas": "2026-05-19T09:00:00"
     },
     {
-        "Item": 19,
-        "Descricao": "Água Destilada",
-        "Qtd": 33250.0,
-        "Unitario": 3.68,
-        "Total": 122360.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260213",
         "DataResult": "2026-05-26",
         "Orgao": "INSTITUTO CANDIDA VARGAS",
@@ -55689,7 +55683,13 @@
         "Licitacao": "35501733000194000042026",
         "Link": "https://pncp.gov.br/app/editais/35501733000194/2026/4",
         "UASG": "462314",
-        "DataFimPropostas": "2026-03-03T14:00:00"
+        "DataFimPropostas": "2026-03-03T14:00:00",
+        "Item": 19,
+        "Descricao": "Água Destilada",
+        "Qtd": 33250.0,
+        "Unitario": 3.68,
+        "Total": 122360.0,
+        "Status": "Venceu"
     },
     {
         "Item": 2,
