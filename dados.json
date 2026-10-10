@@ -76356,12 +76356,6 @@
         "DataFimPropostas": "2026-03-26T08:59:00"
     },
     {
-        "Item": 73,
-        "Descricao": "Fralda Descartável",
-        "Qtd": 285000.0,
-        "Unitario": 0.397,
-        "Total": 113145.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260119",
         "DataResult": "2026-04-15",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -76371,7 +76365,13 @@
         "Licitacao": "15126437000305002232026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/223",
         "UASG": "155906",
-        "DataFimPropostas": "2026-01-29T09:00:00"
+        "DataFimPropostas": "2026-01-29T09:00:00",
+        "Item": 73,
+        "Descricao": "Fralda Descartável",
+        "Qtd": 285000.0,
+        "Unitario": 0.397,
+        "Total": 113145.0,
+        "Status": "Venceu"
     },
     {
         "Item": 5,
@@ -97362,12 +97362,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 10,
-        "Descricao": "Brimonidina Tartarato",
-        "Qtd": 1080.0,
-        "Unitario": 3.88,
-        "Total": 4190.4,
-        "Status": "Venceu",
         "DataPublicacao": "20260119",
         "DataResult": "2026-02-19",
         "Orgao": "MUNICIPIO DE ANGRA DOS REIS",
@@ -97377,7 +97371,13 @@
         "Licitacao": "29172467000109001352026",
         "Link": "https://pncp.gov.br/app/editais/29172467000109/2026/135",
         "UASG": "985801",
-        "DataFimPropostas": "2026-01-30T10:00:00"
+        "DataFimPropostas": "2026-01-30T10:00:00",
+        "Item": 10,
+        "Descricao": "Brimonidina Tartarato",
+        "Qtd": 1080.0,
+        "Unitario": 3.88,
+        "Total": 4190.4,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260114",
