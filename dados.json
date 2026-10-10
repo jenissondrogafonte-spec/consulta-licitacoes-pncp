@@ -86346,12 +86346,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 3,
-        "Descricao": "CIPROFLOXACINO, CLORIDRATO, 3,5MG/G, POMADA OFTALMICA, BISNAGA 3,5G, UNIDADE 1.0 BISNAGA",
-        "Qtd": 300.0,
-        "Unitario": 17.0,
-        "Total": 5100.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260205",
         "DataResult": "2026-03-23",
         "Orgao": "ESTADO DO CEARA",
@@ -86361,7 +86355,13 @@
         "Licitacao": "07954480000179257062025",
         "Link": "https://pncp.gov.br/app/editais/07954480000179/2025/25706",
         "UASG": "240001",
-        "DataFimPropostas": "2026-03-02T09:00:00"
+        "DataFimPropostas": "2026-03-02T09:00:00",
+        "Item": 3,
+        "Descricao": "CIPROFLOXACINO, CLORIDRATO, 3,5MG/G, POMADA OFTALMICA, BISNAGA 3,5G, UNIDADE 1.0 BISNAGA",
+        "Qtd": 300.0,
+        "Unitario": 17.0,
+        "Total": 5100.0,
+        "Status": "Venceu"
     },
     {
         "Item": 20,
@@ -94968,12 +94968,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260205",
+        "DataResult": "2026-03-03",
+        "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
+        "UF": "SP",
+        "Municipio": "Araraquara",
+        "Edital": "23 | Processo 256/2025",
+        "Licitacao": "14986862000140002942025",
+        "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/294",
+        "UASG": "0018",
+        "DataFimPropostas": "2026-02-19T08:30:00",
         "Item": 45,
         "Descricao": "Fitomenadiona  vit. K1  10mg ml  ampola c  1ml  solucao injetavel  via de administracao  intramuscular e  subcutanea uso adulto e pediatrico .  Caixa c  ate 50 ampolas.",
         "Qtd": 4000.0,
         "Unitario": 1.62,
         "Total": 6480.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260205",
         "DataResult": "2026-03-03",
         "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
@@ -94983,15 +94995,15 @@
         "Licitacao": "14986862000140002942025",
         "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/294",
         "UASG": "0018",
-        "DataFimPropostas": "2026-02-19T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-19T08:30:00",
         "Item": 71,
         "Descricao": "Cloridrato de tramadol 50mg mL  solucao injetavel  via de administracao  intramuscular e intravenoso  em ampola com 2 mL. uso adulto . Caixa c  ate 100 ampolas.",
         "Qtd": 3000.0,
         "Unitario": 0.91,
         "Total": 2730.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260205",
         "DataResult": "2026-03-03",
         "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
@@ -95001,25 +95013,13 @@
         "Licitacao": "14986862000140002942025",
         "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/294",
         "UASG": "0018",
-        "DataFimPropostas": "2026-02-19T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-19T08:30:00",
         "Item": 138,
         "Descricao": "Cloridrato de Dexmedetomidina 100mcg mL  frasco ampola  com 2 mL  via de administracao  endovenosa. Uso adulto",
         "Qtd": 500.0,
         "Unitario": 6.0,
         "Total": 3000.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260205",
-        "DataResult": "2026-03-03",
-        "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
-        "UF": "SP",
-        "Municipio": "Araraquara",
-        "Edital": "23 | Processo 256/2025",
-        "Licitacao": "14986862000140002942025",
-        "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/294",
-        "UASG": "0018",
-        "DataFimPropostas": "2026-02-19T08:30:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260203",
