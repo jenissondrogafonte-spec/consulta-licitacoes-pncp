@@ -51408,12 +51408,6 @@
         "DataFimPropostas": "2026-04-01T09:00:00"
     },
     {
-        "Item": 6,
-        "Descricao": "BIMATOPROSTA 0,3MG/ML SOLUCAO OFTALMICABIMATOPROSTA 0,3MG/ML SOLUCAO OFTALMICA (BPS BR0271848)",
-        "Qtd": 1000.0,
-        "Unitario": 15.98,
-        "Total": 15980.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260306",
         "DataResult": "2026-06-03",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
@@ -51423,7 +51417,13 @@
         "Licitacao": "11800731000138002902025",
         "Link": "https://pncp.gov.br/app/editais/11800731000138/2025/290",
         "UASG": "1405",
-        "DataFimPropostas": "2026-03-24T14:00:00"
+        "DataFimPropostas": "2026-03-24T14:00:00",
+        "Item": 6,
+        "Descricao": "BIMATOPROSTA 0,3MG/ML SOLUCAO OFTALMICABIMATOPROSTA 0,3MG/ML SOLUCAO OFTALMICA (BPS BR0271848)",
+        "Qtd": 1000.0,
+        "Unitario": 15.98,
+        "Total": 15980.0,
+        "Status": "Venceu"
     },
     {
         "Item": 4,
@@ -65862,12 +65862,24 @@
         "DataFimPropostas": "2026-04-30T08:01:00"
     },
     {
+        "DataPublicacao": "20260306",
+        "DataResult": "2026-05-08",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
+        "UF": "RJ",
+        "Municipio": "Resende",
+        "Edital": "PE 62/2026/2025",
+        "Licitacao": "11800731000138002892025",
+        "Link": "https://pncp.gov.br/app/editais/11800731000138/2025/289",
+        "UASG": "1405",
+        "DataFimPropostas": "2026-03-19T13:00:00",
         "Item": 18,
         "Descricao": "LIDOCAINA, CLORIDRATO 20MG/ML (SEM VASO) SOLUCAO INJETAVEL 5MLLIDOCAINA, CLORIDRATO 20MG/ML (SEM VASO) SOLUCAO INJETAVEL 5ML",
         "Qtd": 12000.0,
         "Unitario": 1.14,
         "Total": 13680.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260306",
         "DataResult": "2026-05-08",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
@@ -65877,25 +65889,13 @@
         "Licitacao": "11800731000138002892025",
         "Link": "https://pncp.gov.br/app/editais/11800731000138/2025/289",
         "UASG": "1405",
-        "DataFimPropostas": "2026-03-19T13:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-19T13:00:00",
         "Item": 19,
         "Descricao": "MAGNESIO, SULFATO 50% SOLUCAO INJETAVEL 10 MLMAGNESIO, SULFATO 50% SOLUCAO INJETAVEL 10 ML",
         "Qtd": 9000.0,
         "Unitario": 5.63,
         "Total": 50670.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260306",
-        "DataResult": "2026-05-08",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE/SUS DO MUNICIPIO DE RESENDE",
-        "UF": "RJ",
-        "Municipio": "Resende",
-        "Edital": "PE 62/2026/2025",
-        "Licitacao": "11800731000138002892025",
-        "Link": "https://pncp.gov.br/app/editais/11800731000138/2025/289",
-        "UASG": "1405",
-        "DataFimPropostas": "2026-03-19T13:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260128",
@@ -69498,12 +69498,24 @@
         "DataFimPropostas": "2026-04-06T09:00:00"
     },
     {
+        "DataPublicacao": "20260306",
+        "DataResult": "2026-05-05",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "RJ",
+        "Municipio": "São João da Barra",
+        "Edital": "008/2026",
+        "Licitacao": "04543783000100000042026",
+        "Link": "https://pncp.gov.br/app/editais/04543783000100/2026/4",
+        "UASG": "1468",
+        "DataFimPropostas": "2026-03-23T10:00:00",
         "Item": 7160627,
         "Descricao": "FUROSEMIDA 40MG",
         "Qtd": 468750.0,
         "Unitario": 0.05,
         "Total": 23437.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260306",
         "DataResult": "2026-05-05",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -69513,25 +69525,13 @@
         "Licitacao": "04543783000100000042026",
         "Link": "https://pncp.gov.br/app/editais/04543783000100/2026/4",
         "UASG": "1468",
-        "DataFimPropostas": "2026-03-23T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-23T10:00:00",
         "Item": 7160639,
         "Descricao": "METFORMINA COMPRIMIDO REVESTIDO 850MG",
         "Qtd": 468750.0,
         "Unitario": 0.11,
         "Total": 51562.5,
-        "Status": "Venceu",
-        "DataPublicacao": "20260306",
-        "DataResult": "2026-05-05",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "RJ",
-        "Municipio": "São João da Barra",
-        "Edital": "008/2026",
-        "Licitacao": "04543783000100000042026",
-        "Link": "https://pncp.gov.br/app/editais/04543783000100/2026/4",
-        "UASG": "1468",
-        "DataFimPropostas": "2026-03-23T10:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 10,
