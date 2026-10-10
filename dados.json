@@ -72,6 +72,12 @@
         "DataFimPropostas": "2026-09-04T08:00:00"
     },
     {
+        "Item": 1,
+        "Descricao": "Prednisona dosagem: 5 mg",
+        "Qtd": 1187824.0,
+        "Unitario": 0.0599,
+        "Total": 71150.6576,
+        "Status": "Venceu",
         "DataPublicacao": "20260918",
         "DataResult": "2026-10-08",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -81,13 +87,7 @@
         "Licitacao": "10572022000180006052026",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/605",
         "UASG": "926150",
-        "DataFimPropostas": "2026-10-05T09:00:00",
-        "Item": 1,
-        "Descricao": "Prednisona dosagem: 5 mg",
-        "Qtd": 1187824.0,
-        "Unitario": 0.0599,
-        "Total": 71150.6576,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-10-05T09:00:00"
     },
     {
         "DataPublicacao": "20261008",
@@ -342,6 +342,12 @@
         "DataFimPropostas": "2026-09-11T09:00:00"
     },
     {
+        "Item": 125,
+        "Descricao": "CEFTRIAXONA - PRINCIPIO ATIVO: CEFTRIAXONA; CONCENTRACAO/DOSAGEM: 1 G; FORMA FARMACEUTICA: PO PARA SOLUCAO INJETAVEL; APRESENTACAO: FRASCO-AMPOLA; COMP",
+        "Qtd": 25000.0,
+        "Unitario": 3.36,
+        "Total": 84000.0,
+        "Status": "Venceu",
         "DataPublicacao": "20260910",
         "DataResult": "2026-10-05",
         "Orgao": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
@@ -351,13 +357,7 @@
         "Licitacao": "22675359000100000682026",
         "Link": "https://pncp.gov.br/app/editais/22675359000100/2026/68",
         "UASG": "2311076",
-        "DataFimPropostas": "2026-09-24T09:00:00",
-        "Item": 125,
-        "Descricao": "CEFTRIAXONA - PRINCIPIO ATIVO: CEFTRIAXONA; CONCENTRACAO/DOSAGEM: 1 G; FORMA FARMACEUTICA: PO PARA SOLUCAO INJETAVEL; APRESENTACAO: FRASCO-AMPOLA; COMP",
-        "Qtd": 25000.0,
-        "Unitario": 3.36,
-        "Total": 84000.0,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-24T09:00:00"
     },
     {
         "Item": 14,
@@ -432,24 +432,12 @@
         "DataFimPropostas": "2026-09-17T09:30:00"
     },
     {
-        "DataPublicacao": "20260914",
-        "DataResult": "2026-10-05",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "182/2026",
-        "Licitacao": "10572022000180005872026",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/587",
-        "UASG": "926150",
-        "DataFimPropostas": "2026-09-25T10:00:00",
         "Item": 3,
         "Descricao": "Aztreonam concentração: 1, forma farmaceutica: pó p/ solução injetável",
         "Qtd": 1620.0,
         "Unitario": 35.99,
         "Total": 58303.8,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260914",
         "DataResult": "2026-10-05",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -459,13 +447,25 @@
         "Licitacao": "10572022000180005872026",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/587",
         "UASG": "926150",
-        "DataFimPropostas": "2026-09-25T10:00:00",
+        "DataFimPropostas": "2026-09-25T10:00:00"
+    },
+    {
         "Item": 4,
         "Descricao": "Aztreonam concentração: 1, forma farmaceutica: pó p/ solução injetável",
         "Qtd": 540.0,
         "Unitario": 35.99,
         "Total": 19434.6,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260914",
+        "DataResult": "2026-10-05",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "182/2026",
+        "Licitacao": "10572022000180005872026",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2026/587",
+        "UASG": "926150",
+        "DataFimPropostas": "2026-09-25T10:00:00"
     },
     {
         "Item": 1,
@@ -954,6 +954,12 @@
         "DataFimPropostas": "2026-08-26T15:00:00"
     },
     {
+        "Item": 6,
+        "Descricao": "Sulfametoxazol composição: associado à trimetoprima, concentração: 80mg + 16mg/ml, forma farmacêutica: solução injetável",
+        "Qtd": 1670.0,
+        "Unitario": 4.16,
+        "Total": 6947.2,
+        "Status": "Venceu",
         "DataPublicacao": "20260915",
         "DataResult": "2026-09-30",
         "Orgao": "COMANDO DO EXERCITO",
@@ -963,13 +969,7 @@
         "Licitacao": "00394452000103199392026",
         "Link": "https://pncp.gov.br/app/editais/00394452000103/2026/19939",
         "UASG": "160199",
-        "DataFimPropostas": "2026-09-25T08:59:00",
-        "Item": 6,
-        "Descricao": "Sulfametoxazol composição: associado à trimetoprima, concentração: 80mg + 16mg/ml, forma farmacêutica: solução injetável",
-        "Qtd": 1670.0,
-        "Unitario": 4.16,
-        "Total": 6947.2,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-25T08:59:00"
     },
     {
         "Item": 110,
@@ -39888,24 +39888,12 @@
         "DataFimPropostas": "2026-05-20T08:30:00"
     },
     {
-        "DataPublicacao": "20260915",
-        "DataResult": "2026-06-25",
-        "Orgao": "MUNICIPIO DE ITANHAEM",
-        "UF": "SP",
-        "Municipio": "Itanhaém",
-        "Edital": "38/2026",
-        "Licitacao": "46578498000175003002026",
-        "Link": "https://pncp.gov.br/app/editais/46578498000175/2026/300",
-        "UASG": "11.2026",
-        "DataFimPropostas": "2026-05-13T08:30:00",
         "Item": 4,
         "Descricao": "CARBAMAZEPINA 200mg COMPRIMIDO (C1)",
         "Qtd": 700000.0,
         "Unitario": 0.1356,
         "Total": 94920.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260915",
         "DataResult": "2026-06-25",
         "Orgao": "MUNICIPIO DE ITANHAEM",
@@ -39915,13 +39903,25 @@
         "Licitacao": "46578498000175003002026",
         "Link": "https://pncp.gov.br/app/editais/46578498000175/2026/300",
         "UASG": "11.2026",
-        "DataFimPropostas": "2026-05-13T08:30:00",
+        "DataFimPropostas": "2026-05-13T08:30:00"
+    },
+    {
         "Item": 16,
         "Descricao": "LEVOMEPROMAZINA 100mg COMPRIMIDO (C1)",
         "Qtd": 200000.0,
         "Unitario": 0.565,
         "Total": 113000.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260915",
+        "DataResult": "2026-06-25",
+        "Orgao": "MUNICIPIO DE ITANHAEM",
+        "UF": "SP",
+        "Municipio": "Itanhaém",
+        "Edital": "38/2026",
+        "Licitacao": "46578498000175003002026",
+        "Link": "https://pncp.gov.br/app/editais/46578498000175/2026/300",
+        "UASG": "11.2026",
+        "DataFimPropostas": "2026-05-13T08:30:00"
     },
     {
         "Item": 4,
@@ -223017,24 +223017,12 @@
         "DataFimPropostas": "2025-03-11T08:30:00"
     },
     {
-        "DataPublicacao": "20260921",
-        "DataResult": "2025-02-21",
-        "Orgao": "MUNICIPIO DE JARINU",
-        "UF": "SP",
-        "Municipio": "Jarinu",
-        "Edital": "4028 | Processo 81924/2025",
-        "Licitacao": "45780079000159003892025",
-        "Link": "https://pncp.gov.br/app/editais/45780079000159/2025/389",
-        "UASG": "0000",
-        "DataFimPropostas": "2024-12-09T09:00:00",
         "Item": 4,
         "Descricao": "Acido acetilsalicilico 100mg",
         "Qtd": 600000.0,
         "Unitario": 0.026,
         "Total": 15600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260921",
         "DataResult": "2025-02-21",
         "Orgao": "MUNICIPIO DE JARINU",
@@ -223044,15 +223032,15 @@
         "Licitacao": "45780079000159003892025",
         "Link": "https://pncp.gov.br/app/editais/45780079000159/2025/389",
         "UASG": "0000",
-        "DataFimPropostas": "2024-12-09T09:00:00",
+        "DataFimPropostas": "2024-12-09T09:00:00"
+    },
+    {
         "Item": 6,
         "Descricao": "AMBROXOL CLORIDRATO DEXAROPEPEDIATRICO15MG 5 ML  FRASCOC 100ML ",
         "Qtd": 5000.0,
         "Unitario": 2.0,
         "Total": 10000.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20260921",
         "DataResult": "2025-02-21",
         "Orgao": "MUNICIPIO DE JARINU",
@@ -223062,13 +223050,25 @@
         "Licitacao": "45780079000159003892025",
         "Link": "https://pncp.gov.br/app/editais/45780079000159/2025/389",
         "UASG": "0000",
-        "DataFimPropostas": "2024-12-09T09:00:00",
+        "DataFimPropostas": "2024-12-09T09:00:00"
+    },
+    {
         "Item": 40,
         "Descricao": "PARACETAMOL 500 MG",
         "Qtd": 80000.0,
         "Unitario": 0.06,
         "Total": 4800.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20260921",
+        "DataResult": "2025-02-21",
+        "Orgao": "MUNICIPIO DE JARINU",
+        "UF": "SP",
+        "Municipio": "Jarinu",
+        "Edital": "4028 | Processo 81924/2025",
+        "Licitacao": "45780079000159003892025",
+        "Link": "https://pncp.gov.br/app/editais/45780079000159/2025/389",
+        "UASG": "0000",
+        "DataFimPropostas": "2024-12-09T09:00:00"
     },
     {
         "Item": 1,
