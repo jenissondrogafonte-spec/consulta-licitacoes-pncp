@@ -80172,6 +80172,24 @@
         "DataFimPropostas": "2026-04-08T10:00:00"
     },
     {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-04-09",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90875/2025",
+        "Licitacao": "10572022000180013222025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1322",
+        "UASG": "926150",
+        "DataFimPropostas": "2026-01-06T10:00:00",
+        "Item": 23,
+        "Descricao": "Sulfametoxazol",
+        "Qtd": 15324.0,
+        "Unitario": 3.96,
+        "Total": 60683.04,
+        "Status": "Venceu"
+    },
+    {
         "Item": 6,
         "Descricao": "AGUA PARA INJECAO 10ML",
         "Qtd": 13000.0,
@@ -88270,6 +88288,24 @@
         "Link": "https://pncp.gov.br/app/editais/46634291000170/2026/30",
         "UASG": "245",
         "DataFimPropostas": "2026-02-25T13:59:00"
+    },
+    {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-03-17",
+        "Orgao": "MUNICIPIO DE SALVADOR",
+        "UF": "BA",
+        "Municipio": "Salvador",
+        "Edital": "003/2026/2025",
+        "Licitacao": "13927801000149002502025",
+        "Link": "https://pncp.gov.br/app/editais/13927801000149/2025/250",
+        "UASG": "000000002",
+        "DataFimPropostas": "2026-01-12T10:00:00",
+        "Item": 40001,
+        "Descricao": "CONFORME ANEXO I DO EDITAL.",
+        "Qtd": 648000.0,
+        "Unitario": 0.12,
+        "Total": 77760.0,
+        "Status": "Venceu"
     },
     {
         "Item": 8,
@@ -99630,12 +99666,6 @@
         "DataFimPropostas": "2025-10-30T09:00:00"
     },
     {
-        "Item": 13,
-        "Descricao": "LIDOCAÍNA EM GELÉIA COM 20 MG/G, EM BISNAGA COM 30 G:",
-        "Qtd": 10200.0,
-        "Unitario": 4.23,
-        "Total": 43146.0,
-        "Status": "Venceu",
         "DataPublicacao": "20251215",
         "DataResult": "2026-02-02",
         "Orgao": "MUNICIPIO DE ARACAJU",
@@ -99645,7 +99675,13 @@
         "Licitacao": "13128780004431001502025",
         "Link": "https://pncp.gov.br/app/editais/13128780004431/2025/150",
         "UASG": "1929",
-        "DataFimPropostas": "2026-01-06T09:00:00"
+        "DataFimPropostas": "2026-01-06T09:00:00",
+        "Item": 13,
+        "Descricao": "LIDOCAÍNA EM GELÉIA COM 20 MG/G, EM BISNAGA COM 30 G:",
+        "Qtd": 10200.0,
+        "Unitario": 4.23,
+        "Total": 43146.0,
+        "Status": "Venceu"
     },
     {
         "Item": 8,
@@ -101826,12 +101862,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-01-27",
+        "Orgao": "MUNICIPIO DE ATIBAIA",
+        "UF": "SP",
+        "Municipio": "Atibaia",
+        "Edital": "PE 273/2025",
+        "Licitacao": "45279635000108011892025",
+        "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
+        "UASG": "0q",
+        "DataFimPropostas": "2026-01-15T09:30:00",
         "Item": 17,
         "Descricao": "ENOXAPARINA SÓDICA 60MG/0,6ML SOLUÇÃO INJETÁVEL EM SERINGA PRÉ CARREGADA",
         "Qtd": 0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Perdeu/Anulado",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2026-01-27",
         "Orgao": "MUNICIPIO DE ATIBAIA",
@@ -101841,15 +101889,15 @@
         "Licitacao": "45279635000108011892025",
         "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
         "UASG": "0q",
-        "DataFimPropostas": "2026-01-15T09:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-15T09:30:00",
         "Item": 38,
         "Descricao": "2037315 - METOPROLOL, TARTARATO SOLUÇÃO INJETÁVEL 1 MG/ML AMPOLA 5 ML",
         "Qtd": 0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Perdeu/Anulado",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2026-01-27",
         "Orgao": "MUNICIPIO DE ATIBAIA",
@@ -101859,15 +101907,15 @@
         "Licitacao": "45279635000108011892025",
         "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
         "UASG": "0q",
-        "DataFimPropostas": "2026-01-15T09:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-15T09:30:00",
         "Item": 39,
         "Descricao": "NITROGLICERINA 5MG/ML AMPOLA 10 ML",
         "Qtd": 0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Perdeu/Anulado",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2026-01-27",
         "Orgao": "MUNICIPIO DE ATIBAIA",
@@ -101877,15 +101925,15 @@
         "Licitacao": "45279635000108011892025",
         "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
         "UASG": "0q",
-        "DataFimPropostas": "2026-01-15T09:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-15T09:30:00",
         "Item": 40,
         "Descricao": "ÓLEO MINERAL SOLUÇÃO ORAL FRASCO COM 100ML",
         "Qtd": 0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Perdeu/Anulado",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2026-01-27",
         "Orgao": "MUNICIPIO DE ATIBAIA",
@@ -101895,15 +101943,15 @@
         "Licitacao": "45279635000108011892025",
         "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
         "UASG": "0q",
-        "DataFimPropostas": "2026-01-15T09:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-15T09:30:00",
         "Item": 50,
         "Descricao": "ROCURONIO, BROMETO 10MG/ML FRAMPOLA 5 ML",
         "Qtd": 0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Perdeu/Anulado",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2026-01-27",
         "Orgao": "MUNICIPIO DE ATIBAIA",
@@ -101913,25 +101961,13 @@
         "Licitacao": "45279635000108011892025",
         "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
         "UASG": "0q",
-        "DataFimPropostas": "2026-01-15T09:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-15T09:30:00",
         "Item": 51,
         "Descricao": "SAIS PARA REIDRATAÇÃO ORAL (CLORETO DE SÓDIO 3,5G + CLORETO DE POTÁSSIO 1,5G + CITRATO DE SÓDIO DIHIDRATADO 2,9G + GLICOSE 20G) ENVELOPE PARA PREPARO DE 1 LITRO",
         "Qtd": 0,
         "Unitario": 0.0,
         "Total": 0.0,
-        "Status": "Perdeu/Anulado",
-        "DataPublicacao": "20251215",
-        "DataResult": "2026-01-27",
-        "Orgao": "MUNICIPIO DE ATIBAIA",
-        "UF": "SP",
-        "Municipio": "Atibaia",
-        "Edital": "PE 273/2025",
-        "Licitacao": "45279635000108011892025",
-        "Link": "https://pncp.gov.br/app/editais/45279635000108/2025/1189",
-        "UASG": "0q",
-        "DataFimPropostas": "2026-01-15T09:30:00"
+        "Status": "Venceu"
     },
     {
         "Item": 43,
@@ -102222,12 +102258,24 @@
         "DataFimPropostas": "2025-12-03T08:30:00"
     },
     {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-01-23",
+        "Orgao": "SECRETARIA DE ADMINISTRACAO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "90869/2025",
+        "Licitacao": "10572022000180013212025",
+        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1321",
+        "UASG": "926150",
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 3,
         "Descricao": "Ampicilina",
         "Qtd": 40764.0,
         "Unitario": 3.6496,
         "Total": 148772.2944,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2026-01-23",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
@@ -102237,25 +102285,13 @@
         "Licitacao": "10572022000180013212025",
         "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1321",
         "UASG": "926150",
-        "DataFimPropostas": "2026-01-16T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-16T09:00:00",
         "Item": 9,
         "Descricao": "Azitromicina",
         "Qtd": 154653.0,
         "Unitario": 0.7199,
         "Total": 111334.6947,
-        "Status": "Venceu",
-        "DataPublicacao": "20251215",
-        "DataResult": "2026-01-23",
-        "Orgao": "SECRETARIA DE ADMINISTRACAO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "90869/2025",
-        "Licitacao": "10572022000180013212025",
-        "Link": "https://pncp.gov.br/app/editais/10572022000180/2025/1321",
-        "UASG": "926150",
-        "DataFimPropostas": "2026-01-16T09:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251203",
@@ -104542,6 +104578,78 @@
         "Link": "https://pncp.gov.br/app/editais/56024581000156/2025/395",
         "UASG": "986969",
         "DataFimPropostas": "2025-11-19T09:00:00"
+    },
+    {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-01-12",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Edital": "098/2025",
+        "Licitacao": "45370707000128002182025",
+        "Link": "https://pncp.gov.br/app/editais/45370707000128/2025/218",
+        "UASG": "1",
+        "DataFimPropostas": "2026-01-06T09:00:00",
+        "Item": 19,
+        "Descricao": "ANLODIPINO 5MG",
+        "Qtd": 150000.0,
+        "Unitario": 0.022,
+        "Total": 3300.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-01-12",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Edital": "098/2025",
+        "Licitacao": "45370707000128002182025",
+        "Link": "https://pncp.gov.br/app/editais/45370707000128/2025/218",
+        "UASG": "1",
+        "DataFimPropostas": "2026-01-06T09:00:00",
+        "Item": 21,
+        "Descricao": "BIPERIDENO 2MG",
+        "Qtd": 50000.0,
+        "Unitario": 0.22,
+        "Total": 11000.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-01-12",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Edital": "098/2025",
+        "Licitacao": "45370707000128002182025",
+        "Link": "https://pncp.gov.br/app/editais/45370707000128/2025/218",
+        "UASG": "1",
+        "DataFimPropostas": "2026-01-06T09:00:00",
+        "Item": 46,
+        "Descricao": "DEXCLORFENIRAMINA 0,4MG/ML XPE FR 5ML",
+        "Qtd": 1000.0,
+        "Unitario": 1.6388,
+        "Total": 1638.8,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251215",
+        "DataResult": "2026-01-12",
+        "Orgao": "MUNICIPIO DE PITANGUEIRAS",
+        "UF": "SP",
+        "Municipio": "Pitangueiras",
+        "Edital": "098/2025",
+        "Licitacao": "45370707000128002182025",
+        "Link": "https://pncp.gov.br/app/editais/45370707000128/2025/218",
+        "UASG": "1",
+        "DataFimPropostas": "2026-01-06T09:00:00",
+        "Item": 87,
+        "Descricao": "NALOXONA, CLORIDRATO 0,4MG/ML SOLUÇÃO INJETÁVEL",
+        "Qtd": 200.0,
+        "Unitario": 4.68,
+        "Total": 936.0,
+        "Status": "Venceu"
     },
     {
         "Item": 11,
@@ -153096,12 +153204,24 @@
         "DataFimPropostas": "2025-08-12T10:00:00"
     },
     {
+        "DataPublicacao": "20251215",
+        "DataResult": "2025-07-30",
+        "Orgao": "MUNICIPIO DE JANAUBA",
+        "UF": "MG",
+        "Municipio": "Janaúba",
+        "Edital": "27/2025",
+        "Licitacao": "18017392000167000922025",
+        "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
+        "UASG": "001",
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 9,
         "Descricao": "ALBENDAZOL 40 MGML SUSPENSÃO",
         "Qtd": 1000.0,
         "Unitario": 1.06,
         "Total": 1060.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153111,15 +153231,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 15,
         "Descricao": "alopurinol 100 mg",
         "Qtd": 30000.0,
         "Unitario": 0.11,
         "Total": 3300.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153129,15 +153249,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 58,
         "Descricao": "carbamazepina 200 mg",
         "Qtd": 40000.0,
         "Unitario": 0.15,
         "Total": 6000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153147,15 +153267,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 70,
         "Descricao": "CETOPROFENO 100MGML INJETÁVEL",
         "Qtd": 4500.0,
         "Unitario": 1.12,
         "Total": 5040.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153165,15 +153285,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 87,
         "Descricao": "Clonazepam 2 mg",
         "Qtd": 150000.0,
         "Unitario": 0.04,
         "Total": 6000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153183,15 +153303,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 88,
         "Descricao": "CLONAZEPAM 2,5 MGML SUSPENÇÃO",
         "Qtd": 2000.0,
         "Unitario": 1.93,
         "Total": 3860.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153201,15 +153321,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 95,
         "Descricao": "DEXCLORFENIRAMINA MALE. 0,4 MGML",
         "Qtd": 1000.0,
         "Unitario": 1.63,
         "Total": 1630.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153219,15 +153339,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 129,
         "Descricao": "Fluconazol 150 mg",
         "Qtd": 6000.0,
         "Unitario": 0.39,
         "Total": 2340.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153237,15 +153357,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 148,
         "Descricao": "HIDROCORTISONA 100 MGML INJETÁVEL",
         "Qtd": 2000.0,
         "Unitario": 2.79,
         "Total": 5580.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153255,15 +153375,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 176,
         "Descricao": "LEVOMEPROMAZINA 100 MG",
         "Qtd": 40000.0,
         "Unitario": 0.56,
         "Total": 22400.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153273,15 +153393,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 195,
         "Descricao": "METOPROLOL SUCCINATO 50 MG  SELOZOK",
         "Qtd": 50000.0,
         "Unitario": 0.37,
         "Total": 18500.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153291,15 +153411,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 204,
         "Descricao": "MICONAZOL, NITRATO 20 MG BISNAGA 80 GR",
         "Qtd": 1000.0,
         "Unitario": 7.34,
         "Total": 7340.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153309,15 +153429,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 211,
         "Descricao": "NISTATINA 25.000 CREME VAGINAL BISNAGA 60 GR",
         "Qtd": 1500.0,
         "Unitario": 5.38,
         "Total": 8070.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153327,15 +153447,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 214,
         "Descricao": "NORETISTERONA+ESTRADIOL ENANTATO INJ.",
         "Qtd": 30000.0,
         "Unitario": 6.39,
         "Total": 191700.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153345,15 +153465,15 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 228,
         "Descricao": "Paracetamol 200 MGML Solução Oral",
         "Qtd": 10000.0,
         "Unitario": 1.06,
         "Total": 10600.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251215",
         "DataResult": "2025-07-30",
         "Orgao": "MUNICIPIO DE JANAUBA",
@@ -153363,25 +153483,13 @@
         "Licitacao": "18017392000167000922025",
         "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
         "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2025-07-25T09:00:00",
         "Item": 238,
         "Descricao": "PROMETAZINA 25 MGML FENERGAN INJETÁVEL",
         "Qtd": 1000.0,
         "Unitario": 2.9,
         "Total": 2900.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251215",
-        "DataResult": "2025-07-30",
-        "Orgao": "MUNICIPIO DE JANAUBA",
-        "UF": "MG",
-        "Municipio": "Janaúba",
-        "Edital": "27/2025",
-        "Licitacao": "18017392000167000922025",
-        "Link": "https://pncp.gov.br/app/editais/18017392000167/2025/92",
-        "UASG": "001",
-        "DataFimPropostas": "2025-07-25T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 4,
