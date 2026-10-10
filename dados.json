@@ -31824,12 +31824,6 @@
         "DataFimPropostas": "2026-07-07T08:30:00"
     },
     {
-        "Item": 23,
-        "Descricao": "Fitomenadiona",
-        "Qtd": 34560.0,
-        "Unitario": 1.75,
-        "Total": 60480.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260223",
         "DataResult": "2026-07-15",
         "Orgao": "SECRETARIA DA SAUDE",
@@ -31839,7 +31833,13 @@
         "Licitacao": "25053117000164000222026",
         "Link": "https://pncp.gov.br/app/editais/25053117000164/2026/22",
         "UASG": "925958",
-        "DataFimPropostas": "2026-03-30T08:30:00"
+        "DataFimPropostas": "2026-03-30T08:30:00",
+        "Item": 23,
+        "Descricao": "Fitomenadiona",
+        "Qtd": 34560.0,
+        "Unitario": 1.75,
+        "Total": 60480.0,
+        "Status": "Venceu"
     },
     {
         "Item": 60001,
@@ -34236,12 +34236,6 @@
         "DataFimPropostas": "2026-04-08T10:00:00"
     },
     {
-        "Item": 20001,
-        "Descricao": "CONFORME ANEXO I DO EDITAL.",
-        "Qtd": 604800.0,
-        "Unitario": 0.5,
-        "Total": 302400.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260223",
         "DataResult": "2026-07-10",
         "Orgao": "MUNICIPIO DE SALVADOR",
@@ -34251,7 +34245,13 @@
         "Licitacao": "13927801000149000462026",
         "Link": "https://pncp.gov.br/app/editais/13927801000149/2026/46",
         "UASG": "000000002",
-        "DataFimPropostas": "2026-03-09T14:00:00"
+        "DataFimPropostas": "2026-03-09T14:00:00",
+        "Item": 20001,
+        "Descricao": "CONFORME ANEXO I DO EDITAL.",
+        "Qtd": 604800.0,
+        "Unitario": 0.5,
+        "Total": 302400.0,
+        "Status": "Venceu"
     },
     {
         "Item": 1,
@@ -61416,12 +61416,6 @@
         "DataFimPropostas": "2026-03-27T09:00:00"
     },
     {
-        "Item": 21,
-        "Descricao": "Clindamicina",
-        "Qtd": 20200.0,
-        "Unitario": 2.31,
-        "Total": 46662.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260223",
         "DataResult": "2026-05-13",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -61431,7 +61425,13 @@
         "Licitacao": "15126437000305005812026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/581",
         "UASG": "156654",
-        "DataFimPropostas": "2026-03-17T08:30:00"
+        "DataFimPropostas": "2026-03-17T08:30:00",
+        "Item": 21,
+        "Descricao": "Clindamicina",
+        "Qtd": 20200.0,
+        "Unitario": 2.31,
+        "Total": 46662.0,
+        "Status": "Venceu"
     },
     {
         "Item": 8,
@@ -78624,12 +78624,24 @@
         "DataFimPropostas": "2026-03-18T09:59:00"
     },
     {
+        "DataPublicacao": "20260223",
+        "DataResult": "2026-04-13",
+        "Orgao": "MUNICIPIO DE QUEIMADAS",
+        "UF": "PB",
+        "Municipio": "Queimadas",
+        "Edital": "6/2026",
+        "Licitacao": "08742264000122000132026",
+        "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
+        "UASG": "3964",
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 7,
         "Descricao": "CARBAMAZEPINA 2% SUSP",
         "Qtd": 4500.0,
         "Unitario": 7.61,
         "Total": 34245.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78639,15 +78651,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 10,
         "Descricao": "CARBONATO DE LiTIO 300 MG",
         "Qtd": 120000.0,
         "Unitario": 0.25,
         "Total": 30000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78657,15 +78669,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 12,
         "Descricao": "CLONAZEPAM 0,5 MG",
         "Qtd": 100000.0,
         "Unitario": 0.06,
         "Total": 6000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78675,15 +78687,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 19,
         "Descricao": "CLORIDRATO DE BIPERIDENO 5MG/ML",
         "Qtd": 450.0,
         "Unitario": 2.59,
         "Total": 1165.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78693,15 +78705,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 22,
         "Descricao": "CLORIDRATO DE CLORPROMAZINA 25MG",
         "Qtd": 45000.0,
         "Unitario": 0.32,
         "Total": 14400.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78711,15 +78723,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 23,
         "Descricao": "CLORIDRATO DE CLORPROMAZINA 4% GTS",
         "Qtd": 800.0,
         "Unitario": 8.31,
         "Total": 6648.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78729,15 +78741,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 30,
         "Descricao": "CLORIDRATO DE VENLAFAXINA 75MG",
         "Qtd": 10000.0,
         "Unitario": 0.45,
         "Total": 4500.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78747,15 +78759,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 33,
         "Descricao": "CLORIDRATO DE NORTRIPTILINA 25MG",
         "Qtd": 35000.0,
         "Unitario": 0.18,
         "Total": 6300.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78765,15 +78777,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 34,
         "Descricao": "CLORIDRATO DE NORTRIPTILINA 50MG",
         "Qtd": 10000.0,
         "Unitario": 0.77,
         "Total": 7700.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78783,15 +78795,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 35,
         "Descricao": "CLORIDRATO DE PROMETAZINA 25M/ML",
         "Qtd": 1500.0,
         "Unitario": 3.47,
         "Total": 5205.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78801,15 +78813,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 38,
         "Descricao": "CLORIDRATO NALOXONA 0,4MG/ML INJET",
         "Qtd": 500.0,
         "Unitario": 6.34,
         "Total": 3170.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78819,15 +78831,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 42,
         "Descricao": "DIAZEPAM 5MG",
         "Qtd": 68000.0,
         "Unitario": 0.05,
         "Total": 3400.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78837,15 +78849,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 43,
         "Descricao": "DIAZEPAM INJETAVEL 10MG/2ML",
         "Qtd": 1200.0,
         "Unitario": 0.81,
         "Total": 972.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78855,15 +78867,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 46,
         "Descricao": "ETOMIDATO 2MG/ML",
         "Qtd": 500.0,
         "Unitario": 9.64,
         "Total": 4820.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78873,15 +78885,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 48,
         "Descricao": "FENITOiNA 50MG/ML",
         "Qtd": 500.0,
         "Unitario": 1.99,
         "Total": 995.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78891,15 +78903,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 49,
         "Descricao": "FENOBARBITAL 100MG",
         "Qtd": 140000.0,
         "Unitario": 0.17,
         "Total": 23800.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78909,15 +78921,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 50,
         "Descricao": "FENOBARBITAL 100MG/ML SOL. INJET",
         "Qtd": 500.0,
         "Unitario": 2.67,
         "Total": 1335.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78927,15 +78939,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 54,
         "Descricao": "GABAPENTINA 300MG",
         "Qtd": 95000.0,
         "Unitario": 0.31,
         "Total": 29450.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78945,15 +78957,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 61,
         "Descricao": "HEMIFURATO DE QUETIAPINA 25MG",
         "Qtd": 185000.0,
         "Unitario": 0.1,
         "Total": 18500.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78963,15 +78975,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 63,
         "Descricao": "LEVOMEPROMAZINA 100MG",
         "Qtd": 65000.0,
         "Unitario": 0.66,
         "Total": 42900.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78981,15 +78993,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 65,
         "Descricao": "LEVOMEPROMAZINA 4% GTS",
         "Qtd": 1200.0,
         "Unitario": 13.29,
         "Total": 15948.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -78999,15 +79011,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 70,
         "Descricao": "MORFINA 10MG/ML SOL. INTET",
         "Qtd": 350.0,
         "Unitario": 1.61,
         "Total": 563.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79017,15 +79029,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 75,
         "Descricao": "OXCARBAZEPINA 300MG",
         "Qtd": 38000.0,
         "Unitario": 0.71,
         "Total": 26980.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79035,15 +79047,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 77,
         "Descricao": "OXCARBAZEPINA 600MG",
         "Qtd": 55000.0,
         "Unitario": 1.38,
         "Total": 75900.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79053,15 +79065,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 78,
         "Descricao": "PAROXETINA 20MG",
         "Qtd": 78000.0,
         "Unitario": 0.17,
         "Total": 13260.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79071,15 +79083,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 81,
         "Descricao": "PREGABALINA 75MG",
         "Qtd": 210000.0,
         "Unitario": 0.2,
         "Total": 42000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79089,15 +79101,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 83,
         "Descricao": "RISPERIDONA 1 MG",
         "Qtd": 95000.0,
         "Unitario": 0.08,
         "Total": 7600.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79107,15 +79119,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 84,
         "Descricao": "RISPERIDONA 1MG/ML GTS",
         "Qtd": 35000.0,
         "Unitario": 13.67,
         "Total": 478450.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79125,15 +79137,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 85,
         "Descricao": "RISPERIDONA 2MG",
         "Qtd": 10000.0,
         "Unitario": 0.1,
         "Total": 1000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79143,15 +79155,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 87,
         "Descricao": "SERTRALINA 50MG",
         "Qtd": 300000.0,
         "Unitario": 0.11,
         "Total": 33000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79161,15 +79173,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 90,
         "Descricao": "TRAMADOL 100MG/2ML SOL. INJET",
         "Qtd": 500.0,
         "Unitario": 0.97,
         "Total": 485.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79179,15 +79191,15 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 91,
         "Descricao": "TRAMADOL 50MG/ML SOL. INJET",
         "Qtd": 500.0,
         "Unitario": 0.89,
         "Total": 445.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE QUEIMADAS",
@@ -79197,25 +79209,13 @@
         "Licitacao": "08742264000122000132026",
         "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
         "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-11T08:59:00",
         "Item": 94,
         "Descricao": "VALPROATO DE SODIO 50MG/ML XP",
         "Qtd": 35000.0,
         "Unitario": 6.34,
         "Total": 221900.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260223",
-        "DataResult": "2026-04-13",
-        "Orgao": "MUNICIPIO DE QUEIMADAS",
-        "UF": "PB",
-        "Municipio": "Queimadas",
-        "Edital": "6/2026",
-        "Licitacao": "08742264000122000132026",
-        "Link": "https://pncp.gov.br/app/editais/08742264000122/2026/13",
-        "UASG": "3964",
-        "DataFimPropostas": "2026-03-11T08:59:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260212",
@@ -85662,12 +85662,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260223",
+        "DataResult": "2026-03-23",
+        "Orgao": "MUNICIPIO DE ITAPEVA",
+        "UF": "MG",
+        "Municipio": "Itapeva",
+        "Edital": "33/2026",
+        "Licitacao": "18677625000158000272026",
+        "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
+        "UASG": "3778",
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 36,
         "Descricao": "AZITROMICINA 600 MG PÓ PARA SUSPENSÃO ORAL FR 15 ML",
         "Qtd": 4000.0,
         "Unitario": 6.35,
         "Total": 25400.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85677,15 +85689,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 41,
         "Descricao": "BRIMONIDINA 2MG/ML- FRASCO 5 ML",
         "Qtd": 300.0,
         "Unitario": 3.6,
         "Total": 1080.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85695,15 +85707,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 43,
         "Descricao": "BUTILBROMETO DE ESCOPOLAMINA 4MG/ML INJETAVEL AMP 1 ML",
         "Qtd": 5000.0,
         "Unitario": 0.79,
         "Total": 3950.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85713,15 +85725,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 60,
         "Descricao": "CETOCONAZOL CREME 20 MG/G BISNAGA 30G",
         "Qtd": 800.0,
         "Unitario": 2.48,
         "Total": 1984.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85731,15 +85743,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 80,
         "Descricao": "DEXAMETASONA 1 MG/G CREME BISN. 10 G",
         "Qtd": 2000.0,
         "Unitario": 1.47,
         "Total": 2940.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85749,15 +85761,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 81,
         "Descricao": "DEXAMETASONA 2 MG/ML INJETÁVEL",
         "Qtd": 6000.0,
         "Unitario": 0.57,
         "Total": 3420.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85767,15 +85779,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 84,
         "Descricao": "DEXCLORFENIRAMINA 2 MG/5 ML XAROPE 100 ML",
         "Qtd": 3000.0,
         "Unitario": 1.7,
         "Total": 5100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85785,15 +85797,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 85,
         "Descricao": "DEXTROCETAMINA 50MG/ML 2 ML",
         "Qtd": 2000.0,
         "Unitario": 8.06,
         "Total": 16120.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85803,15 +85815,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 109,
         "Descricao": "ETOMIDATO 2 MG / ML INJETÁVEL",
         "Qtd": 500.0,
         "Unitario": 9.21,
         "Total": 4605.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85821,15 +85833,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 110,
         "Descricao": "FENITOÍNA 50 MG/ML INJETÁVEL",
         "Qtd": 500.0,
         "Unitario": 1.84,
         "Total": 920.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85839,15 +85851,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 116,
         "Descricao": "FITOMENADIONA 10 MG/ML INJETÁVEL",
         "Qtd": 1000.0,
         "Unitario": 1.84,
         "Total": 1840.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85857,15 +85869,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 126,
         "Descricao": "GLUCONATO DE CÁLCIO 10% 0,5 MCG/ML",
         "Qtd": 1000.0,
         "Unitario": 1.8,
         "Total": 1800.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85875,15 +85887,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 146,
         "Descricao": "LEVOMEPROMAZINA 100 MG COMPRIMIDO",
         "Qtd": 20000.0,
         "Unitario": 0.56,
         "Total": 11200.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85893,15 +85905,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 152,
         "Descricao": "LIDOCAÍNA 20 MG/ML INJETÁVEL FRASCO 20 ML",
         "Qtd": 600.0,
         "Unitario": 3.68,
         "Total": 2208.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85911,15 +85923,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 170,
         "Descricao": "NEOMICINA SULFATO 5 MG/G + BACITRACINA 250 UI/G BISN. 10 G",
         "Qtd": 3000.0,
         "Unitario": 2.0,
         "Total": 6000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85929,15 +85941,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 178,
         "Descricao": "NORETISTERONA 50 MG/ML + ESTRADIOL 5 MG/ML SOLUÇÃO INJETÁVEL",
         "Qtd": 500.0,
         "Unitario": 9.0,
         "Total": 4500.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85947,15 +85959,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 181,
         "Descricao": "OMEPRAZOL 40 MG/10 ML",
         "Qtd": 4000.0,
         "Unitario": 6.9,
         "Total": 27600.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85965,15 +85977,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 185,
         "Descricao": "PARACETAMOL 200 MG/ML SOLUÇÃO ORAL FR 15 ML",
         "Qtd": 3000.0,
         "Unitario": 1.05,
         "Total": 3150.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -85983,15 +85995,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 206,
         "Descricao": "SIMETICONA 75 MG/ML EMULSÃO ORAL FR 10 ML",
         "Qtd": 3000.0,
         "Unitario": 1.12,
         "Total": 3360.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -86001,15 +86013,15 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 227,
         "Descricao": "TRAMADOL 100 MG/ML INJETÁVEL",
         "Qtd": 3000.0,
         "Unitario": 0.84,
         "Total": 2520.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE ITAPEVA",
@@ -86019,25 +86031,13 @@
         "Licitacao": "18677625000158000272026",
         "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
         "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-09T08:59:00",
         "Item": 229,
         "Descricao": "TRAVOPROSTA 0,4 MG/ML SOL OFTALMICA",
         "Qtd": 500.0,
         "Unitario": 8.9,
         "Total": 4450.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260223",
-        "DataResult": "2026-03-23",
-        "Orgao": "MUNICIPIO DE ITAPEVA",
-        "UF": "MG",
-        "Municipio": "Itapeva",
-        "Edital": "33/2026",
-        "Licitacao": "18677625000158000272026",
-        "Link": "https://pncp.gov.br/app/editais/18677625000158/2026/27",
-        "UASG": "3778",
-        "DataFimPropostas": "2026-03-09T08:59:00"
+        "Status": "Venceu"
     },
     {
         "Item": 1,
@@ -87102,12 +87102,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260223",
+        "DataResult": "2026-03-19",
+        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "90025/2026",
+        "Licitacao": "08241754000145000312026",
+        "Link": "https://pncp.gov.br/app/editais/08241754000145/2026/31",
+        "UASG": "925550",
+        "DataFimPropostas": "2026-03-10T10:00:00",
         "Item": 5,
         "Descricao": "Glibenclamida",
         "Qtd": 12600.0,
         "Unitario": 0.03,
         "Total": 378.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-19",
         "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
@@ -87117,15 +87129,15 @@
         "Licitacao": "08241754000145000312026",
         "Link": "https://pncp.gov.br/app/editais/08241754000145/2026/31",
         "UASG": "925550",
-        "DataFimPropostas": "2026-03-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-10T10:00:00",
         "Item": 9,
         "Descricao": "Metformina cloridrato",
         "Qtd": 27600.0,
         "Unitario": 0.1,
         "Total": 2760.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-19",
         "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
@@ -87135,15 +87147,15 @@
         "Licitacao": "08241754000145000312026",
         "Link": "https://pncp.gov.br/app/editais/08241754000145/2026/31",
         "UASG": "925550",
-        "DataFimPropostas": "2026-03-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-10T10:00:00",
         "Item": 10,
         "Descricao": "Metformina cloridrato",
         "Qtd": 44300.0,
         "Unitario": 0.11,
         "Total": 4873.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-19",
         "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
@@ -87153,15 +87165,15 @@
         "Licitacao": "08241754000145000312026",
         "Link": "https://pncp.gov.br/app/editais/08241754000145/2026/31",
         "UASG": "925550",
-        "DataFimPropostas": "2026-03-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-10T10:00:00",
         "Item": 14,
         "Descricao": "Sinvastatina",
         "Qtd": 184100.0,
         "Unitario": 0.06,
         "Total": 11046.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-19",
         "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
@@ -87171,25 +87183,13 @@
         "Licitacao": "08241754000145000312026",
         "Link": "https://pncp.gov.br/app/editais/08241754000145/2026/31",
         "UASG": "925550",
-        "DataFimPropostas": "2026-03-10T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-10T10:00:00",
         "Item": 15,
         "Descricao": "Terbutalina sulfato",
         "Qtd": 27400.0,
         "Unitario": 1.11,
         "Total": 30414.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260223",
-        "DataResult": "2026-03-19",
-        "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "90025/2026",
-        "Licitacao": "08241754000145000312026",
-        "Link": "https://pncp.gov.br/app/editais/08241754000145/2026/31",
-        "UASG": "925550",
-        "DataFimPropostas": "2026-03-10T10:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260220",
@@ -93150,12 +93150,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260223",
+        "DataResult": "2026-03-11",
+        "Orgao": "MUNICIPIO DE FLORES",
+        "UF": "PE",
+        "Municipio": "Flores",
+        "Edital": "002/2026",
+        "Licitacao": "10347466000111000042026",
+        "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
+        "UASG": "2459",
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 4,
         "Descricao": "AGUA PARA INJEÇÃO SOL INJ Frasco PLAS PE TRANS X 500 ML",
         "Qtd": 150.0,
         "Unitario": 3.95,
         "Total": 592.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93165,15 +93177,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 12,
         "Descricao": "BROMETO DE IPRATRÓPIO 0,25 MG/ML SOL P/ INAL CT Frasco VD AMB GOT X 20 ML",
         "Qtd": 80.0,
         "Unitario": 1.32,
         "Total": 105.6,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93183,15 +93195,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 20,
         "Descricao": "CETOPROFENO 50 MG/ML SOL INJ IM AMP VD AMB X 2 ML",
         "Qtd": 1700.0,
         "Unitario": 1.08,
         "Total": 1836.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93201,15 +93213,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 31,
         "Descricao": "CLORIDRATO DE ESCETAMINA 50 MG/ML SOL INJ IM/IV  FA VD AMB X 10 ML",
         "Qtd": 25.0,
         "Unitario": 60.86,
         "Total": 1521.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93219,15 +93231,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 35,
         "Descricao": "FOSFATO DISSÓDICO DE DEXAMETASONA 4 MG/ML SOL INJ AMP VD TRANS X 2,5 M",
         "Qtd": 9000.0,
         "Unitario": 0.71,
         "Total": 6390.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93237,15 +93249,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 38,
         "Descricao": "DIPIRONA MONOIDRATADA 500 MG/ML SOL INJ AMP VD AMB X 2 ML",
         "Qtd": 10000.0,
         "Unitario": 0.48,
         "Total": 4800.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93255,15 +93267,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 40,
         "Descricao": "CLORIDRATO DE DOPAMINA 5 MG/ML SOL INJ AMP VD AMB X 10 ML",
         "Qtd": 50.0,
         "Unitario": 3.36,
         "Total": 168.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93273,15 +93285,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 42,
         "Descricao": "SULFATO DE EFEDRINA 50 MG/ML SOL INJ AMP VD AMB X 1 ML",
         "Qtd": 200.0,
         "Unitario": 5.41,
         "Total": 1082.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93291,15 +93303,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 46,
         "Descricao": "ENOXAPARINA SÓDICA 60 MG SOL INJ SER VD INC PREENCHIDA X 0,6 ML",
         "Qtd": 50.0,
         "Unitario": 17.56,
         "Total": 878.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93309,15 +93321,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 47,
         "Descricao": "EPINEFrascoINA 1 MG/ML SOL INJ AMP VD AMB X 1 ML",
         "Qtd": 200.0,
         "Unitario": 0.99,
         "Total": 198.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93327,15 +93339,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 56,
         "Descricao": "FLUMAZENIL 0,1 MG/ML SOL INJ AMP VD TRANS X 5 ML",
         "Qtd": 50.0,
         "Unitario": 5.5,
         "Total": 275.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93345,15 +93357,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 57,
         "Descricao": "FUROSEMIDA 20 MG SOL INJ AMP VD AMB X 2 ML",
         "Qtd": 1500.0,
         "Unitario": 0.6,
         "Total": 900.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93363,15 +93375,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 62,
         "Descricao": "GLICONATO DE CÁLCIO 100 MG/ML SOL INJ IV AMP VD TRANS X 10 ML",
         "Qtd": 100.0,
         "Unitario": 1.94,
         "Total": 194.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93381,15 +93393,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 72,
         "Descricao": "ISOFLURANO 1 ML/ML SOL INAL CT Frasco VD AMB X 100 ML",
         "Qtd": 20.0,
         "Unitario": 212.2,
         "Total": 4244.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93399,15 +93411,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 76,
         "Descricao": "LEVOFLOXACINO 5 MG/ML SOL INFUS IV ENVOL BOLS PLAS PP TRANS SIST FECH X 100 ML",
         "Qtd": 300.0,
         "Unitario": 7.81,
         "Total": 2343.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93417,15 +93429,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 81,
         "Descricao": "MANITOL 200 MG/ML SOL INJ IV Frasco PLAS TRANSSIST FECH X 250 ML",
         "Qtd": 50.0,
         "Unitario": 7.87,
         "Total": 393.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93435,15 +93447,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 93,
         "Descricao": "CLORIDRATO DE NALOXONA 0,4 MG/ML SOL INJ IM/SC/IV AMP VD TRANS X 1 ML",
         "Qtd": 50.0,
         "Unitario": 7.41,
         "Total": 370.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93453,15 +93465,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 98,
         "Descricao": "HEMITARTARATO DE NOREPINEFrascoINA 2 MG/ML SOL INJ IV AMP VD AMB X 4 ML",
         "Qtd": 200.0,
         "Unitario": 0.99,
         "Total": 198.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93471,15 +93483,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 126,
         "Descricao": "GLICOSE 50 MG/ML SOL INJ IV Frasco PLAS PE TRANSSIST FECH X 500 ML",
         "Qtd": 900.0,
         "Unitario": 4.84,
         "Total": 4356.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93489,15 +93501,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 130,
         "Descricao": "SULFATO DE MAGNÉSIO 100 MG/ML SOL INJ IV/IM AMP PLAS PEBD TRANS X 10 ML",
         "Qtd": 100.0,
         "Unitario": 1.37,
         "Total": 137.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93507,15 +93519,15 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 131,
         "Descricao": "SULFATO DE MAGNÉSIO 500 MG/ML SOL INJ IV/IM AMP PLAS PEBD TRANS X 10 ML",
         "Qtd": 100.0,
         "Unitario": 5.98,
         "Total": 598.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260223",
         "DataResult": "2026-03-11",
         "Orgao": "MUNICIPIO DE FLORES",
@@ -93525,25 +93537,13 @@
         "Licitacao": "10347466000111000042026",
         "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
         "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-05T08:00:00",
         "Item": 138,
         "Descricao": "CLORIDRATO DE TIAMINA 300 MG COM REV CT BL AL PLAS PVC/PVDC TRANS",
         "Qtd": 1000.0,
         "Unitario": 0.23,
         "Total": 230.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260223",
-        "DataResult": "2026-03-11",
-        "Orgao": "MUNICIPIO DE FLORES",
-        "UF": "PE",
-        "Municipio": "Flores",
-        "Edital": "002/2026",
-        "Licitacao": "10347466000111000042026",
-        "Link": "https://pncp.gov.br/app/editais/10347466000111/2026/4",
-        "UASG": "2459",
-        "DataFimPropostas": "2026-03-05T08:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260121",
