@@ -18450,12 +18450,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 4,
-        "Descricao": "CLORETO DE SÓDIO 0,9% - SISTEMA FECHADO, ESTERIL, APIROGENICO, BISNAGA, FRASCO OU BOLSA COM 100ML",
-        "Qtd": 170000.0,
-        "Unitario": 2.88,
-        "Total": 489600.0,
-        "Status": "Venceu",
         "DataPublicacao": "20251222",
         "DataResult": "2026-08-15",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -18465,7 +18459,13 @@
         "Licitacao": "41090291000133003382025",
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/338",
         "UASG": "39",
-        "DataFimPropostas": "2026-01-09T09:00:00"
+        "DataFimPropostas": "2026-01-09T09:00:00",
+        "Item": 4,
+        "Descricao": "CLORETO DE SÓDIO 0,9% - SISTEMA FECHADO, ESTERIL, APIROGENICO, BISNAGA, FRASCO OU BOLSA COM 100ML",
+        "Qtd": 170000.0,
+        "Unitario": 2.88,
+        "Total": 489600.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260715",
@@ -92160,6 +92160,78 @@
         "DataFimPropostas": "2026-02-05T10:00:00"
     },
     {
+        "DataPublicacao": "20251222",
+        "DataResult": "2026-03-13",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE NOSSA SENHORA DO SOCORRO",
+        "UF": "SE",
+        "Municipio": "Nossa Senhora do Socorro",
+        "Edital": "28/2025",
+        "Licitacao": "06113056000139000692025",
+        "Link": "https://pncp.gov.br/app/editais/06113056000139/2025/69",
+        "UASG": "06113056000139",
+        "DataFimPropostas": "2026-01-12T09:00:00",
+        "Item": 3,
+        "Descricao": "ATENOLOL 25MG- COMPRIMIDOS. Especificação: ATENOLOL 25MG- COMPRIMIDOS",
+        "Qtd": 262500.0,
+        "Unitario": 0.03,
+        "Total": 7875.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251222",
+        "DataResult": "2026-03-13",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE NOSSA SENHORA DO SOCORRO",
+        "UF": "SE",
+        "Municipio": "Nossa Senhora do Socorro",
+        "Edital": "28/2025",
+        "Licitacao": "06113056000139000692025",
+        "Link": "https://pncp.gov.br/app/editais/06113056000139/2025/69",
+        "UASG": "06113056000139",
+        "DataFimPropostas": "2026-01-12T09:00:00",
+        "Item": 15,
+        "Descricao": "HIDROCLOROTIAZIDA 25MG. Especificação: HIDROCLOROTIAZIDA 25MG",
+        "Qtd": 1350000.0,
+        "Unitario": 0.02,
+        "Total": 27000.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251222",
+        "DataResult": "2026-03-13",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE NOSSA SENHORA DO SOCORRO",
+        "UF": "SE",
+        "Municipio": "Nossa Senhora do Socorro",
+        "Edital": "28/2025",
+        "Licitacao": "06113056000139000692025",
+        "Link": "https://pncp.gov.br/app/editais/06113056000139/2025/69",
+        "UASG": "06113056000139",
+        "DataFimPropostas": "2026-01-12T09:00:00",
+        "Item": 21,
+        "Descricao": "ÓLEO MINERAL FRASCO 100ML.. Especificação: ÓLEO MINERAL FRASCO 100ML.",
+        "Qtd": 15000.0,
+        "Unitario": 3.05,
+        "Total": 45750.0,
+        "Status": "Venceu"
+    },
+    {
+        "DataPublicacao": "20251222",
+        "DataResult": "2026-03-13",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE NOSSA SENHORA DO SOCORRO",
+        "UF": "SE",
+        "Municipio": "Nossa Senhora do Socorro",
+        "Edital": "28/2025",
+        "Licitacao": "06113056000139000692025",
+        "Link": "https://pncp.gov.br/app/editais/06113056000139/2025/69",
+        "UASG": "06113056000139",
+        "DataFimPropostas": "2026-01-12T09:00:00",
+        "Item": 27,
+        "Descricao": "SINVASTATINA 20MG. Especificação: SINVASTATINA 20MG",
+        "Qtd": 525000.0,
+        "Unitario": 0.06,
+        "Total": 31500.0,
+        "Status": "Venceu"
+    },
+    {
         "Item": 8,
         "Descricao": "Azitromicina",
         "Qtd": 4000.0,
@@ -100044,12 +100116,6 @@
         "DataFimPropostas": "2026-02-03T09:30:00"
     },
     {
-        "Item": 4,
-        "Descricao": "Sulfametoxazol",
-        "Qtd": 49500.0,
-        "Unitario": 3.8,
-        "Total": 188100.0,
-        "Status": "Venceu",
         "DataPublicacao": "20251222",
         "DataResult": "2026-02-03",
         "Orgao": "RIO GRANDE DO NORTE SECRETARIA DA SAUDE PUBLICA",
@@ -100059,7 +100125,13 @@
         "Licitacao": "08241754000145003962025",
         "Link": "https://pncp.gov.br/app/editais/08241754000145/2025/396",
         "UASG": "925550",
-        "DataFimPropostas": "2026-01-16T10:00:00"
+        "DataFimPropostas": "2026-01-16T10:00:00",
+        "Item": 4,
+        "Descricao": "Sulfametoxazol",
+        "Qtd": 49500.0,
+        "Unitario": 3.8,
+        "Total": 188100.0,
+        "Status": "Venceu"
     },
     {
         "Item": 17,
@@ -103626,12 +103698,24 @@
         "DataFimPropostas": "2025-11-27T08:00:00"
     },
     {
+        "DataPublicacao": "20251222",
+        "DataResult": "2026-01-21",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "GC-SEPLAG-002-PL 0044/2025",
+        "Licitacao": "41090291000133003382025",
+        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/338",
+        "UASG": "39",
+        "DataFimPropostas": "2026-01-09T09:00:00",
         "Item": 1,
         "Descricao": "NITROGLICERINA 5MG/ML - AMPOLA 5ML",
         "Qtd": 2500.0,
         "Unitario": 36.0,
         "Total": 90000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251222",
         "DataResult": "2026-01-21",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -103641,15 +103725,15 @@
         "Licitacao": "41090291000133003382025",
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/338",
         "UASG": "39",
-        "DataFimPropostas": "2026-01-09T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-09T09:00:00",
         "Item": 6,
         "Descricao": "CLORIDRATO DE TRAMADOL 50 MG COMPRIMIDO / CÁPSULA",
         "Qtd": 650000.0,
         "Unitario": 0.1184,
         "Total": 76960.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20251222",
         "DataResult": "2026-01-21",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -103659,25 +103743,13 @@
         "Licitacao": "41090291000133003382025",
         "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/338",
         "UASG": "39",
-        "DataFimPropostas": "2026-01-09T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-09T09:00:00",
         "Item": 14,
         "Descricao": "OMEPRAZOL 40MG + DILUENTE, FRASCO-AMPOLA IV",
         "Qtd": 20000.0,
         "Unitario": 7.84,
         "Total": 156800.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20251222",
-        "DataResult": "2026-01-21",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "GC-SEPLAG-002-PL 0044/2025",
-        "Licitacao": "41090291000133003382025",
-        "Link": "https://pncp.gov.br/app/editais/41090291000133/2025/338",
-        "UASG": "39",
-        "DataFimPropostas": "2026-01-09T09:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251212",
