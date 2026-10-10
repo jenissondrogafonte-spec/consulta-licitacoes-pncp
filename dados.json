@@ -82800,12 +82800,24 @@
         "DataFimPropostas": "2026-02-26T09:00:00"
     },
     {
+        "DataPublicacao": "20260203",
+        "DataResult": "2026-03-31",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
+        "UF": "RJ",
+        "Municipio": "Itaocara",
+        "Edital": "005/2026",
+        "Licitacao": "14999490000196000082026",
+        "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
+        "UASG": "1509",
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095396,
         "Descricao": "BIPERIDENO, DOSAGEM: 2 MG - COMPRIMIDO BIPERIDENO, DOSAGEM: 2 MG - COMPRIMIDO",
         "Qtd": 105000.0,
         "Unitario": 0.29,
         "Total": 30450.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82815,15 +82827,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095399,
         "Descricao": "CARBAMAZEPINA 200 MG COMPRIMIDOS CARBAMAZEPINA 200 MG COMPRIMIDOS",
         "Qtd": 96000.0,
         "Unitario": 0.145,
         "Total": 13920.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82833,15 +82845,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095404,
         "Descricao": "CLONAZEPAM 2 MG COMPRIMIDOS CLONAZEPAM 2 MG COMPRIMIDOS",
         "Qtd": 96000.0,
         "Unitario": 0.05,
         "Total": 4800.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82851,15 +82863,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095408,
         "Descricao": "FLUOXETINA, DOSAGEM: 20 MG - COMPRIMIDO FLUOXETINA, DOSAGEM: 20 MG - COMPRIMIDO",
         "Qtd": 96000.0,
         "Unitario": 0.06,
         "Total": 5760.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82869,15 +82881,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095410,
         "Descricao": "SERTRALINA CLORIDRATO, DOSAGEM: 50 MG - COMPRIMIDO SERTRALINA CLORIDRATO, DOSAGEM: 50 MG - COMPRIMIDO",
         "Qtd": 96000.0,
         "Unitario": 0.117,
         "Total": 11232.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82887,15 +82899,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095413,
         "Descricao": "CLORIDRATO DE VENLAFAXINA 75MG - COMPRIMIDO CLORIDRATO DE VENLAFAXINA 75MG - COMPRIMIDO",
         "Qtd": 14400.0,
         "Unitario": 0.46,
         "Total": 6624.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82905,15 +82917,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095416,
         "Descricao": "DIAZEPAM, DOSAGEM: 10 MG - COMPRIMIDO DIAZEPAM, DOSAGEM: 10 MG - COMPRIMIDO",
         "Qtd": 105000.0,
         "Unitario": 0.047,
         "Total": 4935.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82923,15 +82935,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095418,
         "Descricao": "FENOBARBITAL 100 MG COMPRIMIDOS FENOBARBITAL 100 MG COMPRIMIDOS",
         "Qtd": 48000.0,
         "Unitario": 0.176,
         "Total": 8448.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82941,15 +82953,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095423,
         "Descricao": "HALOPERIDOL, DOSAGEM: 5 MG - COMPRIMIDO HALOPERIDOL, DOSAGEM: 5 MG - COMPRIMIDO",
         "Qtd": 105000.0,
         "Unitario": 0.1,
         "Total": 10500.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82959,15 +82971,15 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095428,
         "Descricao": "LEVOMEPROMAZINA, DOSAGEM: 100 MG - COMPRIMIDO LEVOMEPROMAZINA, DOSAGEM: 100 MG - COMPRIMIDO",
         "Qtd": 84000.0,
         "Unitario": 0.63,
         "Total": 52920.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-31",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -82977,25 +82989,13 @@
         "Licitacao": "14999490000196000082026",
         "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
         "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-16T13:30:00",
         "Item": 7095442,
         "Descricao": "RISPERIDONA, DOSAGEM: 2 MG - COMPRIMIDO RISPERIDONA, DOSAGEM: 2 MG - COMPRIMIDO",
         "Qtd": 32400.0,
         "Unitario": 0.099,
         "Total": 3207.6,
-        "Status": "Venceu",
-        "DataPublicacao": "20260203",
-        "DataResult": "2026-03-31",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE",
-        "UF": "RJ",
-        "Municipio": "Itaocara",
-        "Edital": "005/2026",
-        "Licitacao": "14999490000196000082026",
-        "Link": "https://pncp.gov.br/app/editais/14999490000196/2026/8",
-        "UASG": "1509",
-        "DataFimPropostas": "2026-03-16T13:30:00"
+        "Status": "Venceu"
     },
     {
         "Item": 55,
@@ -83106,12 +83106,6 @@
         "DataFimPropostas": "2026-03-19T08:00:00"
     },
     {
-        "Item": 1,
-        "Descricao": "ÁGUA PARA INJEÇÃO/INJETÁVEIS, SOLUÇÃO INJETÁVEL, FLACONETE 10 ML, ISENTO DE PVC. VALIDADE MÍNIMA DE 12 MESES. APRESENTAR REGISTRO DO PRODUTO NA ANVISA",
-        "Qtd": 400000.0,
-        "Unitario": 0.16,
-        "Total": 64000.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-30",
         "Orgao": "MUNICIPIO DE JUAZEIRO",
@@ -83121,7 +83115,13 @@
         "Licitacao": "13915632000127000222026",
         "Link": "https://pncp.gov.br/app/editais/13915632000127/2026/22",
         "UASG": "06.06",
-        "DataFimPropostas": "2026-02-20T08:00:00"
+        "DataFimPropostas": "2026-02-20T08:00:00",
+        "Item": 1,
+        "Descricao": "ÁGUA PARA INJEÇÃO/INJETÁVEIS, SOLUÇÃO INJETÁVEL, FLACONETE 10 ML, ISENTO DE PVC. VALIDADE MÍNIMA DE 12 MESES. APRESENTAR REGISTRO DO PRODUTO NA ANVISA",
+        "Qtd": 400000.0,
+        "Unitario": 0.16,
+        "Total": 64000.0,
+        "Status": "Venceu"
     },
     {
         "Item": 50,
@@ -85320,12 +85320,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 10,
-        "Descricao": "NORETISTERONA 50MG/ML, ENANTATO + ESTRADIOL 5MG/ML, VALERATO - AMPOLA COM 1ML",
-        "Qtd": 2400.0,
-        "Unitario": 6.6,
-        "Total": 15840.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-23",
         "Orgao": "MUNICIPIO DE BARUERI",
@@ -85335,7 +85329,13 @@
         "Licitacao": "46523015000135000422026",
         "Link": "https://pncp.gov.br/app/editais/46523015000135/2026/42",
         "UASG": "SUPRIMENTOS",
-        "DataFimPropostas": "2026-02-13T08:59:00"
+        "DataFimPropostas": "2026-02-13T08:59:00",
+        "Item": 10,
+        "Descricao": "NORETISTERONA 50MG/ML, ENANTATO + ESTRADIOL 5MG/ML, VALERATO - AMPOLA COM 1ML",
+        "Qtd": 2400.0,
+        "Unitario": 6.6,
+        "Total": 15840.0,
+        "Status": "Venceu"
     },
     {
         "Item": 4,
@@ -95022,12 +95022,6 @@
         "DataFimPropostas": "2026-02-19T08:30:00"
     },
     {
-        "Item": 210001,
-        "Descricao": "Cloridrato de Dexmedetomidina 100mcg/mL, frasco ampola, com 2 mL, via de administração: endovenosa. Uso adulto",
-        "Qtd": 500.0,
-        "Unitario": 6.0,
-        "Total": 3000.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-03",
         "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
@@ -95037,15 +95031,15 @@
         "Licitacao": "14986862000140002932025",
         "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/293",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-20T11:30:00"
+        "DataFimPropostas": "2026-02-20T11:30:00",
+        "Item": 210001,
+        "Descricao": "Cloridrato de Dexmedetomidina 100mcg/mL, frasco ampola, com 2 mL, via de administração: endovenosa. Uso adulto",
+        "Qtd": 500.0,
+        "Unitario": 6.0,
+        "Total": 3000.0,
+        "Status": "Venceu"
     },
     {
-        "Item": 20001,
-        "Descricao": "Cloridrato de tramadol 50mg/mL, solução injetável, via de administração: intramuscular e intravenoso, em ampola com 2 mL. uso adulto. Caixa c/ até 100 ampolas",
-        "Qtd": 3000.0,
-        "Unitario": 0.91,
-        "Total": 2730.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-03",
         "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
@@ -95055,15 +95049,15 @@
         "Licitacao": "14986862000140002912025",
         "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/291",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-20T08:30:00"
+        "DataFimPropostas": "2026-02-20T08:30:00",
+        "Item": 20001,
+        "Descricao": "Cloridrato de tramadol 50mg/mL, solução injetável, via de administração: intramuscular e intravenoso, em ampola com 2 mL. uso adulto. Caixa c/ até 100 ampolas",
+        "Qtd": 3000.0,
+        "Unitario": 0.91,
+        "Total": 2730.0,
+        "Status": "Venceu"
     },
     {
-        "Item": 210001,
-        "Descricao": "Fitomenadiona (vit. K1) 10mg/ml, ampola c/ 1ml, solução injetável, via de administração: intramuscular e  subcutânea uso adulto e pediátrico.  Caixa c/ até 50 ampolas",
-        "Qtd": 4000.0,
-        "Unitario": 1.62,
-        "Total": 6480.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260203",
         "DataResult": "2026-03-03",
         "Orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
@@ -95073,7 +95067,13 @@
         "Licitacao": "14986862000140002892025",
         "Link": "https://pncp.gov.br/app/editais/14986862000140/2025/289",
         "UASG": "000000001",
-        "DataFimPropostas": "2026-02-19T10:00:00"
+        "DataFimPropostas": "2026-02-19T10:00:00",
+        "Item": 210001,
+        "Descricao": "Fitomenadiona (vit. K1) 10mg/ml, ampola c/ 1ml, solução injetável, via de administração: intramuscular e  subcutânea uso adulto e pediátrico.  Caixa c/ até 50 ampolas",
+        "Qtd": 4000.0,
+        "Unitario": 1.62,
+        "Total": 6480.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260202",
@@ -97146,12 +97146,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 1,
-        "Descricao": "Salbutamol",
-        "Qtd": 6480.0,
-        "Unitario": 10.15,
-        "Total": 65772.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260203",
         "DataResult": "2026-02-23",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
@@ -97161,7 +97155,13 @@
         "Licitacao": "13864377000130001192026",
         "Link": "https://pncp.gov.br/app/editais/13864377000130/2026/119",
         "UASG": "925003",
-        "DataFimPropostas": "2026-02-23T09:00:00"
+        "DataFimPropostas": "2026-02-23T09:00:00",
+        "Item": 1,
+        "Descricao": "Salbutamol",
+        "Qtd": 6480.0,
+        "Unitario": 10.15,
+        "Total": 65772.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251218",
