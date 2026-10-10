@@ -90,6 +90,12 @@
         "DataFimPropostas": "2026-10-05T09:00:00"
     },
     {
+        "Item": 27,
+        "Descricao": "SULFAMETOXAZOL, COMPOSIÇÃO:ASSOCIADO À TRIMETOPRIMA, CONCENTRAÇÃO:400MG + 80MG",
+        "Qtd": 45000.0,
+        "Unitario": 0.15,
+        "Total": 6750.0,
+        "Status": "Venceu",
         "DataPublicacao": "20261008",
         "DataResult": "2026-10-08",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE",
@@ -99,13 +105,7 @@
         "Licitacao": "00562279000105000372026",
         "Link": "https://pncp.gov.br/app/editais/00562279000105/2026/37",
         "UASG": "1",
-        "DataFimPropostas": "2026-09-28T09:00:00",
-        "Item": 27,
-        "Descricao": "SULFAMETOXAZOL, COMPOSIÇÃO:ASSOCIADO À TRIMETOPRIMA, CONCENTRAÇÃO:400MG + 80MG",
-        "Qtd": 45000.0,
-        "Unitario": 0.15,
-        "Total": 6750.0,
-        "Status": "Venceu"
+        "DataFimPropostas": "2026-09-28T09:00:00"
     },
     {
         "Item": 31,
@@ -216,24 +216,12 @@
         "DataFimPropostas": "2026-09-10T14:00:00"
     },
     {
-        "DataPublicacao": "20261005",
-        "DataResult": "2026-10-06",
-        "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
-        "UF": "ES",
-        "Municipio": "Linhares",
-        "Edital": "000015/2026",
-        "Licitacao": "10414835000141000612026",
-        "Link": "https://pncp.gov.br/app/editais/10414835000141/2026/61",
-        "UASG": "10414835000141-003",
-        "DataFimPropostas": "2026-03-31T08:00:00",
         "Item": 15,
         "Descricao": "FENITOINA 50MGML DE 5ML",
         "Qtd": 4000.0,
         "Unitario": 1.9,
         "Total": 7600.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20261005",
         "DataResult": "2026-10-06",
         "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
@@ -243,15 +231,15 @@
         "Licitacao": "10414835000141000612026",
         "Link": "https://pncp.gov.br/app/editais/10414835000141/2026/61",
         "UASG": "10414835000141-003",
-        "DataFimPropostas": "2026-03-31T08:00:00",
+        "DataFimPropostas": "2026-03-31T08:00:00"
+    },
+    {
         "Item": 24,
         "Descricao": "CLORIDRATO DE NALAXONA DE 0,4MGML SOLUCAO INJETAVEL DE 1ML",
         "Qtd": 500.0,
         "Unitario": 5.5,
         "Total": 2750.0,
-        "Status": "Venceu"
-    },
-    {
+        "Status": "Venceu",
         "DataPublicacao": "20261005",
         "DataResult": "2026-10-06",
         "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
@@ -261,13 +249,25 @@
         "Licitacao": "10414835000141000612026",
         "Link": "https://pncp.gov.br/app/editais/10414835000141/2026/61",
         "UASG": "10414835000141-003",
-        "DataFimPropostas": "2026-03-31T08:00:00",
+        "DataFimPropostas": "2026-03-31T08:00:00"
+    },
+    {
         "Item": 44,
         "Descricao": "BITARTARATO DE EPINEFRINA 1MGML",
         "Qtd": 10000.0,
         "Unitario": 0.82,
         "Total": 8200.0,
-        "Status": "Venceu"
+        "Status": "Venceu",
+        "DataPublicacao": "20261005",
+        "DataResult": "2026-10-06",
+        "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
+        "UF": "ES",
+        "Municipio": "Linhares",
+        "Edital": "000015/2026",
+        "Licitacao": "10414835000141000612026",
+        "Link": "https://pncp.gov.br/app/editais/10414835000141/2026/61",
+        "UASG": "10414835000141-003",
+        "DataFimPropostas": "2026-03-31T08:00:00"
     },
     {
         "Item": 42967,
