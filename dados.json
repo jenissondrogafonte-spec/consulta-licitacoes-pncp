@@ -78948,12 +78948,24 @@
         "DataFimPropostas": "2026-03-11T08:59:00"
     },
     {
+        "DataPublicacao": "20260212",
+        "DataResult": "2026-04-13",
+        "Orgao": "MUNICIPIO DE NATAL",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "91007/2026",
+        "Licitacao": "08241747000496000372026",
+        "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
+        "UASG": "925162",
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 13,
         "Descricao": "Betametasona",
         "Qtd": 20500.0,
         "Unitario": 5.98,
         "Total": 122590.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -78963,15 +78975,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 37,
         "Descricao": "Fitomenadiona",
         "Qtd": 43000.0,
         "Unitario": 1.74,
         "Total": 74820.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -78981,15 +78993,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 39,
         "Descricao": "Heparina Sódica",
         "Qtd": 93000.0,
         "Unitario": 7.7,
         "Total": 716100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -78999,15 +79011,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 41,
         "Descricao": "Hidralazina",
         "Qtd": 47500.0,
         "Unitario": 6.2,
         "Total": 294500.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -79017,15 +79029,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 43,
         "Descricao": "Hidrocortisona",
         "Qtd": 103000.0,
         "Unitario": 4.7,
         "Total": 484100.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -79035,15 +79047,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 47,
         "Descricao": "Lidocaína Cloridrato",
         "Qtd": 26800.0,
         "Unitario": 3.97,
         "Total": 106396.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -79053,15 +79065,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 54,
         "Descricao": "Nitroglicerina",
         "Qtd": 13000.0,
         "Unitario": 37.2,
         "Total": 483600.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -79071,15 +79083,15 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 57,
         "Descricao": "Ocitocina",
         "Qtd": 57600.0,
         "Unitario": 3.1,
         "Total": 178560.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-13",
         "Orgao": "MUNICIPIO DE NATAL",
@@ -79089,25 +79101,13 @@
         "Licitacao": "08241747000496000372026",
         "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
         "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T10:00:00",
         "Item": 58,
         "Descricao": "Omeprazol",
         "Qtd": 105000.0,
         "Unitario": 7.29,
         "Total": 765450.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260212",
-        "DataResult": "2026-04-13",
-        "Orgao": "MUNICIPIO DE NATAL",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "91007/2026",
-        "Licitacao": "08241747000496000372026",
-        "Link": "https://pncp.gov.br/app/editais/08241747000496/2026/37",
-        "UASG": "925162",
-        "DataFimPropostas": "2026-02-26T10:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260210",
@@ -80676,12 +80676,24 @@
         "DataFimPropostas": "2026-03-25T08:50:00"
     },
     {
+        "DataPublicacao": "20260212",
+        "DataResult": "2026-04-07",
+        "Orgao": "MUNICIPIO DE GUARIBA",
+        "UF": "SP",
+        "Municipio": "Guariba",
+        "Edital": "9 | Processo 21/2026",
+        "Licitacao": "48664304000180000152026",
+        "Link": "https://pncp.gov.br/app/editais/48664304000180/2026/15",
+        "UASG": "0000",
+        "DataFimPropostas": "2026-03-03T07:30:00",
         "Item": 129,
         "Descricao": "ACIDO FOLINICO 15 MG",
         "Qtd": 3600.0,
         "Unitario": 2.2,
         "Total": 7920.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-07",
         "Orgao": "MUNICIPIO DE GUARIBA",
@@ -80691,15 +80703,15 @@
         "Licitacao": "48664304000180000152026",
         "Link": "https://pncp.gov.br/app/editais/48664304000180/2026/15",
         "UASG": "0000",
-        "DataFimPropostas": "2026-03-03T07:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-03T07:30:00",
         "Item": 169,
         "Descricao": "PARACETAMOL 200MG ML   SOL. ORAL",
         "Qtd": 2400.0,
         "Unitario": 0.99,
         "Total": 2376.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-07",
         "Orgao": "MUNICIPIO DE GUARIBA",
@@ -80709,25 +80721,13 @@
         "Licitacao": "48664304000180000152026",
         "Link": "https://pncp.gov.br/app/editais/48664304000180/2026/15",
         "UASG": "0000",
-        "DataFimPropostas": "2026-03-03T07:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-03-03T07:30:00",
         "Item": 187,
         "Descricao": "DEXAMETASONA  ACETATO 1MG G   CREME",
         "Qtd": 9600.0,
         "Unitario": 1.46,
         "Total": 14016.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260212",
-        "DataResult": "2026-04-07",
-        "Orgao": "MUNICIPIO DE GUARIBA",
-        "UF": "SP",
-        "Municipio": "Guariba",
-        "Edital": "9 | Processo 21/2026",
-        "Licitacao": "48664304000180000152026",
-        "Link": "https://pncp.gov.br/app/editais/48664304000180/2026/15",
-        "UASG": "0000",
-        "DataFimPropostas": "2026-03-03T07:30:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260122",
@@ -81720,12 +81720,24 @@
         "DataFimPropostas": "2026-03-30T14:00:00"
     },
     {
+        "DataPublicacao": "20260212",
+        "DataResult": "2026-04-06",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "SP",
+        "Municipio": "São Carlos",
+        "Edital": "90005/2026",
+        "Licitacao": "15126437000305005182026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/518",
+        "UASG": "155900",
+        "DataFimPropostas": "2026-02-26T09:00:00",
         "Item": 19,
         "Descricao": "Escopolamina Butilbrometo",
         "Qtd": 400.0,
         "Unitario": 5.4258,
         "Total": 2170.32,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -81735,15 +81747,15 @@
         "Licitacao": "15126437000305005182026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/518",
         "UASG": "155900",
-        "DataFimPropostas": "2026-02-26T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T09:00:00",
         "Item": 47,
         "Descricao": "Nalbufina Cloridrato",
         "Qtd": 1000.0,
         "Unitario": 11.878,
         "Total": 11878.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -81753,15 +81765,15 @@
         "Licitacao": "15126437000305005182026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/518",
         "UASG": "155900",
-        "DataFimPropostas": "2026-02-26T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T09:00:00",
         "Item": 58,
         "Descricao": "Paracetamol",
         "Qtd": 2000.0,
         "Unitario": 0.49,
         "Total": 980.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260212",
         "DataResult": "2026-04-06",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -81771,25 +81783,13 @@
         "Licitacao": "15126437000305005182026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/518",
         "UASG": "155900",
-        "DataFimPropostas": "2026-02-26T09:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-26T09:00:00",
         "Item": 74,
         "Descricao": "Tramadol Cloridrato",
         "Qtd": 5200.0,
         "Unitario": 0.847,
         "Total": 4404.4,
-        "Status": "Venceu",
-        "DataPublicacao": "20260212",
-        "DataResult": "2026-04-06",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "SP",
-        "Municipio": "São Carlos",
-        "Edital": "90005/2026",
-        "Licitacao": "15126437000305005182026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/518",
-        "UASG": "155900",
-        "DataFimPropostas": "2026-02-26T09:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 7140925,
@@ -93852,12 +93852,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 30,
-        "Descricao": "CLOR. DE TRAMADOL 50 MG. Especificação: CLOR. DE TRAMADOL 50 MG",
-        "Qtd": 47000.0,
-        "Unitario": 0.12,
-        "Total": 5640.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260212",
         "DataResult": "2026-03-06",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE NOSSA SENHORA DA GLORIA",
@@ -93867,7 +93861,13 @@
         "Licitacao": "11850969000178000042026",
         "Link": "https://pncp.gov.br/app/editais/11850969000178/2026/4",
         "UASG": "11850969000178",
-        "DataFimPropostas": "2026-02-27T09:00:00"
+        "DataFimPropostas": "2026-02-27T09:00:00",
+        "Item": 30,
+        "Descricao": "CLOR. DE TRAMADOL 50 MG. Especificação: CLOR. DE TRAMADOL 50 MG",
+        "Qtd": 47000.0,
+        "Unitario": 0.12,
+        "Total": 5640.0,
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251224",
