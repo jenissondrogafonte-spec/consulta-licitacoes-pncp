@@ -74772,12 +74772,24 @@
         "DataFimPropostas": "2026-02-12T08:00:00"
     },
     {
+        "DataPublicacao": "20260120",
+        "DataResult": "2026-04-17",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BARREIRAS",
+        "UF": "BA",
+        "Municipio": "Barreiras",
+        "Edital": "005/2026",
+        "Licitacao": "08595187000125000032026",
+        "Link": "https://pncp.gov.br/app/editais/08595187000125/2026/3",
+        "UASG": "2965",
+        "DataFimPropostas": "2026-01-30T08:00:00",
         "Item": 6971712,
         "Descricao": "CLINDAMICINA, 150 MG/ML, SOLUÇÃO INJETÁVEL AMPOLA 4 ML",
         "Qtd": 11280.0,
         "Unitario": 2.58,
         "Total": 29102.4,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260120",
         "DataResult": "2026-04-17",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BARREIRAS",
@@ -74787,15 +74799,15 @@
         "Licitacao": "08595187000125000032026",
         "Link": "https://pncp.gov.br/app/editais/08595187000125/2026/3",
         "UASG": "2965",
-        "DataFimPropostas": "2026-01-30T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-30T08:00:00",
         "Item": 6971717,
         "Descricao": "DEXMEDETOMIDINA CLORIDRATO, 100 MCG/ML, SOLUÇÃO INJETÁVEL FRASCO 2 ML",
         "Qtd": 540.0,
         "Unitario": 6.51,
         "Total": 3515.4,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260120",
         "DataResult": "2026-04-17",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BARREIRAS",
@@ -74805,15 +74817,15 @@
         "Licitacao": "08595187000125000032026",
         "Link": "https://pncp.gov.br/app/editais/08595187000125/2026/3",
         "UASG": "2965",
-        "DataFimPropostas": "2026-01-30T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-30T08:00:00",
         "Item": 6971718,
         "Descricao": "ESCETAMINA, CONCENTRAÇÃO 50 MG/ML. FORMA FARMACÊUTICA SOLUÇÃO INJETÁVEL. APRESENTAÇÃO: FRASCO 10 ML (DEXTROCETAMINA)",
         "Qtd": 540.0,
         "Unitario": 55.5,
         "Total": 29970.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260120",
         "DataResult": "2026-04-17",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BARREIRAS",
@@ -74823,25 +74835,13 @@
         "Licitacao": "08595187000125000032026",
         "Link": "https://pncp.gov.br/app/editais/08595187000125/2026/3",
         "UASG": "2965",
-        "DataFimPropostas": "2026-01-30T08:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-30T08:00:00",
         "Item": 6971720,
         "Descricao": "DIAZEPAM, 5 MG/ML, SOLUÇÃO INJETÁVEL AMPOLA 2 ML",
         "Qtd": 8800.0,
         "Unitario": 0.74,
         "Total": 6512.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260120",
-        "DataResult": "2026-04-17",
-        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE BARREIRAS",
-        "UF": "BA",
-        "Municipio": "Barreiras",
-        "Edital": "005/2026",
-        "Licitacao": "08595187000125000032026",
-        "Link": "https://pncp.gov.br/app/editais/08595187000125/2026/3",
-        "UASG": "2965",
-        "DataFimPropostas": "2026-01-30T08:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 7,
@@ -82620,12 +82620,24 @@
         "DataFimPropostas": "2026-03-17T09:00:00"
     },
     {
+        "DataPublicacao": "20260120",
+        "DataResult": "2026-03-31",
+        "Orgao": "MUNICIPIO DE JUQUIA",
+        "UF": "SP",
+        "Municipio": "Juquiá",
+        "Edital": "39/2025",
+        "Licitacao": "46585964000140002872025",
+        "Link": "https://pncp.gov.br/app/editais/46585964000140/2025/287",
+        "UASG": "2305",
+        "DataFimPropostas": "2026-02-02T08:30:00",
         "Item": 27,
         "Descricao": "CARBAMAZEPINA 20MG/ML  ",
         "Qtd": 600.0,
         "Unitario": 5.65,
         "Total": 3390.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260120",
         "DataResult": "2026-03-31",
         "Orgao": "MUNICIPIO DE JUQUIA",
@@ -82635,25 +82647,13 @@
         "Licitacao": "46585964000140002872025",
         "Link": "https://pncp.gov.br/app/editais/46585964000140/2025/287",
         "UASG": "2305",
-        "DataFimPropostas": "2026-02-02T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-02T08:30:00",
         "Item": 54,
         "Descricao": "CLORPROMAZINA 25MG  ",
         "Qtd": 48000.0,
         "Unitario": 0.25,
         "Total": 12000.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260120",
-        "DataResult": "2026-03-31",
-        "Orgao": "MUNICIPIO DE JUQUIA",
-        "UF": "SP",
-        "Municipio": "Juquiá",
-        "Edital": "39/2025",
-        "Licitacao": "46585964000140002872025",
-        "Link": "https://pncp.gov.br/app/editais/46585964000140/2025/287",
-        "UASG": "2305",
-        "DataFimPropostas": "2026-02-02T08:30:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260716",
@@ -101664,12 +101664,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260120",
+        "DataResult": "2026-02-03",
+        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
+        "UF": "PE",
+        "Municipio": "Recife",
+        "Edital": "8/2026",
+        "Licitacao": "11022597001244000072026",
+        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7",
+        "UASG": "5719",
+        "DataFimPropostas": "2026-02-03T09:30:00",
         "Item": 2,
         "Descricao": "(3087212) - ROPIVACAINA, CLORIDRATO - CONCENTRACAO/DOSAGEM 10 MG/ML,FORMA FARMACEUTICA SOLUCAO INJETAVEL,FORMA DE APRESENTACAO AMPOLA OU FRASCO-AMPOLA,VIA DE ADMINISTRACAO INTRAVENOSA",
         "Qtd": 200.0,
         "Unitario": 12.92,
         "Total": 2584.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260120",
         "DataResult": "2026-02-03",
         "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
@@ -101679,25 +101691,13 @@
         "Licitacao": "11022597001244000072026",
         "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7",
         "UASG": "5719",
-        "DataFimPropostas": "2026-02-03T09:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-02-03T09:30:00",
         "Item": 4,
         "Descricao": "(3196119) - TOBRAMICINA - CONCENTRACAO/DOSAGEM 3 MG/ML,FORMA FARMACEUTICA SOLUCAO OFTALMICA,FORMA DE APRESENTACAO FRASCO,VIA DE ADMINISTRACAO OFTALMICA",
         "Qtd": 81.0,
         "Unitario": 7.66,
         "Total": 620.25,
-        "Status": "Venceu",
-        "DataPublicacao": "20260120",
-        "DataResult": "2026-02-03",
-        "Orgao": "FUNDACAO UNIVERSIDADE DE PERNAMBUCO",
-        "UF": "PE",
-        "Municipio": "Recife",
-        "Edital": "8/2026",
-        "Licitacao": "11022597001244000072026",
-        "Link": "https://pncp.gov.br/app/editais/11022597001244/2026/7",
-        "UASG": "5719",
-        "DataFimPropostas": "2026-02-03T09:30:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251222",
