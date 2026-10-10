@@ -96966,12 +96966,24 @@
         "DataFimPropostas": "2026-03-11T08:59:00"
     },
     {
+        "DataPublicacao": "20260105",
+        "DataResult": "2026-02-23",
+        "Orgao": "MUNICIPIO DE PAULINIA",
+        "UF": "SP",
+        "Municipio": "Paulínia",
+        "Edital": "227/2025",
+        "Licitacao": "45751435000106004952025",
+        "Link": "https://pncp.gov.br/app/editais/45751435000106/2025/495",
+        "UASG": "1",
+        "DataFimPropostas": "2026-01-23T08:30:00",
         "Item": 27,
         "Descricao": "ENALAPRIL, MALEATO 10 MG, COMPRIMIDO",
         "Qtd": 1300000.0,
         "Unitario": 0.03,
         "Total": 39000.0,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260105",
         "DataResult": "2026-02-23",
         "Orgao": "MUNICIPIO DE PAULINIA",
@@ -96981,25 +96993,13 @@
         "Licitacao": "45751435000106004952025",
         "Link": "https://pncp.gov.br/app/editais/45751435000106/2025/495",
         "UASG": "1",
-        "DataFimPropostas": "2026-01-23T08:30:00"
-    },
-    {
+        "DataFimPropostas": "2026-01-23T08:30:00",
         "Item": 56,
         "Descricao": "PROPRANOLOL, CLORIDRATO 40 MG, COMPRIMIDO",
         "Qtd": 350000.0,
         "Unitario": 0.03,
         "Total": 10500.0,
-        "Status": "Venceu",
-        "DataPublicacao": "20260105",
-        "DataResult": "2026-02-23",
-        "Orgao": "MUNICIPIO DE PAULINIA",
-        "UF": "SP",
-        "Municipio": "Paulínia",
-        "Edital": "227/2025",
-        "Licitacao": "45751435000106004952025",
-        "Link": "https://pncp.gov.br/app/editais/45751435000106/2025/495",
-        "UASG": "1",
-        "DataFimPropostas": "2026-01-23T08:30:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20251203",
@@ -101718,12 +101718,6 @@
         "Status": "Venceu"
     },
     {
-        "Item": 17,
-        "Descricao": "CLADRIBINA 10MG",
-        "Qtd": 10.0,
-        "Unitario": 11403.43,
-        "Total": 114034.3,
-        "Status": "Venceu",
         "DataPublicacao": "20260105",
         "DataResult": "2026-02-02",
         "Orgao": "MUNICIPIO DE JAHU",
@@ -101733,7 +101727,13 @@
         "Licitacao": "46195079000154013762025",
         "Link": "https://pncp.gov.br/app/editais/46195079000154/2025/1376",
         "UASG": "1",
-        "DataFimPropostas": "2026-01-16T08:29:00"
+        "DataFimPropostas": "2026-01-16T08:29:00",
+        "Item": 17,
+        "Descricao": "CLADRIBINA 10MG",
+        "Qtd": 10.0,
+        "Unitario": 11403.43,
+        "Total": 114034.3,
+        "Status": "Venceu"
     },
     {
         "Item": 14,
