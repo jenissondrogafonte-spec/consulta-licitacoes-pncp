@@ -828,12 +828,24 @@
         "DataFimPropostas": "2026-09-11T09:00:00"
     },
     {
+        "DataPublicacao": "20260903",
+        "DataResult": "2026-10-01",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "47/2026",
+        "Licitacao": "15126437000305035492026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
+        "UASG": "155013",
+        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 7,
         "Descricao": "Alopurinol Alopurinol, Dosagem:100 Mg ALOPURINOL; 100 MG; COMPRIMIDO. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 1620.0,
         "Unitario": 0.13,
         "Total": 210.6,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260903",
         "DataResult": "2026-10-01",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -843,25 +855,13 @@
         "Licitacao": "15126437000305035492026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
         "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 13,
         "Descricao": "Ipratrópio Brometo Ipratrópio Brometo, Dosagem:0,25 MG/ML, Uso:Solução Para Inalação BROMETO DE IPRATRÓPIO; 0,25 MG/ML; SOLUÇÃO INALATÓRIA. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 1660.0,
         "Unitario": 1.59,
         "Total": 2639.4,
-        "Status": "Venceu",
-        "DataPublicacao": "20260903",
-        "DataResult": "2026-10-01",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "47/2026",
-        "Licitacao": "15126437000305035492026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
-        "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00"
+        "Status": "Venceu"
     },
     {
         "DataPublicacao": "20260901",
@@ -2412,12 +2412,24 @@
         "DataFimPropostas": "2026-08-18T08:00:00"
     },
     {
+        "DataPublicacao": "20260903",
+        "DataResult": "2026-09-23",
+        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "UF": "RN",
+        "Municipio": "Natal",
+        "Edital": "47/2026",
+        "Licitacao": "15126437000305035492026",
+        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
+        "UASG": "155013",
+        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 1,
         "Descricao": "Dexametasona Dexametasona, Dosagem:0,1%, Apresentação:Creme ACETATO DE DEXAMETASONA; 1 MG/G (0,1%); CREME DERMATOLÓGICO. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 650.0,
         "Unitario": 2.21,
         "Total": 1436.5,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260903",
         "DataResult": "2026-09-23",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2427,15 +2439,15 @@
         "Licitacao": "15126437000305035492026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
         "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 3,
         "Descricao": "Acetilcisteína Acetilcisteína, Dosagem:100 MG/ML, Forma Farmacêutica:Solução Injetável ACETILCISTEÍNA; 100 MG/ML; SOLUÇÃO INJETÁVEL. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 2035.0,
         "Unitario": 5.07,
         "Total": 10317.45,
-        "Status": "Venceu",
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260903",
         "DataResult": "2026-09-23",
         "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
@@ -2445,25 +2457,13 @@
         "Licitacao": "15126437000305035492026",
         "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
         "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00"
-    },
-    {
+        "DataFimPropostas": "2026-09-16T10:00:00",
         "Item": 8,
         "Descricao": "Alopurinol Alopurinol, Dosagem:300 Mg ALOPURINOL; 300 MG; COMPRIMIDO. - REGISTRADO NA ANVISA COMO MEDICAMENTO.",
         "Qtd": 1890.0,
         "Unitario": 0.28,
         "Total": 529.2,
-        "Status": "Venceu",
-        "DataPublicacao": "20260903",
-        "DataResult": "2026-09-23",
-        "Orgao": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
-        "UF": "RN",
-        "Municipio": "Natal",
-        "Edital": "47/2026",
-        "Licitacao": "15126437000305035492026",
-        "Link": "https://pncp.gov.br/app/editais/15126437000305/2026/3549",
-        "UASG": "155013",
-        "DataFimPropostas": "2026-09-16T10:00:00"
+        "Status": "Venceu"
     },
     {
         "Item": 14,
