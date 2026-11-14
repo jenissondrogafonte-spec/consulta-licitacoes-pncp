@@ -1,5 +1,23 @@
 [
     {
+        "DataPublicacao": "20261016",
+        "DataResult": "2026-11-04",
+        "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
+        "UF": "ES",
+        "Municipio": "Linhares",
+        "Edital": "000038/2026",
+        "Licitacao": "10414835000141000662026",
+        "Link": "https://pncp.gov.br/app/editais/10414835000141/2026/66",
+        "UASG": "10414835000141-003",
+        "DataFimPropostas": "2026-07-02T08:00:00",
+        "Item": 2,
+        "Descricao": "ACIDO FOLINICO DE 15 MG USO ORAL..",
+        "Qtd": 8000.0,
+        "Unitario": 2.18,
+        "Total": 17440.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20261104",
         "DataResult": "2026-10-16",
         "Orgao": "MUNICIPIO DE ITAPUI",
@@ -15,24 +33,6 @@
         "Qtd": 6.0,
         "Unitario": 6366.6666,
         "Total": 38200.0,
-        "Status": "Venceu"
-    },
-    {
-        "DataPublicacao": "20261016",
-        "DataResult": "2026-10-16",
-        "Orgao": "FMS - FUNDO MUNICIPAL DE SAUDE DE LINHARES",
-        "UF": "ES",
-        "Municipio": "Linhares",
-        "Edital": "000038/2026",
-        "Licitacao": "10414835000141000662026",
-        "Link": "https://pncp.gov.br/app/editais/10414835000141/2026/66",
-        "UASG": "10414835000141-003",
-        "DataFimPropostas": "2026-07-02T08:00:00",
-        "Item": 2,
-        "Descricao": "ACIDO FOLINICO DE 15 MG USO ORAL..",
-        "Qtd": 8000.0,
-        "Unitario": 2.18,
-        "Total": 17440.0,
         "Status": "Venceu"
     },
     {
