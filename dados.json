@@ -342,6 +342,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20261117",
+        "DataResult": "2026-10-09",
+        "Orgao": "FUNDO MUNICIPAL DE SAUDE DE CAMACARI",
+        "UF": "BA",
+        "Municipio": "Camaçari",
+        "Edital": "06202026/2026",
+        "Licitacao": "11432780000165000742026",
+        "Link": "https://pncp.gov.br/app/editais/11432780000165/2026/74",
+        "UASG": "0431",
+        "DataFimPropostas": "2026-08-27T09:00:00",
+        "Item": 10,
+        "Descricao": "AMIODARONA 200MG COMPRIMIDO",
+        "Qtd": 50000.0,
+        "Unitario": 0.36,
+        "Total": 18000.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20260901",
         "DataResult": "2026-10-09",
         "Orgao": "SECRETARIA DE ADMINISTRACAO",
