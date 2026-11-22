@@ -1134,6 +1134,24 @@
         "Status": "Venceu"
     },
     {
+        "DataPublicacao": "20260909",
+        "DataResult": "2026-10-09",
+        "Orgao": "MUNICIPIO DE BAURU",
+        "UF": "SP",
+        "Municipio": "Bauru",
+        "Edital": "354/2026",
+        "Licitacao": "46137410000180006482026",
+        "Link": "https://pncp.gov.br/app/editais/46137410000180/2026/648",
+        "UASG": "986219",
+        "DataFimPropostas": "2026-09-23T09:00:00",
+        "Item": 7,
+        "Descricao": "Enalapril Maleato dosagem: 5 Descritivo conforme edital.",
+        "Qtd": 1800000.0,
+        "Unitario": 0.0283,
+        "Total": 50940.0,
+        "Status": "Venceu"
+    },
+    {
         "DataPublicacao": "20261117",
         "DataResult": "2026-10-09",
         "Orgao": "FUNDO MUNICIPAL DE SAUDE DE CAMACARI",
