@@ -2844,12 +2844,6 @@
         "DataFimPropostas": "2026-08-10T09:00:00"
     },
     {
-        "Item": 26,
-        "Descricao": "Dimenidrinato apresentação: associado com piridoxina + glicose + frutose, dosagem: 3mg + 5mg + 100mg + 100mg/ml, tipo medicamento: solução injetável",
-        "Qtd": 1000.0,
-        "Unitario": 8.9,
-        "Total": 8900.0,
-        "Status": "Venceu",
         "DataPublicacao": "20260908",
         "DataResult": "2026-09-29",
         "Orgao": "COMANDO DO EXERCITO",
@@ -2859,7 +2853,13 @@
         "Licitacao": "00394452000103194142026",
         "Link": "https://pncp.gov.br/app/editais/00394452000103/2026/19414",
         "UASG": "160199",
-        "DataFimPropostas": "2026-09-18T08:59:00"
+        "DataFimPropostas": "2026-09-18T08:59:00",
+        "Item": 26,
+        "Descricao": "Dimenidrinato apresentação: associado com piridoxina + glicose + frutose, dosagem: 3mg + 5mg + 100mg + 100mg/ml, tipo medicamento: solução injetável",
+        "Qtd": 1000.0,
+        "Unitario": 8.9,
+        "Total": 8900.0,
+        "Status": "Venceu"
     },
     {
         "Item": 19,
